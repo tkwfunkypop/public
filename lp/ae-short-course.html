@@ -4,224 +4,342 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ショート動画特化 After Effects 講座｜【差し替え：講座名】</title>
+
+  <!-- フォント：日本語=Zen Kaku Gothic New / ラテン・数字=Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
   <!--
     ============================================================
-    ▼ 差し替えポイント（【】で囲った箇所）を自分の情報に書き換える
-      ・数字（再生数/受講者数/満足度）  …「差し替え」コメントの行
-      ・価格、特典、講師名、保証、BrainのURL
-    ▼ アニメは lib/animations.js のプリセット(AP)に集約済み
+    ▼ 差し替えポイント = 【】で囲った箇所（数字/価格/講師名/特典/Brain URL）
+    ▼ アニメは lib/animations.js のプリセット(AP)に集約
+    デザイン方向：シネマティック（深い黒・色数を絞る・フィルムグレイン・罫線主体）
     ============================================================
   -->
   <style>
     :root{
-      --bg:#0c0d14; --panel:#15171f; --line:#262a37;
-      --fg:#f2f3f8; --muted:#9aa0b4; --accent:#ff4d6d; --accent2:#ffd166; --good:#2dd4bf;
+      --bg:#0a0b0d;          /* ほぼ黒（わずかに寒色） */
+      --ink:#101216;         /* 沈んだパネル */
+      --fg:#ece8e0;          /* 温かみのあるオフホワイト */
+      --muted:#7f838c;       /* 抑えた灰 */
+      --line:rgba(236,232,224,.10);
+      --line-strong:rgba(236,232,224,.22);
+      --accent:#ff6a3d;      /* シネマティックな温色アクセント（唯一の差し色） */
+      --accent-soft:rgba(255,106,61,.14);
     }
     *{box-sizing:border-box;}
-    body{margin:0;background:var(--bg);color:var(--fg);line-height:1.8;
-      font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Segoe UI",sans-serif;}
-    section{padding:64px 22px;max-width:760px;margin:0 auto;}
-    h1{font-size:clamp(27px,7vw,46px);line-height:1.32;margin:0 0 18px;font-weight:800;}
-    h2{font-size:clamp(22px,5vw,32px);margin:0 0 8px;font-weight:800;}
-    .sec-sub{color:var(--muted);margin:0 0 28px;font-size:14px;letter-spacing:.04em;}
-    .lead{font-size:clamp(15px,4vw,18px);color:#d7dae6;margin:0 0 30px;}
-    .hl{color:var(--accent2);}
-    .pink{color:var(--accent);}
+    html{scroll-behavior:smooth;}
+    body{
+      margin:0;background:var(--bg);color:var(--fg);
+      font-family:"Zen Kaku Gothic New",system-ui,sans-serif;
+      line-height:1.9;letter-spacing:.01em;-webkit-font-smoothing:antialiased;
+      overflow-x:hidden;
+    }
+    /* フィルムグレイン（映画的な質感） */
+    body::before{
+      content:"";position:fixed;inset:0;z-index:9998;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    /* 周辺減光（ビネット） */
+    body::after{
+      content:"";position:fixed;inset:0;z-index:9997;pointer-events:none;
+      background:radial-gradient(120% 80% at 50% 30%,transparent 55%,rgba(0,0,0,.55) 100%);
+    }
 
-    /* バッジ */
-    .badge{display:inline-block;background:rgba(255,77,109,.14);color:var(--accent);
-      border:1px solid rgba(255,77,109,.4);border-radius:999px;
-      padding:6px 16px;font-size:13px;font-weight:700;margin-bottom:18px;}
+    .wrap{max-width:1080px;margin:0 auto;padding:0 28px;}
+    section{padding:96px 0;position:relative;}
+
+    /* 見出し系タイポ */
+    h1,h2,h3{font-weight:900;letter-spacing:-.01em;}
+    .display{font-size:clamp(34px,7.6vw,76px);line-height:1.16;font-weight:900;margin:0;}
+    h2{font-size:clamp(26px,4.4vw,42px);line-height:1.28;margin:0 0 10px;}
+    .accent{color:var(--accent);}
+    .ja-thin{font-weight:500;}
+
+    /* アイブロウ（章ラベル） */
+    .eyebrow{display:flex;align-items:center;gap:14px;margin:0 0 26px;
+      font-family:"Space Grotesk",sans-serif;font-size:12px;font-weight:500;
+      letter-spacing:.32em;text-transform:uppercase;color:var(--accent);}
+    .eyebrow .idx{color:var(--muted);}
+    .eyebrow::after{content:"";flex:1;height:1px;background:var(--line);}
+
+    .lead{font-size:clamp(15px,2.4vw,18px);color:#cfccc4;max-width:54ch;font-weight:500;}
+    .muted{color:var(--muted);}
 
     /* CTA */
-    .cta{display:inline-block;background:linear-gradient(135deg,var(--accent),var(--accent2));
-      color:#1a1320;text-decoration:none;font-weight:800;font-size:clamp(16px,4.4vw,19px);
-      padding:17px 44px;border-radius:999px;box-shadow:0 14px 38px rgba(255,77,109,.36);}
-    .cta-note{display:block;color:var(--muted);font-size:12px;margin-top:12px;}
+    .cta{display:inline-flex;align-items:center;gap:12px;
+      background:var(--accent);color:#140b07;text-decoration:none;
+      font-family:"Space Grotesk","Zen Kaku Gothic New",sans-serif;font-weight:700;
+      font-size:clamp(15px,2.4vw,17px);letter-spacing:.02em;
+      padding:16px 30px;border-radius:4px;
+      box-shadow:0 18px 50px -18px rgba(255,106,61,.7);
+      transition:transform .25s ease, box-shadow .25s ease;}
+    .cta:hover{transform:translateY(-2px);box-shadow:0 26px 60px -18px rgba(255,106,61,.85);}
+    .cta .arw{font-family:"Space Grotesk";}
+    .cta.ghost{background:transparent;color:var(--fg);border:1px solid var(--line-strong);box-shadow:none;}
+    .cta-note{display:block;color:var(--muted);font-size:12.5px;margin-top:16px;letter-spacing:.02em;}
 
-    .hero{text-align:center;padding-top:80px;}
+    /* ── ヒーロー ── */
+    .hero{min-height:92vh;display:flex;flex-direction:column;justify-content:center;
+      padding:120px 0 80px;position:relative;}
+    .hero::before{ /* 上部の淡い光 */
+      content:"";position:absolute;top:-10%;left:50%;transform:translateX(-50%);
+      width:90%;height:60%;background:radial-gradient(closest-side,var(--accent-soft),transparent 70%);
+      filter:blur(20px);pointer-events:none;z-index:-1;}
+    .kicker{font-family:"Space Grotesk";letter-spacing:.34em;text-transform:uppercase;
+      font-size:13px;color:var(--accent);margin:0 0 28px;font-weight:500;}
+    .hero .lead{margin:30px 0 40px;}
+    .hero-actions{display:flex;gap:16px;flex-wrap:wrap;align-items:center;}
+    .hr-line{margin-top:64px;}
+    .hr-line svg{width:100%;height:2px;display:block;overflow:visible;}
+    .scrollhint{margin-top:30px;font-family:"Space Grotesk";font-size:11px;letter-spacing:.3em;
+      text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px;}
 
-    /* 悩みリスト */
-    .pains{list-style:none;padding:0;margin:0;display:grid;gap:12px;}
-    .pains li{background:var(--panel);border:1px solid var(--line);border-radius:12px;
-      padding:14px 18px;font-size:15px;}
-    .pains li::before{content:"✓ ";color:var(--accent);font-weight:800;}
+    /* ── リスト（悩み/ベネフィット）罫線主体・箱を使わない ── */
+    .rows{border-top:1px solid var(--line);}
+    .rows .row{display:flex;gap:20px;align-items:baseline;
+      padding:20px 4px;border-bottom:1px solid var(--line);
+      transition:background .3s ease,padding-left .3s ease;}
+    .rows .row:hover{background:linear-gradient(90deg,var(--accent-soft),transparent);padding-left:14px;}
+    .rows .row .mk{font-family:"Space Grotesk";color:var(--accent);font-size:14px;flex:none;width:22px;}
+    .rows .row p{margin:0;font-size:clamp(15px,2.3vw,17px);}
 
-    /* 実績 */
-    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;text-align:center;}
-    .stat-box{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px 8px;}
-    .stat{display:block;font-size:clamp(28px,8vw,46px);font-weight:800;color:var(--good);
-      font-variant-numeric:tabular-nums;line-height:1;}
-    .stat-label{color:var(--muted);font-size:12px;margin-top:6px;}
+    /* ── 実績（罫線で区切る・箱なし） ── */
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);
+      border-top:1px solid var(--line-strong);border-bottom:1px solid var(--line-strong);}
+    .stat-cell{padding:34px 16px;text-align:center;position:relative;}
+    .stat-cell + .stat-cell::before{content:"";position:absolute;left:0;top:18%;height:64%;width:1px;background:var(--line);}
+    .stat{display:block;font-family:"Space Grotesk",sans-serif;font-weight:700;
+      font-size:clamp(40px,9vw,68px);line-height:1;color:var(--fg);font-variant-numeric:tabular-nums;}
+    .stat .unit{font-size:.4em;color:var(--accent);margin-left:4px;font-weight:500;}
+    .stat-label{margin-top:12px;font-family:"Space Grotesk";font-size:11px;letter-spacing:.18em;
+      text-transform:uppercase;color:var(--muted);}
 
-    /* カリキュラム */
-    .curriculum{display:grid;gap:14px;}
-    .lesson{background:var(--panel);border:1px solid var(--line);border-radius:14px;
-      padding:18px 20px;display:flex;gap:14px;align-items:flex-start;}
-    .lesson .no{flex:none;width:34px;height:34px;border-radius:9px;font-weight:800;
-      display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#1a1320;}
-    .lesson h3{margin:0 0 4px;font-size:16px;}
-    .lesson p{margin:0;color:var(--muted);font-size:14px;}
+    /* ── カリキュラム（特大インデックス＋罫線） ── */
+    .curriculum{border-top:1px solid var(--line);}
+    .lesson{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start;
+      padding:28px 4px;border-bottom:1px solid var(--line);transition:background .3s ease;}
+    .lesson:hover{background:linear-gradient(90deg,var(--accent-soft),transparent);}
+    .lesson .no{font-family:"Space Grotesk";font-weight:500;font-size:clamp(26px,5vw,40px);
+      color:var(--line-strong);line-height:1;min-width:2.2ch;}
+    .lesson:hover .no{color:var(--accent);transition:color .3s ease;}
+    .lesson h3{margin:2px 0 6px;font-size:clamp(17px,2.6vw,21px);font-weight:700;}
+    .lesson p{margin:0;color:var(--muted);font-size:14.5px;font-weight:500;}
 
-    /* 特典 */
-    .bonus{background:linear-gradient(180deg,rgba(255,209,102,.08),transparent);
-      border:1px solid rgba(255,209,102,.3);border-radius:18px;padding:26px 22px;}
-    .bonus ul{margin:14px 0 0;padding-left:20px;}
-    .bonus li{margin-bottom:8px;}
+    /* ── 特典 ── */
+    .bonus{border:1px solid var(--line-strong);border-radius:6px;padding:38px 30px;
+      background:linear-gradient(180deg,rgba(255,106,61,.05),transparent);}
+    .bonus .rows{border-top:none;margin-top:8px;}
+    .bonus .row{border-bottom:1px solid var(--line);}
 
-    /* 価格 */
-    .price-card{background:var(--panel);border:1px solid var(--line);border-radius:20px;
-      padding:32px 22px;text-align:center;}
-    .price{font-size:clamp(36px,11vw,60px);font-weight:900;color:var(--accent2);line-height:1;}
-    .price small{font-size:16px;color:var(--muted);font-weight:600;}
-    .price-strike{color:var(--muted);text-decoration:line-through;font-size:18px;}
+    /* ── 価格 ── */
+    .offer{text-align:center;}
+    .price-wrap{display:inline-block;border:1px solid var(--line-strong);border-radius:8px;
+      padding:48px 56px;background:var(--ink);position:relative;}
+    .price-strike{color:var(--muted);text-decoration:line-through;font-family:"Space Grotesk";font-size:18px;}
+    .price{font-family:"Space Grotesk",sans-serif;font-weight:700;
+      font-size:clamp(48px,13vw,86px);line-height:1;color:var(--fg);margin:8px 0 4px;}
+    .price .yen{font-size:.42em;vertical-align:.35em;color:var(--muted);}
+    .price .tax{font-size:.2em;color:var(--muted);margin-left:8px;font-weight:400;}
 
-    /* FAQ */
-    .faq{display:grid;gap:10px;}
-    .faq details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:4px 18px;}
-    .faq summary{cursor:pointer;font-weight:700;padding:12px 0;font-size:15px;}
-    .faq p{margin:0 0 14px;color:var(--muted);font-size:14px;}
+    /* ── FAQ ── */
+    .faq{border-top:1px solid var(--line);}
+    .faq details{border-bottom:1px solid var(--line);}
+    .faq summary{cursor:pointer;list-style:none;padding:22px 4px;font-weight:700;font-size:16px;
+      display:flex;justify-content:space-between;align-items:center;gap:16px;}
+    .faq summary::-webkit-details-marker{display:none;}
+    .faq summary .pm{font-family:"Space Grotesk";color:var(--accent);font-weight:400;transition:transform .3s ease;}
+    .faq details[open] summary .pm{transform:rotate(45deg);}
+    .faq .ans{padding:0 4px 24px;color:var(--muted);font-size:14.5px;font-weight:500;}
 
-    .foot{text-align:center;color:var(--muted);font-size:12px;padding:40px 22px;}
-    @media(max-width:560px){ .stats{grid-template-columns:1fr;} }
+    .final{text-align:center;}
+    .final h2{margin-bottom:8px;}
+    footer{border-top:1px solid var(--line);padding:48px 0;text-align:center;
+      color:var(--muted);font-family:"Space Grotesk";font-size:12px;letter-spacing:.06em;}
+
+    @media(max-width:600px){
+      .stats{grid-template-columns:1fr;}
+      .stat-cell{border-bottom:1px solid var(--line);}
+      .stat-cell + .stat-cell::before{display:none;}
+      .price-wrap{padding:38px 28px;}
+    }
   </style>
 </head>
 <body>
 
   <!-- ① ヒーロー -->
-  <section class="hero">
-    <span class="badge" id="hero-badge">After Effects × ショート動画</span>
-    <h1 id="hero-title">“なんか素人っぽい”を、<br><span class="pink">3秒で「お、プロだ」</span>に変える。</h1>
-    <p class="lead" id="hero-lead">
-      最後まで見られるショートには、共通する“動き”の作り方がある。<br>
-      テンプレ任せを卒業して、<span class="hl">自分で伸びる演出を作れる</span>AE講座。
-    </p>
-    <a href="#offer" class="cta" id="hero-cta">講座の詳細を見る</a>
-    <span class="cta-note">※ Brainで販売中／スマホでそのまま購入できます</span>
-  </section>
+  <header class="hero">
+    <div class="wrap">
+      <p class="kicker" id="hero-kicker">After Effects × Short Video</p>
+      <h1 class="display" id="hero-title">“なんか素人っぽい”を、<br><span class="accent">3秒で</span>消す。</h1>
+      <p class="lead" id="hero-lead">
+        最後まで見られるショートには、共通する“動き”の設計がある。<br class="ja-thin">
+        テンプレ任せを卒業し、<span class="ja-thin" style="color:var(--fg)">自分で伸びる演出を作れる</span>ようになるAE講座。
+      </p>
+      <div class="hero-actions" id="hero-cta">
+        <a href="#offer" class="cta">講座の詳細を見る <span class="arw">→</span></a>
+        <a href="#curriculum" class="cta ghost">カリキュラム</a>
+      </div>
+      <div class="hr-line">
+        <svg viewBox="0 0 1000 2" preserveAspectRatio="none">
+          <path id="hero-rule" d="M0 1 L1000 1" stroke="rgba(236,232,224,.22)" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+      <p class="scrollhint">Scroll <span style="font-family:'Space Grotesk'">↓</span></p>
+    </div>
+  </header>
 
   <!-- ② 共感・問題提起 -->
   <section>
-    <h2 class="reveal">こんな悩み、ありませんか？</h2>
-    <p class="sec-sub reveal">ひとつでも当てはまるなら、この講座が役に立ちます。</p>
-    <ul class="pains reveal">
-      <li>テロップやモーションが、どうしても“垢抜けない”</li>
-      <li>編集に時間がかかりすぎて、量産できない</li>
-      <li>After Effectsを買ったけど、結局使いこなせていない</li>
-      <li>テンプレ素材頼みで、他の人と動画が似てしまう</li>
-      <li>途中で離脱される＝最後まで見てもらえない</li>
-    </ul>
-  </section>
-
-  <!-- ③ 実績（スクロールでカウントアップ）※数字は要差し替え -->
-  <section>
-    <h2 class="reveal">数字で見る実績</h2>
-    <p class="sec-sub reveal">※下記はサンプル値です。あなたの実数に差し替えてください。</p>
-    <div class="stats">
-      <!-- 差し替え: data-to にあなたの実数を入れる -->
-      <div class="stat-box reveal"><span class="stat" data-to="1200">0</span><span class="stat-label">累計再生（万回）</span></div>
-      <div class="stat-box reveal"><span class="stat" data-to="380">0</span><span class="stat-label">受講者数（名）</span></div>
-      <div class="stat-box reveal"><span class="stat" data-to="96">0</span><span class="stat-label">満足度（%）</span></div>
+    <div class="wrap">
+      <p class="eyebrow"><span class="idx">01</span> The Problem</p>
+      <h2 class="reveal">こんな悩み、<br>抱えていませんか。</h2>
+      <div class="rows reveal" style="margin-top:40px;">
+        <div class="row"><span class="mk">01</span><p>テロップやモーションが、どうしても“垢抜けない”</p></div>
+        <div class="row"><span class="mk">02</span><p>編集に時間がかかりすぎて、量産できない</p></div>
+        <div class="row"><span class="mk">03</span><p>After Effectsを買ったけれど、結局使いこなせていない</p></div>
+        <div class="row"><span class="mk">04</span><p>テンプレ素材頼みで、他の人と動画が似てしまう</p></div>
+        <div class="row"><span class="mk">05</span><p>途中で離脱される＝最後まで見てもらえない</p></div>
+      </div>
     </div>
   </section>
 
-  <!-- ④ 得られる未来（ベネフィット） -->
+  <!-- ③ 実績 ※数字は要差し替え -->
   <section>
-    <h2 class="reveal">この講座を終えたあなたは</h2>
-    <ul class="pains reveal" id="benefits">
-      <li>「最後まで見られる」ショートの“動きの原則”が分かる</li>
-      <li>テロップ・トランジションを自分で設計できる</li>
-      <li>テンプレ／プリセット化で編集時間を大幅短縮</li>
-      <li>案件や量産にも耐えるワークフローが手に入る</li>
-    </ul>
+    <div class="wrap">
+      <p class="eyebrow"><span class="idx">02</span> Proof</p>
+      <h2 class="reveal">数字で見る実績</h2>
+      <p class="lead muted reveal" style="margin:8px 0 36px;">※サンプル値です。あなたの実数に差し替えてください。</p>
+      <div class="stats">
+        <!-- 差し替え: data-to にあなたの実数 -->
+        <div class="stat-cell reveal"><span class="stat"><span data-to="1200">0</span><span class="unit">万回</span></span><div class="stat-label">累計再生</div></div>
+        <div class="stat-cell reveal"><span class="stat"><span data-to="380">0</span><span class="unit">名</span></span><div class="stat-label">受講者数</div></div>
+        <div class="stat-cell reveal"><span class="stat"><span data-to="96">0</span><span class="unit">%</span></span><div class="stat-label">満足度</div></div>
+      </div>
+    </div>
   </section>
 
-  <!-- ⑤ カリキュラム（時間差出現） -->
+  <!-- ④ 得られる未来 -->
   <section>
-    <h2 class="reveal">カリキュラム</h2>
-    <p class="sec-sub reveal">【差し替え：実際の章立て・本数に合わせて編集】</p>
-    <div class="curriculum" id="curriculum">
-      <div class="lesson"><div class="no">1</div><div><h3>ショートで伸びる「動き」の原則</h3><p>なぜその演出が最後まで見られるのか。再現できる形で分解。</p></div></div>
-      <div class="lesson"><div class="no">2</div><div><h3>テロップアニメーション 基礎→応用</h3><p>読みやすく・止まらない字幕の動きの作り方。</p></div></div>
-      <div class="lesson"><div class="no">3</div><div><h3>リテンションを上げる転換・トランジション</h3><p>離脱を防ぐ“つなぎ”の設計。</p></div></div>
-      <div class="lesson"><div class="no">4</div><div><h3>時短のためのテンプレ／プリセット運用</h3><p>一度作って使い回す、量産の仕組み化。</p></div></div>
-      <div class="lesson"><div class="no">5</div><div><h3>案件・量産に耐えるワークフロー</h3><p>命名・整理・書き出しまで含めた実務の流れ。</p></div></div>
+    <div class="wrap">
+      <p class="eyebrow"><span class="idx">03</span> Outcome</p>
+      <h2 class="reveal">この講座を終えたあなたは</h2>
+      <div class="rows reveal" id="benefits" style="margin-top:40px;">
+        <div class="row"><span class="mk">→</span><p>「最後まで見られる」ショートの“動きの原則”が分かる</p></div>
+        <div class="row"><span class="mk">→</span><p>テロップ・トランジションを自分で設計できる</p></div>
+        <div class="row"><span class="mk">→</span><p>テンプレ／プリセット化で編集時間を大幅に短縮できる</p></div>
+        <div class="row"><span class="mk">→</span><p>案件や量産にも耐えるワークフローが手に入る</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑤ カリキュラム -->
+  <section id="curriculum">
+    <div class="wrap">
+      <p class="eyebrow"><span class="idx">04</span> Curriculum</p>
+      <h2 class="reveal">カリキュラム</h2>
+      <p class="lead muted reveal" style="margin:8px 0 36px;">【差し替え：実際の章立て・本数に合わせて編集】</p>
+      <div class="curriculum" id="curriculum-list">
+        <div class="lesson"><div class="no">01</div><div><h3>ショートで伸びる「動き」の原則</h3><p>なぜその演出が最後まで見られるのか。再現できる形に分解する。</p></div></div>
+        <div class="lesson"><div class="no">02</div><div><h3>テロップアニメーション 基礎→応用</h3><p>読みやすく、視線が止まらない字幕の動きの作り方。</p></div></div>
+        <div class="lesson"><div class="no">03</div><div><h3>リテンションを上げる転換・トランジション</h3><p>離脱を防ぐ“つなぎ”の設計。</p></div></div>
+        <div class="lesson"><div class="no">04</div><div><h3>時短のためのテンプレ／プリセット運用</h3><p>一度作って使い回す、量産の仕組み化。</p></div></div>
+        <div class="lesson"><div class="no">05</div><div><h3>案件・量産に耐えるワークフロー</h3><p>命名・整理・書き出しまで含めた実務の流れ。</p></div></div>
+      </div>
     </div>
   </section>
 
   <!-- ⑥ 特典 -->
   <section>
-    <div class="bonus reveal">
-      <h2>購入者限定特典</h2>
-      <p class="sec-sub">【差し替え：実際の特典に合わせて編集】</p>
-      <ul>
-        <li>すぐ使えるテロップ／トランジションのプリセット集</li>
-        <li>本編で使うAEテンプレートファイル一式</li>
-        <li>質問できるコミュニティ／サポート</li>
-      </ul>
+    <div class="wrap">
+      <p class="eyebrow"><span class="idx">05</span> Bonus</p>
+      <div class="bonus reveal">
+        <h2>購入者限定特典</h2>
+        <p class="muted" style="margin:4px 0 0;font-size:14px;">【差し替え：実際の特典に合わせて編集】</p>
+        <div class="rows">
+          <div class="row"><span class="mk">+</span><p>すぐ使えるテロップ／トランジションのプリセット集</p></div>
+          <div class="row"><span class="mk">+</span><p>本編で使うAEテンプレートファイル一式</p></div>
+          <div class="row"><span class="mk">+</span><p>質問できるコミュニティ／サポート</p></div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ⑦ 講師紹介 ※差し替え -->
+  <!-- ⑦ 講師紹介 -->
   <section>
-    <h2 class="reveal">講師について</h2>
-    <p class="lead reveal">【差し替え：あなたのプロフィール。実績・担当案件・SNSなど。
-      “なぜあなたから学ぶ価値があるのか”を一段落で。】</p>
+    <div class="wrap">
+      <p class="eyebrow"><span class="idx">06</span> Instructor</p>
+      <h2 class="reveal">講師について</h2>
+      <p class="lead reveal" style="margin-top:16px;">【差し替え：あなたのプロフィール。実績・担当案件・SNSなど。
+        “なぜあなたから学ぶ価値があるのか”を一段落で。】</p>
+    </div>
   </section>
 
-  <!-- ⑧ オファー（価格） -->
+  <!-- ⑧ 価格 -->
   <section id="offer">
-    <div class="price-card reveal">
-      <h2>受講料</h2>
-      <p class="sec-sub">【差し替え：価格・人数限定・販売期間など】</p>
-      <!-- 差し替え: data-to に実売価格、price-strike に定価 -->
-      <p><span class="price-strike">通常 ¥19,800</span></p>
-      <p class="price">¥<span id="price-num" data-to="9800">0</span><small>（税込）</small></p>
-      <a href="#" class="cta" id="offer-cta" style="margin-top:18px;">Brainで申し込む</a>
-      <span class="cta-note">※ ボタンのリンク先を、あなたのBrain商品URLに差し替えてください</span>
+    <div class="wrap offer">
+      <p class="eyebrow" style="justify-content:center;"><span class="idx">07</span> Enroll</p>
+      <h2 class="reveal">受講料</h2>
+      <p class="lead muted reveal" style="margin:8px auto 36px;">【差し替え：価格・人数限定・販売期間など】</p>
+      <div class="price-wrap reveal">
+        <!-- 差し替え: data-to に実売価格、price-strike に定価 -->
+        <div class="price-strike">通常 ¥19,800</div>
+        <div class="price"><span class="yen">¥</span><span id="price-num" data-to="9800">0</span><span class="tax">税込</span></div>
+        <a href="#" class="cta" id="offer-cta" style="margin-top:26px;">Brainで申し込む <span class="arw">→</span></a>
+        <span class="cta-note">※ リンク先をあなたのBrain商品URLに差し替えてください</span>
+      </div>
     </div>
   </section>
 
   <!-- ⑨ FAQ -->
   <section>
-    <h2 class="reveal">よくある質問</h2>
-    <div class="faq reveal">
-      <details><summary>After Effects初心者でも大丈夫ですか？</summary><p>【差し替え：対象レベルの回答】</p></details>
-      <details><summary>必要なソフト・環境は？</summary><p>【差し替え：AEのバージョン・PC要件など】</p></details>
-      <details><summary>視聴期限はありますか？</summary><p>【差し替え：視聴方法・期限】</p></details>
-      <details><summary>質問はできますか？</summary><p>【差し替え：サポート範囲】</p></details>
+    <div class="wrap">
+      <p class="eyebrow"><span class="idx">08</span> FAQ</p>
+      <h2 class="reveal">よくある質問</h2>
+      <div class="faq reveal" style="margin-top:32px;">
+        <details><summary>After Effects初心者でも大丈夫ですか？<span class="pm">+</span></summary><div class="ans">【差し替え：対象レベルの回答】</div></details>
+        <details><summary>必要なソフト・環境は？<span class="pm">+</span></summary><div class="ans">【差し替え：AEのバージョン・PC要件など】</div></details>
+        <details><summary>視聴期限はありますか？<span class="pm">+</span></summary><div class="ans">【差し替え：視聴方法・期限】</div></details>
+        <details><summary>質問はできますか？<span class="pm">+</span></summary><div class="ans">【差し替え：サポート範囲】</div></details>
+      </div>
     </div>
   </section>
 
   <!-- ⑩ 最終CTA -->
-  <section style="text-align:center;">
-    <h2 class="reveal">“伸びる動き”を、今日から自分の手で。</h2>
-    <p class="lead reveal">テンプレ任せを卒業する一歩を。</p>
-    <a href="#" class="cta" id="final-cta">Brainで申し込む</a>
+  <section class="final">
+    <div class="wrap">
+      <h2 class="reveal">“伸びる動き”を、<br>今日から自分の手で。</h2>
+      <p class="lead reveal" style="margin:14px auto 34px;">テンプレ任せを卒業する一歩を。</p>
+      <a href="#" class="cta" id="final-cta">Brainで申し込む <span class="arw">→</span></a>
+    </div>
   </section>
 
-  <p class="foot">© 【差し替え：あなたの名前／屋号】</p>
+  <footer>© 【差し替え：あなたの名前／屋号】</footer>
 
   <!-- anime.js 本体 + 共通プリセット -->
   <script src="https://cdn.jsdelivr.net/npm/animejs@4.4.1/dist/bundles/anime.umd.min.js"></script>
   <script src="../lib/animations.js"></script>
   <script>
-    // ヒーローを時間差で出現
-    AP.fadeInUp('#hero-badge');
-    AP.fadeInUp('#hero-title', { delay: 120 });
-    AP.fadeInUp('#hero-lead',  { delay: 240 });
-    AP.fadeInUp('#hero-cta',   { delay: 360 });
+    // ヒーローを映画的にゆっくり時間差で出現
+    const slow = { duration: 950, ease: 'out(3)' };
+    AP.fadeInUp('#hero-kicker', slow);
+    AP.fadeInUp('#hero-title', { ...slow, delay: 140 });
+    AP.fadeInUp('#hero-lead',  { ...slow, delay: 280 });
+    AP.fadeInUp('#hero-cta',   { ...slow, delay: 420 });
+    // ヒーロー下の罫線を描く
+    setTimeout(() => AP.drawSVG('#hero-rule', { duration: 1100, delay: 600 }), 0);
 
     // 各セクションをスクロールで出現
     AP.onScroll('.reveal');
 
     // 実績数字・価格はスクロールで入ったらカウントアップ
-    AP.onScroll('.stat', (el) => AP.countUp(el));
+    AP.onScroll('.stat', (el) => AP.countUp(el.querySelector('[data-to]')));
     AP.onScroll('#price-num', (el) => AP.countUp(el, Number(el.dataset.to)));
 
     // 悩み・ベネフィット・カリキュラムは時間差で
-    AP.onScroll('#benefits',   (el) => AP.staggerReveal(el.children, { each: 90 }));
-    AP.onScroll('#curriculum', (el) => AP.staggerReveal(el.children, { each: 90 }));
+    AP.onScroll('#benefits',        (el) => AP.staggerReveal(el.children, { each: 80 }));
+    AP.onScroll('#curriculum-list',  (el) => AP.staggerReveal(el.children, { each: 90 }));
 
     // 最終CTAは常時ゆっくり脈打つ
     AP.pulse('#final-cta');
