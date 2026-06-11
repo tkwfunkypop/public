@@ -67,6 +67,16 @@
     .ghost-num.r{right:-2vw;top:-6vh;}
     .ghost-num.l{left:-2vw;bottom:-10vh;}
 
+    /* ── ヒーロー背景メディア（画像→のちに動画） ── */
+    .hero-media{position:absolute;inset:0;z-index:0;overflow:hidden;}
+    .hero-media img,.hero-media video{width:100%;height:100%;object-fit:cover;opacity:.5;
+      animation:kenburns 26s ease-in-out infinite alternate;will-change:transform;}
+    .hero-media::after{content:"";position:absolute;inset:0;
+      background:
+        linear-gradient(180deg,rgba(10,11,13,.55) 0%,rgba(10,11,13,.35) 38%,var(--bg) 100%),
+        radial-gradient(90% 70% at 28% 42%,transparent 40%,rgba(10,11,13,.6));}
+    @keyframes kenburns{from{transform:scale(1.14) translate(2%,1%);}to{transform:scale(1.0) translate(-1.5%,-1%);}}
+
     /* 見出し系タイポ */
     h1,h2,h3{font-weight:900;letter-spacing:-.01em;}
     .display{font-size:clamp(34px,7.6vw,76px);line-height:1.16;font-weight:900;margin:0;}
@@ -194,6 +204,12 @@
 
   <!-- ① ヒーロー -->
   <header class="hero">
+    <!-- 背景メディア：生成画像（読み込めない環境では自動的に非表示＝従来の見た目を維持）。
+         ※ 生成CDNへの直リンク。本番では各自でダウンロードして自サーバに置くのを推奨 -->
+    <div class="hero-media" aria-hidden="true">
+      <img src="https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260611_215116_1676fb59-f4a5-41d4-bef8-c2f5f5f048bb.png"
+           alt="" loading="eager" onerror="this.parentNode.style.display='none'" />
+    </div>
     <div class="ghost-num r" data-speed="-0.18" aria-hidden="true">AE</div>
     <div class="wrap">
       <p class="kicker" id="hero-kicker">After Effects × Short Video</p>
