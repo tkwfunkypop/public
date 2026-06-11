@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LP雛形 - Anime.jsプリセット入り</title>
+  <!--
+    ▼ この雛形の使い方
+    1. テキスト・数字・ボタン文言を自分の商品に書き換える（HTMLの日本語部分だけでOK）
+    2. 各セクションに class="reveal" を付けると、スクロールで自動的に出現する
+    3. 数字は <span class="stat" data-to="目標値"> に書く
+    アニメの実体は lib/animations.js のプリセット(AP)に集約しているので、
+    「ここに pulse をかけて」等の指示だけで Claude Code が調整できます。
+  -->
+  <style>
+    :root { --bg:#0f1020; --ink:#1a1d2e; --fg:#e9ebf5; --muted:#9aa0c0; --accent:#7c5cff; --accent2:#36d6c3; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Segoe UI", sans-serif;
+           background: var(--bg); color: var(--fg); line-height: 1.7; }
+    section { padding: 72px 24px; max-width: 880px; margin: 0 auto; }
+    h1 { font-size: clamp(28px, 5vw, 46px); line-height: 1.3; margin: 0 0 16px; }
+    h2 { font-size: clamp(22px, 4vw, 32px); margin: 0 0 28px; }
+    .lead { font-size: 18px; color: var(--muted); margin: 0 0 32px; }
+    .accent { color: var(--accent2); }
+
+    /* ヒーロー */
+    .hero { text-align:center; padding-top: 96px; }
+
+    /* CTAボタン */
+    .cta { display:inline-block; background: linear-gradient(135deg, var(--accent), var(--accent2));
+           color:#fff; text-decoration:none; font-weight:700; font-size:18px;
+           padding: 16px 40px; border-radius: 999px; box-shadow: 0 10px 30px rgba(124,92,255,.4); }
+
+    /* 実績 */
+    .stats { display:grid; grid-template-columns: repeat(3, 1fr); gap: 24px; text-align:center; }
+    .stat-box { background: var(--ink); border-radius: 16px; padding: 28px 12px; }
+    .stat { font-size: clamp(32px, 6vw, 52px); font-weight:800; color: var(--accent2);
+            font-variant-numeric: tabular-nums; display:block; }
+    .stat-label { color: var(--muted); font-size: 14px; }
+
+    /* 特徴カード */
+    .features { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 20px; }
+    .feature { background: var(--ink); border-radius: 16px; padding: 24px; }
+    .feature h3 { margin:0 0 8px; color: var(--accent); }
+    .feature p { margin:0; color: var(--muted); font-size: 15px; }
+
+    @media (max-width:640px){ .stats{ grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+  <!-- ① ヒーロー -->
+  <section class="hero">
+    <h1 id="hero-title">あなたの商品の<br><span class="accent">一番の魅力</span>をここに</h1>
+    <p class="lead" id="hero-lead">サブコピー。誰の何を解決するのかを一文で。</p>
+    <a href="#cta" class="cta" id="hero-cta">今すぐ詳しく見る</a>
+  </section>
+
+  <!-- ② 実績（スクロールでカウントアップ） -->
+  <section>
+    <h2 class="reveal">数字で見る実績</h2>
+    <div class="stats">
+      <div class="stat-box reveal"><span class="stat" data-to="1280">0</span><span class="stat-label">受講者数（名）</span></div>
+      <div class="stat-box reveal"><span class="stat" data-to="98">0</span><span class="stat-label">満足度（%）</span></div>
+      <div class="stat-box reveal"><span class="stat" data-to="45">0</span><span class="stat-label">提供実績（社）</span></div>
+    </div>
+  </section>
+
+  <!-- ③ 特徴（スクロールで時間差出現） -->
+  <section>
+    <h2 class="reveal">選ばれる3つの理由</h2>
+    <div class="features" id="features">
+      <div class="feature"><h3>理由その1</h3><p>ここに特徴の説明文を入れます。</p></div>
+      <div class="feature"><h3>理由その2</h3><p>ここに特徴の説明文を入れます。</p></div>
+      <div class="feature"><h3>理由その3</h3><p>ここに特徴の説明文を入れます。</p></div>
+    </div>
+  </section>
+
+  <!-- ④ 最終CTA（常時脈打ち） -->
+  <section id="cta" style="text-align:center;">
+    <h2 class="reveal">まずは一歩、踏み出しましょう</h2>
+    <p class="lead reveal">背中を押す一言を添えて。</p>
+    <a href="#" class="cta" id="final-cta">無料で申し込む</a>
+  </section>
+
+  <!-- anime.js 本体 + プリセット集 -->
+  <script src="https://cdn.jsdelivr.net/npm/animejs@4.4.1/dist/bundles/anime.umd.min.js"></script>
+  <script src="../lib/animations.js"></script>
+  <script>
+    // ヒーローは読み込み時に時間差で出現
+    AP.fadeInUp('#hero-title');
+    AP.fadeInUp('#hero-lead', { delay: 150 });
+    AP.fadeInUp('#hero-cta', { delay: 300 });
+
+    // スクロールで各セクションが出現
+    AP.onScroll('.reveal');
+
+    // 実績数字はスクロールで入ったらカウントアップ
+    AP.onScroll('.stat', (el) => AP.countUp(el));
+
+    // 特徴カードはスクロールで時間差出現
+    AP.onScroll('#features', (el) => AP.staggerReveal(el.children, { each: 120 }));
+
+    // 最終CTAは常時ゆっくり脈打って注目を集める
+    AP.pulse('#final-cta');
+  </script>
+</body>
+</html>
