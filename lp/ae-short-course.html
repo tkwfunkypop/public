@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ショート動画特化 After Effects 講座｜【差し替え：講座名】</title>
+  <!--
+    ============================================================
+    ▼ 差し替えポイント（【】で囲った箇所）を自分の情報に書き換える
+      ・数字（再生数/受講者数/満足度）  …「差し替え」コメントの行
+      ・価格、特典、講師名、保証、BrainのURL
+    ▼ アニメは lib/animations.js のプリセット(AP)に集約済み
+    ============================================================
+  -->
+  <style>
+    :root{
+      --bg:#0c0d14; --panel:#15171f; --line:#262a37;
+      --fg:#f2f3f8; --muted:#9aa0b4; --accent:#ff4d6d; --accent2:#ffd166; --good:#2dd4bf;
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;background:var(--bg);color:var(--fg);line-height:1.8;
+      font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Segoe UI",sans-serif;}
+    section{padding:64px 22px;max-width:760px;margin:0 auto;}
+    h1{font-size:clamp(27px,7vw,46px);line-height:1.32;margin:0 0 18px;font-weight:800;}
+    h2{font-size:clamp(22px,5vw,32px);margin:0 0 8px;font-weight:800;}
+    .sec-sub{color:var(--muted);margin:0 0 28px;font-size:14px;letter-spacing:.04em;}
+    .lead{font-size:clamp(15px,4vw,18px);color:#d7dae6;margin:0 0 30px;}
+    .hl{color:var(--accent2);}
+    .pink{color:var(--accent);}
+
+    /* バッジ */
+    .badge{display:inline-block;background:rgba(255,77,109,.14);color:var(--accent);
+      border:1px solid rgba(255,77,109,.4);border-radius:999px;
+      padding:6px 16px;font-size:13px;font-weight:700;margin-bottom:18px;}
+
+    /* CTA */
+    .cta{display:inline-block;background:linear-gradient(135deg,var(--accent),var(--accent2));
+      color:#1a1320;text-decoration:none;font-weight:800;font-size:clamp(16px,4.4vw,19px);
+      padding:17px 44px;border-radius:999px;box-shadow:0 14px 38px rgba(255,77,109,.36);}
+    .cta-note{display:block;color:var(--muted);font-size:12px;margin-top:12px;}
+
+    .hero{text-align:center;padding-top:80px;}
+
+    /* 悩みリスト */
+    .pains{list-style:none;padding:0;margin:0;display:grid;gap:12px;}
+    .pains li{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+      padding:14px 18px;font-size:15px;}
+    .pains li::before{content:"✓ ";color:var(--accent);font-weight:800;}
+
+    /* 実績 */
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;text-align:center;}
+    .stat-box{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px 8px;}
+    .stat{display:block;font-size:clamp(28px,8vw,46px);font-weight:800;color:var(--good);
+      font-variant-numeric:tabular-nums;line-height:1;}
+    .stat-label{color:var(--muted);font-size:12px;margin-top:6px;}
+
+    /* カリキュラム */
+    .curriculum{display:grid;gap:14px;}
+    .lesson{background:var(--panel);border:1px solid var(--line);border-radius:14px;
+      padding:18px 20px;display:flex;gap:14px;align-items:flex-start;}
+    .lesson .no{flex:none;width:34px;height:34px;border-radius:9px;font-weight:800;
+      display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#1a1320;}
+    .lesson h3{margin:0 0 4px;font-size:16px;}
+    .lesson p{margin:0;color:var(--muted);font-size:14px;}
+
+    /* 特典 */
+    .bonus{background:linear-gradient(180deg,rgba(255,209,102,.08),transparent);
+      border:1px solid rgba(255,209,102,.3);border-radius:18px;padding:26px 22px;}
+    .bonus ul{margin:14px 0 0;padding-left:20px;}
+    .bonus li{margin-bottom:8px;}
+
+    /* 価格 */
+    .price-card{background:var(--panel);border:1px solid var(--line);border-radius:20px;
+      padding:32px 22px;text-align:center;}
+    .price{font-size:clamp(36px,11vw,60px);font-weight:900;color:var(--accent2);line-height:1;}
+    .price small{font-size:16px;color:var(--muted);font-weight:600;}
+    .price-strike{color:var(--muted);text-decoration:line-through;font-size:18px;}
+
+    /* FAQ */
+    .faq{display:grid;gap:10px;}
+    .faq details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:4px 18px;}
+    .faq summary{cursor:pointer;font-weight:700;padding:12px 0;font-size:15px;}
+    .faq p{margin:0 0 14px;color:var(--muted);font-size:14px;}
+
+    .foot{text-align:center;color:var(--muted);font-size:12px;padding:40px 22px;}
+    @media(max-width:560px){ .stats{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+
+  <!-- ① ヒーロー -->
+  <section class="hero">
+    <span class="badge" id="hero-badge">After Effects × ショート動画</span>
+    <h1 id="hero-title">“なんか素人っぽい”を、<br><span class="pink">3秒で「お、プロだ」</span>に変える。</h1>
+    <p class="lead" id="hero-lead">
+      最後まで見られるショートには、共通する“動き”の作り方がある。<br>
+      テンプレ任せを卒業して、<span class="hl">自分で伸びる演出を作れる</span>AE講座。
+    </p>
+    <a href="#offer" class="cta" id="hero-cta">講座の詳細を見る</a>
+    <span class="cta-note">※ Brainで販売中／スマホでそのまま購入できます</span>
+  </section>
+
+  <!-- ② 共感・問題提起 -->
+  <section>
+    <h2 class="reveal">こんな悩み、ありませんか？</h2>
+    <p class="sec-sub reveal">ひとつでも当てはまるなら、この講座が役に立ちます。</p>
+    <ul class="pains reveal">
+      <li>テロップやモーションが、どうしても“垢抜けない”</li>
+      <li>編集に時間がかかりすぎて、量産できない</li>
+      <li>After Effectsを買ったけど、結局使いこなせていない</li>
+      <li>テンプレ素材頼みで、他の人と動画が似てしまう</li>
+      <li>途中で離脱される＝最後まで見てもらえない</li>
+    </ul>
+  </section>
+
+  <!-- ③ 実績（スクロールでカウントアップ）※数字は要差し替え -->
+  <section>
+    <h2 class="reveal">数字で見る実績</h2>
+    <p class="sec-sub reveal">※下記はサンプル値です。あなたの実数に差し替えてください。</p>
+    <div class="stats">
+      <!-- 差し替え: data-to にあなたの実数を入れる -->
+      <div class="stat-box reveal"><span class="stat" data-to="1200">0</span><span class="stat-label">累計再生（万回）</span></div>
+      <div class="stat-box reveal"><span class="stat" data-to="380">0</span><span class="stat-label">受講者数（名）</span></div>
+      <div class="stat-box reveal"><span class="stat" data-to="96">0</span><span class="stat-label">満足度（%）</span></div>
+    </div>
+  </section>
+
+  <!-- ④ 得られる未来（ベネフィット） -->
+  <section>
+    <h2 class="reveal">この講座を終えたあなたは</h2>
+    <ul class="pains reveal" id="benefits">
+      <li>「最後まで見られる」ショートの“動きの原則”が分かる</li>
+      <li>テロップ・トランジションを自分で設計できる</li>
+      <li>テンプレ／プリセット化で編集時間を大幅短縮</li>
+      <li>案件や量産にも耐えるワークフローが手に入る</li>
+    </ul>
+  </section>
+
+  <!-- ⑤ カリキュラム（時間差出現） -->
+  <section>
+    <h2 class="reveal">カリキュラム</h2>
+    <p class="sec-sub reveal">【差し替え：実際の章立て・本数に合わせて編集】</p>
+    <div class="curriculum" id="curriculum">
+      <div class="lesson"><div class="no">1</div><div><h3>ショートで伸びる「動き」の原則</h3><p>なぜその演出が最後まで見られるのか。再現できる形で分解。</p></div></div>
+      <div class="lesson"><div class="no">2</div><div><h3>テロップアニメーション 基礎→応用</h3><p>読みやすく・止まらない字幕の動きの作り方。</p></div></div>
+      <div class="lesson"><div class="no">3</div><div><h3>リテンションを上げる転換・トランジション</h3><p>離脱を防ぐ“つなぎ”の設計。</p></div></div>
+      <div class="lesson"><div class="no">4</div><div><h3>時短のためのテンプレ／プリセット運用</h3><p>一度作って使い回す、量産の仕組み化。</p></div></div>
+      <div class="lesson"><div class="no">5</div><div><h3>案件・量産に耐えるワークフロー</h3><p>命名・整理・書き出しまで含めた実務の流れ。</p></div></div>
+    </div>
+  </section>
+
+  <!-- ⑥ 特典 -->
+  <section>
+    <div class="bonus reveal">
+      <h2>購入者限定特典</h2>
+      <p class="sec-sub">【差し替え：実際の特典に合わせて編集】</p>
+      <ul>
+        <li>すぐ使えるテロップ／トランジションのプリセット集</li>
+        <li>本編で使うAEテンプレートファイル一式</li>
+        <li>質問できるコミュニティ／サポート</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ⑦ 講師紹介 ※差し替え -->
+  <section>
+    <h2 class="reveal">講師について</h2>
+    <p class="lead reveal">【差し替え：あなたのプロフィール。実績・担当案件・SNSなど。
+      “なぜあなたから学ぶ価値があるのか”を一段落で。】</p>
+  </section>
+
+  <!-- ⑧ オファー（価格） -->
+  <section id="offer">
+    <div class="price-card reveal">
+      <h2>受講料</h2>
+      <p class="sec-sub">【差し替え：価格・人数限定・販売期間など】</p>
+      <!-- 差し替え: data-to に実売価格、price-strike に定価 -->
+      <p><span class="price-strike">通常 ¥19,800</span></p>
+      <p class="price">¥<span id="price-num" data-to="9800">0</span><small>（税込）</small></p>
+      <a href="#" class="cta" id="offer-cta" style="margin-top:18px;">Brainで申し込む</a>
+      <span class="cta-note">※ ボタンのリンク先を、あなたのBrain商品URLに差し替えてください</span>
+    </div>
+  </section>
+
+  <!-- ⑨ FAQ -->
+  <section>
+    <h2 class="reveal">よくある質問</h2>
+    <div class="faq reveal">
+      <details><summary>After Effects初心者でも大丈夫ですか？</summary><p>【差し替え：対象レベルの回答】</p></details>
+      <details><summary>必要なソフト・環境は？</summary><p>【差し替え：AEのバージョン・PC要件など】</p></details>
+      <details><summary>視聴期限はありますか？</summary><p>【差し替え：視聴方法・期限】</p></details>
+      <details><summary>質問はできますか？</summary><p>【差し替え：サポート範囲】</p></details>
+    </div>
+  </section>
+
+  <!-- ⑩ 最終CTA -->
+  <section style="text-align:center;">
+    <h2 class="reveal">“伸びる動き”を、今日から自分の手で。</h2>
+    <p class="lead reveal">テンプレ任せを卒業する一歩を。</p>
+    <a href="#" class="cta" id="final-cta">Brainで申し込む</a>
+  </section>
+
+  <p class="foot">© 【差し替え：あなたの名前／屋号】</p>
+
+  <!-- anime.js 本体 + 共通プリセット -->
+  <script src="https://cdn.jsdelivr.net/npm/animejs@4.4.1/dist/bundles/anime.umd.min.js"></script>
+  <script src="../lib/animations.js"></script>
+  <script>
+    // ヒーローを時間差で出現
+    AP.fadeInUp('#hero-badge');
+    AP.fadeInUp('#hero-title', { delay: 120 });
+    AP.fadeInUp('#hero-lead',  { delay: 240 });
+    AP.fadeInUp('#hero-cta',   { delay: 360 });
+
+    // 各セクションをスクロールで出現
+    AP.onScroll('.reveal');
+
+    // 実績数字・価格はスクロールで入ったらカウントアップ
+    AP.onScroll('.stat', (el) => AP.countUp(el));
+    AP.onScroll('#price-num', (el) => AP.countUp(el, Number(el.dataset.to)));
+
+    // 悩み・ベネフィット・カリキュラムは時間差で
+    AP.onScroll('#benefits',   (el) => AP.staggerReveal(el.children, { each: 90 }));
+    AP.onScroll('#curriculum', (el) => AP.staggerReveal(el.children, { each: 90 }));
+
+    // 最終CTAは常時ゆっくり脈打つ
+    AP.pulse('#final-cta');
+  </script>
+</body>
+</html>
