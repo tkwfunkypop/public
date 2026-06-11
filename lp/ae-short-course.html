@@ -47,8 +47,25 @@
       background:radial-gradient(120% 80% at 50% 30%,transparent 55%,rgba(0,0,0,.55) 100%);
     }
 
-    .wrap{max-width:1080px;margin:0 auto;padding:0 28px;}
-    section{padding:96px 0;position:relative;}
+    .wrap{max-width:1080px;margin:0 auto;padding:0 28px;position:relative;z-index:1;}
+    section{padding:96px 0;position:relative;overflow:hidden;}
+
+    /* ── 背景：漂うアンビエント光（常時ゆっくり動く） ── */
+    .bg-fx{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;}
+    .glow{position:absolute;border-radius:50%;filter:blur(90px);will-change:transform;}
+    .glow.g1{width:50vw;height:50vw;left:-12vw;top:-8vw;
+      background:radial-gradient(closest-side,rgba(255,106,61,.45),transparent 70%);}
+    .glow.g2{width:44vw;height:44vw;right:-14vw;top:42vh;
+      background:radial-gradient(closest-side,rgba(74,150,255,.26),transparent 70%);}
+    .glow.g3{width:38vw;height:38vw;left:22vw;bottom:-12vh;
+      background:radial-gradient(closest-side,rgba(255,106,61,.20),transparent 70%);}
+
+    /* ── 巨大ゴースト数字（スクロールで視差移動） ── */
+    .ghost-num{position:absolute;font-family:"Space Grotesk",sans-serif;font-weight:700;
+      font-size:clamp(120px,28vw,380px);line-height:1;letter-spacing:-.04em;
+      color:rgba(236,232,224,.035);pointer-events:none;z-index:0;will-change:transform;user-select:none;}
+    .ghost-num.r{right:-2vw;top:-6vh;}
+    .ghost-num.l{left:-2vw;bottom:-10vh;}
 
     /* 見出し系タイポ */
     h1,h2,h3{font-weight:900;letter-spacing:-.01em;}
@@ -168,8 +185,16 @@
 </head>
 <body>
 
+  <!-- 背景：漂うアンビエント光（常時ゆっくり動く） -->
+  <div class="bg-fx" aria-hidden="true">
+    <div class="glow g1"></div>
+    <div class="glow g2"></div>
+    <div class="glow g3"></div>
+  </div>
+
   <!-- ① ヒーロー -->
   <header class="hero">
+    <div class="ghost-num r" data-speed="-0.18" aria-hidden="true">AE</div>
     <div class="wrap">
       <p class="kicker" id="hero-kicker">After Effects × Short Video</p>
       <h1 class="display" id="hero-title">“なんか素人っぽい”を、<br><span class="accent">3秒で</span>消す。</h1>
@@ -192,6 +217,7 @@
 
   <!-- ② 共感・問題提起 -->
   <section>
+    <div class="ghost-num r" data-speed="-0.12" aria-hidden="true">01</div>
     <div class="wrap">
       <p class="eyebrow"><span class="idx">01</span> The Problem</p>
       <h2 class="reveal">こんな悩み、<br>抱えていませんか。</h2>
@@ -236,6 +262,7 @@
 
   <!-- ⑤ カリキュラム -->
   <section id="curriculum">
+    <div class="ghost-num l" data-speed="-0.12" aria-hidden="true">04</div>
     <div class="wrap">
       <p class="eyebrow"><span class="idx">04</span> Curriculum</p>
       <h2 class="reveal">カリキュラム</h2>
@@ -321,6 +348,14 @@
   <script src="https://cdn.jsdelivr.net/npm/animejs@4.4.1/dist/bundles/anime.umd.min.js"></script>
   <script src="../lib/animations.js"></script>
   <script>
+    // 背景の光をそれぞれ違う速さ・向きでゆっくり漂わせる（常時モーション）
+    AP.drift('.glow.g1', { x: 50,  y: -34, scale: 1.18, duration: 12000 });
+    AP.drift('.glow.g2', { x: -60, y: 44,  scale: 1.22, duration: 15000 });
+    AP.drift('.glow.g3', { x: 36,  y: -22, scale: 1.12, duration: 9500 });
+
+    // 巨大ゴースト数字をスクロール視差で動かす（奥行き）
+    AP.parallax('.ghost-num');
+
     // ヒーローを映画的にゆっくり時間差で出現
     const slow = { duration: 950, ease: 'out(3)' };
     AP.fadeInUp('#hero-kicker', slow);
