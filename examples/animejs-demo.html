@@ -16,7 +16,7 @@
     .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
     .card {
       background: var(--card); border-radius: 14px; padding: 20px;
-      border: 1px solid #2a2d4a;
+      border: 1px solid #2a2d4a; overflow: hidden;
     }
     .card h2 { font-size: 15px; margin: 0 0 14px; color: var(--accent2); }
     .stage { height: 120px; position: relative; display: flex; align-items: center; }
@@ -31,7 +31,7 @@
            background: linear-gradient(135deg, var(--accent), var(--accent2)); }
 
     /* 2. stagger grid */
-    .dots { display: grid; grid-template-columns: repeat(8, 1fr); gap: 6px; width: 100%; }
+    .dots { display: grid; grid-template-columns: repeat(8, 22px); gap: 6px; justify-content: center; width: 100%; }
     .dot { aspect-ratio: 1; border-radius: 4px; background: var(--accent); }
 
     /* 3. counter */
