@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' 'unsafe-inline' 'unsafe-eval'; img-src 'self' data:;" />
+  <title>Anime.js Sample</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div id="head">
+      <h1>Anime.js × After Effects</h1>
+      <p class="sub">CEPパネルのUIをanime.jsで動かすサンプル</p>
+    </div>
+
+    <!-- コンポ情報 -->
+    <div class="card" id="info-card">
+      <h2>アクティブコンポ情報</h2>
+      <div class="info-grid">
+        <div class="comp-name" id="comp-name">―</div>
+        <div>
+          <div class="num"><span id="layer-count" data-to="0">0</span></div>
+          <div class="lbl">レイヤー数</div>
+        </div>
+        <div>
+          <div class="num"><span id="duration" data-to="0">0</span><span style="font-size:13px">秒</span></div>
+          <div class="lbl">尺</div>
+        </div>
+      </div>
+      <button id="btn-info">コンポ情報を取得</button>
+    </div>
+
+    <!-- テキストレイヤー追加 -->
+    <div class="card" id="add-card">
+      <h2>テキストレイヤーを追加</h2>
+      <input class="field" id="text-input" type="text" value="Hello anime.js" />
+      <button id="btn-add" class="secondary">アクティブコンポに追加</button>
+    </div>
+
+    <div class="status" id="status"></div>
+  </div>
+
+  <!-- anime.js本体 → プリセット → CEPヘルパー → パネルロジック -->
+  <script src="./lib/anime.umd.min.js"></script>
+  <script src="./lib/animations.js"></script>
+  <script src="./js/cep.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

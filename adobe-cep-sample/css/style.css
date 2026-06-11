@@ -1,0 +1,50 @@
+:root {
+  --bg: #2b2b2b;        /* AEのパネルに馴染むダークグレー */
+  --panel: #383838;
+  --line: #4a4a4a;
+  --fg: #e6e6e6;
+  --muted: #9a9a9a;
+  --accent: #7c5cff;
+  --accent2: #36d6c3;
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0; height: 100%;
+  background: var(--bg); color: var(--fg);
+  font-family: "Segoe UI", system-ui, -apple-system, "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 13px; user-select: none;
+}
+.wrap { padding: 14px; }
+
+h1 { font-size: 14px; margin: 0 0 2px; letter-spacing: .02em; }
+.sub { color: var(--muted); font-size: 11px; margin: 0 0 14px; }
+
+.card {
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: 8px; padding: 14px; margin-bottom: 12px;
+}
+.card h2 { font-size: 11px; color: var(--accent2); margin: 0 0 10px; text-transform: uppercase; letter-spacing: .06em; }
+
+/* 情報グリッド */
+.info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 12px; }
+.info-grid .num { font-size: 26px; font-weight: 700; color: var(--accent2); font-variant-numeric: tabular-nums; line-height: 1; }
+.info-grid .lbl { font-size: 10px; color: var(--muted); margin-top: 2px; }
+.comp-name { grid-column: 1 / -1; font-size: 13px; color: var(--fg); font-weight: 600;
+             white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* ボタン */
+button {
+  width: 100%; border: none; border-radius: 6px; cursor: pointer;
+  padding: 10px 12px; font-size: 13px; font-weight: 600; color: #fff;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  margin-top: 8px;
+}
+button.secondary { background: #4a4a4a; color: var(--fg); }
+button:active { transform: translateY(1px); }
+
+.field { width: 100%; margin-top: 8px; padding: 8px 10px; border-radius: 6px;
+         border: 1px solid var(--line); background: #2b2b2b; color: var(--fg); font-size: 13px; }
+
+.status { font-size: 11px; color: var(--muted); margin-top: 10px; min-height: 14px; }
+.status.err { color: #ff7a7a; }
+.status.ok { color: var(--accent2); }
