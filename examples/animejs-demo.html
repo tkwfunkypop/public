@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anime.js デモ</title>
+  <style>
+    :root { --bg: #0f1020; --card: #1b1d33; --accent: #7c5cff; --accent2: #36d6c3; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: var(--bg); color: #e8e8f0; padding: 32px;
+    }
+    h1 { font-size: 22px; margin: 0 0 4px; }
+    p.lead { color: #9aa0c0; margin: 0 0 28px; }
+    .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .card {
+      background: var(--card); border-radius: 14px; padding: 20px;
+      border: 1px solid #2a2d4a;
+    }
+    .card h2 { font-size: 15px; margin: 0 0 14px; color: var(--accent2); }
+    .stage { height: 120px; position: relative; display: flex; align-items: center; }
+    button {
+      background: var(--accent); color: #fff; border: none; border-radius: 8px;
+      padding: 8px 14px; font-size: 13px; cursor: pointer; margin-top: 12px;
+    }
+    button:hover { filter: brightness(1.12); }
+
+    /* 1. box */
+    .box { width: 56px; height: 56px; border-radius: 12px;
+           background: linear-gradient(135deg, var(--accent), var(--accent2)); }
+
+    /* 2. stagger grid */
+    .dots { display: grid; grid-template-columns: repeat(8, 1fr); gap: 6px; width: 100%; }
+    .dot { aspect-ratio: 1; border-radius: 4px; background: var(--accent); }
+
+    /* 3. counter */
+    .counter { font-size: 48px; font-weight: 700; font-variant-numeric: tabular-nums;
+               color: var(--accent2); }
+
+    /* 4. svg */
+    svg { width: 120px; height: 120px; }
+    .path { fill: none; stroke: var(--accent2); stroke-width: 3; stroke-linecap: round; }
+  </style>
+</head>
+<body>
+  <h1>Anime.js デモ <span style="font-size:13px;color:#666">v4.4.1</span></h1>
+  <p class="lead">各カードのボタンを押すとアニメーションが再生されます。</p>
+
+  <div class="grid">
+    <!-- 1. 移動 + 回転 -->
+    <div class="card">
+      <h2>① 移動・回転・拡大</h2>
+      <div class="stage"><div class="box" id="box"></div></div>
+      <button data-demo="box">再生</button>
+    </div>
+
+    <!-- 2. スタッガー（波打つ） -->
+    <div class="card">
+      <h2>② スタッガー（時間差で連続再生）</h2>
+      <div class="stage"><div class="dots" id="dots"></div></div>
+      <button data-demo="dots">再生</button>
+    </div>
+
+    <!-- 3. カウントアップ -->
+    <div class="card">
+      <h2>③ 数字のカウントアップ</h2>
+      <div class="stage"><span class="counter" id="counter">0</span></div>
+      <button data-demo="counter">再生</button>
+    </div>
+
+    <!-- 4. SVG ライン描画 -->
+    <div class="card">
+      <h2>④ SVG の線を描く</h2>
+      <div class="stage" style="justify-content:center">
+        <svg viewBox="0 0 100 100">
+          <path class="path" id="check" d="M20 52 L42 74 L82 28" />
+        </svg>
+      </div>
+      <button data-demo="check">再生</button>
+    </div>
+  </div>
+
+  <!-- インストール済みのローカル UMD ビルドを使用 -->
+  <script src="../node_modules/animejs/dist/bundles/anime.umd.min.js"></script>
+  <script>
+    const { animate, stagger, svg } = anime;
+
+    const demos = {
+      box() {
+        animate('#box', {
+          translateX: [0, 200, 0],
+          rotate: 360,
+          scale: [1, 1.4, 1],
+          duration: 1400,
+          ease: 'inOutQuad',
+        });
+      },
+
+      dots() {
+        animate('.dot', {
+          scale: [1, 0.2, 1],
+          opacity: [1, 0.3, 1],
+          delay: stagger(40, { grid: [8, 4], from: 'center' }),
+          duration: 700,
+          ease: 'inOutSine',
+        });
+      },
+
+      counter() {
+        const el = document.querySelector('#counter');
+        const obj = { n: 0 };
+        animate(obj, {
+          n: 1280,
+          duration: 1600,
+          ease: 'outExpo',
+          onUpdate: () => { el.textContent = Math.round(obj.n).toLocaleString(); },
+        });
+      },
+
+      check() {
+        const [drawable] = svg.createDrawable('#check');
+        animate(drawable, {
+          draw: ['0 0', '0 1'],
+          duration: 900,
+          ease: 'inOutQuad',
+        });
+      },
+    };
+
+    // スタッガー用の点を生成
+    const dots = document.querySelector('#dots');
+    for (let i = 0; i < 32; i++) {
+      const d = document.createElement('div');
+      d.className = 'dot';
+      dots.appendChild(d);
+    }
+
+    document.querySelectorAll('button[data-demo]').forEach((btn) => {
+      btn.addEventListener('click', () => demos[btn.dataset.demo]());
+    });
+
+    // 読み込み時に一度だけ自動再生
+    window.addEventListener('load', () => demos.box());
+  </script>
+</body>
+</html>
