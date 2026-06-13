@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200">
+<title>AE講座 - なぜ今AEなのか</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1200px;
+    height: 630px;
+    background: #0a0a0a;
+    font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Yu Gothic', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .card {
+    width: 1200px;
+    height: 630px;
+    background: #0f0f0f;
+    position: relative;
+    display: flex;
+    padding: 48px 64px;
+    gap: 52px;
+    align-items: center;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 6px;
+    background: linear-gradient(180deg, #f97316 0%, #ea580c 100%);
+  }
+
+  .card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(249,115,22,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(249,115,22,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+  }
+
+  /* 左パネル */
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    z-index: 1;
+  }
+
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(249,115,22,0.12);
+    border: 1px solid rgba(249,115,22,0.3);
+    color: #f97316;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    padding: 6px 16px;
+    border-radius: 4px;
+    width: fit-content;
+  }
+
+  .main-question {
+    font-size: 13px;
+    color: #6b7280;
+    line-height: 1.7;
+    font-style: italic;
+  }
+
+  .main-question span {
+    color: #9ca3af;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  /* キーインサイトボックス */
+  .insight-box {
+    background: linear-gradient(135deg, rgba(249,115,22,0.1) 0%, rgba(234,88,12,0.04) 100%);
+    border: 1px solid rgba(249,115,22,0.25);
+    border-radius: 12px;
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .insight-flow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .flow-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+  }
+
+  .flow-label {
+    font-size: 11px;
+    color: #6b7280;
+    letter-spacing: 0.08em;
+  }
+
+  .flow-box {
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  .flow-box.ai {
+    background: rgba(139,92,246,0.15);
+    border: 1px solid rgba(139,92,246,0.3);
+    color: #a78bfa;
+  }
+
+  .flow-box.ae {
+    background: rgba(249,115,22,0.15);
+    border: 1px solid rgba(249,115,22,0.3);
+    color: #f97316;
+  }
+
+  .flow-arrow {
+    font-size: 20px;
+    color: #374151;
+    margin-top: 12px;
+  }
+
+  .insight-text {
+    font-size: 15px;
+    font-weight: 800;
+    color: #f9fafb;
+    line-height: 1.6;
+  }
+
+  .insight-text span {
+    color: #f97316;
+  }
+
+  .insight-sub {
+    font-size: 13px;
+    color: #9ca3af;
+    line-height: 1.6;
+  }
+
+  /* 底の一言 */
+  .bottom-line {
+    padding: 14px 18px;
+    background: rgba(255,255,255,0.03);
+    border-left: 3px solid #f97316;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .bottom-line p {
+    font-size: 14px;
+    color: #d1d5db;
+    line-height: 1.7;
+  }
+
+  .bottom-line strong {
+    color: #f97316;
+  }
+
+  /* 右パネル */
+  .right {
+    width: 400px;
+    flex-shrink: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .right-header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .right-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #6b7280;
+    letter-spacing: 0.12em;
+  }
+
+  .right-title {
+    font-size: 16px;
+    font-weight: 900;
+    color: #e5e7eb;
+    line-height: 1.5;
+  }
+
+  /* AI素材だけの動画の問題点リスト */
+  .problem-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .problem-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: rgba(239,68,68,0.05);
+    border: 1px solid rgba(239,68,68,0.12);
+    border-radius: 8px;
+  }
+
+  .prob-icon {
+    width: 22px;
+    height: 22px;
+    background: rgba(239,68,68,0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 800;
+    color: #ef4444;
+    flex-shrink: 0;
+  }
+
+  .prob-text {
+    font-size: 14px;
+    color: #9ca3af;
+    font-weight: 600;
+  }
+
+  /* AEで解決 */
+  .solution-box {
+    background: linear-gradient(135deg, rgba(249,115,22,0.12) 0%, rgba(234,88,12,0.06) 100%);
+    border: 1px solid rgba(249,115,22,0.25);
+    border-radius: 10px;
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .solution-label {
+    font-size: 11px;
+    color: #f97316;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+  }
+
+  .solution-text {
+    font-size: 16px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.5;
+  }
+
+  .solution-text span {
+    color: #f97316;
+  }
+
+  .solution-sub {
+    font-size: 12px;
+    color: #9ca3af;
+    line-height: 1.5;
+    margin-top: 2px;
+  }
+
+  /* 装飾 */
+  .deco-circle {
+    position: absolute;
+    bottom: -80px;
+    right: -80px;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(249,115,22,0.07) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .deco-circle2 {
+    position: absolute;
+    top: -60px;
+    left: 200px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(139,92,246,0.05) 0%, transparent 70%);
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+
+  <div class="left">
+    <div class="tag">◾ なぜ、いまさら After Effects なのか</div>
+
+    <div class="main-question">
+      <span>「AIの時代にAE？しかもショートで？」</span><br>
+      そう思った人ほど、聞いてほしい。
+    </div>
+
+    <div class="insight-box">
+      <div class="insight-flow">
+        <div class="flow-item">
+          <div class="flow-label">AI時代に</div>
+          <div class="flow-box ai">素材を作れる人</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-item">
+          <div class="flow-label">希少価値が上がった</div>
+          <div class="flow-box ae">作品に仕上げられる人</div>
+        </div>
+      </div>
+      <div class="insight-text">
+        AI素材が無限に作れる時代だからこそ、<br><span>「仕上げる力」の差が開いた。</span>
+      </div>
+      <div class="insight-sub">
+        「素材を作れる人」が増えたことで、作品に仕上げられる人の希少価値が上がった。
+      </div>
+    </div>
+
+    <div class="bottom-line">
+      <p>AI素材を「<strong>仕事として出せる映像</strong>」に変える最後の工程——<br>
+      それがまさに<strong>AEの領域</strong>です。</p>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="right-header">
+      <div class="right-label">AI素材そのまま投稿した動画</div>
+      <div class="right-title">「どこか安っぽい」の正体</div>
+    </div>
+
+    <div class="problem-list">
+      <div class="problem-item">
+        <div class="prob-icon">✕</div>
+        <div class="prob-text">文字が乗ってない</div>
+      </div>
+      <div class="problem-item">
+        <div class="prob-icon">✕</div>
+        <div class="prob-text">動きがない</div>
+      </div>
+      <div class="problem-item">
+        <div class="prob-icon">✕</div>
+        <div class="prob-text">テンポが合ってない</div>
+      </div>
+    </div>
+
+    <div class="solution-box">
+      <div class="solution-label">AEで解決できること</div>
+      <div class="solution-text">
+        <span>テキスト・モーション・テンポ</span>——<br>
+        全部まとめて、仕上げる。
+      </div>
+      <div class="solution-sub">
+        これが「仕事として出せる映像」と「素材の垂れ流し」の分かれ目。
+      </div>
+    </div>
+  </div>
+
+  <div class="deco-circle"></div>
+  <div class="deco-circle2"></div>
+</div>
+</body>
+</html>
