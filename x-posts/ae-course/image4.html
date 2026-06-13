@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200">
+<title>AE講座 - 買い切り・全部入り</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1200px;
+    height: 630px;
+    background: #0a0a0a;
+    font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Yu Gothic', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .card {
+    width: 1200px;
+    height: 630px;
+    background: #0f0f0f;
+    position: relative;
+    display: flex;
+    padding: 48px 60px;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 6px;
+    background: linear-gradient(180deg, #f97316 0%, #ea580c 100%);
+  }
+
+  .card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(249,115,22,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(249,115,22,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+  }
+
+  /* 左パネル */
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 1;
+  }
+
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(249,115,22,0.12);
+    border: 1px solid rgba(249,115,22,0.3);
+    color: #f97316;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 6px 16px;
+    border-radius: 4px;
+    width: fit-content;
+  }
+
+  .title {
+    font-size: 28px;
+    font-weight: 900;
+    color: #f9fafb;
+    line-height: 1.4;
+  }
+
+  .title span { color: #f97316; }
+
+  .tempo-note {
+    font-size: 14px;
+    color: #9ca3af;
+    line-height: 1.8;
+    padding: 12px 18px;
+    background: rgba(255,255,255,0.03);
+    border-left: 3px solid #374151;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .tempo-note strong { color: #e5e7eb; }
+
+  /* スクリプト2本 ハイライト */
+  .scripts-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .scripts-label {
+    font-size: 12px;
+    color: #f97316;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+  }
+
+  .scripts-row {
+    display: flex;
+    gap: 10px;
+  }
+
+  .script-card {
+    flex: 1;
+    background: rgba(249,115,22,0.08);
+    border: 1px solid rgba(249,115,22,0.2);
+    border-radius: 8px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .script-name {
+    font-size: 16px;
+    font-weight: 900;
+    color: #f97316;
+    letter-spacing: 0.03em;
+  }
+
+  .script-desc {
+    font-size: 12px;
+    color: #9ca3af;
+    line-height: 1.5;
+  }
+
+  .windows-note {
+    font-size: 11px;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-top: 2px;
+  }
+
+  /* 右パネル */
+  .right {
+    width: 420px;
+    flex-shrink: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .right-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #f97316;
+    letter-spacing: 0.15em;
+  }
+
+  .value-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .value-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 8px;
+  }
+
+  .value-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    background: rgba(249,115,22,0.12);
+    border: 1px solid rgba(249,115,22,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+
+  .value-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .value-main {
+    font-size: 14px;
+    font-weight: 800;
+    color: #f9fafb;
+  }
+
+  .value-sub {
+    font-size: 12px;
+    color: #6b7280;
+  }
+
+  .value-highlight {
+    border-color: rgba(249,115,22,0.25);
+    background: rgba(249,115,22,0.06);
+  }
+
+  .value-highlight .value-main {
+    color: #f97316;
+  }
+
+  /* 永久アクセス強調 */
+  .forever-box {
+    background: linear-gradient(135deg, rgba(249,115,22,0.12) 0%, rgba(234,88,12,0.05) 100%);
+    border: 1px solid rgba(249,115,22,0.3);
+    border-radius: 10px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .forever-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+  }
+
+  .forever-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .forever-main {
+    font-size: 18px;
+    font-weight: 900;
+    color: #f9fafb;
+  }
+
+  .forever-main span { color: #f97316; }
+
+  .forever-sub {
+    font-size: 12px;
+    color: #9ca3af;
+    line-height: 1.5;
+  }
+
+  /* 装飾 */
+  .deco-circle {
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(249,115,22,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+
+  <div class="left">
+    <div class="tag">◾ 買い切り・視聴期限なし・全部入り</div>
+
+    <div class="title">
+      1ヶ月で駆け抜けても、<br>辞書として<span>何度でも戻れる。</span>
+    </div>
+
+    <div class="tempo-note">
+      <strong>自分のペースでいい。</strong><br>
+      詰まった案件があるたびに戻ってきてください。何度見ても追加料金はゼロ。
+    </div>
+
+    <div class="scripts-wrap">
+      <div class="scripts-label">オリジナルスクリプト 2本 ── 実案件から生まれたツール</div>
+      <div class="scripts-row">
+        <div class="script-card">
+          <div class="script-name">NeoUtility</div>
+          <div class="script-desc">実案件をこなす中で「これが必要だ」と感じた機能を詰め込んだ作業効率化スクリプト</div>
+        </div>
+        <div class="script-card">
+          <div class="script-name">BoxedMaker</div>
+          <div class="script-desc">「これがあれば便利だ」の積み上げ。映像クオリティを爆上げする専用スクリプト</div>
+        </div>
+      </div>
+      <div class="windows-note">※ Windows環境では正常に動作しない可能性があります（動作確認はMacのみ）</div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="right-label">この価格に入っているもの、全部</div>
+
+    <div class="value-stack">
+      <div class="value-item">
+        <div class="value-icon">📹</div>
+        <div class="value-text">
+          <div class="value-main">本編レッスン 全49本</div>
+          <div class="value-sub">教材と同じ動画素材もセット</div>
+        </div>
+      </div>
+      <div class="value-item">
+        <div class="value-icon">⚙️</div>
+        <div class="value-text">
+          <div class="value-main">オリジナルスクリプト 2本</div>
+          <div class="value-sub">NeoUtility / BoxedMaker（使い方解説付き）</div>
+        </div>
+      </div>
+      <div class="value-item value-highlight">
+        <div class="value-icon">💬</div>
+        <div class="value-text">
+          <div class="value-main">あなたの1本への直接フィードバック</div>
+          <div class="value-sub">スクールなら個別メニューで別料金になる部分</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="forever-box">
+      <div class="forever-icon">∞</div>
+      <div class="forever-text">
+        <div class="forever-main">視聴期限<span>なし</span>、買い切り</div>
+        <div class="forever-sub">何度でも・いつでも・自分のペースで。追加料金は永遠にゼロ。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="deco-circle"></div>
+</div>
+</body>
+</html>
