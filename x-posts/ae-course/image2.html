@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200">
+<title>AE講座 - フィードバック特典</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1200px;
+    height: 630px;
+    background: #0a0a0a;
+    font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Yu Gothic', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .card {
+    width: 1200px;
+    height: 630px;
+    background: #0f0f0f;
+    position: relative;
+    display: flex;
+    padding: 48px 64px;
+    gap: 52px;
+    align-items: center;
+  }
+
+  /* 左の装飾ライン */
+  .card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 6px;
+    background: linear-gradient(180deg, #f97316 0%, #ea580c 100%);
+  }
+
+  /* 背景グリッド */
+  .card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(249,115,22,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(249,115,22,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+  }
+
+  /* 左パネル */
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1;
+  }
+
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(249,115,22,0.12);
+    border: 1px solid rgba(249,115,22,0.3);
+    color: #f97316;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    padding: 6px 16px;
+    border-radius: 4px;
+    width: fit-content;
+  }
+
+  .lead {
+    font-size: 14px;
+    color: #9ca3af;
+    line-height: 1.8;
+  }
+
+  .lead strong {
+    color: #e5e7eb;
+  }
+
+  /* BIG QUOTE */
+  .big-quote {
+    background: linear-gradient(135deg, rgba(249,115,22,0.1) 0%, rgba(234,88,12,0.04) 100%);
+    border: 1px solid rgba(249,115,22,0.25);
+    border-radius: 12px;
+    padding: 22px 26px;
+    position: relative;
+  }
+
+  .big-quote::before {
+    content: '"';
+    position: absolute;
+    top: -12px;
+    left: 18px;
+    font-size: 64px;
+    color: rgba(249,115,22,0.3);
+    font-family: Georgia, serif;
+    line-height: 1;
+  }
+
+  .big-quote-text {
+    font-size: 24px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    padding-top: 8px;
+  }
+
+  .big-quote-text span {
+    color: #f97316;
+  }
+
+  .big-quote-sub {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #9ca3af;
+    line-height: 1.6;
+  }
+
+  .diff-point {
+    padding: 14px 18px;
+    background: rgba(255,255,255,0.03);
+    border-left: 3px solid #f97316;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .diff-point p {
+    font-size: 14px;
+    color: #d1d5db;
+    line-height: 1.7;
+  }
+
+  .diff-point strong {
+    color: #f9fafb;
+  }
+
+  /* 右パネル */
+  .right {
+    width: 400px;
+    flex-shrink: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .right-header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .right-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #f97316;
+    letter-spacing: 0.15em;
+  }
+
+  .right-title {
+    font-size: 18px;
+    font-weight: 900;
+    color: #f9fafb;
+    line-height: 1.4;
+  }
+
+  .conditions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .condition-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 16px;
+    background: rgba(249,115,22,0.05);
+    border: 1px solid rgba(249,115,22,0.15);
+    border-radius: 8px;
+  }
+
+  .cond-num {
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(135deg, #f97316, #ea580c);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 800;
+    color: #fff;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .cond-text {
+    font-size: 13px;
+    color: #d1d5db;
+    line-height: 1.6;
+  }
+
+  .cond-text strong {
+    color: #f9fafb;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+
+  .deadline-note {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+
+  .deadline-note p {
+    font-size: 13px;
+    color: #9ca3af;
+    line-height: 1.7;
+  }
+
+  .deadline-note strong {
+    color: #f97316;
+  }
+
+  .final-line {
+    background: linear-gradient(135deg, rgba(249,115,22,0.15) 0%, rgba(234,88,12,0.08) 100%);
+    border: 1px solid rgba(249,115,22,0.3);
+    border-radius: 8px;
+    padding: 14px 18px;
+    text-align: center;
+  }
+
+  .final-line p {
+    font-size: 14px;
+    font-weight: 800;
+    color: #f9fafb;
+    line-height: 1.6;
+  }
+
+  .final-line span {
+    color: #f97316;
+  }
+
+  /* 装飾 */
+  .deco-circle {
+    position: absolute;
+    top: -100px;
+    right: -60px;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(249,115,22,0.07) 0%, transparent 70%);
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="left">
+    <div class="tag">◾ ここまでやる教材はほぼ無い</div>
+
+    <div class="big-quote">
+      <div class="big-quote-text">
+        「作って、<span>見てもらって</span>、<br>直したか」
+      </div>
+      <div class="big-quote-sub">
+        伸びる人と伸びない人の差は、才能じゃない。これだけです。
+      </div>
+    </div>
+
+    <div class="diff-point">
+      <p>独学の一番の問題は、<strong>「自分の映像のどこが素人っぽいのか、自分では見えない」</strong>こと。<br>
+      現場でクライアントに納品してきた目線で、あなたの1本を見ます。</p>
+    </div>
+
+    <div class="lead">
+      売る側からすると<strong>一番手間がかかる</strong>から、ここまでやる買い切り教材はほぼ無い。
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="right-header">
+      <div class="right-label">フィードバック特典 — 条件は3つだけ</div>
+      <div class="right-title">プロの目で、あなたの1本を見る</div>
+    </div>
+
+    <div class="conditions">
+      <div class="condition-item">
+        <div class="cond-num">1</div>
+        <div class="cond-text">
+          <strong>提出は1人1作品まで</strong>
+          いま出せる渾身の1本を持ってきてください
+        </div>
+      </div>
+      <div class="condition-item">
+        <div class="cond-num">2</div>
+        <div class="cond-text">
+          <strong>提出期限：購入から1ヶ月以内</strong>
+          期限がないと、人は完成させないから
+        </div>
+      </div>
+      <div class="condition-item">
+        <div class="cond-num">3</div>
+        <div class="cond-text">
+          <strong>フィードバックは公式LINEで</strong>
+          画面収録またはテキストで返します
+        </div>
+      </div>
+    </div>
+
+    <div class="final-line">
+      <p>1ヶ月以内に1本完成させて、<br><span>プロのフィードバックまで受け取る。</span><br>ここまでやって「受講した」ことになります。</p>
+    </div>
+  </div>
+
+  <div class="deco-circle"></div>
+</div>
+</body>
+</html>

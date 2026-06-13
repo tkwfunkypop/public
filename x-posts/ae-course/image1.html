@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200">
+<title>AE課座 - 違うところ</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1200px;
+    height: 630px;
+    background: #0a0a0a;
+    font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Yu Gothic', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .card {
+    width: 1200px;
+    height: 630px;
+    background: #0f0f0f;
+    position: relative;
+    display: flex;
+    padding: 52px 64px;
+    gap: 48px;
+    align-items: center;
+  }
+
+  /* 左の装飾ライン */
+  .card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 6px;
+    background: linear-gradient(180deg, #f97316 0%, #ea580c 100%);
+  }
+
+  /* 背景グリッド */
+  .card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(249,115,22,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(249,115,22,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+  }
+
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    z-index: 1;
+  }
+
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(249,115,22,0.12);
+    border: 1px solid rgba(249,115,22,0.3);
+    color: #f97316;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    padding: 6px 16px;
+    border-radius: 4px;
+    width: fit-content;
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+  }
+
+  .title span {
+    color: #f97316;
+  }
+
+  .types {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 4px;
+  }
+
+  .type-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+  }
+
+  .type-item.bad {
+    background: rgba(255,255,255,0.03);
+    border-color: rgba(255,255,255,0.07);
+  }
+
+  .type-item.good {
+    background: rgba(249,115,22,0.08);
+    border-color: rgba(249,115,22,0.25);
+  }
+
+  .type-icon {
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 800;
+    margin-top: 1px;
+  }
+
+  .type-icon.bad-icon {
+    background: rgba(239,68,68,0.15);
+    color: #ef4444;
+  }
+
+  .type-icon.good-icon {
+    background: rgba(249,115,22,0.2);
+    color: #f97316;
+  }
+
+  .type-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .type-name {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+
+  .type-item.bad .type-name { color: #6b7280; }
+  .type-item.good .type-name { color: #f97316; }
+
+  .type-desc {
+    font-size: 13px;
+    color: #6b7280;
+    line-height: 1.5;
+  }
+
+  .type-item.good .type-desc { color: #9ca3af; }
+
+  /* 右パネル */
+  .right {
+    width: 420px;
+    flex-shrink: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .right-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #f97316;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .quote-block {
+    background: rgba(249,115,22,0.06);
+    border-left: 3px solid #f97316;
+    padding: 18px 20px;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .quote-block p {
+    font-size: 15px;
+    color: #d1d5db;
+    line-height: 1.8;
+  }
+
+  .quote-block strong {
+    color: #f9fafb;
+  }
+
+  .outcome {
+    background: linear-gradient(135deg, rgba(249,115,22,0.12) 0%, rgba(234,88,12,0.06) 100%);
+    border: 1px solid rgba(249,115,22,0.2);
+    border-radius: 10px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .outcome-label {
+    font-size: 12px;
+    color: #f97316;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+
+  .outcome-text {
+    font-size: 18px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.5;
+  }
+
+  .outcome-text span {
+    color: #f97316;
+  }
+
+  .plugin-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 14px 16px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .plugin-note .icon {
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .plugin-note p {
+    font-size: 13px;
+    color: #9ca3af;
+    line-height: 1.6;
+  }
+
+  .plugin-note p strong {
+    color: #e5e7eb;
+  }
+
+  /* 右下の装飾 */
+  .deco-circle {
+    position: absolute;
+    bottom: -80px;
+    right: -80px;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(249,115,22,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="left">
+    <div class="tag">◾ この講座が違うところ</div>
+    <div class="title">
+      薄っぺらい教材と<br><span>ここが違う。</span>
+    </div>
+    <div class="types">
+      <div class="type-item bad">
+        <div class="type-icon bad-icon">✕</div>
+        <div class="type-text">
+          <div class="type-name">機能を上から順に説明する「辞書型」</div>
+          <div class="type-desc">操作は分かるが、作品にならない</div>
+        </div>
+      </div>
+      <div class="type-item bad">
+        <div class="type-icon bad-icon">✕</div>
+        <div class="type-text">
+          <div class="type-name">テンプレを配って終わる型</div>
+          <div class="type-desc">その場は作れるが、応用できない</div>
+        </div>
+      </div>
+      <div class="type-item good">
+        <div class="type-icon good-icon">◎</div>
+        <div class="type-text">
+          <div class="type-name">この講座がやるのは3つ目</div>
+          <div class="type-desc">完成作品から逆算して、操作と「判断基準」をセットで渡す</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="right-label">判断基準とは？</div>
+    <div class="quote-block">
+      <p>「<strong>なぜ0.3秒止めるのか</strong>」<br>「<strong>なぜこの文字は小さくていいのか</strong>」<br><br>判断基準が入ると、違う案件が来ても<strong>自分で答えを出せる</strong>。</p>
+    </div>
+    <div class="outcome">
+      <div class="outcome-label">この講座の出口</div>
+      <div class="outcome-text">
+        テンプレを買う側から、<br><span>テンプレを作れる側へ。</span>
+      </div>
+    </div>
+    <div class="plugin-note">
+      <div class="icon">⚡</div>
+      <p><strong>プラグイン・スクリプトまで解説</strong>。無料〜有料ツールで作業効率と映像クオリティを爆上げ。</p>
+    </div>
+  </div>
+
+  <div class="deco-circle"></div>
+</div>
+</body>
+</html>
