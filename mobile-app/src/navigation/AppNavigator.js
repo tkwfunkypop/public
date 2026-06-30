@@ -24,6 +24,12 @@ const NAV_THEME = {
     border: 'rgba(236,232,226,0.1)',
     notification: '#ff3b33',
   },
+  fonts: {
+    regular: { fontFamily: 'System', fontWeight: '400' },
+    medium: { fontFamily: 'System', fontWeight: '500' },
+    bold: { fontFamily: 'System', fontWeight: '700' },
+    heavy: { fontFamily: 'System', fontWeight: '900' },
+  },
 };
 
 const STACK_OPTS = {
