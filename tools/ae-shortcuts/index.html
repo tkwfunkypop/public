@@ -785,14 +785,18 @@ $list.addEventListener('click', e => {
     else startDemo(demoBtn, card.querySelector('.demo-stage'), kind);
     return;
   }
-  // カードの開閉
+  // カードの開閉（開いたらデモを自動再生）
   const head = e.target.closest('.ex-head');
   if (head) {
     const card = head.parentElement;
     const opening = !card.classList.contains('open');
     if (!opening && demo && card.contains(demo.stage)) stopDemo();
     card.classList.toggle('open');
-    if (opening) FX.fadeInUp(card.querySelector('.ex-body'), { duration: 300, translateY: [10, 0] });
+    if (opening) {
+      FX.fadeInUp(card.querySelector('.ex-body'), { duration: 300, translateY: [10, 0] });
+      const btn = card.querySelector('.demo-btn');
+      if (btn) startDemo(btn, card.querySelector('.demo-stage'), EXPRESSIONS[Number(card.dataset.i)].demo);
+    }
   }
 });
 
