@@ -3,7 +3,7 @@
    バージョンを上げると古いキャッシュは削除される。 */
 /* 注意: rawcdn.githack などディレクトリindexを返さないホストでも動くよう
    './' はプリキャッシュに入れない(入れると addAll が失敗しSWが有効化されない) */
-const CACHE = 'ae-cheatsheet-v3';
+const CACHE = 'ae-cheatsheet-v4';
 const ASSETS = [
   './index.html',
   './manifest.webmanifest',

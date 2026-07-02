@@ -318,7 +318,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 const FX = (typeof AP !== 'undefined' && AP) ? AP : { staggerReveal(){}, pop(){}, fadeInUp(){}, countUp(){} };
 
 /* ▼ アプリ情報（更新したらここと sw.js の CACHE を上げる） */
-const APP_VERSION = 'v1.1';
+const APP_VERSION = 'v1.2';
 const APP_DATE = '2026-07-02';
 
 /* ▼ 匿名アクセス集計（任意・既定OFF）
@@ -408,21 +408,21 @@ const SHORTCUTS = [
   { cat: 'キーフレーム', name: 'スケールのキーフレームを打つ', win: 'Alt+Shift+S', mac: 'Opt+S', desc: '大きさのキーを一発で打つ' },
   { cat: 'キーフレーム', name: '回転のキーフレームを打つ', win: 'Alt+Shift+R', mac: 'Opt+R', desc: '角度のキーを一発で打つ' },
   { cat: 'キーフレーム', name: '不透明度のキーフレームを打つ', win: 'Alt+Shift+T', mac: 'Opt+T', desc: '透け具合のキーを一発で打つ' },
-  { cat: 'キーフレーム', hot: 3, name: 'イージーイーズ', win: 'F9', mac: 'F9', desc: '動きの始まりと終わりをなめらかに。プロっぽさの第一歩' },
+  { cat: 'キーフレーム', hot: 3, name: 'イージーイーズ', win: 'F9', mac: 'F9', desc: '動きの始まりと終わりをなめらかに。プロっぽさの第一歩。Macで効かないときは Fn+F9' },
   { cat: 'キーフレーム', name: 'イージーイーズイン', win: 'Shift+F9', mac: 'Shift+F9', desc: '「到着」だけをなめらかにする' },
   { cat: 'キーフレーム', name: 'イージーイーズアウト', win: 'Ctrl+Shift+F9', mac: '⌘+Shift+F9', desc: '「出発」だけをなめらかにする' },
   { cat: 'キーフレーム', name: '前 / 次のキーフレームへ移動', win: 'J / K', mac: 'J / K', desc: '表示中のキーフレームの間をジャンプ移動' },
-  { cat: 'キーフレーム', name: 'グラフエディターを開く', win: 'Shift+F3', mac: 'Shift+F3', desc: '動きの速さをグラフで細かく調整する画面へ' },
+  { cat: 'キーフレーム', name: 'グラフエディターを開く', win: 'Shift+F3', mac: 'Shift+F3', desc: '動きの速さをグラフで細かく調整する画面へ。Macで効かないときは Fn も一緒に' },
 
   // --- 時間・タイムライン ---
   { cat: '時間移動', hot: 3, name: '再生 / 停止', win: 'Space', mac: 'Space', desc: 'プレビューの再生・停止' },
-  { cat: '時間移動', hot: 3, name: 'コンポの最初 / 最後へ', win: 'Home / End', mac: 'Home / End', desc: 'タイムラインの先頭・末尾へ一発ジャンプ' },
-  { cat: '時間移動', hot: 3, name: '1フレーム進む / 戻る', win: 'PageDown / PageUp', mac: 'PageDown / PageUp', desc: 'コマ送りで細かくチェック。Shift併用で10フレーム' },
+  { cat: '時間移動', hot: 3, name: 'コンポの最初 / 最後へ', win: 'Home / End', mac: 'Home / End', desc: 'タイムラインの先頭・末尾へ一発ジャンプ。Macノートは Fn+← / Fn+→' },
+  { cat: '時間移動', hot: 3, name: '1フレーム進む / 戻る', win: 'PageDown / PageUp', mac: 'PageDown / PageUp', desc: 'コマ送りで細かくチェック。Shift併用で10フレーム。Macノートは Fn+↓ / Fn+↑（⌘+→ / ⌘+← でも可）' },
   { cat: '時間移動', name: 'レイヤーのイン / アウト点へ', win: 'I / O', mac: 'I / O', desc: '選んだレイヤーの始まり・終わりへジャンプ' },
   { cat: '時間移動', hot: 3, name: 'イン / アウト点を現在時間へ移動', win: '[ / ]', mac: '[ / ]', desc: 'レイヤーの開始（終了）位置を再生ヘッドに合わせて動かす' },
   { cat: '時間移動', hot: 3, name: '現在時間でイン / アウトをトリム', win: 'Alt+[ / Alt+]', mac: 'Opt+[ / Opt+]', desc: '再生ヘッドの位置でレイヤーの前（後ろ）を切り落とす' },
   { cat: '時間移動', name: 'ワークエリアの開始 / 終了', win: 'B / N', mac: 'B / N', desc: 'プレビューする範囲のスタート・ゴールを決める' },
-  { cat: '時間移動', name: 'マーカーを打つ', win: '*（テンキー）', mac: '*（テンキー）', desc: '「ここ大事」の目印をタイムラインに付ける' },
+  { cat: '時間移動', name: 'マーカーを打つ', win: '*（テンキー）', mac: '*（テンキー）', desc: '「ここ大事」の目印を打つ。テンキーの無いノートPCはメニューの「レイヤー > マーカー」から' },
   { cat: '時間移動', hot: 1, name: '時間を指定してジャンプ', win: 'Alt+Shift+J', mac: 'Opt+Shift+J', desc: '「3秒ちょうどへ」など数字入力で移動' },
   { cat: '時間移動', name: 'タイムラインを拡大 / 縮小', win: '+ / -', mac: '+ / -', desc: 'タイムラインの目盛りをズームイン・アウト' },
 
@@ -517,7 +517,7 @@ const EXPRESSIONS = [
     kid: '<b>sin（サイン）は「なめらかな波」を作ってくれる数学の道具</b>。wiggleのランダムと違って、regular（規則正しく）ゆ〜らゆ〜らする。風船が浮かんでいる感じや、呼吸するようなふわふわに最適。time×の数字で速さ、最後の×の数字でふり幅が変わる。',
     combo: [
       'エフェクト「ドロップシャドウ」と合わせて、浮遊するキャラの影の距離も一緒に動かすとリアルな浮遊感に',
-      'スケールに <code>value + Math.sin(time*2)*3</code> で呼吸するようなふわふわ拡縮',
+      'スケールに <code>s = Math.sin(time*2)*3; value + [s, s]</code> で呼吸するようなふわふわ拡縮',
     ],
     demo: 'sin',
   },
@@ -548,7 +548,7 @@ const EXPRESSIONS = [
     tag: '値がはみ出さないように柵で囲う',
     kid: '<b>「どんなに大きくても50まで、小さくても0まで」と柵を作る</b>。wiggleで揺らしたら画面の外に飛び出しちゃった…というときに、行き過ぎをカットしてくれるストッパー。',
     combo: [
-      'wiggleを丸ごと包んで <code>clamp(wiggle(3, 100)[0], 0, 960)</code> のようにすると、揺れても画面から出ない',
+      '位置のwiggleと組み合わせるなら <code>w = wiggle(3, 100); [clamp(w[0], 0, 960), w[1]]</code> — 横方向だけ柵で止めて画面から出さない',
     ],
     demo: 'clamp',
   },
@@ -597,7 +597,7 @@ const EXPRESSIONS = [
   },
   {
     cat: '追いかけ・連動', hot: 3, name: 'sourceRectAtTime()', badge: '自動化',
-    code: '// テキストの幅に合わせて座布団の幅を変える\nt = thisComp.layer("テキスト");\nw = t.sourceRectAtTime().width;\n[w + 40, 80]',
+    code: '// 座布団シェイプの「長方形パス→サイズ」に貼る\nt = thisComp.layer("テキスト");\nw = t.sourceRectAtTime().width;\n[w + 40, 80]',
     tag: '文字の長さに合わせて背景の大きさを自動調整',
     kid: '<b>「あのレイヤーのいまの大きさ（幅と高さ）を教えて」</b>という意味。テロップの文字を打ちかえると、背景の座布団が自動でピッタリの幅に伸び縮みする。テロップ作りが一気に楽になる。',
     combo: [
