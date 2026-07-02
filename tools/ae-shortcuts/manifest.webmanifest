@@ -3,7 +3,7 @@
   "short_name": "AE早見帳",
   "description": "After Effectsのショートカットとエクスプレッションをスマホで検索できる早見帳",
   "lang": "ja",
-  "start_url": "./",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#14141c",

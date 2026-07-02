@@ -1,9 +1,10 @@
 /* AE早見帳 Service Worker
    一度読み込んだらオフラインでも起動できるようにする(アプリ配布用)。
    バージョンを上げると古いキャッシュは削除される。 */
-const CACHE = 'ae-cheatsheet-v1';
+/* 注意: rawcdn.githack などディレクトリindexを返さないホストでも動くよう
+   './' はプリキャッシュに入れない(入れると addAll が失敗しSWが有効化されない) */
+const CACHE = 'ae-cheatsheet-v2';
 const ASSETS = [
-  './',
   './index.html',
   './manifest.webmanifest',
   './anime.umd.min.js',
