@@ -30,6 +30,15 @@ https://rawcdn.githack.com/tkwfunkypop/public/<コミットSHA>/tools/ae-shortcu
 > **インストール方法**
 > - **iPhone (Safari)**: 共有ボタン →「ホーム画面に追加」
 > - **Android (Chrome)**: メニュー(⋮) →「ホーム画面に追加」（または表示される「インストール」）
+>
+> ※iPhoneは数週間使わないとオフライン用のデータが消えることがあります。
+> 　その場合もネットにつないで同じアイコンから開き直せば元どおり使えます。
+
+## アプリを更新したときにやること
+
+1. `index.html` の `APP_VERSION` / `APP_DATE` を上げる（フッターに表示され、案内が楽になる）
+2. `sw.js` の `CACHE` のバージョン番号を上げる（全員のキャッシュが次回起動時に入れ替わる）
+3. commit & push → 新しいSHAで配布URLを再発行（GitHub Pages運用なら不要）
 
 ## 更新も自動反映させたい場合（推奨・任意）
 
@@ -60,6 +69,20 @@ https://tkwfunkypop.github.io/public/tools/ae-shortcuts/
 
 ※ `../../lib/animations.js`（AP.* プリセット）を参照しているため、
 リポジトリ外に単体コピーして配布する場合はそのファイルも同梱すること。
+
+## アクセス集計を有効にする（任意・既定OFF）
+
+「講座生が何を検索してるか」「クイズの得点分布」を匿名で集計できる。
+
+1. [GoatCounter](https://www.goatcounter.com)（無料）でサイトを作成し、コードを決める（例: `aehayamicho`）
+2. `index.html` の `const GOATCOUNTER = '';` にそのコードを入れる
+3. 再配布。集計は `https://<コード>.goatcounter.com` のダッシュボードで見られる
+   - `/search/◯◯` = 検索された語 / `/quiz/モード/点数` = クイズ結果 / `/tab/◯◯` = タブ利用
+
+**有効化したら配布案内に次の一文を添えること:**
+
+> このアプリは改善のため、検索語などの利用状況を匿名で集計しています。
+> 個人を特定する情報は収集しません。
 
 ## 開発時のプレビュー
 

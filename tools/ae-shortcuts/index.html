@@ -92,8 +92,9 @@
     display: flex; max-width: 560px; margin: 0 auto; padding: 0 14px;
   }
   .tabs button {
-    flex: 1; background: none; border: 0; color: var(--sub);
-    font-size: 14px; font-weight: 700; padding: 10px 0 12px;
+    flex: 1 1 auto; background: none; border: 0; color: var(--sub);
+    font-size: 12.5px; font-weight: 700; padding: 10px 2px 12px;
+    white-space: nowrap;
     border-bottom: 3px solid transparent; cursor: pointer;
   }
   .tabs button.on { color: var(--text); border-bottom-color: var(--accent); }
@@ -199,6 +200,44 @@
     padding: 0 5px; font-weight: 600; vertical-align: 2px; margin-left: 2px;
   }
 
+  /* ===== お気に入り・カードリンク ===== */
+  .fav-btn {
+    background: none; border: 0; font-size: 19px; color: #4a4a68;
+    cursor: pointer; padding: 2px 4px; flex: none; line-height: 1;
+  }
+  .fav-btn.on { color: #ffd166; }
+  .link-btn {
+    position: absolute; top: 7px; right: 66px;
+    background: var(--card2); color: var(--sub);
+    border: 1px solid var(--line); border-radius: 8px;
+    font-size: 11px; font-weight: 700; padding: 4px 8px; cursor: pointer;
+  }
+  .link-btn.done { color: var(--accent2); border-color: var(--accent2); }
+
+  /* ===== クイズ ===== */
+  .quiz-hero { font-size: 20px; font-weight: 800; margin-bottom: 4px; }
+  .quiz-lead { color: var(--sub); font-size: 13px; margin: 0 0 6px; }
+  .quiz-prog { font-size: 11px; color: var(--sub); font-weight: 700; letter-spacing: .08em; margin-bottom: 6px; }
+  .quiz-q { font-size: 16px; font-weight: 800; margin: 4px 0 2px; }
+  .quiz-hint { color: var(--sub); font-size: 12px; margin-bottom: 8px; }
+  .quiz-choice {
+    display: flex; align-items: center; justify-content: center; gap: 4px; flex-wrap: wrap;
+    margin-top: 10px; padding: 13px 10px; border-radius: 12px;
+    background: var(--bg2); border: 1px solid var(--line);
+    font-size: 14px; font-weight: 700; cursor: pointer; text-align: center;
+  }
+  .quiz-choice.ok { border-color: #4ade80; background: rgba(74,222,128,.12); }
+  .quiz-choice.ng { border-color: #f87171; background: rgba(248,113,113,.12); opacity: .85; }
+  .quiz-mode-btn, .quiz-next {
+    display: block; width: 100%; margin-top: 10px; padding: 12px 0; border-radius: 12px;
+    background: var(--card2); border: 1px solid var(--kbd-line); color: var(--text);
+    font-size: 14px; font-weight: 800; cursor: pointer;
+  }
+  .quiz-next { background: var(--accent); border-color: var(--accent); color: #17142e; }
+  .quiz-result { text-align: center; padding: 10px 14px 16px; }
+  .quiz-score { font-size: 44px; font-weight: 800; color: var(--accent); margin: 6px 0 0; }
+  .quiz-msg { font-weight: 700; margin: 6px 0 14px; }
+
   .demo-wrap { margin-top: 4px; }
   .demo-stage {
     position: relative; height: 120px;
@@ -253,6 +292,7 @@
   <nav class="tabs" id="tabs">
     <button data-tab="shortcuts" class="on">⌨️ ショートカット</button>
     <button data-tab="expressions">✨ エクスプレッション</button>
+    <button data-tab="quiz">🎯 クイズ</button>
   </nav>
 </header>
 
@@ -275,7 +315,38 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 <script>
 /* UI演出は lib/animations.js の AP.* を使う。
    オフラインやCSPで anime.js が読めない環境でも一覧機能は使えるようにガード */
-const FX = (typeof AP !== 'undefined' && AP) ? AP : { staggerReveal(){}, pop(){}, fadeInUp(){} };
+const FX = (typeof AP !== 'undefined' && AP) ? AP : { staggerReveal(){}, pop(){}, fadeInUp(){}, countUp(){} };
+
+/* ▼ アプリ情報（更新したらここと sw.js の CACHE を上げる） */
+const APP_VERSION = 'v1.1';
+const APP_DATE = '2026-07-02';
+
+/* ▼ 匿名アクセス集計（任意・既定OFF）
+   GoatCounter (https://www.goatcounter.com) で無料サイトを作り、
+   そのコード（例: 'aehayamicho'）を入れると有効になる。
+   何が検索されたか・クイズの得点など「つまずきポイント」だけを匿名で数える。
+   有効化したら配布案内にプライバシーの一文を添えること（README参照） */
+const GOATCOUNTER = '';
+function track(path) {
+  if (!GOATCOUNTER) return;
+  try {
+    const url = `https://${GOATCOUNTER}.goatcounter.com/count?p=${encodeURIComponent(path)}`;
+    if (navigator.sendBeacon) navigator.sendBeacon(url);
+    else fetch(url, { mode: 'no-cors' }).catch(() => {});
+  } catch (e) { /* 集計失敗はアプリ動作に影響させない */ }
+}
+
+/* ▼ お気に入り（この端末のみに保存） */
+let favsInit = [];
+try { favsInit = JSON.parse(localStorage.getItem('aeh-favs') || '[]'); } catch (e) {}
+const FAVS = new Set(favsInit);
+function toggleFav(key) {
+  FAVS.has(key) ? FAVS.delete(key) : FAVS.add(key);
+  try { localStorage.setItem('aeh-favs', JSON.stringify([...FAVS])); } catch (e) {}
+}
+const attr = s => s.replace(/"/g, '&quot;');
+/* カード直リンク用のID（例: loopOut("cycle") → loopout-cycle） */
+const slugOf = n => n.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 
 /* =========================================================
    データ: ショートカット
@@ -555,12 +626,13 @@ const $osToggle = document.getElementById('osToggle');
 
 function cats() {
   const src = state.tab === 'shortcuts' ? SHORTCUTS : EXPRESSIONS;
-  return ['すべて', ...new Set(src.map(x => x.cat))];
+  return ['すべて', '★', ...new Set(src.map(x => x.cat))];
 }
 
 function renderChips() {
+  if (state.tab === 'quiz') { $chips.innerHTML = ''; return; }
   $chips.innerHTML = cats().map(c =>
-    `<button data-cat="${c}" class="${c === state.cat ? 'on' : ''}">${c}</button>`
+    `<button data-cat="${c}" class="${c === state.cat ? 'on' : ''}">${c === '★' ? '★ お気に入り' : c}</button>`
   ).join('');
 }
 
@@ -586,12 +658,16 @@ const TIER_LABEL = { 3: '★★★ 超よく使う', 2: '★★ よく使う', 1
 const sortByHot = items => items.slice().sort((a, b) => hotOf(b) - hotOf(a));
 
 function renderShortcuts() {
-  const byTier = state.cat === 'すべて';
+  const favView = state.cat === '★';
+  const byTier = state.cat === 'すべて' || favView;
   const items = sortByHot(SHORTCUTS.filter(s =>
-    (byTier || s.cat === state.cat) &&
+    (favView ? FAVS.has('s:' + s.name) : (byTier || s.cat === state.cat)) &&
     match(s, ['name', 'desc', 'win', 'mac', 'cat'])
   ));
-  if (!items.length) { $list.innerHTML = '<div class="empty">見つかりませんでした 🔍</div>'; return; }
+  if (!items.length) {
+    $list.innerHTML = `<div class="empty">${favView && !state.query ? '各項目の ★ を押すと、ここに自分専用の早見帳が作れます' : '見つかりませんでした 🔍'}</div>`;
+    return;
+  }
 
   let html = '', lastHead = '';
   for (const s of items) {
@@ -605,6 +681,7 @@ function renderShortcuts() {
             <div class="sc-desc">${s.desc}</div>
           </div>
           <div class="sc-keys">${keyHtml(s[state.os])}</div>
+          <button class="fav-btn ${FAVS.has('s:' + s.name) ? 'on' : ''}" data-key="s:${attr(s.name)}" aria-label="お気に入り">★</button>
         </div>
       </div>`;
   }
@@ -613,12 +690,16 @@ function renderShortcuts() {
 }
 
 function renderExpressions() {
-  const byTier = state.cat === 'すべて';
+  const favView = state.cat === '★';
+  const byTier = state.cat === 'すべて' || favView;
   const items = sortByHot(EXPRESSIONS.filter(e =>
-    (byTier || e.cat === state.cat) &&
+    (favView ? FAVS.has('e:' + e.name) : (byTier || e.cat === state.cat)) &&
     match(e, ['name', 'tag', 'kid', 'code', 'cat', 'combo'])
   ));
-  if (!items.length) { $list.innerHTML = '<div class="empty">見つかりませんでした 🔍</div>'; return; }
+  if (!items.length) {
+    $list.innerHTML = `<div class="empty">${favView && !state.query ? '各項目の ★ を押すと、ここに自分専用の早見帳が作れます' : '見つかりませんでした 🔍'}</div>`;
+    return;
+  }
 
   let html = '', lastHead = '';
   items.forEach(e => {
@@ -626,17 +707,18 @@ function renderExpressions() {
     const head = byTier ? TIER_LABEL[hotOf(e)] : `■ ${e.cat}`;
     if (head !== lastHead) { html += `<div class="cat-head">${head}</div>`; lastHead = head; }
     html += `
-      <div class="card ex-card" data-i="${i}">
+      <div class="card ex-card" data-i="${i}" id="${slugOf(e.name)}">
         <div class="ex-head">
           <div class="ex-title">
             <span class="ex-name">${e.name}</span>
             <span class="ex-badge">${e.badge}</span>
-            <span class="ex-caret">▶</span>
+            <button class="fav-btn ${FAVS.has('e:' + e.name) ? 'on' : ''}" data-key="e:${attr(e.name)}" aria-label="お気に入り" style="margin-left:auto">★</button>
+            <span class="ex-caret" style="margin-left:0">▶</span>
           </div>
           <div class="ex-tag">${e.tag}</div>
         </div>
         <div class="ex-body">
-          <div class="ex-code">${e.code}<button class="copy-btn">コピー</button></div>
+          <div class="ex-code">${e.code}<button class="link-btn" data-slug="${slugOf(e.name)}">🔗</button><button class="copy-btn">コピー</button></div>
           <div class="ex-kid">${e.kid}</div>
           ${e.combo ? `
           <div class="ex-combo">
@@ -658,7 +740,87 @@ function renderExpressions() {
 function render() {
   stopDemo();
   renderChips();
-  (state.tab === 'shortcuts' ? renderShortcuts : renderExpressions)();
+  document.querySelector('.searchbar').style.display = state.tab === 'quiz' ? 'none' : '';
+  if (state.tab === 'quiz') renderQuiz();
+  else (state.tab === 'shortcuts' ? renderShortcuts : renderExpressions)();
+}
+
+/* =========================================================
+   クイズモード（10問ランダム出題・単語帳がわり）
+========================================================= */
+let quiz = null;
+const shuffle = arr => arr.slice().sort(() => Math.random() - 0.5);
+
+function buildQuiz(mode) {
+  const scQ = s => {
+    const pool = shuffle([...new Set(SHORTCUTS.map(x => x[state.os]))].filter(k => k !== s[state.os])).slice(0, 3);
+    return { text: `「${s.name}」のショートカットは？`, hint: s.desc, answer: s[state.os], choices: shuffle([s[state.os], ...pool]), isKey: true };
+  };
+  const exQ = x => {
+    const pool = shuffle(EXPRESSIONS.filter(y => y !== x)).slice(0, 3).map(y => y.name);
+    return { text: `「${x.tag}」— どのエクスプレッション？`, hint: '', answer: x.name, choices: shuffle([x.name, ...pool]), isKey: false };
+  };
+  const qs = mode === 'sc' ? shuffle(SHORTCUTS).slice(0, 10).map(scQ)
+    : mode === 'ex' ? shuffle(EXPRESSIONS).slice(0, 10).map(exQ)
+    : shuffle([...shuffle(SHORTCUTS).slice(0, 5).map(scQ), ...shuffle(EXPRESSIONS).slice(0, 5).map(exQ)]);
+  quiz = { mode, qs, i: 0, score: 0, answered: false };
+}
+
+function renderQuiz() {
+  if (!quiz) {
+    $list.innerHTML = `
+      <div class="card" style="padding:16px 14px">
+        <div class="quiz-hero">🎯 クイズで覚える</div>
+        <p class="quiz-lead">ランダムに10問出題。繰り返すほど手が覚えます。<br>ショートカットは <b>${state.os === 'mac' ? 'Mac' : 'Windows'}</b> のキーで出題（ヘッダーで切替可）。</p>
+        <button class="quiz-mode-btn" data-mode="sc">⌨️ ショートカット 10問</button>
+        <button class="quiz-mode-btn" data-mode="ex">✨ エクスプレッション 10問</button>
+        <button class="quiz-mode-btn" data-mode="mix">🔀 ミックス 10問</button>
+      </div>`;
+    FX.fadeInUp('#list .card', { duration: 300 });
+    return;
+  }
+  if (quiz.i >= quiz.qs.length) {
+    const s = quiz.score, n = quiz.qs.length;
+    const msg = s >= 9 ? '満点級！AE使いの手練です 🏆' : s >= 7 ? 'すごい！あと少しで満点 🔥' : s >= 4 ? 'いい感じ！もう一周で定着 💪' : 'まずは「★★★ 超よく使う」から覚えよう 📖';
+    $list.innerHTML = `
+      <div class="card quiz-result">
+        <div class="quiz-prog">RESULT</div>
+        <div class="quiz-score"><span class="q-score" data-to="${s}">${s}</span> / ${n}</div>
+        <div class="quiz-msg">${msg}</div>
+        <button class="quiz-next" data-act="retry">🔁 もう一度（同じモード）</button>
+        <button class="quiz-mode-btn" data-act="menu">モード選択にもどる</button>
+      </div>`;
+    if (window.AP) AP.countUp('.q-score');
+    FX.pop('.quiz-score');
+    track(`/quiz/${quiz.mode}/${s}`);
+    return;
+  }
+  const q = quiz.qs[quiz.i];
+  $list.innerHTML = `
+    <div class="card quiz-wrap" style="padding:14px">
+      <div class="quiz-prog">Q${quiz.i + 1} / ${quiz.qs.length}　スコア ${quiz.score}</div>
+      <div class="quiz-q">${q.text}</div>
+      ${q.hint ? `<div class="quiz-hint">ヒント: ${q.hint}</div>` : ''}
+      ${q.choices.map((c, ci) => `<div class="quiz-choice" data-ci="${ci}">${q.isKey ? keyHtml(c) : c}</div>`).join('')}
+      <div class="quiz-foot"></div>
+    </div>`;
+  FX.fadeInUp('.quiz-wrap', { duration: 250 });
+}
+
+function answerQuiz(ci) {
+  const q = quiz.qs[quiz.i];
+  quiz.answered = true;
+  const correct = q.choices[ci] === q.answer;
+  if (correct) quiz.score++;
+  document.querySelectorAll('.quiz-choice').forEach((el, idx) => {
+    if (q.choices[idx] === q.answer) el.classList.add('ok');
+    else if (idx === ci) el.classList.add('ng');
+  });
+  FX.pop('.quiz-choice.' + (correct ? 'ok' : 'ng'));
+  document.querySelector('.quiz-prog').textContent = `Q${quiz.i + 1} / ${quiz.qs.length}　スコア ${quiz.score}`;
+  const last = quiz.i === quiz.qs.length - 1;
+  document.querySelector('.quiz-foot').innerHTML =
+    `<button class="quiz-next" data-act="next">${last ? '結果を見る' : '次の問題 →'}</button>`;
 }
 
 /* =========================================================
@@ -837,8 +999,10 @@ $tabs.addEventListener('click', e => {
   if (!btn || btn.dataset.tab === state.tab) return;
   state.tab = btn.dataset.tab;
   state.cat = 'すべて';
+  if (state.tab === 'quiz') quiz = null;
   $tabs.querySelectorAll('button').forEach(b => b.classList.toggle('on', b === btn));
-  $osToggle.style.visibility = state.tab === 'shortcuts' ? 'visible' : 'hidden';
+  $osToggle.style.visibility = state.tab === 'expressions' ? 'hidden' : 'visible';
+  track('/tab/' + state.tab);
   render();
 });
 
@@ -861,27 +1025,73 @@ $chips.addEventListener('click', e => {
 let searchTimer;
 $search.addEventListener('input', () => {
   clearTimeout(searchTimer);
-  searchTimer = setTimeout(() => { state.query = $search.value.trim(); render(); }, 180);
+  searchTimer = setTimeout(() => {
+    state.query = $search.value.trim();
+    render();
+    if (state.query) track('/search/' + state.query);
+  }, 180);
 });
 
+function copyText(text) {
+  return (navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject())
+    .catch(() => {
+      const ta = document.createElement('textarea');
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); ta.remove();
+    });
+}
+
 $list.addEventListener('click', e => {
+  // お気に入り ★
+  const favBtn = e.target.closest('.fav-btn');
+  if (favBtn) {
+    e.stopPropagation();
+    toggleFav(favBtn.dataset.key);
+    favBtn.classList.toggle('on', FAVS.has(favBtn.dataset.key));
+    FX.pop(favBtn);
+    if (state.cat === '★') render(); // ★一覧の表示中は外した項目を消す
+    return;
+  }
+  // クイズ操作
+  const modeBtn = e.target.closest('.quiz-mode-btn');
+  if (modeBtn) {
+    if (modeBtn.dataset.mode) buildQuiz(modeBtn.dataset.mode); else quiz = null;
+    renderQuiz();
+    return;
+  }
+  const choice = e.target.closest('.quiz-choice');
+  if (choice && quiz && !quiz.answered) { answerQuiz(Number(choice.dataset.ci)); return; }
+  const nextBtn = e.target.closest('.quiz-next');
+  if (nextBtn) {
+    if (nextBtn.dataset.act === 'retry') buildQuiz(quiz.mode);
+    else { quiz.i++; quiz.answered = false; }
+    renderQuiz();
+    return;
+  }
+  // カード直リンクのコピー 🔗
+  const linkBtn = e.target.closest('.link-btn');
+  if (linkBtn) {
+    e.stopPropagation();
+    copyText(location.href.split('#')[0] + '#' + linkBtn.dataset.slug).finally(() => {
+      linkBtn.textContent = '✓';
+      linkBtn.classList.add('done');
+      FX.pop(linkBtn);
+      setTimeout(() => { linkBtn.textContent = '🔗'; linkBtn.classList.remove('done'); }, 1400);
+    });
+    return;
+  }
   // コード コピー
   const copyBtn = e.target.closest('.copy-btn');
   if (copyBtn) {
     e.stopPropagation();
-    const code = copyBtn.parentElement.textContent.replace(/コピー|✓ OK!$/g, '').trim();
-    (navigator.clipboard ? navigator.clipboard.writeText(code) : Promise.reject())
-      .catch(() => {
-        const ta = document.createElement('textarea');
-        ta.value = code; document.body.appendChild(ta); ta.select();
-        document.execCommand('copy'); ta.remove();
-      })
-      .finally(() => {
-        copyBtn.textContent = '✓ OK!';
-        copyBtn.classList.add('done');
-        FX.pop(copyBtn);
-        setTimeout(() => { copyBtn.textContent = 'コピー'; copyBtn.classList.remove('done'); }, 1400);
-      });
+    const box = copyBtn.parentElement.cloneNode(true);
+    box.querySelectorAll('button').forEach(b => b.remove());
+    copyText(box.textContent.trim()).finally(() => {
+      copyBtn.textContent = '✓ OK!';
+      copyBtn.classList.add('done');
+      FX.pop(copyBtn);
+      setTimeout(() => { copyBtn.textContent = 'コピー'; copyBtn.classList.remove('done'); }, 1400);
+    });
     return;
   }
   // デモ再生 / 停止
@@ -908,9 +1118,34 @@ $list.addEventListener('click', e => {
   }
 });
 
+/* カード直リンク: #wiggle のようなハッシュ付きで開いたら該当カードを開く */
+function openFromHash() {
+  const slug = decodeURIComponent(location.hash.slice(1));
+  if (!slug) return;
+  const i = EXPRESSIONS.findIndex(x => slugOf(x.name) === slug);
+  if (i < 0) return;
+  if (state.tab !== 'expressions') {
+    state.tab = 'expressions';
+    state.cat = 'すべて';
+    $tabs.querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.tab === 'expressions'));
+    $osToggle.style.visibility = 'hidden';
+    render();
+  }
+  const card = document.querySelector(`.ex-card[data-i="${i}"]`);
+  if (card && !card.classList.contains('open')) {
+    card.querySelector('.ex-head').click();
+    setTimeout(() => card.scrollIntoView({ block: 'start', behavior: 'smooth' }), 80);
+  }
+}
+
 /* 初期化 */
 $osToggle.querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.os === state.os));
+document.querySelector('footer').textContent =
+  `AE早見帳 ${APP_VERSION} (${APP_DATE}) — ホーム画面に追加するとアプリのように使えます`;
 render();
+openFromHash();
+window.addEventListener('hashchange', openFromHash);
+track('/app');
 </script>
 </body>
 </html>
