@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1a1a24">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>AE早見帳 — After Effects ショートカット & エクスプレッション</title>
+<style>
+  :root {
+    --bg: #14141c;
+    --bg2: #1c1c28;
+    --card: #232333;
+    --card2: #2b2b40;
+    --line: #34344c;
+    --text: #eceaf6;
+    --sub: #9d9ab5;
+    --accent: #9a8cff;      /* AEっぽい紫 */
+    --accent2: #64d8cb;
+    --kbd-bg: #32324a;
+    --kbd-line: #4a4a68;
+    --radius: 14px;
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", Meiryo, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    padding-bottom: calc(24px + var(--safe-bottom));
+  }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 0 14px; }
+
+  /* ===== ヘッダー ===== */
+  header {
+    position: sticky; top: 0; z-index: 50;
+    background: linear-gradient(180deg, rgba(20,20,28,.98), rgba(20,20,28,.92));
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+    padding-top: var(--safe-top);
+  }
+  .head-top {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 14px 4px;
+    max-width: 560px; margin: 0 auto;
+  }
+  .logo {
+    width: 34px; height: 34px; border-radius: 9px;
+    background: #2d2b55;
+    color: var(--accent);
+    font-weight: 800; font-size: 14px;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid #4b47a0;
+    flex: none;
+  }
+  h1 { font-size: 17px; margin: 0; font-weight: 700; letter-spacing: .02em; }
+  h1 small { display: block; font-size: 10.5px; color: var(--sub); font-weight: 500; }
+
+  .os-toggle {
+    margin-left: auto; flex: none;
+    display: flex; background: var(--card); border: 1px solid var(--line);
+    border-radius: 99px; padding: 3px; gap: 2px;
+  }
+  .os-toggle button {
+    border: 0; background: transparent; color: var(--sub);
+    font-size: 12px; font-weight: 700; padding: 5px 12px; border-radius: 99px;
+    cursor: pointer;
+  }
+  .os-toggle button.on { background: var(--accent); color: #17142e; }
+
+  .searchbar { padding: 8px 14px 10px; max-width: 560px; margin: 0 auto; }
+  .searchbar input {
+    width: 100%; padding: 10px 14px;
+    border-radius: 12px; border: 1px solid var(--line);
+    background: var(--card); color: var(--text);
+    font-size: 15px; outline: none;
+  }
+  .searchbar input:focus { border-color: var(--accent); }
+  .searchbar input::placeholder { color: #6f6c8a; }
+
+  /* ===== タブ ===== */
+  .tabs {
+    display: flex; max-width: 560px; margin: 0 auto; padding: 0 14px;
+  }
+  .tabs button {
+    flex: 1; background: none; border: 0; color: var(--sub);
+    font-size: 14px; font-weight: 700; padding: 10px 0 12px;
+    border-bottom: 3px solid transparent; cursor: pointer;
+  }
+  .tabs button.on { color: var(--text); border-bottom-color: var(--accent); }
+
+  /* ===== カテゴリチップ ===== */
+  .chips {
+    display: flex; gap: 8px; overflow-x: auto; padding: 14px 14px 4px;
+    max-width: 560px; margin: 0 auto;
+    scrollbar-width: none;
+  }
+  .chips::-webkit-scrollbar { display: none; }
+  .chips button {
+    flex: none; border: 1px solid var(--line); background: var(--card);
+    color: var(--sub); font-size: 12.5px; font-weight: 600;
+    padding: 6px 13px; border-radius: 99px; cursor: pointer;
+  }
+  .chips button.on { background: var(--accent); border-color: var(--accent); color: #17142e; }
+
+  /* ===== リスト・カード ===== */
+  .list { padding-top: 10px; }
+  .cat-head {
+    font-size: 12px; font-weight: 800; color: var(--accent);
+    letter-spacing: .1em; margin: 18px 2px 8px;
+  }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 12px 14px; margin-bottom: 10px;
+  }
+  .sc-row { display: flex; align-items: center; gap: 10px; }
+  .sc-name { font-weight: 700; font-size: 14.5px; }
+  .sc-desc { color: var(--sub); font-size: 12.5px; margin-top: 2px; }
+  .sc-keys { margin-left: auto; flex: none; display: flex; gap: 3px; align-items: center; }
+  kbd {
+    display: inline-block; min-width: 22px; text-align: center;
+    background: var(--kbd-bg); border: 1px solid var(--kbd-line);
+    border-bottom-width: 2.5px;
+    border-radius: 6px; padding: 3px 7px;
+    font: 700 12px/1.3 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    color: #cfc9ff;
+  }
+  .plus { color: #5f5c7d; font-size: 11px; font-weight: 700; }
+
+  .empty { text-align: center; color: var(--sub); padding: 50px 0; font-size: 14px; }
+
+  /* ===== エクスプレッションカード ===== */
+  .ex-card { padding: 0; overflow: hidden; }
+  .ex-head { padding: 13px 14px; cursor: pointer; }
+  .ex-title { display: flex; align-items: center; gap: 8px; }
+  .ex-title .ex-name { font-weight: 800; font-size: 15.5px; }
+  .ex-badge {
+    font-size: 10px; font-weight: 800; color: var(--accent2);
+    border: 1px solid rgba(100,216,203,.4); border-radius: 6px;
+    padding: 1px 7px; letter-spacing: .05em;
+  }
+  .ex-tag { color: var(--sub); font-size: 12.5px; margin-top: 3px; }
+  .ex-caret { margin-left: auto; color: #5f5c7d; transition: transform .2s; font-size: 12px; }
+  .ex-card.open .ex-caret { transform: rotate(90deg); }
+
+  .ex-body { display: none; border-top: 1px solid var(--line); padding: 13px 14px 15px; }
+  .ex-card.open .ex-body { display: block; }
+
+  .ex-code {
+    position: relative;
+    background: #101018; border: 1px solid var(--line); border-radius: 10px;
+    padding: 11px 13px; margin: 2px 0 12px;
+    font: 600 13px/1.55 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    color: #b7e6a5; overflow-x: auto; white-space: pre;
+  }
+  .copy-btn {
+    position: absolute; top: 7px; right: 7px;
+    background: var(--card2); color: var(--sub);
+    border: 1px solid var(--line); border-radius: 8px;
+    font-size: 11px; font-weight: 700; padding: 4px 10px; cursor: pointer;
+  }
+  .copy-btn.done { color: var(--accent2); border-color: var(--accent2); }
+
+  .ex-kid {
+    background: rgba(154,140,255,.08);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+    padding: 10px 12px; font-size: 13.5px; margin-bottom: 12px;
+  }
+  .ex-kid b { color: var(--accent); }
+
+  .demo-wrap { margin-top: 4px; }
+  .demo-stage {
+    position: relative; height: 120px;
+    background:
+      linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px),
+      #101018;
+    background-size: 20px 20px, 20px 20px, auto;
+    border: 1px solid var(--line); border-radius: 10px;
+    overflow: hidden;
+  }
+  .demo-ball {
+    position: absolute; width: 26px; height: 26px; border-radius: 50%;
+    background: radial-gradient(circle at 32% 30%, #c9beff, var(--accent) 60%, #6f5fe0);
+    box-shadow: 0 3px 12px rgba(154,140,255,.45);
+    top: 0; left: 0;
+    will-change: transform;
+  }
+  .demo-ball.b2 { background: radial-gradient(circle at 32% 30%, #b8f4ec, var(--accent2) 60%, #35a99c); box-shadow: 0 3px 12px rgba(100,216,203,.4); }
+  .demo-ball.b3 { background: radial-gradient(circle at 32% 30%, #ffd9a8, #f2a65a 60%, #cf7f34); box-shadow: 0 3px 12px rgba(242,166,90,.4); }
+  .demo-ball.square { border-radius: 7px; }
+  .demo-ghost { opacity: .35; }
+  .demo-label {
+    position: absolute; bottom: 6px; left: 10px;
+    font-size: 10.5px; color: #6f6c8a; font-weight: 600; pointer-events: none;
+  }
+  .demo-btn {
+    margin-top: 9px; width: 100%;
+    background: var(--card2); border: 1px solid var(--kbd-line);
+    color: var(--text); font-size: 13px; font-weight: 800;
+    border-radius: 10px; padding: 9px 0; cursor: pointer;
+  }
+  .demo-btn.playing { background: var(--accent); border-color: var(--accent); color: #17142e; }
+
+  footer { text-align: center; color: #5f5c7d; font-size: 11.5px; margin-top: 34px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="head-top">
+    <div class="logo">Ae</div>
+    <h1>AE早見帳<small>After Effects ショートカット & エクスプレッション</small></h1>
+    <div class="os-toggle" id="osToggle">
+      <button data-os="mac" class="on">Mac</button>
+      <button data-os="win">Win</button>
+    </div>
+  </div>
+  <div class="searchbar">
+    <input id="search" type="search" placeholder="キーワードで検索（例: キーフレーム, wiggle, 複製）" autocomplete="off">
+  </div>
+  <nav class="tabs" id="tabs">
+    <button data-tab="shortcuts" class="on">⌨️ ショートカット</button>
+    <button data-tab="expressions">✨ エクスプレッション</button>
+  </nav>
+</header>
+
+<div class="chips" id="chips"></div>
+
+<main class="wrap">
+  <div class="list" id="list"></div>
+  <footer>AE早見帳 — ホーム画面に追加するとアプリのように使えます</footer>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/animejs@4.4.1/dist/bundles/anime.umd.min.js"></script>
+<script src="../../lib/animations.js"></script>
+<script>
+/* UI演出は lib/animations.js の AP.* を使う。
+   オフラインやCSPで anime.js が読めない環境でも一覧機能は使えるようにガード */
+const FX = (typeof AP !== 'undefined' && AP) ? AP : { staggerReveal(){}, pop(){}, fadeInUp(){} };
+
+/* =========================================================
+   データ: ショートカット
+   win/mac は "+" 区切り。説明は中学生でもわかる言葉で。
+========================================================= */
+const SHORTCUTS = [
+  // --- 基本操作 ---
+  { cat: '基本操作', name: '取り消し（アンドゥ）', win: 'Ctrl+Z', mac: '⌘+Z', desc: '「やっちゃった！」を1つ前に戻す。困ったらまずこれ' },
+  { cat: '基本操作', name: 'やり直し（リドゥ）', win: 'Ctrl+Shift+Z', mac: '⌘+Shift+Z', desc: '戻しすぎたときに、もう一度進める' },
+  { cat: '基本操作', name: '保存', win: 'Ctrl+S', mac: '⌘+S', desc: 'こまめに保存！AEが落ちても泣かないために' },
+  { cat: '基本操作', name: '複製', win: 'Ctrl+D', mac: '⌘+D', desc: '選んだレイヤーやアイテムのコピーをすぐ作る' },
+  { cat: '基本操作', name: '新規コンポジション', win: 'Ctrl+N', mac: '⌘+N', desc: '動画の「舞台」を新しく作る' },
+  { cat: '基本操作', name: 'コンポジション設定', win: 'Ctrl+K', mac: '⌘+K', desc: 'サイズ・長さ・フレームレートをあとから変える' },
+  { cat: '基本操作', name: 'ファイルを読み込み', win: 'Ctrl+I', mac: '⌘+I', desc: '画像・動画・音などの素材をプロジェクトに入れる' },
+  { cat: '基本操作', name: 'レンダーキューに追加', win: 'Ctrl+M', mac: '⌘+M', desc: '完成した動画を書き出す準備をする' },
+  { cat: '基本操作', name: 'Media Encoderキューに追加', win: 'Ctrl+Alt+M', mac: '⌘+Opt+M', desc: 'MP4などで書き出したいときはこっち' },
+  { cat: '基本操作', name: '環境設定を開く', win: 'Ctrl+Alt+;', mac: '⌘+Opt+;', desc: 'AE全体の設定画面を開く' },
+
+  // --- ツール ---
+  { cat: 'ツール', name: '選択ツール', win: 'V', mac: 'V', desc: 'いちばん基本の矢印。迷ったらVで戻る' },
+  { cat: 'ツール', name: '手のひらツール', win: 'H', mac: 'H', desc: '画面をつかんで移動。Space長押しでも一時的に使える' },
+  { cat: 'ツール', name: 'ズームツール', win: 'Z', mac: 'Z', desc: '画面の拡大。Alt/Opt押しながらで縮小' },
+  { cat: 'ツール', name: '回転ツール', win: 'W', mac: 'W', desc: 'レイヤーをドラッグでくるっと回す' },
+  { cat: 'ツール', name: 'ペンツール', win: 'G', mac: 'G', desc: 'マスクやシェイプの線を描く' },
+  { cat: 'ツール', name: 'シェイプツール切り替え', win: 'Q', mac: 'Q', desc: '四角→丸→星…と押すたびに図形が変わる' },
+  { cat: 'ツール', name: '文字ツール', win: 'Ctrl+T', mac: '⌘+T', desc: 'テキストを打つモードに切り替え' },
+  { cat: 'ツール', name: 'アンカーポイントツール', win: 'Y', mac: 'Y', desc: '回転や拡大の「中心点」をずらす' },
+  { cat: 'ツール', name: 'カメラツール', win: 'C', mac: 'C', desc: '3Dカメラをぐりぐり動かす（押すたび切替）' },
+  { cat: 'ツール', name: 'ロトブラシツール', win: 'Alt+W', mac: 'Opt+W', desc: '動画から人や物をなぞって切り抜く' },
+
+  // --- レイヤー ---
+  { cat: 'レイヤー', name: '新規平面（ソリッド）', win: 'Ctrl+Y', mac: '⌘+Y', desc: 'ベタ塗り1色のレイヤーを作る。背景やエフェクト台に' },
+  { cat: 'レイヤー', name: '新規調整レイヤー', win: 'Ctrl+Alt+Y', mac: '⌘+Opt+Y', desc: '下のレイヤー全部にまとめてエフェクトをかける透明な板' },
+  { cat: 'レイヤー', name: '新規ヌルオブジェクト', win: 'Ctrl+Alt+Shift+Y', mac: '⌘+Opt+Shift+Y', desc: '見えない「親」レイヤー。まとめて動かす司令塔' },
+  { cat: 'レイヤー', name: '新規テキストレイヤー', win: 'Ctrl+Alt+Shift+T', mac: '⌘+Opt+Shift+T', desc: '文字レイヤーをすぐ作る' },
+  { cat: 'レイヤー', name: 'プリコンポーズ', win: 'Ctrl+Shift+C', mac: '⌘+Shift+C', desc: '複数レイヤーを1つの箱にまとめて整理する' },
+  { cat: 'レイヤー', name: 'レイヤーを分割', win: 'Ctrl+Shift+D', mac: '⌘+Shift+D', desc: '再生ヘッドの位置でレイヤーをパチンと2つに切る' },
+  { cat: 'レイヤー', name: 'レイヤー名を変更', win: 'Enter', mac: 'Return', desc: '選んだレイヤーの名前をその場で書き換え' },
+  { cat: 'レイヤー', name: 'コンポの中央に配置', win: 'Ctrl+Home', mac: '⌘+Home', desc: 'レイヤーを画面のど真ん中へ一発移動' },
+  { cat: 'レイヤー', name: 'アンカーポイントを中央へ', win: 'Ctrl+Alt+Home', mac: '⌘+Opt+Home', desc: '中心点をレイヤーの真ん中に戻す' },
+  { cat: 'レイヤー', name: '1つ前面へ / 1つ背面へ', win: 'Ctrl+] / Ctrl+[', mac: '⌘+] / ⌘+[', desc: 'レイヤーの重なり順を1段ずつ入れ替える' },
+  { cat: 'レイヤー', name: '時間を逆再生（タイムリバース）', win: 'Ctrl+Alt+R', mac: '⌘+Opt+R', desc: 'レイヤーの再生を逆向きにする' },
+
+  // --- プロパティ表示 ---
+  { cat: 'プロパティ表示', name: '位置を表示', win: 'P', mac: 'P', desc: 'Position の P。レイヤーの場所の数値だけ出す' },
+  { cat: 'プロパティ表示', name: 'スケールを表示', win: 'S', mac: 'S', desc: 'Scale の S。大きさの数値だけ出す' },
+  { cat: 'プロパティ表示', name: '回転を表示', win: 'R', mac: 'R', desc: 'Rotation の R。角度の数値だけ出す' },
+  { cat: 'プロパティ表示', name: '不透明度を表示', win: 'T', mac: 'T', desc: '透け具合。「透明のT」と覚える' },
+  { cat: 'プロパティ表示', name: 'アンカーポイントを表示', win: 'A', mac: 'A', desc: 'Anchor の A。中心点の数値だけ出す' },
+  { cat: 'プロパティ表示', name: 'エフェクトを表示', win: 'E', mac: 'E', desc: 'かかっているエフェクトの一覧を出す' },
+  { cat: 'プロパティ表示', name: 'キーフレームがある項目だけ表示', win: 'U', mac: 'U', desc: '「動きがついてる場所」だけ一発で開く。超便利', },
+  { cat: 'プロパティ表示', name: '変更した項目だけ表示', win: 'U+U', mac: 'U+U', desc: 'Uをすばやく2回。初期値からいじった項目が全部見える' },
+  { cat: 'プロパティ表示', name: 'エクスプレッションだけ表示', win: 'E+E', mac: 'E+E', desc: 'Eをすばやく2回。式が入っている場所だけ出す' },
+  { cat: 'プロパティ表示', name: 'マスクを表示', win: 'M', mac: 'M', desc: 'マスクのパスを出す。2回押しで全マスク設定' },
+  { cat: 'プロパティ表示', name: '複数まとめて表示', win: 'Shift+P など', mac: 'Shift+P など', desc: 'Shiftを押しながら P S R…と押すと追加で並べられる' },
+
+  // --- キーフレーム ---
+  { cat: 'キーフレーム', name: '位置のキーフレームを打つ', win: 'Alt+Shift+P', mac: 'Opt+P', desc: 'ストップウォッチを押さずに位置のキーを打つ' },
+  { cat: 'キーフレーム', name: 'スケールのキーフレームを打つ', win: 'Alt+Shift+S', mac: 'Opt+S', desc: '大きさのキーを一発で打つ' },
+  { cat: 'キーフレーム', name: '回転のキーフレームを打つ', win: 'Alt+Shift+R', mac: 'Opt+R', desc: '角度のキーを一発で打つ' },
+  { cat: 'キーフレーム', name: '不透明度のキーフレームを打つ', win: 'Alt+Shift+T', mac: 'Opt+T', desc: '透け具合のキーを一発で打つ' },
+  { cat: 'キーフレーム', name: 'イージーイーズ', win: 'F9', mac: 'F9', desc: '動きの始まりと終わりをなめらかに。プロっぽさの第一歩' },
+  { cat: 'キーフレーム', name: 'イージーイーズイン', win: 'Shift+F9', mac: 'Shift+F9', desc: '「到着」だけをなめらかにする' },
+  { cat: 'キーフレーム', name: 'イージーイーズアウト', win: 'Ctrl+Shift+F9', mac: '⌘+Shift+F9', desc: '「出発」だけをなめらかにする' },
+  { cat: 'キーフレーム', name: '前 / 次のキーフレームへ移動', win: 'J / K', mac: 'J / K', desc: '表示中のキーフレームの間をジャンプ移動' },
+  { cat: 'キーフレーム', name: 'グラフエディターを開く', win: 'Shift+F3', mac: 'Shift+F3', desc: '動きの速さをグラフで細かく調整する画面へ' },
+
+  // --- 時間・タイムライン ---
+  { cat: '時間移動', name: '再生 / 停止', win: 'Space', mac: 'Space', desc: 'プレビューの再生・停止' },
+  { cat: '時間移動', name: 'コンポの最初 / 最後へ', win: 'Home / End', mac: 'Home / End', desc: 'タイムラインの先頭・末尾へ一発ジャンプ' },
+  { cat: '時間移動', name: '1フレーム進む / 戻る', win: 'PageDown / PageUp', mac: 'PageDown / PageUp', desc: 'コマ送りで細かくチェック。Shift併用で10フレーム' },
+  { cat: '時間移動', name: 'レイヤーのイン / アウト点へ', win: 'I / O', mac: 'I / O', desc: '選んだレイヤーの始まり・終わりへジャンプ' },
+  { cat: '時間移動', name: 'イン / アウト点を現在時間へ移動', win: '[ / ]', mac: '[ / ]', desc: 'レイヤーの開始（終了）位置を再生ヘッドに合わせて動かす' },
+  { cat: '時間移動', name: '現在時間でイン / アウトをトリム', win: 'Alt+[ / Alt+]', mac: 'Opt+[ / Opt+]', desc: '再生ヘッドの位置でレイヤーの前（後ろ）を切り落とす' },
+  { cat: '時間移動', name: 'ワークエリアの開始 / 終了', win: 'B / N', mac: 'B / N', desc: 'プレビューする範囲のスタート・ゴールを決める' },
+  { cat: '時間移動', name: 'マーカーを打つ', win: '*（テンキー）', mac: '*（テンキー）', desc: '「ここ大事」の目印をタイムラインに付ける' },
+  { cat: '時間移動', name: '時間を指定してジャンプ', win: 'Alt+Shift+J', mac: 'Opt+Shift+J', desc: '「3秒ちょうどへ」など数字入力で移動' },
+  { cat: '時間移動', name: 'タイムラインを拡大 / 縮小', win: '+ / -', mac: '+ / -', desc: 'タイムラインの目盛りをズームイン・アウト' },
+
+  // --- 表示・プレビュー ---
+  { cat: '表示', name: 'コンポ画面を拡大 / 縮小', win: '. / ,', mac: '. / ,', desc: 'プレビュー画面のズームイン（.）とズームアウト（,）' },
+  { cat: '表示', name: '画面サイズにフィット', win: 'Shift+/', mac: 'Shift+/', desc: 'コンポ全体がちょうど収まる倍率にする' },
+  { cat: '表示', name: '解像度: フル画質', win: 'Ctrl+J', mac: '⌘+J', desc: 'プレビューをフル画質に。重いときは下の2つへ' },
+  { cat: '表示', name: '解像度: 1/2 画質', win: 'Ctrl+Shift+J', mac: '⌘+Shift+J', desc: 'プレビューを半分の画質にして軽くする' },
+  { cat: '表示', name: 'セーフゾーンを表示', win: "'", mac: "'", desc: 'タイトルが切れない安全エリアの枠を出す' },
+  { cat: '表示', name: 'グリッドを表示', win: "Ctrl+'", mac: "⌘+'", desc: '方眼紙のようなマス目を出して配置の目安に' },
+  { cat: '表示', name: '定規を表示', win: 'Ctrl+R', mac: '⌘+R', desc: '画面の端に目盛りを出す。ガイド線も引ける' },
+  { cat: '表示', name: '画面の更新を止める', win: 'CapsLock', mac: 'CapsLock', desc: '重い作業中にプレビュー更新をオフにして軽くする' },
+];
+
+/* =========================================================
+   データ: エクスプレッション
+   kid: 中学生でもわかる説明 / demo: 動きデモの種類
+========================================================= */
+const EXPRESSIONS = [
+  {
+    cat: '定番', name: 'wiggle()', badge: '一番人気',
+    code: 'wiggle(2, 30)',
+    tag: 'ランダムにプルプル揺らす',
+    kid: '<b>「1秒に2回、30の強さでランダムに揺らして」</b>という意味。位置に入れるとカメラの手ブレ風、明るさに入れるとチカチカする炎の光みたいになる。最初の数字＝揺れる速さ、次の数字＝揺れる大きさ。',
+    demo: 'wiggle',
+  },
+  {
+    cat: '定番', name: 'loopOut("cycle")', badge: '定番',
+    code: 'loopOut("cycle")',
+    tag: 'キーフレームの動きを永遠にくり返す',
+    kid: '作ったキーフレームの動きが終わったら、<b>最初に戻って同じ動きを永遠にリピート</b>する。歩きのループや回転アニメなど「ずっと繰り返したい動き」をキーフレーム2個だけで作れる。',
+    demo: 'loopcycle',
+  },
+  {
+    cat: '定番', name: 'loopOut("pingpong")', badge: '定番',
+    code: 'loopOut("pingpong")',
+    tag: '行って戻ってを永遠にくり返す',
+    kid: '卓球（ピンポン）の玉みたいに、<b>行ったら今度は逆向きに戻ってくる</b>のをくり返す。振り子や「ゆらゆら漂う」動きにぴったり。cycleとの違いは「逆再生で戻る」こと。',
+    demo: 'pingpong',
+  },
+  {
+    cat: '定番', name: 'time', badge: '基本',
+    code: '// 回転に入れると1秒で90°回る\ntime * 90',
+    tag: '時間に合わせて一定スピードで動かす',
+    kid: '<b>time は「再生してからの秒数」が入っている箱</b>。回転に「time * 90」と書くと、1秒で90°、2秒で180°…とずーっと同じ速さで回り続ける。キーフレーム不要で「ずっと回る」が作れる。',
+    demo: 'time',
+  },
+  {
+    cat: '揺れ・ランダム', name: 'random()', badge: 'ランダム',
+    code: 'random(0, 100)',
+    tag: '毎フレーム、サイコロを振って値を決める',
+    kid: '<b>毎フレーム、0〜100の間の数をサイコロのようにランダムに選ぶ</b>。不透明度に入れると激しくチカチカ点滅（グリッチ風）。wiggleより「ガタガタ・バチバチ」した荒い動きになる。',
+    demo: 'random',
+  },
+  {
+    cat: '揺れ・ランダム', name: 'seedRandom()', badge: 'ランダム',
+    code: 'seedRandom(5, true);\nrandom(0, 100)',
+    tag: 'ランダムの「くじ引きの中身」を固定する',
+    kid: 'ランダムは毎回結果が変わるけど、seedRandomで<b>「5番のくじ引きセットを使って」と指定すると、何回再生しても同じランダム</b>になる。レイヤーごとに違う数字にすれば、それぞれ違う揺れ方に。2つ目の true は「時間が経っても引き直さない」の意味。',
+    demo: null,
+  },
+  {
+    cat: '揺れ・ランダム', name: 'Math.sin()', badge: '波',
+    code: '// 上下にゆらゆら（速さ2, ふり幅40）\nvalue + [0, Math.sin(time * 2) * 40]',
+    tag: 'なめらかに行ったり来たりの波をつくる',
+    kid: '<b>sin（サイン）は「なめらかな波」を作ってくれる数学の道具</b>。wiggleのランダムと違って、regular（規則正しく）ゆ〜らゆ〜らする。風船が浮かんでいる感じや、呼吸するようなふわふわに最適。time×の数字で速さ、最後の×の数字でふり幅が変わる。',
+    demo: 'sin',
+  },
+  {
+    cat: '便利関数', name: 'linear()', badge: '変換',
+    code: '// 0〜2秒かけて 0→100 に変化\nlinear(time, 0, 2, 0, 100)',
+    tag: '「AがこうならBはこう」と値を言いかえる',
+    kid: '<b>「timeが0→2に進む間に、答えを0→100に変えてね」</b>という値の翻訳機。「音の大きさに合わせてサイズを変える」「スライダーで色を変える」など、何かと何かを連動させるときの超基本。範囲の外では止まってくれるのも安心。',
+    demo: 'linear',
+  },
+  {
+    cat: '便利関数', name: 'ease()', badge: '変換',
+    code: '// linearのなめらか版\nease(time, 0, 2, 0, 100)',
+    tag: 'linearのなめらか版。ゆっくり始まってゆっくり終わる',
+    kid: '使い方はlinearと同じ。違いは<b>スタートとゴールがふわっとなめらか</b>になること。電車が駅を出るときと着くときにゆっくりになるイメージ。イージーイーズ（F9）のエクスプレッション版。',
+    demo: 'ease',
+  },
+  {
+    cat: '便利関数', name: 'clamp()', badge: '制限',
+    code: '// 値を 0〜50 の範囲におさめる\nclamp(value, 0, 50)',
+    tag: '値がはみ出さないように柵で囲う',
+    kid: '<b>「どんなに大きくても50まで、小さくても0まで」と柵を作る</b>。wiggleで揺らしたら画面の外に飛び出しちゃった…というときに、行き過ぎをカットしてくれるストッパー。',
+    demo: 'clamp',
+  },
+  {
+    cat: '便利関数', name: 'posterizeTime()', badge: 'コマ落ち',
+    code: '// 1秒間に8コマだけ更新する\nposterizeTime(8);\nwiggle(3, 50)',
+    tag: 'わざとカクカクのコマ落ち風にする',
+    kid: '<b>「1秒に8回だけ動きを更新して」</b>という意味。パラパラ漫画やストップモーションみたいなカクカクした質感になる。手書き風アニメーションの「あの感じ」を出したいときに。',
+    demo: 'posterize',
+  },
+  {
+    cat: '追いかけ・連動', name: 'valueAtTime()', badge: '遅延',
+    code: '// 親レイヤーを0.2秒遅れで追いかける\nl = thisComp.layer("リーダー");\nl.position.valueAtTime(time - 0.2)',
+    tag: 'ちょっと遅れてついてくる「金魚のフン」',
+    kid: '<b>「0.2秒前のあのレイヤーの位置をちょうだい」</b>という意味。先頭のレイヤーを動かすと、後ろのレイヤーがワンテンポ遅れてついてくる。しっぽ、隊列、残像っぽい表現が作れる。',
+    demo: 'delay',
+  },
+  {
+    cat: '追いかけ・連動', name: 'index', badge: '番号',
+    code: '// レイヤー番号ぶんだけ遅らせて再生\ndelay = 0.15;\nvalueAtTime(time - (index - 1) * delay)',
+    tag: 'レイヤー番号を使って自動で時間差をつける',
+    kid: '<b>index は「自分がタイムラインの上から何番目か」の番号</b>。これを使うと、レイヤーを複製するだけで1番は0秒、2番は0.15秒、3番は0.3秒…と自動で時間差(ウェーブ)がつく。大量のオブジェクトを順番に動かすときの必殺技。',
+    demo: 'index',
+  },
+  {
+    cat: '追いかけ・連動', name: 'smooth()', badge: '滑らか',
+    code: '// ガタガタの動きをなめらかに\nsmooth(0.2, 5)',
+    tag: 'ガタガタの動きをなめらかにならす',
+    kid: 'ガタガタした動きの<b>前後0.2秒ぶんを5点分平均して、なめらかにならす</b>。手ブレの激しいトラッキングデータを落ち着かせたいときに。ヤスリがけのイメージ。',
+    demo: 'smooth',
+  },
+  {
+    cat: '追いかけ・連動', name: 'sourceRectAtTime()', badge: '自動化',
+    code: '// テキストの幅に合わせて座布団の幅を変える\nt = thisComp.layer("テキスト");\nw = t.sourceRectAtTime().width;\n[w + 40, 80]',
+    tag: '文字の長さに合わせて背景の大きさを自動調整',
+    kid: '<b>「あのレイヤーのいまの大きさ（幅と高さ）を教えて」</b>という意味。テロップの文字を打ちかえると、背景の座布団が自動でピッタリの幅に伸び縮みする。テロップ作りが一気に楽になる。',
+    demo: null,
+  },
+];
+
+/* =========================================================
+   状態とレンダリング
+========================================================= */
+const state = {
+  tab: 'shortcuts',
+  os: /Mac|iPhone|iPad/.test(navigator.userAgent) ? 'mac' : 'win',
+  query: '',
+  cat: 'すべて',
+};
+
+const $list = document.getElementById('list');
+const $chips = document.getElementById('chips');
+const $search = document.getElementById('search');
+const $tabs = document.getElementById('tabs');
+const $osToggle = document.getElementById('osToggle');
+
+function cats() {
+  const src = state.tab === 'shortcuts' ? SHORTCUTS : EXPRESSIONS;
+  return ['すべて', ...new Set(src.map(x => x.cat))];
+}
+
+function renderChips() {
+  $chips.innerHTML = cats().map(c =>
+    `<button data-cat="${c}" class="${c === state.cat ? 'on' : ''}">${c}</button>`
+  ).join('');
+}
+
+function keyHtml(combo) {
+  // "Ctrl+Shift+D" → kbd列。 " / " 区切りはペア表記
+  return combo.split(' / ').map(part =>
+    part.split('+').map(k => `<kbd>${k}</kbd>`).join('<span class="plus">+</span>')
+  ).join('<span class="plus">／</span>');
+}
+
+function match(item, fields) {
+  if (!state.query) return true;
+  const q = state.query.toLowerCase();
+  return fields.some(f => (item[f] || '').toLowerCase().includes(q));
+}
+
+function renderShortcuts() {
+  const items = SHORTCUTS.filter(s =>
+    (state.cat === 'すべて' || s.cat === state.cat) &&
+    match(s, ['name', 'desc', 'win', 'mac', 'cat'])
+  );
+  if (!items.length) { $list.innerHTML = '<div class="empty">見つかりませんでした 🔍</div>'; return; }
+
+  let html = '', lastCat = '';
+  for (const s of items) {
+    if (s.cat !== lastCat) { html += `<div class="cat-head">■ ${s.cat}</div>`; lastCat = s.cat; }
+    html += `
+      <div class="card sc-card">
+        <div class="sc-row">
+          <div>
+            <div class="sc-name">${s.name}</div>
+            <div class="sc-desc">${s.desc}</div>
+          </div>
+          <div class="sc-keys">${keyHtml(s[state.os])}</div>
+        </div>
+      </div>`;
+  }
+  $list.innerHTML = html;
+  FX.staggerReveal('#list .card', { each: 24, duration: 380 });
+}
+
+function renderExpressions() {
+  const items = EXPRESSIONS.filter(e =>
+    (state.cat === 'すべて' || e.cat === state.cat) &&
+    match(e, ['name', 'tag', 'kid', 'code', 'cat'])
+  );
+  if (!items.length) { $list.innerHTML = '<div class="empty">見つかりませんでした 🔍</div>'; return; }
+
+  let html = '', lastCat = '';
+  items.forEach(e => {
+    const i = EXPRESSIONS.indexOf(e);
+    if (e.cat !== lastCat) { html += `<div class="cat-head">■ ${e.cat}</div>`; lastCat = e.cat; }
+    html += `
+      <div class="card ex-card" data-i="${i}">
+        <div class="ex-head">
+          <div class="ex-title">
+            <span class="ex-name">${e.name}</span>
+            <span class="ex-badge">${e.badge}</span>
+            <span class="ex-caret">▶</span>
+          </div>
+          <div class="ex-tag">${e.tag}</div>
+        </div>
+        <div class="ex-body">
+          <div class="ex-code">${e.code}<button class="copy-btn">コピー</button></div>
+          <div class="ex-kid">${e.kid}</div>
+          ${e.demo ? `
+          <div class="demo-wrap">
+            <div class="demo-stage"><span class="demo-label">${e.name} のイメージ</span></div>
+            <button class="demo-btn">▶ 動きを見る</button>
+          </div>` : ''}
+        </div>
+      </div>`;
+  });
+  $list.innerHTML = html;
+  FX.staggerReveal('#list .card', { each: 30, duration: 380 });
+}
+
+function render() {
+  stopDemo();
+  renderChips();
+  (state.tab === 'shortcuts' ? renderShortcuts : renderExpressions)();
+}
+
+/* =========================================================
+   デモエンジン
+   AEのエクスプレッションの挙動を rAF でシミュレートする。
+   （UI演出は AP.* を使用。デモ本体は式の再現なので専用実装）
+========================================================= */
+let demo = null; // { raf, btn, stage }
+
+function fract(x) { return x - Math.floor(x); }
+function stepRandom(step, seed) { return fract(Math.sin(step * 12.9898 + seed * 78.233) * 43758.5453); }
+// wiggleっぽい滑らかノイズ（sin波の重ね合わせ）
+function pseudoWiggle(t, freq, amp, seed = 0) {
+  let v = 0, f = freq, a = 1, total = 0;
+  for (let i = 0; i < 3; i++) {
+    v += Math.sin(t * Math.PI * 2 * f + seed * 7.31 + i * 1.7) * a;
+    total += a; f *= 1.93; a *= 0.5;
+  }
+  return (v / total) * amp;
+}
+function smoothstep(x) { x = Math.max(0, Math.min(1, x)); return x * x * (3 - 2 * x); }
+
+function makeBall(stage, cls = '') {
+  const b = document.createElement('div');
+  b.className = 'demo-ball ' + cls;
+  stage.appendChild(b);
+  return b;
+}
+function place(el, x, y, rot = 0, scale = 1, opacity = 1) {
+  el.style.transform = `translate(${x - 13}px, ${y - 13}px) rotate(${rot}deg) scale(${scale})`;
+  el.style.opacity = opacity;
+}
+
+const DEMOS = {
+  // wiggle(2,30): 中心のまわりをランダムにプルプル
+  wiggle(stage, W, H) {
+    const b = makeBall(stage);
+    return t => place(b, W / 2 + pseudoWiggle(t, 2, W * 0.28, 1), H / 2 + pseudoWiggle(t, 2, 32, 9));
+  },
+  // loopOut("cycle"): 左→右の1秒アニメを繰り返す（最後にパッと戻る）
+  loopcycle(stage, W, H) {
+    const b = makeBall(stage);
+    return t => place(b, 30 + smoothstep(fract(t / 1.2)) * (W - 60), H / 2);
+  },
+  // loopOut("pingpong"): 行って戻って（三角波）
+  pingpong(stage, W, H) {
+    const b = makeBall(stage);
+    return t => {
+      const ph = fract(t / 2.4) * 2;                 // 0..2
+      const x = ph < 1 ? smoothstep(ph) : smoothstep(2 - ph);
+      place(b, 30 + x * (W - 60), H / 2);
+    };
+  },
+  // time*90: 一定スピードで回転し続ける
+  time(stage, W, H) {
+    const b = makeBall(stage, 'square');
+    return t => place(b, W / 2, H / 2, t * 90, 1.3);
+  },
+  // random(0,100): 毎フレーム(風)に値がジャンプ
+  random(stage, W, H) {
+    const b = makeBall(stage);
+    return t => {
+      const s = Math.floor(t * 9);
+      place(b, 20 + stepRandom(s, 1) * (W - 40), 20 + stepRandom(s, 2) * (H - 40), 0, 1, 0.4 + stepRandom(s, 3) * 0.6);
+    };
+  },
+  // Math.sin: 規則正しくゆらゆら
+  sin(stage, W, H) {
+    const b = makeBall(stage);
+    return t => place(b, W / 2 + Math.sin(t * 2) * (W * 0.32), H / 2 + Math.cos(t * 4) * 8);
+  },
+  // linear(time,0,2,0,100): 2秒で到達→止まる→少し待ってリプレイ
+  linear(stage, W, H) {
+    const b = makeBall(stage);
+    return t => {
+      const ph = Math.min(t % 3.2, 2) / 2;
+      place(b, 30 + ph * (W - 60), H / 2);
+    };
+  },
+  // ease(): linearと同じだが発進・到着がなめらか
+  ease(stage, W, H) {
+    const raw = makeBall(stage, 'demo-ghost');
+    const b = makeBall(stage, 'b2');
+    return t => {
+      const ph = Math.min(t % 3.2, 2) / 2;
+      place(raw, 30 + ph * (W - 60), H / 2 - 24);          // 上: linear（比較用）
+      place(b, 30 + smoothstep(ph) * (W - 60), H / 2 + 24); // 下: ease
+    };
+  },
+  // clamp(): 大きなsin波を柵で止める
+  clamp(stage, W, H) {
+    const raw = makeBall(stage, 'demo-ghost');
+    const b = makeBall(stage, 'b2');
+    const limit = W * 0.25;
+    return t => {
+      const v = Math.sin(t * 1.6) * (W * 0.45);
+      place(raw, W / 2 + v, H / 2 - 24);                                     // 上: そのまま
+      place(b, W / 2 + Math.max(-limit, Math.min(limit, v)), H / 2 + 24);    // 下: clampあり
+    };
+  },
+  // posterizeTime(8): なめらかなwiggleを8fpsに間引く
+  posterize(stage, W, H) {
+    const raw = makeBall(stage, 'demo-ghost');
+    const b = makeBall(stage, 'b3');
+    return t => {
+      const pt = Math.floor(t * 8) / 8; // 8fpsに量子化
+      place(raw, W / 2 + pseudoWiggle(t, 1.2, W * 0.3, 4), H / 2 - 24);
+      place(b, W / 2 + pseudoWiggle(pt, 1.2, W * 0.3, 4), H / 2 + 24);
+    };
+  },
+  // valueAtTime(time-0.2): リーダーを遅れて追いかける
+  delay(stage, W, H) {
+    const leader = makeBall(stage);
+    const f1 = makeBall(stage, 'b2');
+    const f2 = makeBall(stage, 'b3');
+    const pos = t => [W / 2 + Math.sin(t * 1.8) * (W * 0.32), H / 2 + Math.sin(t * 3.6) * 20];
+    return t => {
+      place(leader, ...pos(t));
+      place(f1, ...pos(t - 0.25), 0, 0.85, 0.85);
+      place(f2, ...pos(t - 0.5), 0, 0.7, 0.7);
+    };
+  },
+  // index: 番号ぶん遅れてジャンプ（ウェーブ）
+  index(stage, W, H) {
+    const balls = [makeBall(stage), makeBall(stage, 'b2'), makeBall(stage, 'b3')];
+    return t => balls.forEach((b, i) => {
+      const lt = Math.max(0, t - i * 0.18);
+      const y = Math.abs(Math.sin(lt * 3)) * (H * 0.32);
+      place(b, W * (0.28 + i * 0.22), H * 0.68 - y);
+    });
+  },
+  // smooth(): ガタガタ vs ならした後
+  smooth(stage, W, H) {
+    const raw = makeBall(stage, 'demo-ghost');
+    const b = makeBall(stage, 'b2');
+    const noisy = t => pseudoWiggle(t, 4, W * 0.3, 2) + (stepRandom(Math.floor(t * 20), 5) - 0.5) * 30;
+    return t => {
+      let avg = 0; const N = 7;
+      for (let i = 0; i < N; i++) avg += noisy(t - i * 0.05);
+      place(raw, W / 2 + noisy(t), H / 2 - 24);      // 上: ガタガタ
+      place(b, W / 2 + avg / N, H / 2 + 24);         // 下: smooth後
+    };
+  },
+};
+
+function stopDemo() {
+  if (!demo) return;
+  cancelAnimationFrame(demo.raf);
+  demo.stage.querySelectorAll('.demo-ball').forEach(b => b.remove());
+  demo.btn.classList.remove('playing');
+  demo.btn.textContent = '▶ 動きを見る';
+  demo = null;
+}
+
+function startDemo(btn, stage, kind) {
+  stopDemo(); // 同時再生は1つだけ（バッテリー節約）
+  const W = stage.clientWidth, H = stage.clientHeight;
+  const update = DEMOS[kind](stage, W, H);
+  const t0 = performance.now();
+  demo = { btn, stage, raf: 0 };
+  const loop = now => {
+    update((now - t0) / 1000);
+    demo.raf = requestAnimationFrame(loop);
+  };
+  demo.raf = requestAnimationFrame(loop);
+  btn.classList.add('playing');
+  btn.textContent = '■ 停止';
+  FX.pop(stage);
+}
+
+/* =========================================================
+   イベント
+========================================================= */
+$tabs.addEventListener('click', e => {
+  const btn = e.target.closest('button[data-tab]');
+  if (!btn || btn.dataset.tab === state.tab) return;
+  state.tab = btn.dataset.tab;
+  state.cat = 'すべて';
+  $tabs.querySelectorAll('button').forEach(b => b.classList.toggle('on', b === btn));
+  $osToggle.style.visibility = state.tab === 'shortcuts' ? 'visible' : 'hidden';
+  render();
+});
+
+$osToggle.addEventListener('click', e => {
+  const btn = e.target.closest('button[data-os]');
+  if (!btn) return;
+  state.os = btn.dataset.os;
+  $osToggle.querySelectorAll('button').forEach(b => b.classList.toggle('on', b === btn));
+  FX.pop(btn);
+  if (state.tab === 'shortcuts') renderShortcuts();
+});
+
+$chips.addEventListener('click', e => {
+  const btn = e.target.closest('button[data-cat]');
+  if (!btn) return;
+  state.cat = btn.dataset.cat;
+  render();
+});
+
+let searchTimer;
+$search.addEventListener('input', () => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => { state.query = $search.value.trim(); render(); }, 180);
+});
+
+$list.addEventListener('click', e => {
+  // コード コピー
+  const copyBtn = e.target.closest('.copy-btn');
+  if (copyBtn) {
+    e.stopPropagation();
+    const code = copyBtn.parentElement.textContent.replace(/コピー|✓ OK!$/g, '').trim();
+    (navigator.clipboard ? navigator.clipboard.writeText(code) : Promise.reject())
+      .catch(() => {
+        const ta = document.createElement('textarea');
+        ta.value = code; document.body.appendChild(ta); ta.select();
+        document.execCommand('copy'); ta.remove();
+      })
+      .finally(() => {
+        copyBtn.textContent = '✓ OK!';
+        copyBtn.classList.add('done');
+        FX.pop(copyBtn);
+        setTimeout(() => { copyBtn.textContent = 'コピー'; copyBtn.classList.remove('done'); }, 1400);
+      });
+    return;
+  }
+  // デモ再生 / 停止
+  const demoBtn = e.target.closest('.demo-btn');
+  if (demoBtn) {
+    const card = demoBtn.closest('.ex-card');
+    const kind = EXPRESSIONS[Number(card.dataset.i)].demo;
+    if (demo && demo.btn === demoBtn) stopDemo();
+    else startDemo(demoBtn, card.querySelector('.demo-stage'), kind);
+    return;
+  }
+  // カードの開閉
+  const head = e.target.closest('.ex-head');
+  if (head) {
+    const card = head.parentElement;
+    const opening = !card.classList.contains('open');
+    if (!opening && demo && card.contains(demo.stage)) stopDemo();
+    card.classList.toggle('open');
+    if (opening) FX.fadeInUp(card.querySelector('.ex-body'), { duration: 300, translateY: [10, 0] });
+  }
+});
+
+/* 初期化 */
+$osToggle.querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.os === state.os));
+render();
+</script>
+</body>
+</html>
