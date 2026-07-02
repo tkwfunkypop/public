@@ -6,6 +6,10 @@
 <meta name="theme-color" content="#1a1a24">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="AE早見帳">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
 <title>AE早見帳 — After Effects ショートカット & エクスプレッション</title>
 <style>
   :root {
@@ -174,6 +178,27 @@
   }
   .ex-kid b { color: var(--accent); }
 
+  .ex-combo {
+    background: rgba(100,216,203,.07);
+    border-left: 3px solid var(--accent2);
+    border-radius: 0 10px 10px 0;
+    padding: 10px 12px; font-size: 13px; margin-bottom: 12px;
+  }
+  .ex-combo .combo-t { font-weight: 800; color: var(--accent2); font-size: 12px; margin-bottom: 4px; }
+  .ex-combo ul { margin: 0; padding-left: 18px; }
+  .ex-combo li { margin: 4px 0; }
+  .ex-combo code, .ex-kid code {
+    background: #101018; border: 1px solid var(--line); border-radius: 5px;
+    padding: 1px 5px; font-size: 12px; color: #b7e6a5;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+
+  .mini-cat {
+    display: inline-block; font-size: 10px; color: var(--sub);
+    border: 1px solid var(--line); border-radius: 5px;
+    padding: 0 5px; font-weight: 600; vertical-align: 2px; margin-left: 2px;
+  }
+
   .demo-wrap { margin-top: 4px; }
   .demo-stage {
     position: relative; height: 120px;
@@ -251,76 +276,76 @@ const FX = (typeof AP !== 'undefined' && AP) ? AP : { staggerReveal(){}, pop(){}
 ========================================================= */
 const SHORTCUTS = [
   // --- 基本操作 ---
-  { cat: '基本操作', name: '取り消し（アンドゥ）', win: 'Ctrl+Z', mac: '⌘+Z', desc: '「やっちゃった！」を1つ前に戻す。困ったらまずこれ' },
+  { cat: '基本操作', hot: 3, name: '取り消し（アンドゥ）', win: 'Ctrl+Z', mac: '⌘+Z', desc: '「やっちゃった！」を1つ前に戻す。困ったらまずこれ' },
   { cat: '基本操作', name: 'やり直し（リドゥ）', win: 'Ctrl+Shift+Z', mac: '⌘+Shift+Z', desc: '戻しすぎたときに、もう一度進める' },
-  { cat: '基本操作', name: '保存', win: 'Ctrl+S', mac: '⌘+S', desc: 'こまめに保存！AEが落ちても泣かないために' },
-  { cat: '基本操作', name: '複製', win: 'Ctrl+D', mac: '⌘+D', desc: '選んだレイヤーやアイテムのコピーをすぐ作る' },
+  { cat: '基本操作', hot: 3, name: '保存', win: 'Ctrl+S', mac: '⌘+S', desc: 'こまめに保存！AEが落ちても泣かないために' },
+  { cat: '基本操作', hot: 3, name: '複製', win: 'Ctrl+D', mac: '⌘+D', desc: '選んだレイヤーやアイテムのコピーをすぐ作る' },
   { cat: '基本操作', name: '新規コンポジション', win: 'Ctrl+N', mac: '⌘+N', desc: '動画の「舞台」を新しく作る' },
   { cat: '基本操作', name: 'コンポジション設定', win: 'Ctrl+K', mac: '⌘+K', desc: 'サイズ・長さ・フレームレートをあとから変える' },
   { cat: '基本操作', name: 'ファイルを読み込み', win: 'Ctrl+I', mac: '⌘+I', desc: '画像・動画・音などの素材をプロジェクトに入れる' },
   { cat: '基本操作', name: 'レンダーキューに追加', win: 'Ctrl+M', mac: '⌘+M', desc: '完成した動画を書き出す準備をする' },
   { cat: '基本操作', name: 'Media Encoderキューに追加', win: 'Ctrl+Alt+M', mac: '⌘+Opt+M', desc: 'MP4などで書き出したいときはこっち' },
-  { cat: '基本操作', name: '環境設定を開く', win: 'Ctrl+Alt+;', mac: '⌘+Opt+;', desc: 'AE全体の設定画面を開く' },
+  { cat: '基本操作', hot: 1, name: '環境設定を開く', win: 'Ctrl+Alt+;', mac: '⌘+Opt+;', desc: 'AE全体の設定画面を開く' },
 
   // --- ツール ---
-  { cat: 'ツール', name: '選択ツール', win: 'V', mac: 'V', desc: 'いちばん基本の矢印。迷ったらVで戻る' },
+  { cat: 'ツール', hot: 3, name: '選択ツール', win: 'V', mac: 'V', desc: 'いちばん基本の矢印。迷ったらVで戻る' },
   { cat: 'ツール', name: '手のひらツール', win: 'H', mac: 'H', desc: '画面をつかんで移動。Space長押しでも一時的に使える' },
   { cat: 'ツール', name: 'ズームツール', win: 'Z', mac: 'Z', desc: '画面の拡大。Alt/Opt押しながらで縮小' },
   { cat: 'ツール', name: '回転ツール', win: 'W', mac: 'W', desc: 'レイヤーをドラッグでくるっと回す' },
-  { cat: 'ツール', name: 'ペンツール', win: 'G', mac: 'G', desc: 'マスクやシェイプの線を描く' },
+  { cat: 'ツール', hot: 3, name: 'ペンツール', win: 'G', mac: 'G', desc: 'マスクやシェイプの線を描く' },
   { cat: 'ツール', name: 'シェイプツール切り替え', win: 'Q', mac: 'Q', desc: '四角→丸→星…と押すたびに図形が変わる' },
   { cat: 'ツール', name: '文字ツール', win: 'Ctrl+T', mac: '⌘+T', desc: 'テキストを打つモードに切り替え' },
   { cat: 'ツール', name: 'アンカーポイントツール', win: 'Y', mac: 'Y', desc: '回転や拡大の「中心点」をずらす' },
-  { cat: 'ツール', name: 'カメラツール', win: 'C', mac: 'C', desc: '3Dカメラをぐりぐり動かす（押すたび切替）' },
-  { cat: 'ツール', name: 'ロトブラシツール', win: 'Alt+W', mac: 'Opt+W', desc: '動画から人や物をなぞって切り抜く' },
+  { cat: 'ツール', hot: 1, name: 'カメラツール', win: 'C', mac: 'C', desc: '3Dカメラをぐりぐり動かす（押すたび切替）' },
+  { cat: 'ツール', hot: 1, name: 'ロトブラシツール', win: 'Alt+W', mac: 'Opt+W', desc: '動画から人や物をなぞって切り抜く' },
 
   // --- レイヤー ---
-  { cat: 'レイヤー', name: '新規平面（ソリッド）', win: 'Ctrl+Y', mac: '⌘+Y', desc: 'ベタ塗り1色のレイヤーを作る。背景やエフェクト台に' },
-  { cat: 'レイヤー', name: '新規調整レイヤー', win: 'Ctrl+Alt+Y', mac: '⌘+Opt+Y', desc: '下のレイヤー全部にまとめてエフェクトをかける透明な板' },
+  { cat: 'レイヤー', hot: 3, name: '新規平面（ソリッド）', win: 'Ctrl+Y', mac: '⌘+Y', desc: 'ベタ塗り1色のレイヤーを作る。背景やエフェクト台に' },
+  { cat: 'レイヤー', hot: 3, name: '新規調整レイヤー', win: 'Ctrl+Alt+Y', mac: '⌘+Opt+Y', desc: '下のレイヤー全部にまとめてエフェクトをかける透明な板' },
   { cat: 'レイヤー', name: '新規ヌルオブジェクト', win: 'Ctrl+Alt+Shift+Y', mac: '⌘+Opt+Shift+Y', desc: '見えない「親」レイヤー。まとめて動かす司令塔' },
   { cat: 'レイヤー', name: '新規テキストレイヤー', win: 'Ctrl+Alt+Shift+T', mac: '⌘+Opt+Shift+T', desc: '文字レイヤーをすぐ作る' },
-  { cat: 'レイヤー', name: 'プリコンポーズ', win: 'Ctrl+Shift+C', mac: '⌘+Shift+C', desc: '複数レイヤーを1つの箱にまとめて整理する' },
-  { cat: 'レイヤー', name: 'レイヤーを分割', win: 'Ctrl+Shift+D', mac: '⌘+Shift+D', desc: '再生ヘッドの位置でレイヤーをパチンと2つに切る' },
+  { cat: 'レイヤー', hot: 3, name: 'プリコンポーズ', win: 'Ctrl+Shift+C', mac: '⌘+Shift+C', desc: '複数レイヤーを1つの箱にまとめて整理する' },
+  { cat: 'レイヤー', hot: 3, name: 'レイヤーを分割', win: 'Ctrl+Shift+D', mac: '⌘+Shift+D', desc: '再生ヘッドの位置でレイヤーをパチンと2つに切る' },
   { cat: 'レイヤー', name: 'レイヤー名を変更', win: 'Enter', mac: 'Return', desc: '選んだレイヤーの名前をその場で書き換え' },
   { cat: 'レイヤー', name: 'コンポの中央に配置', win: 'Ctrl+Home', mac: '⌘+Home', desc: 'レイヤーを画面のど真ん中へ一発移動' },
   { cat: 'レイヤー', name: 'アンカーポイントを中央へ', win: 'Ctrl+Alt+Home', mac: '⌘+Opt+Home', desc: '中心点をレイヤーの真ん中に戻す' },
   { cat: 'レイヤー', name: '1つ前面へ / 1つ背面へ', win: 'Ctrl+] / Ctrl+[', mac: '⌘+] / ⌘+[', desc: 'レイヤーの重なり順を1段ずつ入れ替える' },
-  { cat: 'レイヤー', name: '時間を逆再生（タイムリバース）', win: 'Ctrl+Alt+R', mac: '⌘+Opt+R', desc: 'レイヤーの再生を逆向きにする' },
+  { cat: 'レイヤー', hot: 1, name: '時間を逆再生（タイムリバース）', win: 'Ctrl+Alt+R', mac: '⌘+Opt+R', desc: 'レイヤーの再生を逆向きにする' },
 
   // --- プロパティ表示 ---
-  { cat: 'プロパティ表示', name: '位置を表示', win: 'P', mac: 'P', desc: 'Position の P。レイヤーの場所の数値だけ出す' },
-  { cat: 'プロパティ表示', name: 'スケールを表示', win: 'S', mac: 'S', desc: 'Scale の S。大きさの数値だけ出す' },
-  { cat: 'プロパティ表示', name: '回転を表示', win: 'R', mac: 'R', desc: 'Rotation の R。角度の数値だけ出す' },
-  { cat: 'プロパティ表示', name: '不透明度を表示', win: 'T', mac: 'T', desc: '透け具合。「透明のT」と覚える' },
+  { cat: 'プロパティ表示', hot: 3, name: '位置を表示', win: 'P', mac: 'P', desc: 'Position の P。レイヤーの場所の数値だけ出す' },
+  { cat: 'プロパティ表示', hot: 3, name: 'スケールを表示', win: 'S', mac: 'S', desc: 'Scale の S。大きさの数値だけ出す' },
+  { cat: 'プロパティ表示', hot: 3, name: '回転を表示', win: 'R', mac: 'R', desc: 'Rotation の R。角度の数値だけ出す' },
+  { cat: 'プロパティ表示', hot: 3, name: '不透明度を表示', win: 'T', mac: 'T', desc: '透け具合。「透明のT」と覚える' },
   { cat: 'プロパティ表示', name: 'アンカーポイントを表示', win: 'A', mac: 'A', desc: 'Anchor の A。中心点の数値だけ出す' },
-  { cat: 'プロパティ表示', name: 'エフェクトを表示', win: 'E', mac: 'E', desc: 'かかっているエフェクトの一覧を出す' },
-  { cat: 'プロパティ表示', name: 'キーフレームがある項目だけ表示', win: 'U', mac: 'U', desc: '「動きがついてる場所」だけ一発で開く。超便利', },
-  { cat: 'プロパティ表示', name: '変更した項目だけ表示', win: 'U+U', mac: 'U+U', desc: 'Uをすばやく2回。初期値からいじった項目が全部見える' },
+  { cat: 'プロパティ表示', hot: 3, name: 'エフェクトを表示', win: 'E', mac: 'E', desc: 'かかっているエフェクトの一覧を出す' },
+  { cat: 'プロパティ表示', hot: 3, name: 'キーフレームがある項目だけ表示', win: 'U', mac: 'U', desc: '「動きがついてる場所」だけ一発で開く。超便利', },
+  { cat: 'プロパティ表示', hot: 3, name: '変更した項目だけ表示', win: 'U+U', mac: 'U+U', desc: 'Uをすばやく2回。初期値からいじった項目が全部見える' },
   { cat: 'プロパティ表示', name: 'エクスプレッションだけ表示', win: 'E+E', mac: 'E+E', desc: 'Eをすばやく2回。式が入っている場所だけ出す' },
   { cat: 'プロパティ表示', name: 'マスクを表示', win: 'M', mac: 'M', desc: 'マスクのパスを出す。2回押しで全マスク設定' },
   { cat: 'プロパティ表示', name: '複数まとめて表示', win: 'Shift+P など', mac: 'Shift+P など', desc: 'Shiftを押しながら P S R…と押すと追加で並べられる' },
 
   // --- キーフレーム ---
-  { cat: 'キーフレーム', name: '位置のキーフレームを打つ', win: 'Alt+Shift+P', mac: 'Opt+P', desc: 'ストップウォッチを押さずに位置のキーを打つ' },
+  { cat: 'キーフレーム', hot: 3, name: '位置のキーフレームを打つ', win: 'Alt+Shift+P', mac: 'Opt+P', desc: 'ストップウォッチを押さずに位置のキーを打つ' },
   { cat: 'キーフレーム', name: 'スケールのキーフレームを打つ', win: 'Alt+Shift+S', mac: 'Opt+S', desc: '大きさのキーを一発で打つ' },
   { cat: 'キーフレーム', name: '回転のキーフレームを打つ', win: 'Alt+Shift+R', mac: 'Opt+R', desc: '角度のキーを一発で打つ' },
   { cat: 'キーフレーム', name: '不透明度のキーフレームを打つ', win: 'Alt+Shift+T', mac: 'Opt+T', desc: '透け具合のキーを一発で打つ' },
-  { cat: 'キーフレーム', name: 'イージーイーズ', win: 'F9', mac: 'F9', desc: '動きの始まりと終わりをなめらかに。プロっぽさの第一歩' },
+  { cat: 'キーフレーム', hot: 3, name: 'イージーイーズ', win: 'F9', mac: 'F9', desc: '動きの始まりと終わりをなめらかに。プロっぽさの第一歩' },
   { cat: 'キーフレーム', name: 'イージーイーズイン', win: 'Shift+F9', mac: 'Shift+F9', desc: '「到着」だけをなめらかにする' },
   { cat: 'キーフレーム', name: 'イージーイーズアウト', win: 'Ctrl+Shift+F9', mac: '⌘+Shift+F9', desc: '「出発」だけをなめらかにする' },
   { cat: 'キーフレーム', name: '前 / 次のキーフレームへ移動', win: 'J / K', mac: 'J / K', desc: '表示中のキーフレームの間をジャンプ移動' },
   { cat: 'キーフレーム', name: 'グラフエディターを開く', win: 'Shift+F3', mac: 'Shift+F3', desc: '動きの速さをグラフで細かく調整する画面へ' },
 
   // --- 時間・タイムライン ---
-  { cat: '時間移動', name: '再生 / 停止', win: 'Space', mac: 'Space', desc: 'プレビューの再生・停止' },
-  { cat: '時間移動', name: 'コンポの最初 / 最後へ', win: 'Home / End', mac: 'Home / End', desc: 'タイムラインの先頭・末尾へ一発ジャンプ' },
-  { cat: '時間移動', name: '1フレーム進む / 戻る', win: 'PageDown / PageUp', mac: 'PageDown / PageUp', desc: 'コマ送りで細かくチェック。Shift併用で10フレーム' },
+  { cat: '時間移動', hot: 3, name: '再生 / 停止', win: 'Space', mac: 'Space', desc: 'プレビューの再生・停止' },
+  { cat: '時間移動', hot: 3, name: 'コンポの最初 / 最後へ', win: 'Home / End', mac: 'Home / End', desc: 'タイムラインの先頭・末尾へ一発ジャンプ' },
+  { cat: '時間移動', hot: 3, name: '1フレーム進む / 戻る', win: 'PageDown / PageUp', mac: 'PageDown / PageUp', desc: 'コマ送りで細かくチェック。Shift併用で10フレーム' },
   { cat: '時間移動', name: 'レイヤーのイン / アウト点へ', win: 'I / O', mac: 'I / O', desc: '選んだレイヤーの始まり・終わりへジャンプ' },
-  { cat: '時間移動', name: 'イン / アウト点を現在時間へ移動', win: '[ / ]', mac: '[ / ]', desc: 'レイヤーの開始（終了）位置を再生ヘッドに合わせて動かす' },
-  { cat: '時間移動', name: '現在時間でイン / アウトをトリム', win: 'Alt+[ / Alt+]', mac: 'Opt+[ / Opt+]', desc: '再生ヘッドの位置でレイヤーの前（後ろ）を切り落とす' },
+  { cat: '時間移動', hot: 3, name: 'イン / アウト点を現在時間へ移動', win: '[ / ]', mac: '[ / ]', desc: 'レイヤーの開始（終了）位置を再生ヘッドに合わせて動かす' },
+  { cat: '時間移動', hot: 3, name: '現在時間でイン / アウトをトリム', win: 'Alt+[ / Alt+]', mac: 'Opt+[ / Opt+]', desc: '再生ヘッドの位置でレイヤーの前（後ろ）を切り落とす' },
   { cat: '時間移動', name: 'ワークエリアの開始 / 終了', win: 'B / N', mac: 'B / N', desc: 'プレビューする範囲のスタート・ゴールを決める' },
   { cat: '時間移動', name: 'マーカーを打つ', win: '*（テンキー）', mac: '*（テンキー）', desc: '「ここ大事」の目印をタイムラインに付ける' },
-  { cat: '時間移動', name: '時間を指定してジャンプ', win: 'Alt+Shift+J', mac: 'Opt+Shift+J', desc: '「3秒ちょうどへ」など数字入力で移動' },
+  { cat: '時間移動', hot: 1, name: '時間を指定してジャンプ', win: 'Alt+Shift+J', mac: 'Opt+Shift+J', desc: '「3秒ちょうどへ」など数字入力で移動' },
   { cat: '時間移動', name: 'タイムラインを拡大 / 縮小', win: '+ / -', mac: '+ / -', desc: 'タイムラインの目盛りをズームイン・アウト' },
 
   // --- 表示・プレビュー ---
@@ -328,10 +353,10 @@ const SHORTCUTS = [
   { cat: '表示', name: '画面サイズにフィット', win: 'Shift+/', mac: 'Shift+/', desc: 'コンポ全体がちょうど収まる倍率にする' },
   { cat: '表示', name: '解像度: フル画質', win: 'Ctrl+J', mac: '⌘+J', desc: 'プレビューをフル画質に。重いときは下の2つへ' },
   { cat: '表示', name: '解像度: 1/2 画質', win: 'Ctrl+Shift+J', mac: '⌘+Shift+J', desc: 'プレビューを半分の画質にして軽くする' },
-  { cat: '表示', name: 'セーフゾーンを表示', win: "'", mac: "'", desc: 'タイトルが切れない安全エリアの枠を出す' },
-  { cat: '表示', name: 'グリッドを表示', win: "Ctrl+'", mac: "⌘+'", desc: '方眼紙のようなマス目を出して配置の目安に' },
-  { cat: '表示', name: '定規を表示', win: 'Ctrl+R', mac: '⌘+R', desc: '画面の端に目盛りを出す。ガイド線も引ける' },
-  { cat: '表示', name: '画面の更新を止める', win: 'CapsLock', mac: 'CapsLock', desc: '重い作業中にプレビュー更新をオフにして軽くする' },
+  { cat: '表示', hot: 1, name: 'セーフゾーンを表示', win: "'", mac: "'", desc: 'タイトルが切れない安全エリアの枠を出す' },
+  { cat: '表示', hot: 1, name: 'グリッドを表示', win: "Ctrl+'", mac: "⌘+'", desc: '方眼紙のようなマス目を出して配置の目安に' },
+  { cat: '表示', hot: 1, name: '定規を表示', win: 'Ctrl+R', mac: '⌘+R', desc: '画面の端に目盛りを出す。ガイド線も引ける' },
+  { cat: '表示', hot: 1, name: '画面の更新を止める', win: 'CapsLock', mac: 'CapsLock', desc: '重い作業中にプレビュー更新をオフにして軽くする' },
 ];
 
 /* =========================================================
@@ -340,17 +365,27 @@ const SHORTCUTS = [
 ========================================================= */
 const EXPRESSIONS = [
   {
-    cat: '定番', name: 'wiggle()', badge: '一番人気',
+    cat: '定番', hot: 3, name: 'wiggle()', badge: '一番人気',
     code: 'wiggle(2, 30)',
     tag: 'ランダムにプルプル揺らす',
     kid: '<b>「1秒に2回、30の強さでランダムに揺らして」</b>という意味。位置に入れるとカメラの手ブレ風、明るさに入れるとチカチカする炎の光みたいになる。最初の数字＝揺れる速さ、次の数字＝揺れる大きさ。',
+    combo: [
+      '上の行に <code>posterizeTime(8);</code> を足すと手書き風のカクカク揺れに（ストップモーション風）',
+      'エフェクト「ブラー（方向）」と合わせると勢いのある画面揺れ・衝撃表現に',
+      '不透明度に wiggle(8, 40) ＋ エフェクト「グロー」でネオンや炎のチカチカに',
+    ],
     demo: 'wiggle',
   },
   {
-    cat: '定番', name: 'loopOut("cycle")', badge: '定番',
+    cat: '定番', hot: 3, name: 'loopOut("cycle")', badge: '定番',
     code: 'loopOut("cycle")',
     tag: 'キーフレームの動きを永遠にくり返す',
     kid: '作ったキーフレームの動きが終わったら、<b>最初に戻って同じ動きを永遠にリピート</b>する。歩きのループや回転アニメなど「ずっと繰り返したい動き」をキーフレーム2個だけで作れる。',
+    combo: [
+      'キーフレームに F9（イージーイーズ）をかけてからループすると滑らかさが段違い',
+      '回転のキーフレーム2個＋これで無限ローディングアイコンが完成',
+      'エフェクト「波形ワープ」と合わせて、ずっと揺れ続ける旗や水面に',
+    ],
     demo: 'loopcycle',
   },
   {
@@ -358,13 +393,22 @@ const EXPRESSIONS = [
     code: 'loopOut("pingpong")',
     tag: '行って戻ってを永遠にくり返す',
     kid: '卓球（ピンポン）の玉みたいに、<b>行ったら今度は逆向きに戻ってくる</b>のをくり返す。振り子や「ゆらゆら漂う」動きにぴったり。cycleとの違いは「逆再生で戻る」こと。',
+    combo: [
+      'スケール 95%↔105% のキーフレーム＋これで「呼吸するボタン」（強調したい要素に）',
+      '位置Yのキーフレーム2個＋これで、ふわふわ上下に漂うキャラクターや風船に',
+    ],
     demo: 'pingpong',
   },
   {
-    cat: '定番', name: 'time', badge: '基本',
+    cat: '定番', hot: 3, name: 'time', badge: '基本',
     code: '// 回転に入れると1秒で90°回る\ntime * 90',
     tag: '時間に合わせて一定スピードで動かす',
     kid: '<b>time は「再生してからの秒数」が入っている箱</b>。回転に「time * 90」と書くと、1秒で90°、2秒で180°…とずーっと同じ速さで回り続ける。キーフレーム不要で「ずっと回る」が作れる。',
+    combo: [
+      'エフェクト「フラクタルノイズ」の展開に <code>time * 200</code> → 動き続ける煙・雲・水面の背景（超定番）',
+      'エフェクト「タービュレントディスプレイス」の展開に <code>time * 50</code> → 線や文字がうねうね動く手描き風',
+      'エフェクト「色相/彩度」の色相に <code>time * 90</code> → 色が変わり続けるレインボーネオンに',
+    ],
     demo: 'time',
   },
   {
@@ -372,13 +416,20 @@ const EXPRESSIONS = [
     code: 'random(0, 100)',
     tag: '毎フレーム、サイコロを振って値を決める',
     kid: '<b>毎フレーム、0〜100の間の数をサイコロのようにランダムに選ぶ</b>。不透明度に入れると激しくチカチカ点滅（グリッチ風）。wiggleより「ガタガタ・バチバチ」した荒い動きになる。',
+    combo: [
+      '上の行に <code>posterizeTime(4);</code> を足すと点滅間隔が荒くなってグリッチ感UP',
+      'エフェクト「色収差」系（RGBずらし）や「ブロックディゾルブ」と合わせて故障テレビ風に',
+    ],
     demo: 'random',
   },
   {
-    cat: '揺れ・ランダム', name: 'seedRandom()', badge: 'ランダム',
+    cat: '揺れ・ランダム', hot: 1, name: 'seedRandom()', badge: 'ランダム',
     code: 'seedRandom(5, true);\nrandom(0, 100)',
     tag: 'ランダムの「くじ引きの中身」を固定する',
     kid: 'ランダムは毎回結果が変わるけど、seedRandomで<b>「5番のくじ引きセットを使って」と指定すると、何回再生しても同じランダム</b>になる。レイヤーごとに違う数字にすれば、それぞれ違う揺れ方に。2つ目の true は「時間が経っても引き直さない」の意味。',
+    combo: [
+      'wiggleの上の行に <code>seedRandom(index);</code> と書くと、複製したレイヤーごとに違う揺れ方になる（全員おそろいの揺れを防ぐ定番技）',
+    ],
     demo: null,
   },
   {
@@ -386,6 +437,10 @@ const EXPRESSIONS = [
     code: '// 上下にゆらゆら（速さ2, ふり幅40）\nvalue + [0, Math.sin(time * 2) * 40]',
     tag: 'なめらかに行ったり来たりの波をつくる',
     kid: '<b>sin（サイン）は「なめらかな波」を作ってくれる数学の道具</b>。wiggleのランダムと違って、regular（規則正しく）ゆ〜らゆ〜らする。風船が浮かんでいる感じや、呼吸するようなふわふわに最適。time×の数字で速さ、最後の×の数字でふり幅が変わる。',
+    combo: [
+      'エフェクト「ドロップシャドウ」と合わせて、浮遊するキャラの影の距離も一緒に動かすとリアルな浮遊感に',
+      'スケールに <code>value + Math.sin(time*2)*3</code> で呼吸するようなふわふわ拡縮',
+    ],
     demo: 'sin',
   },
   {
@@ -393,6 +448,10 @@ const EXPRESSIONS = [
     code: '// 0〜2秒かけて 0→100 に変化\nlinear(time, 0, 2, 0, 100)',
     tag: '「AがこうならBはこう」と値を言いかえる',
     kid: '<b>「timeが0→2に進む間に、答えを0→100に変えてね」</b>という値の翻訳機。「音の大きさに合わせてサイズを変える」「スライダーで色を変える」など、何かと何かを連動させるときの超基本。範囲の外では止まってくれるのも安心。',
+    combo: [
+      '「オーディオをキーフレームに変換」→ できた音量スライダーとlinearをつなぐと、音に合わせて跳ねる図形に（音ハメの定番）',
+      'エフェクト「スライダー制御」と合わせると、つまみ1本で複数レイヤーの色や大きさをまとめて調整できる',
+    ],
     demo: 'linear',
   },
   {
@@ -400,13 +459,19 @@ const EXPRESSIONS = [
     code: '// linearのなめらか版\nease(time, 0, 2, 0, 100)',
     tag: 'linearのなめらか版。ゆっくり始まってゆっくり終わる',
     kid: '使い方はlinearと同じ。違いは<b>スタートとゴールがふわっとなめらか</b>になること。電車が駅を出るときと着くときにゆっくりになるイメージ。イージーイーズ（F9）のエクスプレッション版。',
+    combo: [
+      'カメラやヌルの移動に使うと、高級感のあるスローイン・スローアウトの画面移動に',
+    ],
     demo: 'ease',
   },
   {
-    cat: '便利関数', name: 'clamp()', badge: '制限',
+    cat: '便利関数', hot: 1, name: 'clamp()', badge: '制限',
     code: '// 値を 0〜50 の範囲におさめる\nclamp(value, 0, 50)',
     tag: '値がはみ出さないように柵で囲う',
     kid: '<b>「どんなに大きくても50まで、小さくても0まで」と柵を作る</b>。wiggleで揺らしたら画面の外に飛び出しちゃった…というときに、行き過ぎをカットしてくれるストッパー。',
+    combo: [
+      'wiggleを丸ごと包んで <code>clamp(wiggle(3, 100)[0], 0, 960)</code> のようにすると、揺れても画面から出ない',
+    ],
     demo: 'clamp',
   },
   {
@@ -414,6 +479,10 @@ const EXPRESSIONS = [
     code: '// 1秒間に8コマだけ更新する\nposterizeTime(8);\nwiggle(3, 50)',
     tag: 'わざとカクカクのコマ落ち風にする',
     kid: '<b>「1秒に8回だけ動きを更新して」</b>という意味。パラパラ漫画やストップモーションみたいなカクカクした質感になる。手書き風アニメーションの「あの感じ」を出したいときに。',
+    combo: [
+      'wiggleとセットが鉄板（カクカク手書き揺れ）。さらにエフェクト「ラフエッジ」を足すと完全にアナログ風',
+      'randomと合わせてグリッチの点滅間隔をコントロール',
+    ],
     demo: 'posterize',
   },
   {
@@ -421,6 +490,10 @@ const EXPRESSIONS = [
     code: '// 親レイヤーを0.2秒遅れで追いかける\nl = thisComp.layer("リーダー");\nl.position.valueAtTime(time - 0.2)',
     tag: 'ちょっと遅れてついてくる「金魚のフン」',
     kid: '<b>「0.2秒前のあのレイヤーの位置をちょうだい」</b>という意味。先頭のレイヤーを動かすと、後ろのレイヤーがワンテンポ遅れてついてくる。しっぽ、隊列、残像っぽい表現が作れる。',
+    combo: [
+      'indexと組み合わせて複製するだけで隊列が完成（下のindexの項目を見てね）',
+      '似た残像表現はエフェクト「エコー」でもエクスプレッションなしで作れる。使い分けよう',
+    ],
     demo: 'delay',
   },
   {
@@ -428,20 +501,31 @@ const EXPRESSIONS = [
     code: '// レイヤー番号ぶんだけ遅らせて再生\ndelay = 0.15;\nvalueAtTime(time - (index - 1) * delay)',
     tag: 'レイヤー番号を使って自動で時間差をつける',
     kid: '<b>index は「自分がタイムラインの上から何番目か」の番号</b>。これを使うと、レイヤーを複製するだけで1番は0秒、2番は0.15秒、3番は0.3秒…と自動で時間差(ウェーブ)がつく。大量のオブジェクトを順番に動かすときの必殺技。',
+    combo: [
+      'valueAtTimeとセットが定番。Ctrl+D / ⌘+D で複製するほどヘビのようにつながっていく',
+      'seedRandom(index) と組み合わせると、レイヤーごとに違うランダム揺れがつく',
+    ],
     demo: 'index',
   },
   {
-    cat: '追いかけ・連動', name: 'smooth()', badge: '滑らか',
+    cat: '追いかけ・連動', hot: 1, name: 'smooth()', badge: '滑らか',
     code: '// ガタガタの動きをなめらかに\nsmooth(0.2, 5)',
     tag: 'ガタガタの動きをなめらかにならす',
     kid: 'ガタガタした動きの<b>前後0.2秒ぶんを5点分平均して、なめらかにならす</b>。手ブレの激しいトラッキングデータを落ち着かせたいときに。ヤスリがけのイメージ。',
+    combo: [
+      'トラッカーで取った手ブレデータにかけて「ちょい揺れ」だけ残すと自然な仕上がりに',
+    ],
     demo: 'smooth',
   },
   {
-    cat: '追いかけ・連動', name: 'sourceRectAtTime()', badge: '自動化',
+    cat: '追いかけ・連動', hot: 3, name: 'sourceRectAtTime()', badge: '自動化',
     code: '// テキストの幅に合わせて座布団の幅を変える\nt = thisComp.layer("テキスト");\nw = t.sourceRectAtTime().width;\n[w + 40, 80]',
     tag: '文字の長さに合わせて背景の大きさを自動調整',
     kid: '<b>「あのレイヤーのいまの大きさ（幅と高さ）を教えて」</b>という意味。テロップの文字を打ちかえると、背景の座布団が自動でピッタリの幅に伸び縮みする。テロップ作りが一気に楽になる。',
+    combo: [
+      '「テキスト＋シェイプの座布団」にこれを入れるのが自動テロップの定番セット',
+      'シェイプの「角を丸くする」も足すと、今っぽいピル型（カプセル型）テロップに',
+    ],
     demo: null,
   },
 ];
@@ -483,24 +567,34 @@ function keyHtml(combo) {
 function match(item, fields) {
   if (!state.query) return true;
   const q = state.query.toLowerCase();
-  return fields.some(f => (item[f] || '').toLowerCase().includes(q));
+  return fields.some(f => {
+    const v = item[f];
+    return (Array.isArray(v) ? v.join(' ') : (v || '')).toLowerCase().includes(q);
+  });
 }
 
+/* よく使う度（hot: 1〜3、省略時は2）。「すべて」表示では★の多い順に並べる */
+const hotOf = x => x.hot != null ? x.hot : 2;
+const TIER_LABEL = { 3: '★★★ 超よく使う', 2: '★★ よく使う', 1: '★ 覚えておくと便利' };
+const sortByHot = items => items.slice().sort((a, b) => hotOf(b) - hotOf(a));
+
 function renderShortcuts() {
-  const items = SHORTCUTS.filter(s =>
-    (state.cat === 'すべて' || s.cat === state.cat) &&
+  const byTier = state.cat === 'すべて';
+  const items = sortByHot(SHORTCUTS.filter(s =>
+    (byTier || s.cat === state.cat) &&
     match(s, ['name', 'desc', 'win', 'mac', 'cat'])
-  );
+  ));
   if (!items.length) { $list.innerHTML = '<div class="empty">見つかりませんでした 🔍</div>'; return; }
 
-  let html = '', lastCat = '';
+  let html = '', lastHead = '';
   for (const s of items) {
-    if (s.cat !== lastCat) { html += `<div class="cat-head">■ ${s.cat}</div>`; lastCat = s.cat; }
+    const head = byTier ? TIER_LABEL[hotOf(s)] : `■ ${s.cat}`;
+    if (head !== lastHead) { html += `<div class="cat-head">${head}</div>`; lastHead = head; }
     html += `
       <div class="card sc-card">
         <div class="sc-row">
           <div>
-            <div class="sc-name">${s.name}</div>
+            <div class="sc-name">${s.name}${byTier ? ` <span class="mini-cat">${s.cat}</span>` : ''}</div>
             <div class="sc-desc">${s.desc}</div>
           </div>
           <div class="sc-keys">${keyHtml(s[state.os])}</div>
@@ -512,16 +606,18 @@ function renderShortcuts() {
 }
 
 function renderExpressions() {
-  const items = EXPRESSIONS.filter(e =>
-    (state.cat === 'すべて' || e.cat === state.cat) &&
-    match(e, ['name', 'tag', 'kid', 'code', 'cat'])
-  );
+  const byTier = state.cat === 'すべて';
+  const items = sortByHot(EXPRESSIONS.filter(e =>
+    (byTier || e.cat === state.cat) &&
+    match(e, ['name', 'tag', 'kid', 'code', 'cat', 'combo'])
+  ));
   if (!items.length) { $list.innerHTML = '<div class="empty">見つかりませんでした 🔍</div>'; return; }
 
-  let html = '', lastCat = '';
+  let html = '', lastHead = '';
   items.forEach(e => {
     const i = EXPRESSIONS.indexOf(e);
-    if (e.cat !== lastCat) { html += `<div class="cat-head">■ ${e.cat}</div>`; lastCat = e.cat; }
+    const head = byTier ? TIER_LABEL[hotOf(e)] : `■ ${e.cat}`;
+    if (head !== lastHead) { html += `<div class="cat-head">${head}</div>`; lastHead = head; }
     html += `
       <div class="card ex-card" data-i="${i}">
         <div class="ex-head">
@@ -535,6 +631,11 @@ function renderExpressions() {
         <div class="ex-body">
           <div class="ex-code">${e.code}<button class="copy-btn">コピー</button></div>
           <div class="ex-kid">${e.kid}</div>
+          ${e.combo ? `
+          <div class="ex-combo">
+            <div class="combo-t">🧩 おすすめの組み合わせ</div>
+            <ul>${e.combo.map(c => `<li>${c}</li>`).join('')}</ul>
+          </div>` : ''}
           ${e.demo ? `
           <div class="demo-wrap">
             <div class="demo-stage"><span class="demo-label">${e.name} のイメージ</span></div>
