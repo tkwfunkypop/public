@@ -3,7 +3,7 @@
    バージョンを上げると古いキャッシュは削除される。 */
 /* 注意: rawcdn.githack などディレクトリindexを返さないホストでも動くよう
    './' はプリキャッシュに入れない(入れると addAll が失敗しSWが有効化されない) */
-const CACHE = 'ae-cheatsheet-v5';
+const CACHE = 'ae-cheatsheet-v6';
 const ASSETS = [
   './index.html',
   './manifest.webmanifest',
@@ -28,9 +28,27 @@ self.addEventListener('activate', (e) => {
   );
 });
 
-/* キャッシュ優先 + 裏でネットワーク更新(次回起動時に最新化) */
+/* ページ(HTML)はネットワーク優先: リロード1回で必ず最新版になる。
+   オフライン時だけキャッシュにフォールバック。 */
 self.addEventListener('fetch', (e) => {
   if (e.request.method !== 'GET') return;
+  if (e.request.mode === 'navigate') {
+    e.respondWith(
+      fetch(e.request)
+        .then((res) => {
+          if (res && res.ok) {
+            const copy = res.clone();
+            caches.open(CACHE).then((c) => c.put(e.request, copy));
+          }
+          return res;
+        })
+        .catch(() =>
+          caches.match(e.request).then((r) => r || caches.match('./index.html'))
+        )
+    );
+    return;
+  }
+  /* その他のアセットはキャッシュ優先 + 裏でネットワーク更新 */
   e.respondWith(
     caches.match(e.request).then((cached) => {
       const fresh = fetch(e.request)
