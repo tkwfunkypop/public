@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AE早見帳</string>
+    <string name="title_activity_main">AE早見帳</string>
+    <string name="package_name">jp.aehayamicho.app</string>
+    <string name="custom_url_scheme">jp.aehayamicho.app</string>
+</resources>

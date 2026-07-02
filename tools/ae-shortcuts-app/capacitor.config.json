@@ -1,0 +1,12 @@
+{
+  "appId": "jp.aehayamicho.app",
+  "appName": "AE早見帳",
+  "webDir": "www",
+  "android": {
+    "backgroundColor": "#14141c"
+  },
+  "ios": {
+    "backgroundColor": "#14141c",
+    "contentInset": "automatic"
+  }
+}
