@@ -263,8 +263,15 @@
   <footer>AE早見帳 — ホーム画面に追加するとアプリのように使えます</footer>
 </main>
 
-<script src="https://cdn.jsdelivr.net/npm/animejs@4.4.1/dist/bundles/anime.umd.min.js"></script>
+<!-- アプリ配布(オフライン動作)のため anime.js はローカル同梱版を読む -->
+<script src="./anime.umd.min.js"></script>
 <script src="../../lib/animations.js"></script>
+<script>
+// インストール型アプリとして動くよう Service Worker を登録(https配信時のみ)
+if ('serviceWorker' in navigator && location.protocol === 'https:') {
+  navigator.serviceWorker.register('./sw.js').catch(() => {});
+}
+</script>
 <script>
 /* UI演出は lib/animations.js の AP.* を使う。
    オフラインやCSPで anime.js が読めない環境でも一覧機能は使えるようにガード */
