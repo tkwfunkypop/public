@@ -40,6 +40,12 @@ https://rawcdn.githack.com/tkwfunkypop/public/<コミットSHA>/tools/ae-shortcu
 2. `sw.js` の `CACHE` のバージョン番号を上げる（全員のキャッシュが次回起動時に入れ替わる）
 3. commit & push → 新しいSHAで配布URLを再発行（GitHub Pages運用なら不要）
 
+## 配布セット・使い方マニュアル
+
+- 配布URL一覧とBrain記事用の紹介ブロック: `haifu.md`
+- 使い方マニュアル(Web): https://tkwfunkypop.github.io/public/tools/ae-shortcuts/manual/
+- 使い方マニュアル(PDF): https://tkwfunkypop.github.io/public/tools/ae-shortcuts/manual/manual.pdf
+
 ## 更新も自動反映させたい場合（推奨・任意）
 
 リポジトリの Settings → Pages を有効化（Branch: 配布したいブランチ / root）すると
