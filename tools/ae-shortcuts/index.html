@@ -197,6 +197,22 @@
   }
   .ex-kid b { color: var(--accent); }
 
+  .ex-ai {
+    background: rgba(255, 145, 200, .07);
+    border-left: 3px solid #ff91c8;
+    border-radius: 0 10px 10px 0;
+    padding: 10px 12px; font-size: 12.5px; margin-bottom: 12px;
+  }
+  .ex-ai .ai-t { font-weight: 800; color: #ff9ecf; font-size: 12px; margin-bottom: 4px; }
+  .ex-ai .ai-text { color: var(--sub); line-height: 1.75; }
+  .ex-ai .ai-copy {
+    display: block; width: 100%; margin-top: 8px;
+    background: rgba(255,145,200,.12); border: 1px solid rgba(255,145,200,.4);
+    color: #ffb9dc; font-size: 12px; font-weight: 700;
+    border-radius: 8px; padding: 7px 0; cursor: pointer;
+  }
+  .ex-ai .ai-copy.done { color: var(--accent2); border-color: var(--accent2); }
+
   .ex-combo {
     background: rgba(100,216,203,.07);
     border-left: 3px solid var(--accent2);
@@ -348,7 +364,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 const FX = (typeof AP !== 'undefined' && AP) ? AP : { staggerReveal(){}, pop(){}, fadeInUp(){}, countUp(){} };
 
 /* ▼ アプリ情報（更新したらここと sw.js の CACHE を上げる） */
-const APP_VERSION = 'v2.3';
+const APP_VERSION = 'v2.4';
 const APP_DATE = '2026-07-03';
 
 /* ▼ 匿名アクセス集計（任意・既定OFF）
@@ -552,6 +568,7 @@ const EXPRESSIONS = [
       'エフェクト「ブラー（方向）」と合わせると勢いのある画面揺れ・衝撃表現に',
       '不透明度に wiggle(8, 40) ＋ エフェクト「グロー」でネオンや炎のチカチカに',
     ],
+    ai: 'After Effectsのエクスプレッションについて質問です。wiggle() でレイヤーを揺らしたいです。【位置/不透明度 など】に貼って、【例: 手ブレっぽく細かく/ゆっくり大きく】揺らしたいのですが、wiggle(2, 30) の数値をどう変えればいいですか？ 初心者なので、完成形のコードと数値の意味を教えてください。',
     demo: 'wiggle',
   },
   {
@@ -564,6 +581,7 @@ const EXPRESSIONS = [
       '回転のキーフレーム2個＋これで無限ローディングアイコンが完成',
       'エフェクト「波形ワープ」と合わせて、ずっと揺れ続ける旗や水面に',
     ],
+    ai: 'After Effectsで loopOut("cycle") を使ってキーフレームの動きを永遠にループさせたいです。【例: 0秒→1秒で一回転】のキーフレームを作りましたが、【ループしない/つなぎ目で一瞬止まる】状態です。原因の調べ方と直し方を初心者向けに教えてください。',
     demo: 'loopcycle',
   },
   {
@@ -575,6 +593,7 @@ const EXPRESSIONS = [
       'スケール 95%↔105% のキーフレーム＋これで「呼吸するボタン」（強調したい要素に）',
       '位置Yのキーフレーム2個＋これで、ふわふわ上下に漂うキャラクターや風船に',
     ],
+    ai: 'After Effectsで loopOut("pingpong") を使って「行って戻って」をくり返す動きを作りたいです。【例: 風船をふわふわ上下させたい】のですが、キーフレームをどこに何個打って、式をどのプロパティに貼ればいいですか？ 初心者向けに手順で教えてください。',
     demo: 'pingpong',
   },
   {
@@ -587,6 +606,7 @@ const EXPRESSIONS = [
       'エフェクト「タービュレントディスプレイス」の展開に <code>time * 50</code> → 線や文字がうねうね動く手描き風',
       'エフェクト「色相/彩度」の色相に <code>time * 90</code> → 色が変わり続けるレインボーネオンに',
     ],
+    ai: 'After Effectsで time を使って【例: ずっと回転させたい/フラクタルノイズの背景を動かし続けたい】です。time * 90 のような式の数値はどう決めればいいですか？ どのプロパティに貼るのかも含めて初心者向けに教えてください。',
     demo: 'time',
   },
 
@@ -599,6 +619,7 @@ const EXPRESSIONS = [
     combo: [
       '「一定距離すすむ」キーフレーム2個＋これで無限に歩く・流れるアニメに',
     ],
+    ai: 'After Effectsの loopOut("offset") で、動きを積み上げながらループさせたいです。【例: キャラクターをずっと右に歩かせ続けたい】のですが、キーフレームの作り方と "cycle" との違いがよく分かりません。具体例つきで初心者向けに教えてください。',
     demo: 'loopoffset',
   },
   {
@@ -606,6 +627,7 @@ const EXPRESSIONS = [
     code: 'loopOut("continue")',
     tag: '最後の勢いのまま進み続ける',
     kid: 'くり返しはせず、<b>最後のキーフレームの速度を保ったまま真っすぐ進み続ける</b>。画面外へ飛んでいくロケットや、通り過ぎるテロップに。ブレーキをかけずに走り抜けるイメージ。',
+    ai: 'After Effectsの loopOut("continue") で、最後のキーフレームの勢いのまま動きを続けたいです。【例: ロケットが画面外に飛んでいく】動きを作りたいのですが、キーフレームをどう打てばいいですか？ 速さが変になる場合の直し方も初心者向けに教えてください。',
     demo: null,
   },
   {
@@ -613,6 +635,7 @@ const EXPRESSIONS = [
     code: 'loopIn("cycle")',
     tag: '最初のキーフレームより前をくり返す',
     kid: 'loopOutの逆で、<b>アニメが始まる前の時間をループで埋める</b>。「レイヤーの途中からキーフレームを打ったけど、最初から動いていてほしい」ときに。cycle / pingpong / offset が同じように使える。',
+    ai: 'After Effectsの loopIn() で、最初のキーフレームより前の時間もループで埋めたいです。【例: レイヤーの途中からキーフレームを打ったが、登場した瞬間から動いていてほしい】です。loopOut と併用する書き方も含めて初心者向けに教えてください。',
     demo: null,
   },
 
@@ -626,6 +649,7 @@ const EXPRESSIONS = [
       '上の行に <code>posterizeTime(4);</code> を足すと点滅間隔が荒くなってグリッチ感UP',
       'エフェクト「色収差」系（RGBずらし）や「ブロックディゾルブ」と合わせて故障テレビ風に',
     ],
+    ai: 'After Effectsの random() で【例: 不透明度を激しくチカチカ点滅させてグリッチ風にしたい】です。random(0, 100) を【プロパティ名】に貼りましたが、【点滅が速すぎる/思った見た目にならない】です。調整のしかたを初心者向けに教えてください。',
     demo: 'random',
   },
   {
@@ -633,6 +657,7 @@ const EXPRESSIONS = [
     code: '// なめらかな揺らぎ（-1〜1が返る）\nnoise(time) * 100',
     tag: 'なめらかにつながったランダム（波のような揺らぎ）',
     kid: 'randomが「毎回サイコロ」なら、noiseは<b>なめらかな丘が続く地形をなぞる</b>ようなランダム。急にジャンプせず、ゆっくり揺らぐ。wiggleの中身もこの仲間。ロウソクの光や漂うホコリの表現に。',
+    ai: 'After Effectsの noise() で、なめらかに揺らぐランダムな動きを作りたいです。【例: ロウソクの光のようにゆっくり明るさを揺らしたい】のですが、noise(time) の使い方と数値の調整方法を、wiggle との違いも含めて初心者向けに教えてください。',
     demo: 'noise',
   },
   {
@@ -643,6 +668,7 @@ const EXPRESSIONS = [
     combo: [
       'wiggleの上の行に <code>seedRandom(index);</code> と書くと、複製したレイヤーごとに違う揺れ方になる（全員おそろいの揺れを防ぐ定番技）',
     ],
+    ai: 'After Effectsの seedRandom() について質問です。レイヤーを複製したら【例: 全部同じ揺れ方になってしまった】ので、レイヤーごとに違うランダムにしたいです。seedRandom(index) と wiggle を組み合わせる書き方を、コード全文で初心者向けに教えてください。',
     demo: null,
   },
   {
@@ -654,6 +680,7 @@ const EXPRESSIONS = [
       'エフェクト「ドロップシャドウ」と合わせて、浮遊するキャラの影の距離も一緒に動かすとリアルな浮遊感に',
       'スケールに <code>s = Math.sin(time*2)*3; value + [s, s]</code> で呼吸するようなふわふわ拡縮',
     ],
+    ai: 'After Effectsで Math.sin() を使って規則正しくゆらゆらする動きを作りたいです。【例: 風船をなめらかに上下させたい】のですが、value + [0, Math.sin(time * 2) * 40] の数値をどう変えると【速さ/ふり幅】が変わりますか？ 初心者向けに教えてください。',
     demo: 'sin',
   },
 
@@ -667,6 +694,7 @@ const EXPRESSIONS = [
       '「オーディオをキーフレームに変換」→ できた音量スライダーとlinearをつなぐと、音に合わせて跳ねる図形に（音ハメの定番）',
       'エフェクト「スライダー制御」と合わせると、つまみ1本で複数レイヤーの色や大きさをまとめて調整できる',
     ],
+    ai: 'After Effectsの linear() で、ある値に合わせて別の値を変えたいです。具体的には【例: 音量スライダーの値に合わせて図形の大きさを変えたい】です。linear(入力, 入力の最小, 入力の最大, 出力の最小, 出力の最大) の当てはめ方を、私の例でコードにして初心者向けに教えてください。',
     demo: 'linear',
   },
   {
@@ -677,6 +705,7 @@ const EXPRESSIONS = [
     combo: [
       'カメラやヌルの移動に使うと、高級感のあるスローイン・スローアウトの画面移動に',
     ],
+    ai: 'After Effectsの ease() で、なめらかに始まりなめらかに終わる変化を作りたいです。【例: 2秒かけてカメラをゆっくり寄せたい】のですが、ease(time, 0, 2, 開始値, 終了値) の書き方をコード全文で初心者向けに教えてください。linear() との違いも知りたいです。',
     demo: 'ease',
   },
   {
@@ -684,6 +713,7 @@ const EXPRESSIONS = [
     code: '// 終わりだけなめらか / 始まりだけなめらか\neaseIn(time, 0, 2, 0, 100)\n// easeOut(time, 0, 2, 0, 100)',
     tag: '片側だけなめらかにするease',
     kid: 'easeの片側バージョン。<b>easeInはゴール側だけ、easeOutはスタート側だけ</b>ふわっとさせる。「勢いよく飛び出して、ふわっと止まる」みたいな緩急をつけたいときに使い分ける。',
+    ai: 'After Effectsの easeIn() と easeOut() の使い分けが分かりません。【例: 勢いよく飛び出して、最後だけふわっと止まる】動きを作りたい場合、どちらをどう書けばいいですか？ 初心者向けにコード例で教えてください。',
     demo: null,
   },
   {
@@ -694,6 +724,7 @@ const EXPRESSIONS = [
     combo: [
       '位置のwiggleと組み合わせるなら <code>w = wiggle(3, 100); [clamp(w[0], 0, 960), w[1]]</code> — 横方向だけ柵で止めて画面から出さない',
     ],
+    ai: 'After Effectsの clamp() で、値が行き過ぎないように制限したいです。【例: wiggleで揺らした位置が画面の外に出ないようにしたい】のですが、いまの式は【貼っている式】です。clampをどう組み合わせればいいか、コード全文で初心者向けに教えてください。',
     demo: 'clamp',
   },
 
@@ -703,6 +734,7 @@ const EXPRESSIONS = [
     code: 'Math.round(3.6)  // → 4 四捨五入\nMath.floor(3.6)  // → 3 切り捨て\nMath.ceil(3.2)   // → 4 切り上げ',
     tag: '小数をきれいな整数にする',
     kid: 'カウンターの数字が「12.83671」みたいになったら、この3兄弟の出番。<b>round＝四捨五入、floor＝切り捨て、ceil＝切り上げ</b>。数字テロップやカウントアップ表現の必需品。',
+    ai: 'After Effectsで数字のカウンターを作っています。【例: 0から100まで数字が増えるテロップ】で、小数点が出てしまいます。Math.round / floor / ceil のどれをどう使えばいいですか？ テキストのソーステキストに貼る前提で、コード全文を初心者向けに教えてください。',
     demo: null,
   },
   {
@@ -710,6 +742,7 @@ const EXPRESSIONS = [
     code: 'Math.abs(-30)  // → 30',
     tag: 'マイナスをプラスに変える（絶対値）',
     kid: '<b>マイナス記号を取っ払って「大きさだけ」にする</b>。「左右どちらに動いても、動いた量に反応させたい」ときに。sinと組み合わせるとボールが弾むような動きも作れる（マイナス側が折り返される）。',
+    ai: 'After Effectsの Math.abs() の使いどころが分かりません。【例: ボールが地面で弾む動きを式で作りたい】のですが、Math.abs と Math.sin をどう組み合わせればいいですか？ コード全文と数値の意味を初心者向けに教えてください。',
     demo: null,
   },
 
@@ -723,6 +756,7 @@ const EXPRESSIONS = [
       'indexと組み合わせて複製するだけで隊列が完成（レイヤー・参照のindexを見てね）',
       '似た残像表現はエフェクト「エコー」でもエクスプレッションなしで作れる。使い分けよう',
     ],
+    ai: 'After Effectsの valueAtTime() で、あるレイヤーを別のレイヤーが遅れて追いかける動きを作りたいです。【例: 先頭の魚を3匹が0.2秒ずつ遅れてついてくる】イメージです。レイヤー名が【レイヤー名】のとき、追いかける側に貼るコード全文を初心者向けに教えてください。',
     demo: 'delay',
   },
   {
@@ -734,6 +768,7 @@ const EXPRESSIONS = [
       'wiggleとセットが鉄板（カクカク手書き揺れ）。さらにエフェクト「ラフエッジ」を足すと完全にアナログ風',
       'randomと合わせてグリッチの点滅間隔をコントロール',
     ],
+    ai: 'After Effectsの posterizeTime() でカクカクしたコマ落ち風の動きにしたいです。【例: wiggleの揺れを1秒8コマの手書き風にしたい】のですが、式のどこに書けばいいですか？ 書く順番(1行目に書く等)も含めて初心者向けに教えてください。',
     demo: 'posterize',
   },
   {
@@ -741,6 +776,7 @@ const EXPRESSIONS = [
     code: '// 速く動くほど透明にする（不透明度に）\nv = thisComp.layer("玉").position.speed;\nlinear(v, 0, 500, 100, 20)',
     tag: '「今どれくらいの速さか」を取り出す',
     kid: '<b>speedは速さ（数値1個）、velocityは向きつきの速さ</b>。「速く動いているときだけブラーを強く」「止まったら光る」など、動きの勢いに反応する仕掛けが作れる。',
+    ai: 'After Effectsの speed や velocity で、動きの速さに反応する演出を作りたいです。【例: 速く動いているときだけ残像/ブラーを強くしたい】です。どのプロパティにどんな式を貼ればいいか、コード全文で初心者向けに教えてください。',
     demo: null,
   },
   {
@@ -751,6 +787,7 @@ const EXPRESSIONS = [
     combo: [
       'トラッカーで取った手ブレデータにかけて「ちょい揺れ」だけ残すと自然な仕上がりに',
     ],
+    ai: 'After Effectsの smooth() で、ガタガタした動きをなめらかにしたいです。【例: トラッカーで取った手ブレの激しい位置データを落ち着かせたい】のですが、smooth(0.2, 5) の数値はどう調整すればいいですか？ 初心者向けに教えてください。',
     demo: 'smooth',
   },
 
@@ -764,6 +801,7 @@ const EXPRESSIONS = [
       'linearと組み合わせて「スライダー0→100で色が青→赤」のような変換に',
       'チェックボックス制御・カラー制御・ポイント制御も同じ書き方で読める',
     ],
+    ai: 'After Effectsのスライダー制御で、1つのつまみから複数のレイヤーをまとめて操作したいです。【例: スライダー0→100で、10個の図形の大きさを一斉に変えたい】です。ヌルにスライダー制御を付けるところから、各レイヤーに貼る式まで、手順とコード全文を初心者向けに教えてください。',
     demo: null,
   },
   {
@@ -771,6 +809,7 @@ const EXPRESSIONS = [
     code: 'thisComp.layer("背景").position\nthisLayer.name\nthisComp.width  // コンポの幅',
     tag: '「このコンポ」「この自分」を指すことば',
     kid: '式の中で他人を呼ぶための住所みたいなもの。<b>thisComp＝いま居るコンポ、thisLayer＝自分自身</b>。「thisComp.layer("背景")」で背景レイヤーの値を借りてこられる。ほとんどの連動式はここから始まる。',
+    ai: 'After Effectsのエクスプレッションで、他のレイヤーの値を参照したいです。【例: 「背景」レイヤーの不透明度と自分の不透明度を連動させたい】です。thisComp.layer("名前") の書き方と注意点(名前の変更でエラーになる等)を初心者向けに教えてください。',
     demo: null,
   },
   {
@@ -782,6 +821,7 @@ const EXPRESSIONS = [
       'valueAtTimeとセットが定番。Ctrl+D / ⌘+D で複製するほどヘビのようにつながっていく',
       'seedRandom(index) と組み合わせると、レイヤーごとに違うランダム揺れがつく',
     ],
+    ai: 'After Effectsの index を使って、レイヤーを複製するだけで自動的に時間差がつくアニメを作りたいです。【例: 20個の四角が順番にポンポン出てくる】イメージです。1個目のレイヤーに貼っておく式をコード全文で、複製の手順も含めて初心者向けに教えてください。',
     demo: 'index',
   },
   {
@@ -789,6 +829,7 @@ const EXPRESSIONS = [
     code: '// 親の回転を打ち消して自分だけ水平を保つ\n-parent.rotation',
     tag: '親レイヤーの値を借りる',
     kid: '親子付けした<b>親レイヤーの値をそのまま読める</b>。マイナスを付けて「親の回転の逆」を返せば、親がどれだけ回っても自分だけ水平をキープ、みたいな技が作れる。',
+    ai: 'After Effectsの parent をエクスプレッションで参照したいです。【例: 親レイヤーがどれだけ回転しても、子のレイヤーだけは常に水平を保ちたい】です。-parent.rotation の使い方と、親子付けの手順も含めて初心者向けに教えてください。',
     demo: null,
   },
   {
@@ -796,6 +837,7 @@ const EXPRESSIONS = [
     code: '// 元のアニメを生かしたまま揺れだけ足す\nvalue + [0, Math.sin(time * 3) * 20]',
     tag: '「式を書く前の元の値」を表すことば',
     kid: '<b>value は、キーフレームや手入力で決めた「本来の値」</b>。「value + 何か」の形にすれば、元のアニメを生かしたまま味付けだけ式でできる。式の基本にして最重要単語。',
+    ai: 'After Effectsのエクスプレッションの value について質問です。【例: キーフレームで作った動きを生かしたまま、揺れだけ式で足したい】のですが、value をどう使えばいいですか？ value を使う場合と使わない場合の違いを、コード例つきで初心者向けに教えてください。',
     demo: null,
   },
   {
@@ -803,6 +845,7 @@ const EXPRESSIONS = [
     code: '// 横だけwiggle、縦はそのまま\nw = wiggle(3, 60);\n[w[0], value[1]]',
     tag: '位置などの「XとY」を別々にあつかう',
     kid: '位置は [X, Y] という<b>2つの数字のセット</b>。[0]がX（横）、[1]がY（縦）。バラして片方だけ揺らしたり、別のレイヤーのXと自分のYを組み合わせたり、軸ごとの自由な料理ができる。',
+    ai: 'After Effectsで位置のXとYを別々に制御したいです。【例: 横方向だけwiggleで揺らして、縦は動かしたくない】です。value[0] と value[1] の意味と、私の例のコード全文を初心者向けに教えてください。',
     demo: null,
   },
 
@@ -815,6 +858,7 @@ const EXPRESSIONS = [
     combo: [
       'シェイプのパスと組み合わせて、動く2つのレイヤーを線でつなぐ相関図・ガジェット風UIに',
     ],
+    ai: 'After Effectsの toComp() で、親子付けやプリコンポーズしたレイヤーの「画面上の位置」を取りたいです。【例: 動く2つのレイヤーを線でつなぎたい】のですが、toComp をどこにどう書けばいいか、シェイプのパスに貼る式も含めて初心者向けに教えてください。',
     demo: null,
   },
   {
@@ -822,6 +866,7 @@ const EXPRESSIONS = [
     code: '// 2つのレイヤーの距離で大きさを変える\nd = length(position,\n  thisComp.layer("磁石").position);\nlinear(d, 0, 500, 200, 100)',
     tag: '2つの点のあいだの距離をはかる',
     kid: '<b>2点間の距離をものさしで測る</b>関数。「近づくほど大きくなる」「離れると薄くなる」など、距離に反応するインタラクティブ風の動きが作れる。磁石みたいな表現に。',
+    ai: 'After Effectsの length() で、2つのレイヤーの距離に反応する演出を作りたいです。【例: 磁石のように、近づくほど大きくなる】です。レイヤー名が【名前】のとき、距離を測って【大きさ/明るさ】に変換する式をコード全文で初心者向けに教えてください。',
     demo: null,
   },
   {
@@ -829,6 +874,7 @@ const EXPRESSIONS = [
     code: '// 向き（回転）に入れると相手の方を向く\nlookAt(position,\n  thisComp.layer("ターゲット").position)',
     tag: 'いつも相手の方を向かせる',
     kid: '<b>「自分の位置」から「相手の位置」の方角を計算</b>してくれる。3Dレイヤーの方向に入れれば、どこへ動いてもターゲットを見続けるカメラや目玉が作れる。',
+    ai: 'After Effectsの lookAt() で、レイヤーが常にターゲットの方を向くようにしたいです。【例: 目玉がマウス代わりのヌルを追いかける/3Dカメラが被写体を見続ける】です。3Dレイヤーの設定も含めて、手順とコードを初心者向けに教えてください。',
     demo: null,
   },
 
@@ -842,6 +888,7 @@ const EXPRESSIONS = [
       '「テキスト＋シェイプの座布団」にこれを入れるのが自動テロップの定番セット',
       'シェイプの「角を丸くする」も足すと、今っぽいピル型（カプセル型）テロップに',
     ],
+    ai: 'After Effectsの sourceRectAtTime() で、テキストの長さに合わせて背景の座布団が自動で伸び縮みするテロップを作りたいです。テキストレイヤー名が【名前】です。シェイプの長方形パスのサイズに貼る式と、位置合わせのコツを初心者向けに教えてください。',
     demo: null,
   },
   {
@@ -853,6 +900,7 @@ const EXPRESSIONS = [
       'スライダー制御と組み合わせて「数値が跳ね上がるカウンター演出」（実績数字の訴求に）',
       'Math.round と組み合わせて整数のカウントアップに',
     ],
+    ai: 'After Effectsの sourceText で、文字を式で自動的に変えたいです。【例: 再生時間のカウンター/スライダーの値と連動する数字/日付】を表示したいのですが、テキストのソーステキストに貼るコード全文を初心者向けに教えてください。小数点や単位の付け方も知りたいです。',
     demo: null,
   },
 
@@ -865,6 +913,7 @@ const EXPRESSIONS = [
     combo: [
       '音楽のビートに合わせてマーカーを打ち、スケールのポップと組み合わせるとリズムに乗る図形アニメに',
     ],
+    ai: 'After Effectsでマーカーを使ってアニメのタイミングを制御したいです。【例: 音楽のビートに打ったマーカーの位置で、図形をポンッと出したい】です。marker.nearestKey や marker.key の使い方を、コード全文と手順で初心者向けに教えてください。',
     demo: null,
   },
 
@@ -874,6 +923,7 @@ const EXPRESSIONS = [
     code: '// 2秒までは透明、そのあと表示\nif (time < 2) {\n  0;\n} else {\n  100;\n}',
     tag: '「もし〜なら A、ちがえば B」の分かれ道',
     kid: 'プログラムの基本、<b>条件分岐</b>。「2秒より前なら透明、過ぎたら表示」のようにルールで動きを決められる。スライダーの値やレイヤーの位置を条件にすれば、もっと賢い仕掛けも作れる。',
+    ai: 'After Effectsのエクスプレッションで条件分岐(if/else)を使いたいです。【例: スライダーが50を超えたら赤くする/2秒経ったら表示する】のような「もし〜なら」を作りたいのですが、書き方の基本形と私の例のコード全文を初心者向けに教えてください。',
     demo: null,
   },
   {
@@ -881,6 +931,7 @@ const EXPRESSIONS = [
     code: '// 画面中央の色を拾う（カラー系プロパティに）\nthisComp.layer("映像")\n  .sampleImage([960, 540], [2, 2])',
     tag: '映像の「その場所の色」を拾ってくる',
     kid: '<b>指定した場所のピクセルの色をスポイトで吸う</b>関数。映像の色に合わせて文字色やライトの色を自動で変える、なじませ演出の飛び道具。',
+    ai: 'After Effectsの sampleImage() で、映像の特定の場所の色を拾って使いたいです。【例: 背景映像の色に合わせて文字の色を自動で変えたい】です。座標の指定方法と、カラープロパティに貼るコード全文を初心者向けに教えてください。重くなる場合の注意も知りたいです。',
     demo: null,
   },
   {
@@ -891,6 +942,7 @@ const EXPRESSIONS = [
     combo: [
       'toComp()と組み合わせて、親子付け・3Dでも正確に2点を結ぶ線に',
     ],
+    ai: 'After Effectsの createPath() で、2つのレイヤーを線で結び続けたいです。【例: 相関図のように、動くアイコン同士を線でつなぐ】です。シェイプレイヤーのパスに貼るコード全文と、toComp() との組み合わせ方を初心者向けに教えてください。',
     demo: null,
   },
 ];
@@ -1048,6 +1100,12 @@ function renderExpressions() {
           <div class="ex-combo">
             <div class="combo-t">🧩 おすすめの組み合わせ</div>
             <ul>${e.combo.map(c => `<li>${c}</li>`).join('')}</ul>
+          </div>` : ''}
+          ${e.ai ? `
+          <div class="ex-ai">
+            <div class="ai-t">🤖 うまくいかない時は、AIにこう聞こう</div>
+            <div class="ai-text">${e.ai}</div>
+            <button class="ai-copy">質問文をコピーする（【 】を書き換えて送信）</button>
           </div>` : ''}
           ${e.demo ? `
           <div class="demo-wrap">
@@ -1439,6 +1497,21 @@ $list.addEventListener('click', e => {
       copyBtn.classList.add('done');
       FX.pop(copyBtn);
       setTimeout(() => { copyBtn.textContent = 'コピー'; copyBtn.classList.remove('done'); }, 1400);
+    });
+    return;
+  }
+  // AIへの質問テンプレをコピー
+  const aiBtn = e.target.closest('.ai-copy');
+  if (aiBtn) {
+    e.stopPropagation();
+    copyText(aiBtn.parentElement.querySelector('.ai-text').textContent.trim()).finally(() => {
+      aiBtn.textContent = '✓ コピーしました！AIチャットに貼って【 】を書き換えてください';
+      aiBtn.classList.add('done');
+      FX.pop(aiBtn);
+      setTimeout(() => {
+        aiBtn.textContent = '質問文をコピーする（【 】を書き換えて送信）';
+        aiBtn.classList.remove('done');
+      }, 2200);
     });
     return;
   }
