@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AE早見帳 かんたん使い方マニュアル</title>
+<style>
+  :root {
+    --purple: #6c5ce7;
+    --purple-dark: #4834b8;
+    --ink: #2b2b3a;
+    --sub: #6b6b80;
+    --bg-soft: #f4f2ff;
+    --line: #e3e0f5;
+    --gold: #b8860b;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+    color: var(--ink);
+    line-height: 1.9;
+    font-size: 14px;
+    background: #fff;
+  }
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 36px;
+  }
+
+  /* ===== 表紙 ===== */
+  .cover { text-align: center; padding-top: 60px; }
+  .cover img.icon { width: 140px; height: 140px; border-radius: 32px; box-shadow: 0 10px 30px rgba(108,92,231,.3); }
+  .cover h1 { font-size: 30px; margin: 26px 0 4px; color: var(--purple-dark); }
+  .cover .sub { color: var(--sub); font-size: 15px; margin-bottom: 30px; }
+  .cover .whatis {
+    background: var(--bg-soft); border-radius: 16px; padding: 18px 24px;
+    text-align: left; font-size: 14.5px; margin: 0 auto 30px;
+  }
+  .qr-box { display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; }
+  .qr-box img { width: 150px; height: 150px; border: 1px solid var(--line); border-radius: 12px; }
+  .qr-box .url-side { text-align: left; }
+  .url {
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    background: var(--bg-soft); border: 1px solid var(--line);
+    padding: 8px 14px; border-radius: 10px; font-size: 12.5px;
+    word-break: break-all; display: inline-block;
+  }
+
+  /* ===== 見出し ===== */
+  h2 {
+    font-size: 21px; color: #fff; background: var(--purple);
+    padding: 10px 18px; border-radius: 12px; margin: 0 0 18px;
+  }
+  h2 .no { display: inline-block; background: #fff; color: var(--purple); border-radius: 8px; padding: 0 9px; margin-right: 10px; font-size: 18px; }
+  h3 { font-size: 16px; color: var(--purple-dark); border-left: 5px solid var(--purple); padding-left: 10px; margin: 26px 0 10px; }
+
+  /* ===== ステップ ===== */
+  ol.steps { list-style: none; counter-reset: step; padding: 0; margin: 0; }
+  ol.steps li {
+    counter-increment: step; position: relative;
+    padding: 6px 0 6px 46px; margin-bottom: 6px;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute; left: 0; top: 8px;
+    width: 30px; height: 30px; border-radius: 50%;
+    background: var(--purple); color: #fff;
+    font-weight: 700; font-size: 15px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .note {
+    background: #fff8e6; border: 1px solid #f0dfa8; border-radius: 10px;
+    padding: 10px 14px; font-size: 13px; margin: 12px 0;
+  }
+  .note b { color: var(--gold); }
+  .tip {
+    background: var(--bg-soft); border: 1px solid var(--line); border-radius: 10px;
+    padding: 10px 14px; font-size: 13px; margin: 12px 0;
+  }
+
+  kbd {
+    display: inline-block; background: #f0eefc; border: 1px solid #ccc6ee;
+    border-bottom-width: 2px; border-radius: 5px; padding: 1px 7px;
+    font: 700 12px/1.5 ui-monospace, Menlo, Consolas, monospace; color: var(--purple-dark);
+  }
+  .badge-demo {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    border-radius: 6px; padding: 1px 8px; margin: 0 2px;
+  }
+  .bd-gem { color: #8a6d00; background: #fff3cc; border: 1px solid #eeda8e; }
+  .bd-hot { color: #b45309; background: #fff0e0; border: 1px solid #f5cea3; }
+  .bd-fav { color: #8a6d00; background: #fffbe6; border: 1px solid #eeda8e; }
+
+  /* ===== 図版 ===== */
+  .figure-row { display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; margin: 14px 0; }
+  .figure-row .txt { flex: 1 1 300px; }
+  .shot {
+    width: 218px; border-radius: 18px; border: 5px solid #2b2b3a;
+    display: block; flex: none;
+  }
+  .caption { font-size: 11.5px; color: var(--sub); text-align: center; margin-top: 6px; width: 228px; }
+
+  /* ===== 表 ===== */
+  table { border-collapse: collapse; width: 100%; font-size: 13px; margin: 10px 0; }
+  th, td { border: 1px solid var(--line); padding: 7px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--bg-soft); color: var(--purple-dark); white-space: nowrap; }
+
+  /* ===== Q&A ===== */
+  .qa { margin-bottom: 14px; }
+  .qa .q { font-weight: 700; color: var(--purple-dark); }
+  .qa .q::before { content: "Q. "; }
+  .qa .a::before { content: "A. "; font-weight: 700; color: var(--gold); }
+
+  footer { text-align: center; color: var(--sub); font-size: 11.5px; margin-top: 30px; }
+
+  /* ===== 印刷(PDF)設定 ===== */
+  @page { size: A4; margin: 14mm 12mm; }
+  @media print {
+    body { font-size: 12.5px; }
+    .page { max-width: none; padding: 0; }
+    section { page-break-after: always; }
+    section:last-of-type { page-break-after: auto; }
+    .shot { width: 196px; }
+    a { color: var(--purple-dark); text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ===== 表紙 ===== -->
+  <section class="cover">
+    <img class="icon" src="img/icon.png" alt="AE早見帳アイコン">
+    <h1>AE早見帳<br>かんたん使い方マニュアル</h1>
+    <div class="sub">After Effects ショートカット＆エクスプレッション辞典アプリ</div>
+    <div class="whatis">
+      <b>「AE早見帳」って何？</b><br>
+      After Effects の<b>ショートカットキー120個</b>と<b>エクスプレッション（自動で動きをつける魔法の一文）36個</b>を、スマホでパッと探せるアプリです。
+      ぜんぶに「中学生でもわかる」やさしい説明つき。<b>一度開けば、電波がない場所でも使えます。</b>
+    </div>
+    <div class="qr-box">
+      <img src="img/qr.png" alt="アプリのQRコード">
+      <div class="url-side">
+        <b>スマホのカメラでQRを読み取るか、<br>このURLを開いてください：</b><br>
+        <span class="url">https://tkwfunkypop.github.io/public/tools/ae-shortcuts/</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 1. インストール ===== -->
+  <section>
+    <h2><span class="no">1</span>スマホに入れる（1分でできます）</h2>
+    <p>アプリストアは使いません。<b>リンクを開いて「ホーム画面に追加」するだけ</b>です。お金もかかりません。</p>
+
+    <h3>iPhone の場合（Safariで開いてください）</h3>
+    <ol class="steps">
+      <li>カメラでQRコードを読み取って、表示されたリンクをタップして開く</li>
+      <li>画面の下にある <b>共有ボタン（四角から上に矢印が出ているマーク ⬆︎）</b> をタップ</li>
+      <li>メニューを下にスクロールして <b>「ホーム画面に追加」</b> をタップ</li>
+      <li>右上の <b>「追加」</b> をタップ → ホーム画面に「AE早見帳」のアイコンが出たら完成！</li>
+    </ol>
+
+    <h3>Android の場合（Chromeで開いてください）</h3>
+    <ol class="steps">
+      <li>カメラでQRコードを読み取って、リンクを開く</li>
+      <li>画面に「インストール」や「ホーム画面に追加」と出たらそれをタップ。出ない場合は右上の <b>「⋮」メニュー → 「ホーム画面に追加」</b></li>
+      <li>「追加」をタップ → ホーム画面にアイコンが出たら完成！</li>
+    </ol>
+
+    <div class="note"><b>ポイント：</b>次からは、ホーム画面の「AE早見帳」アイコンをタップするだけで、ふつうのアプリと同じように開きます。<b>一度開いておけば、電波のない場所（機内モード）でも動きます。</b></div>
+  </section>
+
+  <!-- ===== 2. 画面の見方 ===== -->
+  <section>
+    <h2><span class="no">2</span>画面の見方</h2>
+    <div class="figure-row">
+      <div>
+        <img class="shot" src="img/1-home.png" alt="ホーム画面">
+        <div class="caption">開いてすぐの画面（ショートカット一覧）</div>
+      </div>
+      <div class="txt">
+        <table>
+          <tr><th>場所</th><th>なにができる？</th></tr>
+          <tr><td><b>Mac / Win</b>（右上）</td><td>キーの表記を切り替え。<b>Macの人はMac、Windowsの人はWin</b>を選んでください（最初に自動で選ばれています）</td></tr>
+          <tr><td><b>検索欄</b></td><td>ことばで探せます（例：「コピー」「wiggle」）</td></tr>
+          <tr><td><b>3つのタブ</b></td><td>⌨️ショートカット ／ ✨エクスプレッション ／ 🎯クイズ を切り替え</td></tr>
+          <tr><td><b>丸いボタンの列</b></td><td>カテゴリで絞り込み。「💡目から鱗」「★お気に入り」もここ</td></tr>
+          <tr><td><b>並び順</b></td><td>「カテゴリごと」と「よく使う順」を切り替え</td></tr>
+        </table>
+        <div class="tip">項目についているマークの意味：<br>
+          <span class="badge-demo bd-hot">★★★</span> …プロが毎日使う超定番。まずこれから覚えよう<br>
+          <span class="badge-demo bd-gem">💡目から鱗</span> …知ると作業が一気に楽になる隠れ技
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. ショートカットの探し方 ===== -->
+  <section>
+    <h2><span class="no">3</span>ショートカットを探す・覚える</h2>
+    <div class="figure-row">
+      <div>
+        <img class="shot" src="img/2-search.png" alt="検索画面">
+        <div class="caption">「キーフレーム」で検索したところ</div>
+      </div>
+      <div class="txt">
+        <h3 style="margin-top:0">探し方は3とおり</h3>
+        <ol class="steps">
+          <li><b>検索する</b> — 上の検索欄に「保存」「文字」などやりたいことを入力</li>
+          <li><b>カテゴリで絞る</b> — 「🔑キーフレーム」「🔤テキスト」などのボタンをタップ</li>
+          <li><b>眺めて発見する</b> — 「💡目から鱗」をタップすると、知られていない便利技だけが並びます</li>
+        </ol>
+        <h3>自分だけの早見帳を作る</h3>
+        <p>各項目の右にある <b>星マーク（★）</b> をタップすると黄色くなり、お気に入りに登録されます。カテゴリの列の <b>「★ お気に入り」</b> をタップすると、<b>自分が登録したものだけ</b>が表示されます。「よく忘れるやつ」だけ集めておくと便利です。</p>
+      </div>
+    </div>
+    <div class="figure-row">
+      <div>
+        <img class="shot" src="img/5-fav.png" alt="お気に入り画面">
+        <div class="caption">★お気に入りだけを表示したところ</div>
+      </div>
+      <div class="txt">
+        <div class="note"><b>Macで「キーが効かない！」となったら：</b>
+        <kbd>F9</kbd> などのFキーは、キーボード左下の <kbd>Fn</kbd> を一緒に押してください。<kbd>Home</kbd>/<kbd>End</kbd> がないMacノートは <kbd>Fn</kbd>+<kbd>←</kbd>/<kbd>→</kbd> で代用できます。アプリの説明文にも書いてあります。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. エクスプレッション ===== -->
+  <section>
+    <h2><span class="no">4</span>エクスプレッションを使う（コピペでOK）</h2>
+    <p>エクスプレッションとは、<b>After Effects に貼るだけで自動で動きがつく「魔法の一文」</b>です。プログラミングの知識はいりません。<b>コピーして、貼るだけ。</b></p>
+    <div class="figure-row">
+      <div>
+        <img class="shot" src="img/3-expression.png" alt="エクスプレッション画面">
+        <div class="caption">wiggle（ランダムに揺らす）を開いたところ</div>
+      </div>
+      <div class="txt">
+        <h3 style="margin-top:0">アプリでの操作</h3>
+        <ol class="steps">
+          <li><b>✨エクスプレッション</b>タブをタップ</li>
+          <li>気になる項目をタップして開く → <b>動きのお手本アニメが自動で再生</b>されます</li>
+          <li>やさしい解説と「🧩おすすめの組み合わせ」を読む</li>
+          <li><b>「コピー」ボタン</b>をタップ（式がコピーされます）</li>
+        </ol>
+        <h3>After Effects への貼り方</h3>
+        <ol class="steps">
+          <li>動かしたいレイヤーのプロパティ（位置など）を表示する（位置なら <kbd>P</kbd>）</li>
+          <li>プロパティ名の左の<b>ストップウォッチ⏱を、<kbd>Alt</kbd>（Macは <kbd>Option</kbd>）を押しながらクリック</b></li>
+          <li>出てきた入力欄に<b>貼り付け</b>（<kbd>Ctrl</kbd>+<kbd>V</kbd> / <kbd>⌘</kbd>+<kbd>V</kbd>）→ 欄の外をクリックで確定！</li>
+        </ol>
+      </div>
+    </div>
+    <div class="tip">💡 まずは一番人気の <b>wiggle(2, 30)</b> を「位置」に貼ってみてください。レイヤーがプルプル揺れたら成功です。</div>
+  </section>
+
+  <!-- ===== 5. クイズ ===== -->
+  <section>
+    <h2><span class="no">5</span>クイズで覚える</h2>
+    <div class="figure-row">
+      <div>
+        <img class="shot" src="img/4-quiz.png" alt="クイズ画面">
+        <div class="caption">4択でサクサク答えるだけ</div>
+      </div>
+      <div class="txt">
+        <ol class="steps">
+          <li><b>🎯クイズ</b>タブをタップ</li>
+          <li>「⌨️ショートカット」「✨エクスプレッション」「🔀ミックス」から選ぶ</li>
+          <li>10問のランダム4択に答える → その場で正解がわかります</li>
+          <li>最後にスコアが出ます。<b>通学中や寝る前に1周</b>すると、手が覚えます</li>
+        </ol>
+        <div class="tip">ショートカットの問題は、右上で選んだ <b>Mac / Win</b> のキーで出題されます。自分のパソコンに合わせておきましょう。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. Q&A ===== -->
+  <section>
+    <h2><span class="no">6</span>困ったときは（よくある質問）</h2>
+    <div class="qa"><div class="q">アプリが古いまま？ 新しい機能が出ない</div>
+    <div class="a">ネットにつながった状態で、アプリを一度閉じて開き直してください。画面の一番下に書いてある<b>バージョン（v2.3 など）</b>が最新かどうかの目印です。</div></div>
+
+    <div class="qa"><div class="q">電波がない場所で開いたら真っ白になった</div>
+    <div class="a">しばらく使っていないと、オフライン用のデータがスマホから消えることがあります（iPhoneの仕様です）。<b>ネットにつながる場所で、同じアイコンから開き直せば</b>元どおり使えます。</div></div>
+
+    <div class="qa"><div class="q">ショートカットを押しても効かない</div>
+    <div class="a">3つ確認してください。①Mac / Win の表示が自分のパソコンと合っているか ②MacのFキー（F9など）は <kbd>Fn</kbd> と一緒に押しているか ③日本語入力がONになっていないか（半角英数にすると直ることが多いです）。</div></div>
+
+    <div class="qa"><div class="q">エクスプレッションを貼ったら赤いエラーが出た</div>
+    <div class="a">貼る場所が違うことがほとんどです。カードのコードの1行目に「◯◯に貼る」と書いてあるので確認してください（例：sourceRectAtTime は「長方形パス→サイズ」に貼ります）。エラーが出たら <kbd>Ctrl</kbd>+<kbd>Z</kbd>（<kbd>⌘</kbd>+<kbd>Z</kbd>）で戻せるので安心してください。</div></div>
+
+    <div class="qa"><div class="q">★お気に入りは他のスマホにも引き継がれる？</div>
+    <div class="a">お気に入りは<b>その端末の中だけ</b>に保存されます。機種変更したら登録し直してください（誰かに見られることはありません）。</div></div>
+
+    <div class="qa"><div class="q">アイコンをホーム画面から消してしまった</div>
+    <div class="a">データは消えていません。もう一度QRコードからURLを開いて「ホーム画面に追加」すれば戻ります。</div></div>
+
+    <footer>
+      AE早見帳 かんたん使い方マニュアル（2026年7月版 / アプリ v2.3 対応）<br>
+      アプリ：https://tkwfunkypop.github.io/public/tools/ae-shortcuts/
+    </footer>
+  </section>
+
+</div>
+</body>
+</html>
