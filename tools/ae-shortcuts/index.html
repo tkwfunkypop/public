@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1a1a24">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="AE早見帳">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
+<title>AE早見帳 — After Effects ショートカット & エクスプレッション</title>
+<style>
+  :root {
+    --bg: #14141c;
+    --bg2: #1c1c28;
+    --card: #232333;
+    --card2: #2b2b40;
+    --line: #34344c;
+    --text: #eceaf6;
+    --sub: #9d9ab5;
+    --accent: #9a8cff;      /* AEっぽい紫 */
+    --accent2: #64d8cb;
+    --kbd-bg: #32324a;
+    --kbd-line: #4a4a68;
+    --radius: 14px;
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", Meiryo, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    padding-bottom: calc(24px + var(--safe-bottom));
+  }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 0 14px; }
+
+  /* ===== ヘッダー ===== */
+  header {
+    position: sticky; top: 0; z-index: 50;
+    background: linear-gradient(180deg, rgba(20,20,28,.98), rgba(20,20,28,.92));
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+    padding-top: var(--safe-top);
+  }
+  .head-top {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 14px 4px;
+    max-width: 560px; margin: 0 auto;
+  }
+  .logo {
+    width: 34px; height: 34px; border-radius: 9px;
+    background: #2d2b55;
+    color: var(--accent);
+    font-weight: 800; font-size: 14px;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid #4b47a0;
+    flex: none;
+  }
+  h1 { font-size: 17px; margin: 0; font-weight: 700; letter-spacing: .02em; }
+  h1 small { display: block; font-size: 10.5px; color: var(--sub); font-weight: 500; }
+
+  .os-toggle {
+    margin-left: auto; flex: none;
+    display: flex; background: var(--card); border: 1px solid var(--line);
+    border-radius: 99px; padding: 3px; gap: 2px;
+  }
+  .os-toggle button {
+    border: 0; background: transparent; color: var(--sub);
+    font-size: 12px; font-weight: 700; padding: 5px 12px; border-radius: 99px;
+    cursor: pointer;
+  }
+  .os-toggle button.on { background: var(--accent); color: #17142e; }
+
+  .searchbar { padding: 8px 14px 10px; max-width: 560px; margin: 0 auto; }
+  .searchbar input {
+    width: 100%; padding: 10px 14px;
+    border-radius: 12px; border: 1px solid var(--line);
+    background: var(--card); color: var(--text);
+    font-size: 15px; outline: none;
+  }
+  .searchbar input:focus { border-color: var(--accent); }
+  .searchbar input::placeholder { color: #6f6c8a; }
+
+  /* ===== タブ ===== */
+  .tabs {
+    display: flex; max-width: 560px; margin: 0 auto; padding: 0 14px;
+  }
+  .tabs button {
+    flex: 1 1 auto; background: none; border: 0; color: var(--sub);
+    font-size: 12.5px; font-weight: 700; padding: 10px 2px 12px;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent; cursor: pointer;
+  }
+  .tabs button.on { color: var(--text); border-bottom-color: var(--accent); }
+
+  /* ===== カテゴリチップ ===== */
+  .chips {
+    display: flex; gap: 8px; overflow-x: auto; padding: 14px 14px 4px;
+    max-width: 560px; margin: 0 auto;
+    scrollbar-width: none;
+  }
+  .chips::-webkit-scrollbar { display: none; }
+  .chips button {
+    flex: none; border: 1px solid var(--line); background: var(--card);
+    color: var(--sub); font-size: 12.5px; font-weight: 600;
+    padding: 6px 13px; border-radius: 99px; cursor: pointer;
+  }
+  .chips button.on { background: var(--accent); border-color: var(--accent); color: #17142e; }
+
+  /* ===== 並び順切替 ===== */
+  .sortbar {
+    display: flex; align-items: center; gap: 6px;
+    max-width: 560px; margin: 0 auto; padding: 10px 14px 0;
+  }
+  .sort-label { font-size: 11px; color: var(--sub); font-weight: 700; margin-right: 2px; }
+  .sortbar button {
+    border: 1px solid var(--line); background: var(--card);
+    color: var(--sub); font-size: 12px; font-weight: 700;
+    padding: 5px 12px; border-radius: 99px; cursor: pointer;
+  }
+  .sortbar button.on { background: var(--card2); border-color: var(--accent); color: var(--text); }
+
+  /* ===== リスト・カード ===== */
+  .list { padding-top: 4px; }
+  .cat-head {
+    font-size: 13.5px; font-weight: 800; color: var(--text);
+    margin: 22px 2px 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--line);
+  }
+  .cat-head .count { color: var(--sub); font-weight: 700; font-size: 11px; margin-left: 4px; }
+  .cat-head.tier { color: var(--accent); border-bottom-color: transparent; font-size: 12px; letter-spacing: .1em; padding-bottom: 0; }
+  .hot-stars { color: #f2a65a; font-size: 10px; letter-spacing: .1em; vertical-align: 2px; margin-left: 2px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 12px 14px; margin-bottom: 10px;
+  }
+  .sc-row { display: flex; align-items: center; gap: 10px; }
+  .sc-name { font-weight: 700; font-size: 14.5px; }
+  .sc-desc { color: var(--sub); font-size: 12.5px; margin-top: 2px; }
+  .sc-keys { margin-left: auto; flex: none; display: flex; gap: 3px; align-items: center; }
+  kbd {
+    display: inline-block; min-width: 22px; text-align: center;
+    background: var(--kbd-bg); border: 1px solid var(--kbd-line);
+    border-bottom-width: 2.5px;
+    border-radius: 6px; padding: 3px 7px;
+    font: 700 12px/1.3 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    color: #cfc9ff;
+  }
+  .plus { color: #5f5c7d; font-size: 11px; font-weight: 700; }
+
+  .empty { text-align: center; color: var(--sub); padding: 50px 0; font-size: 14px; }
+
+  /* ===== エクスプレッションカード ===== */
+  .ex-card { padding: 0; overflow: hidden; }
+  .ex-head { padding: 13px 14px; cursor: pointer; }
+  .ex-title { display: flex; align-items: center; gap: 8px; }
+  .ex-title .ex-name { font-weight: 800; font-size: 15.5px; }
+  .ex-badge {
+    font-size: 10px; font-weight: 800; color: var(--accent2);
+    border: 1px solid rgba(100,216,203,.4); border-radius: 6px;
+    padding: 1px 7px; letter-spacing: .05em;
+  }
+  .ex-tag { color: var(--sub); font-size: 12.5px; margin-top: 3px; }
+  .ex-caret { margin-left: auto; color: #5f5c7d; transition: transform .2s; font-size: 12px; }
+  .ex-card.open .ex-caret { transform: rotate(90deg); }
+
+  .ex-body { display: none; border-top: 1px solid var(--line); padding: 13px 14px 15px; }
+  .ex-card.open .ex-body { display: block; }
+
+  .ex-code {
+    position: relative;
+    background: #101018; border: 1px solid var(--line); border-radius: 10px;
+    padding: 11px 13px; margin: 2px 0 12px;
+    font: 600 13px/1.55 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    color: #b7e6a5; overflow-x: auto; white-space: pre;
+  }
+  .copy-btn {
+    position: absolute; top: 7px; right: 7px;
+    background: var(--card2); color: var(--sub);
+    border: 1px solid var(--line); border-radius: 8px;
+    font-size: 11px; font-weight: 700; padding: 4px 10px; cursor: pointer;
+  }
+  .copy-btn.done { color: var(--accent2); border-color: var(--accent2); }
+
+  .ex-kid {
+    background: rgba(154,140,255,.08);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+    padding: 10px 12px; font-size: 13.5px; margin-bottom: 12px;
+  }
+  .ex-kid b { color: var(--accent); }
+
+  .ex-combo {
+    background: rgba(100,216,203,.07);
+    border-left: 3px solid var(--accent2);
+    border-radius: 0 10px 10px 0;
+    padding: 10px 12px; font-size: 13px; margin-bottom: 12px;
+  }
+  .ex-combo .combo-t { font-weight: 800; color: var(--accent2); font-size: 12px; margin-bottom: 4px; }
+  .ex-combo ul { margin: 0; padding-left: 18px; }
+  .ex-combo li { margin: 4px 0; }
+  .ex-combo code, .ex-kid code {
+    background: #101018; border: 1px solid var(--line); border-radius: 5px;
+    padding: 1px 5px; font-size: 12px; color: #b7e6a5;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+
+  .gem-badge {
+    display: inline-block; font-size: 10px; font-weight: 800;
+    color: #ffd166; border: 1px solid rgba(255,209,102,.45);
+    border-radius: 6px; padding: 0 6px; vertical-align: 2px;
+    letter-spacing: .02em;
+  }
+  .mini-cat {
+    display: inline-block; font-size: 10px; color: var(--sub);
+    border: 1px solid var(--line); border-radius: 5px;
+    padding: 0 5px; font-weight: 600; vertical-align: 2px; margin-left: 2px;
+  }
+
+  /* ===== お気に入り・カードリンク ===== */
+  .fav-btn {
+    background: none; border: 0; font-size: 19px; color: #4a4a68;
+    cursor: pointer; padding: 2px 4px; flex: none; line-height: 1;
+  }
+  .fav-btn.on { color: #ffd166; }
+  .link-btn {
+    position: absolute; top: 7px; right: 66px;
+    background: var(--card2); color: var(--sub);
+    border: 1px solid var(--line); border-radius: 8px;
+    font-size: 11px; font-weight: 700; padding: 4px 8px; cursor: pointer;
+  }
+  .link-btn.done { color: var(--accent2); border-color: var(--accent2); }
+
+  /* ===== クイズ ===== */
+  .quiz-hero { font-size: 20px; font-weight: 800; margin-bottom: 4px; }
+  .quiz-lead { color: var(--sub); font-size: 13px; margin: 0 0 6px; }
+  .quiz-prog { font-size: 11px; color: var(--sub); font-weight: 700; letter-spacing: .08em; margin-bottom: 6px; }
+  .quiz-q { font-size: 16px; font-weight: 800; margin: 4px 0 2px; }
+  .quiz-hint { color: var(--sub); font-size: 12px; margin-bottom: 8px; }
+  .quiz-choice {
+    display: flex; align-items: center; justify-content: center; gap: 4px; flex-wrap: wrap;
+    margin-top: 10px; padding: 13px 10px; border-radius: 12px;
+    background: var(--bg2); border: 1px solid var(--line);
+    font-size: 14px; font-weight: 700; cursor: pointer; text-align: center;
+  }
+  .quiz-choice.ok { border-color: #4ade80; background: rgba(74,222,128,.12); }
+  .quiz-choice.ng { border-color: #f87171; background: rgba(248,113,113,.12); opacity: .85; }
+  .quiz-mode-btn, .quiz-next {
+    display: block; width: 100%; margin-top: 10px; padding: 12px 0; border-radius: 12px;
+    background: var(--card2); border: 1px solid var(--kbd-line); color: var(--text);
+    font-size: 14px; font-weight: 800; cursor: pointer;
+  }
+  .quiz-next { background: var(--accent); border-color: var(--accent); color: #17142e; }
+  .quiz-result { text-align: center; padding: 10px 14px 16px; }
+  .quiz-score { font-size: 44px; font-weight: 800; color: var(--accent); margin: 6px 0 0; }
+  .quiz-msg { font-weight: 700; margin: 6px 0 14px; }
+
+  .demo-wrap { margin-top: 4px; }
+  .demo-stage {
+    position: relative; height: 120px;
+    background:
+      linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px),
+      #101018;
+    background-size: 20px 20px, 20px 20px, auto;
+    border: 1px solid var(--line); border-radius: 10px;
+    overflow: hidden;
+  }
+  .demo-ball {
+    position: absolute; width: 26px; height: 26px; border-radius: 50%;
+    background: radial-gradient(circle at 32% 30%, #c9beff, var(--accent) 60%, #6f5fe0);
+    box-shadow: 0 3px 12px rgba(154,140,255,.45);
+    top: 0; left: 0;
+    will-change: transform;
+  }
+  .demo-ball.b2 { background: radial-gradient(circle at 32% 30%, #b8f4ec, var(--accent2) 60%, #35a99c); box-shadow: 0 3px 12px rgba(100,216,203,.4); }
+  .demo-ball.b3 { background: radial-gradient(circle at 32% 30%, #ffd9a8, #f2a65a 60%, #cf7f34); box-shadow: 0 3px 12px rgba(242,166,90,.4); }
+  .demo-ball.square { border-radius: 7px; }
+  .demo-ghost { opacity: .35; }
+  .demo-label {
+    position: absolute; bottom: 6px; left: 10px;
+    font-size: 10.5px; color: #6f6c8a; font-weight: 600; pointer-events: none;
+  }
+  .demo-btn {
+    margin-top: 9px; width: 100%;
+    background: var(--card2); border: 1px solid var(--kbd-line);
+    color: var(--text); font-size: 13px; font-weight: 800;
+    border-radius: 10px; padding: 9px 0; cursor: pointer;
+  }
+  .demo-btn.playing { background: var(--accent); border-color: var(--accent); color: #17142e; }
+
+  footer { text-align: center; color: #5f5c7d; font-size: 11.5px; margin-top: 34px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="head-top">
+    <div class="logo">Ae</div>
+    <h1>AE早見帳<small>After Effects ショートカット & エクスプレッション</small></h1>
+    <div class="os-toggle" id="osToggle">
+      <button data-os="mac" class="on">Mac</button>
+      <button data-os="win">Win</button>
+    </div>
+  </div>
+  <div class="searchbar">
+    <input id="search" type="search" placeholder="キーワードで検索（例: キーフレーム, wiggle, 複製）" autocomplete="off">
+  </div>
+  <nav class="tabs" id="tabs">
+    <button data-tab="shortcuts" class="on">⌨️ ショートカット</button>
+    <button data-tab="expressions">✨ エクスプレッション</button>
+    <button data-tab="quiz">🎯 クイズ</button>
+  </nav>
+</header>
+
+<div class="chips" id="chips"></div>
+
+<div class="sortbar" id="sortbar">
+  <span class="sort-label">並び順</span>
+  <button data-sort="cat" class="on">カテゴリごと</button>
+  <button data-sort="hot">よく使う順</button>
+</div>
+
+<main class="wrap">
+  <div class="list" id="list"></div>
+  <footer>AE早見帳 — ホーム画面に追加するとアプリのように使えます</footer>
+</main>
+
+<!-- アプリ配布(オフライン動作)のため anime.js はローカル同梱版を読む -->
+<script src="./anime.umd.min.js"></script>
+<script src="../../lib/animations.js"></script>
+<script>
+// インストール型アプリとして動くよう Service Worker を登録(https配信時のみ)
+if ('serviceWorker' in navigator && location.protocol === 'https:') {
+  navigator.serviceWorker.register('./sw.js').catch(() => {});
+}
+</script>
+<script>
+/* UI演出は lib/animations.js の AP.* を使う。
+   オフラインやCSPで anime.js が読めない環境でも一覧機能は使えるようにガード */
+const FX = (typeof AP !== 'undefined' && AP) ? AP : { staggerReveal(){}, pop(){}, fadeInUp(){}, countUp(){} };
+
+/* ▼ アプリ情報（更新したらここと sw.js の CACHE を上げる） */
+const APP_VERSION = 'v2.2';
+const APP_DATE = '2026-07-02';
+
+/* ▼ 匿名アクセス集計（任意・既定OFF）
+   GoatCounter (https://www.goatcounter.com) で無料サイトを作り、
+   そのコード（例: 'aehayamicho'）を入れると有効になる。
+   何が検索されたか・クイズの得点など「つまずきポイント」だけを匿名で数える。
+   有効化したら配布案内にプライバシーの一文を添えること（README参照） */
+const GOATCOUNTER = '';
+function track(path) {
+  if (!GOATCOUNTER) return;
+  try {
+    const url = `https://${GOATCOUNTER}.goatcounter.com/count?p=${encodeURIComponent(path)}`;
+    if (navigator.sendBeacon) navigator.sendBeacon(url);
+    else fetch(url, { mode: 'no-cors' }).catch(() => {});
+  } catch (e) { /* 集計失敗はアプリ動作に影響させない */ }
+}
+
+/* ▼ お気に入り（この端末のみに保存） */
+let favsInit = [];
+try { favsInit = JSON.parse(localStorage.getItem('aeh-favs') || '[]'); } catch (e) {}
+const FAVS = new Set(favsInit);
+function toggleFav(key) {
+  FAVS.has(key) ? FAVS.delete(key) : FAVS.add(key);
+  try { localStorage.setItem('aeh-favs', JSON.stringify([...FAVS])); } catch (e) {}
+}
+const attr = s => s.replace(/"/g, '&quot;');
+/* カード直リンク用のID（例: loopOut("cycle") → loopout-cycle） */
+const slugOf = n => n.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+
+/* =========================================================
+   データ: ショートカット
+   win/mac は "+" 区切り。説明は中学生でもわかる言葉で。
+========================================================= */
+const SHORTCUTS = [
+  // --- 基本操作 ---
+  { cat: '基本操作', hot: 3, name: '取り消し（アンドゥ）', win: 'Ctrl+Z', mac: '⌘+Z', desc: '「やっちゃった！」を1つ前に戻す。困ったらまずこれ' },
+  { cat: '基本操作', name: 'やり直し（リドゥ）', win: 'Ctrl+Shift+Z', mac: '⌘+Shift+Z', desc: '戻しすぎたときに、もう一度進める' },
+  { cat: '基本操作', hot: 3, name: '保存', win: 'Ctrl+S', mac: '⌘+S', desc: 'こまめに保存！AEが落ちても泣かないために' },
+  { cat: '基本操作', hot: 1, name: '別名で保存', win: 'Ctrl+Shift+S', mac: '⌘+Shift+S', desc: '別ファイルとして保存。納品版と作業版の分けに' },
+  { gem: true, cat: '基本操作', hot: 1, name: '連番で保存（インクリメンタル保存）', win: 'Ctrl+Alt+Shift+S', mac: '⌘+Opt+Shift+S', desc: 'project_02.aep のように番号を増やして保存。実質バックアップ' },
+  { cat: '基本操作', hot: 3, name: '複製', win: 'Ctrl+D', mac: '⌘+D', desc: '選んだレイヤーやアイテムのコピーをすぐ作る' },
+  { cat: '基本操作', name: 'コピー / ペースト', win: 'Ctrl+C / Ctrl+V', mac: '⌘+C / ⌘+V', desc: 'キーフレームもエフェクトもコピペできる。カットは Ctrl+X（⌘+X）' },
+  { cat: '基本操作', name: '全選択 / 選択解除', win: 'Ctrl+A / Ctrl+Shift+A', mac: '⌘+A / ⌘+Shift+A', desc: '全部選ぶ / 全部やめる。F2でも選択解除できる' },
+  { cat: '基本操作', name: '新規コンポジション', win: 'Ctrl+N', mac: '⌘+N', desc: '動画の「舞台」を新しく作る' },
+  { cat: '基本操作', name: 'コンポジション設定', win: 'Ctrl+K', mac: '⌘+K', desc: 'サイズ・長さ・フレームレートをあとから変える' },
+  { cat: '基本操作', name: 'ファイルを読み込み', win: 'Ctrl+I', mac: '⌘+I', desc: '画像・動画・音などの素材をプロジェクトに入れる' },
+  { cat: '基本操作', name: '検索欄にジャンプ', win: 'Ctrl+F', mac: '⌘+F', desc: 'タイムラインやプロジェクトパネルの検索ボックスへ一発移動' },
+  { cat: '基本操作', hot: 1, name: '環境設定を開く', win: 'Ctrl+Alt+;', mac: '⌘+Opt+;', desc: 'AE全体の設定画面を開く' },
+
+  // --- パネル・画面 ---
+  { gem: true, cat: 'パネル・画面', hot: 3, name: 'パネルを最大化 / 戻す', win: '@（JISキー） / `（US）', mac: '@（JISキー） / `（US）', desc: 'マウスを乗せたパネルをどんと全画面に。プレビュー確認の超定番' },
+  { cat: 'パネル・画面', hot: 1, name: '各パネルの表示切替', win: 'Ctrl+1〜9', mac: '⌘+1〜9', desc: '1ツール 2情報 3プレビュー 4オーディオ 5エフェクト&プリセット 6文字 7段落 8ペイント 9ブラシ' },
+  { cat: 'パネル・画面', hot: 1, name: 'コンポ ⇔ タイムラインを行き来', win: '\\（JISは ¥ ）', mac: '\\（JISは ¥ ）', desc: 'コンポジションパネルとタイムラインの間をジャンプ' },
+
+  // --- ツール ---
+  { cat: 'ツール', hot: 3, name: '選択ツール', win: 'V', mac: 'V', desc: 'いちばん基本の矢印。迷ったらVで戻る' },
+  { cat: 'ツール', name: '手のひらツール', win: 'H', mac: 'H', desc: '画面をつかんで移動。Space長押しでも一時的に使える' },
+  { cat: 'ツール', name: 'ズームツール', win: 'Z', mac: 'Z', desc: '画面の拡大。Alt/Opt押しながらで縮小' },
+  { cat: 'ツール', name: '回転ツール', win: 'W', mac: 'W', desc: 'レイヤーをドラッグでくるっと回す' },
+  { cat: 'ツール', hot: 3, name: 'ペンツール', win: 'G', mac: 'G', desc: 'マスクやシェイプの線を描く' },
+  { cat: 'ツール', name: 'シェイプツール切り替え', win: 'Q', mac: 'Q', desc: '四角→丸→星…と押すたびに図形が変わる' },
+  { cat: 'ツール', name: '文字ツール', win: 'Ctrl+T', mac: '⌘+T', desc: 'テキストを打つモードに切り替え' },
+  { cat: 'ツール', name: 'アンカーポイントツール', win: 'Y', mac: 'Y', desc: '回転や拡大の「中心点」をずらす' },
+  { cat: 'ツール', hot: 1, name: 'カメラツール', win: 'C', mac: 'C', desc: '3Dカメラをぐりぐり動かす（押すたび切替）' },
+  { cat: 'ツール', hot: 1, name: 'ロトブラシツール', win: 'Alt+W', mac: 'Opt+W', desc: '動画から人や物をなぞって切り抜く' },
+  { cat: 'ツール', hot: 1, name: 'パペットピンツール', win: 'Ctrl+P', mac: '⌘+P', desc: 'イラストにピンを打ってぐにゃぐにゃ動かす' },
+
+  // --- フッテージ（素材） ---
+  { cat: 'フッテージ', hot: 1, name: 'フッテージを置き換え', win: 'Ctrl+H', mac: '⌘+H', desc: '素材ファイルを別ファイルに差し替え。リンク切れ修復にも' },
+  { gem: true, cat: 'フッテージ', name: 'レイヤーの中身だけ差し替え', win: 'Alt+素材をドラッグ', mac: 'Opt+素材をドラッグ', desc: 'プロジェクトパネルから素材をAlt/Opt押しながらレイヤーに重ねると、キーフレームそのままで中身だけ交換' },
+
+  // --- レイヤー ---
+  { cat: 'レイヤー', hot: 3, name: '新規平面（ソリッド）', win: 'Ctrl+Y', mac: '⌘+Y', desc: 'ベタ塗り1色のレイヤーを作る。背景やエフェクト台に' },
+  { cat: 'レイヤー', hot: 3, name: '新規調整レイヤー', win: 'Ctrl+Alt+Y', mac: '⌘+Opt+Y', desc: '下のレイヤー全部にまとめてエフェクトをかける透明な板' },
+  { cat: 'レイヤー', name: '新規ヌルオブジェクト', win: 'Ctrl+Alt+Shift+Y', mac: '⌘+Opt+Shift+Y', desc: '見えない「親」レイヤー。まとめて動かす司令塔' },
+  { cat: 'レイヤー', name: '新規テキストレイヤー', win: 'Ctrl+Alt+Shift+T', mac: '⌘+Opt+Shift+T', desc: '文字レイヤーをすぐ作る' },
+  { cat: 'レイヤー', hot: 3, name: 'プリコンポーズ', win: 'Ctrl+Shift+C', mac: '⌘+Shift+C', desc: '複数レイヤーを1つの箱にまとめて整理する' },
+  { cat: 'レイヤー', hot: 3, name: 'レイヤーを分割', win: 'Ctrl+Shift+D', mac: '⌘+Shift+D', desc: '再生ヘッドの位置でレイヤーをパチンと2つに切る' },
+  { cat: 'レイヤー', name: 'レイヤー名を変更', win: 'Enter', mac: 'Return', desc: '選んだレイヤーの名前をその場で書き換え' },
+  { cat: 'レイヤー', name: 'コンポの中央に配置', win: 'Ctrl+Home', mac: '⌘+Home', desc: 'レイヤーを画面のど真ん中へ一発移動' },
+  { cat: 'レイヤー', name: 'アンカーポイントを中央へ', win: 'Ctrl+Alt+Home', mac: '⌘+Opt+Home', desc: '中心点をレイヤーの真ん中に戻す' },
+  { cat: 'レイヤー', name: '1つ前面へ / 1つ背面へ', win: 'Ctrl+] / Ctrl+[', mac: '⌘+] / ⌘+[', desc: 'レイヤーの重なり順を1段ずつ入れ替える' },
+  { cat: 'レイヤー', hot: 1, name: '最前面へ / 最背面へ', win: 'Ctrl+Shift+] / Ctrl+Shift+[', mac: '⌘+Shift+] / ⌘+Shift+[', desc: '重なり順の一番上 / 一番下へ一気に移動' },
+  { cat: 'レイヤー', name: '上 / 下のレイヤーを選択', win: 'Ctrl+↑ / Ctrl+↓', mac: '⌘+↑ / ⌘+↓', desc: 'マウスに持ち替えずに選択レイヤーを乗り換える' },
+  { cat: 'レイヤー', hot: 1, name: '番号でレイヤーを選択', win: '1〜9（テンキー）', mac: '1〜9（テンキー）', desc: 'タイムラインの番号でレイヤーを直接選ぶ' },
+  { cat: 'レイヤー', hot: 1, name: 'レイヤーをロック', win: 'Ctrl+L', mac: '⌘+L', desc: '触りたくないレイヤーに鍵をかける。全解除は Ctrl+Shift+L（⌘+Shift+L）' },
+  { gem: true, cat: 'レイヤー', name: 'レイヤーを1pxずつ動かす', win: '矢印キー', mac: '矢印キー', desc: '微調整の必須技。Shift併用で10pxずつ' },
+  { cat: 'レイヤー', hot: 1, name: '回転を1°ずつ回す', win: '+ / -（テンキー）', mac: '+ / -（テンキー）', desc: '選択レイヤーをちょっとだけ回す。Shift併用で10°' },
+  { gem: true, cat: 'レイヤー', name: '描画モードを順に切替', win: 'Shift+= / Shift+-', mac: 'Shift+= / Shift+-', desc: 'スクリーン→乗算…と次々試せる。素材なじませの時短' },
+  { cat: 'レイヤー', hot: 1, name: '時間を逆再生（タイムリバース）', win: 'Ctrl+Alt+R', mac: '⌘+Opt+R', desc: 'レイヤーの再生を逆向きにする' },
+
+  // --- プロパティ表示 ---
+  { cat: 'プロパティ表示', hot: 3, name: '位置を表示', win: 'P', mac: 'P', desc: 'Position の P。レイヤーの場所の数値だけ出す' },
+  { cat: 'プロパティ表示', hot: 3, name: 'スケールを表示', win: 'S', mac: 'S', desc: 'Scale の S。大きさの数値だけ出す' },
+  { cat: 'プロパティ表示', hot: 3, name: '回転を表示', win: 'R', mac: 'R', desc: 'Rotation の R。角度の数値だけ出す' },
+  { cat: 'プロパティ表示', hot: 3, name: '不透明度を表示', win: 'T', mac: 'T', desc: '透け具合。「透明のT」と覚える' },
+  { cat: 'プロパティ表示', name: 'アンカーポイントを表示', win: 'A', mac: 'A', desc: 'Anchor の A。中心点の数値だけ出す' },
+  { cat: 'プロパティ表示', hot: 3, name: 'エフェクトを表示', win: 'E', mac: 'E', desc: 'かかっているエフェクトの一覧を出す' },
+  { cat: 'プロパティ表示', hot: 3, name: 'キーフレームがある項目だけ表示', win: 'U', mac: 'U', desc: '「動きがついてる場所」だけ一発で開く。超便利' },
+  { gem: true, cat: 'プロパティ表示', hot: 3, name: '変更した項目だけ表示', win: 'U+U', mac: 'U+U', desc: 'Uをすばやく2回。初期値からいじった項目が全部見える' },
+  { cat: 'プロパティ表示', name: 'エクスプレッションだけ表示', win: 'E+E', mac: 'E+E', desc: 'Eをすばやく2回。式が入っている場所だけ出す' },
+  { cat: 'プロパティ表示', name: 'マスクを表示', win: 'M', mac: 'M', desc: 'マスクのパスを出す。2回押しで全マスク設定' },
+  { cat: 'プロパティ表示', hot: 1, name: 'マスクのぼかしを表示', win: 'F', mac: 'F', desc: 'マスクの境界のぼかし（Feather）だけ出す' },
+  { cat: 'プロパティ表示', hot: 1, name: 'オーディオレベル / 波形', win: 'L / L+L', mac: 'L / L+L', desc: '音量の数値（L）と波形（LL）を出す' },
+  { cat: 'プロパティ表示', name: '複数まとめて表示', win: 'Shift+P など', mac: 'Shift+P など', desc: 'Shiftを押しながら P S R…と押すと追加で並べられる' },
+
+  // --- キーフレーム ---
+  { cat: 'キーフレーム', hot: 3, name: '位置のキーフレームを打つ', win: 'Alt+Shift+P', mac: 'Opt+P', desc: 'ストップウォッチを押さずに位置のキーを打つ' },
+  { cat: 'キーフレーム', name: 'スケールのキーフレームを打つ', win: 'Alt+Shift+S', mac: 'Opt+S', desc: '大きさのキーを一発で打つ' },
+  { cat: 'キーフレーム', name: '回転のキーフレームを打つ', win: 'Alt+Shift+R', mac: 'Opt+R', desc: '角度のキーを一発で打つ' },
+  { cat: 'キーフレーム', name: '不透明度のキーフレームを打つ', win: 'Alt+Shift+T', mac: 'Opt+T', desc: '透け具合のキーを一発で打つ' },
+  { cat: 'キーフレーム', hot: 3, name: 'イージーイーズ', win: 'F9', mac: 'F9', desc: '動きの始まりと終わりをなめらかに。プロっぽさの第一歩。Macで効かないときは Fn+F9' },
+  { cat: 'キーフレーム', name: 'イージーイーズイン', win: 'Shift+F9', mac: 'Shift+F9', desc: '「到着」だけをなめらかにする' },
+  { cat: 'キーフレーム', name: 'イージーイーズアウト', win: 'Ctrl+Shift+F9', mac: '⌘+Shift+F9', desc: '「出発」だけをなめらかにする' },
+  { cat: 'キーフレーム', name: '前 / 次のキーフレームへ移動', win: 'J / K', mac: 'J / K', desc: '表示中のキーフレームやマーカーの間をジャンプ移動' },
+  { cat: 'キーフレーム', hot: 3, name: 'エクスプレッションを追加', win: 'Alt+Shift+=', mac: 'Opt+Shift+=', desc: 'プロパティに式を書けるようにする。ストップウォッチをAlt/Optクリックでも同じ。このアプリの式はここに貼る！' },
+  { cat: 'キーフレーム', name: 'キーフレームを1フレームずらす', win: 'Alt+→ / Alt+←', mac: 'Opt+→ / Opt+←', desc: '選択したキーフレームの位置を微調整' },
+  { gem: true, cat: 'キーフレーム', hot: 1, name: 'ホールドキーフレームに切替', win: 'Ctrl+Alt+H', mac: '⌘+Opt+H', desc: '次のキーまで値をピタッと固定。パラパラ的な切替表現に' },
+  { cat: 'キーフレーム', name: 'グラフエディターを開く', win: 'Shift+F3', mac: 'Shift+F3', desc: '動きの速さをグラフで細かく調整する画面へ。Macで効かないときは Fn も一緒に' },
+
+  // --- 時間移動 ---
+  { cat: '時間移動', hot: 3, name: 'コンポの最初 / 最後へ', win: 'Home / End', mac: 'Home / End', desc: 'タイムラインの先頭・末尾へ一発ジャンプ。Macノートは Fn+← / Fn+→' },
+  { cat: '時間移動', hot: 3, name: '1フレーム進む / 戻る', win: 'PageDown / PageUp', mac: 'PageDown / PageUp', desc: 'コマ送りで細かくチェック。Shift併用で10フレーム。Macノートは Fn+↓ / Fn+↑（⌘+→ / ⌘+← でも可）' },
+  { cat: '時間移動', name: 'レイヤーのイン / アウト点へ', win: 'I / O', mac: 'I / O', desc: '選んだレイヤーの始まり・終わりへジャンプ' },
+  { cat: '時間移動', hot: 3, name: 'イン / アウト点を現在時間へ移動', win: '[ / ]', mac: '[ / ]', desc: 'レイヤーの開始（終了）位置を再生ヘッドに合わせて動かす' },
+  { cat: '時間移動', hot: 3, name: '現在時間でイン / アウトをトリム', win: 'Alt+[ / Alt+]', mac: 'Opt+[ / Opt+]', desc: '再生ヘッドの位置でレイヤーの前（後ろ）を切り落とす' },
+  { cat: '時間移動', name: 'ワークエリアの開始 / 終了', win: 'B / N', mac: 'B / N', desc: 'プレビューする範囲のスタート・ゴールを決める' },
+  { gem: true, cat: '時間移動', hot: 1, name: 'コンポをワークエリアにトリム', win: 'Ctrl+Shift+X', mac: '⌘+Shift+X', desc: 'ワークエリアの外を切り落としてコンポの尺を詰める' },
+  { cat: '時間移動', hot: 1, name: '時間を指定してジャンプ', win: 'Alt+Shift+J', mac: 'Opt+Shift+J', desc: '「3秒ちょうどへ」など数字入力で移動' },
+  { cat: '時間移動', name: 'タイムラインを拡大 / 縮小', win: '+ / -', mac: '+ / -', desc: 'タイムラインの目盛りをズームイン・アウト' },
+
+  // --- プレビュー ---
+  { cat: 'プレビュー', hot: 3, name: '再生 / 停止', win: 'Space', mac: 'Space', desc: 'プレビューの再生・停止' },
+  { cat: 'プレビュー', name: 'プレビュー（テンキー0）', win: '0（テンキー）', mac: '0（テンキー）', desc: 'Spaceと同様のプレビュー。挙動はプレビューパネルで変えられる' },
+  { cat: 'プレビュー', hot: 1, name: 'オーディオのみ再生', win: '.（テンキー）', mac: '.（テンキー）', desc: '映像は動かさず音だけ確認' },
+  { gem: true, cat: 'プレビュー', hot: 1, name: '音付きスクラブ', win: 'Ctrl+ドラッグ', mac: '⌘+ドラッグ', desc: '時間インジケーターをCtrl/⌘押しながらドラッグすると音も聞こえる' },
+  { cat: 'プレビュー', hot: 1, name: 'プレビューを中止', win: 'Esc', mac: 'Esc', desc: '再生やレンダリングを止める' },
+  { gem: true, cat: 'プレビュー', hot: 1, name: 'スナップショットを撮る / 見る', win: 'Shift+F5 / F5', mac: 'Shift+F5 / F5', desc: '今の画面を記憶→F5を押している間だけ表示。ビフォーアフター比較に。MacはFn併用' },
+
+  // --- 表示 ---
+  { cat: '表示', name: 'コンポ画面を拡大 / 縮小', win: '. / ,', mac: '. / ,', desc: 'プレビュー画面のズームイン（.）とズームアウト（,）' },
+  { cat: '表示', name: '画面サイズにフィット', win: 'Shift+/', mac: 'Shift+/', desc: 'コンポ全体がちょうど収まる倍率にする' },
+  { cat: '表示', name: '解像度: フル画質', win: 'Ctrl+J', mac: '⌘+J', desc: 'プレビューをフル画質に。重いときは下の1/2へ' },
+  { cat: '表示', name: '解像度: 1/2 画質', win: 'Ctrl+Shift+J', mac: '⌘+Shift+J', desc: 'プレビューを半分の画質にして軽くする。1/4は Ctrl+Alt+Shift+J' },
+  { cat: '表示', hot: 1, name: 'セーフゾーンを表示', win: "'", mac: "'", desc: 'タイトルが切れない安全エリアの枠を出す' },
+  { cat: '表示', hot: 1, name: 'グリッドを表示', win: "Ctrl+'", mac: "⌘+'", desc: '方眼紙のようなマス目を出して配置の目安に' },
+  { cat: '表示', hot: 1, name: '定規を表示', win: 'Ctrl+R', mac: '⌘+R', desc: '画面の端に目盛りを出す。ガイド線も引ける' },
+  { cat: '表示', hot: 1, name: 'ガイドを表示 / 隠す', win: 'Ctrl+;', mac: '⌘+;', desc: '定規から引いたガイド線の表示切替' },
+  { cat: '表示', hot: 1, name: 'スナップ切替', win: 'Ctrl+Shift+;', mac: '⌘+Shift+;', desc: 'ガイドへの吸着のオン / オフ' },
+  { cat: '表示', hot: 1, name: '画面の更新を止める', win: 'CapsLock', mac: 'CapsLock', desc: '重い作業中にプレビュー更新をオフにして軽くする' },
+
+  // --- テキスト ---
+  { gem: true, cat: 'テキスト', name: 'テキスト編集を確定', win: 'Enter（テンキー）', mac: 'Enter（テンキー）', desc: '入力を終えて選択状態に戻る。Escでも抜けられる' },
+  { cat: 'テキスト', hot: 1, name: '文字をすべて選択', win: 'レイヤーをダブルクリック', mac: 'レイヤーをダブルクリック', desc: 'テキストレイヤーをダブルクリックで全文字選択して編集開始' },
+  { cat: 'テキスト', hot: 1, name: 'フォントサイズを変更', win: 'Ctrl+Shift+> / <', mac: '⌘+Shift+> / <', desc: '選択した文字を2pxずつ大きく / 小さく' },
+  { cat: 'テキスト', hot: 1, name: '行送り（行間）を変更', win: 'Alt+↑ / Alt+↓', mac: 'Opt+↑ / Opt+↓', desc: '行と行のあいだを詰める / 広げる' },
+  { gem: true, cat: 'テキスト', hot: 1, name: 'カーニング（字間）を変更', win: 'Alt+← / Alt+→', mac: 'Opt+← / Opt+→', desc: 'カーソル位置の文字のすき間を詰める / 広げる' },
+  { cat: 'テキスト', hot: 1, name: '段落を左 / 中央 / 右揃え', win: 'Ctrl+Shift+L / C / R', mac: '⌘+Shift+L / C / R', desc: 'テキストの揃えを一発切替' },
+
+  // --- マスク・シェイプ・ペイント ---
+  { cat: 'マスク・シェイプ', name: '正円・正方形を描く', win: 'Shift+ドラッグ', mac: 'Shift+ドラッグ', desc: '図形ツールでShiftを押しながら描くと縦横比が固定される' },
+  { cat: 'マスク・シェイプ', hot: 1, name: '中心から図形を描く', win: 'Ctrl+ドラッグ', mac: '⌘+ドラッグ', desc: 'クリック地点を中心に広がるように描ける' },
+  { gem: true, cat: 'マスク・シェイプ', name: 'レイヤーぴったりのマスク / シェイプ', win: '図形ツールをダブルクリック', mac: '図形ツールをダブルクリック', desc: 'レイヤーサイズちょうどの図形を一発作成' },
+  { cat: 'マスク・シェイプ', hot: 1, name: 'マスクを反転', win: 'Ctrl+Shift+I', mac: '⌘+Shift+I', desc: 'マスクの内側 / 外側をひっくり返す' },
+  { cat: 'マスク・シェイプ', hot: 1, name: 'ブラシサイズを変更', win: 'Ctrl+ドラッグ', mac: '⌘+ドラッグ', desc: 'ペイント/ロトブラシ中にCtrl/⌘ドラッグで太さ調整' },
+  { cat: 'マスク・シェイプ', hot: 1, name: 'ロトブラシで削る（減算）', win: 'Alt+ドラッグ', mac: 'Opt+ドラッグ', desc: '選択しすぎた部分をAlt/Optを押しながらなぞって外す' },
+
+  // --- 3D・カメラ ---
+  { cat: '3D・カメラ', hot: 1, name: '新規カメラ', win: 'Ctrl+Alt+Shift+C', mac: '⌘+Opt+Shift+C', desc: '3D空間を撮影するカメラを作る' },
+  { cat: '3D・カメラ', hot: 1, name: '新規ライト', win: 'Ctrl+Alt+Shift+L', mac: '⌘+Opt+Shift+L', desc: '3Dレイヤーを照らす照明を作る' },
+
+  // --- エフェクト ---
+  { cat: 'エフェクト', name: 'エフェクトコントロールを開く', win: 'F3', mac: 'F3', desc: '選択レイヤーのエフェクト設定パネルを出す。MacはFn併用' },
+  { gem: true, cat: 'エフェクト', name: '最後のエフェクトをもう一度適用', win: 'Ctrl+Alt+Shift+E', mac: '⌘+Opt+Shift+E', desc: '直前に使ったエフェクトを別レイヤーにも一発適用。時短の定番' },
+  { cat: 'エフェクト', hot: 1, name: 'エフェクトをすべて削除', win: 'Ctrl+Shift+E', mac: '⌘+Shift+E', desc: '選択レイヤーのエフェクトをまとめて外す' },
+
+  // --- マーカー ---
+  { cat: 'マーカー', name: 'マーカーを打つ', win: '*（テンキー）', mac: '*（テンキー）', desc: '「ここ大事」の目印を打つ。テンキーの無いノートPCはメニューの「レイヤー > マーカー」から' },
+  { cat: 'マーカー', hot: 1, name: '番号付きコンポマーカーを打つ', win: 'Shift+0〜9', mac: 'Shift+0〜9', desc: '現在時間に番号付きの目印を打つ' },
+  { cat: 'マーカー', hot: 1, name: '番号マーカーへジャンプ', win: '0〜9（メインキー）', mac: '0〜9（メインキー）', desc: '打った番号マーカーへ一発移動' },
+
+  // --- 書き出し ---
+  { cat: '書き出し', name: 'レンダーキューに追加', win: 'Ctrl+M', mac: '⌘+M', desc: '完成した動画を書き出す準備をする' },
+  { cat: '書き出し', name: 'Media Encoderキューに追加', win: 'Ctrl+Alt+M', mac: '⌘+Opt+M', desc: 'MP4などで書き出したいときはこっち' },
+  { gem: true, cat: '書き出し', hot: 1, name: '今のフレームを画像で書き出し', win: 'Ctrl+Alt+S', mac: '⌘+Opt+S', desc: '表示中の1コマをレンダーキュー経由で画像保存。サムネ作りに' },
+];
+
+/* =========================================================
+   データ: エクスプレッション
+   kid: 中学生でもわかる説明 / demo: 動きデモの種類
+========================================================= */
+const EXPRESSIONS = [
+  // ===== 定番 =====
+  {
+    cat: '定番', hot: 3, name: 'wiggle()', badge: '一番人気',
+    code: 'wiggle(2, 30)',
+    tag: 'ランダムにプルプル揺らす',
+    kid: '<b>「1秒に2回、30の強さでランダムに揺らして」</b>という意味。位置に入れるとカメラの手ブレ風、明るさに入れるとチカチカする炎の光みたいになる。最初の数字＝揺れる速さ、次の数字＝揺れる大きさ。',
+    combo: [
+      '上の行に <code>posterizeTime(8);</code> を足すと手書き風のカクカク揺れに（ストップモーション風）',
+      'エフェクト「ブラー（方向）」と合わせると勢いのある画面揺れ・衝撃表現に',
+      '不透明度に wiggle(8, 40) ＋ エフェクト「グロー」でネオンや炎のチカチカに',
+    ],
+    demo: 'wiggle',
+  },
+  {
+    cat: '定番', hot: 3, name: 'loopOut("cycle")', badge: '定番',
+    code: 'loopOut("cycle")',
+    tag: 'キーフレームの動きを永遠にくり返す',
+    kid: '作ったキーフレームの動きが終わったら、<b>最初に戻って同じ動きを永遠にリピート</b>する。歩きのループや回転アニメなど「ずっと繰り返したい動き」をキーフレーム2個だけで作れる。',
+    combo: [
+      'キーフレームに F9（イージーイーズ）をかけてからループすると滑らかさが段違い',
+      '回転のキーフレーム2個＋これで無限ローディングアイコンが完成',
+      'エフェクト「波形ワープ」と合わせて、ずっと揺れ続ける旗や水面に',
+    ],
+    demo: 'loopcycle',
+  },
+  {
+    cat: '定番', name: 'loopOut("pingpong")', badge: '定番',
+    code: 'loopOut("pingpong")',
+    tag: '行って戻ってを永遠にくり返す',
+    kid: '卓球（ピンポン）の玉みたいに、<b>行ったら今度は逆向きに戻ってくる</b>のをくり返す。振り子や「ゆらゆら漂う」動きにぴったり。cycleとの違いは「逆再生で戻る」こと。',
+    combo: [
+      'スケール 95%↔105% のキーフレーム＋これで「呼吸するボタン」（強調したい要素に）',
+      '位置Yのキーフレーム2個＋これで、ふわふわ上下に漂うキャラクターや風船に',
+    ],
+    demo: 'pingpong',
+  },
+  {
+    cat: '定番', hot: 3, name: 'time', badge: '基本',
+    code: '// 回転に入れると1秒で90°回る\ntime * 90',
+    tag: '時間に合わせて一定スピードで動かす',
+    kid: '<b>time は「再生してからの秒数」が入っている箱</b>。回転に「time * 90」と書くと、1秒で90°、2秒で180°…とずーっと同じ速さで回り続ける。キーフレーム不要で「ずっと回る」が作れる。',
+    combo: [
+      'エフェクト「フラクタルノイズ」の展開に <code>time * 200</code> → 動き続ける煙・雲・水面の背景（超定番）',
+      'エフェクト「タービュレントディスプレイス」の展開に <code>time * 50</code> → 線や文字がうねうね動く手描き風',
+      'エフェクト「色相/彩度」の色相に <code>time * 90</code> → 色が変わり続けるレインボーネオンに',
+    ],
+    demo: 'time',
+  },
+
+  // ===== ループ =====
+  {
+    cat: 'ループ', name: 'loopOut("offset")', badge: 'ループ',
+    code: 'loopOut("offset")',
+    tag: '動きを積み上げながらくり返す（階段式）',
+    kid: 'cycleは最初の位置に戻るけど、offsetは<b>前回の終わりから続きを積み上げる</b>。「10歩あるく」キーフレームを作れば、そのままどこまでも歩き続ける。階段をのぼるように値が増えていくイメージ。',
+    combo: [
+      '「一定距離すすむ」キーフレーム2個＋これで無限に歩く・流れるアニメに',
+    ],
+    demo: 'loopoffset',
+  },
+  {
+    cat: 'ループ', hot: 1, name: 'loopOut("continue")', badge: 'ループ',
+    code: 'loopOut("continue")',
+    tag: '最後の勢いのまま進み続ける',
+    kid: 'くり返しはせず、<b>最後のキーフレームの速度を保ったまま真っすぐ進み続ける</b>。画面外へ飛んでいくロケットや、通り過ぎるテロップに。ブレーキをかけずに走り抜けるイメージ。',
+    demo: null,
+  },
+  {
+    cat: 'ループ', hot: 1, name: 'loopIn()', badge: 'ループ',
+    code: 'loopIn("cycle")',
+    tag: '最初のキーフレームより前をくり返す',
+    kid: 'loopOutの逆で、<b>アニメが始まる前の時間をループで埋める</b>。「レイヤーの途中からキーフレームを打ったけど、最初から動いていてほしい」ときに。cycle / pingpong / offset が同じように使える。',
+    demo: null,
+  },
+
+  // ===== 揺れ・ランダム =====
+  {
+    cat: '揺れ・ランダム', name: 'random()', badge: 'ランダム',
+    code: 'random(0, 100)',
+    tag: '毎フレーム、サイコロを振って値を決める',
+    kid: '<b>毎フレーム、0〜100の間の数をサイコロのようにランダムに選ぶ</b>。不透明度に入れると激しくチカチカ点滅（グリッチ風）。wiggleより「ガタガタ・バチバチ」した荒い動きになる。',
+    combo: [
+      '上の行に <code>posterizeTime(4);</code> を足すと点滅間隔が荒くなってグリッチ感UP',
+      'エフェクト「色収差」系（RGBずらし）や「ブロックディゾルブ」と合わせて故障テレビ風に',
+    ],
+    demo: 'random',
+  },
+  {
+    cat: '揺れ・ランダム', hot: 1, name: 'noise()', badge: 'ランダム',
+    code: '// なめらかな揺らぎ（-1〜1が返る）\nnoise(time) * 100',
+    tag: 'なめらかにつながったランダム（波のような揺らぎ）',
+    kid: 'randomが「毎回サイコロ」なら、noiseは<b>なめらかな丘が続く地形をなぞる</b>ようなランダム。急にジャンプせず、ゆっくり揺らぐ。wiggleの中身もこの仲間。ロウソクの光や漂うホコリの表現に。',
+    demo: 'noise',
+  },
+  {
+    gem: true, cat: '揺れ・ランダム', hot: 1, name: 'seedRandom()', badge: 'ランダム',
+    code: 'seedRandom(5, true);\nrandom(0, 100)',
+    tag: 'ランダムの「くじ引きの中身」を固定する',
+    kid: 'ランダムは毎回結果が変わるけど、seedRandomで<b>「5番のくじ引きセットを使って」と指定すると、何回再生しても同じランダム</b>になる。レイヤーごとに違う数字にすれば、それぞれ違う揺れ方に。2つ目の true は「時間が経っても引き直さない」の意味。',
+    combo: [
+      'wiggleの上の行に <code>seedRandom(index);</code> と書くと、複製したレイヤーごとに違う揺れ方になる（全員おそろいの揺れを防ぐ定番技）',
+    ],
+    demo: null,
+  },
+  {
+    cat: '揺れ・ランダム', name: 'Math.sin()', badge: '波',
+    code: '// 上下にゆらゆら（速さ2, ふり幅40）\nvalue + [0, Math.sin(time * 2) * 40]',
+    tag: 'なめらかに行ったり来たりの波をつくる',
+    kid: '<b>sin（サイン）は「なめらかな波」を作ってくれる数学の道具</b>。wiggleのランダムと違って、規則正しくゆ〜らゆ〜らする。風船が浮かんでいる感じや、呼吸するようなふわふわに最適。time×の数字で速さ、最後の×の数字でふり幅が変わる。',
+    combo: [
+      'エフェクト「ドロップシャドウ」と合わせて、浮遊するキャラの影の距離も一緒に動かすとリアルな浮遊感に',
+      'スケールに <code>s = Math.sin(time*2)*3; value + [s, s]</code> で呼吸するようなふわふわ拡縮',
+    ],
+    demo: 'sin',
+  },
+
+  // ===== 数値の変換 =====
+  {
+    cat: '数値の変換', name: 'linear()', badge: '変換',
+    code: '// 0〜2秒かけて 0→100 に変化\nlinear(time, 0, 2, 0, 100)',
+    tag: '「AがこうならBはこう」と値を言いかえる',
+    kid: '<b>「timeが0→2に進む間に、答えを0→100に変えてね」</b>という値の翻訳機。「音の大きさに合わせてサイズを変える」「スライダーで色を変える」など、何かと何かを連動させるときの超基本。範囲の外では止まってくれるのも安心。',
+    combo: [
+      '「オーディオをキーフレームに変換」→ できた音量スライダーとlinearをつなぐと、音に合わせて跳ねる図形に（音ハメの定番）',
+      'エフェクト「スライダー制御」と合わせると、つまみ1本で複数レイヤーの色や大きさをまとめて調整できる',
+    ],
+    demo: 'linear',
+  },
+  {
+    cat: '数値の変換', name: 'ease()', badge: '変換',
+    code: '// linearのなめらか版\nease(time, 0, 2, 0, 100)',
+    tag: 'linearのなめらか版。ゆっくり始まってゆっくり終わる',
+    kid: '使い方はlinearと同じ。違いは<b>スタートとゴールがふわっとなめらか</b>になること。電車が駅を出るときと着くときにゆっくりになるイメージ。イージーイーズ（F9）のエクスプレッション版。',
+    combo: [
+      'カメラやヌルの移動に使うと、高級感のあるスローイン・スローアウトの画面移動に',
+    ],
+    demo: 'ease',
+  },
+  {
+    cat: '数値の変換', hot: 1, name: 'easeIn() / easeOut()', badge: '変換',
+    code: '// 終わりだけなめらか / 始まりだけなめらか\neaseIn(time, 0, 2, 0, 100)\n// easeOut(time, 0, 2, 0, 100)',
+    tag: '片側だけなめらかにするease',
+    kid: 'easeの片側バージョン。<b>easeInはゴール側だけ、easeOutはスタート側だけ</b>ふわっとさせる。「勢いよく飛び出して、ふわっと止まる」みたいな緩急をつけたいときに使い分ける。',
+    demo: null,
+  },
+  {
+    cat: '数値の変換', hot: 1, name: 'clamp()', badge: '制限',
+    code: '// 値を 0〜50 の範囲におさめる\nclamp(value, 0, 50)',
+    tag: '値がはみ出さないように柵で囲う',
+    kid: '<b>「どんなに大きくても50まで、小さくても0まで」と柵を作る</b>。wiggleで揺らしたら画面の外に飛び出しちゃった…というときに、行き過ぎをカットしてくれるストッパー。',
+    combo: [
+      '位置のwiggleと組み合わせるなら <code>w = wiggle(3, 100); [clamp(w[0], 0, 960), w[1]]</code> — 横方向だけ柵で止めて画面から出さない',
+    ],
+    demo: 'clamp',
+  },
+
+  // ===== 数学 =====
+  {
+    cat: '数学', hot: 1, name: 'Math.round() / floor / ceil', badge: '数学',
+    code: 'Math.round(3.6)  // → 4 四捨五入\nMath.floor(3.6)  // → 3 切り捨て\nMath.ceil(3.2)   // → 4 切り上げ',
+    tag: '小数をきれいな整数にする',
+    kid: 'カウンターの数字が「12.83671」みたいになったら、この3兄弟の出番。<b>round＝四捨五入、floor＝切り捨て、ceil＝切り上げ</b>。数字テロップやカウントアップ表現の必需品。',
+    demo: null,
+  },
+  {
+    cat: '数学', hot: 1, name: 'Math.abs()', badge: '数学',
+    code: 'Math.abs(-30)  // → 30',
+    tag: 'マイナスをプラスに変える（絶対値）',
+    kid: '<b>マイナス記号を取っ払って「大きさだけ」にする</b>。「左右どちらに動いても、動いた量に反応させたい」ときに。sinと組み合わせるとボールが弾むような動きも作れる（マイナス側が折り返される）。',
+    demo: null,
+  },
+
+  // ===== 時間・速度 =====
+  {
+    cat: '時間・速度', name: 'valueAtTime()', badge: '遅延',
+    code: '// 親レイヤーを0.2秒遅れで追いかける\nl = thisComp.layer("リーダー");\nl.position.valueAtTime(time - 0.2)',
+    tag: 'ちょっと遅れてついてくる「金魚のフン」',
+    kid: '<b>「0.2秒前のあのレイヤーの位置をちょうだい」</b>という意味。先頭のレイヤーを動かすと、後ろのレイヤーがワンテンポ遅れてついてくる。しっぽ、隊列、残像っぽい表現が作れる。',
+    combo: [
+      'indexと組み合わせて複製するだけで隊列が完成（レイヤー・参照のindexを見てね）',
+      '似た残像表現はエフェクト「エコー」でもエクスプレッションなしで作れる。使い分けよう',
+    ],
+    demo: 'delay',
+  },
+  {
+    cat: '時間・速度', name: 'posterizeTime()', badge: 'コマ落ち',
+    code: '// 1秒間に8コマだけ更新する\nposterizeTime(8);\nwiggle(3, 50)',
+    tag: 'わざとカクカクのコマ落ち風にする',
+    kid: '<b>「1秒に8回だけ動きを更新して」</b>という意味。パラパラ漫画やストップモーションみたいなカクカクした質感になる。手書き風アニメーションの「あの感じ」を出したいときに。',
+    combo: [
+      'wiggleとセットが鉄板（カクカク手書き揺れ）。さらにエフェクト「ラフエッジ」を足すと完全にアナログ風',
+      'randomと合わせてグリッチの点滅間隔をコントロール',
+    ],
+    demo: 'posterize',
+  },
+  {
+    cat: '時間・速度', hot: 1, name: 'speed / velocity', badge: '速度',
+    code: '// 速く動くほど透明にする（不透明度に）\nv = thisComp.layer("玉").position.speed;\nlinear(v, 0, 500, 100, 20)',
+    tag: '「今どれくらいの速さか」を取り出す',
+    kid: '<b>speedは速さ（数値1個）、velocityは向きつきの速さ</b>。「速く動いているときだけブラーを強く」「止まったら光る」など、動きの勢いに反応する仕掛けが作れる。',
+    demo: null,
+  },
+  {
+    cat: '時間・速度', hot: 1, name: 'smooth()', badge: '滑らか',
+    code: '// ガタガタの動きをなめらかに\nsmooth(0.2, 5)',
+    tag: 'ガタガタの動きをなめらかにならす',
+    kid: 'ガタガタした動きの<b>前後0.2秒ぶんを5点分平均して、なめらかにならす</b>。手ブレの激しいトラッキングデータを落ち着かせたいときに。ヤスリがけのイメージ。',
+    combo: [
+      'トラッカーで取った手ブレデータにかけて「ちょい揺れ」だけ残すと自然な仕上がりに',
+    ],
+    demo: 'smooth',
+  },
+
+  // ===== レイヤー・参照 =====
+  {
+    gem: true, cat: 'レイヤー・参照', hot: 3, name: 'effect("スライダー制御")', badge: '超重要',
+    code: '// ヌルに「スライダー制御」を適用しておく\nthisComp.layer("コントローラー")\n  .effect("スライダー制御")("スライダー")',
+    tag: 'つまみ1本でいろんな値をまとめて操る',
+    kid: 'エフェクト「スライダー制御」は<b>ただの「つまみ」</b>。それをこの式で読み取れば、1本のつまみで10個のレイヤーの大きさ・色・速さをまとめて操作できる。テンプレ化・量産の心臓部で、実務ではwiggleと並ぶ使用率。',
+    combo: [
+      'linearと組み合わせて「スライダー0→100で色が青→赤」のような変換に',
+      'チェックボックス制御・カラー制御・ポイント制御も同じ書き方で読める',
+    ],
+    demo: null,
+  },
+  {
+    cat: 'レイヤー・参照', name: 'thisComp / thisLayer', badge: '基本',
+    code: 'thisComp.layer("背景").position\nthisLayer.name\nthisComp.width  // コンポの幅',
+    tag: '「このコンポ」「この自分」を指すことば',
+    kid: '式の中で他人を呼ぶための住所みたいなもの。<b>thisComp＝いま居るコンポ、thisLayer＝自分自身</b>。「thisComp.layer("背景")」で背景レイヤーの値を借りてこられる。ほとんどの連動式はここから始まる。',
+    demo: null,
+  },
+  {
+    cat: 'レイヤー・参照', name: 'index', badge: '番号',
+    code: '// レイヤー番号ぶんだけ遅らせて再生\ndelay = 0.15;\nvalueAtTime(time - (index - 1) * delay)',
+    tag: 'レイヤー番号を使って自動で時間差をつける',
+    kid: '<b>index は「自分がタイムラインの上から何番目か」の番号</b>。これを使うと、レイヤーを複製するだけで1番は0秒、2番は0.15秒、3番は0.3秒…と自動で時間差(ウェーブ)がつく。大量のオブジェクトを順番に動かすときの必殺技。',
+    combo: [
+      'valueAtTimeとセットが定番。Ctrl+D / ⌘+D で複製するほどヘビのようにつながっていく',
+      'seedRandom(index) と組み合わせると、レイヤーごとに違うランダム揺れがつく',
+    ],
+    demo: 'index',
+  },
+  {
+    gem: true, cat: 'レイヤー・参照', hot: 1, name: 'parent', badge: '参照',
+    code: '// 親の回転を打ち消して自分だけ水平を保つ\n-parent.rotation',
+    tag: '親レイヤーの値を借りる',
+    kid: '親子付けした<b>親レイヤーの値をそのまま読める</b>。マイナスを付けて「親の回転の逆」を返せば、親がどれだけ回っても自分だけ水平をキープ、みたいな技が作れる。',
+    demo: null,
+  },
+  {
+    cat: 'レイヤー・参照', hot: 1, name: 'value', badge: '基本',
+    code: '// 元のアニメを生かしたまま揺れだけ足す\nvalue + [0, Math.sin(time * 3) * 20]',
+    tag: '「式を書く前の元の値」を表すことば',
+    kid: '<b>value は、キーフレームや手入力で決めた「本来の値」</b>。「value + 何か」の形にすれば、元のアニメを生かしたまま味付けだけ式でできる。式の基本にして最重要単語。',
+    demo: null,
+  },
+  {
+    cat: 'レイヤー・参照', hot: 1, name: 'value[0] / value[1]', badge: '基本',
+    code: '// 横だけwiggle、縦はそのまま\nw = wiggle(3, 60);\n[w[0], value[1]]',
+    tag: '位置などの「XとY」を別々にあつかう',
+    kid: '位置は [X, Y] という<b>2つの数字のセット</b>。[0]がX（横）、[1]がY（縦）。バラして片方だけ揺らしたり、別のレイヤーのXと自分のYを組み合わせたり、軸ごとの自由な料理ができる。',
+    demo: null,
+  },
+
+  // ===== 座標・距離 =====
+  {
+    cat: '座標・距離', name: 'toComp()', badge: '座標',
+    code: '// 親子付けされていても画面上の位置を取る\nthisComp.layer("ターゲット")\n  .toComp([0, 0])',
+    tag: 'レイヤーの中の点を「画面の座標」に翻訳する',
+    kid: '親子付けやプリコンで入れ子になったレイヤーの位置は、そのままだと「親から見た位置」。toCompは<b>「画面全体で見ると結局どこ？」に翻訳</b>してくれる。線でつなぐ・矢印で指すなどの表現の裏方エース。',
+    combo: [
+      'シェイプのパスと組み合わせて、動く2つのレイヤーを線でつなぐ相関図・ガジェット風UIに',
+    ],
+    demo: null,
+  },
+  {
+    cat: '座標・距離', hot: 1, name: 'length()', badge: '距離',
+    code: '// 2つのレイヤーの距離で大きさを変える\nd = length(position,\n  thisComp.layer("磁石").position);\nlinear(d, 0, 500, 200, 100)',
+    tag: '2つの点のあいだの距離をはかる',
+    kid: '<b>2点間の距離をものさしで測る</b>関数。「近づくほど大きくなる」「離れると薄くなる」など、距離に反応するインタラクティブ風の動きが作れる。磁石みたいな表現に。',
+    demo: null,
+  },
+  {
+    cat: '座標・距離', hot: 1, name: 'lookAt()', badge: '向き',
+    code: '// 向き（回転）に入れると相手の方を向く\nlookAt(position,\n  thisComp.layer("ターゲット").position)',
+    tag: 'いつも相手の方を向かせる',
+    kid: '<b>「自分の位置」から「相手の位置」の方角を計算</b>してくれる。3Dレイヤーの方向に入れれば、どこへ動いてもターゲットを見続けるカメラや目玉が作れる。',
+    demo: null,
+  },
+
+  // ===== テキスト自動化 =====
+  {
+    gem: true, cat: 'テキスト自動化', hot: 3, name: 'sourceRectAtTime()', badge: '自動化',
+    code: '// 座布団シェイプの「長方形パス→サイズ」に貼る\nt = thisComp.layer("テキスト");\nw = t.sourceRectAtTime().width;\n[w + 40, 80]',
+    tag: '文字の長さに合わせて背景の大きさを自動調整',
+    kid: '<b>「あのレイヤーのいまの大きさ（幅と高さ）を教えて」</b>という意味。テロップの文字を打ちかえると、背景の座布団が自動でピッタリの幅に伸び縮みする。テロップ作りが一気に楽になる。',
+    combo: [
+      '「テキスト＋シェイプの座布団」にこれを入れるのが自動テロップの定番セット',
+      'シェイプの「角を丸くする」も足すと、今っぽいピル型（カプセル型）テロップに',
+    ],
+    demo: null,
+  },
+  {
+    gem: true, cat: 'テキスト自動化', name: 'text.sourceText', badge: '自動化',
+    code: '// テキストの「ソーステキスト」に貼る\n// 再生時間のカウンター（小数1桁）\ntime.toFixed(1) + " 秒"',
+    tag: '文字の中身を式で自動的に書き換える',
+    kid: 'テキストレイヤーの<b>文字そのものを式で作れる</b>。時間カウンター、スライダーと連動した数字、他レイヤーの名前の表示など。「.toFixed(1)」は小数を1桁にそろえるおまじない。',
+    combo: [
+      'スライダー制御と組み合わせて「数値が跳ね上がるカウンター演出」（実績数字の訴求に）',
+      'Math.round と組み合わせて整数のカウントアップに',
+    ],
+    demo: null,
+  },
+
+  // ===== マーカー =====
+  {
+    gem: true, cat: 'マーカー', name: 'marker.key()', badge: 'マーカー',
+    code: '// 直近のマーカーから0.5秒かけて出現\nm = thisComp.marker.nearestKey(time);\nlinear(time, m.time, m.time + 0.5, 0, 100)',
+    tag: 'マーカーを打った場所でアニメを発火させる',
+    kid: '<b>タイムラインのマーカーを「スイッチ」として使う</b>式。マーカーを打ち直すだけでアニメのタイミングが動くので、音ハメの調整が超ラク。曲のビートにマーカーを打って、全部一括で光らせるなんてことも。',
+    combo: [
+      '音楽のビートに合わせてマーカーを打ち、スケールのポップと組み合わせるとリズムに乗る図形アニメに',
+    ],
+    demo: null,
+  },
+
+  // ===== 制御・応用 =====
+  {
+    cat: '制御・応用', name: 'if / else', badge: '条件',
+    code: '// 2秒までは透明、そのあと表示\nif (time < 2) {\n  0;\n} else {\n  100;\n}',
+    tag: '「もし〜なら A、ちがえば B」の分かれ道',
+    kid: 'プログラムの基本、<b>条件分岐</b>。「2秒より前なら透明、過ぎたら表示」のようにルールで動きを決められる。スライダーの値やレイヤーの位置を条件にすれば、もっと賢い仕掛けも作れる。',
+    demo: null,
+  },
+  {
+    gem: true, cat: '制御・応用', hot: 1, name: 'sampleImage()', badge: '応用',
+    code: '// 画面中央の色を拾う（カラー系プロパティに）\nthisComp.layer("映像")\n  .sampleImage([960, 540], [2, 2])',
+    tag: '映像の「その場所の色」を拾ってくる',
+    kid: '<b>指定した場所のピクセルの色をスポイトで吸う</b>関数。映像の色に合わせて文字色やライトの色を自動で変える、なじませ演出の飛び道具。',
+    demo: null,
+  },
+  {
+    gem: true, cat: '制御・応用', hot: 1, name: 'createPath()', badge: '応用',
+    code: '// シェイプの「パス」に貼る：2点を結ぶ直線\np1 = thisComp.layer("A").position;\np2 = thisComp.layer("B").position;\ncreatePath([p1, p2], [], [], false)',
+    tag: 'パス（線の形）を式で組み立てる',
+    kid: '<b>点のリストから線や図形を式で作る</b>上級関数。動く2つのレイヤーの位置を毎フレーム線でつなぐ「相関図」「ミサンガ」みたいな表現ができる。toComp()と組み合わせるのがコツ。',
+    combo: [
+      'toComp()と組み合わせて、親子付け・3Dでも正確に2点を結ぶ線に',
+    ],
+    demo: null,
+  },
+];
+
+/* =========================================================
+   状態とレンダリング
+========================================================= */
+const state = {
+  tab: 'shortcuts',
+  os: /Mac|iPhone|iPad/.test(navigator.userAgent) ? 'mac' : 'win',
+  query: '',
+  cat: 'すべて',
+  sort: 'cat', // 'cat'=カテゴリごと / 'hot'=よく使う順
+};
+
+const $list = document.getElementById('list');
+const $chips = document.getElementById('chips');
+const $search = document.getElementById('search');
+const $tabs = document.getElementById('tabs');
+const $osToggle = document.getElementById('osToggle');
+
+function cats() {
+  const src = state.tab === 'shortcuts' ? SHORTCUTS : EXPRESSIONS;
+  return ['すべて', '💡', '★', ...new Set(src.map(x => x.cat))];
+}
+
+const CHIP_LABEL = { '★': '★ お気に入り', '💡': '💡 目から鱗' };
+function renderChips() {
+  if (state.tab === 'quiz') { $chips.innerHTML = ''; return; }
+  $chips.innerHTML = cats().map(c =>
+    `<button data-cat="${c}" class="${c === state.cat ? 'on' : ''}">${CHIP_LABEL[c] || c}</button>`
+  ).join('');
+}
+
+function keyHtml(combo) {
+  // "Ctrl+Shift+D" → kbd列。 " / " 区切りはペア表記
+  return combo.split(' / ').map(part =>
+    part.split('+').map(k => `<kbd>${k}</kbd>`).join('<span class="plus">+</span>')
+  ).join('<span class="plus">／</span>');
+}
+
+function match(item, fields) {
+  if (!state.query) return true;
+  const q = state.query.toLowerCase();
+  return fields.some(f => {
+    const v = item[f];
+    return (Array.isArray(v) ? v.join(' ') : (v || '')).toLowerCase().includes(q);
+  });
+}
+
+/* よく使う度（hot: 1〜3、省略時は2） */
+const hotOf = x => x.hot != null ? x.hot : 2;
+const TIER_LABEL = { 3: '★★★ 超よく使う', 2: '★★ よく使う', 1: '★ 覚えておくと便利' };
+const sortByHot = items => items.slice().sort((a, b) => hotOf(b) - hotOf(a));
+
+/* カテゴリの絵文字（見出しを分かりやすく） */
+const CAT_ICON = {
+  '基本操作': '🧰', 'パネル・画面': '🖥️', 'ツール': '🛠️', 'フッテージ': '🎞️',
+  'レイヤー': '📚', 'プロパティ表示': '🎚️', 'キーフレーム': '🔑', '時間移動': '⏱️',
+  'プレビュー': '▶️', '表示': '👁️', 'テキスト': '🔤', 'マスク・シェイプ': '✂️',
+  '3D・カメラ': '🎥', 'エフェクト': '✨', 'マーカー': '📍', '書き出し': '📤',
+  '定番': '🌟', 'ループ': '🔁', '揺れ・ランダム': '🎲', '数値の変換': '🔀',
+  '数学': '➗', '時間・速度': '⏱️', 'レイヤー・参照': '🔗', '座標・距離': '📐',
+  'テキスト自動化': '🔤', '制御・応用': '🧠',
+};
+const catLabel = c => `${CAT_ICON[c] || '■'} ${c}`;
+
+/* データの並び順どおりのカテゴリ順を作る */
+const catOrderOf = arr => { const m = new Map(); arr.forEach(x => { if (!m.has(x.cat)) m.set(x.cat, m.size); }); return m; };
+const SC_CAT_ORDER = catOrderOf(SHORTCUTS);
+const EX_CAT_ORDER = catOrderOf(EXPRESSIONS);
+
+/* 一覧の整列: カテゴリごと(cat) or よく使う順(hot)。カテゴリ内は常によく使う順 */
+function arrange(items, order) {
+  return state.sort === 'hot'
+    ? sortByHot(items)
+    : items.slice().sort((a, b) => (order.get(a.cat) - order.get(b.cat)) || (hotOf(b) - hotOf(a)));
+}
+/* 見出し: hot順ならティア、カテゴリ順ならアイコン+カテゴリ名+件数 */
+function headOf(item, byTier, counts) {
+  if (byTier && state.sort === 'hot') return { key: TIER_LABEL[hotOf(item)], html: `<div class="cat-head tier">${TIER_LABEL[hotOf(item)]}</div>` };
+  return { key: item.cat, html: `<div class="cat-head">${catLabel(item.cat)}<span class="count">(${counts.get(item.cat)})</span></div>` };
+}
+const countByCat = items => items.reduce((m, x) => m.set(x.cat, (m.get(x.cat) || 0) + 1), new Map());
+const hotStars = x => hotOf(x) === 3 ? ' <span class="hot-stars">★★★</span>' : '';
+
+function renderShortcuts() {
+  const favView = state.cat === '★';
+  const gemView = state.cat === '💡';
+  const byTier = state.cat === 'すべて' || favView || gemView;
+  const items = arrange(SHORTCUTS.filter(s =>
+    (favView ? FAVS.has('s:' + s.name) : gemView ? s.gem : (byTier || s.cat === state.cat)) &&
+    match(s, ['name', 'desc', 'win', 'mac', 'cat'])
+  ), SC_CAT_ORDER);
+  if (!items.length) {
+    $list.innerHTML = `<div class="empty">${favView && !state.query ? '各項目の ★ を押すと、ここに自分専用の早見帳が作れます' : '見つかりませんでした 🔍'}</div>`;
+    return;
+  }
+
+  const counts = countByCat(items);
+  let html = '', lastHead = '';
+  for (const s of items) {
+    const head = headOf(s, byTier, counts);
+    if (head.key !== lastHead) { html += head.html; lastHead = head.key; }
+    html += `
+      <div class="card sc-card">
+        <div class="sc-row">
+          <div>
+            <div class="sc-name">${s.name}${hotStars(s)}${s.gem ? ' <span class="gem-badge">💡目から鱗</span>' : ''}${byTier && state.sort === 'hot' ? ` <span class="mini-cat">${s.cat}</span>` : ''}</div>
+            <div class="sc-desc">${s.desc}</div>
+          </div>
+          <div class="sc-keys">${keyHtml(s[state.os])}</div>
+          <button class="fav-btn ${FAVS.has('s:' + s.name) ? 'on' : ''}" data-key="s:${attr(s.name)}" aria-label="お気に入り">★</button>
+        </div>
+      </div>`;
+  }
+  $list.innerHTML = html;
+  FX.staggerReveal('#list .card', { each: 24, duration: 380 });
+}
+
+function renderExpressions() {
+  const favView = state.cat === '★';
+  const gemView = state.cat === '💡';
+  const byTier = state.cat === 'すべて' || favView || gemView;
+  const items = arrange(EXPRESSIONS.filter(e =>
+    (favView ? FAVS.has('e:' + e.name) : gemView ? e.gem : (byTier || e.cat === state.cat)) &&
+    match(e, ['name', 'tag', 'kid', 'code', 'cat', 'combo'])
+  ), EX_CAT_ORDER);
+  if (!items.length) {
+    $list.innerHTML = `<div class="empty">${favView && !state.query ? '各項目の ★ を押すと、ここに自分専用の早見帳が作れます' : '見つかりませんでした 🔍'}</div>`;
+    return;
+  }
+
+  const counts = countByCat(items);
+  let html = '', lastHead = '';
+  items.forEach(e => {
+    const i = EXPRESSIONS.indexOf(e);
+    const head = headOf(e, byTier, counts);
+    if (head.key !== lastHead) { html += head.html; lastHead = head.key; }
+    html += `
+      <div class="card ex-card" data-i="${i}" id="${slugOf(e.name)}">
+        <div class="ex-head">
+          <div class="ex-title">
+            <span class="ex-name">${e.name}${hotStars(e)}</span>
+            <span class="ex-badge">${e.badge}</span>${e.gem ? '<span class="gem-badge">💡目から鱗</span>' : ''}
+            <button class="fav-btn ${FAVS.has('e:' + e.name) ? 'on' : ''}" data-key="e:${attr(e.name)}" aria-label="お気に入り" style="margin-left:auto">★</button>
+            <span class="ex-caret" style="margin-left:0">▶</span>
+          </div>
+          <div class="ex-tag">${e.tag}</div>
+        </div>
+        <div class="ex-body">
+          <div class="ex-code">${e.code}<button class="link-btn" data-slug="${slugOf(e.name)}">🔗</button><button class="copy-btn">コピー</button></div>
+          <div class="ex-kid">${e.kid}</div>
+          ${e.combo ? `
+          <div class="ex-combo">
+            <div class="combo-t">🧩 おすすめの組み合わせ</div>
+            <ul>${e.combo.map(c => `<li>${c}</li>`).join('')}</ul>
+          </div>` : ''}
+          ${e.demo ? `
+          <div class="demo-wrap">
+            <div class="demo-stage"><span class="demo-label">${e.name} のイメージ</span></div>
+            <button class="demo-btn">▶ 動きを見る</button>
+          </div>` : ''}
+        </div>
+      </div>`;
+  });
+  $list.innerHTML = html;
+  FX.staggerReveal('#list .card', { each: 30, duration: 380 });
+}
+
+function render() {
+  stopDemo();
+  renderChips();
+  const isQuiz = state.tab === 'quiz';
+  document.querySelector('.searchbar').style.display = isQuiz ? 'none' : '';
+  document.getElementById('sortbar').style.display = isQuiz ? 'none' : '';
+  if (isQuiz) renderQuiz();
+  else (state.tab === 'shortcuts' ? renderShortcuts : renderExpressions)();
+}
+
+/* =========================================================
+   クイズモード（10問ランダム出題・単語帳がわり）
+========================================================= */
+let quiz = null;
+const shuffle = arr => arr.slice().sort(() => Math.random() - 0.5);
+
+function buildQuiz(mode) {
+  const scQ = s => {
+    const pool = shuffle([...new Set(SHORTCUTS.map(x => x[state.os]))].filter(k => k !== s[state.os])).slice(0, 3);
+    return { text: `「${s.name}」のショートカットは？`, hint: s.desc, answer: s[state.os], choices: shuffle([s[state.os], ...pool]), isKey: true };
+  };
+  const exQ = x => {
+    const pool = shuffle(EXPRESSIONS.filter(y => y !== x)).slice(0, 3).map(y => y.name);
+    return { text: `「${x.tag}」— どのエクスプレッション？`, hint: '', answer: x.name, choices: shuffle([x.name, ...pool]), isKey: false };
+  };
+  const qs = mode === 'sc' ? shuffle(SHORTCUTS).slice(0, 10).map(scQ)
+    : mode === 'ex' ? shuffle(EXPRESSIONS).slice(0, 10).map(exQ)
+    : shuffle([...shuffle(SHORTCUTS).slice(0, 5).map(scQ), ...shuffle(EXPRESSIONS).slice(0, 5).map(exQ)]);
+  quiz = { mode, qs, i: 0, score: 0, answered: false };
+}
+
+function renderQuiz() {
+  if (!quiz) {
+    $list.innerHTML = `
+      <div class="card" style="padding:16px 14px">
+        <div class="quiz-hero">🎯 クイズで覚える</div>
+        <p class="quiz-lead">ランダムに10問出題。繰り返すほど手が覚えます。<br>ショートカットは <b>${state.os === 'mac' ? 'Mac' : 'Windows'}</b> のキーで出題（ヘッダーで切替可）。</p>
+        <button class="quiz-mode-btn" data-mode="sc">⌨️ ショートカット 10問</button>
+        <button class="quiz-mode-btn" data-mode="ex">✨ エクスプレッション 10問</button>
+        <button class="quiz-mode-btn" data-mode="mix">🔀 ミックス 10問</button>
+      </div>`;
+    FX.fadeInUp('#list .card', { duration: 300 });
+    return;
+  }
+  if (quiz.i >= quiz.qs.length) {
+    const s = quiz.score, n = quiz.qs.length;
+    const msg = s >= 9 ? '満点級！AE使いの手練です 🏆' : s >= 7 ? 'すごい！あと少しで満点 🔥' : s >= 4 ? 'いい感じ！もう一周で定着 💪' : 'まずは「★★★ 超よく使う」から覚えよう 📖';
+    $list.innerHTML = `
+      <div class="card quiz-result">
+        <div class="quiz-prog">RESULT</div>
+        <div class="quiz-score"><span class="q-score" data-to="${s}">${s}</span> / ${n}</div>
+        <div class="quiz-msg">${msg}</div>
+        <button class="quiz-next" data-act="retry">🔁 もう一度（同じモード）</button>
+        <button class="quiz-mode-btn" data-act="menu">モード選択にもどる</button>
+      </div>`;
+    if (window.AP) AP.countUp('.q-score');
+    FX.pop('.quiz-score');
+    track(`/quiz/${quiz.mode}/${s}`);
+    return;
+  }
+  const q = quiz.qs[quiz.i];
+  $list.innerHTML = `
+    <div class="card quiz-wrap" style="padding:14px">
+      <div class="quiz-prog">Q${quiz.i + 1} / ${quiz.qs.length}　スコア ${quiz.score}</div>
+      <div class="quiz-q">${q.text}</div>
+      ${q.hint ? `<div class="quiz-hint">ヒント: ${q.hint}</div>` : ''}
+      ${q.choices.map((c, ci) => `<div class="quiz-choice" data-ci="${ci}">${q.isKey ? keyHtml(c) : c}</div>`).join('')}
+      <div class="quiz-foot"></div>
+    </div>`;
+  FX.fadeInUp('.quiz-wrap', { duration: 250 });
+}
+
+function answerQuiz(ci) {
+  const q = quiz.qs[quiz.i];
+  quiz.answered = true;
+  const correct = q.choices[ci] === q.answer;
+  if (correct) quiz.score++;
+  document.querySelectorAll('.quiz-choice').forEach((el, idx) => {
+    if (q.choices[idx] === q.answer) el.classList.add('ok');
+    else if (idx === ci) el.classList.add('ng');
+  });
+  FX.pop('.quiz-choice.' + (correct ? 'ok' : 'ng'));
+  document.querySelector('.quiz-prog').textContent = `Q${quiz.i + 1} / ${quiz.qs.length}　スコア ${quiz.score}`;
+  const last = quiz.i === quiz.qs.length - 1;
+  document.querySelector('.quiz-foot').innerHTML =
+    `<button class="quiz-next" data-act="next">${last ? '結果を見る' : '次の問題 →'}</button>`;
+}
+
+/* =========================================================
+   デモエンジン
+   AEのエクスプレッションの挙動を rAF でシミュレートする。
+   （UI演出は AP.* を使用。デモ本体は式の再現なので専用実装）
+========================================================= */
+let demo = null; // { raf, btn, stage }
+
+function fract(x) { return x - Math.floor(x); }
+function stepRandom(step, seed) { return fract(Math.sin(step * 12.9898 + seed * 78.233) * 43758.5453); }
+// wiggleっぽい滑らかノイズ（sin波の重ね合わせ）
+function pseudoWiggle(t, freq, amp, seed = 0) {
+  let v = 0, f = freq, a = 1, total = 0;
+  for (let i = 0; i < 3; i++) {
+    v += Math.sin(t * Math.PI * 2 * f + seed * 7.31 + i * 1.7) * a;
+    total += a; f *= 1.93; a *= 0.5;
+  }
+  return (v / total) * amp;
+}
+function smoothstep(x) { x = Math.max(0, Math.min(1, x)); return x * x * (3 - 2 * x); }
+
+function makeBall(stage, cls = '') {
+  const b = document.createElement('div');
+  b.className = 'demo-ball ' + cls;
+  stage.appendChild(b);
+  return b;
+}
+function place(el, x, y, rot = 0, scale = 1, opacity = 1) {
+  el.style.transform = `translate(${x - 13}px, ${y - 13}px) rotate(${rot}deg) scale(${scale})`;
+  el.style.opacity = opacity;
+}
+
+const DEMOS = {
+  // wiggle(2,30): 中心のまわりをランダムにプルプル
+  wiggle(stage, W, H) {
+    const b = makeBall(stage);
+    return t => place(b, W / 2 + pseudoWiggle(t, 2, W * 0.28, 1), H / 2 + pseudoWiggle(t, 2, 32, 9));
+  },
+  // loopOut("cycle"): 左→右の1秒アニメを繰り返す（最後にパッと戻る）
+  loopcycle(stage, W, H) {
+    const b = makeBall(stage);
+    return t => place(b, 30 + smoothstep(fract(t / 1.2)) * (W - 60), H / 2);
+  },
+  // loopOut("offset"): 前回の続きから積み上げて進む（画面内でラップ）
+  loopoffset(stage, W, H) {
+    const b = makeBall(stage);
+    return t => {
+      const u = Math.floor(t / 1.0) + smoothstep(fract(t / 1.0)); // 1周期ごとに+1ずつ積み上がる
+      place(b, 30 + (u * 70) % (W - 60), H / 2);
+    };
+  },
+  // noise(): なめらかにつながったランダム（randomのような瞬間移動をしない）
+  noise(stage, W, H) {
+    const b = makeBall(stage);
+    return t => place(b, W / 2 + pseudoWiggle(t, 0.7, W * 0.32, 3), H / 2 + pseudoWiggle(t, 0.7, 30, 8));
+  },
+  // loopOut("pingpong"): 行って戻って（三角波）
+  pingpong(stage, W, H) {
+    const b = makeBall(stage);
+    return t => {
+      const ph = fract(t / 2.4) * 2;                 // 0..2
+      const x = ph < 1 ? smoothstep(ph) : smoothstep(2 - ph);
+      place(b, 30 + x * (W - 60), H / 2);
+    };
+  },
+  // time*90: 一定スピードで回転し続ける
+  time(stage, W, H) {
+    const b = makeBall(stage, 'square');
+    return t => place(b, W / 2, H / 2, t * 90, 1.3);
+  },
+  // random(0,100): 毎フレーム(風)に値がジャンプ
+  random(stage, W, H) {
+    const b = makeBall(stage);
+    return t => {
+      const s = Math.floor(t * 9);
+      place(b, 20 + stepRandom(s, 1) * (W - 40), 20 + stepRandom(s, 2) * (H - 40), 0, 1, 0.4 + stepRandom(s, 3) * 0.6);
+    };
+  },
+  // Math.sin: 規則正しくゆらゆら
+  sin(stage, W, H) {
+    const b = makeBall(stage);
+    return t => place(b, W / 2 + Math.sin(t * 2) * (W * 0.32), H / 2 + Math.cos(t * 4) * 8);
+  },
+  // linear(time,0,2,0,100): 2秒で到達→止まる→少し待ってリプレイ
+  linear(stage, W, H) {
+    const b = makeBall(stage);
+    return t => {
+      const ph = Math.min(t % 3.2, 2) / 2;
+      place(b, 30 + ph * (W - 60), H / 2);
+    };
+  },
+  // ease(): linearと同じだが発進・到着がなめらか
+  ease(stage, W, H) {
+    const raw = makeBall(stage, 'demo-ghost');
+    const b = makeBall(stage, 'b2');
+    return t => {
+      const ph = Math.min(t % 3.2, 2) / 2;
+      place(raw, 30 + ph * (W - 60), H / 2 - 24);          // 上: linear（比較用）
+      place(b, 30 + smoothstep(ph) * (W - 60), H / 2 + 24); // 下: ease
+    };
+  },
+  // clamp(): 大きなsin波を柵で止める
+  clamp(stage, W, H) {
+    const raw = makeBall(stage, 'demo-ghost');
+    const b = makeBall(stage, 'b2');
+    const limit = W * 0.25;
+    return t => {
+      const v = Math.sin(t * 1.6) * (W * 0.45);
+      place(raw, W / 2 + v, H / 2 - 24);                                     // 上: そのまま
+      place(b, W / 2 + Math.max(-limit, Math.min(limit, v)), H / 2 + 24);    // 下: clampあり
+    };
+  },
+  // posterizeTime(8): なめらかなwiggleを8fpsに間引く
+  posterize(stage, W, H) {
+    const raw = makeBall(stage, 'demo-ghost');
+    const b = makeBall(stage, 'b3');
+    return t => {
+      const pt = Math.floor(t * 8) / 8; // 8fpsに量子化
+      place(raw, W / 2 + pseudoWiggle(t, 1.2, W * 0.3, 4), H / 2 - 24);
+      place(b, W / 2 + pseudoWiggle(pt, 1.2, W * 0.3, 4), H / 2 + 24);
+    };
+  },
+  // valueAtTime(time-0.2): リーダーを遅れて追いかける
+  delay(stage, W, H) {
+    const leader = makeBall(stage);
+    const f1 = makeBall(stage, 'b2');
+    const f2 = makeBall(stage, 'b3');
+    const pos = t => [W / 2 + Math.sin(t * 1.8) * (W * 0.32), H / 2 + Math.sin(t * 3.6) * 20];
+    return t => {
+      place(leader, ...pos(t));
+      place(f1, ...pos(t - 0.25), 0, 0.85, 0.85);
+      place(f2, ...pos(t - 0.5), 0, 0.7, 0.7);
+    };
+  },
+  // index: 番号ぶん遅れてジャンプ（ウェーブ）
+  index(stage, W, H) {
+    const balls = [makeBall(stage), makeBall(stage, 'b2'), makeBall(stage, 'b3')];
+    return t => balls.forEach((b, i) => {
+      const lt = Math.max(0, t - i * 0.18);
+      const y = Math.abs(Math.sin(lt * 3)) * (H * 0.32);
+      place(b, W * (0.28 + i * 0.22), H * 0.68 - y);
+    });
+  },
+  // smooth(): ガタガタ vs ならした後
+  smooth(stage, W, H) {
+    const raw = makeBall(stage, 'demo-ghost');
+    const b = makeBall(stage, 'b2');
+    const noisy = t => pseudoWiggle(t, 4, W * 0.3, 2) + (stepRandom(Math.floor(t * 20), 5) - 0.5) * 30;
+    return t => {
+      let avg = 0; const N = 7;
+      for (let i = 0; i < N; i++) avg += noisy(t - i * 0.05);
+      place(raw, W / 2 + noisy(t), H / 2 - 24);      // 上: ガタガタ
+      place(b, W / 2 + avg / N, H / 2 + 24);         // 下: smooth後
+    };
+  },
+};
+
+function stopDemo() {
+  if (!demo) return;
+  cancelAnimationFrame(demo.raf);
+  demo.stage.querySelectorAll('.demo-ball').forEach(b => b.remove());
+  demo.btn.classList.remove('playing');
+  demo.btn.textContent = '▶ 動きを見る';
+  demo = null;
+}
+
+function startDemo(btn, stage, kind) {
+  stopDemo(); // 同時再生は1つだけ（バッテリー節約）
+  const W = stage.clientWidth, H = stage.clientHeight;
+  const update = DEMOS[kind](stage, W, H);
+  const t0 = performance.now();
+  demo = { btn, stage, raf: 0 };
+  const loop = now => {
+    update((now - t0) / 1000);
+    demo.raf = requestAnimationFrame(loop);
+  };
+  demo.raf = requestAnimationFrame(loop);
+  btn.classList.add('playing');
+  btn.textContent = '■ 停止';
+  FX.pop(stage);
+}
+
+/* =========================================================
+   イベント
+========================================================= */
+$tabs.addEventListener('click', e => {
+  const btn = e.target.closest('button[data-tab]');
+  if (!btn || btn.dataset.tab === state.tab) return;
+  state.tab = btn.dataset.tab;
+  state.cat = 'すべて';
+  if (state.tab === 'quiz') quiz = null;
+  $tabs.querySelectorAll('button').forEach(b => b.classList.toggle('on', b === btn));
+  $osToggle.style.visibility = state.tab === 'expressions' ? 'hidden' : 'visible';
+  track('/tab/' + state.tab);
+  render();
+});
+
+$osToggle.addEventListener('click', e => {
+  const btn = e.target.closest('button[data-os]');
+  if (!btn) return;
+  state.os = btn.dataset.os;
+  $osToggle.querySelectorAll('button').forEach(b => b.classList.toggle('on', b === btn));
+  FX.pop(btn);
+  if (state.tab === 'shortcuts') renderShortcuts();
+});
+
+$chips.addEventListener('click', e => {
+  const btn = e.target.closest('button[data-cat]');
+  if (!btn) return;
+  state.cat = btn.dataset.cat;
+  render();
+});
+
+document.getElementById('sortbar').addEventListener('click', e => {
+  const btn = e.target.closest('button[data-sort]');
+  if (!btn || btn.dataset.sort === state.sort) return;
+  state.sort = btn.dataset.sort;
+  document.querySelectorAll('#sortbar button').forEach(b => b.classList.toggle('on', b === btn));
+  FX.pop(btn);
+  render();
+});
+
+let searchTimer;
+$search.addEventListener('input', () => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => {
+    state.query = $search.value.trim();
+    render();
+    if (state.query) track('/search/' + state.query);
+  }, 180);
+});
+
+function copyText(text) {
+  return (navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject())
+    .catch(() => {
+      const ta = document.createElement('textarea');
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); ta.remove();
+    });
+}
+
+$list.addEventListener('click', e => {
+  // お気に入り ★
+  const favBtn = e.target.closest('.fav-btn');
+  if (favBtn) {
+    e.stopPropagation();
+    toggleFav(favBtn.dataset.key);
+    favBtn.classList.toggle('on', FAVS.has(favBtn.dataset.key));
+    FX.pop(favBtn);
+    if (state.cat === '★') render(); // ★一覧の表示中は外した項目を消す
+    return;
+  }
+  // クイズ操作
+  const modeBtn = e.target.closest('.quiz-mode-btn');
+  if (modeBtn) {
+    if (modeBtn.dataset.mode) buildQuiz(modeBtn.dataset.mode); else quiz = null;
+    renderQuiz();
+    return;
+  }
+  const choice = e.target.closest('.quiz-choice');
+  if (choice && quiz && !quiz.answered) { answerQuiz(Number(choice.dataset.ci)); return; }
+  const nextBtn = e.target.closest('.quiz-next');
+  if (nextBtn) {
+    if (nextBtn.dataset.act === 'retry') buildQuiz(quiz.mode);
+    else { quiz.i++; quiz.answered = false; }
+    renderQuiz();
+    return;
+  }
+  // カード直リンクのコピー 🔗
+  const linkBtn = e.target.closest('.link-btn');
+  if (linkBtn) {
+    e.stopPropagation();
+    copyText(location.href.split('#')[0] + '#' + linkBtn.dataset.slug).finally(() => {
+      linkBtn.textContent = '✓';
+      linkBtn.classList.add('done');
+      FX.pop(linkBtn);
+      setTimeout(() => { linkBtn.textContent = '🔗'; linkBtn.classList.remove('done'); }, 1400);
+    });
+    return;
+  }
+  // コード コピー
+  const copyBtn = e.target.closest('.copy-btn');
+  if (copyBtn) {
+    e.stopPropagation();
+    const box = copyBtn.parentElement.cloneNode(true);
+    box.querySelectorAll('button').forEach(b => b.remove());
+    copyText(box.textContent.trim()).finally(() => {
+      copyBtn.textContent = '✓ OK!';
+      copyBtn.classList.add('done');
+      FX.pop(copyBtn);
+      setTimeout(() => { copyBtn.textContent = 'コピー'; copyBtn.classList.remove('done'); }, 1400);
+    });
+    return;
+  }
+  // デモ再生 / 停止
+  const demoBtn = e.target.closest('.demo-btn');
+  if (demoBtn) {
+    const card = demoBtn.closest('.ex-card');
+    const kind = EXPRESSIONS[Number(card.dataset.i)].demo;
+    if (demo && demo.btn === demoBtn) stopDemo();
+    else startDemo(demoBtn, card.querySelector('.demo-stage'), kind);
+    return;
+  }
+  // カードの開閉（開いたらデモを自動再生）
+  const head = e.target.closest('.ex-head');
+  if (head) {
+    const card = head.parentElement;
+    const opening = !card.classList.contains('open');
+    if (!opening && demo && card.contains(demo.stage)) stopDemo();
+    card.classList.toggle('open');
+    if (opening) {
+      FX.fadeInUp(card.querySelector('.ex-body'), { duration: 300, translateY: [10, 0] });
+      const btn = card.querySelector('.demo-btn');
+      if (btn) startDemo(btn, card.querySelector('.demo-stage'), EXPRESSIONS[Number(card.dataset.i)].demo);
+    }
+  }
+});
+
+/* カード直リンク: #wiggle のようなハッシュ付きで開いたら該当カードを開く */
+function openFromHash() {
+  const slug = decodeURIComponent(location.hash.slice(1));
+  if (!slug) return;
+  const i = EXPRESSIONS.findIndex(x => slugOf(x.name) === slug);
+  if (i < 0) return;
+  if (state.tab !== 'expressions') {
+    state.tab = 'expressions';
+    state.cat = 'すべて';
+    $tabs.querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.tab === 'expressions'));
+    $osToggle.style.visibility = 'hidden';
+    render();
+  }
+  const card = document.querySelector(`.ex-card[data-i="${i}"]`);
+  if (card && !card.classList.contains('open')) {
+    card.querySelector('.ex-head').click();
+    setTimeout(() => card.scrollIntoView({ block: 'start', behavior: 'smooth' }), 80);
+  }
+}
+
+/* 初期化 */
+$osToggle.querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.os === state.os));
+document.querySelector('footer').textContent =
+  `AE早見帳 ${APP_VERSION} (${APP_DATE}) — ホーム画面に追加するとアプリのように使えます`;
+render();
+openFromHash();
+window.addEventListener('hashchange', openFromHash);
+track('/app');
+</script>
+</body>
+</html>
