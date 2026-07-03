@@ -10,6 +10,7 @@
 | 📖 使い方マニュアル（Web） | https://tkwfunkypop.github.io/public/tools/ae-shortcuts/manual/ |
 | 📄 使い方マニュアル（PDF） | https://tkwfunkypop.github.io/public/tools/ae-shortcuts/manual/manual.pdf |
 | 🔲 アプリのQRコード画像 | https://tkwfunkypop.github.io/public/tools/ae-shortcuts/qr-pages.png |
+| 🎬 解説動画（YouTube） | https://youtu.be/lgjybU7tmtQ |
 
 ## Brain記事にそのまま貼れるブロック
 
@@ -30,6 +31,9 @@ https://tkwfunkypop.github.io/public/tools/ae-shortcuts/
 
 **▼ 使い方がわからない方はこちら（インストール手順つきマニュアル）**
 https://tkwfunkypop.github.io/public/tools/ae-shortcuts/manual/
+
+**▼ 動画で見たい方はこちら（解説動画）**
+https://youtu.be/lgjybU7tmtQ
 
 > 📌 インストール方法（30秒）
 > - iPhone：Safariで開く → 共有ボタン（□↑）→「ホーム画面に追加」
