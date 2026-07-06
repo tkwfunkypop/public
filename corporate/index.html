@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>株式会社 一振り | クリエイティブとテクノロジーで、仕事を斬り拓く</title>
+  <meta name="description" content="株式会社 一振りのコーポレートサイト。LP・Webサイト制作、映像・モーションデザイン、Adobe拡張開発、業務自動化ツール開発を手がけています。" />
+  <!--
+    ▼ このサイトについて
+    - templates/lp-starter.html をベースにしたコーポレートサイト（1ページ完結）
+    - アニメーションはすべて lib/animations.js のプリセット(AP.*)経由
+    - 会社概要の「●●」部分は仮置きです。実際の情報に書き換えてください
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper: #f6f3ea;      /* 和紙 */
+      --paper-2: #efeadb;
+      --ink: #1c1a16;        /* 墨 */
+      --ink-2: #3a372f;
+      --muted: #7d786a;
+      --shu: #b3402a;        /* 朱 */
+      --shu-2: #d95436;
+      --line: #ddd6c3;
+      --serif: "Shippori Mincho", "Hiragino Mincho ProN", serif;
+      --sans: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--paper); color: var(--ink);
+      font-family: var(--sans); line-height: 1.9; letter-spacing: .02em;
+      overflow-x: hidden;
+    }
+    ::selection { background: var(--shu); color: #fff; }
+
+    h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.4; }
+    a { color: inherit; }
+    img { max-width: 100%; }
+
+    .inner { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+    section { position: relative; padding: 110px 0; }
+
+    /* ===== ヘッダー ===== */
+    header {
+      position: fixed; inset: 0 0 auto 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 28px;
+      background: color-mix(in srgb, var(--paper) 86%, transparent);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .brand { font-family: var(--serif); font-weight: 800; font-size: 20px; text-decoration: none; letter-spacing: .1em; }
+    .brand small { font-family: var(--sans); font-weight: 500; font-size: 10px; color: var(--muted); display: block; letter-spacing: .28em; margin-top: -2px; }
+    nav { display: flex; gap: 26px; align-items: center; }
+    nav a { text-decoration: none; font-size: 13px; letter-spacing: .14em; color: var(--ink-2); }
+    nav a:hover { color: var(--shu); }
+    nav .nav-cta {
+      background: var(--ink); color: var(--paper); padding: 9px 22px; border-radius: 999px;
+    }
+    nav .nav-cta:hover { background: var(--shu); color: #fff; }
+    @media (max-width: 720px) { nav a:not(.nav-cta) { display: none; } }
+
+    /* ===== ヒーロー ===== */
+    .hero {
+      min-height: 100svh; display: flex; align-items: center;
+      padding: 140px 0 80px; overflow: hidden;
+    }
+    .hero .inner { position: relative; z-index: 2; }
+    .hero-catch {
+      font-size: clamp(38px, 7.2vw, 78px); font-weight: 800; margin: 0 0 28px;
+      letter-spacing: .04em;
+    }
+    .hero-catch .shu { color: var(--shu); }
+    .hero-lead { font-size: clamp(15px, 2vw, 18px); color: var(--ink-2); max-width: 34em; margin: 0 0 40px; }
+    .hero-cta-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+
+    /* 一閃（drawSVGで描く筆致） */
+    .issen { display: block; width: min(520px, 74vw); height: auto; margin: 6px 0 30px; }
+    .issen path { stroke: var(--shu); stroke-width: 10; stroke-linecap: round; fill: none; }
+
+    /* 背景の巨大「一」ゴースト文字（パララックス） */
+    .ghost-kanji {
+      position: absolute; z-index: 1; pointer-events: none; user-select: none;
+      font-family: var(--serif); font-weight: 800; color: transparent;
+      -webkit-text-stroke: 1px var(--line);
+      font-size: clamp(300px, 55vw, 720px); line-height: 1;
+      top: 6%; right: -6%;
+    }
+    /* 背景の淡い朱の光 */
+    .glow {
+      position: absolute; z-index: 0; pointer-events: none; border-radius: 50%;
+      width: 46vw; height: 46vw; max-width: 620px; max-height: 620px;
+      background: radial-gradient(circle, rgba(217, 84, 54, .14), transparent 65%);
+      bottom: -10%; left: -8%;
+    }
+
+    /* 縦書きの飾り */
+    .tategaki {
+      position: absolute; right: 28px; bottom: 40px; z-index: 2;
+      writing-mode: vertical-rl; font-family: var(--serif); font-size: 13px;
+      letter-spacing: .42em; color: var(--muted);
+    }
+    @media (max-width: 720px) { .tategaki { display: none; } }
+
+    /* ===== 共通：セクション見出し ===== */
+    .sec-head { margin-bottom: 56px; }
+    .sec-num {
+      display: block; font-family: var(--serif); color: var(--shu);
+      font-size: 14px; letter-spacing: .3em; margin-bottom: 10px;
+    }
+    .sec-title { font-size: clamp(26px, 4vw, 40px); margin: 0; }
+    .sec-sub { color: var(--muted); font-size: 14px; letter-spacing: .18em; margin-top: 8px; }
+
+    /* 背景の漢数字（パララックス） */
+    .ghost-num {
+      position: absolute; top: 30px; right: 4%; z-index: 0;
+      font-family: var(--serif); font-weight: 800; line-height: 1;
+      font-size: clamp(140px, 22vw, 280px); color: transparent;
+      -webkit-text-stroke: 1px var(--line); pointer-events: none; user-select: none;
+    }
+    section > .inner { position: relative; z-index: 1; }
+
+    /* ===== 理念 ===== */
+    .philosophy { background: var(--ink); color: var(--paper); }
+    .philosophy .ghost-num { -webkit-text-stroke-color: #35322a; }
+    .philosophy .sec-sub { color: #9c968a; }
+    .philosophy-copy { font-family: var(--serif); font-size: clamp(24px, 3.6vw, 38px); font-weight: 600; margin: 0 0 30px; }
+    .philosophy-copy .shu { color: var(--shu-2); }
+    .philosophy p.body { color: #cfc9bb; max-width: 40em; margin: 0; }
+
+    /* ===== 事業内容 ===== */
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; }
+    .service {
+      background: #fff; border: 1px solid var(--line); border-radius: 4px;
+      padding: 34px 28px; position: relative;
+    }
+    .service::before {
+      content: ""; position: absolute; top: 0; left: 28px; width: 40px; height: 3px; background: var(--shu);
+    }
+    .service .en { font-size: 11px; letter-spacing: .24em; color: var(--muted); display: block; margin-bottom: 10px; }
+    .service h3 { margin: 0 0 12px; font-size: 20px; }
+    .service p { margin: 0; font-size: 14px; color: var(--ink-2); }
+
+    /* ===== 数字 ===== */
+    .numbers { background: var(--paper-2); }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; text-align: center; }
+    .stat-box { background: #fff; border: 1px solid var(--line); border-radius: 4px; padding: 36px 12px 30px; }
+    .stat {
+      font-family: var(--serif); font-size: clamp(40px, 6vw, 60px); font-weight: 800; color: var(--shu);
+      font-variant-numeric: tabular-nums; display: block; line-height: 1.2;
+    }
+    .stat-unit { font-size: .45em; margin-left: 2px; color: var(--ink-2); }
+    .stat-label { color: var(--muted); font-size: 13px; letter-spacing: .1em; }
+    .stats-note { text-align: center; color: var(--muted); font-size: 12px; margin-top: 20px; }
+    @media (max-width: 640px) { .stats { grid-template-columns: 1fr; } }
+
+    /* ===== 一振りの流儀（強み） ===== */
+    .creed-list { display: grid; gap: 0; border-top: 1px solid var(--line); }
+    .creed {
+      display: grid; grid-template-columns: 90px 1fr; gap: 24px; align-items: baseline;
+      padding: 34px 6px; border-bottom: 1px solid var(--line);
+    }
+    .creed .no { font-family: var(--serif); font-size: 30px; color: var(--shu); font-weight: 600; }
+    .creed h3 { margin: 0 0 8px; font-size: 21px; }
+    .creed p { margin: 0; font-size: 14px; color: var(--ink-2); max-width: 46em; }
+    @media (max-width: 560px) { .creed { grid-template-columns: 1fr; gap: 6px; } }
+
+    /* ===== 会社概要 ===== */
+    .company-table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--line); }
+    .company-table th, .company-table td { text-align: left; padding: 20px 26px; border-bottom: 1px solid var(--line); font-size: 14px; vertical-align: top; }
+    .company-table th { width: 160px; font-family: var(--serif); font-weight: 600; color: var(--ink-2); white-space: nowrap; background: #fbf9f2; }
+    .company-table tr:last-child th, .company-table tr:last-child td { border-bottom: none; }
+    .placeholder { color: var(--muted); }
+    @media (max-width: 560px) {
+      .company-table th, .company-table td { display: block; width: auto; padding: 12px 18px; }
+      .company-table th { border-bottom: none; padding-bottom: 0; background: transparent; }
+    }
+
+    /* ===== CTA / フッター ===== */
+    .contact { background: var(--ink); color: var(--paper); text-align: center; }
+    .contact .sec-title { color: var(--paper); }
+    .contact p.lead { color: #cfc9bb; max-width: 36em; margin: 18px auto 40px; font-size: 15px; }
+    .cta {
+      display: inline-block; background: var(--shu); color: #fff; text-decoration: none;
+      font-weight: 700; font-size: 17px; letter-spacing: .08em;
+      padding: 18px 58px; border-radius: 999px;
+      box-shadow: 0 12px 34px rgba(179, 64, 42, .45);
+    }
+    .cta.ghost {
+      background: transparent; color: var(--ink); border: 1px solid var(--ink);
+      box-shadow: none; font-size: 14px; padding: 14px 36px;
+    }
+    footer { background: #12110d; color: #8c8778; text-align: center; padding: 34px 24px; font-size: 12px; letter-spacing: .12em; }
+    footer .fbrand { font-family: var(--serif); color: var(--paper); font-size: 15px; letter-spacing: .2em; display: block; margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+
+  <header id="site-header">
+    <a class="brand" href="#top">一振り<small>ICHIFURI Inc.</small></a>
+    <nav>
+      <a href="#philosophy">理念</a>
+      <a href="#services">事業内容</a>
+      <a href="#numbers">実績</a>
+      <a href="#company">会社概要</a>
+      <a href="#contact" class="nav-cta">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <!-- ① ヒーロー -->
+  <section class="hero" id="top">
+    <div class="ghost-kanji" data-speed="-0.08">一</div>
+    <div class="glow" id="hero-glow"></div>
+    <div class="inner">
+      <h1 class="hero-catch" id="hero-catch">
+        渾身の<span class="shu">一振り</span>で、<br />仕事を斬り拓く。
+      </h1>
+      <!-- 一閃の筆致（スクロールに関係なく読み込み時に描画） -->
+      <svg class="issen" id="issen" viewBox="0 0 520 40" aria-hidden="true">
+        <path d="M8 26 C 120 12, 300 8, 420 16 C 460 19, 495 22, 512 28" />
+      </svg>
+      <p class="hero-lead" id="hero-lead">
+        株式会社 一振りは、クリエイティブ制作と業務自動化ツールの開発で、
+        企業の「伝わる力」と「使える時間」をつくる会社です。
+        迷いのない一太刀のように、本質だけを打ち込みます。
+      </p>
+      <div class="hero-cta-row" id="hero-cta">
+        <a href="#contact" class="cta">お問い合わせ</a>
+        <a href="#services" class="cta ghost">事業内容を見る</a>
+      </div>
+    </div>
+    <div class="tategaki">一振りに、心血を注ぐ。</div>
+  </section>
+
+  <!-- ② 理念 -->
+  <section class="philosophy" id="philosophy">
+    <div class="ghost-num" data-speed="-0.18">壱</div>
+    <div class="inner">
+      <div class="sec-head reveal">
+        <span class="sec-num">01 / PHILOSOPHY</span>
+        <h2 class="sec-title">理念</h2>
+        <p class="sec-sub">MISSION &amp; VISION</p>
+      </div>
+      <p class="philosophy-copy reveal">迷いなく、<span class="shu">一太刀</span>。<br />百の装飾より、一の本質を。</p>
+      <p class="body reveal">
+        名刀の一振りに無駄な動きがないように、私たちの仕事にも余計なものは要りません。
+        課題の芯を見極め、最短の一撃で成果に届く——。
+        デザインもコードも、その一振りのために磨き続けます。
+      </p>
+    </div>
+  </section>
+
+  <!-- ③ 事業内容 -->
+  <section id="services">
+    <div class="ghost-num" data-speed="-0.15">弐</div>
+    <div class="inner">
+      <div class="sec-head reveal">
+        <span class="sec-num">02 / SERVICES</span>
+        <h2 class="sec-title">事業内容</h2>
+        <p class="sec-sub">WHAT WE DO</p>
+      </div>
+      <div class="services-grid" id="services-grid">
+        <div class="service">
+          <span class="en">WEB / LP PRODUCTION</span>
+          <h3>LP・Webサイト制作</h3>
+          <p>売上に直結するランディングページ、ブランドを伝えるコーポレートサイトを、企画から公開まで一気通貫で制作します。</p>
+        </div>
+        <div class="service">
+          <span class="en">MOTION DESIGN</span>
+          <h3>映像・モーションデザイン</h3>
+          <p>Webアニメーションや動画コンテンツで「動きで伝わる」体験を設計。視線を集め、記憶に残る表現をつくります。</p>
+        </div>
+        <div class="service">
+          <span class="en">ADOBE EXTENSIONS</span>
+          <h3>Adobe拡張・プラグイン開発</h3>
+          <p>Photoshop・Premiere などの UXP / CEP パネルを開発。制作現場の「手作業」をワンクリックに変えます。</p>
+        </div>
+        <div class="service">
+          <span class="en">AUTOMATION TOOLS</span>
+          <h3>業務自動化ツール開発</h3>
+          <p>日々の定型業務を自動化するオリジナルツールを開発。現場に合わせた小さく速い道具で、時間を取り戻します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ④ 数字で見る一振り -->
+  <section class="numbers" id="numbers">
+    <div class="ghost-num" data-speed="-0.15">参</div>
+    <div class="inner">
+      <div class="sec-head reveal">
+        <span class="sec-num">03 / NUMBERS</span>
+        <h2 class="sec-title">数字で見る一振り</h2>
+        <p class="sec-sub">FACTS &amp; FIGURES</p>
+      </div>
+      <div class="stats">
+        <div class="stat-box reveal">
+          <span class="stat" data-to="120">0</span>
+          <span class="stat-label">制作実績（件）</span>
+        </div>
+        <div class="stat-box reveal">
+          <span class="stat" data-to="95">0</span>
+          <span class="stat-label">取引継続率（%）</span>
+        </div>
+        <div class="stat-box reveal">
+          <span class="stat" data-to="40">0</span>
+          <span class="stat-label">自動化による平均工数削減（%）</span>
+        </div>
+      </div>
+      <p class="stats-note reveal">※ 数値は仮のサンプルです。実績値に差し替えてください。</p>
+    </div>
+  </section>
+
+  <!-- ⑤ 一振りの流儀 -->
+  <section id="creed">
+    <div class="ghost-num" data-speed="-0.15">肆</div>
+    <div class="inner">
+      <div class="sec-head reveal">
+        <span class="sec-num">04 / OUR CREED</span>
+        <h2 class="sec-title">一振りの流儀</h2>
+        <p class="sec-sub">HOW WE WORK</p>
+      </div>
+      <div class="creed-list" id="creed-list">
+        <div class="creed">
+          <span class="no">壱</span>
+          <div>
+            <h3>芯を外さない</h3>
+            <p>要件の言葉づかいではなく、その奥にある課題の芯を掴んでから刀を抜きます。作る前に、誰の何を変えるのかを一文で言えるまで考え抜きます。</p>
+          </div>
+        </div>
+        <div class="creed">
+          <span class="no">弐</span>
+          <div>
+            <h3>速く、小さく、確かに</h3>
+            <p>大振りはしません。小さく作って早く見せ、確かめながら磨く。制作もツール開発も、最初の一撃までの速さを大切にします。</p>
+          </div>
+        </div>
+        <div class="creed">
+          <span class="no">参</span>
+          <div>
+            <h3>納品して終わりにしない</h3>
+            <p>公開後の数字を見て、次の一振りへ。作品ではなく成果を納めるのが私たちの仕事です。運用・改善まで並走します。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑥ 会社概要 -->
+  <section class="numbers" id="company">
+    <div class="ghost-num" data-speed="-0.15">伍</div>
+    <div class="inner">
+      <div class="sec-head reveal">
+        <span class="sec-num">05 / COMPANY</span>
+        <h2 class="sec-title">会社概要</h2>
+        <p class="sec-sub">COMPANY PROFILE</p>
+      </div>
+      <table class="company-table reveal">
+        <tr><th>社名</th><td>株式会社 一振り（ICHIFURI Inc.）</td></tr>
+        <tr><th>代表者</th><td class="placeholder">代表取締役 ●● ●●（仮置き・要差し替え）</td></tr>
+        <tr><th>設立</th><td class="placeholder">20●●年●月（仮置き・要差し替え）</td></tr>
+        <tr><th>所在地</th><td class="placeholder">〒●●●-●●●● 東京都●●区●●（仮置き・要差し替え）</td></tr>
+        <tr><th>事業内容</th><td>LP・Webサイト制作／映像・モーションデザイン／Adobe拡張・プラグイン開発／業務自動化ツール開発</td></tr>
+        <tr><th>お問い合わせ</th><td class="placeholder">info@example.com（仮置き・要差し替え）</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ⑦ お問い合わせ -->
+  <section class="contact" id="contact">
+    <div class="inner">
+      <div class="sec-head reveal" style="margin-bottom: 0;">
+        <span class="sec-num">06 / CONTACT</span>
+        <h2 class="sec-title">まずは、ひと振りから。</h2>
+      </div>
+      <p class="lead reveal">
+        制作のご相談、業務自動化のご要望、まだ言葉になっていない「なんとかしたい」まで。
+        お気軽にお声がけください。
+      </p>
+      <a href="mailto:info@example.com" class="cta" id="contact-cta">メールで相談する</a>
+    </div>
+  </section>
+
+  <footer>
+    <span class="fbrand">株式会社 一振り</span>
+    &copy; ICHIFURI Inc. All Rights Reserved.
+  </footer>
+
+  <!-- anime.js 本体 + プリセット集 -->
+  <script src="https://cdn.jsdelivr.net/npm/animejs@4.4.1/dist/bundles/anime.umd.min.js"></script>
+  <script src="../lib/animations.js"></script>
+  <script>
+    // ヒーロー：読み込み時に時間差で出現し、朱の一閃を描く
+    AP.fadeInUp('#hero-catch');
+    AP.drawSVG('#issen path', { delay: 400, duration: 1100 });
+    AP.fadeInUp('#hero-lead', { delay: 500 });
+    AP.fadeInUp('#hero-cta', { delay: 700 });
+    AP.fadeIn('.tategaki', { delay: 1000, duration: 1200 });
+
+    // 背景演出：朱の光はゆっくり漂い、巨大文字はパララックスで奥行きを出す
+    AP.drift('#hero-glow', { x: 60, y: -40, scale: 1.2, duration: 12000 });
+    AP.parallax('.ghost-kanji');
+    AP.parallax('.ghost-num');
+
+    // スクロールで各要素が出現
+    AP.onScroll('.reveal');
+
+    // 事業内容カード・流儀リストは時間差出現
+    AP.onScroll('#services-grid', (el) => AP.staggerReveal(el.children, { each: 130 }));
+    AP.onScroll('#creed-list', (el) => AP.staggerReveal(el.children, { each: 150 }));
+
+    // 実績数字はスクロールで入ったらカウントアップ
+    AP.onScroll('.stat', (el) => AP.countUp(el));
+
+    // お問い合わせCTAは常時ゆっくり脈打つ
+    AP.pulse('#contact-cta');
+  </script>
+</body>
+</html>
