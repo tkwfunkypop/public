@@ -36,8 +36,28 @@
 ## 図版について
 
 キャラクターは現状すべて**インラインSVGのシルエット**（＝影だけで誰か分かる、という設計原則の
-そのままの実装）。各キャラのカード内 `生成プロンプト（EN）` に、実際にレンダリングするための
-英語プロンプトを入れてあるので、画像生成ツールが使えるようになったらそのまま流し込める。
+そのままの実装）。これだけでボードとして完結する。
+
+実写ライクな図版に差し替えたいときは、**Fal でバッチ生成**する（CLAUDE.md の方針どおり画像生成は Fal 優先）。
+
+```bash
+# ローカルPCで実行（このコンテナは queue.fal.run を弾く）
+node --env-file=tools/fal/.env tools/fal/generate.mjs --batch works/hashikko-bill/prompts.json
+
+# 一部だけ作り直す
+node --env-file=tools/fal/.env tools/fal/generate.mjs --batch works/hashikko-bill/prompts.json --only f3_ukai
+```
+
+- 生成先は `works/hashikko-bill/assets/<id>.jpg`。
+- **`imageboard.html` は起動時に `assets/` を探し、あればSVGを自動で画像に差し替える。**
+  HTMLを編集する必要はない。無ければSVGのまま表示される。
+- プロンプトは `prompts.json` が正。世界観の共通指定はマニフェストの `style` に一元化してある
+  （各カットのプロンプトには書かない）。
+- 生成される10カット: `key_building` `key_rooftop` `f7_hikari` `f6_kurogane` `f5_ri`
+  `f4_kumoi` `f3_ukai` `f2_kaburagi` `f1_tome` `b1_hiiragi`
+
+なお HTML 内の各キャラカードにも `生成プロンプト（EN）` を畳んで入れてあるので、
+1カットだけ他ツールで試したいときはそこから COPY できる。
 
 ## プレビュー
 

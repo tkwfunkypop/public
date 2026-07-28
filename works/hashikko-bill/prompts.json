@@ -1,0 +1,52 @@
+{
+  "_comment": "はしっこビルの明日づくり — アートディレクション・ボード用の画像生成マニフェスト。実行: node --env-file=tools/fal/.env tools/fal/generate.mjs --batch works/hashikko-bill/prompts.json",
+  "model": "fal-ai/flux-pro/v1.1-ultra",
+  "outDir": "works/hashikko-bill/assets",
+  "aspect_ratio": "2:3",
+  "output_format": "jpeg",
+  "style": "Handcrafted stop-motion armature puppet film still, visible felt stitching and clay parting seams, Tim Burton-esque German Expressionist design, exaggerated spindly proportions, desaturated moonlit palette of bone white, charcoal grey and slate-violet, practical miniature set lighting with no sunlight, film grain, tilt-shift miniature depth. No text, no letters, no watermark, no signature.",
+  "items": [
+    {
+      "id": "key_building",
+      "aspect_ratio": "16:9",
+      "prompt": "Establishing shot. A crooked seven-story narrow office building standing utterly alone at the literal edge of the world, where the ground ends and white fog swallows everything beyond. Each of the seven floors is a different architectural style, crookedly stacked and leaning at wrong angles like badly piled boxes. A spiral fire escape twists around it like a bone staircase. Seven windows glow seven different colors: chrysanthemum white, tarnished brass, ledger green, barometer ice blue, violet perfume glow, ink red, and warm kitchen orange. One crooked lamppost with a small yellow bulb. Thick milk-white fog presses against the building; nothing is visible beyond it."
+    },
+    {
+      "id": "key_rooftop",
+      "aspect_ratio": "16:9",
+      "prompt": "Climax scene. On the rooftop of a crooked tower at the edge of the world, the thick white fog has torn open for eleven minutes, revealing a vast warm amber sky for the very first time. Nine wildly mismatched puppet characters sit around one long shared table eating a meal together, tiny against the enormous opening in the fog. Backlit by the amber break in the clouds, their silhouettes rimmed in orange light. Overwhelming warmth after a whole film of grey. Wide cinematic composition."
+    },
+    {
+      "id": "f7_hikari",
+      "prompt": "Character model sheet, full body front view, plain pale grey backdrop. A small 19-year-old girl rag-doll puppet, the only warm-colored character in a grey world. Big round amber candle-flame eyes, visible cross-stitching at her elbow and knee joints, yarn hair in two crooked antenna-like ponytails. She wears a patched delivery apron over a charcoal uniform, and enormous oversized boots far too big for her legs. On her back she carries a precariously tall spiraling tower of seven stacked lunch boxes, taller than she is, tied with string. Accent color lantern orange."
+    },
+    {
+      "id": "f6_kurogane",
+      "prompt": "Character model sheet, full body front view, plain pale grey backdrop. An 83-year-old letterpress printer puppet whose torso IS a cast-iron hand press: a heavy rectangular frame body with a long lever arm for a right arm ending in a round counterweight. His head is a wooden type case, a grid of small compartments holding metal letters instead of hair. His beard is made of hanging strips of proof paper. His fingers are permanently stained ink-black and dripping. Heavy ink-soaked leather apron. Accent color proof red."
+    },
+    {
+      "id": "f5_ri",
+      "prompt": "Character model sheet, full body front view, plain pale grey backdrop. A 35-year-old perfumer puppet whose face is entirely covered by an elegant long leather beak mask, a plague-doctor silhouette reimagined as a refined nose-organ instrument, with round glass-bead eyes and no mouth at all. Draped black leather robe. A bandolier across the chest holding about a hundred tiny glass vials that catch the light. Elongated delicate fingers. One vial is uncorked, releasing a visible curling swirl of pale violet scent drawn like practical smoke. Accent color scent violet."
+    },
+    {
+      "id": "f4_kumoi",
+      "prompt": "Character model sheet, full body front view, plain pale grey backdrop. A 29-year-old meteorologist puppet whose entire head is enclosed in a sealed glass barometer dome, and inside the dome floats her own tiny personal weather: a small grey storm cloud with a thin yellow lightning bolt. Her face is not visible. Long grey overcoat printed all over with faint rows of observation numbers. A weather vane with crossbars sprouts from her back. Her legs are a surveyor's tripod instead of human legs. Accent color glass blue."
+    },
+    {
+      "id": "f3_ukai",
+      "prompt": "Character model sheet, full body front view, plain pale grey backdrop with hard floor light. A 41-year-old accountant puppet, razor-thin and unnaturally tall, in an immaculate black pinstripe three-piece suit with no wrinkles and, unlike every other puppet, no visible stitching or seams anywhere. Narrow egg-shaped head, slicked hair, flat opaque white spectacles hiding his eyes entirely. His fingertips taper into fountain-pen nibs. Most important detail: the long shadow he casts across the floor is the wrong shape, it is the silhouette of a small crying boy rubbing his eyes, not the shadow of a tall man. Accent color ledger green."
+    },
+    {
+      "id": "f2_kaburagi",
+      "prompt": "Character model sheet, full body front view, plain pale grey backdrop. A barrel-chested 52-year-old toymaker puppet with stubby legs and an oversized boxy head. Both of his arms are self-built brass mechanical prosthetics with fully exposed gears, springs and rivets at the elbows. A large wind-up key protrudes from his own back between the shoulder blades. Cracked goggles pushed up on his forehead, one lens spiderwebbed. Heavy leather apron bristling with dozens of small tools. Two tiny clockwork wind-up toys cling to his shoulders like pets. Accent color tarnished brass."
+    },
+    {
+      "id": "f1_tome",
+      "prompt": "Character model sheet, full body front view, plain pale grey backdrop. A tiny round 78-year-old undertaker grandmother puppet, barely waist-high, wrapped in a heavy ink-black mourning robe that pools on the floor so her feet are never visible. Face like a wrinkled walnut with two sharp bright crow-like eyes. On her head an absurdly large and cheerful headdress of white funeral chrysanthemums, comically oversized compared to her body. She swings a brass incense censer on a chain, and its rising smoke curls into a small grinning skull shape. Accent color chrysanthemum bone white with one stroke of incense vermilion."
+    },
+    {
+      "id": "b1_hiiragi",
+      "prompt": "Character model sheet, full body front view, plain pale grey backdrop. A very tall, extremely thin 83-year-old caretaker puppet, stooped over into the shape of a question mark. Head like a dried gourd, deep hollow eye sockets with tiny warm glowing points inside, wispy white hair. He wears a moth-eaten patchwork cardigan visibly sewn together from a hundred different scraps of handwritten paper. An enormous heavy ring of about a hundred mismatched keys hangs at his belt, dragging his whole body to one side. In his breast pocket sits a small bare light bulb glowing warm, the only real light source in the frame. Accent color bulb yellow."
+    }
+  ]
+}
