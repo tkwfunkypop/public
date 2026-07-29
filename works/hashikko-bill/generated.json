@@ -1,92 +1,123 @@
 {
-  "_comment": "prompts.json の10カットを実際に生成した結果の記録。取得: node works/hashikko-bill/fetch-assets.mjs",
-  "_note": "Fal がネットワークポリシーで弾かれたため、CLAUDE.md の方針どおり代替（Higgsfield / nano_banana_pro）で生成した。プロンプトの正は prompts.json のまま。",
+  "_comment": "はしっこビル図版の生成結果。取得: node works/hashikko-bill/fetch-assets.mjs",
+  "_note": "Fal はネットワークポリシーで弾かれるため、CLAUDE.md の方針どおり代替（Higgsfield / nano_banana_pro）で生成。キャラクターは確定済みCORE（01_*_CharacterBible_Core）を参照画像に渡し、prompts.json の構図・スタイル指定で作り直したもの。プロンプトの正は prompts.json のまま。",
   "generatedAt": "2026-07-29",
   "provider": "higgsfield",
   "model": "nano_banana_pro",
   "resolution": "2k",
   "outDir": "works/hashikko-bill/assets",
-  "baseUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo",
   "items": [
+    {
+      "id": "f7_hikari",
+      "character": "NANAO_HIKARI",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "approved": true,
+      "ref_core": "2385f36b-65e6-455b-a357-3c02deca885d",
+      "job_id": "fbe2b147-a067-4ffc-98e8-c1c6adc0438c",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121858_fbe2b147-a067-4ffc-98e8-c1c6adc0438c.png"
+    },
+    {
+      "id": "f6_kurogane",
+      "character": "KUROGANE",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "approved": false,
+      "ref_core": "3cdd85c1-5db2-4708-84e7-a68edda8000e",
+      "job_id": "5cd17fc4-11be-45de-bbfd-cd5b92bec976",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121907_5cd17fc4-11be-45de-bbfd-cd5b92bec976.png"
+    },
+    {
+      "id": "f6_yamato",
+      "character": "YAMATO",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "approved": false,
+      "note": "6F くろがね堂の19歳バイト。prompts.json に専用カットが無いため、imageboard.html:471 の仕様（ひょろ長い青年／ヘッドフォン／指先だけ親方と同じ黒＝継承の記号）からプロンプトを起こした。",
+      "ref_core": "b750715b-d67b-45e9-8f54-db6d4a17d47d",
+      "job_id": "e9c868ea-43f3-41ab-9d13-2f6eda115629",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_122854_e9c868ea-43f3-41ab-9d13-2f6eda115629.png"
+    },
+    {
+      "id": "f5_ri",
+      "character": "LI",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "approved": false,
+      "ref_core": "f3b8214d-cafe-42ff-a269-862386330496",
+      "job_id": "b4b1c06d-afc8-4711-b645-327f75256f8d",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121909_b4b1c06d-afc8-4711-b645-327f75256f8d.png"
+    },
+    {
+      "id": "f4_kumoi",
+      "character": "KUMOI",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "approved": false,
+      "ref_core": "cfd590f9-6764-41c0-8947-d1ddd2ac7e09",
+      "job_id": "47b20304-01c8-4335-be17-bbd1b34ccd46",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121912_47b20304-01c8-4335-be17-bbd1b34ccd46.png"
+    },
+    {
+      "id": "f3_ukai",
+      "character": "UKAI",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "approved": false,
+      "ref_core": "05da55f2-791c-41c3-bd0b-87e5ef6014d6",
+      "job_id": "0aaa20c0-4094-4cd5-9c42-5c9ac07822a8",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121932_0aaa20c0-4094-4cd5-9c42-5c9ac07822a8.png"
+    },
+    {
+      "id": "f2_kaburagi",
+      "character": "KABURAGI",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "approved": true,
+      "ref_core": "e43324b7-8a8f-4394-a63f-a50ac6b4d984",
+      "job_id": "c4f0ecbe-977f-4998-a728-3713a6666dff",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121938_c4f0ecbe-977f-4998-a728-3713a6666dff.png"
+    },
+    {
+      "id": "f1_tome",
+      "character": "HOSHINO_TOME",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "approved": false,
+      "ref_core": "a17a62d5-f663-4014-9273-47de5319fae2",
+      "job_id": "eded806e-98fe-4d37-96f5-3b9c4645201f",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121943_eded806e-98fe-4d37-96f5-3b9c4645201f.png"
+    },
+    {
+      "id": "b1_hiiragi",
+      "character": "HIIRAGI_GENZO",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "approved": true,
+      "ref_core": "f8ba67b7-2a2e-444d-a9f1-bf0354ec5e86",
+      "job_id": "a8434a32-5c17-4c81-8cf2-bfaf353c0766",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121947_a8434a32-5c17-4c81-8cf2-bfaf353c0766.png"
+    },
     {
       "id": "key_building",
       "aspect_ratio": "16:9",
-      "width": 2752,
-      "height": 1536,
-      "job_id": "0c43beb7-f5b2-4cd2-9a58-66f288442fb7",
-      "file": "hf_20260729_120918_0c43beb7-f5b2-4cd2-9a58-66f288442fb7.png"
+      "status": "on_hold",
+      "reason": "建物CANON未確定。Y7（Seedream 5.0 Pro版）の確定承認待ちのため、外形をここで固定しない。"
     },
     {
       "id": "key_rooftop",
       "aspect_ratio": "16:9",
-      "width": 2752,
-      "height": 1536,
-      "job_id": "43877121-8e44-4312-9d99-dd9c2fd72d43",
-      "file": "hf_20260729_120922_43877121-8e44-4312-9d99-dd9c2fd72d43.png"
-    },
-    {
-      "id": "f7_hikari",
-      "aspect_ratio": "2:3",
-      "width": 1696,
-      "height": 2528,
-      "job_id": "782b13db-2819-4f35-b234-693bf3189303",
-      "file": "hf_20260729_120928_782b13db-2819-4f35-b234-693bf3189303.png"
-    },
-    {
-      "id": "f6_kurogane",
-      "aspect_ratio": "2:3",
-      "width": 1696,
-      "height": 2528,
-      "job_id": "692ae1d5-ce53-490e-a534-8bc2b79b3dd1",
-      "file": "hf_20260729_120931_692ae1d5-ce53-490e-a534-8bc2b79b3dd1.png"
-    },
-    {
-      "id": "f5_ri",
-      "aspect_ratio": "2:3",
-      "width": 1696,
-      "height": 2528,
-      "job_id": "4963873d-ba0b-4937-a56d-f73be225a037",
-      "file": "hf_20260729_120934_4963873d-ba0b-4937-a56d-f73be225a037.png"
-    },
-    {
-      "id": "f4_kumoi",
-      "aspect_ratio": "2:3",
-      "width": 1696,
-      "height": 2528,
-      "job_id": "ec7b2c87-caa6-4750-9bd2-3a5c1ca8ad5e",
-      "file": "hf_20260729_120942_ec7b2c87-caa6-4750-9bd2-3a5c1ca8ad5e.png"
-    },
-    {
-      "id": "f3_ukai",
-      "aspect_ratio": "2:3",
-      "width": 1696,
-      "height": 2528,
-      "job_id": "890d984d-46df-4350-a0a3-d32a731ff69c",
-      "file": "hf_20260729_120947_890d984d-46df-4350-a0a3-d32a731ff69c.png"
-    },
-    {
-      "id": "f2_kaburagi",
-      "aspect_ratio": "2:3",
-      "width": 1696,
-      "height": 2528,
-      "job_id": "c152f041-5bc0-4a20-ae32-6ed45e54c6f3",
-      "file": "hf_20260729_120953_c152f041-5bc0-4a20-ae32-6ed45e54c6f3.png"
-    },
-    {
-      "id": "f1_tome",
-      "aspect_ratio": "2:3",
-      "width": 1696,
-      "height": 2528,
-      "job_id": "cd3a43ee-906c-455d-96b6-c16cb640b6e2",
-      "file": "hf_20260729_120956_cd3a43ee-906c-455d-96b6-c16cb640b6e2.png"
-    },
-    {
-      "id": "b1_hiiragi",
-      "aspect_ratio": "2:3",
-      "width": 1696,
-      "height": 2528,
-      "job_id": "a2f79d99-2763-4239-b541-286533611429",
-      "file": "hf_20260729_120958_a2f79d99-2763-4239-b541-286533611429.png"
+      "status": "on_hold",
+      "reason": "屋上＝建物外形が写るため、key_building と同じくY7確定待ち。九人が揃うカットなので全キャラ確定後に生成する。"
     }
   ]
 }

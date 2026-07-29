@@ -45,6 +45,9 @@ if (only) {
   const ids = only.split(',').map((s) => s.trim());
   items = items.filter((it) => ids.includes(it.id));
 }
+// url を持たないカット（status: on_hold 等）は取得対象外
+const held = items.filter((it) => !it.url && !it.file);
+items = items.filter((it) => it.url || it.file);
 if (!items.length) {
   console.error('✗ 取得対象がありません。');
   process.exit(1);
@@ -88,7 +91,7 @@ async function main() {
   let ok = 0;
   const failed = [];
   for (const it of items) {
-    const url = cfg.baseUrl + '/' + it.file;
+    const url = it.url || (cfg.baseUrl + '/' + it.file);
     const jpg = path.join(outDir, it.id + '.jpg');
     const tmp = path.join(outDir, it.id + '.src.png');
     try {
@@ -113,7 +116,11 @@ async function main() {
     }
   }
 
-  console.log('\n完了: 成功 ' + ok + ' / 失敗 ' + failed.length);
+  console.log('\n完了: 成功 ' + ok + ' / 失敗 ' + failed.length +
+              (held.length ? ' / 保留 ' + held.length : ''));
+  held.forEach(function (it) {
+    console.log('  [' + it.id + '] − 保留: ' + (it.reason || 'URL未登録'));
+  });
   if (failed.length) {
     console.log('再取得するには: --only ' + failed.join(','));
     process.exit(1);

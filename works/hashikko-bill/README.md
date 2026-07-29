@@ -59,9 +59,34 @@ node --env-file=tools/fal/.env tools/fal/generate.mjs --batch works/hashikko-bil
 ### 生成済み（2026-07-29／代替ツール）
 
 Fal はこの作業コンテナのネットワークポリシーで弾かれるため（`queue.fal.run` が CONNECT 403）、
-CLAUDE.md の「Fal が使えないときは代替」の方針どおり **Higgsfield / `nano_banana_pro`（2k）** で
-10カットを生成済み。プロンプトは `prompts.json` の各 `prompt` + `style` を連結したもので、
-Fal 実行時とまったく同じ文面（`generate.mjs` と同じ連結順）。
+CLAUDE.md の「Fal が使えないときは代替」の方針どおり **Higgsfield / `nano_banana_pro`（2k）** で生成した。
+
+**キャラクターは確定済みCORE（`01_*_CharacterBible_Core`）を参照画像として渡し、
+`prompts.json` の構図・スタイル指定で作り直したもの。** 再設計はしていない。
+プロンプトは各 `prompt` + `style` の連結（`generate.mjs` と同じ順）に、
+参照厳守の指示を前置した文面。`prompts.json` 自体は変更していない。
+
+| カット | 人物 | 状態 |
+|---|---|---|
+| `f7_hikari` | 七尾ひかり | 承認済 |
+| `f6_kurogane` | 黒金 | 未承認 |
+| `f6_yamato` | 大和 | 未承認・`prompts.json` に無い追加カット |
+| `f5_ri` | 李 | 未承認 |
+| `f4_kumoi` | 雲井 | 未承認 |
+| `f3_ukai` | 鵜飼 | 未承認 |
+| `f2_kaburagi` | 鏑木 | 承認済 |
+| `f1_tome` | 星野トメ | 未承認 |
+| `b1_hiiragi` | 柊源三 | 承認済 |
+| `key_building` | — | **保留**（建物CANON未確定） |
+| `key_rooftop` | — | **保留**（同上・九人が揃うカット） |
+
+`key_building` / `key_rooftop` は建物外形が写る。建物候補Y7の確定承認が出ていないため、
+外形をCANON固定しない方針でここでは生成していない。`fetch-assets.mjs` はこの2件を
+`status: on_hold` として自動的に取得対象外にする。
+
+大和は `prompts.json` に専用カットが無いため、`imageboard.html:471` の仕様
+（ひょろ長い青年／ヘッドフォン／指先だけ親方と同じ黒＝継承の記号）からプロンプトを起こした。
+`imageboard.html` 側に `data-asset="f6_yamato"` の枠はまだ無い。
 
 結果URLは `generated.json` に記録してある。取り込みはローカルPCで:
 
