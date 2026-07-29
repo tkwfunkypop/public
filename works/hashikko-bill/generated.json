@@ -176,6 +176,18 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_152937_6ccddad3-d1ea-41aa-b792-6973586e6b07.png"
     },
     {
+      "id": "wfaia_hikari_empty_916",
+      "aspect_ratio": "9:16",
+      "width": 1536,
+      "height": 2752,
+      "approved": false,
+      "note": "広告ラスト（ad-shots.json c06）用の空荷のひかり。塔を外し両腕を下ろした状態。髪はv1と同じ片側へ流れる一房。初回生成（8629fd88）は左右二つのポニーテールになって承認済みv1と髪型が違ったため、髪型を明示して撮り直した。I2Vで塔が消えない場合の保険。",
+      "superseded_job_id": "8629fd88-2185-46cf-ad5a-b96e784781b9",
+      "ref_core": "2385f36b-65e6-455b-a357-3c02deca885d",
+      "job_id": "5192b761-14b8-4ae7-8d75-178d6e82a6aa",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_221332_5192b761-14b8-4ae7-8d75-178d6e82a6aa.png"
+    },
+    {
       "id": "key_building",
       "aspect_ratio": "16:9",
       "status": "on_hold",

@@ -129,9 +129,14 @@ Higgsfield の配信ドメインを受け付けない。閲覧はできるが編
 外形をCANON固定しない方針でここでは生成していない。`fetch-assets.mjs` はこの2件を
 `status: on_hold` として自動的に取得対象外にする。
 
-大和は `prompts.json` に専用カットが無いため、`imageboard.html:471` の仕様
-（ひょろ長い青年／ヘッドフォン／指先だけ親方と同じ黒＝継承の記号）からプロンプトを起こした。
-`imageboard.html` 側に `data-asset="f6_yamato"` の枠はまだ無い。
+大和は `prompts.json` に専用カットが無い追加カット。**6Fは親方と若手の二人なので、
+`imageboard.html` の6Fだけ図版枠を二つに組み替えてある**（`.floor__pair`）。
+`data-asset="f6_yamato"` のスロットとフォールバック用シルエットを追加済み。
+
+あわせて `imageboard.html` の大和の仕様行を修正した。元は「ひょろ長い青年／ヘッドフォン」
+と書かれていたが、これはCANON確定前の記述で、CANONは片側へ流れる長い黒髪と立襟の
+ワインコートの華奢な人形。CANONに合わせて書き換えている
+（「手だけが親方と同じ黒＝継承の記号」はCANONの黒い手と両立するので残した）。
 
 結果URLは `generated.json` に記録してある。取り込みはローカルPCで:
 

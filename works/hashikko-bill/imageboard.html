@@ -158,6 +158,16 @@
   }
   .floor__fig{ width:100%; max-width:300px; display:block; color:var(--c); margin-top:-1.2rem; }
 
+  /* 6F だけは二人（親方と若手）。図版を並べて「継承」を画面で示す */
+  .floor__pair{ display:grid; grid-template-columns:1fr 1fr; gap:.7rem;
+                align-items:end; max-width:300px; margin-top:-1.2rem; }
+  .floor__pair figure{ margin:0; display:grid; gap:.4rem; }
+  .floor__pair .floor__fig{ max-width:100%; margin-top:0; }
+  .floor__pair figcaption{
+    font-family:var(--mono); font-size:.58rem; letter-spacing:.14em;
+    color:var(--bone-dim); text-align:center;
+  }
+
   .floor__body{ display:grid; gap:1.5rem; }
   .floor__co{ display:grid; gap:.35rem; }
   .floor__co .biz{ font-family:var(--mono); font-size:.7rem; letter-spacing:.2em; color:var(--c); }
@@ -433,6 +443,8 @@
     <div class="wrap floor__grid">
       <div class="floor__plate">
         <p class="floor__no">6F</p>
+        <div class="floor__pair">
+        <figure>
         <svg class="floor__fig" data-asset="f6_kurogane" viewBox="0 0 200 300" role="img" aria-label="黒金のシルエット。手押し印刷機の体とレバー腕をもつ老人">
           <g fill="currentColor">
             <rect x="76" y="120" width="48" height="42" rx="3"/>
@@ -455,6 +467,38 @@
           </g>
           <g fill="#0E0E12"><circle cx="30" cy="240" r="6"/><circle cx="26" cy="256" r="3.5"/><circle cx="34" cy="266" r="2.4"/></g>
         </svg>
+        <figcaption>KUROGANE</figcaption>
+        </figure>
+        <figure>
+        <svg class="floor__fig" data-asset="f6_yamato" viewBox="0 0 200 300" role="img" aria-label="大和のシルエット。片側へ流れる長い黒髪と立襟のコート、華奢な四肢">
+          <g fill="currentColor">
+            <!-- 立襟のコート（膝上まで） -->
+            <path d="M84 96 L116 96 L128 116 L126 196 L74 196 L72 116 Z"/>
+            <rect x="88" y="86" width="24" height="16" rx="2"/>
+            <!-- 華奢な腕 -->
+            <path d="M76 122 L64 178" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M124 122 L136 178" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round"/>
+          </g>
+          <g fill="#1C1A1D">
+            <!-- 片側へ流れる長い黒髪 -->
+            <path d="M100 32 C74 32 66 54 70 78 L78 96 L84 62 Z"/>
+            <path d="M100 32 C126 32 140 48 150 40 L128 74 L118 96 L116 58 Z"/>
+            <path d="M138 46 L182 30 L150 60 Z"/>
+            <path d="M142 62 L186 58 L148 76 Z"/>
+            <!-- 細い脚 -->
+            <rect x="88" y="196" width="7" height="66"/><rect x="105" y="196" width="7" height="66"/>
+            <!-- 踵のあるブーツ -->
+            <path d="M84 260 L99 260 L99 280 L82 280 Z"/><path d="M101 260 L116 260 L116 280 L99 280 Z"/>
+            <rect x="86" y="280" width="9" height="6"/><rect x="103" y="280" width="9" height="6"/>
+          </g>
+          <!-- 顔：巨大な真円の白目に小さな黒点の瞳孔のみ（CANON準拠・口も鼻もなし） -->
+          <g fill="#E8E2D2"><ellipse cx="100" cy="62" rx="19" ry="24"/></g>
+          <g fill="#F6F3EA"><circle cx="92" cy="60" r="7.5"/><circle cx="108" cy="60" r="7.5"/></g>
+          <g fill="#1C1A1D"><circle cx="92" cy="60" r="2.2"/><circle cx="108" cy="60" r="2.2"/></g>
+        </svg>
+        <figcaption>YAMATO</figcaption>
+        </figure>
+        </div>
       </div>
       <div class="floor__body">
         <div class="floor__co">
@@ -468,7 +512,7 @@
           <tr><th>身体</th><td>鋳鉄フレームの胴体。右腕は圧盤レバーで、下ろすと「刷る」。</td></tr>
           <tr><th>衣装</th><td>インクの染み込んだ革前掛け。袖は永久に黒い。</td></tr>
           <tr><th>動き</th><td>全キャラ中もっとも遅い。一動作にコマを使い切る贅沢な芝居。</td></tr>
-          <tr><th>大和</th><td>ひょろ長い青年。ヘッドフォン。指先だけ親方と同じ黒。<b style="color:var(--bone);font-weight:400">＝継承の記号</b>。</td></tr>
+          <tr><th>大和</th><td>華奢な人形。片側へ流れる長い黒髪、立襟のワインコート。巨大な白い眼に黒点の瞳孔だけで無表情。手だけが親方と同じ黒。<b style="color:var(--bone);font-weight:400">＝継承の記号</b>。</td></tr>
         </table>
         <ul class="chips"><li><i style="background:#C2493C"></i>#C2493C 校正朱</li><li><i style="background:#1C1C1E"></i>#1C1C1E 鉄墨</li><li><i style="background:#DDD5C0"></i>#DDD5C0 紙生成</li></ul>
         <details class="prompt"><summary>生成プロンプト（EN）<span></span></summary><div class="prompt__body"><pre>Gothic stop-motion puppet character model sheet, full body front view, plain pale grey backdrop. An 83-year-old letterpress printer puppet whose torso IS a cast-iron hand press: a heavy rectangular frame body with a long lever arm for a right arm, ending in a round counterweight. His head is a wooden type case, a grid of small compartments holding metal letters instead of hair. His beard is made of hanging strips of proof paper. Fingers permanently stained ink-black, dripping. Heavy ink-soaked leather apron. Handcrafted armature puppet, felt and clay texture, visible seams. Palette: iron black #1C1C1E, proof red #C2493C, paper cream #DDD5C0. Tim Burton-esque German Expressionist design, practical miniature lighting, film grain. No text.</pre><button class="copy" type="button">COPY</button></div></details>

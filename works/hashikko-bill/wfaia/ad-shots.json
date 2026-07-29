@@ -50,7 +50,8 @@
       "dur_s": 4,
       "start_frame": "f7_hikari v1 (fbe2b147) を 9:16 トリム",
       "motion": "The girl puppet, now empty-handed except one last small box, gives a quick bouncy bow; her ponytails flop forward and back. The trunk tower is gone. Warm orange glow fills the frame edges. Camera locked.",
-      "note": "空荷の状態が理想。I2Vで塔が消えないようなら、参照1枚で『塔を持たないひかり』の開始フレームを追加生成する"
+      "alt_start_frame": "GENERATED — generated.json の wfaia_hikari_empty_916（塔なし・両腕を下ろした状態）",
+      "note": "I2Vで塔が消えないようなら alt_start_frame に差し替える。保険として生成・検品済み"
     },
     {
       "id": "c07_logo",
