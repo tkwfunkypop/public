@@ -64,6 +64,17 @@
 - ただし UXP は CSP が厳しく外部CDN/`eval` を弾くことがある。その場合は
   `node_modules/animejs/dist/bundles/anime.umd.min.js` を **パネル内にローカル同梱**して読み込む。
 
+## サブエージェント（`.claude/agents/`）
+
+サブエージェントもこの CLAUDE.md と同じルールで動くよう、プロジェクト定義を用意している。
+該当する作業はできるだけ委譲すること。
+
+| エージェント | 担当 |
+|---|---|
+| `lp-builder` | LPの新規作成・改修（`templates/lp-starter.html` 複製、`reveal` / `stat`、`AP.*`） |
+| `animation-presets` | `lib/animations.js` のプリセット追加・修正（anime.js v4） |
+| `adobe-panel` | UXP/CEP パネル・`tools/` 配下（CSP対策のローカル同梱含む） |
+
 ## Git
 
 - 作業ブランチ: `claude/add-animejs-dependency-iqs0v1`（指定がなければこのブランチ）。
