@@ -1,6 +1,7 @@
 {
   "_comment": "はしっこビル図版の生成結果。取得: node works/hashikko-bill/fetch-assets.mjs",
-  "_note": "Fal はネットワークポリシーで弾かれるため、CLAUDE.md の方針どおり代替（Higgsfield / nano_banana_pro）で生成。キャラクターは確定済みCORE（01_*_CharacterBible_Core）を参照画像に渡し、prompts.json の構図・スタイル指定で作り直したもの。プロンプトの正は prompts.json のまま。",
+  "_note": "確定済みキャラクターCORE（01_*_CharacterBible_Core）を参照画像として渡し、正面全身1カットに起こし直したもの。プロンプトから人物描写を排し、設計は参照画像だけに担わせている（v1では prompts.json の人物描写が参照と競合し、デザインが変わってしまったため差し替え）。",
+  "_env": "Fal はこのコンテナのネットワークポリシーで弾かれるため、CLAUDE.md の方針どおり代替（Higgsfield / nano_banana_pro）で生成。",
   "generatedAt": "2026-07-29",
   "provider": "higgsfield",
   "model": "nano_banana_pro",
@@ -13,21 +14,18 @@
       "aspect_ratio": "2:3",
       "width": 1696,
       "height": 2528,
-      "approved": true,
+      "approved": false,
       "ref_core": "2385f36b-65e6-455b-a357-3c02deca885d",
-      "job_id": "fbe2b147-a067-4ffc-98e8-c1c6adc0438c",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121858_fbe2b147-a067-4ffc-98e8-c1c6adc0438c.png"
+      "job_id": "9a551090-241d-4a90-bb0c-5b1b5c1c7933",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_123811_9a551090-241d-4a90-bb0c-5b1b5c1c7933.png"
     },
     {
       "id": "f6_kurogane",
       "character": "KUROGANE",
       "aspect_ratio": "2:3",
-      "width": 1696,
-      "height": 2528,
-      "approved": false,
-      "ref_core": "3cdd85c1-5db2-4708-84e7-a68edda8000e",
-      "job_id": "5cd17fc4-11be-45de-bbfd-cd5b92bec976",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121907_5cd17fc4-11be-45de-bbfd-cd5b92bec976.png"
+      "status": "on_hold",
+      "reason": "v2 生成が完了していない（job 53885128-c6d4-4358-8b66-c6e15b1d31e0）。完了後にURLを追記する。",
+      "ref_core": "3cdd85c1-5db2-4708-84e7-a68edda8000e"
     },
     {
       "id": "f6_yamato",
@@ -36,10 +34,10 @@
       "width": 1696,
       "height": 2528,
       "approved": false,
-      "note": "6F くろがね堂の19歳バイト。prompts.json に専用カットが無いため、imageboard.html:471 の仕様（ひょろ長い青年／ヘッドフォン／指先だけ親方と同じ黒＝継承の記号）からプロンプトを起こした。",
+      "note": "6F くろがね堂の19歳バイト。prompts.json に専用カットが無く、imageboard.html にも data-asset 枠が無い追加カット。",
       "ref_core": "b750715b-d67b-45e9-8f54-db6d4a17d47d",
-      "job_id": "e9c868ea-43f3-41ab-9d13-2f6eda115629",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_122854_e9c868ea-43f3-41ab-9d13-2f6eda115629.png"
+      "job_id": "660cbbcf-a949-4b7f-856e-7aac70e863fb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_123818_660cbbcf-a949-4b7f-856e-7aac70e863fb.png"
     },
     {
       "id": "f5_ri",
@@ -49,8 +47,8 @@
       "height": 2528,
       "approved": false,
       "ref_core": "f3b8214d-cafe-42ff-a269-862386330496",
-      "job_id": "b4b1c06d-afc8-4711-b645-327f75256f8d",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121909_b4b1c06d-afc8-4711-b645-327f75256f8d.png"
+      "job_id": "40530237-03a2-4c53-936b-3a656120e797",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_123823_40530237-03a2-4c53-936b-3a656120e797.png"
     },
     {
       "id": "f4_kumoi",
@@ -60,8 +58,8 @@
       "height": 2528,
       "approved": false,
       "ref_core": "cfd590f9-6764-41c0-8947-d1ddd2ac7e09",
-      "job_id": "47b20304-01c8-4335-be17-bbd1b34ccd46",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121912_47b20304-01c8-4335-be17-bbd1b34ccd46.png"
+      "job_id": "5af1d32b-9d9d-4a7b-b733-1c53ca94f2e3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_123826_5af1d32b-9d9d-4a7b-b733-1c53ca94f2e3.png"
     },
     {
       "id": "f3_ukai",
@@ -71,8 +69,8 @@
       "height": 2528,
       "approved": false,
       "ref_core": "05da55f2-791c-41c3-bd0b-87e5ef6014d6",
-      "job_id": "0aaa20c0-4094-4cd5-9c42-5c9ac07822a8",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121932_0aaa20c0-4094-4cd5-9c42-5c9ac07822a8.png"
+      "job_id": "1eb42831-80ff-405d-8f45-e871de4468bb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_123834_1eb42831-80ff-405d-8f45-e871de4468bb.png"
     },
     {
       "id": "f2_kaburagi",
@@ -80,10 +78,10 @@
       "aspect_ratio": "2:3",
       "width": 1696,
       "height": 2528,
-      "approved": true,
+      "approved": false,
       "ref_core": "e43324b7-8a8f-4394-a63f-a50ac6b4d984",
-      "job_id": "c4f0ecbe-977f-4998-a728-3713a6666dff",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121938_c4f0ecbe-977f-4998-a728-3713a6666dff.png"
+      "job_id": "e5dbd6e0-c6af-47bd-9efe-8089ff433194",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_123837_e5dbd6e0-c6af-47bd-9efe-8089ff433194.png"
     },
     {
       "id": "f1_tome",
@@ -93,8 +91,8 @@
       "height": 2528,
       "approved": false,
       "ref_core": "a17a62d5-f663-4014-9273-47de5319fae2",
-      "job_id": "eded806e-98fe-4d37-96f5-3b9c4645201f",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121943_eded806e-98fe-4d37-96f5-3b9c4645201f.png"
+      "job_id": "5f9b0d6e-da8f-42ba-b570-19082951dff3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_123840_5f9b0d6e-da8f-42ba-b570-19082951dff3.png"
     },
     {
       "id": "b1_hiiragi",
@@ -102,10 +100,10 @@
       "aspect_ratio": "2:3",
       "width": 1696,
       "height": 2528,
-      "approved": true,
+      "approved": false,
       "ref_core": "f8ba67b7-2a2e-444d-a9f1-bf0354ec5e86",
-      "job_id": "a8434a32-5c17-4c81-8cf2-bfaf353c0766",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121947_a8434a32-5c17-4c81-8cf2-bfaf353c0766.png"
+      "job_id": "c1946ebb-162a-4c8a-8b0f-d943d17a09e9",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_123842_c1946ebb-162a-4c8a-8b0f-d943d17a09e9.png"
     },
     {
       "id": "key_building",
