@@ -23,9 +23,12 @@
       "id": "f6_kurogane",
       "character": "KUROGANE",
       "aspect_ratio": "2:3",
-      "status": "on_hold",
-      "reason": "v2 生成が完了していない（job 53885128-c6d4-4358-8b66-c6e15b1d31e0）。完了後にURLを追記する。",
-      "ref_core": "3cdd85c1-5db2-4708-84e7-a68edda8000e"
+      "width": 1696,
+      "height": 2528,
+      "approved": false,
+      "ref_core": "3cdd85c1-5db2-4708-84e7-a68edda8000e",
+      "job_id": "24732791-4b95-4d33-b08c-060344316eba",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_124054_24732791-4b95-4d33-b08c-060344316eba.png"
     },
     {
       "id": "f6_yamato",
