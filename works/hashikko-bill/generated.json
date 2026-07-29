@@ -1,0 +1,92 @@
+{
+  "_comment": "prompts.json の10カットを実際に生成した結果の記録。取得: node works/hashikko-bill/fetch-assets.mjs",
+  "_note": "Fal がネットワークポリシーで弾かれたため、CLAUDE.md の方針どおり代替（Higgsfield / nano_banana_pro）で生成した。プロンプトの正は prompts.json のまま。",
+  "generatedAt": "2026-07-29",
+  "provider": "higgsfield",
+  "model": "nano_banana_pro",
+  "resolution": "2k",
+  "outDir": "works/hashikko-bill/assets",
+  "baseUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo",
+  "items": [
+    {
+      "id": "key_building",
+      "aspect_ratio": "16:9",
+      "width": 2752,
+      "height": 1536,
+      "job_id": "0c43beb7-f5b2-4cd2-9a58-66f288442fb7",
+      "file": "hf_20260729_120918_0c43beb7-f5b2-4cd2-9a58-66f288442fb7.png"
+    },
+    {
+      "id": "key_rooftop",
+      "aspect_ratio": "16:9",
+      "width": 2752,
+      "height": 1536,
+      "job_id": "43877121-8e44-4312-9d99-dd9c2fd72d43",
+      "file": "hf_20260729_120922_43877121-8e44-4312-9d99-dd9c2fd72d43.png"
+    },
+    {
+      "id": "f7_hikari",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "job_id": "782b13db-2819-4f35-b234-693bf3189303",
+      "file": "hf_20260729_120928_782b13db-2819-4f35-b234-693bf3189303.png"
+    },
+    {
+      "id": "f6_kurogane",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "job_id": "692ae1d5-ce53-490e-a534-8bc2b79b3dd1",
+      "file": "hf_20260729_120931_692ae1d5-ce53-490e-a534-8bc2b79b3dd1.png"
+    },
+    {
+      "id": "f5_ri",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "job_id": "4963873d-ba0b-4937-a56d-f73be225a037",
+      "file": "hf_20260729_120934_4963873d-ba0b-4937-a56d-f73be225a037.png"
+    },
+    {
+      "id": "f4_kumoi",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "job_id": "ec7b2c87-caa6-4750-9bd2-3a5c1ca8ad5e",
+      "file": "hf_20260729_120942_ec7b2c87-caa6-4750-9bd2-3a5c1ca8ad5e.png"
+    },
+    {
+      "id": "f3_ukai",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "job_id": "890d984d-46df-4350-a0a3-d32a731ff69c",
+      "file": "hf_20260729_120947_890d984d-46df-4350-a0a3-d32a731ff69c.png"
+    },
+    {
+      "id": "f2_kaburagi",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "job_id": "c152f041-5bc0-4a20-ae32-6ed45e54c6f3",
+      "file": "hf_20260729_120953_c152f041-5bc0-4a20-ae32-6ed45e54c6f3.png"
+    },
+    {
+      "id": "f1_tome",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "job_id": "cd3a43ee-906c-455d-96b6-c16cb640b6e2",
+      "file": "hf_20260729_120956_cd3a43ee-906c-455d-96b6-c16cb640b6e2.png"
+    },
+    {
+      "id": "b1_hiiragi",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "job_id": "a2f79d99-2763-4239-b541-286533611429",
+      "file": "hf_20260729_120958_a2f79d99-2763-4239-b541-286533611429.png"
+    }
+  ]
+}

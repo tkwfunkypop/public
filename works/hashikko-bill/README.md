@@ -56,6 +56,27 @@ node --env-file=tools/fal/.env tools/fal/generate.mjs --batch works/hashikko-bil
 - 生成される10カット: `key_building` `key_rooftop` `f7_hikari` `f6_kurogane` `f5_ri`
   `f4_kumoi` `f3_ukai` `f2_kaburagi` `f1_tome` `b1_hiiragi`
 
+### 生成済み（2026-07-29／代替ツール）
+
+Fal はこの作業コンテナのネットワークポリシーで弾かれるため（`queue.fal.run` が CONNECT 403）、
+CLAUDE.md の「Fal が使えないときは代替」の方針どおり **Higgsfield / `nano_banana_pro`（2k）** で
+10カットを生成済み。プロンプトは `prompts.json` の各 `prompt` + `style` を連結したもので、
+Fal 実行時とまったく同じ文面（`generate.mjs` と同じ連結順）。
+
+結果URLは `generated.json` に記録してある。取り込みはローカルPCで:
+
+```bash
+node works/hashikko-bill/fetch-assets.mjs                 # 10カットを assets/ に取り込む
+node works/hashikko-bill/fetch-assets.mjs --only f3_ukai  # 一部だけ
+node works/hashikko-bill/fetch-assets.mjs --width 2048 --quality 88
+```
+
+- 元画像はPNG（16:9 は 2752×1536、2:3 は 1696×2528／各6〜8MB）。
+  そのままではリポジトリに重いので、既定で長辺1600pxのJPEGに変換して `assets/<id>.jpg` に保存する
+  （合計約5MB）。変換には `sips` / `magick` / `convert` / `ffmpeg` のうち見つかったものを使う。
+- **絵柄を Fal の `flux-pro/v1.1-ultra` に統一したい場合は、キーを設定してローカルで上の
+  `generate.mjs --batch` を回せば `assets/` を上書きできる。** `prompts.json` は変更していない。
+
 なお HTML 内の各キャラカードにも `生成プロンプト（EN）` を畳んで入れてあるので、
 1カットだけ他ツールで試したいときはそこから COPY できる。
 
