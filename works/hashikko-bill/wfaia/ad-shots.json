@@ -28,14 +28,14 @@
     {
       "id": "c03_handoff_ri",
       "dur_s": 4,
-      "start_frame": "TO_GENERATE — ひかり×李の受け渡し 9:16（参照2枚: fbe2b147 + b1ccb0c7）",
+      "start_frame": "GENERATED — generated.json の wfaia_handoff_ri_916",
       "gen_prompt": "Two references show two finished puppet characters. Reproduce BOTH exactly as designed. The small girl puppet from the first image offers a wooden lunch box toward the faceless still-device puppet from the second image, which lowers one dark elongated hand to receive it; a thin wisp of vapor curls from its spout. Warm lantern-orange glow on her side, pale scent-violet glow on its side. Same handcrafted stop-motion puppet finish, practical miniature lighting, film grain. Vertical composition, both figures in frame. No text, no watermark.",
       "motion": "The device-headed puppet accepts the box; vapor puffs once from its spout like a satisfied breath. Orange and violet glows brighten together. Camera locked."
     },
     {
       "id": "c04_handoff_tome",
       "dur_s": 4,
-      "start_frame": "TO_GENERATE — ひかり×星野トメの受け渡し 9:16（参照2枚: fbe2b147 + 15e08a95）",
+      "start_frame": "GENERATED — generated.json の wfaia_handoff_tome_916",
       "gen_prompt": "Two references show two finished puppet characters. Reproduce BOTH exactly as designed. The small girl puppet from the first image hands a wooden lunch box to the tall black-robed puppet from the second image, whose pale hands emerge from the robe to take it; the small bell at the robed figure's collar swings once. Warm lantern-orange glow on the girl's side, chrysanthemum bone-white glow on the robed figure's side. Same handcrafted stop-motion puppet finish, practical miniature lighting, film grain. Vertical composition. No text, no watermark.",
       "motion": "The robed puppet receives the box with both pale hands; the collar bell swings once and settles. Orange and bone-white glows brighten together. Camera locked."
     },
