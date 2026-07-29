@@ -126,6 +126,36 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_124412_15e08a95-5380-4b41-8887-3611f64ca017.png"
     },
     {
+      "id": "wfaia_fog_169",
+      "aspect_ratio": "16:9",
+      "width": 2752,
+      "height": 1536,
+      "approved": false,
+      "note": "WFAIA用オープニング/クロージング開始フレーム。綿の霧に八つの色玉（下から電球黄→菊白→真鍮→帳簿緑→硝子青→香気紫→校正朱→灯火橙）。建物構造は一切映っていない。綿霧は実写ストップモーションの霧の作法どおり。",
+      "job_id": "66a93eb9-3604-44af-a1b4-d477454f1857",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_143020_66a93eb9-3604-44af-a1b4-d477454f1857.png"
+    },
+    {
+      "id": "wfaia_stack_916",
+      "aspect_ratio": "9:16",
+      "width": 1536,
+      "height": 2752,
+      "approved": false,
+      "note": "WFAIA広告用・八灯の縦積み開始フレーム。wfaia_fog_169 と同じ綿霧の作法で色順も一致。",
+      "job_id": "32f6da17-1bac-48f9-a3e7-2c6686207ebf",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_143024_32f6da17-1bac-48f9-a3e7-2c6686207ebf.png"
+    },
+    {
+      "id": "wfaia_handoff_916",
+      "aspect_ratio": "9:16",
+      "width": 1536,
+      "height": 2752,
+      "approved": false,
+      "note": "ひかり×黒金の弁当受け渡し2ショット（活版工房内・橙×朱の光＝協働ルール準拠）。参照2枚（fbe2b147 + 7de3b8e2）から生成し、両者ともCANON準拠を目視確認済み。",
+      "job_id": "762c236d-6b3a-445b-afa0-1c99a924941f",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_143028_762c236d-6b3a-445b-afa0-1c99a924941f.png"
+    },
+    {
       "id": "key_building",
       "aspect_ratio": "16:9",
       "status": "on_hold",

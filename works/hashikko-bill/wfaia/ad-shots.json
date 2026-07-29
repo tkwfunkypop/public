@@ -1,0 +1,63 @@
+{
+  "_comment": "WFAIA 広告部門 ふくふく亭（7F仕出し）出前広告（約28秒・9:16縦）のショット表。単体キャラの 2:3 スチルは 9:16 に上下トリム＋わずかな拡張で使える。i2v_style_suffix は anime-shots.json と共通。",
+  "aspect_ratio": "9:16",
+  "target_duration_s": 28,
+  "brand": {
+    "name": "仕出しふくふく亭",
+    "color": "灯火橙 #EE9A38",
+    "rule": "受け渡し（協働）のカットでのみ、灯火橙と相手社の色が同時に出てよい",
+    "tagline_candidates": [
+      "七階ぶんのお腹を、ひとりで満たす。",
+      "世界の外れまで、あたたかいまま。",
+      "出前は、B1から7Fまで。"
+    ]
+  },
+  "shots": [
+    {
+      "id": "c01_hook",
+      "dur_s": 4,
+      "start_frame": "f7_hikari v1 (fbe2b147) を 9:16 トリム",
+      "motion": "The tower of trunks sways dangerously into frame from below as the girl puppet runs in place; the topmost box nearly tips, then settles. Her candle-flame eyes blink once. Slight handheld shake."
+    },
+    {
+      "id": "c02_handoff_kurogane",
+      "dur_s": 4,
+      "start_frame": "GENERATED — generated.json の wfaia_handoff_916",
+      "motion": "The girl places a wooden lunch box into the printer puppet's outstretched ink-black fingers. On the handoff, a warm orange glow and a proof-red glow bloom together in the dim workshop. Camera locked."
+    },
+    {
+      "id": "c03_handoff_ri",
+      "dur_s": 4,
+      "start_frame": "TO_GENERATE — ひかり×李の受け渡し 9:16（参照2枚: fbe2b147 + b1ccb0c7）",
+      "gen_prompt": "Two references show two finished puppet characters. Reproduce BOTH exactly as designed. The small girl puppet from the first image offers a wooden lunch box toward the faceless still-device puppet from the second image, which lowers one dark elongated hand to receive it; a thin wisp of vapor curls from its spout. Warm lantern-orange glow on her side, pale scent-violet glow on its side. Same handcrafted stop-motion puppet finish, practical miniature lighting, film grain. Vertical composition, both figures in frame. No text, no watermark.",
+      "motion": "The device-headed puppet accepts the box; vapor puffs once from its spout like a satisfied breath. Orange and violet glows brighten together. Camera locked."
+    },
+    {
+      "id": "c04_handoff_tome",
+      "dur_s": 4,
+      "start_frame": "TO_GENERATE — ひかり×星野トメの受け渡し 9:16（参照2枚: fbe2b147 + 15e08a95）",
+      "gen_prompt": "Two references show two finished puppet characters. Reproduce BOTH exactly as designed. The small girl puppet from the first image hands a wooden lunch box to the tall black-robed puppet from the second image, whose pale hands emerge from the robe to take it; the small bell at the robed figure's collar swings once. Warm lantern-orange glow on the girl's side, chrysanthemum bone-white glow on the robed figure's side. Same handcrafted stop-motion puppet finish, practical miniature lighting, film grain. Vertical composition. No text, no watermark.",
+      "motion": "The robed puppet receives the box with both pale hands; the collar bell swings once and settles. Orange and bone-white glows brighten together. Camera locked."
+    },
+    {
+      "id": "c05_stack_light",
+      "dur_s": 5,
+      "start_frame": "GENERATED — generated.json の wfaia_stack_916",
+      "motion": "From bottom to top, the eight colored glows light up one after another in quick rhythm, like floors receiving their meals; fog swirls gently around each new light. Camera locked."
+    },
+    {
+      "id": "c06_hikari_bow",
+      "dur_s": 4,
+      "start_frame": "f7_hikari v1 (fbe2b147) を 9:16 トリム",
+      "motion": "The girl puppet, now empty-handed except one last small box, gives a quick bouncy bow; her ponytails flop forward and back. The trunk tower is gone. Warm orange glow fills the frame edges. Camera locked.",
+      "note": "空荷の状態が理想。I2Vで塔が消えないようなら、参照1枚で『塔を持たないひかり』の開始フレームを追加生成する"
+    },
+    {
+      "id": "c07_logo",
+      "dur_s": 3,
+      "start_frame": "編集で作る（生成不要）",
+      "motion": "静止。灯火橙 #EE9A38 の地に白抜きで『仕出しふくふく亭』＋タグライン。菊白の小さな縁飾り。",
+      "note": "文字はすべて編集段階。生成物に文字を入れない"
+    }
+  ]
+}
