@@ -78,19 +78,37 @@ CLAUDE.md の「Fal が使えないときは代替」の方針どおり **Higgsf
 - **v2** — 描写を全排除。デザインは合ったが、スタイル指定ごと落としたため質感が抜けた。
 - **v3** — 参照2枚で両立。承認済み3体はv1のまま据え置き、残り6体をv3で作り直した。
 
-| カット | 人物 | 版 | 状態 |
+全9体をCANON（`01 / CORE`）と1体ずつ突き合わせて検品済み。
+
+| カット | 人物 | 版 | CORE照合 |
 |---|---|---|---|
-| `f7_hikari` | 七尾ひかり | v1 | **承認済** |
-| `f2_kaburagi` | 鏑木 | v1 | **承認済** |
-| `b1_hiiragi` | 柊源三 | v1 | **承認済**（質感の基準カット） |
-| `f6_kurogane` | 黒金 | v3 | 検品待ち |
-| `f6_yamato` | 大和 | v4 | 顔をCANON構造に修正済・`prompts.json` に無い追加カット |
-| `f5_ri` | 李 | v3 | 検品待ち |
-| `f4_kumoi` | 雲井 | v3 | 検品待ち |
-| `f3_ukai` | 鵜飼 | v3 | 検品待ち |
-| `f1_tome` | 星野トメ | v3 | 検品待ち |
+| `f7_hikari` | 七尾ひかり | v1 | 一致 |
+| `f6_kurogane` | 黒金 | v3 | 一致 |
+| `f6_yamato` | 大和 | v4 | 一致（顔をCANON構造に修正） |
+| `f5_ri` | 李 | v3 | 一致 |
+| `f4_kumoi` | 雲井 | v3 | 一致 |
+| `f3_ukai` | 鵜飼 | v3 | 一致 |
+| `f2_kaburagi` | 鏑木 | v1 | 一致 |
+| `f1_tome` | 星野トメ | v3 | 一致 |
+| `b1_hiiragi` | 柊源三 | v5 | 一致（v1がCANONと違ったため差し替え） |
 | `key_building` | — | — | **保留**（建物CANON未確定） |
 | `key_rooftop` | — | — | **保留**（同上・九人が揃うカット） |
+
+`prompts.json` の人物描写はCANON確定前に書かれたもので、**現在のCANONとは別人**を指している
+（例：星野トメは「菊の髪飾りの小柄な老婆」ではなく裾長の黒衣の柱状シルエット、
+雲井は「硝子ドームの頭」ではなく卵型の白い顔）。図版の正はCOREであり、`prompts.json` ではない。
+
+### キャラクターシート
+
+`character-sheets.html` に9体分をまとめてある。CORE（設計の正）と図版を左右に並べ、
+CANONメタ情報（`CHARACTER ID` / `REVISION` / `CANON STATUS` / `BODY TYPE` / `HANDEDNESS`）と
+`COLOR SYSTEM` の5色、CORE照合の結果を載せている。
+
+```
+https://raw.githack.com/tkwfunkypop/public/claude/prompts-json-10cut-generation-cisssw/works/hashikko-bill/character-sheets.html
+```
+
+アニメーションは CLAUDE.md の方針どおり `AP.staggerReveal` / `AP.onScroll` のみ。
 
 ### 目視検品について
 

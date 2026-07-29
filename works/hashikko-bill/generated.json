@@ -42,12 +42,13 @@
       "aspect_ratio": "2:3",
       "width": 1696,
       "height": 2528,
-      "version": "v1",
-      "approved": true,
-      "note": "人間承認済み。質感の基準カットとして他8体の参照2枚目に使っている。",
+      "version": "v5",
+      "approved": false,
+      "note": "v1（job a8434a32）はCANONと造形が違っていた。CANONは足元まで届く裾広がりのローブで脚も靴も見えず、胸の高さで電球の房を両手で抱える。v1はカーディガン＋ズボン＋靴、電球は胸ポケットだった。v5でCANONに合わせ直した。なお v1 は質感の基準カットとして他8体の参照2枚目に使っており、その役割は引き続き有効。",
+      "superseded_job_id": "a8434a32-5c17-4c81-8cf2-bfaf353c0766",
       "ref_core": "f8ba67b7-2a2e-444d-a9f1-bf0354ec5e86",
-      "job_id": "a8434a32-5c17-4c81-8cf2-bfaf353c0766",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121947_a8434a32-5c17-4c81-8cf2-bfaf353c0766.png"
+      "job_id": "0bc9bf7a-7664-4eb9-82e8-81120f72cefc",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_131752_0bc9bf7a-7664-4eb9-82e8-81120f72cefc.png"
     },
     {
       "id": "f6_kurogane",
