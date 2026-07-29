@@ -67,12 +67,14 @@
       "aspect_ratio": "2:3",
       "width": 1696,
       "height": 2528,
-      "version": "v3",
+      "version": "v4",
       "approved": false,
-      "note": "6F くろがね堂の19歳バイト。prompts.json に専用カットが無く、imageboard.html にも data-asset 枠が無い追加カット。",
+      "note": "6F くろがね堂の19歳バイト。prompts.json に専用カットが無く、imageboard.html にも data-asset 枠が無い追加カット。v3 は顔に虹彩・まぶた・鼻・口を足してしまい表情が付いていたため、顔だけCANON構造（巨大な真円の白目＋小さな黒点の瞳孔のみ、まぶた・眉・口・鼻なし、完全な無表情）に戻した。体・衣装・髪・ポーズ・質感は v3 のまま。",
+      "alt_job_id": "4fcf8e90-efc8-45d2-9b6b-0f8eb48e58cc",
+      "superseded_job_id": "e93435e8-37fe-4245-a5cd-6bfe193a9917",
       "ref_core": "b750715b-d67b-45e9-8f54-db6d4a17d47d",
-      "job_id": "e93435e8-37fe-4245-a5cd-6bfe193a9917",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_124348_e93435e8-37fe-4245-a5cd-6bfe193a9917.png"
+      "job_id": "ba78a7a0-fd47-411a-90dd-0557ede4c2fb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_125554_ba78a7a0-fd47-411a-90dd-0557ede4c2fb.png"
     },
     {
       "id": "f5_ri",

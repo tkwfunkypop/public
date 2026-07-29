@@ -84,7 +84,7 @@ CLAUDE.md の「Fal が使えないときは代替」の方針どおり **Higgsf
 | `f2_kaburagi` | 鏑木 | v1 | **承認済** |
 | `b1_hiiragi` | 柊源三 | v1 | **承認済**（質感の基準カット） |
 | `f6_kurogane` | 黒金 | v3 | 検品待ち |
-| `f6_yamato` | 大和 | v3 | 検品待ち・`prompts.json` に無い追加カット |
+| `f6_yamato` | 大和 | v4 | 顔をCANON構造に修正済・`prompts.json` に無い追加カット |
 | `f5_ri` | 李 | v3 | 検品待ち |
 | `f4_kumoi` | 雲井 | v3 | 検品待ち |
 | `f3_ukai` | 鵜飼 | v3 | 検品待ち |
@@ -92,8 +92,20 @@ CLAUDE.md の「Fal が使えないときは代替」の方針どおり **Higgsf
 | `key_building` | — | — | **保留**（建物CANON未確定） |
 | `key_rooftop` | — | — | **保留**（同上・九人が揃うカット） |
 
-**生成物の目視検品はしていない。** この作業コンテナは画像配信CDNをネットワークポリシーで
-弾かれるため、生成した画像を開いて確認する手段が無い。合否判定は人間側で行う必要がある。
+### 目視検品について
+
+作業コンテナは画像配信CDNへの直接アクセスをネットワークポリシーで弾かれるが、
+**Adobe コネクタの `asset_inline_preview` は画像を取得して表示できる**ため、
+生成物とCANONを見比べての検品が可能。URLを渡すだけでよい。
+
+```
+asset_inline_preview(presignedUrl: "<画像URL>", size: 700)
+```
+
+大和の顔の修正はこれで差分を特定して直した。以後の検品もこの手順で行う。
+
+なお Adobe の画像**編集**ツール（`image_apply_adjustments` 等）は許可ドメイン制で、
+Higgsfield の配信ドメインを受け付けない。閲覧はできるが編集はできない。
 
 `key_building` / `key_rooftop` は建物外形が写る。建物候補Y7の確定承認が出ていないため、
 外形をCANON固定しない方針でここでは生成していない。`fetch-assets.mjs` はこの2件を
