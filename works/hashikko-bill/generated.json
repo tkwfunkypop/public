@@ -1,12 +1,14 @@
 {
   "_comment": "はしっこビル図版の生成結果。取得: node works/hashikko-bill/fetch-assets.mjs",
-  "_note": "確定済みキャラクターCORE（01_*_CharacterBible_Core）を参照画像として渡し、正面全身1カットに起こし直したもの。プロンプトから人物描写を排し、設計は参照画像だけに担わせている（v1では prompts.json の人物描写が参照と競合し、デザインが変わってしまったため差し替え）。",
+  "_method": "参照画像2枚方式。1枚目＝確定済みキャラクターCORE（01_*_CharacterBible_Core）がデザインの正。2枚目＝承認済みの b1_hiiragi（job a8434a32）が質感の正。プロンプトには人物描写を書かず、デザインは1枚目、表面質感は2枚目から取るよう指示している。",
+  "_history": "v1=prompts.json の人物描写を併記→テキストが参照を上書きしデザインが変わった。v2=描写を全排除→デザインは合ったが質感が抜けた。v3=参照2枚で両立。",
   "_env": "Fal はこのコンテナのネットワークポリシーで弾かれるため、CLAUDE.md の方針どおり代替（Higgsfield / nano_banana_pro）で生成。",
   "generatedAt": "2026-07-29",
   "provider": "higgsfield",
   "model": "nano_banana_pro",
   "resolution": "2k",
   "outDir": "works/hashikko-bill/assets",
+  "styleRef": "a8434a32-5c17-4c81-8cf2-bfaf353c0766",
   "items": [
     {
       "id": "f7_hikari",
@@ -14,66 +16,12 @@
       "aspect_ratio": "2:3",
       "width": 1696,
       "height": 2528,
-      "approved": false,
+      "version": "v1",
+      "approved": true,
+      "note": "人間承認済み。CharacterSheet/Source に保存済みのものと同一。",
       "ref_core": "2385f36b-65e6-455b-a357-3c02deca885d",
-      "job_id": "9a551090-241d-4a90-bb0c-5b1b5c1c7933",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_123811_9a551090-241d-4a90-bb0c-5b1b5c1c7933.png"
-    },
-    {
-      "id": "f6_kurogane",
-      "character": "KUROGANE",
-      "aspect_ratio": "2:3",
-      "width": 1696,
-      "height": 2528,
-      "approved": false,
-      "ref_core": "3cdd85c1-5db2-4708-84e7-a68edda8000e",
-      "job_id": "24732791-4b95-4d33-b08c-060344316eba",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_124054_24732791-4b95-4d33-b08c-060344316eba.png"
-    },
-    {
-      "id": "f6_yamato",
-      "character": "YAMATO",
-      "aspect_ratio": "2:3",
-      "width": 1696,
-      "height": 2528,
-      "approved": false,
-      "note": "6F くろがね堂の19歳バイト。prompts.json に専用カットが無く、imageboard.html にも data-asset 枠が無い追加カット。",
-      "ref_core": "b750715b-d67b-45e9-8f54-db6d4a17d47d",
-      "job_id": "660cbbcf-a949-4b7f-856e-7aac70e863fb",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_123818_660cbbcf-a949-4b7f-856e-7aac70e863fb.png"
-    },
-    {
-      "id": "f5_ri",
-      "character": "LI",
-      "aspect_ratio": "2:3",
-      "width": 1696,
-      "height": 2528,
-      "approved": false,
-      "ref_core": "f3b8214d-cafe-42ff-a269-862386330496",
-      "job_id": "40530237-03a2-4c53-936b-3a656120e797",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_123823_40530237-03a2-4c53-936b-3a656120e797.png"
-    },
-    {
-      "id": "f4_kumoi",
-      "character": "KUMOI",
-      "aspect_ratio": "2:3",
-      "width": 1696,
-      "height": 2528,
-      "approved": false,
-      "ref_core": "cfd590f9-6764-41c0-8947-d1ddd2ac7e09",
-      "job_id": "5af1d32b-9d9d-4a7b-b733-1c53ca94f2e3",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_123826_5af1d32b-9d9d-4a7b-b733-1c53ca94f2e3.png"
-    },
-    {
-      "id": "f3_ukai",
-      "character": "UKAI",
-      "aspect_ratio": "2:3",
-      "width": 1696,
-      "height": 2528,
-      "approved": false,
-      "ref_core": "05da55f2-791c-41c3-bd0b-87e5ef6014d6",
-      "job_id": "1eb42831-80ff-405d-8f45-e871de4468bb",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_123834_1eb42831-80ff-405d-8f45-e871de4468bb.png"
+      "job_id": "fbe2b147-a067-4ffc-98e8-c1c6adc0438c",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121858_fbe2b147-a067-4ffc-98e8-c1c6adc0438c.png"
     },
     {
       "id": "f2_kaburagi",
@@ -81,21 +29,12 @@
       "aspect_ratio": "2:3",
       "width": 1696,
       "height": 2528,
-      "approved": false,
+      "version": "v1",
+      "approved": true,
+      "note": "人間承認済み。CharacterSheet/Source に保存済みのものと同一。",
       "ref_core": "e43324b7-8a8f-4394-a63f-a50ac6b4d984",
-      "job_id": "e5dbd6e0-c6af-47bd-9efe-8089ff433194",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_123837_e5dbd6e0-c6af-47bd-9efe-8089ff433194.png"
-    },
-    {
-      "id": "f1_tome",
-      "character": "HOSHINO_TOME",
-      "aspect_ratio": "2:3",
-      "width": 1696,
-      "height": 2528,
-      "approved": false,
-      "ref_core": "a17a62d5-f663-4014-9273-47de5319fae2",
-      "job_id": "5f9b0d6e-da8f-42ba-b570-19082951dff3",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_123840_5f9b0d6e-da8f-42ba-b570-19082951dff3.png"
+      "job_id": "c4f0ecbe-977f-4998-a728-3713a6666dff",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121938_c4f0ecbe-977f-4998-a728-3713a6666dff.png"
     },
     {
       "id": "b1_hiiragi",
@@ -103,10 +42,85 @@
       "aspect_ratio": "2:3",
       "width": 1696,
       "height": 2528,
-      "approved": false,
+      "version": "v1",
+      "approved": true,
+      "note": "人間承認済み。質感の基準カットとして他8体の参照2枚目に使っている。",
       "ref_core": "f8ba67b7-2a2e-444d-a9f1-bf0354ec5e86",
-      "job_id": "c1946ebb-162a-4c8a-8b0f-d943d17a09e9",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_123842_c1946ebb-162a-4c8a-8b0f-d943d17a09e9.png"
+      "job_id": "a8434a32-5c17-4c81-8cf2-bfaf353c0766",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121947_a8434a32-5c17-4c81-8cf2-bfaf353c0766.png"
+    },
+    {
+      "id": "f6_kurogane",
+      "character": "KUROGANE",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "version": "v3",
+      "approved": false,
+      "ref_core": "3cdd85c1-5db2-4708-84e7-a68edda8000e",
+      "job_id": "7de3b8e2-3359-4d3e-bca3-66b3479f3231",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_124344_7de3b8e2-3359-4d3e-bca3-66b3479f3231.png"
+    },
+    {
+      "id": "f6_yamato",
+      "character": "YAMATO",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "version": "v3",
+      "approved": false,
+      "note": "6F くろがね堂の19歳バイト。prompts.json に専用カットが無く、imageboard.html にも data-asset 枠が無い追加カット。",
+      "ref_core": "b750715b-d67b-45e9-8f54-db6d4a17d47d",
+      "job_id": "e93435e8-37fe-4245-a5cd-6bfe193a9917",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_124348_e93435e8-37fe-4245-a5cd-6bfe193a9917.png"
+    },
+    {
+      "id": "f5_ri",
+      "character": "LI",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "version": "v3",
+      "approved": false,
+      "ref_core": "f3b8214d-cafe-42ff-a269-862386330496",
+      "job_id": "b1ccb0c7-5702-4aa2-9917-442e48f372a9",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_124353_b1ccb0c7-5702-4aa2-9917-442e48f372a9.png"
+    },
+    {
+      "id": "f4_kumoi",
+      "character": "KUMOI",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "version": "v3",
+      "approved": false,
+      "ref_core": "cfd590f9-6764-41c0-8947-d1ddd2ac7e09",
+      "job_id": "2aa6d7d0-0a27-4173-88c0-1fa6ad4ecbbc",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_124524_2aa6d7d0-0a27-4173-88c0-1fa6ad4ecbbc.png"
+    },
+    {
+      "id": "f3_ukai",
+      "character": "UKAI",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "version": "v3",
+      "approved": false,
+      "ref_core": "05da55f2-791c-41c3-bd0b-87e5ef6014d6",
+      "job_id": "48c63be0-2009-4281-9bca-22e72b7d1070",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_124408_48c63be0-2009-4281-9bca-22e72b7d1070.png"
+    },
+    {
+      "id": "f1_tome",
+      "character": "HOSHINO_TOME",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "version": "v3",
+      "approved": false,
+      "ref_core": "a17a62d5-f663-4014-9273-47de5319fae2",
+      "job_id": "15e08a95-5380-4b41-8887-3611f64ca017",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_124412_15e08a95-5380-4b41-8887-3611f64ca017.png"
     },
     {
       "id": "key_building",
