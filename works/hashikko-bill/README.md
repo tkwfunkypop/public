@@ -98,6 +98,22 @@ CLAUDE.md の「Fal が使えないときは代替」の方針どおり **Higgsf
 （例：星野トメは「菊の髪飾りの小柄な老婆」ではなく裾長の黒衣の柱状シルエット、
 雲井は「硝子ドームの頭」ではなく卵型の白い顔）。図版の正はCOREであり、`prompts.json` ではない。
 
+### 脇役キャラクターデザイン（絵コンテ用に追加）
+
+物語に必要で九人のCANONに含まれていない人物を5体追加した。`generated.json` の
+`kind: supporting_cast`。いずれも既存COREを参照に渡して造形を引き継いでいる。
+
+| ID | 人物 | 出番 | 設計 |
+|---|---|---|---|
+| `cast_ukai_child` | 鵜飼（11歳） | 第六章の回想 | UKAI CORE から。角ばった白い頭・黒い炎の髪・縫い目の口・石板色はそのまま、比率だけ子供に。ボタンシャツ／半ズボン／膝下靴下 |
+| `cast_ukai_mother` | 鵜飼の母 | 同上 | 細長い柱状。のっぺりした白い卵形の顔。生成りの前掛け＋墨色のワンピース。襟に灯火橙が一点だけ入り7Fの人だと分かる |
+| `cast_ukai_father` | 鵜飼の父 | 同上 | 真鍮色を差して2Fの人だと分かる |
+| `cast_hiiragi_53` | 柊源三（53歳） | 第一章・第七章の回想 | 猫背ではなくまだ背が伸びている。電球は房ではなく一個、まだ点いていない |
+| `cast_developer` | 開発業者 | 第五章 | **意図的にハウススタイルを外している**。滑らかで左右対称、現代的なスーツ、修理跡なし、吊り下げ道具なし、**自分の色を持たない**。このビルの人間ではない、という記号 |
+
+`cast_developer` だけが配色システムの外にいる。これは「一画面に複数社の色が出るのは協働時だけ」
+というルールの裏返しで、彼はどの階の色も持てない。
+
 ### 絵コンテ（5分尺アニメ版）
 
 `storyboard/` に手描き鉛筆風の絵コンテ一式。
@@ -106,6 +122,7 @@ CLAUDE.md の「Fal が使えないときは代替」の方針どおり **Higgsf
 |---|---|
 | `storyboard/storyboard.json` | カット表の正本。全78カット／9シーケンス／299秒（4:59） |
 | `storyboard/storyboard.html` | 絵コンテ用紙形式のシート。カット番号・画・内容・台詞・注記・秒数 |
+| `storyboard/panel-prompts.json` | 各カットの鉛筆パネル生成プロンプト。共通指定は `suffix`、参照COREは `refs` に一元化 |
 
 ```
 https://raw.githack.com/tkwfunkypop/public/claude/prompts-json-10cut-generation-cisssw/works/hashikko-bill/storyboard/storyboard.html
@@ -120,7 +137,7 @@ https://raw.githack.com/tkwfunkypop/public/claude/prompts-json-10cut-generation-
 | B5 閉じた七つの扉 | I74 開いたままの七つの扉 | 不干渉 → 開放 |
 | A4 点かない2と6 | I75 全ランプ点灯 | 四十年の断絶 → 解消 |
 
-鉛筆パネル21枚は `generated.json` の `kind: storyboard_panel` に記録。人物入りのカットは
+鉛筆パネルは全78カット分そろっている。`generated.json` の `kind: storyboard_panel` に記録。人物入りのカットは
 確定済みCOREを参照に渡して鉛筆で描き直しているため、造形は追える。
 **ただしパネルはコンテ用のラフであり、CORE照合は通していない**
 （群衆カットのH67・H64は人物が一般化している。本番作画では各キャラのCORE参照が必要）。
