@@ -2103,6 +2103,115 @@
       "job_id": "af52a196-7c2d-40e2-926b-c16b68f44d66",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_032754_af52a196-7c2d-40e2-926b-c16b68f44d66.png",
       "method": "03と同じ参照ペア＋STORY STATES書式の文章指定"
+    },
+    {
+      "id": "bible_hikari_03_props",
+      "kind": "bible_sheet",
+      "character": "NANAO_HIKARI",
+      "sheet": "03 PROPS & INTERACTION (EMBER体系)",
+      "job_id": "69faeff8-cffa-4618-9ec6-b17dada201f8",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_032952_69faeff8-cffa-4618-9ec6-b17dada201f8.png",
+      "method": "CORE第1参照＋完成02シート第2参照（誤検知2回のため参照差替で突破）",
+      "note": "初回dc737ff4・再投入36546ddaが誤検知/未完"
+    },
+    {
+      "id": "bible_kurogane_05_motion",
+      "kind": "bible_sheet",
+      "character": "KUROGANE",
+      "sheet": "05 MOTION & PERFORMANCE (EMBER体系)",
+      "job_id": "391238c7-4177-445e-ad75-8c734eaecd18",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_033143_391238c7-4177-445e-ad75-8c734eaecd18.png",
+      "method": "03/04と同じ参照ペア＋MOTION書式の文章指定（口なしキャラはSILENT VOICE仕様）"
+    },
+    {
+      "id": "bible_ri_05_motion",
+      "kind": "bible_sheet",
+      "character": "LI",
+      "sheet": "05 MOTION & PERFORMANCE (EMBER体系)",
+      "job_id": "44a5b8b1-29a8-426d-89bf-dbf983da07d6",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_033157_44a5b8b1-29a8-426d-89bf-dbf983da07d6.png",
+      "method": "03/04と同じ参照ペア＋MOTION書式の文章指定（口なしキャラはSILENT VOICE仕様）"
+    },
+    {
+      "id": "bible_kumoi_05_motion",
+      "kind": "bible_sheet",
+      "character": "KUMOI",
+      "sheet": "05 MOTION & PERFORMANCE (EMBER体系)",
+      "job_id": "c8e8b460-7875-4d99-be41-f64e7897f91f",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_033205_c8e8b460-7875-4d99-be41-f64e7897f91f.png",
+      "method": "03/04と同じ参照ペア＋MOTION書式の文章指定（口なしキャラはSILENT VOICE仕様）"
+    },
+    {
+      "id": "bible_ukai_05_motion",
+      "kind": "bible_sheet",
+      "character": "UKAI",
+      "sheet": "05 MOTION & PERFORMANCE (EMBER体系)",
+      "job_id": "243a6907-0356-49e8-9580-5ecc6d0161f7",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_033227_243a6907-0356-49e8-9580-5ecc6d0161f7.png",
+      "method": "03/04と同じ参照ペア＋MOTION書式の文章指定（口なしキャラはSILENT VOICE仕様）"
+    },
+    {
+      "id": "bible_kaburagi_05_motion",
+      "kind": "bible_sheet",
+      "character": "KABURAGI",
+      "sheet": "05 MOTION & PERFORMANCE (EMBER体系)",
+      "job_id": "63048c3f-e048-4e86-9dbe-8fa6336feb09",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_033230_63048c3f-e048-4e86-9dbe-8fa6336feb09.png",
+      "method": "03/04と同じ参照ペア＋MOTION書式の文章指定（口なしキャラはSILENT VOICE仕様）"
+    },
+    {
+      "id": "bible_tome_05_motion",
+      "kind": "bible_sheet",
+      "character": "HOSHINO_TOME",
+      "sheet": "05 MOTION & PERFORMANCE (EMBER体系)",
+      "job_id": "489178aa-db2f-404f-8b74-dd136158a6e9",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_033238_489178aa-db2f-404f-8b74-dd136158a6e9.png",
+      "method": "03/04と同じ参照ペア＋MOTION書式の文章指定（口なしキャラはSILENT VOICE仕様）"
+    },
+    {
+      "id": "bible_hiiragi_05_motion",
+      "kind": "bible_sheet",
+      "character": "HIIRAGI_GENZO",
+      "sheet": "05 MOTION & PERFORMANCE (EMBER体系)",
+      "job_id": "557bd889-31f0-4dc6-bbd5-cae9c27401c0",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_033249_557bd889-31f0-4dc6-bbd5-cae9c27401c0.png",
+      "method": "03/04と同じ参照ペア＋MOTION書式の文章指定（口なしキャラはSILENT VOICE仕様）"
+    },
+    {
+      "id": "bible_ukai_child_05_motion",
+      "kind": "bible_sheet",
+      "character": "UKAI_CHILD",
+      "sheet": "05 MOTION & PERFORMANCE (EMBER体系)",
+      "job_id": "e2449445-d693-4ea6-bfe5-402c2ba45570",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_033254_e2449445-d693-4ea6-bfe5-402c2ba45570.png",
+      "method": "03/04と同じ参照ペア＋MOTION書式の文章指定（口なしキャラはSILENT VOICE仕様）"
+    },
+    {
+      "id": "bible_ukai_father_05_motion",
+      "kind": "bible_sheet",
+      "character": "UKAI_FATHER",
+      "sheet": "05 MOTION & PERFORMANCE (EMBER体系)",
+      "job_id": "4a99e000-2809-4c0c-a58d-ca1fb90b05aa",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_033318_4a99e000-2809-4c0c-a58d-ca1fb90b05aa.png",
+      "method": "03/04と同じ参照ペア＋MOTION書式の文章指定（口なしキャラはSILENT VOICE仕様）"
+    },
+    {
+      "id": "bible_hiiragi_53_05_motion",
+      "kind": "bible_sheet",
+      "character": "HIIRAGI_GENZO_53",
+      "sheet": "05 MOTION & PERFORMANCE (EMBER体系)",
+      "job_id": "84050343-5a96-4552-b2c2-b13770e9da81",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_033326_84050343-5a96-4552-b2c2-b13770e9da81.png",
+      "method": "03/04と同じ参照ペア＋MOTION書式の文章指定（口なしキャラはSILENT VOICE仕様）"
+    },
+    {
+      "id": "bible_developer_05_motion",
+      "kind": "bible_sheet",
+      "character": "DEVELOPER_AGENT",
+      "sheet": "05 MOTION & PERFORMANCE (EMBER体系)",
+      "job_id": "532277f2-cb87-40ed-bdc5-304a3582fb3e",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_033332_532277f2-cb87-40ed-bdc5-304a3582fb3e.png",
+      "method": "03/04と同じ参照ペア＋MOTION書式の文章指定（口なしキャラはSILENT VOICE仕様）"
     }
   ]
 }
