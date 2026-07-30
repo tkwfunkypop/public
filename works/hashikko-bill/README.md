@@ -228,7 +228,9 @@ asset_inline_preview(presignedUrl: "<画像URL>", size: 700)
 Higgsfield の配信ドメインを受け付けない。閲覧はできるが編集はできない。
 
 `key_building` / `key_rooftop` は建物外形が写る。建物候補Y7の確定承認が出ていないため、
-外形をCANON固定しない方針でここでは生成していない。`fetch-assets.mjs` はこの2件を
+外形をCANON固定しない方針でここでは生成していない。
+**世界観リファレンスは受領済み**（読解と絶対条件との衝突2点は `building/WORLD_REFERENCE.md`）。
+生成参照に使うには Higgsfield へのアップロードが必要（media_id 未登録）。`fetch-assets.mjs` はこの2件を
 `status: on_hold` として自動的に取得対象外にする。
 
 大和は `prompts.json` に専用カットが無い追加カット。**6Fは親方と若手の二人なので、
