@@ -3056,6 +3056,75 @@
       "superseded_job_id": [
         "383b1a7c-2a28-4e19-b9af-c4161d94338f"
       ]
+    },
+    {
+      "id": "building_fusion_p1_gothic_dominant",
+      "kind": "design_variant",
+      "character": "果端ビル",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "ユーザー提供2画像（黒鉄ゴシック塔×和の雑居ビル）の融合案。案1：ゴシック優勢 — 黒鉄ゴシックの躯体に和の要素（瓦庇・看板・外階段・アンテナ）を移植。共通：白布×プラムのパッチ・黒鉄ステッチ・無地看板・窓は顔に見えない配置・S字の歪み",
+      "job_id": "8375889f-e128-4f32-95ab-24fdb6e8433e",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_113046_8375889f-e128-4f32-95ab-24fdb6e8433e.png",
+      "method": "2参照画像の言語化による融合（配合比・構成を5案で変化）"
+    },
+    {
+      "id": "building_fusion_p2_japanese_dominant",
+      "kind": "design_variant",
+      "character": "果端ビル",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "ユーザー提供2画像（黒鉄ゴシック塔×和の雑居ビル）の融合案。案2：和優勢 — 雑居ビルの積層に尖頭アーチ窓・黒鉄トリム・プラムのパッチを上書き。共通：白布×プラムのパッチ・黒鉄ステッチ・無地看板・窓は顔に見えない配置・S字の歪み",
+      "job_id": "d37dc6c0-2841-410d-96f3-105f89113830",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_113050_d37dc6c0-2841-410d-96f3-105f89113830.png",
+      "method": "2参照画像の言語化による融合（配合比・構成を5案で変化）"
+    },
+    {
+      "id": "building_fusion_p3_vertical_gradient",
+      "kind": "design_variant",
+      "character": "果端ビル",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "ユーザー提供2画像（黒鉄ゴシック塔×和の雑居ビル）の融合案。案3：縦グラデーション — 下層は和の町家、上に行くほどゴシック化して尖塔で終わる。共通：白布×プラムのパッチ・黒鉄ステッチ・無地看板・窓は顔に見えない配置・S字の歪み",
+      "job_id": "755013cd-17be-4062-893b-3ff7d5dd4712",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_113104_755013cd-17be-4062-893b-3ff7d5dd4712.png",
+      "method": "2参照画像の言語化による融合（配合比・構成を5案で変化）"
+    },
+    {
+      "id": "building_fusion_p4_iron_ribcage",
+      "kind": "design_variant",
+      "character": "果端ビル",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "ユーザー提供2画像（黒鉄ゴシック塔×和の雑居ビル）の融合案。案4：黒鉄の肋骨 — 和の積層を黒鉄のゴシックリブ（外骨格）で締め上げる。共通：白布×プラムのパッチ・黒鉄ステッチ・無地看板・窓は顔に見えない配置・S字の歪み",
+      "job_id": "fa32f71e-bf86-462e-978f-3b6146410a1a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_113110_fa32f71e-bf86-462e-978f-3b6146410a1a.png",
+      "method": "2参照画像の言語化による融合（配合比・構成を5案で変化）"
+    },
+    {
+      "id": "building_fusion_p5_gaunt_gravestone",
+      "kind": "design_variant",
+      "character": "果端ビル",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "ユーザー提供2画像（黒鉄ゴシック塔×和の雑居ビル）の融合案。案5：墓標型 — 極端に細長く傾いた塔、頂に和の小屋とアンテナ。共通：白布×プラムのパッチ・黒鉄ステッチ・無地看板・窓は顔に見えない配置・S字の歪み",
+      "job_id": "2a4ce126-d934-4785-995f-50a0fa363482",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_113115_2a4ce126-d934-4785-995f-50a0fa363482.png",
+      "method": "2参照画像の言語化による融合（配合比・構成を5案で変化）"
+    },
+    {
+      "id": "key_rooftop",
+      "kind": "key_art",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "九人の屋上カットv2：本編9人の承認済み図版を全員分参照に渡して本人たちで再生成（ひかりは新衣装ゴスロリ）。旧版は汎用人形だったため差し替え",
+      "job_id": "eca637af-16c0-4f71-a0b8-77948da04caa",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_112730_eca637af-16c0-4f71-a0b8-77948da04caa.png",
+      "method": "9図版マルチ参照＋シルエット言語化",
+      "superseded_job_id": [
+        "a8dfea9b-5b43-48be-80af-70ee116ac261",
+        "383b1a7c-2a28-4e19-b9af-c4161d94338f"
+      ]
     }
   ]
 }
