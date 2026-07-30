@@ -3158,6 +3158,39 @@
       "job_id": "d31a4d48-43c5-44e1-9f29-89cba8247aff",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_114120_d31a4d48-43c5-44e1-9f29-89cba8247aff.png",
       "method": "案2(d37dc6c0)を構造参照＋添付画像の言語化＋オフィスビル寸法の明示"
+    },
+    {
+      "id": "building_fusion_p3a_cliffedge",
+      "kind": "design_variant",
+      "character": "果端ビル",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "2Aを構造参照に、崖っぷち（端っこ感）×アンデッド色味×実ビル感（エレベーター根拠）の第3ラウンド。案3-A：崖っぷち忠実版 — 2Aの意匠のまま崖の縁へ移設。死人色の青灰緑漆喰・階ごとに一色の窓灯り・屋上エレベーター機械室・曲がった街灯・外付け螺旋階段・崖下は霧",
+      "job_id": "22f453d0-4486-4f83-b24f-8ee08ca08c37",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_133234_22f453d0-4486-4f83-b24f-8ee08ca08c37.png",
+      "method": "2A(1386a5b6)参照＋新添付2枚目の要素言語化"
+    },
+    {
+      "id": "building_fusion_p3b_undead",
+      "kind": "design_variant",
+      "character": "果端ビル",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "2Aを構造参照に、崖っぷち（端っこ感）×アンデッド色味×実ビル感（エレベーター根拠）の第3ラウンド。案3-B：腐敗強め — 緑青の死色漆喰・窓下の腐り染み・黒錆トリム・縫合糸ステッチ・基礎の角が崩れ落ちる崖・病んだ薄緑の空",
+      "job_id": "e2aa9302-b0fe-4ead-b185-23082f911bd5",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_133240_e2aa9302-b0fe-4ead-b185-23082f911bd5.png",
+      "method": "2A(1386a5b6)参照＋新添付2枚目の要素言語化"
+    },
+    {
+      "id": "building_fusion_p3c_fingerrock",
+      "kind": "design_variant",
+      "character": "果端ビル",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "2Aを構造参照に、崖っぷち（端っこ感）×アンデッド色味×実ビル感（エレベーター根拠）の第3ラウンド。案3-C：岩の指先 — 両側が切れ落ちた岩柱の上に実ビル7階建て。ファサードにエレベーターシャフトの膨らみ＋屋上機械室、フェルトの吊り橋で世界とつながる。蝋人形の青白い漆喰・青緑のリムライト",
+      "job_id": "a480537c-aead-4ced-8692-e6a711cdf85b",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_133247_a480537c-aead-4ced-8692-e6a711cdf85b.png",
+      "method": "2A(1386a5b6)参照＋新添付2枚目の要素言語化"
     }
   ]
 }
