@@ -5526,6 +5526,105 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_230453_78be7288-a12f-4208-a785-d2ebd2cbea25.png",
       "superseded_job_id": "d41d3422-78f0-4431-aefb-776a37e424d1",
       "method": "セット正典＋図版マルチ参照"
+    },
+    {
+      "id": "sf_sb10_seven_bins",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "スタートフレーム v3 カット10：キャスティング厳密指定（参照番号→キャラ対応・総人数固定・重複/捏造禁止）でリロール",
+      "job_id": "e50893a9-256c-4ec8-8d5c-5f5a416ec395",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_231028_e50893a9-256c-4ec8-8d5c-5f5a416ec395.png",
+      "superseded_job_id": "6f905ce6-e5fd-4bac-8968-5972ee2d7f09",
+      "method": "セット正典＋厳密キャスティング"
+    },
+    {
+      "id": "sf_sb17_meeting",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "スタートフレーム v3 カット17：キャスティング厳密指定（参照番号→キャラ対応・総人数固定・重複/捏造禁止）でリロール",
+      "job_id": "2a57be81-1f59-42ab-a859-647d0c8601cd",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_231041_2a57be81-1f59-42ab-a859-647d0c8601cd.png",
+      "superseded_job_id": "107c788d-43d4-487b-bf3c-4f10468784fa",
+      "method": "セット正典＋厳密キャスティング"
+    },
+    {
+      "id": "sf_sb23_ukai",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "スタートフレーム v3 カット23：キャスティング厳密指定（参照番号→キャラ対応・総人数固定・重複/捏造禁止）でリロール",
+      "job_id": "10790a54-da56-4198-9237-8c34406c308e",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_231050_10790a54-da56-4198-9237-8c34406c308e.png",
+      "superseded_job_id": "e5d2fb54-e7cb-4f40-8677-c3c844c5a4eb",
+      "method": "セット正典＋厳密キャスティング"
+    },
+    {
+      "id": "sf_sb25_chaos",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "スタートフレーム v3 カット25：キャスティング厳密指定（参照番号→キャラ対応・総人数固定・重複/捏造禁止）でリロール",
+      "job_id": "633f81e7-5fcc-4765-9c53-5183488b2b48",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_231100_633f81e7-5fcc-4765-9c53-5183488b2b48.png",
+      "superseded_job_id": "6b0833fb-91ef-43f0-920e-809bb4c8b534",
+      "method": "セット正典＋厳密キャスティング"
+    },
+    {
+      "id": "sf_sb39_tome_delight",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "スタートフレーム v3 カット39：キャスティング厳密指定（参照番号→キャラ対応・総人数固定・重複/捏造禁止）でリロール",
+      "job_id": "bb13320a-3d9b-467e-a96d-484f66909e6a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_231108_bb13320a-3d9b-467e-a96d-484f66909e6a.png",
+      "superseded_job_id": "da65aab2-2118-4e24-b06f-9137ab11e200",
+      "method": "セット正典＋厳密キャスティング"
+    },
+    {
+      "id": "sf_sb48_stairs_busy",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "スタートフレーム v3 カット48：キャスティング厳密指定（参照番号→キャラ対応・総人数固定・重複/捏造禁止）でリロール",
+      "job_id": "bda16511-10ee-4bff-a0e4-76908372201a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_231124_bda16511-10ee-4bff-a0e4-76908372201a.png",
+      "superseded_job_id": "8dbe87a3-9382-4ada-a12e-1a42e41e2cbe",
+      "method": "セット正典＋厳密キャスティング"
+    },
+    {
+      "id": "sf_sb64_carry",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "スタートフレーム v3 カット64：キャスティング厳密指定（参照番号→キャラ対応・総人数固定・重複/捏造禁止）でリロール",
+      "job_id": "408694f2-6783-4d0a-8218-a9dd9096ffd3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_231134_408694f2-6783-4d0a-8218-a9dd9096ffd3.png",
+      "superseded_job_id": "0b1a7f4c-91e5-4a7c-9155-9851cae48c19",
+      "method": "セット正典＋厳密キャスティング"
+    },
+    {
+      "id": "sf_sb67_table",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "スタートフレーム v3 カット67：キャスティング厳密指定（参照番号→キャラ対応・総人数固定・重複/捏造禁止）でリロール",
+      "job_id": "10f5eea9-dacf-4019-a343-baca865b66fc",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_231144_10f5eea9-dacf-4019-a343-baca865b66fc.png",
+      "superseded_job_id": "800ebf6d-68e0-49f9-83c7-e6487d3bf923",
+      "method": "セット正典＋厳密キャスティング"
+    },
+    {
+      "id": "sf_sb73_fog_window",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "スタートフレーム v3 カット73：キャスティング厳密指定（参照番号→キャラ対応・総人数固定・重複/捏造禁止）でリロール",
+      "job_id": "4b4185c0-1fdb-4d37-affa-e44655d8f183",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_231148_4b4185c0-1fdb-4d37-affa-e44655d8f183.png",
+      "superseded_job_id": "eefd2405-0d96-42d5-8535-8d4eb2d9fdc7",
+      "method": "セット正典＋厳密キャスティング"
     }
   ]
 }
