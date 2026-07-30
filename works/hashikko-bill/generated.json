@@ -1873,6 +1873,114 @@
       "job_id": "8aaecf85-d829-41dc-8569-031a26d3bc92",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_030309_8aaecf85-d829-41dc-8569-031a26d3bc92.png",
       "method": "承認済み04シート第1参照＋CORE第2参照（図版参照はセーフティ誤検知のため差し替え）"
+    },
+    {
+      "id": "bible_kurogane_03_props",
+      "kind": "bible_sheet",
+      "character": "KUROGANE",
+      "sheet": "03 PROPS & INTERACTION (EMBER体系)",
+      "job_id": "a84720ef-3765-42c4-8877-b4b92553c316",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_030543_a84720ef-3765-42c4-8877-b4b92553c316.png",
+      "method": "02と同じ参照ペア＋書式の文章指定（無害化語彙）"
+    },
+    {
+      "id": "bible_ri_03_props",
+      "kind": "bible_sheet",
+      "character": "LI",
+      "sheet": "03 PROPS & INTERACTION (EMBER体系)",
+      "job_id": "ff9535fc-47c4-4278-96fb-7946a48bb49c",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_030555_ff9535fc-47c4-4278-96fb-7946a48bb49c.png",
+      "method": "02と同じ参照ペア＋書式の文章指定（無害化語彙）"
+    },
+    {
+      "id": "bible_kumoi_03_props",
+      "kind": "bible_sheet",
+      "character": "KUMOI",
+      "sheet": "03 PROPS & INTERACTION (EMBER体系)",
+      "job_id": "a48df01c-5c9d-4d4a-bc3d-9c5eb8334a2f",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_030613_a48df01c-5c9d-4d4a-bc3d-9c5eb8334a2f.png",
+      "method": "02と同じ参照ペア＋書式の文章指定（無害化語彙）"
+    },
+    {
+      "id": "bible_ukai_03_props",
+      "kind": "bible_sheet",
+      "character": "UKAI",
+      "sheet": "03 PROPS & INTERACTION (EMBER体系)",
+      "job_id": "ebb67516-30a3-4fc0-86a0-aa5e938b790e",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_030619_ebb67516-30a3-4fc0-86a0-aa5e938b790e.png",
+      "method": "02と同じ参照ペア＋書式の文章指定（無害化語彙）"
+    },
+    {
+      "id": "bible_kaburagi_03_props",
+      "kind": "bible_sheet",
+      "character": "KABURAGI",
+      "sheet": "03 PROPS & INTERACTION (EMBER体系)",
+      "job_id": "a5302c83-f01a-4f3c-bac9-d9b36f64f15e",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_030625_a5302c83-f01a-4f3c-bac9-d9b36f64f15e.png",
+      "method": "02と同じ参照ペア＋書式の文章指定（無害化語彙）"
+    },
+    {
+      "id": "bible_tome_03_props",
+      "kind": "bible_sheet",
+      "character": "HOSHINO_TOME",
+      "sheet": "03 PROPS & INTERACTION (EMBER体系)",
+      "job_id": "14f80ca4-10c4-40cd-82cc-f2115ebfb1a9",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_030631_14f80ca4-10c4-40cd-82cc-f2115ebfb1a9.png",
+      "method": "02と同じ参照ペア＋書式の文章指定（無害化語彙）"
+    },
+    {
+      "id": "bible_hiiragi_03_props",
+      "kind": "bible_sheet",
+      "character": "HIIRAGI_GENZO",
+      "sheet": "03 PROPS & INTERACTION (EMBER体系)",
+      "job_id": "4eeaf100-2bba-428f-b910-698cd53e5f20",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_030650_4eeaf100-2bba-428f-b910-698cd53e5f20.png",
+      "method": "02と同じ参照ペア＋書式の文章指定（無害化語彙）"
+    },
+    {
+      "id": "bible_ukai_child_03_props",
+      "kind": "bible_sheet",
+      "character": "UKAI_CHILD",
+      "sheet": "03 PROPS & INTERACTION (EMBER体系)",
+      "job_id": "41a7d80c-cacd-42c3-a48a-9d6f6f47fcf8",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_030658_41a7d80c-cacd-42c3-a48a-9d6f6f47fcf8.png",
+      "method": "02と同じ参照ペア＋書式の文章指定（無害化語彙）"
+    },
+    {
+      "id": "bible_ukai_mother_03_props",
+      "kind": "bible_sheet",
+      "character": "UKAI_MOTHER",
+      "sheet": "03 PROPS & INTERACTION (EMBER体系)",
+      "job_id": "f21c5aa2-aa9c-4d06-b5c6-c21dbba892f1",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_030701_f21c5aa2-aa9c-4d06-b5c6-c21dbba892f1.png",
+      "method": "02と同じ参照ペア＋書式の文章指定（無害化語彙）"
+    },
+    {
+      "id": "bible_ukai_father_03_props",
+      "kind": "bible_sheet",
+      "character": "UKAI_FATHER",
+      "sheet": "03 PROPS & INTERACTION (EMBER体系)",
+      "job_id": "ed8a5ca0-9d24-4646-971e-53f4b7c5e153",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_030708_ed8a5ca0-9d24-4646-971e-53f4b7c5e153.png",
+      "method": "02と同じ参照ペア＋書式の文章指定（無害化語彙）"
+    },
+    {
+      "id": "bible_hiiragi_53_03_props",
+      "kind": "bible_sheet",
+      "character": "HIIRAGI_GENZO_53",
+      "sheet": "03 PROPS & INTERACTION (EMBER体系)",
+      "job_id": "18748b4c-3fc8-4faf-9e12-83eae82661f5",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_030726_18748b4c-3fc8-4faf-9e12-83eae82661f5.png",
+      "method": "02と同じ参照ペア＋書式の文章指定（無害化語彙）"
+    },
+    {
+      "id": "bible_developer_03_props",
+      "kind": "bible_sheet",
+      "character": "DEVELOPER_AGENT",
+      "sheet": "03 PROPS & INTERACTION (EMBER体系)",
+      "job_id": "2ec28342-5f64-488a-ae03-81e57eda67a7",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_030734_2ec28342-5f64-488a-ae03-81e57eda67a7.png",
+      "method": "02と同じ参照ペア＋書式の文章指定（無害化語彙）"
     }
   ]
 }
