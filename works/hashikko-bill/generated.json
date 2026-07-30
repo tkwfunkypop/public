@@ -2747,7 +2747,7 @@
       "character": "NANAO_HIKARI",
       "aspect_ratio": "2:3",
       "approved": false,
-      "note": "大和との類似解消のための衣装・髪型改案。A案：おかっぱボブ＋灯火橙の作務衣風上着＋プリーツスカート。顔の正準（縫い目の白い顔・鼻なし・太眉・黒い小さな目）とトランク塔・肩掛け鞄は固定。採用が決まるまで現行図版がCANON",
+      "note": "大和との類似解消のための衣装・髪型改案。A案：おかっぱボブ＋灯火橙の作務衣風上着＋プリーツスカート。顔の正準（縫い目の白い顔・鼻なし・太眉・黒い小さな目）とトランク塔・肩掛け鞄は固定。採用が決まるまで現行図版がCANON。※髪型込みの旧案 — 衣装のみのhikari_costume_v01〜v10系に置き換え",
       "job_id": "3adac631-9066-4f81-a938-9b20d86a51ca",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_100913_3adac631-9066-4f81-a938-9b20d86a51ca.png",
       "method": "現行図版第1参照＋CORE第2参照＋改案部分のみ言語化"
@@ -2758,7 +2758,7 @@
       "character": "NANAO_HIKARI",
       "aspect_ratio": "2:3",
       "approved": false,
-      "note": "大和との類似解消のための衣装・髪型改案。B案：三つ編み2本＋松葉緑コート＋生成りの配達前掛け。顔の正準（縫い目の白い顔・鼻なし・太眉・黒い小さな目）とトランク塔・肩掛け鞄は固定。採用が決まるまで現行図版がCANON",
+      "note": "大和との類似解消のための衣装・髪型改案。B案：三つ編み2本＋松葉緑コート＋生成りの配達前掛け。顔の正準（縫い目の白い顔・鼻なし・太眉・黒い小さな目）とトランク塔・肩掛け鞄は固定。採用が決まるまで現行図版がCANON。※髪型込みの旧案 — 衣装のみのhikari_costume_v01〜v10系に置き換え",
       "job_id": "4f94eb8f-9de9-44a4-b731-4081f7d06626",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_100522_4f94eb8f-9de9-44a4-b731-4081f7d06626.png",
       "method": "現行図版第1参照＋CORE第2参照＋改案部分のみ言語化"
@@ -2769,10 +2769,120 @@
       "character": "NANAO_HIKARI",
       "aspect_ratio": "2:3",
       "approved": false,
-      "note": "大和との類似解消のための衣装・髪型改案。C案：赤鉛筆挿しのお団子＋芥子色ケープ＋チャコールのつなぎ。顔の正準（縫い目の白い顔・鼻なし・太眉・黒い小さな目）とトランク塔・肩掛け鞄は固定。採用が決まるまで現行図版がCANON",
+      "note": "大和との類似解消のための衣装・髪型改案。C案：赤鉛筆挿しのお団子＋芥子色ケープ＋チャコールのつなぎ。顔の正準（縫い目の白い顔・鼻なし・太眉・黒い小さな目）とトランク塔・肩掛け鞄は固定。採用が決まるまで現行図版がCANON。※髪型込みの旧案 — 衣装のみのhikari_costume_v01〜v10系に置き換え",
       "job_id": "9649abba-d71a-425b-b3c0-17f68ee92015",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_100525_9649abba-d71a-425b-b3c0-17f68ee92015.png",
       "method": "現行図版第1参照＋CORE第2参照＋改案部分のみ言語化"
+    },
+    {
+      "id": "hikari_costume_v01_orange_work",
+      "kind": "design_variant",
+      "character": "NANAO_HIKARI",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "衣装のみ改案（髪型・顔・トランク塔・鞄は現行のまま）：灯火橙のワークジャケット×プリーツスカート",
+      "job_id": "e24b35e1-0aa4-4e39-a714-07c075b03811",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_102816_e24b35e1-0aa4-4e39-a714-07c075b03811.png",
+      "method": "現行図版第1参照＋CORE第2参照、衣装のみ言語化（ONLY THE COSTUME redesigned）"
+    },
+    {
+      "id": "hikari_costume_v02_green_apron",
+      "kind": "design_variant",
+      "character": "NANAO_HIKARI",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "衣装のみ改案（髪型・顔・トランク塔・鞄は現行のまま）：松葉緑コート×生成りの配達前掛け",
+      "job_id": "61f807ad-3282-4ee5-8fc3-018fffbb471a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_102819_61f807ad-3282-4ee5-8fc3-018fffbb471a.png",
+      "method": "現行図版第1参照＋CORE第2参照、衣装のみ言語化（ONLY THE COSTUME redesigned）"
+    },
+    {
+      "id": "hikari_costume_v03_mustard_cape",
+      "kind": "design_variant",
+      "character": "NANAO_HIKARI",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "衣装のみ改案（髪型・顔・トランク塔・鞄は現行のまま）：芥子色ケープ×チャコールのつなぎ",
+      "job_id": "0ade23c9-59b2-4bd8-ba09-4423dd4db33f",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_102832_0ade23c9-59b2-4bd8-ba09-4423dd4db33f.png",
+      "method": "現行図版第1参照＋CORE第2参照、衣装のみ言語化（ONLY THE COSTUME redesigned）"
+    },
+    {
+      "id": "hikari_costume_v04_futuristic",
+      "kind": "design_variant",
+      "character": "NANAO_HIKARI",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "衣装のみ改案（髪型・顔・トランク塔・鞄は現行のまま）：近未来：薄灰のテクニカルジャケット（非対称留め）",
+      "job_id": "2d8a23a6-a904-4e5a-aed7-23a34afd61f2",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_103217_2d8a23a6-a904-4e5a-aed7-23a34afd61f2.png",
+      "method": "現行図版第1参照＋CORE第2参照、衣装のみ言語化（ONLY THE COSTUME redesigned）"
+    },
+    {
+      "id": "hikari_costume_v05_gothic_lolita",
+      "kind": "design_variant",
+      "character": "NANAO_HIKARI",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "衣装のみ改案（髪型・顔・トランク塔・鞄は現行のまま）：ゴスロリ：黒フリルワンピース×白レース",
+      "job_id": "ea03da32-5f13-41ad-a2c8-eed0458cbfe6",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_103221_ea03da32-5f13-41ad-a2c8-eed0458cbfe6.png",
+      "method": "現行図版第1参照＋CORE第2参照、衣装のみ言語化（ONLY THE COSTUME redesigned）"
+    },
+    {
+      "id": "hikari_costume_v06_formal",
+      "kind": "design_variant",
+      "character": "NANAO_HIKARI",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "衣装のみ改案（髪型・顔・トランク塔・鞄は現行のまま）：フォーマル：チャコールのスリーピース",
+      "job_id": "b0a2b8c2-5ea9-4165-a5c8-fcedc5eb86f8",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_103226_b0a2b8c2-5ea9-4165-a5c8-fcedc5eb86f8.png",
+      "method": "現行図版第1参照＋CORE第2参照、衣装のみ言語化（ONLY THE COSTUME redesigned）"
+    },
+    {
+      "id": "hikari_costume_v07_sporty",
+      "kind": "design_variant",
+      "character": "NANAO_HIKARI",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "衣装のみ改案（髪型・顔・トランク塔・鞄は現行のまま）：スポーティー：紺トラックジャケット×ショーツ",
+      "job_id": "149c5edc-c845-4804-b48b-27eba0d1d694",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_103230_149c5edc-c845-4804-b48b-27eba0d1d694.png",
+      "method": "現行図版第1参照＋CORE第2参照、衣装のみ言語化（ONLY THE COSTUME redesigned）"
+    },
+    {
+      "id": "hikari_costume_v08_kimono",
+      "kind": "design_variant",
+      "character": "NANAO_HIKARI",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "衣装のみ改案（髪型・顔・トランク塔・鞄は現行のまま）：和：藍の着物×柿色の帯（たすき掛け）",
+      "job_id": "40855c1e-36f7-4f62-803f-b28f89787e97",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_103241_40855c1e-36f7-4f62-803f-b28f89787e97.png",
+      "method": "現行図版第1参照＋CORE第2参照、衣装のみ言語化（ONLY THE COSTUME redesigned）"
+    },
+    {
+      "id": "hikari_costume_v09_detective",
+      "kind": "design_variant",
+      "character": "NANAO_HIKARI",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "衣装のみ改案（髪型・顔・トランク塔・鞄は現行のまま）：探偵：ベージュのトレンチコート",
+      "job_id": "2ce08c2f-ece4-4e5a-b4a8-69b5d7da9447",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_103245_2ce08c2f-ece4-4e5a-b4a8-69b5d7da9447.png",
+      "method": "現行図版第1参照＋CORE第2参照、衣装のみ言語化（ONLY THE COSTUME redesigned）"
+    },
+    {
+      "id": "hikari_costume_v10_raincoat",
+      "kind": "design_variant",
+      "character": "NANAO_HIKARI",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "衣装のみ改案（髪型・顔・トランク塔・鞄は現行のまま）：雨の日：黄色いフィッシャーマンレインコート",
+      "job_id": "7f98dbd1-53cf-40a4-8e53-ddb687322feb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_103252_7f98dbd1-53cf-40a4-8e53-ddb687322feb.png",
+      "method": "現行図版第1参照＋CORE第2参照、衣装のみ言語化（ONLY THE COSTUME redesigned）"
     }
   ]
 }
