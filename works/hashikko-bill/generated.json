@@ -2726,6 +2726,13 @@
       "model": "seed_audio",
       "job_id": "1c017eec-0cbf-47b1-8812-89892ff86c33",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041727_1c017eec-0cbf-47b1-8812-89892ff86c33.wav"
+    },
+    {
+      "id": "animatic_export_v1",
+      "kind": "animatic_export",
+      "note": "音声入り動画コンテ（78カット・299秒・960×540・30fps・ナレ＋台詞27クリップ）。Higgsfieldサンドボックス上でRemotionレンダし media_upload で書き出し。フル解像度が必要な場合はローカルで npm run render",
+      "media_id": "f23029e6-b2b6-4872-bb30-774aea49a8a4",
+      "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/f23029e6-b2b6-4872-bb30-774aea49a8a4.mp4"
     }
   ]
 }
