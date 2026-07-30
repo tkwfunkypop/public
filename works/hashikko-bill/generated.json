@@ -1855,6 +1855,24 @@
       "job_id": "31d24a53-6779-4cbd-ae92-a3459901b24e",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_030114_31d24a53-6779-4cbd-ae92-a3459901b24e.png",
       "method": "CORE第1参照＋承認済み03第2参照（図版参照はセーフティ誤検知のため差し替え）"
+    },
+    {
+      "id": "bible_ukai_02_construction",
+      "kind": "bible_sheet",
+      "character": "UKAI",
+      "sheet": "02 CONSTRUCTION (EMBER体系)",
+      "job_id": "37c68ee7-c39b-4864-9e0d-199eae0006d1",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_030248_37c68ee7-c39b-4864-9e0d-199eae0006d1.png",
+      "method": "承認済み04シート第1参照＋CORE第2参照（図版参照はセーフティ誤検知のため差し替え）"
+    },
+    {
+      "id": "bible_kaburagi_02_construction",
+      "kind": "bible_sheet",
+      "character": "KABURAGI",
+      "sheet": "02 CONSTRUCTION (EMBER体系)",
+      "job_id": "8aaecf85-d829-41dc-8569-031a26d3bc92",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_030309_8aaecf85-d829-41dc-8569-031a26d3bc92.png",
+      "method": "承認済み04シート第1参照＋CORE第2参照（図版参照はセーフティ誤検知のため差し替え）"
     }
   ]
 }
