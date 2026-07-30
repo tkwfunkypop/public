@@ -2883,6 +2883,106 @@
       "job_id": "7f98dbd1-53cf-40a4-8e53-ddb687322feb",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_103252_7f98dbd1-53cf-40a4-8e53-ddb687322feb.png",
       "method": "現行図版第1参照＋CORE第2参照、衣装のみ言語化（ONLY THE COSTUME redesigned）"
+    },
+    {
+      "id": "bible_hikari_01_core_v03",
+      "kind": "bible_sheet",
+      "character": "NANAO_HIKARI",
+      "sheet": "01 CORE (EMBER体系)",
+      "job_id": "871f1903-9954-4208-b219-e453804ba3a3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_104330_871f1903-9954-4208-b219-e453804ba3a3.png",
+      "method": "改定図版第1参照＋旧シートをレイアウト参照",
+      "note": "衣装改定v0.3（ゴスロリ05採用）反映版。旧CORE(2385f36b)の改訂候補・人間承認待ち"
+    },
+    {
+      "id": "bible_hikari_02_construction_v03",
+      "kind": "bible_sheet",
+      "character": "NANAO_HIKARI",
+      "sheet": "02 CONSTRUCTION (EMBER体系)",
+      "job_id": "a9f07360-df17-4442-9f3d-de6bd7d69a6f",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_104337_a9f07360-df17-4442-9f3d-de6bd7d69a6f.png",
+      "method": "改定図版第1参照＋旧シートをレイアウト参照",
+      "note": "衣装改定v0.3（ゴスロリ05採用）反映版"
+    },
+    {
+      "id": "bible_hikari_03_props_v03",
+      "kind": "bible_sheet",
+      "character": "NANAO_HIKARI",
+      "sheet": "03 PROPS & INTERACTION (EMBER体系)",
+      "job_id": "82fa6704-9623-48f1-b923-10b4657c18b7",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_104351_82fa6704-9623-48f1-b923-10b4657c18b7.png",
+      "method": "改定図版第1参照＋旧シートをレイアウト参照",
+      "note": "衣装改定v0.3（ゴスロリ05採用）反映版"
+    },
+    {
+      "id": "bible_hikari_04_story_v03",
+      "kind": "bible_sheet",
+      "character": "NANAO_HIKARI",
+      "sheet": "04 STORY STATES (EMBER体系)",
+      "job_id": "2e51fb31-c815-490d-8607-8a2e4048d428",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_104357_2e51fb31-c815-490d-8607-8a2e4048d428.png",
+      "method": "改定図版第1参照＋旧シートをレイアウト参照",
+      "note": "衣装改定v0.3（ゴスロリ05採用）反映版"
+    },
+    {
+      "id": "bible_hikari_05_motion_v03",
+      "kind": "bible_sheet",
+      "character": "NANAO_HIKARI",
+      "sheet": "05 MOTION & PERFORMANCE (EMBER体系)",
+      "job_id": "459daa5c-af71-476e-9b2e-acd25f15dab5",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_104409_459daa5c-af71-476e-9b2e-acd25f15dab5.png",
+      "method": "改定図版第1参照＋旧シートをレイアウト参照",
+      "note": "衣装改定v0.3（ゴスロリ05採用）反映版"
+    },
+    {
+      "id": "bible_hikari_06_continuity_v03",
+      "kind": "bible_sheet",
+      "character": "NANAO_HIKARI",
+      "sheet": "06 CONTINUITY CHECK (EMBER体系)",
+      "job_id": "96cba609-3dcb-4db5-9ad7-5e0b975167b1",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_104411_96cba609-3dcb-4db5-9ad7-5e0b975167b1.png",
+      "method": "改定図版第1参照＋旧シートをレイアウト参照",
+      "note": "衣装改定v0.3（ゴスロリ05採用）反映版"
+    },
+    {
+      "id": "bible_kaburagi_03_props_v03",
+      "kind": "bible_sheet",
+      "character": "KABURAGI",
+      "sheet": "03 PROPS & INTERACTION (EMBER体系)",
+      "job_id": "d9ce486e-972e-429a-9303-f056f3303ad8",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_104859_d9ce486e-972e-429a-9303-f056f3303ad8.png",
+      "method": "改定図版第1参照＋旧シートをレイアウト参照",
+      "note": "IMAGE SHOT（図版c4f0ecbe）準拠への統一v0.3"
+    },
+    {
+      "id": "bible_kaburagi_04_story_v03",
+      "kind": "bible_sheet",
+      "character": "KABURAGI",
+      "sheet": "04 STORY STATES (EMBER体系)",
+      "job_id": "0fbb96b6-be17-4e79-a58d-444d74712857",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_104904_0fbb96b6-be17-4e79-a58d-444d74712857.png",
+      "method": "改定図版第1参照＋旧シートをレイアウト参照",
+      "note": "IMAGE SHOT（図版c4f0ecbe）準拠への統一v0.3"
+    },
+    {
+      "id": "bible_kaburagi_05_motion_v03",
+      "kind": "bible_sheet",
+      "character": "KABURAGI",
+      "sheet": "05 MOTION & PERFORMANCE (EMBER体系)",
+      "job_id": "66174549-8e5d-4bdc-8dbb-4fd59568cb4a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_104920_66174549-8e5d-4bdc-8dbb-4fd59568cb4a.png",
+      "method": "改定図版第1参照＋旧シートをレイアウト参照",
+      "note": "IMAGE SHOT（図版c4f0ecbe）準拠への統一v0.3"
+    },
+    {
+      "id": "bible_kaburagi_06_continuity_v03",
+      "kind": "bible_sheet",
+      "character": "KABURAGI",
+      "sheet": "06 CONTINUITY CHECK (EMBER体系)",
+      "job_id": "41b5483a-1d3b-44c4-bf8a-97f6104c4a3a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_104927_41b5483a-1d3b-44c4-bf8a-97f6104c4a3a.png",
+      "method": "改定図版第1参照＋旧シートをレイアウト参照",
+      "note": "IMAGE SHOT（図版c4f0ecbe）準拠への統一v0.3"
     }
   ]
 }
