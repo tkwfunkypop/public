@@ -1994,6 +1994,115 @@
       "job_id": "790d7c4b-36bb-4bdf-8d65-e37d6fb63eac",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_031831_790d7c4b-36bb-4bdf-8d65-e37d6fb63eac.png",
       "method": "ひかり図版第1参照＋CORE第2参照、ビルはWORLD_REFERENCEの言語化で指定"
+    },
+    {
+      "id": "bible_yamato_03_props",
+      "kind": "bible_sheet",
+      "character": "YAMATO",
+      "sheet": "03 PROPS & INTERACTION (EMBER体系)",
+      "job_id": "afdcba25-5de7-41ce-b56c-65445223c06d",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_032334_afdcba25-5de7-41ce-b56c-65445223c06d.png",
+      "method": "CORE第1参照＋完成02シート第2参照（図版参照は誤検知のため差替）",
+      "note": "初回47687c2cが誤検知、3024b78dはセクション名タイポのためリロール採用"
+    },
+    {
+      "id": "bible_hikari_04_story",
+      "kind": "bible_sheet",
+      "character": "NANAO_HIKARI",
+      "sheet": "04 STORY STATES (EMBER体系)",
+      "job_id": "151761eb-c15e-408e-87ed-2796465f3b4d",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_032553_151761eb-c15e-408e-87ed-2796465f3b4d.png",
+      "method": "03と同じ参照ペア＋STORY STATES書式の文章指定"
+    },
+    {
+      "id": "bible_kumoi_04_story",
+      "kind": "bible_sheet",
+      "character": "KUMOI",
+      "sheet": "04 STORY STATES (EMBER体系)",
+      "job_id": "48d86417-fe42-4b67-b185-fe178ccb75d9",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_032621_48d86417-fe42-4b67-b185-fe178ccb75d9.png",
+      "method": "03と同じ参照ペア＋STORY STATES書式の文章指定"
+    },
+    {
+      "id": "bible_ukai_04_story",
+      "kind": "bible_sheet",
+      "character": "UKAI",
+      "sheet": "04 STORY STATES (EMBER体系)",
+      "job_id": "a811440d-f109-4948-9fcf-1d2531b51804",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_032639_a811440d-f109-4948-9fcf-1d2531b51804.png",
+      "method": "03と同じ参照ペア＋STORY STATES書式の文章指定"
+    },
+    {
+      "id": "bible_kaburagi_04_story",
+      "kind": "bible_sheet",
+      "character": "KABURAGI",
+      "sheet": "04 STORY STATES (EMBER体系)",
+      "job_id": "bf8e02f6-63d0-4c71-9497-95670ae89c40",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_032645_bf8e02f6-63d0-4c71-9497-95670ae89c40.png",
+      "method": "03と同じ参照ペア＋STORY STATES書式の文章指定"
+    },
+    {
+      "id": "bible_tome_04_story",
+      "kind": "bible_sheet",
+      "character": "HOSHINO_TOME",
+      "sheet": "04 STORY STATES (EMBER体系)",
+      "job_id": "2a54e88b-b0ce-461b-975c-1f530cec189b",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_032654_2a54e88b-b0ce-461b-975c-1f530cec189b.png",
+      "method": "03と同じ参照ペア＋STORY STATES書式の文章指定"
+    },
+    {
+      "id": "bible_hiiragi_04_story",
+      "kind": "bible_sheet",
+      "character": "HIIRAGI_GENZO",
+      "sheet": "04 STORY STATES (EMBER体系)",
+      "job_id": "93bb93a8-4a8e-49c6-a131-4aa9491a8a32",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_032701_93bb93a8-4a8e-49c6-a131-4aa9491a8a32.png",
+      "method": "03と同じ参照ペア＋STORY STATES書式の文章指定"
+    },
+    {
+      "id": "bible_ukai_child_04_story",
+      "kind": "bible_sheet",
+      "character": "UKAI_CHILD",
+      "sheet": "04 STORY STATES (EMBER体系)",
+      "job_id": "b3bdadca-0389-4121-8b77-2857123d4fdf",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_032708_b3bdadca-0389-4121-8b77-2857123d4fdf.png",
+      "method": "03と同じ参照ペア＋STORY STATES書式の文章指定"
+    },
+    {
+      "id": "bible_ukai_mother_04_story",
+      "kind": "bible_sheet",
+      "character": "UKAI_MOTHER",
+      "sheet": "04 STORY STATES (EMBER体系)",
+      "job_id": "29c8d725-320a-49f1-9ca2-66841250a42d",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_032733_29c8d725-320a-49f1-9ca2-66841250a42d.png",
+      "method": "03と同じ参照ペア＋STORY STATES書式の文章指定"
+    },
+    {
+      "id": "bible_ukai_father_04_story",
+      "kind": "bible_sheet",
+      "character": "UKAI_FATHER",
+      "sheet": "04 STORY STATES (EMBER体系)",
+      "job_id": "525e2a27-8d2c-40f2-b204-7f72a187a638",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_032739_525e2a27-8d2c-40f2-b204-7f72a187a638.png",
+      "method": "03と同じ参照ペア＋STORY STATES書式の文章指定"
+    },
+    {
+      "id": "bible_hiiragi_53_04_story",
+      "kind": "bible_sheet",
+      "character": "HIIRAGI_GENZO_53",
+      "sheet": "04 STORY STATES (EMBER体系)",
+      "job_id": "737db712-2712-42a0-ab24-f332ca1c07e8",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_032747_737db712-2712-42a0-ab24-f332ca1c07e8.png",
+      "method": "03と同じ参照ペア＋STORY STATES書式の文章指定"
+    },
+    {
+      "id": "bible_developer_04_story",
+      "kind": "bible_sheet",
+      "character": "DEVELOPER_AGENT",
+      "sheet": "04 STORY STATES (EMBER体系)",
+      "job_id": "af52a196-7c2d-40e2-926b-c16b68f44d66",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_032754_af52a196-7c2d-40e2-926b-c16b68f44d66.png",
+      "method": "03と同じ参照ペア＋STORY STATES書式の文章指定"
     }
   ]
 }
