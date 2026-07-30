@@ -1783,6 +1783,24 @@
       "job_id": "552e4b95-13aa-460a-8079-fc2a5affc026",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_023817_552e4b95-13aa-460a-8079-fc2a5affc026.png",
       "method": "確定図版第1参照＋CORE/ターンアラウンド第2参照＋書式の文章指定（EMBER画像参照はセーフティ誤検知のため不使用）"
+    },
+    {
+      "id": "bible_hikari_02_construction",
+      "kind": "bible_sheet",
+      "character": "NANAO_HIKARI",
+      "sheet": "02 CONSTRUCTION (EMBER体系)",
+      "job_id": "2c8079d7-4162-4a3c-9d57-3d0a9284d471",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_024201_2c8079d7-4162-4a3c-9d57-3d0a9284d471.png",
+      "method": "確定図版第1参照＋CORE/ターンアラウンド第2参照＋書式の文章指定。無害化語彙（COSTUME PARTS CATALOG等）"
+    },
+    {
+      "id": "bible_hiiragi_53_02_construction",
+      "kind": "bible_sheet",
+      "character": "HIIRAGI_GENZO_53",
+      "sheet": "02 CONSTRUCTION (EMBER体系)",
+      "job_id": "0d8ec928-0685-4de8-bc70-ff100f462b54",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_023855_0d8ec928-0685-4de8-bc70-ff100f462b54.png",
+      "method": "確定図版第1参照＋CORE/ターンアラウンド第2参照＋書式の文章指定。無害化語彙（COSTUME PARTS CATALOG等）"
     }
   ]
 }
