@@ -2823,8 +2823,8 @@
       "kind": "design_variant",
       "character": "NANAO_HIKARI",
       "aspect_ratio": "2:3",
-      "approved": false,
-      "note": "衣装のみ改案（髪型・顔・トランク塔・鞄は現行のまま）：ゴスロリ：黒フリルワンピース×白レース",
+      "approved": true,
+      "note": "衣装のみ改案（髪型・顔・トランク塔・鞄は現行のまま）：ゴスロリ：黒フリルワンピース×白レース。★人間選定により新figure（v2）へ昇格。CORE v0.3とEMBER02〜06を再生成中",
       "job_id": "ea03da32-5f13-41ad-a2c8-eed0458cbfe6",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_103221_ea03da32-5f13-41ad-a2c8-eed0458cbfe6.png",
       "method": "現行図版第1参照＋CORE第2参照、衣装のみ言語化（ONLY THE COSTUME redesigned）"
