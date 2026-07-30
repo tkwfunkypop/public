@@ -3191,6 +3191,39 @@
       "job_id": "a480537c-aead-4ced-8692-e6a711cdf85b",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_133247_a480537c-aead-4ced-8692-e6a711cdf85b.png",
       "method": "2A(1386a5b6)参照＋新添付2枚目の要素言語化"
+    },
+    {
+      "id": "building_fusion_p3a2_sevenfloors",
+      "kind": "design_variant",
+      "character": "果端ビル",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "第3ラウンド改：7つの階が一目で数えられるよう、等しい階高・階ごとの庇帯・7列の窓（下から 白/琥珀/緑/青緑/青/菫/マゼンタ）を明示して引き直し。案3-A'：崖っぷち忠実版ベース",
+      "job_id": "718af475-3df4-483d-b468-71fea2d83303",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_162719_718af475-3df4-483d-b468-71fea2d83303.png",
+      "method": "3A(22f453d0)を参照に7階明示のリドロー"
+    },
+    {
+      "id": "building_fusion_p3b2_sevenfloors",
+      "kind": "design_variant",
+      "character": "果端ビル",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "第3ラウンド改：7つの階が一目で数えられるよう、等しい階高・階ごとの庇帯・7列の窓（下から 白/琥珀/緑/青緑/青/菫/マゼンタ）を明示して引き直し。案3-B'：腐敗強めベース",
+      "job_id": "bd731c17-73e7-4ea1-aa3c-9ccc24ec91ab",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_162723_bd731c17-73e7-4ea1-aa3c-9ccc24ec91ab.png",
+      "method": "3B(e2aa9302)を参照に7階明示のリドロー"
+    },
+    {
+      "id": "building_fusion_p3c2_sevenfloors",
+      "kind": "design_variant",
+      "character": "果端ビル",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "第3ラウンド改：7つの階が一目で数えられるよう、等しい階高・階ごとの庇帯・7列の窓（下から 白/琥珀/緑/青緑/青/菫/マゼンタ）を明示して引き直し。案3-C'：岩の指先ベース",
+      "job_id": "84c99ff4-116b-4528-ac27-c0cd18461ccf",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_162728_84c99ff4-116b-4528-ac27-c0cd18461ccf.png",
+      "method": "3C(a480537c)を参照に7階明示のリドロー"
     }
   ]
 }
