@@ -1801,6 +1801,60 @@
       "job_id": "0d8ec928-0685-4de8-bc70-ff100f462b54",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_023855_0d8ec928-0685-4de8-bc70-ff100f462b54.png",
       "method": "確定図版第1参照＋CORE/ターンアラウンド第2参照＋書式の文章指定。無害化語彙（COSTUME PARTS CATALOG等）"
+    },
+    {
+      "id": "bible_ri_02_construction",
+      "kind": "bible_sheet",
+      "character": "LI",
+      "sheet": "02 CONSTRUCTION (EMBER体系)",
+      "job_id": "e62ad8b1-b051-4223-a12e-fa481f66fc58",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_025838_e62ad8b1-b051-4223-a12e-fa481f66fc58.png",
+      "method": "確定図版第1参照＋CORE/ターンアラウンド第2参照＋書式の文章指定（無害化語彙）"
+    },
+    {
+      "id": "bible_kumoi_02_construction",
+      "kind": "bible_sheet",
+      "character": "KUMOI",
+      "sheet": "02 CONSTRUCTION (EMBER体系)",
+      "job_id": "e518d04f-85d8-4e85-8afe-739cad7d89fa",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_025846_e518d04f-85d8-4e85-8afe-739cad7d89fa.png",
+      "method": "確定図版第1参照＋CORE/ターンアラウンド第2参照＋書式の文章指定（無害化語彙）"
+    },
+    {
+      "id": "bible_tome_02_construction",
+      "kind": "bible_sheet",
+      "character": "HOSHINO_TOME",
+      "sheet": "02 CONSTRUCTION (EMBER体系)",
+      "job_id": "f24ec198-f218-4c0e-bdf3-ac138d27c25f",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_025920_f24ec198-f218-4c0e-bdf3-ac138d27c25f.png",
+      "method": "確定図版第1参照＋CORE/ターンアラウンド第2参照＋書式の文章指定（無害化語彙）"
+    },
+    {
+      "id": "bible_hiiragi_02_construction",
+      "kind": "bible_sheet",
+      "character": "HIIRAGI_GENZO",
+      "sheet": "02 CONSTRUCTION (EMBER体系)",
+      "job_id": "39437e56-cb10-47e3-b65d-a2c19ed13c5d",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_025928_39437e56-cb10-47e3-b65d-a2c19ed13c5d.png",
+      "method": "確定図版第1参照＋CORE/ターンアラウンド第2参照＋書式の文章指定（無害化語彙）"
+    },
+    {
+      "id": "bible_ukai_father_02_construction",
+      "kind": "bible_sheet",
+      "character": "UKAI_FATHER",
+      "sheet": "02 CONSTRUCTION (EMBER体系)",
+      "job_id": "f64b181b-3f0f-41a9-a257-a2104e8476d8",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_025935_f64b181b-3f0f-41a9-a257-a2104e8476d8.png",
+      "method": "確定図版第1参照＋CORE/ターンアラウンド第2参照＋書式の文章指定（無害化語彙）"
+    },
+    {
+      "id": "bible_yamato_02_construction",
+      "kind": "bible_sheet",
+      "character": "YAMATO",
+      "sheet": "02 CONSTRUCTION (EMBER体系)",
+      "job_id": "31d24a53-6779-4cbd-ae92-a3459901b24e",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_030114_31d24a53-6779-4cbd-ae92-a3459901b24e.png",
+      "method": "CORE第1参照＋承認済み03第2参照（図版参照はセーフティ誤検知のため差し替え）"
     }
   ]
 }
