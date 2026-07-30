@@ -2212,6 +2212,33 @@
       "job_id": "532277f2-cb87-40ed-bdc5-304a3582fb3e",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_033332_532277f2-cb87-40ed-bdc5-304a3582fb3e.png",
       "method": "03/04と同じ参照ペア＋MOTION書式の文章指定（口なしキャラはSILENT VOICE仕様）"
+    },
+    {
+      "id": "bible_kurogane_04_story",
+      "kind": "bible_sheet",
+      "character": "KUROGANE",
+      "sheet": "04 STORY STATES (EMBER体系)",
+      "job_id": "acea5459-c305-48ee-8429-8e3b84e32645",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_033543_acea5459-c305-48ee-8429-8e3b84e32645.png",
+      "method": "03と同じ参照ペア＋語彙修正で再投入（初回は誤検知）"
+    },
+    {
+      "id": "bible_yamato_04_story",
+      "kind": "bible_sheet",
+      "character": "YAMATO",
+      "sheet": "04 STORY STATES (EMBER体系)",
+      "job_id": "3b7f4acc-4552-4515-8153-787f582241f1",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_033555_3b7f4acc-4552-4515-8153-787f582241f1.png",
+      "method": "03と同じ参照ペア＋語彙修正で再投入（初回は誤検知）"
+    },
+    {
+      "id": "bible_ri_04_story",
+      "kind": "bible_sheet",
+      "character": "LI",
+      "sheet": "04 STORY STATES (EMBER体系)",
+      "job_id": "f3876afa-0962-4558-96ee-7c2b669875ae",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_033558_f3876afa-0962-4558-96ee-7c2b669875ae.png",
+      "method": "03と同じ参照ペア＋語彙修正で再投入（初回は誤検知）"
     }
   ]
 }
