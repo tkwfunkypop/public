@@ -16,6 +16,13 @@ const urlByPanel = Object.fromEntries(
     .map((i) => [i.id, i.url])
 );
 
+// ナレーション／台詞音声（kind: narration_audio, cut: カット番号, at: カット内オフセット秒）
+const audioByCut = {};
+for (const i of generated.items) {
+  if (i.kind !== 'narration_audio') continue;
+  (audioByCut[i.cut] ??= []).push({url: i.url, at: i.at ?? 0});
+}
+
 const cuts = [];
 for (const seq of storyboard.sequences) {
   for (const cut of seq.cuts) {
@@ -32,6 +39,7 @@ for (const seq of storyboard.sequences) {
       note: cut.note,
       panel: cut.panel,
       url,
+      ...(audioByCut[cut.no] ? {audio: audioByCut[cut.no]} : {}),
     });
   }
 }

@@ -1,7 +1,9 @@
 import React from 'react';
 import {
   AbsoluteFill,
+  Audio,
   Img,
+  Sequence,
   Series,
   interpolate,
   useCurrentFrame,
@@ -12,7 +14,8 @@ import data from './cuts.json';
 const SERIF = "'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif JP', serif";
 const SANS = "'Hiragino Sans', 'Yu Gothic', 'Noto Sans JP', sans-serif";
 
-type Cut = (typeof data.cuts)[number];
+type CutAudio = {url: string; at: number};
+type Cut = (typeof data.cuts)[number] & {audio?: CutAudio[]};
 
 const pad = (n: number) => String(n).padStart(2, '0');
 const timecode = (sec: number) => `${pad(Math.floor(sec / 60))}:${pad(Math.floor(sec % 60))}`;
@@ -136,6 +139,15 @@ export const Animatic: React.FC = () => {
           </Series.Sequence>
         ))}
       </Series>
+
+      {/* 音声トラック（カット境界で切らず、長い台詞は次カットへ流す） */}
+      {timeline.flatMap(({cut, startSec}) =>
+        ((cut as Cut).audio ?? []).map((a) => (
+          <Sequence key={`${cut.panel}-${a.url}`} from={Math.round((startSec + a.at) * fps)}>
+            <Audio src={a.url} />
+          </Sequence>
+        ))
+      )}
 
       {/* 全体プログレスバーとタイムコード */}
       <div

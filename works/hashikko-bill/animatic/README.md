@@ -10,6 +10,10 @@
 - 下部中央：セリフ・ナレーション（字幕）
 - 最下部：全体プログレスバー（校正朱 `#C2493C`）と経過タイムコード
 - 静止画には1カット内で 1.00→1.03 の緩いプッシュインを付与
+- **音声**：全26カット・27クリップの仮ナレ・仮アフレコ（seed_audio TTS）。
+  ナレーター=Arthur／ひかり=Emily／トメ=Mabel／雲井=Simone／黒金=Gideon／
+  鵜飼=Julian／柊=Alistair／鏑木=Marcus／李=Luna。
+  長い台詞はカットで切らず次カットへ流す（グローバル音声トラック）
 
 ## レンダリング手順（ローカルPCで実行）
 
@@ -48,6 +52,8 @@ src/cuts.json  →  src/Animatic.tsx が実尺どおりに再生
 
 ## 今後の差し替え
 
-- 音（ナレ・環境音・音楽）は `<Audio>` を Animatic.tsx に足せば載る
+- 声を録り直す場合は `generated.json` の `kind: narration_audio` の `url` を
+  差し替えて `npm run data`（`cut`＝カット番号、`at`＝カット内オフセット秒）
+- 環境音・音楽も同じく `<Audio>` の追加で載る
 - パネルをI2Vの動画に差し替える場合は cuts.json の `url` を動画URLにし、
   `<Img>` を `<OffthreadVideo>` に置き換える
