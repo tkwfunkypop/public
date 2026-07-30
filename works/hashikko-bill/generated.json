@@ -1981,6 +1981,19 @@
       "job_id": "2ec28342-5f64-488a-ae03-81e57eda67a7",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_030734_2ec28342-5f64-488a-ae03-81e57eda67a7.png",
       "method": "02と同じ参照ペア＋書式の文章指定（無害化語彙）"
+    },
+    {
+      "id": "key_poster_main",
+      "kind": "key_visual",
+      "character": "NANAO_HIKARI + 果端ビル",
+      "aspect_ratio": "2:3",
+      "width": 1696,
+      "height": 2528,
+      "approved": false,
+      "note": "映画ポスター風キービジュアル。世界観リファレンス（WORLD_REFERENCE.md）の質感読解＋ひかり正準参照で生成。日本語タイトル文字は生成内で成立（例外扱い：ポスターは完成品のため）。ビル外形はCANON未確定（雰囲気ビジュアルとしての承認待ち）",
+      "job_id": "790d7c4b-36bb-4bdf-8d65-e37d6fb63eac",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_031831_790d7c4b-36bb-4bdf-8d65-e37d6fb63eac.png",
+      "method": "ひかり図版第1参照＋CORE第2参照、ビルはWORLD_REFERENCEの言語化で指定"
     }
   ]
 }
