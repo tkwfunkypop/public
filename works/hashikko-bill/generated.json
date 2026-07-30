@@ -68,17 +68,18 @@
       "aspect_ratio": "2:3",
       "width": 1696,
       "height": 2528,
-      "version": "v6",
+      "version": "v7",
       "approved": false,
-      "note": "v4はCOREと雰囲気が違うとの指摘、v5は脚が縞に化けたため、v6で白い球体の目・口鼻なし・黒無地の脚を確認して差し替え。",
+      "note": "v6も指摘により差し替え。CANONの目は白球＋点瞳孔ではなく、普通サイズの白目に大きなワイン色の虹彩。COREと承認済み03を参照にv7で一致を確認。",
       "alt_job_id": "4fcf8e90-efc8-45d2-9b6b-0f8eb48e58cc",
       "superseded_job_id": [
         "e93435e8-37fe-4245-a5cd-6bfe193a9917",
-        "ba78a7a0-fd47-411a-90dd-0557ede4c2fb"
+        "ba78a7a0-fd47-411a-90dd-0557ede4c2fb",
+        "e1365bf1-af92-428e-b50e-b388916d8636"
       ],
       "ref_core": "b750715b-d67b-45e9-8f54-db6d4a17d47d",
-      "job_id": "e1365bf1-af92-428e-b50e-b388916d8636",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_012530_e1365bf1-af92-428e-b50e-b388916d8636.png"
+      "job_id": "4ffb2cf3-68f6-48d9-9981-06ef73ba934a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_014219_4ffb2cf3-68f6-48d9-9981-06ef73ba934a.png"
     },
     {
       "id": "f5_ri",
@@ -86,15 +87,16 @@
       "aspect_ratio": "2:3",
       "width": 1696,
       "height": 2528,
-      "version": "v4",
+      "version": "v5",
       "approved": false,
       "ref_core": "f3b8214d-cafe-42ff-a269-862386330496",
-      "job_id": "3da2b2e3-599a-4cd5-bac1-3dd7e89b71a0",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_012050_3da2b2e3-599a-4cd5-bac1-3dd7e89b71a0.png",
+      "job_id": "3846f10c-2ccf-4f58-b272-0011759161f0",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_014300_3846f10c-2ccf-4f58-b272-0011759161f0.png",
       "superseded_job_id": [
-        "b1ccb0c7-5702-4aa2-9917-442e48f372a9"
+        "b1ccb0c7-5702-4aa2-9917-442e48f372a9",
+        "3da2b2e3-599a-4cd5-bac1-3dd7e89b71a0"
       ],
-      "note": "v3は顔がグレー化していたため、COREどおり生成り色に戻した。"
+      "note": "v4も指摘により差し替え。CANONの頭は卵形ではなく、白い柱状＋頭頂の黒いバルブ組立。COREと承認済み03を参照にv5で一致を確認。"
     },
     {
       "id": "f4_kumoi",
@@ -1239,14 +1241,15 @@
       "character": "YAMATO",
       "sheet": "02 EXPRESSION",
       "ref_design": "b750715b-d67b-45e9-8f54-db6d4a17d47d",
-      "job_id": "256ceb7f-a69d-4d3c-bc97-ce3e9e23ec18",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_012748_256ceb7f-a69d-4d3c-bc97-ce3e9e23ec18.png",
+      "job_id": "2d2d2878-4868-40ee-a20e-bfb91ecb6ec9",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_014400_2d2d2878-4868-40ee-a20e-bfb91ecb6ec9.png",
       "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）",
-      "note": "新figure(v6)を参照に全コマ白い球体の目・口鼻なしで統一。",
+      "note": "v7図版参照。ワイン色の虹彩・耳のデバイス・口なしを全コマ確認。",
       "superseded_job_id": [
         "c638584b-4da4-4b0e-b1f2-93ad7ed7b462",
         "d6a3a73d-a657-4b3f-ba00-761cd3888a0b",
-        "9a6664fb-3949-4d8d-98e2-6d349e1e98b9"
+        "9a6664fb-3949-4d8d-98e2-6d349e1e98b9",
+        "256ceb7f-a69d-4d3c-bc97-ce3e9e23ec18"
       ]
     },
     {
@@ -1275,13 +1278,14 @@
       "character": "LI",
       "sheet": "02 EXPRESSION",
       "ref_design": "f3b8214d-cafe-42ff-a269-862386330496",
-      "job_id": "af608d52-6a60-4271-b4e7-3bc471e7b325",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_012659_af608d52-6a60-4271-b4e7-3bc471e7b325.png",
+      "job_id": "2e072cc0-3eae-4cd2-ab1d-9f38d13c7f89",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_014446_2e072cc0-3eae-4cd2-ab1d-9f38d13c7f89.png",
       "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）",
       "superseded_job_id": [
-        "732f21f5-ede5-4f0b-a363-bf79e2983bd7"
+        "732f21f5-ede5-4f0b-a363-bf79e2983bd7",
+        "af608d52-6a60-4271-b4e7-3bc471e7b325"
       ],
-      "note": "v1は頭の造形が別物。新figure(v4)を参照に顔なし・生成りの頭で差し替え。"
+      "note": "v5図版参照。柱状の頭＋黒いバルブを全コマ維持、感情は湯気と鉤爪手のみ。"
     },
     {
       "id": "sheet_ri_03_pose",
