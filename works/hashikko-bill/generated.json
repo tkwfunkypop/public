@@ -1153,6 +1153,344 @@
       "aspect_ratio": "16:9",
       "status": "on_hold",
       "reason": "屋上＝建物外形が写るため、key_building と同じくY7確定待ち。九人が揃うカットなので全キャラ確定後に生成する。"
+    },
+    {
+      "id": "sheet_hikari_02_expression",
+      "kind": "character_sheet",
+      "character": "NANAO_HIKARI",
+      "sheet": "02 EXPRESSION",
+      "ref_design": "2385f36b-65e6-455b-a357-3c02deca885d",
+      "job_id": "84412081-ef4d-4602-b67d-9d427eec947d",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235340_84412081-ef4d-4602-b67d-9d427eec947d.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_hikari_03_pose",
+      "kind": "character_sheet",
+      "character": "NANAO_HIKARI",
+      "sheet": "03 POSE",
+      "ref_design": "2385f36b-65e6-455b-a357-3c02deca885d",
+      "job_id": "f86f35f5-e8b0-4a0a-802b-78574a708ffc",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235344_f86f35f5-e8b0-4a0a-802b-78574a708ffc.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_hikari_04_props",
+      "kind": "character_sheet",
+      "character": "NANAO_HIKARI",
+      "sheet": "04 PROPS & COSTUME",
+      "ref_design": "2385f36b-65e6-455b-a357-3c02deca885d",
+      "job_id": "6997ba07-dcb2-441c-a098-86ef35f90568",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235349_6997ba07-dcb2-441c-a098-86ef35f90568.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_kurogane_02_expression",
+      "kind": "character_sheet",
+      "character": "KUROGANE",
+      "sheet": "02 EXPRESSION",
+      "ref_design": "3cdd85c1-5db2-4708-84e7-a68edda8000e",
+      "job_id": "fad5a35e-77e7-4c10-a0a3-56e2ae7dd023",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235352_fad5a35e-77e7-4c10-a0a3-56e2ae7dd023.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_kurogane_03_pose",
+      "kind": "character_sheet",
+      "character": "KUROGANE",
+      "sheet": "03 POSE",
+      "ref_design": "3cdd85c1-5db2-4708-84e7-a68edda8000e",
+      "job_id": "1a41c5ef-887a-46a1-af65-bb99fb5af30f",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235408_1a41c5ef-887a-46a1-af65-bb99fb5af30f.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_kurogane_04_props",
+      "kind": "character_sheet",
+      "character": "KUROGANE",
+      "sheet": "04 PROPS & COSTUME",
+      "ref_design": "3cdd85c1-5db2-4708-84e7-a68edda8000e",
+      "job_id": "c5e5b645-9b54-457b-a86f-93a947d0969a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235411_c5e5b645-9b54-457b-a86f-93a947d0969a.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_yamato_02_expression",
+      "kind": "character_sheet",
+      "character": "YAMATO",
+      "sheet": "02 EXPRESSION",
+      "ref_design": "b750715b-d67b-45e9-8f54-db6d4a17d47d",
+      "job_id": "9a6664fb-3949-4d8d-98e2-6d349e1e98b9",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_000431_9a6664fb-3949-4d8d-98e2-6d349e1e98b9.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）",
+      "note": "v1は目が暗色化、v2は驚きのコマに口が開いた。v3で全コマ口なし・白い球体の目＋黒点の瞳孔を確認して採用。参照はv4確定図版＋CORE。",
+      "superseded_job_id": [
+        "c638584b-4da4-4b0e-b1f2-93ad7ed7b462",
+        "d6a3a73d-a657-4b3f-ba00-761cd3888a0b"
+      ]
+    },
+    {
+      "id": "sheet_yamato_03_pose",
+      "kind": "character_sheet",
+      "character": "YAMATO",
+      "sheet": "03 POSE",
+      "ref_design": "b750715b-d67b-45e9-8f54-db6d4a17d47d",
+      "job_id": "c8710f64-8bd8-42b9-a70e-1567bfbd7494",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235419_c8710f64-8bd8-42b9-a70e-1567bfbd7494.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_yamato_04_props",
+      "kind": "character_sheet",
+      "character": "YAMATO",
+      "sheet": "04 PROPS & COSTUME",
+      "ref_design": "b750715b-d67b-45e9-8f54-db6d4a17d47d",
+      "job_id": "a7e8104e-7eb5-42e2-8d6e-c529845da897",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235433_a7e8104e-7eb5-42e2-8d6e-c529845da897.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_ri_02_expression",
+      "kind": "character_sheet",
+      "character": "LI",
+      "sheet": "02 EXPRESSION",
+      "ref_design": "f3b8214d-cafe-42ff-a269-862386330496",
+      "job_id": "732f21f5-ede5-4f0b-a363-bf79e2983bd7",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235438_732f21f5-ede5-4f0b-a363-bf79e2983bd7.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_ri_03_pose",
+      "kind": "character_sheet",
+      "character": "LI",
+      "sheet": "03 POSE",
+      "ref_design": "f3b8214d-cafe-42ff-a269-862386330496",
+      "job_id": "09e42330-5fa8-4427-8cf2-d6d37f1a805d",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235442_09e42330-5fa8-4427-8cf2-d6d37f1a805d.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_ri_04_props",
+      "kind": "character_sheet",
+      "character": "LI",
+      "sheet": "04 PROPS & COSTUME",
+      "ref_design": "f3b8214d-cafe-42ff-a269-862386330496",
+      "job_id": "c048a16c-abfc-41c0-b416-9254cc05571a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235445_c048a16c-abfc-41c0-b416-9254cc05571a.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_kumoi_02_expression",
+      "kind": "character_sheet",
+      "character": "KUMOI",
+      "sheet": "02 EXPRESSION",
+      "ref_design": "cfd590f9-6764-41c0-8947-d1ddd2ac7e09",
+      "job_id": "954e0589-c4a2-49f0-ac16-6f9418975ef8",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_000511_954e0589-c4a2-49f0-ac16-6f9418975ef8.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）",
+      "superseded_job_id": [
+        "14492fa5-b734-4b5d-8e1d-81d43ef13b98"
+      ],
+      "note": "v1は下段に床面と足のアーティファクト。v2で解消、卵形の無地の顔を全コマ維持。"
+    },
+    {
+      "id": "sheet_kumoi_03_pose",
+      "kind": "character_sheet",
+      "character": "KUMOI",
+      "sheet": "03 POSE",
+      "ref_design": "cfd590f9-6764-41c0-8947-d1ddd2ac7e09",
+      "job_id": "7d8a33b2-eaee-418e-b2c4-bb0aa4ddc016",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235511_7d8a33b2-eaee-418e-b2c4-bb0aa4ddc016.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_kumoi_04_props",
+      "kind": "character_sheet",
+      "character": "KUMOI",
+      "sheet": "04 PROPS & COSTUME",
+      "ref_design": "cfd590f9-6764-41c0-8947-d1ddd2ac7e09",
+      "job_id": "f15f79dd-56cc-4cd4-9fae-245d78f6ac4f",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235514_f15f79dd-56cc-4cd4-9fae-245d78f6ac4f.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_ukai_02_expression",
+      "kind": "character_sheet",
+      "character": "UKAI",
+      "sheet": "02 EXPRESSION",
+      "ref_design": "05da55f2-791c-41c3-bd0b-87e5ef6014d6",
+      "job_id": "c3a28e97-4d4f-4619-bd53-010c097cd2d6",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235520_c3a28e97-4d4f-4619-bd53-010c097cd2d6.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_ukai_03_pose",
+      "kind": "character_sheet",
+      "character": "UKAI",
+      "sheet": "03 POSE",
+      "ref_design": "05da55f2-791c-41c3-bd0b-87e5ef6014d6",
+      "job_id": "cd3e919a-0b6f-49ac-9cab-97d7e39c6921",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235535_cd3e919a-0b6f-49ac-9cab-97d7e39c6921.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_ukai_04_props",
+      "kind": "character_sheet",
+      "character": "UKAI",
+      "sheet": "04 PROPS & COSTUME",
+      "ref_design": "05da55f2-791c-41c3-bd0b-87e5ef6014d6",
+      "job_id": "9e0cf15e-bea7-4d11-862f-d93e9ebd53a8",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235539_9e0cf15e-bea7-4d11-862f-d93e9ebd53a8.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_kaburagi_02_expression",
+      "kind": "character_sheet",
+      "character": "KABURAGI",
+      "sheet": "02 EXPRESSION",
+      "ref_design": "e43324b7-8a8f-4394-a63f-a50ac6b4d984",
+      "job_id": "043b905b-0a1f-4346-8f16-fd81fa692a96",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_000921_043b905b-0a1f-4346-8f16-fd81fa692a96.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）",
+      "superseded_job_id": [
+        "7d7355b4-f64d-4c77-8cc0-fe25eb34abf9",
+        "cb9bf0ff-fe7d-4465-aa9f-3387e294ab46"
+      ],
+      "note": "v1は英語ラベルの文字が混入（文字は編集で載せる方針に違反）、v2は床面アーティファクト。v3で解消。"
+    },
+    {
+      "id": "sheet_kaburagi_03_pose",
+      "kind": "character_sheet",
+      "character": "KABURAGI",
+      "sheet": "03 POSE",
+      "ref_design": "e43324b7-8a8f-4394-a63f-a50ac6b4d984",
+      "job_id": "8d92cfe5-f63e-4d4d-9e20-3ec6c230f090",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235544_8d92cfe5-f63e-4d4d-9e20-3ec6c230f090.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_kaburagi_04_props",
+      "kind": "character_sheet",
+      "character": "KABURAGI",
+      "sheet": "04 PROPS & COSTUME",
+      "ref_design": "e43324b7-8a8f-4394-a63f-a50ac6b4d984",
+      "job_id": "465ea8d9-cae2-4026-be45-7eb745270bee",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235600_465ea8d9-cae2-4026-be45-7eb745270bee.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_tome_02_expression",
+      "kind": "character_sheet",
+      "character": "HOSHINO_TOME",
+      "sheet": "02 EXPRESSION",
+      "ref_design": "a17a62d5-f663-4014-9273-47de5319fae2",
+      "job_id": "f8fceb54-3b77-405d-a337-d6006f47027b",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_000536_f8fceb54-3b77-405d-a337-d6006f47027b.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）",
+      "superseded_job_id": [
+        "9ec5b6c2-66f9-4e15-9d82-e3cbe8e067c0"
+      ],
+      "note": "v1は床面アーティファクトと目・口の誇張。v2で解消。"
+    },
+    {
+      "id": "sheet_tome_03_pose",
+      "kind": "character_sheet",
+      "character": "HOSHINO_TOME",
+      "sheet": "03 POSE",
+      "ref_design": "a17a62d5-f663-4014-9273-47de5319fae2",
+      "job_id": "62e608fd-b3a5-4abb-9ba5-80aed62ef39f",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235606_62e608fd-b3a5-4abb-9ba5-80aed62ef39f.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_tome_04_props",
+      "kind": "character_sheet",
+      "character": "HOSHINO_TOME",
+      "sheet": "04 PROPS & COSTUME",
+      "ref_design": "a17a62d5-f663-4014-9273-47de5319fae2",
+      "job_id": "f9e91f18-dff8-48a7-a49c-17eaa6afb528",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235609_f9e91f18-dff8-48a7-a49c-17eaa6afb528.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_hiiragi_02_expression",
+      "kind": "character_sheet",
+      "character": "HIIRAGI_GENZO",
+      "sheet": "02 EXPRESSION",
+      "ref_design": "f8ba67b7-2a2e-444d-a9f1-bf0354ec5e86",
+      "job_id": "76a0cb9b-6e2e-4567-a7bb-c22e285de78c",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235626_76a0cb9b-6e2e-4567-a7bb-c22e285de78c.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_hiiragi_03_pose",
+      "kind": "character_sheet",
+      "character": "HIIRAGI_GENZO",
+      "sheet": "03 POSE",
+      "ref_design": "f8ba67b7-2a2e-444d-a9f1-bf0354ec5e86",
+      "job_id": "bc25d586-3937-4879-8d08-4d589e8f17a8",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235630_bc25d586-3937-4879-8d08-4d589e8f17a8.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_hiiragi_04_props",
+      "kind": "character_sheet",
+      "character": "HIIRAGI_GENZO",
+      "sheet": "04 PROPS & COSTUME",
+      "ref_design": "f8ba67b7-2a2e-444d-a9f1-bf0354ec5e86",
+      "job_id": "600d505a-3618-45e2-93d1-538ef145316d",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235633_600d505a-3618-45e2-93d1-538ef145316d.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_ukai_child_01_turnaround",
+      "kind": "character_sheet",
+      "character": "UKAI_CHILD",
+      "sheet": "01 TURNAROUND",
+      "ref_design": "79a753e7-30eb-40d1-a04a-6eb62569aa22",
+      "job_id": "35b86f97-5462-4004-aaef-323ce1625422",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235636_35b86f97-5462-4004-aaef-323ce1625422.png",
+      "method": "参照2枚方式（1枚目=承認済み図版、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_ukai_mother_01_turnaround",
+      "kind": "character_sheet",
+      "character": "UKAI_MOTHER",
+      "sheet": "01 TURNAROUND",
+      "ref_design": "0ab6bf9d-f251-47c4-9813-5a8d5fd6fc05",
+      "job_id": "a9da925f-fcfa-46eb-9699-318e21f41314",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235649_a9da925f-fcfa-46eb-9699-318e21f41314.png",
+      "method": "参照2枚方式（1枚目=承認済み図版、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_ukai_father_01_turnaround",
+      "kind": "character_sheet",
+      "character": "UKAI_FATHER",
+      "sheet": "01 TURNAROUND",
+      "ref_design": "02e62fcc-edbd-4b76-9fb8-7693f798ca7e",
+      "job_id": "44d547b3-5e0a-4006-b48a-ef975d5855e1",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235654_44d547b3-5e0a-4006-b48a-ef975d5855e1.png",
+      "method": "参照2枚方式（1枚目=承認済み図版、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_hiiragi_53_01_turnaround",
+      "kind": "character_sheet",
+      "character": "HIIRAGI_53",
+      "sheet": "01 TURNAROUND",
+      "ref_design": "6ab2f33e-f520-4e06-8919-0db0c3af83d7",
+      "job_id": "64fa8bfd-bf2b-4ca7-bb86-37e7f6035445",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235658_64fa8bfd-bf2b-4ca7-bb86-37e7f6035445.png",
+      "method": "参照2枚方式（1枚目=承認済み図版、2枚目=質感の正 a8434a32）"
+    },
+    {
+      "id": "sheet_developer_01_turnaround",
+      "kind": "character_sheet",
+      "character": "DEVELOPER",
+      "sheet": "01 TURNAROUND",
+      "ref_design": "0480713d-8296-4f42-a948-1b14f8243b8f",
+      "job_id": "f124cc83-0fb2-4b77-9a74-f2bb6da7c24d",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235701_f124cc83-0fb2-4b77-9a74-f2bb6da7c24d.png",
+      "method": "参照2枚方式（1枚目=承認済み図版、2枚目=質感の正 a8434a32）"
     }
   ]
 }

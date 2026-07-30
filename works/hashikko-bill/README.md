@@ -150,6 +150,27 @@ https://raw.githack.com/tkwfunkypop/public/claude/prompts-json-10cut-generation-
 CANONメタ情報（`CHARACTER ID` / `REVISION` / `CANON STATUS` / `BODY TYPE` / `HANDEDNESS`）と
 `COLOR SYSTEM` の5色、CORE照合の結果を載せている。
 
+#### 詳細シート（2026-07-30 追加）
+
+本編9人それぞれに詳細シート3種、脇役5体にターンアラウンドを追加した。
+`generated.json` の `kind: character_sheet`（32件）。
+
+| シート | 内容 |
+|---|---|
+| `02 EXPRESSION` | 表情6面（3×2グリッド）。**顔パーツの追加は全プロンプトで禁止**。顔の無いキャラは首の角度・姿勢・手だけで6感情を語る |
+| `03 POSE` | アクション5態（作業・歩き・受け渡し・座り・会話の身振り） |
+| `04 PROPS & COSTUME` | 全身＋持ち物・手・足元・留め具の拡大詳細 |
+| `01 TURNAROUND`（脇役のみ） | 正面・側面・背面＋シルエット。COREを持たない5体の01相当 |
+
+生成は全て参照2枚方式（デザインの正＝CORE または承認済み図版／質感の正＝`a8434a32`）。
+リテイク記録：大和02は目の暗色化→驚きコマの口、の2段階を経てv3採用。雲井02・トメ02・鏑木02は
+床面アーティファクトや文字混入でリテイク（経緯は `generated.json` の `note` と `superseded_job_id`）。
+
+**注意：シート構成（02〜04の内訳）は EMBER の参照シートが未入手のため、CHARACTER BIBLE V2 の
+既知の規約から定義した暫定版。** EMBER のシート一式が届いたら構成を照合して差分を作り直す。
+ローカル保存先（`ASSETS/Character/003_はしっこビルの明日づくり`）への取り込みは
+`fetch-assets.mjs` と同様に `generated.json` のURLから行える。
+
 ```
 https://raw.githack.com/tkwfunkypop/public/claude/prompts-json-10cut-generation-cisssw/works/hashikko-bill/character-sheets.html
 ```
