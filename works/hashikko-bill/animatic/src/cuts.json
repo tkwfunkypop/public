@@ -14,7 +14,7 @@
    "dialogue": "",
    "note": "モノローグなし。風の音のみ。世界の外れであることを一枚で言う",
    "panel": "sb01_fog_building",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_222621_a94d4b7f-8497-4e40-905d-1e6b6410ea73.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181442_fd8aae78-f304-43f6-82a7-bdc5dc04fe64.png"
   },
   {
    "no": 2,
@@ -26,7 +26,7 @@
    "dialogue": "N「世界の地図が、そこで終わっている場所に」",
    "note": "",
    "panel": "sb02_mailslots",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230358_a62da44a-6c1b-4f7d-a153-24e7454e66c9.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181445_0373c28a-482d-4963-9b41-b45410db3132.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041620_77be4ad8-dabf-4eca-9df2-d0d826227069.wav",
@@ -44,7 +44,7 @@
    "dialogue": "N「古い、七階建ての雑居ビルがある」",
    "note": "縦の構図。以後この階段が主役の空間になる",
    "panel": "sb03_stairwell",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_222625_72f56350-cbcd-4a10-9780-125b4cd0455e.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181449_e0a4eca6-4d84-44cb-8903-39f351bd6a8f.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041623_f9b3477d-cdcc-4004-b4ee-457250da732c.wav",
@@ -62,7 +62,7 @@
    "dialogue": "N「四十年前から、二階と六階に停まらない」",
    "note": "後半の伏線。表示の飛びを画で見せきる",
    "panel": "sb04_elevator_dark",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230401_bcfc45ff-330f-421a-9a29-94d2bc3ae954.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181451_23893b35-ef65-4c22-bf8f-721eca0c1846.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041626_cc2861c2-5e3c-4267-ad64-5a6d627b0711.wav",
@@ -80,7 +80,7 @@
    "dialogue": "N「だから誰も、隣で何が起きているか知らない」",
    "note": "",
    "panel": "sb05_doors_closed",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230404_538d53b1-2d3f-4278-9a58-0ca9bb3a8655.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181454_af21792c-1c4a-45fe-a236-5dbcf2c91632.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041629_7e57eb67-6d3b-493d-968a-5824d0eb2ea8.wav",
@@ -98,7 +98,7 @@
    "dialogue": "",
    "note": "タイトルは編集で載せる（生成に文字を入れない）",
    "panel": "sb06_title",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230416_8ada1bd1-6840-4ee0-81d2-29f60b073c38.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181457_c4235357-4058-4790-8aaf-1b66d989effa.png"
   },
   {
    "no": 7,
@@ -110,7 +110,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb07_envelope",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230419_525c68c3-4b6b-4d0d-9e95-b458043209c1.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181518_cf4c1664-f127-4531-a163-64ac4de72741.png"
   },
   {
    "no": 8,
@@ -122,7 +122,7 @@
    "dialogue": "",
    "note": "文字は編集で入れる。生成パネルは紙と手だけ",
    "panel": "sb08_letter",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_222627_649145a5-8815-42d5-9fc8-b8244f47ebb5.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181527_98707444-09ba-4e13-a134-def8bf6727fb.png"
   },
   {
    "no": 9,
@@ -134,7 +134,7 @@
    "dialogue": "",
    "note": "予算ゼロを一動作で",
    "panel": "sb09_empty_envelope",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230422_8de3d0d4-2498-4936-bc39-abb9e379bcbd.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181531_8a115edf-0fe9-4522-9ac6-bd9209989183.png"
   },
   {
    "no": 10,
@@ -146,7 +146,7 @@
    "dialogue": "",
    "note": "画面分割。七社が同じ動作をしていることを見せる＝互いを知らないのに同じ",
    "panel": "sb10_seven_bins",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230437_28ca42d3-dcb7-40df-87fa-8867952b5de7.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181537_8a57d94d-96ac-4e8b-9521-8c4dd8f5b2b2.png"
   },
   {
    "no": 11,
@@ -158,7 +158,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb11_returned",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230440_8f59d897-67fc-45b9-8138-e7fb640ff9fb.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181541_4b3c1292-2623-4594-b2f2-cd37b7762a09.png"
   },
   {
    "no": 12,
@@ -170,7 +170,7 @@
    "dialogue": "",
    "note": "彼女だけが全階をまわる＝唯一の横断者",
    "panel": "sb12_hikari_start",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_223253_6a86dad3-8179-42d3-8951-3b3e8e32b1b0.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181547_df88bb4d-1ac3-4795-8443-f6182cb85e86.png"
   },
   {
    "no": 13,
@@ -182,7 +182,7 @@
    "dialogue": "",
    "note": "気づきは台詞でなく足の止まりで",
    "panel": "sb13_hikari_notice",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_234236_4547aba3-3df0-4376-8079-7ce4756a2ef6.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181612_282f1a50-d93b-4487-8e68-1879fc09a71b.png"
   },
   {
    "no": 14,
@@ -194,7 +194,7 @@
    "dialogue": "ひかり「……ぜんぶ、おなじ」",
    "note": "",
    "panel": "sb14_seven_fan",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230443_bfcc7f41-439e-4277-b7ab-cc7b2d0bd224.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181615_9899596f-e2b4-47eb-81b9-dcf63cdc80f7.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041652_078cb03d-f048-49d4-b699-69e76ee26c64.wav",
@@ -212,7 +212,7 @@
    "dialogue": "ひかり「あの、うちにも来たんですけど！」",
    "note": "この作品の起点。カメラは彼女を追って縦に上がる",
    "panel": "sb15_hikari_run",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_222705_125c2bb7-6dec-49e3-b30c-0978998a74ac.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181622_2a9c55a5-2cb3-4cec-b4e4-7f82a80f18ee.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041655_6b2db87a-c76b-46aa-ac6c-f37daffe0935.wav",
@@ -230,7 +230,7 @@
    "dialogue": "N「四十年ぶりの、社間コミュニケーションだった」",
    "note": "",
    "panel": "sb16_doors_peek",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_234239_42607466-a290-4af3-a117-61ae7dfb3d58.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181626_e464916c-4b33-4f90-96c3-7fa981787782.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041631_b492d4bb-f84f-4e09-9053-40589a73dd6b.wav",
@@ -248,7 +248,7 @@
    "dialogue": "",
    "note": "距離＝関係性。後半の食卓カットと対になる構図",
    "panel": "sb17_meeting",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_222849_93e8e8b4-3d20-4f88-b9e9-afb7bf7bf431.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181639_948d9f67-bd46-427e-a781-766d8a6d8366.png"
   },
   {
    "no": 18,
@@ -260,7 +260,7 @@
    "dialogue": "トメ「では一、開式の辞」",
    "note": "葬式の式次第になっている",
    "panel": "sb18_tome_agenda",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230529_9a3f661d-6b05-4b13-a058-3b546a31a325.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181642_151fdaa8-42fb-4264-8ec3-9a974d50e278.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041713_76d0b238-7837-467a-b0c6-8e24e577dc28.wav",
@@ -278,7 +278,7 @@
    "dialogue": "雲井「本件の実現確率は、0.04%です」",
    "note": "",
    "panel": "sb19_kumoi_prob",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230532_3f30e53b-baab-438f-818e-ece72a2f0be1.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181702_58bd4575-6b48-4d03-846c-9000315fb96f.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041729_c96642ca-cadf-4e0c-9839-19fe8babad6c.wav",
@@ -296,7 +296,7 @@
    "dialogue": "",
    "note": "唯一の明確なギャグ。テンポで押す",
    "panel": "sb20_ri_vial",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230536_3f97c6c5-8fb2-442b-8ae1-ff671fef41a9.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181712_bd4ad3a7-691d-48b1-852b-f720f352981d.png"
   },
   {
    "no": 21,
@@ -308,7 +308,7 @@
    "dialogue": "",
    "note": "後のぜんまい椅子の伏線",
    "panel": "sb21_kaburagi_tools",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230552_60ad45ed-8e85-48e5-85e1-0c6b7a959c75.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181719_30beab12-5722-4c01-90b5-059f9387f640.png"
   },
   {
    "no": 22,
@@ -320,7 +320,7 @@
    "dialogue": "黒金「議事録じゃ。納品は三日後」",
    "note": "",
    "panel": "sb22_kurogane_minutes",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230555_8ea5d923-4424-4422-ab5c-d3e99ee62a10.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181723_af284ad0-8e43-45c9-9d55-ab7bc0da9876.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041749_7a279650-282c-467d-ac60-46ba266c4c7b.wav",
@@ -338,7 +338,7 @@
    "dialogue": "鵜飼「まあまあ、順に伺いましょう」",
    "note": "この時点で観客に不吉さを少しだけ渡す",
    "panel": "sb23_ukai",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_222944_34a551fd-bf5a-42da-b9e0-78288b76df26.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181731_5011b30b-01e9-45c4-be72-015d7dc77191.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041752_235f82f9-23dd-465d-a047-f352a99b6fd3.wav",
@@ -356,7 +356,7 @@
    "dialogue": "ひかり「え、わたし？」",
    "note": "",
    "panel": "sb24_hikari_scribe",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230559_9885fbbc-2656-4267-9257-7668d7a4b425.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181735_be164cff-fb01-4d93-b9ca-e683954a28d5.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041657_197a84e9-71e3-4f39-a7e4-b65929233b9d.wav",
@@ -374,7 +374,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb25_chaos",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230612_2c2d7bc3-80a8-403e-8382-01a20e793f90.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181756_eaa5ca24-0df2-436e-b9e8-4fd6753d4fe9.png"
   },
   {
    "no": 26,
@@ -386,7 +386,7 @@
    "dialogue": "鏑木「……星野さん、だったか」　トメ「鏑木さんね」",
    "note": "決裂したのに名前を覚えた。この章の本当の成果",
    "panel": "sb26_pass_stairs",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230616_04d7b3ce-9eb2-4f2b-8ef6-292dfc4c66a6.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181804_4c4a90aa-9e56-40a3-9a30-5da2e9105c1e.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041813_97a7e3d7-c49c-45ab-8ac6-e77ea3464afd.wav",
@@ -408,7 +408,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb27_seven_names",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230618_71abee7c-c6dd-439f-9180-39f8451ff286.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181811_bd8951b0-1964-4371-bdb3-4c31ac606d07.png"
   },
   {
    "no": 28,
@@ -420,7 +420,7 @@
    "dialogue": "",
    "note": "倒れる瞬間は見せない",
    "panel": "sb28_collapse",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230633_dcfd9a64-e46a-47c9-a249-930ba3c68955.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181816_34da3f12-5ef7-4889-a140-842f14648572.png"
   },
   {
    "no": 29,
@@ -432,7 +432,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb29_hiiragi_bed",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_222711_6935fa54-2095-4ebf-a8f8-f85f2305e2e4.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181823_57833046-95bb-4353-9596-8fecfc504aeb.png"
   },
   {
    "no": 30,
@@ -444,7 +444,7 @@
    "dialogue": "ひかり「これ、柊さんですよね」",
    "note": "",
    "panel": "sb30_hikari_demand",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230636_311ddb28-07d5-4823-812a-1c3fe38772da.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181826_4181bd87-9107-4fec-b897-e7d4153d309f.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041701_d95986a5-79ea-4ce5-bde8-770f60b6e986.wav",
@@ -462,7 +462,7 @@
    "dialogue": "",
    "note": "ここが仕掛けの開示。寄りきる",
    "panel": "sb31_letter_closeup",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_222643_e52f204d-1cfe-4118-9ab0-2b44be89a3c7.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181850_9924b61e-8789-4675-98fe-e9c1c7c7e853.png"
   },
   {
    "no": 32,
@@ -474,7 +474,7 @@
    "dialogue": "柊「みんなが、捨てたもんじゃ」",
    "note": "",
    "panel": "sb32_drawer",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_222647_393ec44e-7cb6-417f-b63f-1a20479ef7e8.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181857_c348c062-7d27-42c8-a37b-a9fc5f67793a.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041801_d9a5215e-b0a7-40a3-8b9e-dbe22aff6d83.wav",
@@ -492,7 +492,7 @@
    "dialogue": "N「依頼書は、このビルで働いた全員の手で書かれていた」",
    "note": "",
    "panel": "sb33_scraps_hands",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230638_2f49f395-d438-495c-b3a7-700a6f7116e3.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181905_d99ae196-90f1-4a06-9f0f-c0fe58cfb923.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041634_a263a2fd-de69-4184-b667-b70db0e41856.wav",
@@ -510,7 +510,7 @@
    "dialogue": "柊「わしはな、五十年ここにおって、七社が一つのテーブルを囲むとこだけ、見とらんのよ」",
    "note": "作品の願い。ここだけ間を長く取る",
    "panel": "sb34_hiiragi_wish",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230652_36552b92-2b3c-4ee5-8b07-48420421daca.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181908_a68608f6-3fc5-4585-871b-80aa6548cbfe.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041810_0b31bceb-a21d-4d91-94e3-85cc7f1c1b94.wav",
@@ -528,7 +528,7 @@
    "dialogue": "",
    "note": "cut15と同じ構図でリズムを反復させる",
    "panel": "sb35_hikari_run2",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230655_0278d7c3-a0bb-43e0-b877-6f6517f80018.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181914_219dca79-ad7a-4f76-b5ff-137869631fdf.png"
   },
   {
    "no": 36,
@@ -540,7 +540,7 @@
    "dialogue": "",
    "note": "cut16の反転",
    "panel": "sb36_doors_open",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230658_c382d0b0-caf1-4919-87bc-c8ddc04535d2.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181917_063e241f-d55c-4e2f-a470-ab52cb0382af.png"
   },
   {
    "no": 37,
@@ -552,7 +552,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb37_kumoi",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_223257_7d2b6abb-df9f-49f7-9071-23fd11a1599d.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181941_468a1915-a718-415d-816d-332580b0c37a.png"
   },
   {
    "no": 38,
@@ -564,7 +564,7 @@
    "dialogue": "雲井「霧の晴れる窓は、七日目の一六時四四分から十一分間。一度だけです」",
    "note": "文字は編集で",
    "panel": "sb38_logbook_window",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230708_0a3e430f-d62f-4085-a0fd-15997ce5fc0f.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181945_556c334a-1581-4e0e-9874-9e06d3441681.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041732_6abdf50f-4405-473d-bad8-075a597833d2.wav",
@@ -582,7 +582,7 @@
    "dialogue": "トメ「うちの本領です」",
    "note": "",
    "panel": "sb39_tome_delight",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230711_ee191367-6384-4b5d-a299-62f013152346.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181949_b0e6d4cf-66c2-4f24-a825-2e7252e44c49.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041721_66ad5043-42df-4f61-9874-1aa3264bc3a9.wav",
@@ -600,7 +600,7 @@
    "dialogue": "",
    "note": "会議が噛み合いはじめる合図",
    "panel": "sb40_seven_seals",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230714_df511d2c-fee0-45b4-8b2c-9799afff1215.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181956_079bae0e-4ab0-48fa-b551-519b7604f6a0.png"
   },
   {
    "no": 41,
@@ -612,7 +612,7 @@
    "dialogue": "",
    "note": "ここから41〜47は同テンポで刻む",
    "panel": "sb41_kumoi_cue",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230729_475e286f-f187-451a-9b47-9925eae386b6.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182003_2c1db8f4-d2a1-4255-8f2a-60586dbb6a5c.png"
   },
   {
    "no": 42,
@@ -624,7 +624,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb42_press",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_222715_3f4d6276-e7cd-4809-a8ce-aac50c6fc065.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182008_990dd39f-34c2-48cc-9e93-e2ed00075d9d.png"
   },
   {
    "no": 43,
@@ -636,7 +636,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb43_ri",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_222950_b64e75f2-52ba-484b-a389-17ef876e9202.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182032_4d0ec773-226e-429d-bfde-e324406201d4.png"
   },
   {
    "no": 44,
@@ -648,7 +648,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb44_chair_build",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230733_f20e461d-8e85-4cbc-b628-e3b445f32853.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182037_a01bf9db-a0cf-4946-b999-d6f70f9620dc.png"
   },
   {
    "no": 45,
@@ -660,7 +660,7 @@
    "dialogue": "",
    "note": "この時点では善意に見せる",
    "panel": "sb45_ledger_join",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230736_29bcb1ad-6984-4139-9792-53de8add9a0e.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182046_d3a41659-7764-42c0-9b79-8e5fc6abc74b.png"
   },
   {
    "no": 46,
@@ -672,7 +672,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb46_tome_program",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230749_65bb83df-998e-4049-b160-1fe4d97c4f51.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182054_6271fecf-e2cd-426f-9109-321fa5e58a30.png"
   },
   {
    "no": 47,
@@ -684,7 +684,7 @@
    "dialogue": "",
    "note": "九人＝七社＋柊＋自分。数の伏線",
    "panel": "sb47_nine_plates",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230752_93a31706-2239-4f0e-8872-dab005abf770.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182057_2eeeeb70-9fb0-49d2-bc92-4ee47828054c.png"
   },
   {
    "no": 48,
@@ -696,7 +696,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb48_stairs_busy",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230755_cf90a71d-79af-452f-b4d0-36f8308ff958.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182105_d1c48d30-166d-4d77-92fa-45f0bf2cc725.png"
   },
   {
    "no": 49,
@@ -708,7 +708,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb49_betrayal",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230810_6d61397b-099b-409b-a8b5-ca017b151bf7.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182128_8df542a7-ed5a-4baa-ae8a-21077c06395d.png"
   },
   {
    "no": 50,
@@ -720,7 +720,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb50_eye_gap",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230814_d4cd74b2-8d55-48af-a36e-2e17f437339c.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182132_ed64965f-62a3-4c11-a155-6c6ea06d5f7a.png"
   },
   {
    "no": 51,
@@ -732,7 +732,7 @@
    "dialogue": "",
    "note": "cut23の回収",
    "panel": "sb51_notes_spill",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230817_8e141e9d-d5d6-4064-8676-2ac0a853351a.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182138_29adad0f-41b8-44dd-bd12-1a981371fe29.png"
   },
   {
    "no": 52,
@@ -744,7 +744,7 @@
    "dialogue": "",
    "note": "音だけで見せてもよい",
    "panel": "sb52_doors_close",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230829_752dbac2-c4e8-477a-9c92-158037947812.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182143_7720b850-6ae8-40e7-8a27-5907c35fbc39.png"
   },
   {
    "no": 53,
@@ -756,7 +756,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb53_erased",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230833_b850738e-b7df-477b-8cd0-5eb9ff6b4a43.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182149_41f799f2-0de3-4d92-8e38-c5a569b04a6b.png"
   },
   {
    "no": 54,
@@ -768,7 +768,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb54_chair_alone",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230839_0eb419d1-4540-427c-a7d3-1d5138eb233a.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182153_3fd9ffd1-cae4-438f-8f48-2dd94475940d.png"
   },
   {
    "no": 55,
@@ -780,7 +780,7 @@
    "dialogue": "鵜飼「僕は、このビルの子どもでした」",
    "note": "",
    "panel": "sb55_ukai_window",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230854_b18a4627-678b-45e4-9aaf-11721d704bf3.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182214_f373996b-b4e4-47ac-abdb-eb972d735022.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041755_dcf114ea-9cb4-449b-a4e9-1d0d10998c09.wav",
@@ -798,7 +798,7 @@
    "dialogue": "",
    "note": "鉛筆の線をさらに薄く、回想の階調を落とす",
    "panel": "sb56_flashback",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230334_7d646873-59da-47d5-99ec-c38333521f68.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182224_4194c397-bf1f-423e-a1dc-591718b733bd.png"
   },
   {
    "no": 57,
@@ -810,7 +810,7 @@
    "dialogue": "",
    "note": "死体は映さない",
    "panel": "sb57_toolbox",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230341_0fba3eec-38a0-41fe-856b-1532dc1c223e.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182229_d7aa7e6e-12e8-43a2-a6cb-34854bb0b03a.png"
   },
   {
    "no": 58,
@@ -822,7 +822,7 @@
    "dialogue": "鵜飼「七社の誰ひとり、来ませんでした。誰も、隣の階で何が起きたか知らなかったから」",
    "note": "この作品のテーマの裏面",
    "panel": "sb58_empty_chairs",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230338_dc45cdd2-41bd-435a-b1e6-dd07db24bfec.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182235_a28a4fc7-72f1-4c6d-aebd-d09fcea1f609.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041758_b1d36b90-4eb4-4b5e-a9b3-bc367c285d65.wav",
@@ -840,7 +840,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb59_tome_ledger",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230858_49d57f32-5079-4e97-8499-ad55e6d7696d.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182241_878410a0-65bd-432f-8239-5ad1d6767668.png"
   },
   {
    "no": 60,
@@ -852,7 +852,7 @@
    "dialogue": "トメ「あんたのお父さんの葬式はな。ちゃんと出とるよ。管理人さんが、自分の貯金でな」",
    "note": "感情のピーク。ここが一番寄る",
    "panel": "sb60_ledger",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_222920_97f8759e-1562-42c6-ad66-b6d5598196a9.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182246_12251a48-71fb-4f05-ae61-571723bb615f.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041724_0bdefbb5-4bcf-4591-b245-fd59e6a2ff7e.wav",
@@ -870,7 +870,7 @@
    "dialogue": "",
    "note": "泣き顔は見せない。手だけ",
    "panel": "sb61_ukai_hands",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230903_1db856a8-f21b-4513-938d-838c37cf6a0d.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182314_3f4bb4a5-3710-4bff-b916-d4ddbf3933a1.png"
   },
   {
    "no": 62,
@@ -882,7 +882,7 @@
    "dialogue": "",
    "note": "cut7の反復構図（机に紙が置かれる）",
    "panel": "sb62_ledger_delivered",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230923_3a95ca86-3ee7-45c9-8f3c-d0e53267fbef.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182321_3c28468d-102a-4b66-aa72-c8e083fc284a.png"
   },
   {
    "no": 63,
@@ -894,7 +894,7 @@
    "dialogue": "",
    "note": "cut4の回収",
    "panel": "sb63_elevator_still",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230926_5bc5a374-f8f0-4ac8-bdf2-14a94d2ec452.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182326_2257c06e-1ff2-46c4-9763-bf27945dc019.png"
   },
   {
    "no": 64,
@@ -906,7 +906,7 @@
    "dialogue": "",
    "note": "cut3の階段を、今度は人で埋める",
    "panel": "sb64_carry",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_222914_5b947877-5cf7-45b1-b3a3-afcf378b43e5.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182334_33fb28dd-c53f-4fe5-b257-f0e362e91659.png"
   },
   {
    "no": 65,
@@ -918,7 +918,7 @@
    "dialogue": "雲井「十秒前」",
    "note": "",
    "panel": "sb65_watch",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230929_b3263e58-9fdd-4ff1-a7d9-54dd12fc84e0.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182340_851b3c9f-80bc-4e6d-b4d8-96eebd97e463.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041736_15bf5be5-b27c-4fa7-8ca8-088abb0c3a49.wav",
@@ -936,7 +936,7 @@
    "dialogue": "",
    "note": "全編で唯一、色を入れてよい箇所（本編では）。コンテでは鉛筆のまま、白の抜きで表現",
    "panel": "sb66_fog_tears",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_222858_6f28941f-4ae4-4a85-87bf-d92c99c69eb3.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182346_95865a42-aae9-4bb3-b4db-99b20a20e187.png"
   },
   {
    "no": 67,
@@ -948,7 +948,7 @@
    "dialogue": "",
    "note": "cut17と同アングルで対にする。この一枚が作品の答え",
    "panel": "sb67_table",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_222853_6b02096f-5c70-45fa-982e-2ff6b5079fcf.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182407_0f86e3a7-0f00-4a85-b732-9482545f0e3e.png"
   },
   {
    "no": 68,
@@ -960,7 +960,7 @@
    "dialogue": "李「……ずっと、作ってました。誰にも、渡す相手がいなかったので」",
    "note": "",
    "panel": "sb68_ri_vial_gift",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230945_cb1143dc-bc14-416e-a74f-d86286b452c7.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182414_2702314e-64f0-4a86-b2cc-c183b9bd9432.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041823_bd2210e6-e395-446d-bbbc-026a6d7d383a.wav",
@@ -978,7 +978,7 @@
    "dialogue": "鏑木「……見たいだろ、最後に。全部」",
    "note": "",
    "panel": "sb69_chair_turn",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230950_eddb75a7-e5b3-494e-ae09-7fabb2d826d2.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182421_9a71d289-ae95-4852-94d4-6ff0eebf0379.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041820_6c2b7445-759b-403f-a36f-3143c819b9bd.wav",
@@ -996,7 +996,7 @@
    "dialogue": "",
    "note": "文字は編集で",
    "panel": "sb70_extra",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230954_4895d91d-3ffe-429b-ab95-45b3cdba5bde.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182426_a4967055-a265-4cb2-a483-56164efd2ef2.png"
   },
   {
    "no": 71,
@@ -1008,7 +1008,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb71_hiiragi_hand",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_231009_a2188599-bc33-4b33-b598-00175b4b9ea8.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182432_1a83fc6e-4b68-476d-b927-de1a50d862fb.png"
   },
   {
    "no": 72,
@@ -1020,7 +1020,7 @@
    "dialogue": "トメ「――では、最後の仕事にかかります」",
    "note": "",
    "panel": "sb72_tome_rises",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_231012_81ea315e-4153-41c7-8b4e-0053a3f1d455.png",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182435_8ac90c74-3aca-4c7e-a213-737a00b120dc.png",
    "audio": [
     {
      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_041727_1c017eec-0cbf-47b1-8812-89892ff86c33.wav",
@@ -1038,7 +1038,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb73_fog_window",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_231015_311b71f1-ff88-46bf-b023-21382c4b621e.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182457_6cb7b834-dcc8-4df6-a1e5-07b78b24ddac.png"
   },
   {
    "no": 74,
@@ -1050,7 +1050,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb74_doors_open_left",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_231028_71b6fbb6-8464-4d90-a845-91a8a8e158b4.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182500_bfd79d3e-d117-4440-a48c-7b7968dbc945.png"
   },
   {
    "no": 75,
@@ -1062,7 +1062,7 @@
    "dialogue": "",
    "note": "四十年ぶり。台詞なしで観客に効く",
    "panel": "sb75_elevator",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_222923_00e152a6-c9d0-4642-83af-4c389558c4ac.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182504_a2228943-7888-40ee-acc7-4c2fadcbaee9.png"
   },
   {
    "no": 76,
@@ -1074,7 +1074,7 @@
    "dialogue": "",
    "note": "",
    "panel": "sb76_new_letter",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_231031_027ece3e-00fc-4f5d-bb85-a4cdecb2f9e6.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182510_7f428d6c-61d1-4b5c-be55-c38901adeaf9.png"
   },
   {
    "no": 77,
@@ -1086,7 +1086,7 @@
    "dialogue": "",
    "note": "八社目＝彼女",
    "panel": "sb77_hikari_writes",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_231034_fea0ee38-45a4-410c-84da-32fbece412e7.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182515_c14f3af7-d4ec-41ca-971b-372fdbe67dd3.png"
   },
   {
    "no": 78,
@@ -1098,7 +1098,7 @@
    "dialogue": "",
    "note": "cut3の階段を、一人で。柊の五十年を引き継ぐ画",
    "panel": "sb78_hikari_climb",
-   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_222938_cc78c191-a801-4244-a2bb-f12588271de5.png"
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182523_e0136b55-2a19-4dc5-a33f-4540eb4efca7.png"
   }
  ]
 }
