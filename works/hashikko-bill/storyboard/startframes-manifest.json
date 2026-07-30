@@ -6,8 +6,10 @@
   "refs": [
    "BUILDING"
   ],
-  "job_id": "5a66ea04-5662-433b-8dcd-712add8ece81",
-  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183454_5a66ea04-5662-433b-8dcd-712add8ece81.png"
+  "job_id": "d33f1d51-7a75-4de5-9ad7-39b2e8992074",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_231828_d33f1d51-7a75-4de5-9ad7-39b2e8992074.png",
+  "superseded_job_id": "5a66ea04-5662-433b-8dcd-712add8ece81",
+  "note": "v3: 吊り橋・街灯・霧の海をREQUIRED ELEMENTSで明示して再生成"
  },
  {
   "panel": "sb02_mailslots",
