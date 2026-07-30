@@ -2983,6 +2983,56 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_104927_41b5483a-1d3b-44c4-bf8a-97f6104c4a3a.png",
       "method": "改定図版第1参照＋旧シートをレイアウト参照",
       "note": "IMAGE SHOT（図版c4f0ecbe）準拠への統一v0.3"
+    },
+    {
+      "id": "sheet_hikari_ex_v2",
+      "kind": "character_sheet",
+      "character": "NANAO_HIKARI",
+      "sheet": "02 EXPRESSION",
+      "job_id": "b464673a-b6c9-4f41-8e41-b45a6fc5bee9",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_110125_b464673a-b6c9-4f41-8e41-b45a6fc5bee9.png",
+      "method": "改定図版第1参照＋旧シートをレイアウト参照",
+      "note": "衣装改定v2（ゴスロリ）反映版（870f46d3を差し替え）"
+    },
+    {
+      "id": "sheet_hikari_pose_v2",
+      "kind": "character_sheet",
+      "character": "NANAO_HIKARI",
+      "sheet": "03 POSE",
+      "job_id": "49800ca4-bf51-4a77-8db8-9986267c5b49",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_110134_49800ca4-bf51-4a77-8db8-9986267c5b49.png",
+      "method": "改定図版第1参照＋旧シートをレイアウト参照",
+      "note": "衣装改定v2（ゴスロリ）反映版（c26714efを差し替え）"
+    },
+    {
+      "id": "sheet_hikari_props_v2",
+      "kind": "character_sheet",
+      "character": "NANAO_HIKARI",
+      "sheet": "04 PROPS & COSTUME",
+      "job_id": "614211b3-8927-4f46-82bf-d08cfca82753",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_110137_614211b3-8927-4f46-82bf-d08cfca82753.png",
+      "method": "改定図版第1参照＋旧シートをレイアウト参照",
+      "note": "衣装改定v2（ゴスロリ）反映版（6997ba07を差し替え）"
+    },
+    {
+      "id": "bible_kaburagi_01_core_v03",
+      "kind": "bible_sheet",
+      "character": "KABURAGI",
+      "sheet": "01 CORE",
+      "job_id": "91ede740-4ff8-40a0-baee-c80d18b4c77c",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_110159_91ede740-4ff8-40a0-baee-c80d18b4c77c.png",
+      "method": "改定図版第1参照＋旧シートをレイアウト参照",
+      "note": "IMAGE SHOT（図版c4f0ecbe）準拠のCORE改訂候補。旧CORE(e43324b7)は参照実例として残置・人間承認待ち"
+    },
+    {
+      "id": "bible_kaburagi_02_construction_v03",
+      "kind": "bible_sheet",
+      "character": "KABURAGI",
+      "sheet": "02 CONSTRUCTION",
+      "job_id": "0f10f007-14f5-4ebf-9b98-58219855f51b",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_110202_0f10f007-14f5-4ebf-9b98-58219855f51b.png",
+      "method": "改定図版第1参照＋旧シートをレイアウト参照",
+      "note": "IMAGE SHOT（図版c4f0ecbe）準拠（41a7b0d2を差し替え）"
     }
   ]
 }
