@@ -3125,6 +3125,39 @@
         "a8dfea9b-5b43-48be-80af-70ee116ac261",
         "383b1a7c-2a28-4e19-b9af-c4161d94338f"
       ]
+    },
+    {
+      "id": "building_fusion_p2a_office_scale",
+      "kind": "design_variant",
+      "character": "果端ビル",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "案2ベース＋添付リファレンスの空気（ひび割れ白漆喰・配管ベルト・外付け梯子・白旗・青灰曇天・霧の足元・漂う封筒）＋実ビルのサイズ感。案2-A：忠実版 — 案2の意匠のまま実ビル寸法（各階に窓列・玄関に集合ポスト・4層の非常階段）",
+      "job_id": "1386a5b6-9b2a-4e4c-b0cc-bdf680512c42",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_114101_1386a5b6-9b2a-4e4c-b0cc-bdf680512c42.png",
+      "method": "案2(d37dc6c0)を構造参照＋添付画像の言語化＋オフィスビル寸法の明示"
+    },
+    {
+      "id": "building_fusion_p2b_muted",
+      "kind": "design_variant",
+      "character": "果端ビル",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "案2ベース＋添付リファレンスの空気（ひび割れ白漆喰・配管ベルト・外付け梯子・白旗・青灰曇天・霧の足元・漂う封筒）＋実ビルのサイズ感。案2-B：添付寄りの淡色 — 白漆喰主体でプラム最小限、冷たい青灰の曇天",
+      "job_id": "1f9d721f-1db9-436e-b56c-8e936bbb97ad",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_114107_1f9d721f-1db9-436e-b56c-8e936bbb97ad.png",
+      "method": "案2(d37dc6c0)を構造参照＋添付画像の言語化＋オフィスビル寸法の明示"
+    },
+    {
+      "id": "building_fusion_p2c_topheavy",
+      "kind": "design_variant",
+      "character": "果端ビル",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "案2ベース＋添付リファレンスの空気（ひび割れ白漆喰・配管ベルト・外付け梯子・白旗・青灰曇天・霧の足元・漂う封筒）＋実ビルのサイズ感。案2-C：頭でっかち — 上層ほど張り出す危うい積層（ワイヤーと突っ張りで支持）",
+      "job_id": "d31a4d48-43c5-44e1-9f29-89cba8247aff",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_114120_d31a4d48-43c5-44e1-9f29-89cba8247aff.png",
+      "method": "案2(d37dc6c0)を構造参照＋添付画像の言語化＋オフィスビル寸法の明示"
     }
   ]
 }
