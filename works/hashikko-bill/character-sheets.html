@@ -135,12 +135,12 @@ var CORE = 'https://d2ol7oe51mr4n9.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13E
 var GEN  = 'https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/';
 
 var BIBLE_LABELS = {
-  c01:'EMBER 01 / CORE 改訂候補（v0.3・人間承認待ち）',
-  c02:'EMBER 02 / CONSTRUCTION（頭部地図・機構・衣装分解・素材）',
-  c03:'EMBER 03 / PROPS & INTERACTION（正典プロップ2点・持ち方）',
-  c04:'EMBER 04 / STORY STATES（物語内の状態変化）',
-  c05:'EMBER 05 / MOTION & PERFORMANCE（所作・DO NOT）',
-  c06:'EMBER 06 / CONTINUITY CHECK（同一性照合・承認欄）'
+  c01:'01 / CORE 改訂版（v0.3・承認待ち）',
+  c02:'02 / CONSTRUCTION（頭部地図・機構・衣装分解・素材）',
+  c03:'03 / PROPS & INTERACTION（正典プロップ2点・持ち方）',
+  c04:'04 / STORY STATES（物語内の状態変化）',
+  c05:'05 / MOTION & PERFORMANCE（所作・DO NOT）',
+  c06:'06 / CONTINUITY CHECK（同一性照合・承認欄）'
 };
 function bibleRows(c){
   if (!c.bible) return [];
@@ -151,12 +151,12 @@ function bibleRows(c){
 var CHARACTERS = [
   { id:'f7_hikari', name:'NANAO HIKARI', jp:'七尾ひかり', floor:'7F 仕出しふくふく亭',
     cid:'nanao-hikari', rev:'v0.2', status:'CANON CANDIDATE', body:'CUSTOM', hand:'R',
-    core:'2385f36b-65e6-455b-a357-3c02deca885d.png',
+    core:'hf_20260730_104330_871f1903-9954-4208-b219-e453804ba3a3.png',
     render:'hf_20260730_103221_ea03da32-5f13-41ad-a2c8-eed0458cbfe6.png', ver:'v2 gothic dress',
     sheets:{ex:'hf_20260730_012125_870f46d3-2b4e-4554-b7a8-cfa9eda66d86.png',pose:'hf_20260730_012130_c26714ef-17a9-43f8-8820-ad94ba258b68.png',props:'hf_20260729_235349_6997ba07-dcb2-441c-a098-86ef35f90568.png'},
     bible:{c01:'hf_20260730_104330_871f1903-9954-4208-b219-e453804ba3a3.png',c02:'hf_20260730_104337_a9f07360-df17-4442-9f3d-de6bd7d69a6f.png',c03:'hf_20260730_104351_82fa6704-9623-48f1-b923-10b4657c18b7.png',c04:'hf_20260730_104357_2e51fb31-c815-490d-8607-8a2e4048d428.png',c05:'hf_20260730_104409_459daa5c-af71-476e-9b2e-acd25f15dab5.png',c06:'hf_20260730_104411_96cba609-3dcb-4db5-9ad7-5e0b975167b1.png'},
     colors:['#6B2B3C','#1C1A1D','#E6DCC8','#6B5340','#F2EFE9'],
-    ok:true, note:'v2：衣装を<b>黒フリルワンピース×白レース</b>に改定（大和との類似解消・人間選定05番）。顔・髪・トランク塔・肩掛け鞄は従来の正準のまま。CORE v0.3とEMBERシートは改定反映版に差し替え予定。' },
+    ok:true, note:'v2：衣装を<b>黒フリルワンピース×白レース</b>に改定（大和との類似解消・人間選定05番）。顔・髪・トランク塔・肩掛け鞄は従来の正準のまま。CORE v0.3と各シートは改定反映版に差し替え済み。' },
 
   { id:'f6_kurogane', name:'KUROGANE', jp:'黒金', floor:'6F 印刷工房くろがね堂',
     cid:'kurogane', rev:'v0.2', status:'CANON CANDIDATE', body:'ROBOT / HARD SURFACE', hand:'R',
@@ -281,7 +281,7 @@ function sheetHTML(c){
     '<div class="sheet__body">' +
       '<div class="pane">' +
         '<span class="chip">01 / CORE（設計の正）</span>' +
-        '<div class="figure figure--core"><img loading="lazy" alt="' + esc(c.name) + ' キャラクターバイブル" src="' + CORE + c.core + '"></div>' +
+        '<div class="figure figure--core"><img loading="lazy" alt="' + esc(c.name) + ' キャラクターバイブル" src="' + (c.core.indexOf('hf_') === 0 ? GEN : CORE) + c.core + '"></div>' +
         '<div style="margin-top:18px"><span class="chip">COLOR SYSTEM</span>' +
           '<div class="colors">' + swatches + '</div></div>' +
       '</div>' +
