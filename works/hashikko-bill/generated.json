@@ -3256,6 +3256,26 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_163725_448fa44b-3e37-4333-afa9-7caad3aaf9be.png",
       "method": "屋上v2(eca637af)＋CANON(84c99ff4)の2参照",
       "superseded_job_id": "eca637af-16c0-4f71-a0b8-77948da04caa"
+    },
+    {
+      "id": "key_poster_titled",
+      "kind": "key_art",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "映画ポスターv2の作字入り完成版：タイトル「はしっこビルの明日づくり」をフェルト切り文字＋プラム縫い目の作字で下部に載せた（生成AIによる作字。要文字検品）。",
+      "job_id": "0984d14d-0b84-40ec-9a12-31adb2b0a28c",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181009_0984d14d-0b84-40ec-9a12-31adb2b0a28c.png",
+      "method": "ポスターv2(eeaea0c4)参照＋作字指示"
+    },
+    {
+      "id": "key_rooftop_titled",
+      "kind": "key_art",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "屋上カットv3の作字入り版：同作字を上空に載せた（要文字検品）。",
+      "job_id": "94ac4c9f-b5db-4ef5-937c-26940ed6779e",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181013_94ac4c9f-b5db-4ef5-937c-26940ed6779e.png",
+      "method": "屋上v3(448fa44b)参照＋作字指示"
     }
   ]
 }
