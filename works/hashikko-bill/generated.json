@@ -2740,6 +2740,39 @@
       "note": "Floyo移行手順の解説動画（9スライド・約134秒・1280×720・ナレーション付き）。FLOYO_MIGRATION.md と wfaia/floyo-workflow.md の映像化。floyo-guide/ のRemotionプロジェクトからサンドボックスでレンダ",
       "media_id": "f0398e0b-58aa-49ce-b20c-ef4987938025",
       "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/f0398e0b-58aa-49ce-b20c-ef4987938025.mp4"
+    },
+    {
+      "id": "hikari_redesign_a",
+      "kind": "design_variant",
+      "character": "NANAO_HIKARI",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "大和との類似解消のための衣装・髪型改案。A案：おかっぱボブ＋灯火橙の作務衣風上着＋プリーツスカート。顔の正準（縫い目の白い顔・鼻なし・太眉・黒い小さな目）とトランク塔・肩掛け鞄は固定。採用が決まるまで現行図版がCANON",
+      "job_id": "3adac631-9066-4f81-a938-9b20d86a51ca",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_100913_3adac631-9066-4f81-a938-9b20d86a51ca.png",
+      "method": "現行図版第1参照＋CORE第2参照＋改案部分のみ言語化"
+    },
+    {
+      "id": "hikari_redesign_b",
+      "kind": "design_variant",
+      "character": "NANAO_HIKARI",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "大和との類似解消のための衣装・髪型改案。B案：三つ編み2本＋松葉緑コート＋生成りの配達前掛け。顔の正準（縫い目の白い顔・鼻なし・太眉・黒い小さな目）とトランク塔・肩掛け鞄は固定。採用が決まるまで現行図版がCANON",
+      "job_id": "4f94eb8f-9de9-44a4-b731-4081f7d06626",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_100522_4f94eb8f-9de9-44a4-b731-4081f7d06626.png",
+      "method": "現行図版第1参照＋CORE第2参照＋改案部分のみ言語化"
+    },
+    {
+      "id": "hikari_redesign_c",
+      "kind": "design_variant",
+      "character": "NANAO_HIKARI",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "大和との類似解消のための衣装・髪型改案。C案：赤鉛筆挿しのお団子＋芥子色ケープ＋チャコールのつなぎ。顔の正準（縫い目の白い顔・鼻なし・太眉・黒い小さな目）とトランク塔・肩掛け鞄は固定。採用が決まるまで現行図版がCANON",
+      "job_id": "9649abba-d71a-425b-b3c0-17f68ee92015",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_100525_9649abba-d71a-425b-b3c0-17f68ee92015.png",
+      "method": "現行図版第1参照＋CORE第2参照＋改案部分のみ言語化"
     }
   ]
 }
