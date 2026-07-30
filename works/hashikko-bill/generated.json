@@ -4914,6 +4914,134 @@
       "job_id": "d41d3422-78f0-4431-aefb-776a37e424d1",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184541_d41d3422-78f0-4431-aefb-776a37e424d1.png",
       "method": "図版参照＋世界観スタイル指定（refs: HIKARI,HIIRAGI)"
+    },
+    {
+      "id": "set_rooftop",
+      "kind": "set_reference",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "セット正典：屋上（長机・機械室・アンテナ・霧の海）。同じ場所のカットは必ずこれを参照して生成する",
+      "job_id": "d57cd015-5c42-48f1-957e-a1d8b678d97b",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_224943_d57cd015-5c42-48f1-957e-a1d8b678d97b.png"
+    },
+    {
+      "id": "set_stairwell",
+      "kind": "set_reference",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "セット正典：螺旋階段の吹き抜け（七層の手すり・プラム絨毯）。同じ場所のカットは必ずこれを参照して生成する",
+      "job_id": "5bdeeb1b-535e-43bd-9317-9b588f42ce91",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_224946_5bdeeb1b-535e-43bd-9317-9b588f42ce91.png"
+    },
+    {
+      "id": "set_corridor",
+      "kind": "set_reference",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "セット正典：七つの扉の廊下（各社の階色で塗り分け）。同じ場所のカットは必ずこれを参照して生成する",
+      "job_id": "3d600592-d140-4b3e-80c9-b4c09a429097",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_224950_3d600592-d140-4b3e-80c9-b4c09a429097.png"
+    },
+    {
+      "id": "set_elevator",
+      "kind": "set_reference",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "セット正典：エレベーターホール（七つの丸ランプ・2と6消灯）。同じ場所のカットは必ずこれを参照して生成する",
+      "job_id": "53f68c26-4635-4ede-9e35-4c41c1594bbe",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_224953_53f68c26-4635-4ede-9e35-4c41c1594bbe.png"
+    },
+    {
+      "id": "set_caretaker",
+      "kind": "set_reference",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "セット正典：地下・管理人室（ベッド・抽斗机・電球の箱）。同じ場所のカットは必ずこれを参照して生成する",
+      "job_id": "f52e1ece-18d1-4c21-a29d-7552ea30b407",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_224957_f52e1ece-18d1-4c21-a29d-7552ea30b407.png"
+    },
+    {
+      "id": "set_kitchen7f",
+      "kind": "set_reference",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "セット正典：7F ふくふく亭の厨房（マゼンタ）。同じ場所のカットは必ずこれを参照して生成する",
+      "job_id": "65848719-0c39-4711-9611-8db96affc139",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_225001_65848719-0c39-4711-9611-8db96affc139.png"
+    },
+    {
+      "id": "set_observatory4f",
+      "kind": "set_reference",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "セット正典：4F 観測所（青緑・百年分の日誌）。同じ場所のカットは必ずこれを参照して生成する",
+      "job_id": "bedb3d8f-70df-4ff0-8f38-a98f0606b996",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_225034_bedb3d8f-70df-4ff0-8f38-a98f0606b996.png"
+    },
+    {
+      "id": "set_perfume5f",
+      "kind": "set_reference",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "セット正典：5F 調香工房（青）。同じ場所のカットは必ずこれを参照して生成する",
+      "job_id": "5b208de4-69b2-4a82-81d1-1fc078a264d0",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_225041_5b208de4-69b2-4a82-81d1-1fc078a264d0.png"
+    },
+    {
+      "id": "set_print6f",
+      "kind": "set_reference",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "セット正典：6F 活版印刷所（菫）。同じ場所のカットは必ずこれを参照して生成する",
+      "job_id": "578da762-c1b7-4d82-9edc-280bd07e5108",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_225044_578da762-c1b7-4d82-9edc-280bd07e5108.png"
+    },
+    {
+      "id": "set_workshop2f",
+      "kind": "set_reference",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "セット正典：2F ぜんまい工房（琥珀）。同じ場所のカットは必ずこれを参照して生成する",
+      "job_id": "4adcbbee-184a-4cf3-ab4c-d0c1a96e86eb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_225047_4adcbbee-184a-4cf3-ab4c-d0c1a96e86eb.png"
+    },
+    {
+      "id": "set_office3f",
+      "kind": "set_reference",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "セット正典：3F 鵜飼の事務所・応接（緑）。同じ場所のカットは必ずこれを参照して生成する",
+      "job_id": "4361b3fd-093f-4e72-b5bf-31cac65ab943",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_225049_4361b3fd-093f-4e72-b5bf-31cac65ab943.png"
+    },
+    {
+      "id": "set_office1f",
+      "kind": "set_reference",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "セット正典：1F トメの式典事務所（白）。同じ場所のカットは必ずこれを参照して生成する",
+      "job_id": "8bc1bfe2-f7f7-4502-9704-29689e01cdab",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_225052_8bc1bfe2-f7f7-4502-9704-29689e01cdab.png"
+    },
+    {
+      "id": "key_poster_titled",
+      "kind": "key_art",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "ポスター作字v2：ティム・バートン調（捻れた鉄・枯れ枝様の骨白文字）。可愛すぎ指摘を受けた旧作字(0984d14d)を差し替え",
+      "job_id": "beb7b24e-c794-4157-9a3a-21afc923d880",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_225026_beb7b24e-c794-4157-9a3a-21afc923d880.png",
+      "superseded_job_id": "0984d14d-0b84-40ec-9a12-31adb2b0a28c"
+    },
+    {
+      "id": "key_rooftop_titled",
+      "kind": "key_art",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "屋上作字v2：ティム・バートン調。旧作字(94ac4c9f)を差し替え",
+      "job_id": "66b31578-86fd-405e-87c9-e6a496ad4e28",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_225031_66b31578-86fd-405e-87c9-e6a496ad4e28.png",
+      "superseded_job_id": "94ac4c9f-b5db-4ef5-937c-26940ed6779e"
     }
   ]
 }
