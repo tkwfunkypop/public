@@ -215,8 +215,11 @@ CANONメタ情報（`CHARACTER ID` / `REVISION` / `CANON STATUS` / `BODY TYPE` /
   ターンアラウンドと詳細シートも全て作り直し
 - **柊53歳** — 情報不足の指摘を受けて 02/03/04 を追加（背筋は伸びたまま・電球は一個で未点灯）
 
-**注意：シート構成（02〜04の内訳）は EMBER の参照シートが未入手のため、CHARACTER BIBLE V2 の
-既知の規約から定義した暫定版。** EMBER のシート一式が届いたら構成を照合して差分を作り直す。
+**EMBER体系の本シート（02〜06）は全14キャラ×5枚＝70枚が完成**（正本は `refs/EMBER/`、
+対応表は `SHEETS_SPEC.md`）。各キャラの詳細欄に `EMBER 02 CONSTRUCTION / 03 PROPS &
+INTERACTION / 04 STORY STATES / 05 MOTION & PERFORMANCE / 06 CONTINUITY CHECK` として配線済み。
+06 の承認欄は**未チェック**（`CANON RELEASE REQUIRES HUMAN APPROVAL`）— 検収は人間の承認待ち。
+初期の暫定シート（02 EXPRESSION／03 POSE／04 PROPS）は参考として残置。
 ローカル保存先（`ASSETS/Character/003_はしっこビルの明日づくり`）への取り込みは
 `fetch-assets.mjs` と同様に `generated.json` のURLから行える。
 

@@ -2239,6 +2239,169 @@
       "job_id": "f3876afa-0962-4558-96ee-7c2b669875ae",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_033558_f3876afa-0962-4558-96ee-7c2b669875ae.png",
       "method": "03と同じ参照ペア＋語彙修正で再投入（初回は誤検知）"
+    },
+    {
+      "id": "bible_kaburagi_02_construction_v2",
+      "kind": "bible_sheet",
+      "character": "KABURAGI",
+      "sheet": "02 CONSTRUCTION (EMBER体系)",
+      "job_id": "41a7b0d2-c87c-42f8-bc9d-5539886ba142",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_031441_41a7b0d2-c87c-42f8-bc9d-5539886ba142.png",
+      "method": "図版第1参照＋CORE第2参照",
+      "note": "綴り修正リテイク（8aaecf85を差し替え）"
+    },
+    {
+      "id": "bible_hikari_05_motion",
+      "kind": "bible_sheet",
+      "character": "NANAO_HIKARI",
+      "sheet": "05 MOTION & PERFORMANCE (EMBER体系)",
+      "job_id": "22371999-fd29-49b9-b511-16f9ff14f038",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_034629_22371999-fd29-49b9-b511-16f9ff14f038.png",
+      "method": "03/04と同じ参照ペア＋語彙修正で再投入（初回は誤検知）"
+    },
+    {
+      "id": "bible_yamato_05_motion",
+      "kind": "bible_sheet",
+      "character": "YAMATO",
+      "sheet": "05 MOTION & PERFORMANCE (EMBER体系)",
+      "job_id": "013ae022-6593-4aee-a49d-7c0b26d4e1aa",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_034638_013ae022-6593-4aee-a49d-7c0b26d4e1aa.png",
+      "method": "03/04と同じ参照ペア＋語彙修正で再投入（初回は誤検知）"
+    },
+    {
+      "id": "bible_ukai_mother_05_motion",
+      "kind": "bible_sheet",
+      "character": "UKAI_MOTHER",
+      "sheet": "05 MOTION & PERFORMANCE (EMBER体系)",
+      "job_id": "d96e7005-31e1-42b3-a846-b3c3f64f7239",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_034644_d96e7005-31e1-42b3-a846-b3c3f64f7239.png",
+      "method": "03/04と同じ参照ペア＋語彙修正で再投入（初回は誤検知）"
+    },
+    {
+      "id": "bible_hikari_06_continuity",
+      "kind": "bible_sheet",
+      "character": "NANAO_HIKARI",
+      "sheet": "06 CONTINUITY CHECK (EMBER体系)",
+      "job_id": "d8927d17-5cee-4399-8975-5349a690b026",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_034706_d8927d17-5cee-4399-8975-5349a690b026.png",
+      "method": "同じ安全参照ペア＋照合書式の文章指定。承認欄は未チェック（CANON RELEASE REQUIRES HUMAN APPROVAL）"
+    },
+    {
+      "id": "bible_kurogane_06_continuity",
+      "kind": "bible_sheet",
+      "character": "KUROGANE",
+      "sheet": "06 CONTINUITY CHECK (EMBER体系)",
+      "job_id": "c37c7187-89dc-45e8-b1d2-e9fd3c6b2d8b",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_034712_c37c7187-89dc-45e8-b1d2-e9fd3c6b2d8b.png",
+      "method": "同じ安全参照ペア＋照合書式の文章指定。承認欄は未チェック（CANON RELEASE REQUIRES HUMAN APPROVAL）"
+    },
+    {
+      "id": "bible_yamato_06_continuity",
+      "kind": "bible_sheet",
+      "character": "YAMATO",
+      "sheet": "06 CONTINUITY CHECK (EMBER体系)",
+      "job_id": "ddf99f89-0f3c-4d1e-a063-129935b0b0d4",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_034721_ddf99f89-0f3c-4d1e-a063-129935b0b0d4.png",
+      "method": "同じ安全参照ペア＋照合書式の文章指定。承認欄は未チェック（CANON RELEASE REQUIRES HUMAN APPROVAL）"
+    },
+    {
+      "id": "bible_ri_06_continuity",
+      "kind": "bible_sheet",
+      "character": "LI",
+      "sheet": "06 CONTINUITY CHECK (EMBER体系)",
+      "job_id": "c87d8fb6-d73d-438e-ab13-bcc3f3cd5c94",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_034726_c87d8fb6-d73d-438e-ab13-bcc3f3cd5c94.png",
+      "method": "同じ安全参照ペア＋照合書式の文章指定。承認欄は未チェック（CANON RELEASE REQUIRES HUMAN APPROVAL）"
+    },
+    {
+      "id": "bible_kumoi_06_continuity",
+      "kind": "bible_sheet",
+      "character": "KUMOI",
+      "sheet": "06 CONTINUITY CHECK (EMBER体系)",
+      "job_id": "86c45b1c-07e4-482d-b73c-0dd7e97b6c56",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_034734_86c45b1c-07e4-482d-b73c-0dd7e97b6c56.png",
+      "method": "同じ安全参照ペア＋照合書式の文章指定。承認欄は未チェック（CANON RELEASE REQUIRES HUMAN APPROVAL）"
+    },
+    {
+      "id": "bible_ukai_06_continuity",
+      "kind": "bible_sheet",
+      "character": "UKAI",
+      "sheet": "06 CONTINUITY CHECK (EMBER体系)",
+      "job_id": "f063f5f5-ca42-47e6-a884-cb9c7bbe832d",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_034750_f063f5f5-ca42-47e6-a884-cb9c7bbe832d.png",
+      "method": "同じ安全参照ペア＋照合書式の文章指定。承認欄は未チェック（CANON RELEASE REQUIRES HUMAN APPROVAL）"
+    },
+    {
+      "id": "bible_kaburagi_06_continuity",
+      "kind": "bible_sheet",
+      "character": "KABURAGI",
+      "sheet": "06 CONTINUITY CHECK (EMBER体系)",
+      "job_id": "16aaf492-989a-4412-8c72-0ab3d34c0899",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_034758_16aaf492-989a-4412-8c72-0ab3d34c0899.png",
+      "method": "同じ安全参照ペア＋照合書式の文章指定。承認欄は未チェック（CANON RELEASE REQUIRES HUMAN APPROVAL）"
+    },
+    {
+      "id": "bible_tome_06_continuity",
+      "kind": "bible_sheet",
+      "character": "HOSHINO_TOME",
+      "sheet": "06 CONTINUITY CHECK (EMBER体系)",
+      "job_id": "b12cab15-4c30-402a-b1e0-4e7af863f693",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_034804_b12cab15-4c30-402a-b1e0-4e7af863f693.png",
+      "method": "同じ安全参照ペア＋照合書式の文章指定。承認欄は未チェック（CANON RELEASE REQUIRES HUMAN APPROVAL）"
+    },
+    {
+      "id": "bible_hiiragi_06_continuity",
+      "kind": "bible_sheet",
+      "character": "HIIRAGI_GENZO",
+      "sheet": "06 CONTINUITY CHECK (EMBER体系)",
+      "job_id": "d5a71be1-fc53-46df-8f4f-4739d440a7de",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_034811_d5a71be1-fc53-46df-8f4f-4739d440a7de.png",
+      "method": "同じ安全参照ペア＋照合書式の文章指定。承認欄は未チェック（CANON RELEASE REQUIRES HUMAN APPROVAL）"
+    },
+    {
+      "id": "bible_ukai_child_06_continuity",
+      "kind": "bible_sheet",
+      "character": "UKAI_CHILD",
+      "sheet": "06 CONTINUITY CHECK (EMBER体系)",
+      "job_id": "7e80fa12-61aa-49ee-be12-edcf20d16db2",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_034818_7e80fa12-61aa-49ee-be12-edcf20d16db2.png",
+      "method": "同じ安全参照ペア＋照合書式の文章指定。承認欄は未チェック（CANON RELEASE REQUIRES HUMAN APPROVAL）"
+    },
+    {
+      "id": "bible_ukai_mother_06_continuity",
+      "kind": "bible_sheet",
+      "character": "UKAI_MOTHER",
+      "sheet": "06 CONTINUITY CHECK (EMBER体系)",
+      "job_id": "ff33ee3a-6830-4afe-812e-656c17586bdb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_034835_ff33ee3a-6830-4afe-812e-656c17586bdb.png",
+      "method": "同じ安全参照ペア＋照合書式の文章指定。承認欄は未チェック（CANON RELEASE REQUIRES HUMAN APPROVAL）"
+    },
+    {
+      "id": "bible_ukai_father_06_continuity",
+      "kind": "bible_sheet",
+      "character": "UKAI_FATHER",
+      "sheet": "06 CONTINUITY CHECK (EMBER体系)",
+      "job_id": "165399c6-325c-4ca7-9a6a-73aec81140c7",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_034844_165399c6-325c-4ca7-9a6a-73aec81140c7.png",
+      "method": "同じ安全参照ペア＋照合書式の文章指定。承認欄は未チェック（CANON RELEASE REQUIRES HUMAN APPROVAL）"
+    },
+    {
+      "id": "bible_hiiragi_53_06_continuity",
+      "kind": "bible_sheet",
+      "character": "HIIRAGI_GENZO_53",
+      "sheet": "06 CONTINUITY CHECK (EMBER体系)",
+      "job_id": "1f1ab840-4622-4cd2-8506-ca7f685d9a29",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_034850_1f1ab840-4622-4cd2-8506-ca7f685d9a29.png",
+      "method": "同じ安全参照ペア＋照合書式の文章指定。承認欄は未チェック（CANON RELEASE REQUIRES HUMAN APPROVAL）"
+    },
+    {
+      "id": "bible_developer_06_continuity",
+      "kind": "bible_sheet",
+      "character": "DEVELOPER_AGENT",
+      "sheet": "06 CONTINUITY CHECK (EMBER体系)",
+      "job_id": "70200770-65dd-4a23-add0-adedea904632",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_034856_70200770-65dd-4a23-add0-adedea904632.png",
+      "method": "同じ安全参照ペア＋照合書式の文章指定。承認欄は未チェック（CANON RELEASE REQUIRES HUMAN APPROVAL）"
     }
   ]
 }
