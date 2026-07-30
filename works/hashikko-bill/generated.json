@@ -2733,6 +2733,13 @@
       "note": "音声入り動画コンテ（78カット・299秒・960×540・30fps・ナレ＋台詞27クリップ）。Higgsfieldサンドボックス上でRemotionレンダし media_upload で書き出し。フル解像度が必要な場合はローカルで npm run render",
       "media_id": "f23029e6-b2b6-4872-bb30-774aea49a8a4",
       "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/f23029e6-b2b6-4872-bb30-774aea49a8a4.mp4"
+    },
+    {
+      "id": "floyo_guide_video_v1",
+      "kind": "guide_video",
+      "note": "Floyo移行手順の解説動画（9スライド・約134秒・1280×720・ナレーション付き）。FLOYO_MIGRATION.md と wfaia/floyo-workflow.md の映像化。floyo-guide/ のRemotionプロジェクトからサンドボックスでレンダ",
+      "media_id": "f0398e0b-58aa-49ce-b20c-ef4987938025",
+      "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/f0398e0b-58aa-49ce-b20c-ef4987938025.mp4"
     }
   ]
 }
