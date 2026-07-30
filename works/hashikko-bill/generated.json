@@ -1747,6 +1747,42 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_014931_73cfd8d9-cfc1-4334-9bb7-48aeba2f9a72.png",
       "method": "参照2枚方式（figure＋ターンアラウンド）",
       "note": "情報不足の指摘を受けて追加。背筋は伸びたまま・電球は一個で未点灯を全シートで維持。"
+    },
+    {
+      "id": "bible_kurogane_02_construction",
+      "kind": "bible_sheet",
+      "character": "KUROGANE",
+      "sheet": "02 CONSTRUCTION (EMBER体系)",
+      "job_id": "f80e7abb-b874-46b5-be18-6b7c2f074229",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_023416_f80e7abb-b874-46b5-be18-6b7c2f074229.png",
+      "method": "確定図版第1参照＋CORE/ターンアラウンド第2参照＋書式の文章指定（EMBER画像参照はセーフティ誤検知のため不使用）"
+    },
+    {
+      "id": "bible_developer_02_construction",
+      "kind": "bible_sheet",
+      "character": "DEVELOPER_AGENT",
+      "sheet": "02 CONSTRUCTION (EMBER体系)",
+      "job_id": "51c95315-3d60-4416-8ad8-b1f39927eeb1",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_023902_51c95315-3d60-4416-8ad8-b1f39927eeb1.png",
+      "method": "確定図版第1参照＋CORE/ターンアラウンド第2参照＋書式の文章指定（EMBER画像参照はセーフティ誤検知のため不使用）"
+    },
+    {
+      "id": "bible_ukai_mother_02_construction",
+      "kind": "bible_sheet",
+      "character": "UKAI_MOTHER",
+      "sheet": "02 CONSTRUCTION (EMBER体系)",
+      "job_id": "6014edd4-88f0-441d-a1c4-e98b0cd20465",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_023826_6014edd4-88f0-441d-a1c4-e98b0cd20465.png",
+      "method": "確定図版第1参照＋CORE/ターンアラウンド第2参照＋書式の文章指定（EMBER画像参照はセーフティ誤検知のため不使用）"
+    },
+    {
+      "id": "bible_ukai_child_02_construction",
+      "kind": "bible_sheet",
+      "character": "UKAI_CHILD",
+      "sheet": "02 CONSTRUCTION (EMBER体系)",
+      "job_id": "552e4b95-13aa-460a-8079-fc2a5affc026",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_023817_552e4b95-13aa-460a-8079-fc2a5affc026.png",
+      "method": "確定図版第1参照＋CORE/ターンアラウンド第2参照＋書式の文章指定（EMBER画像参照はセーフティ誤検知のため不使用）"
     }
   ]
 }
