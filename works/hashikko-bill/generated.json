@@ -3033,6 +3033,29 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_110202_0f10f007-14f5-4ebf-9b98-58219855f51b.png",
       "method": "改定図版第1参照＋旧シートをレイアウト参照",
       "note": "IMAGE SHOT（図版c4f0ecbe）準拠（41a7b0d2を差し替え）"
+    },
+    {
+      "id": "key_building",
+      "kind": "key_art",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "果端ビルの全景キーアート候補。世界観リファレンス読解の衝突2点を調整済み（窓は不規則配置で顔に見えない・アンテナ控えめ）。質感の正＝ポスター790d7c4b。外形CANONは人間承認待ち",
+      "job_id": "a41bee93-6deb-487b-aba8-8f2b46547612",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_111654_a41bee93-6deb-487b-aba8-8f2b46547612.png",
+      "method": "ポスター（承認済みの雰囲気の正）を単一参照＋WORLD_REFERENCEの言語化"
+    },
+    {
+      "id": "key_rooftop",
+      "kind": "key_art",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "第七章「16:44の十一分間」屋上・九人が揃うカット候補。9体の後ろ姿シルエット＋各自1点の差し色（灯火橙・真鍮・帳簿緑・硝子青・香気紫・校正朱・菊白・ワイン・電球黄）を確認済み。初稿383b1a7cは8体のためリロール",
+      "job_id": "a8dfea9b-5b43-48be-80af-70ee116ac261",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_112030_a8dfea9b-5b43-48be-80af-70ee116ac261.png",
+      "method": "初稿を参照に9体を明示してリロール",
+      "superseded_job_id": [
+        "383b1a7c-2a28-4e19-b9af-c4161d94338f"
+      ]
     }
   ]
 }
