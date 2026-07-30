@@ -4134,6 +4134,786 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182523_e0136b55-2a19-4dc5-a33f-4540eb4efca7.png",
       "superseded_job_id": "cc78c191-a801-4244-a2bb-f12588271de5",
       "method": "図版参照＋鉛筆スタイル指定（refs: HIKARI,HIIRAGI)"
+    },
+    {
+      "id": "sf_sb01_fog_building",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット1：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "5a66ea04-5662-433b-8dcd-712add8ece81",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183454_5a66ea04-5662-433b-8dcd-712add8ece81.png",
+      "method": "図版参照＋世界観スタイル指定（refs: BUILDING)"
+    },
+    {
+      "id": "sf_sb02_mailslots",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット2：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "6e33344a-3b24-4893-bde8-2938e7c226d8",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183458_6e33344a-3b24-4893-bde8-2938e7c226d8.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb03_stairwell",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット3：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "1d2446d8-a84d-4c76-97a4-c9c88ca623e6",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183504_1d2446d8-a84d-4c76-97a4-c9c88ca623e6.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb04_elevator_dark",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット4：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "106f2db1-bdfd-415c-8cab-9bdf14511b5e",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183511_106f2db1-bdfd-415c-8cab-9bdf14511b5e.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb05_doors_closed",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット5：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "68581143-2090-49e5-843e-91231d888cfd",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183515_68581143-2090-49e5-843e-91231d888cfd.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb06_title",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット6：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "02dd58fe-2fce-40e8-8b9f-d526866def6d",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183519_02dd58fe-2fce-40e8-8b9f-d526866def6d.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb07_envelope",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット7：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "534dacb6-9e3d-4781-aa84-1c21ba9e3654",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183540_534dacb6-9e3d-4781-aa84-1c21ba9e3654.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb08_letter",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット8：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "99b31845-7d53-4d03-8ef0-676aa28c576a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183547_99b31845-7d53-4d03-8ef0-676aa28c576a.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb09_empty_envelope",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット9：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "b9fedff0-ee38-4982-95a8-f0ed7297ce6a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183551_b9fedff0-ee38-4982-95a8-f0ed7297ce6a.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb10_seven_bins",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット10：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "ac78b2db-7515-4c8b-8c61-d2f7c057495a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183556_ac78b2db-7515-4c8b-8c61-d2f7c057495a.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb11_returned",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット11：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "c26c3edf-2d18-4487-af3b-bccc8ab070e5",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183600_c26c3edf-2d18-4487-af3b-bccc8ab070e5.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb12_hikari_start",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット12：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "481dc44a-587c-4b3f-8b8a-2a23231dd52e",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183606_481dc44a-587c-4b3f-8b8a-2a23231dd52e.png",
+      "method": "図版参照＋世界観スタイル指定（refs: HIKARI)"
+    },
+    {
+      "id": "sf_sb13_hikari_notice",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット13：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "f693b09f-e236-4bfa-a806-648f116bc192",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183631_f693b09f-e236-4bfa-a806-648f116bc192.png",
+      "method": "図版参照＋世界観スタイル指定（refs: HIKARI)"
+    },
+    {
+      "id": "sf_sb14_seven_fan",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット14：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "b9533c9b-c7c9-4c0d-8fc0-2a15d2475e29",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183635_b9533c9b-c7c9-4c0d-8fc0-2a15d2475e29.png",
+      "method": "図版参照＋世界観スタイル指定（refs: HIKARI)"
+    },
+    {
+      "id": "sf_sb15_hikari_run",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット15：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "2dc61fc6-58f0-4d63-b34f-73f7f8487c34",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183642_2dc61fc6-58f0-4d63-b34f-73f7f8487c34.png",
+      "method": "図版参照＋世界観スタイル指定（refs: HIKARI)"
+    },
+    {
+      "id": "sf_sb16_doors_peek",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット16：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "23649a03-31d7-43b6-82f9-90aae1ff3d39",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183648_23649a03-31d7-43b6-82f9-90aae1ff3d39.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb17_meeting",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット17：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "857608ed-5eaf-4e6a-b2ed-10a4a33cba54",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183657_857608ed-5eaf-4e6a-b2ed-10a4a33cba54.png",
+      "method": "図版参照＋世界観スタイル指定（refs: BUILDING)"
+    },
+    {
+      "id": "sf_sb18_tome_agenda",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット18：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "fb163887-f8ee-4b22-a55f-4bfb75c0ba9e",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183703_fb163887-f8ee-4b22-a55f-4bfb75c0ba9e.png",
+      "method": "図版参照＋世界観スタイル指定（refs: TOME)"
+    },
+    {
+      "id": "sf_sb19_kumoi_prob",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット19：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "fc5163f9-474d-4b0b-a9c6-83411bd25ba9",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183725_fc5163f9-474d-4b0b-a9c6-83411bd25ba9.png",
+      "method": "図版参照＋世界観スタイル指定（refs: KUMOI)"
+    },
+    {
+      "id": "sf_sb20_ri_vial",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット20：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "0e747b1f-c660-4804-9406-46c42af22158",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183731_0e747b1f-c660-4804-9406-46c42af22158.png",
+      "method": "図版参照＋世界観スタイル指定（refs: LI)"
+    },
+    {
+      "id": "sf_sb21_kaburagi_tools",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット21：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "8b972e95-0d5b-43d6-9da8-4fc79b6ce9d8",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183737_8b972e95-0d5b-43d6-9da8-4fc79b6ce9d8.png",
+      "method": "図版参照＋世界観スタイル指定（refs: KABURAGI)"
+    },
+    {
+      "id": "sf_sb22_kurogane_minutes",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット22：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "f26b5366-0730-46c3-bc05-0dd3c80162c1",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183745_f26b5366-0730-46c3-bc05-0dd3c80162c1.png",
+      "method": "図版参照＋世界観スタイル指定（refs: KUROGANE)"
+    },
+    {
+      "id": "sf_sb23_ukai",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット23：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "e5d2fb54-e7cb-4f40-8677-c3c844c5a4eb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183749_e5d2fb54-e7cb-4f40-8677-c3c844c5a4eb.png",
+      "method": "図版参照＋世界観スタイル指定（refs: UKAI)"
+    },
+    {
+      "id": "sf_sb24_hikari_scribe",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット24：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "fbae6a8c-f730-4347-a755-d88a3a08b2e0",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183755_fbae6a8c-f730-4347-a755-d88a3a08b2e0.png",
+      "method": "図版参照＋世界観スタイル指定（refs: HIKARI)"
+    },
+    {
+      "id": "sf_sb25_chaos",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット25：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "02dcf87b-de81-4d72-a24e-427dd51c8724",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183819_02dcf87b-de81-4d72-a24e-427dd51c8724.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb26_pass_stairs",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット26：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "84c62ee6-c265-42cd-9264-75c042227945",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183824_84c62ee6-c265-42cd-9264-75c042227945.png",
+      "method": "図版参照＋世界観スタイル指定（refs: KABURAGI,TOME)"
+    },
+    {
+      "id": "sf_sb27_seven_names",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット27：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "be7b20f1-0435-478d-a45a-712548587ef9",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183832_be7b20f1-0435-478d-a45a-712548587ef9.png",
+      "method": "図版参照＋世界観スタイル指定（refs: HIKARI)"
+    },
+    {
+      "id": "sf_sb28_collapse",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット28：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "bdbb8004-108a-4580-965f-1dfc545ae03d",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183839_bdbb8004-108a-4580-965f-1dfc545ae03d.png",
+      "method": "図版参照＋世界観スタイル指定（refs: HIIRAGI)"
+    },
+    {
+      "id": "sf_sb29_hiiragi_bed",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット29：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "706e726a-73cf-4161-ab07-5c4da7e2aaf4",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183844_706e726a-73cf-4161-ab07-5c4da7e2aaf4.png",
+      "method": "図版参照＋世界観スタイル指定（refs: HIKARI,HIIRAGI)"
+    },
+    {
+      "id": "sf_sb30_hikari_demand",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット30：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "defbbfe2-3162-429e-837b-f79450502bae",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183850_defbbfe2-3162-429e-837b-f79450502bae.png",
+      "method": "図版参照＋世界観スタイル指定（refs: HIKARI,HIIRAGI)"
+    },
+    {
+      "id": "sf_sb31_letter_closeup",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット31：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "4e9f7d96-5614-4191-ac07-6e90e49cf188",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183914_4e9f7d96-5614-4191-ac07-6e90e49cf188.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb32_drawer",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット32：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "e8cb2936-3145-4601-9e77-c8f84aa876d7",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183921_e8cb2936-3145-4601-9e77-c8f84aa876d7.png",
+      "method": "図版参照＋世界観スタイル指定（refs: HIIRAGI)"
+    },
+    {
+      "id": "sf_sb33_scraps_hands",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット33：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "4db95be6-f03d-4d1e-bf4a-94f82b671577",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183927_4db95be6-f03d-4d1e-bf4a-94f82b671577.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb34_hiiragi_wish",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット34：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "bc0bd10f-ce81-4036-aaef-fa49c47e9645",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183931_bc0bd10f-ce81-4036-aaef-fa49c47e9645.png",
+      "method": "図版参照＋世界観スタイル指定（refs: HIIRAGI)"
+    },
+    {
+      "id": "sf_sb35_hikari_run2",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット35：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "cd429d5b-00b0-4bdf-bf8c-f0d0c352f6ac",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183937_cd429d5b-00b0-4bdf-bf8c-f0d0c352f6ac.png",
+      "method": "図版参照＋世界観スタイル指定（refs: HIKARI)"
+    },
+    {
+      "id": "sf_sb36_doors_open",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット36：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "967acf7f-a126-4880-83eb-cc311a574ebb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183943_967acf7f-a126-4880-83eb-cc311a574ebb.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb37_kumoi",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット37：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "b09d7a4e-9ad1-4ea4-a131-ff20124c7e53",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184007_b09d7a4e-9ad1-4ea4-a131-ff20124c7e53.png",
+      "method": "図版参照＋世界観スタイル指定（refs: KUMOI)"
+    },
+    {
+      "id": "sf_sb38_logbook_window",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット38：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "5703d76c-4d2a-4beb-9b32-3d091debc409",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184013_5703d76c-4d2a-4beb-9b32-3d091debc409.png",
+      "method": "図版参照＋世界観スタイル指定（refs: KUMOI)"
+    },
+    {
+      "id": "sf_sb39_tome_delight",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット39：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "67b6cd3f-2066-467a-8fca-2f1e252813a7",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184018_67b6cd3f-2066-467a-8fca-2f1e252813a7.png",
+      "method": "図版参照＋世界観スタイル指定（refs: TOME)"
+    },
+    {
+      "id": "sf_sb40_seven_seals",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット40：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "a70674fb-8a9e-49d5-b952-3bea30ce47b5",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184025_a70674fb-8a9e-49d5-b952-3bea30ce47b5.png",
+      "method": "図版参照＋世界観スタイル指定（refs: BUILDING)"
+    },
+    {
+      "id": "sf_sb41_kumoi_cue",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット41：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "26b00563-998b-4fda-9147-eabe02145342",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184031_26b00563-998b-4fda-9147-eabe02145342.png",
+      "method": "図版参照＋世界観スタイル指定（refs: KUMOI)"
+    },
+    {
+      "id": "sf_sb42_press",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット42：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "e5cbc757-ea17-4434-94ea-4455628010a1",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184039_e5cbc757-ea17-4434-94ea-4455628010a1.png",
+      "method": "図版参照＋世界観スタイル指定（refs: YAMATO,KUROGANE)"
+    },
+    {
+      "id": "sf_sb43_ri",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット43：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "210eb76c-f0c4-4536-bb3a-60a061e92007",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184101_210eb76c-f0c4-4536-bb3a-60a061e92007.png",
+      "method": "図版参照＋世界観スタイル指定（refs: LI)"
+    },
+    {
+      "id": "sf_sb44_chair_build",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット44：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "35e24bb3-9d1c-47f3-9ded-b957f55dd04b",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184107_35e24bb3-9d1c-47f3-9ded-b957f55dd04b.png",
+      "method": "図版参照＋世界観スタイル指定（refs: KABURAGI)"
+    },
+    {
+      "id": "sf_sb45_ledger_join",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット45：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "5a88fc3b-a4ba-410a-b080-e5926a731f66",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184114_5a88fc3b-a4ba-410a-b080-e5926a731f66.png",
+      "method": "図版参照＋世界観スタイル指定（refs: UKAI)"
+    },
+    {
+      "id": "sf_sb46_tome_program",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット46：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "21e80af2-2ffe-413b-b563-e15abae7ce55",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184119_21e80af2-2ffe-413b-b563-e15abae7ce55.png",
+      "method": "図版参照＋世界観スタイル指定（refs: TOME)"
+    },
+    {
+      "id": "sf_sb47_nine_plates",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット47：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "37352a88-b636-4fb8-88fd-000c2e0310c5",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184123_37352a88-b636-4fb8-88fd-000c2e0310c5.png",
+      "method": "図版参照＋世界観スタイル指定（refs: HIKARI,HIIRAGI)"
+    },
+    {
+      "id": "sf_sb48_stairs_busy",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット48：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "48d46ac9-e9e8-491c-b6f6-1f036f121842",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184128_48d46ac9-e9e8-491c-b6f6-1f036f121842.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb49_betrayal",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット49：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "70a73fc4-a067-4da4-b590-437da46f1c46",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184151_70a73fc4-a067-4da4-b590-437da46f1c46.png",
+      "method": "図版参照＋世界観スタイル指定（refs: UKAI)"
+    },
+    {
+      "id": "sf_sb50_eye_gap",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット50：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "872bb4a2-4425-440d-a8d9-bc5a77b24d13",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184158_872bb4a2-4425-440d-a8d9-bc5a77b24d13.png",
+      "method": "図版参照＋世界観スタイル指定（refs: HIKARI)"
+    },
+    {
+      "id": "sf_sb51_notes_spill",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット51：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "7cabde3a-f608-43b3-8f62-c95dd1573dc9",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184203_7cabde3a-f608-43b3-8f62-c95dd1573dc9.png",
+      "method": "図版参照＋世界観スタイル指定（refs: UKAI)"
+    },
+    {
+      "id": "sf_sb52_doors_close",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット52：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "ef2aee74-ef84-44eb-a9f4-c72c5a62e87f",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184207_ef2aee74-ef84-44eb-a9f4-c72c5a62e87f.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb53_erased",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット53：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "c9ba6bc4-d084-4072-8dc8-b7c412684e0c",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184212_c9ba6bc4-d084-4072-8dc8-b7c412684e0c.png",
+      "method": "図版参照＋世界観スタイル指定（refs: KUMOI)"
+    },
+    {
+      "id": "sf_sb54_chair_alone",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット54：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "8c1cbeae-0931-49af-b178-458b8e3845cf",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184220_8c1cbeae-0931-49af-b178-458b8e3845cf.png",
+      "method": "図版参照＋世界観スタイル指定（refs: BUILDING)"
+    },
+    {
+      "id": "sf_sb55_ukai_window",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット55：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "5fac3f7f-1462-4921-83c3-cf0d882c6a43",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184241_5fac3f7f-1462-4921-83c3-cf0d882c6a43.png",
+      "method": "図版参照＋世界観スタイル指定（refs: UKAI)"
+    },
+    {
+      "id": "sf_sb56_flashback",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット56：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "ee24e0c8-0a9c-4ca9-83ee-49f26ab8bbc0",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184248_ee24e0c8-0a9c-4ca9-83ee-49f26ab8bbc0.png",
+      "method": "図版参照＋世界観スタイル指定（refs: UKAI_CHILD,UKAI_MOTHER,UKAI_FATHER)"
+    },
+    {
+      "id": "sf_sb57_toolbox",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット57：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "cec0dcba-efae-41d3-894d-544e82e9a722",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184255_cec0dcba-efae-41d3-894d-544e82e9a722.png",
+      "method": "図版参照＋世界観スタイル指定（refs: UKAI_FATHER)"
+    },
+    {
+      "id": "sf_sb58_empty_chairs",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット58：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "9e9b3dad-6944-4a62-9acf-7a5762f97589",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184259_9e9b3dad-6944-4a62-9acf-7a5762f97589.png",
+      "method": "図版参照＋世界観スタイル指定（refs: UKAI_CHILD)"
+    },
+    {
+      "id": "sf_sb59_tome_ledger",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット59：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "d3410dfe-116f-4e4b-a4e1-95f2815ecde6",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184305_d3410dfe-116f-4e4b-a4e1-95f2815ecde6.png",
+      "method": "図版参照＋世界観スタイル指定（refs: TOME)"
+    },
+    {
+      "id": "sf_sb60_ledger",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット60：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "d2042e41-f172-4653-b964-e8fe43a6dd5b",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184310_d2042e41-f172-4653-b964-e8fe43a6dd5b.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb61_ukai_hands",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット61：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "e5029979-32e6-48fa-b92d-666b1e324ec1",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184332_e5029979-32e6-48fa-b92d-666b1e324ec1.png",
+      "method": "図版参照＋世界観スタイル指定（refs: UKAI)"
+    },
+    {
+      "id": "sf_sb62_ledger_delivered",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット62：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "3be95d34-0818-4e8f-bef7-62ca73e5acfb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184338_3be95d34-0818-4e8f-bef7-62ca73e5acfb.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb63_elevator_still",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット63：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "204f80df-42c7-4e6c-9eb7-af86b83e2dd1",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184345_204f80df-42c7-4e6c-9eb7-af86b83e2dd1.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb64_carry",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット64：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "a8a2e762-81ea-448f-8d67-28c9c6a947fd",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184351_a8a2e762-81ea-448f-8d67-28c9c6a947fd.png",
+      "method": "図版参照＋世界観スタイル指定（refs: HIIRAGI)"
+    },
+    {
+      "id": "sf_sb65_watch",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット65：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "ff08e636-3830-4de5-900e-166980b522fe",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184357_ff08e636-3830-4de5-900e-166980b522fe.png",
+      "method": "図版参照＋世界観スタイル指定（refs: KUMOI)"
+    },
+    {
+      "id": "sf_sb66_fog_tears",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット66：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "46682871-adb2-4b81-9a2c-a3e87f4e96b6",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184405_46682871-adb2-4b81-9a2c-a3e87f4e96b6.png",
+      "method": "図版参照＋世界観スタイル指定（refs: BUILDING)"
+    },
+    {
+      "id": "sf_sb67_table",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット67：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "d7bdd6ff-97a2-439d-9300-1d0007fc7458",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184425_d7bdd6ff-97a2-439d-9300-1d0007fc7458.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb68_ri_vial_gift",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット68：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "a3d57045-5092-4927-a7ff-a8a700ea90d3",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184430_a3d57045-5092-4927-a7ff-a8a700ea90d3.png",
+      "method": "図版参照＋世界観スタイル指定（refs: LI,HIIRAGI)"
+    },
+    {
+      "id": "sf_sb69_chair_turn",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット69：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "96d89c37-82f1-4802-82b5-530caaf4f208",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184437_96d89c37-82f1-4802-82b5-530caaf4f208.png",
+      "method": "図版参照＋世界観スタイル指定（refs: KABURAGI,HIIRAGI)"
+    },
+    {
+      "id": "sf_sb70_extra",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット70：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "f1dd7a39-d766-4573-9d24-74a337a9524e",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184443_f1dd7a39-d766-4573-9d24-74a337a9524e.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb71_hiiragi_hand",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット71：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "54043a0e-62f5-459c-80f7-8efd3f6f3f5a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184448_54043a0e-62f5-459c-80f7-8efd3f6f3f5a.png",
+      "method": "図版参照＋世界観スタイル指定（refs: HIIRAGI)"
+    },
+    {
+      "id": "sf_sb72_tome_rises",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット72：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "a59cb66a-7ac9-47a1-b65f-a70b7fd784b1",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184452_a59cb66a-7ac9-47a1-b65f-a70b7fd784b1.png",
+      "method": "図版参照＋世界観スタイル指定（refs: TOME)"
+    },
+    {
+      "id": "sf_sb73_fog_window",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット73：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "eefd2405-0d96-42d5-8535-8d4eb2d9fdc7",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184512_eefd2405-0d96-42d5-8535-8d4eb2d9fdc7.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb74_doors_open_left",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット74：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "b84b8fa4-dad9-4dcc-8a51-0628dae3ed5f",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184517_b84b8fa4-dad9-4dcc-8a51-0628dae3ed5f.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb75_elevator",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット75：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "c2218e7c-763e-4cc2-b2f2-8eb290d2c13a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184523_c2218e7c-763e-4cc2-b2f2-8eb290d2c13a.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb76_new_letter",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット76：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "7133fcd1-f5db-48d1-9fc1-0eb491e00c0c",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184528_7133fcd1-f5db-48d1-9fc1-0eb491e00c0c.png",
+      "method": "図版参照＋世界観スタイル指定（refs: なし)"
+    },
+    {
+      "id": "sf_sb77_hikari_writes",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット77：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "7beee0eb-6236-4fe3-9b38-06d77e300cba",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184535_7beee0eb-6236-4fe3-9b38-06d77e300cba.png",
+      "method": "図版参照＋世界観スタイル指定（refs: HIKARI)"
+    },
+    {
+      "id": "sf_sb78_hikari_climb",
+      "kind": "floyo_start_frame",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "Floyo I2V開始フレーム カット78：CANON準拠フルカラースチル（図版参照＋ビルCANON、文字なし）",
+      "job_id": "d41d3422-78f0-4431-aefb-776a37e424d1",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184541_d41d3422-78f0-4431-aefb-776a37e424d1.png",
+      "method": "図版参照＋世界観スタイル指定（refs: HIKARI,HIIRAGI)"
     }
   ]
 }

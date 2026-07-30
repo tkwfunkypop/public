@@ -1,0 +1,740 @@
+[
+ {
+  "panel": "sb01_fog_building",
+  "no": 1,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: full shot, wide cinematic framing. Scene: 白い霧だけの画面。奥に、傾いた七階建てのビルの輪郭がぼんやり浮かぶ。地面はビルの足元で途切れ、その先は何もない。 ※モノローグなし。風の音のみ。世界の外れであることを一枚で言う Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "BUILDING"
+  ],
+  "job_id": "5a66ea04-5662-433b-8dcd-712add8ece81",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183454_5a66ea04-5662-433b-8dcd-712add8ece81.png"
+ },
+ {
+  "panel": "sb02_mailslots",
+  "no": 2,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: 郵便受けの列。七つ。どれも埃をかぶっている。 Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "6e33344a-3b24-4893-bde8-2938e7c226d8",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183458_6e33344a-3b24-4893-bde8-2938e7c226d8.png"
+ },
+ {
+  "panel": "sb03_stairwell",
+  "no": 3,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: full shot, wide cinematic framing. Scene: 階段の吹き抜けを見上げるアオリ。七層ぶんの手すりが螺旋に重なる。人はいない。 ※縦の構図。以後この階段が主役の空間になる Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "1d2446d8-a84d-4c76-97a4-c9c88ca623e6",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183504_1d2446d8-a84d-4c76-97a4-c9c88ca623e6.png"
+ },
+ {
+  "panel": "sb04_elevator_dark",
+  "no": 4,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: エレベーターの階数表示。1→3→4→5→7。2と6のランプだけ点かない。 ※後半の伏線。表示の飛びを画で見せきる Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "106f2db1-bdfd-415c-8cab-9bdf14511b5e",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183511_106f2db1-bdfd-415c-8cab-9bdf14511b5e.png"
+ },
+ {
+  "panel": "sb05_doors_closed",
+  "no": 5,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: full shot, wide cinematic framing. Scene: 七つの扉が並ぶ廊下。全部閉まっている。時間をずらして出社するので誰ともすれ違わない。 Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "68581143-2090-49e5-843e-91231d888cfd",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183515_68581143-2090-49e5-843e-91231d888cfd.png"
+ },
+ {
+  "panel": "sb06_title",
+  "no": 6,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: 白い霧だけの画面。タイトルは編集で載せるため、霧の無地プレートを作る。 Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "02dd58fe-2fce-40e8-8b9f-d526866def6d",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183519_02dd58fe-2fce-40e8-8b9f-d526866def6d.png"
+ },
+ {
+  "panel": "sb07_envelope",
+  "no": 7,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: 机の上にすべり込む一通の封筒。宛名は各社名。 Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "534dacb6-9e3d-4781-aa84-1c21ba9e3654",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183540_534dacb6-9e3d-4781-aa84-1c21ba9e3654.png"
+ },
+ {
+  "panel": "sb08_letter",
+  "no": 8,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: 依頼書のクローズ。件名「明日を一日、つくってください」。納期七日後。予算 金一封。発注者 このビル。 ※文字は編集で入れる。生成パネルは紙と手だけ Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "99b31845-7d53-4d03-8ef0-676aa28c576a",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183547_99b31845-7d53-4d03-8ef0-676aa28c576a.png"
+ },
+ {
+  "panel": "sb09_empty_envelope",
+  "no": 9,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 封筒を逆さに振る手。何も落ちてこない。空。 ※予算ゼロを一動作で Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "b9fedff0-ee38-4982-95a8-f0ed7297ce6a",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183551_b9fedff0-ee38-4982-95a8-f0ed7297ce6a.png"
+ },
+ {
+  "panel": "sb10_seven_bins",
+  "no": 10,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 七分割の同時カット。七つの机で、七人が同じ紙を同じ角度でゴミ箱に落とす。 ※画面分割。七社が同じ動作をしていることを見せる＝互いを知らないのに同じ Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "ac78b2db-7515-4c8b-8c61-d2f7c057495a",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183556_ac78b2db-7515-4c8b-8c61-d2f7c057495a.png"
+ },
+ {
+  "panel": "sb11_returned",
+  "no": 11,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: 翌朝。ゴミ箱は空のまま、机の上に同じ依頼書が戻っている。 Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "c26c3edf-2d18-4487-af3b-bccc8ab070e5",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183600_c26c3edf-2d18-4487-af3b-bccc8ab070e5.png"
+ },
+ {
+  "panel": "sb12_hikari_start",
+  "no": 12,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: full shot, wide cinematic framing. Scene: 7Fふくふく亭。ひかりが弁当の塔を担いで出発。階段を下りはじめる。 ※彼女だけが全階をまわる＝唯一の横断者 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "HIKARI"
+  ],
+  "job_id": "481dc44a-587c-4b3f-8b8a-2a23231dd52e",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183606_481dc44a-587c-4b3f-8b8a-2a23231dd52e.png"
+ },
+ {
+  "panel": "sb13_hikari_notice",
+  "no": 13,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 各階の机に弁当を置くひかり。置くたびに、同じ依頼書が視界の端に入る。三枚目で足が止まる。 ※気づきは台詞でなく足の止まりで Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "HIKARI"
+  ],
+  "job_id": "f693b09f-e236-4bfa-a806-648f116bc192",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183631_f693b09f-e236-4bfa-a806-648f116bc192.png"
+ },
+ {
+  "panel": "sb14_seven_fan",
+  "no": 14,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: ひかりの手が七枚の依頼書を扇状に広げる。全部同じ文面。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "HIKARI"
+  ],
+  "job_id": "b9533c9b-c7c9-4c0d-8fc0-2a15d2475e29",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183635_b9533c9b-c7c9-4c0d-8fc0-2a15d2475e29.png"
+ },
+ {
+  "panel": "sb15_hikari_run",
+  "no": 15,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: full shot, wide cinematic framing. Scene: ひかりが階段を駆け上がる。手すりを掴んで踊り場を折り返し、扉を次々に叩く。 ※この作品の起点。カメラは彼女を追って縦に上がる Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "HIKARI"
+  ],
+  "job_id": "2dc61fc6-58f0-4d63-b34f-73f7f8487c34",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183642_2dc61fc6-58f0-4d63-b34f-73f7f8487c34.png"
+ },
+ {
+  "panel": "sb16_doors_peek",
+  "no": 16,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 扉が一枚、二枚、三枚と細く開く。隙間から七つの顔が覗く。 Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "23649a03-31d7-43b6-82f9-90aae1ff3d39",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183648_23649a03-31d7-43b6-82f9-90aae1ff3d39.png"
+ },
+ {
+  "panel": "sb17_meeting",
+  "no": 17,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: full shot, wide cinematic framing. Scene: 屋上。長机に七社が着席。全員が微妙に距離をとって座っている。霧が机の脚を舐める。 ※距離＝関係性。後半の食卓カットと対になる構図 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "BUILDING"
+  ],
+  "job_id": "857608ed-5eaf-4e6a-b2ed-10a4a33cba54",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183657_857608ed-5eaf-4e6a-b2ed-10a4a33cba54.png"
+ },
+ {
+  "panel": "sb18_tome_agenda",
+  "no": 18,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: トメが立って議事進行。ホワイトボードには「一、開式の辞／二、献花」と書かれていく。 ※葬式の式次第になっている Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "TOME"
+  ],
+  "job_id": "fb163887-f8ee-4b22-a55f-4bfb75c0ba9e",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183703_fb163887-f8ee-4b22-a55f-4bfb75c0ba9e.png"
+ },
+ {
+  "panel": "sb19_kumoi_prob",
+  "no": 19,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: 雲井。手元の日誌から目を上げずに。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "KUMOI"
+  ],
+  "job_id": "fc5163f9-474d-4b0b-a9c6-83411bd25ba9",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183725_fc5163f9-474d-4b0b-a9c6-83411bd25ba9.png"
+ },
+ {
+  "panel": "sb20_ri_vial",
+  "no": 20,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 李に意見が振られる。李は黙って小瓶の蓋を開ける。一同むせて咳き込み、書類が飛ぶ。 ※唯一の明確なギャグ。テンポで押す Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "LI"
+  ],
+  "job_id": "0e747b1f-c660-4804-9406-46c42af22158",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183731_0e747b1f-c660-4804-9406-46c42af22158.png"
+ },
+ {
+  "panel": "sb21_kaburagi_tools",
+  "no": 21,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 鏑木が工具箱を開け、机の下で勝手に何かを組み始めている。歯車が転がる。 ※後のぜんまい椅子の伏線 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "KABURAGI"
+  ],
+  "job_id": "8b972e95-0d5b-43d6-9da8-4fc79b6ce9d8",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183737_8b972e95-0d5b-43d6-9da8-4fc79b6ce9d8.png"
+ },
+ {
+  "panel": "sb22_kurogane_minutes",
+  "no": 22,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: 黒金が活版で組んだ議事録を差し出す。まだ前回のぶん。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "KUROGANE"
+  ],
+  "job_id": "f26b5366-0730-46c3-bc05-0dd3c80162c1",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183745_f26b5366-0730-46c3-bc05-0dd3c80162c1.png"
+ },
+ {
+  "panel": "sb23_ukai",
+  "no": 23,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 鵜飼が全員をにこやかにまとめる。手元のメモには各社の内情がびっしり。ペン先が速い。 ※この時点で観客に不吉さを少しだけ渡す Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "UKAI"
+  ],
+  "job_id": "e5d2fb54-e7cb-4f40-8677-c3c844c5a4eb",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183749_e5d2fb54-e7cb-4f40-8677-c3c844c5a4eb.png"
+ },
+ {
+  "panel": "sb24_hikari_scribe",
+  "no": 24,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: ひかりが弁当を配りに来ただけなのに、いつのまにか書記席に座らされている。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "HIKARI"
+  ],
+  "job_id": "fbae6a8c-f730-4347-a755-d88a3a08b2e0",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183755_fbae6a8c-f730-4347-a755-d88a3a08b2e0.png"
+ },
+ {
+  "panel": "sb25_chaos",
+  "no": 25,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: full shot, wide cinematic framing. Scene: 全員が同時に喋りだし、机の上が紙と歯車と小瓶で埋まる。決裂。椅子が引かれる音。 Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "02dcf87b-de81-4d72-a24e-427dd51c8724",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183819_02dcf87b-de81-4d72-a24e-427dd51c8724.png"
+ },
+ {
+  "panel": "sb26_pass_stairs",
+  "no": 26,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 帰りの階段。すれ違う二人が、一瞬だけ目を合わせる。 ※決裂したのに名前を覚えた。この章の本当の成果 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "KABURAGI",
+   "TOME"
+  ],
+  "job_id": "84c62ee6-c265-42cd-9264-75c042227945",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183824_84c62ee6-c265-42cd-9264-75c042227945.png"
+ },
+ {
+  "panel": "sb27_seven_names",
+  "no": 27,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: ひかりの書記ノート。七人の名前が、はじめて一枚の紙に並んでいる。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "HIKARI"
+  ],
+  "job_id": "be7b20f1-0435-478d-a45a-712548587ef9",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183832_be7b20f1-0435-478d-a45a-712548587ef9.png"
+ },
+ {
+  "panel": "sb28_collapse",
+  "no": 28,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: full shot, wide cinematic framing. Scene: 地下。管理人室の前の廊下に、電球の箱が散らばっている。倒れた柊の足だけが見える。 ※倒れる瞬間は見せない Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "HIIRAGI"
+  ],
+  "job_id": "bdbb8004-108a-4580-965f-1dfc545ae03d",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183839_bdbb8004-108a-4580-965f-1dfc545ae03d.png"
+ },
+ {
+  "panel": "sb29_hiiragi_bed",
+  "no": 29,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 管理人室のベッド。柊が横たわる。枕元にひかり。医者が首を振って出ていく。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "HIKARI",
+   "HIIRAGI"
+  ],
+  "job_id": "706e726a-73cf-4161-ab07-5c4da7e2aaf4",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183844_706e726a-73cf-4161-ab07-5c4da7e2aaf4.png"
+ },
+ {
+  "panel": "sb30_hikari_demand",
+  "no": 30,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: ひかりが依頼書を突き出す。柊は目だけで笑う。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "HIKARI",
+   "HIIRAGI"
+  ],
+  "job_id": "defbbfe2-3162-429e-837b-f79450502bae",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183850_defbbfe2-3162-429e-837b-f79450502bae.png"
+ },
+ {
+  "panel": "sb31_letter_closeup",
+  "no": 31,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: 依頼書の極大クローズ。一文字ずつ、紙の質も筆跡も違う。切り貼りの継ぎ目が見える。 ※ここが仕掛けの開示。寄りきる Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "4e9f7d96-5614-4191-ac07-6e90e49cf188",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183914_4e9f7d96-5614-4191-ac07-6e90e49cf188.png"
+ },
+ {
+  "panel": "sb32_drawer",
+  "no": 32,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 机の抽斗が開く。五十年分の紙片が詰まっている。書き損じ、破いた辞表、出せなかった詫び状、渡せなかったラブレターの下書き。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "HIIRAGI"
+  ],
+  "job_id": "e8cb2936-3145-4601-9e77-c8f84aa876d7",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183921_e8cb2936-3145-4601-9e77-c8f84aa876d7.png"
+ },
+ {
+  "panel": "sb33_scraps_hands",
+  "no": 33,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: 紙片の一枚一枚に、別の誰かの手の癖がある。フラッシュで、それを書いて捨てた無名の手が重なる。 Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "4db95be6-f03d-4d1e-bf4a-94f82b671577",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183927_4db95be6-f03d-4d1e-bf4a-94f82b671577.png"
+ },
+ {
+  "panel": "sb34_hiiragi_wish",
+  "no": 34,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 柊が天井を見る。 ※作品の願い。ここだけ間を長く取る Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "HIIRAGI"
+  ],
+  "job_id": "bc0bd10f-ce81-4036-aaef-fa49c47e9645",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183931_bc0bd10f-ce81-4036-aaef-fa49c47e9645.png"
+ },
+ {
+  "panel": "sb35_hikari_run2",
+  "no": 35,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: full shot, wide cinematic framing. Scene: ひかりが管理人室を飛び出し、階段を駆け上がる。二度目の駆け上がり。 ※cut15と同じ構図でリズムを反復させる Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "HIKARI"
+  ],
+  "job_id": "cd429d5b-00b0-4bdf-bf8c-f0d0c352f6ac",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183937_cd429d5b-00b0-4bdf-bf8c-f0d0c352f6ac.png"
+ },
+ {
+  "panel": "sb36_doors_open",
+  "no": 36,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 七つの扉が、今度は自分から開く。 ※cut16の反転 Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "967acf7f-a126-4880-83eb-cc311a574ebb",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_183943_967acf7f-a126-4880-83eb-cc311a574ebb.png"
+ },
+ {
+  "panel": "sb37_kumoi",
+  "no": 37,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 4F観測所。百年分の日誌が床から天井まで。雲井が一冊を抜き、指で行を追う。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "KUMOI"
+  ],
+  "job_id": "b09d7a4e-9ad1-4ea4-a131-ff20124c7e53",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184007_b09d7a4e-9ad1-4ea4-a131-ff20124c7e53.png"
+ },
+ {
+  "panel": "sb38_logbook_window",
+  "no": 38,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: 日誌の余白に書かれる数字。七日目、一六:四四〜一六:五五。 ※文字は編集で Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "KUMOI"
+  ],
+  "job_id": "5703d76c-4d2a-4beb-9b32-3d091debc409",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184013_5703d76c-4d2a-4beb-9b32-3d091debc409.png"
+ },
+ {
+  "panel": "sb39_tome_delight",
+  "no": 39,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 一同「四が三つ」と渋る。トメだけが満面の笑み。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "TOME"
+  ],
+  "job_id": "67b6cd3f-2066-467a-8fca-2f1e252813a7",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184018_67b6cd3f-2066-467a-8fca-2f1e252813a7.png"
+ },
+ {
+  "panel": "sb40_seven_seals",
+  "no": 40,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: 屋上の机に、七社の判が一つずつ押されていく。 ※会議が噛み合いはじめる合図 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "BUILDING"
+  ],
+  "job_id": "a70674fb-8a9e-49d5-b952-3bea30ce47b5",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184025_a70674fb-8a9e-49d5-b952-3bea30ce47b5.png"
+ },
+ {
+  "panel": "sb41_kumoi_cue",
+  "no": 41,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 【分担モンタージュ 4F】雲井が秒針を睨み、号令の台本を書く。 ※ここから41〜47は同テンポで刻む Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "KUMOI"
+  ],
+  "job_id": "26b00563-998b-4fda-9147-eabe02145342",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184031_26b00563-998b-4fda-9147-eabe02145342.png"
+ },
+ {
+  "panel": "sb42_press",
+  "no": 42,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 【6F】黒金と大和が活字を拾う。刷り上がるのは、まだ来ていない日付の号外。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "YAMATO",
+   "KUROGANE"
+  ],
+  "job_id": "e5cbc757-ea17-4434-94ea-4455628010a1",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184039_e5cbc757-ea17-4434-94ea-4455628010a1.png"
+ },
+ {
+  "panel": "sb43_ri",
+  "no": 43,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 【5F】李が調香台に向かう。小瓶が三本並ぶ。妻の味噌汁、雨上がりの校庭、五十年前の一階の線香。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "LI"
+  ],
+  "job_id": "210eb76c-f0c4-4536-bb3a-60a061e92007",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184101_210eb76c-f0c4-4536-bb3a-60a061e92007.png"
+ },
+ {
+  "panel": "sb44_chair_build",
+  "no": 44,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 【2F】鏑木がぜんまい椅子を組む。歯車が噛み、座面がゆっくり回る。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "KABURAGI"
+  ],
+  "job_id": "35e24bb3-9d1c-47f3-9ded-b957f55dd04b",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184107_35e24bb3-9d1c-47f3-9ded-b957f55dd04b.png"
+ },
+ {
+  "panel": "sb45_ledger_join",
+  "no": 45,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: 【3F】鵜飼の帳簿。予算ゼロの案件が、七社の誰も損しない形に組み替わっていく。 ※この時点では善意に見せる Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "UKAI"
+  ],
+  "job_id": "5a88fc3b-a4ba-410a-b080-e5926a731f66",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184114_5a88fc3b-a4ba-410a-b080-e5926a731f66.png"
+ },
+ {
+  "panel": "sb46_tome_program",
+  "no": 46,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 【1F】トメが式次第を書く。「一日をきちんと始めて、きちんと終わらせる」。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "TOME"
+  ],
+  "job_id": "21e80af2-2ffe-413b-b563-e15abae7ce55",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184119_21e80af2-2ffe-413b-b563-e15abae7ce55.png"
+ },
+ {
+  "panel": "sb47_nine_plates",
+  "no": 47,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 【7F】ひかりが厨房で九人分の皿を数える。 ※九人＝七社＋柊＋自分。数の伏線 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "HIKARI",
+   "HIIRAGI"
+  ],
+  "job_id": "37352a88-b636-4fb8-88fd-000c2e0310c5",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184123_37352a88-b636-4fb8-88fd-000c2e0310c5.png"
+ },
+ {
+  "panel": "sb48_stairs_busy",
+  "no": 48,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: full shot, wide cinematic framing. Scene: 階段を、七社の人間が上下にすれ違いながら往復する。四十年止まっていた血流が動く。 Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "48d46ac9-e9e8-491c-b6f6-1f036f121842",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184128_48d46ac9-e9e8-491c-b6f6-1f036f121842.png"
+ },
+ {
+  "panel": "sb49_betrayal",
+  "no": 49,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 六日目。3Fの応接。鵜飼と、見慣れないスーツの男。テーブルに取り壊しの図面と契約書。判が寸前。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "UKAI"
+  ],
+  "job_id": "70a73fc4-a067-4da4-b590-437da46f1c46",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184151_70a73fc4-a067-4da4-b590-437da46f1c46.png"
+ },
+ {
+  "panel": "sb50_eye_gap",
+  "no": 50,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: 扉の隙間。それを見ているひかりの目。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "HIKARI"
+  ],
+  "job_id": "872bb4a2-4425-440d-a8d9-bc5a77b24d13",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184158_872bb4a2-4425-440d-a8d9-bc5a77b24d13.png"
+ },
+ {
+  "panel": "sb51_notes_spill",
+  "no": 51,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 鵜飼のメモが床にばらまかれる。会議で取っていた各社の内情のメモ。売り物だった。 ※cut23の回収 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "UKAI"
+  ],
+  "job_id": "7cabde3a-f608-43b3-8f62-c95dd1573dc9",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184203_7cabde3a-f608-43b3-8f62-c95dd1573dc9.png"
+ },
+ {
+  "panel": "sb52_doors_close",
+  "no": 52,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: full shot, wide cinematic framing. Scene: 七つの扉が、順番に閉まっていく。cut36の完全な反転。 ※音だけで見せてもよい Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "ef2aee74-ef84-44eb-a9f4-c72c5a62e87f",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184207_ef2aee74-ef84-44eb-a9f4-c72c5a62e87f.png"
+ },
+ {
+  "panel": "sb53_erased",
+  "no": 53,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: 雲井が日誌の数字を消し、書き直す。実現確率 0%。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "KUMOI"
+  ],
+  "job_id": "c9ba6bc4-d084-4072-8dc8-b7c412684e0c",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184212_c9ba6bc4-d084-4072-8dc8-b7c412684e0c.png"
+ },
+ {
+  "panel": "sb54_chair_alone",
+  "no": 54,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 屋上。組みかけのぜんまい椅子だけが霧の中に残されている。誰もいない。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "BUILDING"
+  ],
+  "job_id": "8c1cbeae-0931-49af-b178-458b8e3845cf",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184220_8c1cbeae-0931-49af-b178-458b8e3845cf.png"
+ },
+ {
+  "panel": "sb55_ukai_window",
+  "no": 55,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 3F。鵜飼が一人。窓の霧に向かって喋りだす。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "UKAI"
+  ],
+  "job_id": "5fac3f7f-1462-4921-83c3-cf0d882c6a43",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184241_5fac3f7f-1462-4921-83c3-cf0d882c6a43.png"
+ },
+ {
+  "panel": "sb56_flashback",
+  "no": 56,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: full shot, wide cinematic framing. Scene: 回想。七階の厨房で働く母の背中。二階で玩具を作る父の手。少年の鵜飼が階段の踊り場に座っている。 ※鉛筆の線をさらに薄く、回想の階調を落とす Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "UKAI_CHILD",
+   "UKAI_MOTHER",
+   "UKAI_FATHER"
+  ],
+  "job_id": "ee24e0c8-0a9c-4ca9-83ee-49f26ab8bbc0",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184248_ee24e0c8-0a9c-4ca9-83ee-49f26ab8bbc0.png"
+ },
+ {
+  "panel": "sb57_toolbox",
+  "no": 57,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: full shot, wide cinematic framing. Scene: 回想。階段の下に落ちた工具箱。散った歯車。父の靴が片方だけ転がっている。 ※死体は映さない Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "UKAI_FATHER"
+  ],
+  "job_id": "cec0dcba-efae-41d3-894d-544e82e9a722",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184255_cec0dcba-efae-41d3-894d-544e82e9a722.png"
+ },
+ {
+  "panel": "sb58_empty_chairs",
+  "no": 58,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 回想。葬儀場に並ぶ空の椅子。誰も座っていない。少年が一人立っている。 ※この作品のテーマの裏面 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "UKAI_CHILD"
+  ],
+  "job_id": "9e9b3dad-6944-4a62-9acf-7a5762f97589",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184259_9e9b3dad-6944-4a62-9acf-7a5762f97589.png"
+ },
+ {
+  "panel": "sb59_tome_ledger",
+  "no": 59,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 現在。黙って聞いていたトメが、古い帳簿を机に置いて開く。三十年前の日付。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "TOME"
+  ],
+  "job_id": "d3410dfe-116f-4e4b-a4e1-95f2815ecde6",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184305_d3410dfe-116f-4e4b-a4e1-95f2815ecde6.png"
+ },
+ {
+  "panel": "sb60_ledger",
+  "no": 60,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: 帳簿の極大クローズ。喪主欄に「柊源三」。参列者、一名。 ※感情のピーク。ここが一番寄る Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "d2042e41-f172-4653-b964-e8fe43a6dd5b",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184310_d2042e41-f172-4653-b964-e8fe43a6dd5b.png"
+ },
+ {
+  "panel": "sb61_ukai_hands",
+  "no": 61,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 鵜飼の手が止まり、そのまま帳簿を掴む。契約書を破る音は画面外。 ※泣き顔は見せない。手だけ Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "UKAI"
+  ],
+  "job_id": "e5029979-32e6-48fa-b92d-666b1e324ec1",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184332_e5029979-32e6-48fa-b92d-666b1e324ec1.png"
+ },
+ {
+  "panel": "sb62_ledger_delivered",
+  "no": 62,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: その夜。七社の机に、組み直された帳簿が一枚ずつ置かれていく。予算ゼロの案件が成立してしまう。 ※cut7の反復構図（机に紙が置かれる） Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "3be95d34-0818-4e8f-bef7-62ca73e5acfb",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184338_3be95d34-0818-4e8f-bef7-62ca73e5acfb.png"
+ },
+ {
+  "panel": "sb63_elevator_still",
+  "no": 63,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 七日目。エレベーターの2と6のランプは、やはり点かない。全員が階段を選ぶ。 ※cut4の回収 Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "204f80df-42c7-4e6c-9eb7-af86b83e2dd1",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184345_204f80df-42c7-4e6c-9eb7-af86b83e2dd1.png"
+ },
+ {
+  "panel": "sb64_carry",
+  "no": 64,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: full shot, wide cinematic framing. Scene: 七社総出でぜんまい椅子を担ぎ、螺旋階段を上げていく。柊が座っている。手から手へ受け渡される。 ※cut3の階段を、今度は人で埋める Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "HIIRAGI"
+  ],
+  "job_id": "a8a2e762-81ea-448f-8d67-28c9c6a947fd",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184351_a8a2e762-81ea-448f-8d67-28c9c6a947fd.png"
+ },
+ {
+  "panel": "sb65_watch",
+  "no": 65,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: 雲井の腕時計。一六:四三:五〇。秒針。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "KUMOI"
+  ],
+  "job_id": "ff08e636-3830-4de5-900e-166980b522fe",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184357_ff08e636-3830-4de5-900e-166980b522fe.png"
+ },
+ {
+  "panel": "sb66_fog_tears",
+  "no": 66,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: full shot, wide cinematic framing. Scene: 霧が裂ける。世界の外れに、はじめて空と地平が見える。琥珀色の光が屋上に流れ込む。 ※全編で唯一、色を入れてよい箇所（本編では）。コンテでは鉛筆のまま、白の抜きで表現 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "BUILDING"
+  ],
+  "job_id": "46682871-adb2-4b81-9a2c-a3e87f4e96b6",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184405_46682871-adb2-4b81-9a2c-a3e87f4e96b6.png"
+ },
+ {
+  "panel": "sb67_table",
+  "no": 67,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: full shot, wide cinematic framing. Scene: 一つの長机を九人が囲んで飯を食っている。cut17の距離が、ゼロになっている。 ※cut17と同アングルで対にする。この一枚が作品の答え Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "d7bdd6ff-97a2-439d-9300-1d0007fc7458",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184425_d7bdd6ff-97a2-439d-9300-1d0007fc7458.png"
+ },
+ {
+  "panel": "sb68_ri_vial_gift",
+  "no": 68,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: 李が柊の鼻先に小瓶を差し出す。中身は三十年前の、このビルの階段の匂い。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "LI",
+   "HIIRAGI"
+  ],
+  "job_id": "a3d57045-5092-4927-a7ff-a8a700ea90d3",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184430_a3d57045-5092-4927-a7ff-a8a700ea90d3.png"
+ },
+ {
+  "panel": "sb69_chair_turn",
+  "no": 69,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 柊が椅子の手を離す。座面がゆっくり回り、七つの扉が順に見える。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "KABURAGI",
+   "HIIRAGI"
+  ],
+  "job_id": "96d89c37-82f1-4802-82b5-530caaf4f208",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184437_96d89c37-82f1-4802-82b5-530caaf4f208.png"
+ },
+ {
+  "panel": "sb70_extra",
+  "no": 70,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: 号外の見出し。「本日、晴。果端ビル七社、初の合同事業を完遂」。 ※文字は編集で Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "f1dd7a39-d766-4573-9d24-74a337a9524e",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184443_f1dd7a39-d766-4573-9d24-74a337a9524e.png"
+ },
+ {
+  "panel": "sb71_hiiragi_hand",
+  "no": 71,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: 夜。管理人室。柊の手が布団の上でひらく。静かに息を引き取る。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "HIIRAGI"
+  ],
+  "job_id": "54043a0e-62f5-459c-80f7-8efd3f6f3f5a",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184448_54043a0e-62f5-459c-80f7-8efd3f6f3f5a.png"
+ },
+ {
+  "panel": "sb72_tome_rises",
+  "no": 72,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: トメが立ち上がる。喪服の裾が揺れる。 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "TOME"
+  ],
+  "job_id": "a59cb66a-7ac9-47a1-b65f-a70b7fd784b1",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184452_a59cb66a-7ac9-47a1-b65f-a70b7fd784b1.png"
+ },
+ {
+  "panel": "sb73_fog_window",
+  "no": 73,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: full shot, wide cinematic framing. Scene: 翌朝。窓の外はいつもの白い霧に戻っている。 Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "eefd2405-0d96-42d5-8535-8d4eb2d9fdc7",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184512_eefd2405-0d96-42d5-8535-8d4eb2d9fdc7.png"
+ },
+ {
+  "panel": "sb74_doors_open_left",
+  "no": 74,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: full shot, wide cinematic framing. Scene: 七つの扉が、全部開いたままになっている。cut5の完全な反転。 Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "b84b8fa4-dad9-4dcc-8a51-0628dae3ed5f",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184517_b84b8fa4-dad9-4dcc-8a51-0628dae3ed5f.png"
+ },
+ {
+  "panel": "sb75_elevator",
+  "no": 75,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: エレベーターの階数表示。1→2→3→4→5→6→7。2と6にも、ランプが点く。 ※四十年ぶり。台詞なしで観客に効く Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "c2218e7c-763e-4cc2-b2f2-8eb290d2c13a",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184523_c2218e7c-763e-4cc2-b2f2-8eb290d2c13a.png"
+ },
+ {
+  "panel": "sb76_new_letter",
+  "no": 76,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: close-up. Scene: 管理人室の机に新しい依頼書。差出人欄に七社の判が並び、宛先は空白。 Absolutely no text, letters or signage anywhere; all signboards blank. Windows never arranged like a face.",
+  "refs": [],
+  "job_id": "7133fcd1-f5db-48d1-9fc1-0eb491e00c0c",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184528_7133fcd1-f5db-48d1-9fc1-0eb491e00c0c.png"
+ },
+ {
+  "panel": "sb77_hikari_writes",
+  "no": 77,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: medium shot. Scene: ひかりが宛先欄に自分の名前を書き込む。 ※八社目＝彼女 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "HIKARI"
+  ],
+  "job_id": "7beee0eb-6236-4fe3-9b38-06d77e300cba",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184535_7beee0eb-6236-4fe3-9b38-06d77e300cba.png"
+ },
+ {
+  "panel": "sb78_hikari_climb",
+  "no": 78,
+  "prompt": "Full-colour cinematic still from a gothic stop-motion puppet film, to be used as an image-to-video START FRAME. Handcrafted felt and fabric puppets and miniature sets, visible stitches and cloth texture, tilt-shift macro photography, soft practical lighting with gentle film grain, muted gothic palette: ink blue-violet darks, ivory felt, plum accents, warm lamp glows. Shot composition: full shot, wide cinematic framing. Scene: 電球の箱を抱えて階段をのぼっていくひかりの後ろ姿。上へ、上へ。暗転。 ※cut3の階段を、一人で。柊の五十年を引き継ぐ画 Reproduce the referenced OFFICIAL designs EXACTLY — same faces, hairstyles, costumes, proportions; do NOT add facial features a design does not have (no extra eyes, no mouth on mouthless characters). Windows never arranged like a face. Absolutely no text, letters or signage anywhere; all signboards blank.",
+  "refs": [
+   "HIKARI",
+   "HIIRAGI"
+  ],
+  "job_id": "d41d3422-78f0-4431-aefb-776a37e424d1",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_184541_d41d3422-78f0-4431-aefb-776a37e424d1.png"
+ }
+]

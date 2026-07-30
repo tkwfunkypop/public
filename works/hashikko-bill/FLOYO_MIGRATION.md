@@ -22,7 +22,14 @@ node fetch-assets.mjs        # generated.json の全URLを assets/ に取り込�
 ```
 Floyoへは必要な画像をドラッグ&ドロップで登録（開始フレームはショットごとに1枚）。
 
-## 2. 開始フレームの作り方（Floyo移行後の最初の作業）
+## 2. 開始フレーム（全78カット分 生成済み）
+
+**2026-07-30 全78カットの開始フレームを生成済み。** `generated.json` の
+`kind: floyo_start_frame`（id: `sf_sb01…sf_sb78`）が台帳、
+`startframes.html` が一覧ページ、`storyboard/startframes-manifest.json` が
+生成時のプロンプト・参照の記録。人間検品でNGのカットのみリロールして差し替える。
+
+### 生成の方式（リロール時も同じ）
 
 絵コンテ78カットのうち、本番化するショットは **鉛筆パネルではなく
 「キャラ図版＋美術設定から起こしたCANON準拠スチル」を開始フレームにする**。
