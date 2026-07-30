@@ -3224,6 +3224,38 @@
       "job_id": "84c99ff4-116b-4528-ac27-c0cd18461ccf",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_162728_84c99ff4-116b-4528-ac27-c0cd18461ccf.png",
       "method": "3C(a480537c)を参照に7階明示のリドロー"
+    },
+    {
+      "id": "key_building",
+      "kind": "key_art",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "全景キーアートv2：ビル外形CANON（案3-C'）準拠。岩の指先の上の7階建て・7色の窓列・吊り橋・曲がった街灯・霧の海・冷たい月。",
+      "job_id": "d0af2559-d98b-4e82-9584-31bcfe62d1b2",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_163652_d0af2559-d98b-4e82-9584-31bcfe62d1b2.png",
+      "method": "CANON(84c99ff4)を単参照に16:9へ展開"
+    },
+    {
+      "id": "key_poster_main",
+      "kind": "key_art",
+      "aspect_ratio": "2:3",
+      "approved": false,
+      "note": "映画ポスターv2：キャラ・構図は旧ポスターのまま、背景のビルだけCANON（案3-C'）に差し替え。",
+      "job_id": "eeaea0c4-6546-44d5-8915-0b66b6e7d40d",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_163719_eeaea0c4-6546-44d5-8915-0b66b6e7d40d.png",
+      "method": "旧ポスター(790d7c4b)＋CANON(84c99ff4)の2参照",
+      "superseded_job_id": "790d7c4b-36bb-4bdf-8d65-e37d6fb63eac"
+    },
+    {
+      "id": "key_rooftop",
+      "kind": "key_art",
+      "aspect_ratio": "16:9",
+      "approved": false,
+      "note": "九人の屋上カットv3：9人はそのまま、屋上と建築（機械室・庇帯・死人色漆喰・崖と霧の海）をCANON（案3-C'）に差し替え。",
+      "job_id": "448fa44b-3e37-4333-afa9-7caad3aaf9be",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_163725_448fa44b-3e37-4333-afa9-7caad3aaf9be.png",
+      "method": "屋上v2(eca637af)＋CANON(84c99ff4)の2参照",
+      "superseded_job_id": "eca637af-16c0-4f71-a0b8-77948da04caa"
     }
   ]
 }
