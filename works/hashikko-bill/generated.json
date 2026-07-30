@@ -104,15 +104,16 @@
       "aspect_ratio": "2:3",
       "width": 1696,
       "height": 2528,
-      "version": "v4",
+      "version": "v5",
       "approved": false,
       "ref_core": "cfd590f9-6764-41c0-8947-d1ddd2ac7e09",
-      "job_id": "a2f44842-23f8-445f-a771-edc24e89f253",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_012053_a2f44842-23f8-445f-a771-edc24e89f253.png",
+      "job_id": "a05b985c-42ca-44e3-91fa-53a3685b5edc",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_014735_a05b985c-42ca-44e3-91fa-53a3685b5edc.png",
       "superseded_job_id": [
-        "2aa6d7d0-0a27-4173-88c0-1fa6ad4ecbbc"
+        "2aa6d7d0-0a27-4173-88c0-1fa6ad4ecbbc",
+        "a2f44842-23f8-445f-a771-edc24e89f253"
       ],
-      "note": "v3は口が付いていたため、口なしを厳守して差し替え。"
+      "note": "v4は目が可愛く寄った。CANONは上寄りの小さな黒点2つ（口なし）。v5で一致を確認。"
     },
     {
       "id": "f3_ukai",
@@ -132,11 +133,15 @@
       "aspect_ratio": "2:3",
       "width": 1696,
       "height": 2528,
-      "version": "v3",
+      "version": "v4",
       "approved": false,
       "ref_core": "a17a62d5-f663-4014-9273-47de5319fae2",
-      "job_id": "15e08a95-5380-4b41-8887-3611f64ca017",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_124412_15e08a95-5380-4b41-8887-3611f64ca017.png"
+      "job_id": "ab614b7b-a178-4e78-971b-fb0c8713b121",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_014823_ab614b7b-a178-4e78-971b-fb0c8713b121.png",
+      "superseded_job_id": [
+        "15e08a95-5380-4b41-8887-3611f64ca017"
+      ],
+      "note": "v3は表情がつきすぎ。CANONは細長いほぼ無地の顔。v4で一致を確認。"
     },
     {
       "id": "wfaia_fog_169",
@@ -221,9 +226,13 @@
       "height": 2528,
       "kind": "supporting_cast",
       "approved": false,
-      "note": "鵜飼の母（35歳・30年前）。7F仕出しで働く。house style（細長い柱状・卵型の無表情な顔）準拠。襟に灯火橙を一点だけ入れ、7Fの人間であることを配色で示す。",
-      "job_id": "0ab6bf9d-f251-47c4-9813-5a8d5fd6fc05",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230047_0ab6bf9d-f251-47c4-9813-5a8d5fd6fc05.png"
+      "note": "親子感がないとの指摘。鵜飼家の造形（角ばった白い頭・縫い目の口・炎状の後れ毛）を継承して再設計。",
+      "job_id": "2c0aecde-415e-4784-824a-c1292fd338bd",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_014858_2c0aecde-415e-4784-824a-c1292fd338bd.png",
+      "superseded_job_id": [
+        "0ab6bf9d-f251-47c4-9813-5a8d5fd6fc05"
+      ],
+      "version": "v2"
     },
     {
       "id": "cast_ukai_father",
@@ -233,9 +242,13 @@
       "height": 2528,
       "kind": "supporting_cast",
       "approved": false,
-      "note": "鵜飼の父（38歳・30年前）。2Fでぜんまい玩具を作る。真鍮を基調にして2Fの人間であることを配色で示す。第六章G57で階段下に落ちる工具箱の主。",
-      "job_id": "02e62fcc-edbd-4b76-9fb8-7693f798ca7e",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_230051_02e62fcc-edbd-4b76-9fb8-7693f798ca7e.png"
+      "note": "同上。長い角頭・縫い目の口・炎髪＋歯車入り前掛け（2Fの記号）で再設計。",
+      "job_id": "58069555-ae86-4893-a88c-06faa82e7c35",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_014904_58069555-ae86-4893-a88c-06faa82e7c35.png",
+      "superseded_job_id": [
+        "02e62fcc-edbd-4b76-9fb8-7693f798ca7e"
+      ],
+      "version": "v2"
     },
     {
       "id": "cast_hiiragi_53",
@@ -1313,13 +1326,14 @@
       "character": "KUMOI",
       "sheet": "02 EXPRESSION",
       "ref_design": "cfd590f9-6764-41c0-8947-d1ddd2ac7e09",
-      "job_id": "954e0589-c4a2-49f0-ac16-6f9418975ef8",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_000511_954e0589-c4a2-49f0-ac16-6f9418975ef8.png",
+      "job_id": "b857e90b-4f6f-4004-a8e2-45aaddf1252c",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_015038_b857e90b-4f6f-4004-a8e2-45aaddf1252c.png",
       "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）",
       "superseded_job_id": [
-        "14492fa5-b734-4b5d-8e1d-81d43ef13b98"
+        "14492fa5-b734-4b5d-8e1d-81d43ef13b98",
+        "954e0589-c4a2-49f0-ac16-6f9418975ef8"
       ],
-      "note": "v1は下段に床面と足のアーティファクト。v2で解消、卵形の無地の顔を全コマ維持。"
+      "note": "v2はのっぺらぼう化。点目2つを厳守してv3で差し替え。"
     },
     {
       "id": "sheet_kumoi_03_pose",
@@ -1327,9 +1341,13 @@
       "character": "KUMOI",
       "sheet": "03 POSE",
       "ref_design": "cfd590f9-6764-41c0-8947-d1ddd2ac7e09",
-      "job_id": "7d8a33b2-eaee-418e-b2c4-bb0aa4ddc016",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235511_7d8a33b2-eaee-418e-b2c4-bb0aa4ddc016.png",
-      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）"
+      "job_id": "e80cf203-432a-4a9c-807d-485e8832f27c",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_015041_e80cf203-432a-4a9c-807d-485e8832f27c.png",
+      "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）",
+      "superseded_job_id": [
+        "7d8a33b2-eaee-418e-b2c4-bb0aa4ddc016"
+      ],
+      "note": "目のズレを指摘され、v5図版参照で差し替え。"
     },
     {
       "id": "sheet_kumoi_04_props",
@@ -1347,13 +1365,14 @@
       "character": "UKAI",
       "sheet": "02 EXPRESSION",
       "ref_design": "05da55f2-791c-41c3-bd0b-87e5ef6014d6",
-      "job_id": "c8e6854f-d189-4731-905c-9dc864cbbec9",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_012134_c8e6854f-d189-4731-905c-9dc864cbbec9.png",
+      "job_id": "df79191b-9850-4c42-8b35-c036f8a5c19c",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_014832_df79191b-9850-4c42-8b35-c036f8a5c19c.png",
       "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）",
       "superseded_job_id": [
-        "c3a28e97-4d4f-4619-bd53-010c097cd2d6"
+        "c3a28e97-4d4f-4619-bd53-010c097cd2d6",
+        "c8e6854f-d189-4731-905c-9dc864cbbec9"
       ],
-      "note": "v1は別人化。図版を第1参照にし同一人物条件を明示して差し替え。"
+      "note": "v2も別人との指摘。図版＋04を参照に同一人物条件を強化してv3で差し替え。"
     },
     {
       "id": "sheet_ukai_03_pose",
@@ -1429,14 +1448,15 @@
       "character": "HOSHINO_TOME",
       "sheet": "02 EXPRESSION",
       "ref_design": "a17a62d5-f663-4014-9273-47de5319fae2",
-      "job_id": "cfea91ce-36f5-4e21-8fc0-1eb3478d8763",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_012213_cfea91ce-36f5-4e21-8fc0-1eb3478d8763.png",
+      "job_id": "e16449e7-b303-4f7b-869f-c580b9bf89a5",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_015135_e16449e7-b303-4f7b-869f-c580b9bf89a5.png",
       "method": "参照2枚方式（1枚目=CORE、2枚目=質感の正 a8434a32）",
       "superseded_job_id": [
         "9ec5b6c2-66f9-4e15-9d82-e3cbe8e067c0",
-        "f8fceb54-3b77-405d-a337-d6006f47027b"
+        "f8fceb54-3b77-405d-a337-d6006f47027b",
+        "cfea91ce-36f5-4e21-8fc0-1eb3478d8763"
       ],
-      "note": "表情が強く出ていたため、点目・口なしのまま全コマ穏やかに（03/04の顔に合わせた）。"
+      "note": "v3も表情過多の指摘。v4図版参照で全コマ無表情、感情は手と首の傾きのみ。"
     },
     {
       "id": "sheet_tome_03_pose",
@@ -1508,9 +1528,13 @@
       "character": "UKAI_MOTHER",
       "sheet": "01 TURNAROUND",
       "ref_design": "0ab6bf9d-f251-47c4-9813-5a8d5fd6fc05",
-      "job_id": "a9da925f-fcfa-46eb-9699-318e21f41314",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235649_a9da925f-fcfa-46eb-9699-318e21f41314.png",
-      "method": "参照2枚方式（1枚目=承認済み図版、2枚目=質感の正 a8434a32）"
+      "job_id": "c73b5e2b-d32e-48d6-9b7c-d2c74d497ecb",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_015332_c73b5e2b-d32e-48d6-9b7c-d2c74d497ecb.png",
+      "method": "参照2枚方式（1枚目=承認済み図版、2枚目=質感の正 a8434a32）",
+      "superseded_job_id": [
+        "a9da925f-fcfa-46eb-9699-318e21f41314"
+      ],
+      "note": "v2図版に合わせて再作成。"
     },
     {
       "id": "sheet_ukai_father_01_turnaround",
@@ -1518,9 +1542,13 @@
       "character": "UKAI_FATHER",
       "sheet": "01 TURNAROUND",
       "ref_design": "02e62fcc-edbd-4b76-9fb8-7693f798ca7e",
-      "job_id": "44d547b3-5e0a-4006-b48a-ef975d5855e1",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_235654_44d547b3-5e0a-4006-b48a-ef975d5855e1.png",
-      "method": "参照2枚方式（1枚目=承認済み図版、2枚目=質感の正 a8434a32）"
+      "job_id": "7a1bdc34-aab1-4926-a586-8f344e36a447",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_015400_7a1bdc34-aab1-4926-a586-8f344e36a447.png",
+      "method": "参照2枚方式（1枚目=承認済み図版、2枚目=質感の正 a8434a32）",
+      "superseded_job_id": [
+        "44d547b3-5e0a-4006-b48a-ef975d5855e1"
+      ],
+      "note": "v2図版に合わせて再作成。"
     },
     {
       "id": "sheet_hiiragi_53_01_turnaround",
@@ -1578,9 +1606,13 @@
       "character": "UKAI_MOTHER",
       "sheet": "02 EXPRESSION",
       "ref_design": "0ab6bf9d-f251-47c4-9813-5a8d5fd6fc05",
-      "job_id": "7c4d92cd-ecd4-4eb8-bc6e-b1449b67a60a",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_012317_7c4d92cd-ecd4-4eb8-bc6e-b1449b67a60a.png",
-      "method": "参照2枚方式（figure＋ターンアラウンド）"
+      "job_id": "e462746a-6c37-4049-9a91-e7dbb0d6741d",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_015336_e462746a-6c37-4049-9a91-e7dbb0d6741d.png",
+      "method": "参照2枚方式（figure＋ターンアラウンド）",
+      "superseded_job_id": [
+        "7c4d92cd-ecd4-4eb8-bc6e-b1449b67a60a"
+      ],
+      "note": "v2図版に合わせて再作成。"
     },
     {
       "id": "sheet_ukai_mother_03_pose",
@@ -1588,9 +1620,13 @@
       "character": "UKAI_MOTHER",
       "sheet": "03 POSE",
       "ref_design": "0ab6bf9d-f251-47c4-9813-5a8d5fd6fc05",
-      "job_id": "e2faeb5f-f311-46c4-9658-0d96d0d4eda1",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_012321_e2faeb5f-f311-46c4-9658-0d96d0d4eda1.png",
-      "method": "参照2枚方式（figure＋ターンアラウンド）"
+      "job_id": "af0f570d-a147-48f5-94c8-dba67056ef00",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_020115_af0f570d-a147-48f5-94c8-dba67056ef00.png",
+      "method": "参照2枚方式（figure＋ターンアラウンド）",
+      "superseded_job_id": [
+        "e2faeb5f-f311-46c4-9658-0d96d0d4eda1"
+      ],
+      "note": "初回ジョブが停止、再投入はセーフティ誤検知で弾かれたため言い回しを変えて再生成。v2図版に合わせた家族デザイン。"
     },
     {
       "id": "sheet_ukai_mother_04_props",
@@ -1598,9 +1634,13 @@
       "character": "UKAI_MOTHER",
       "sheet": "04 PROPS & COSTUME",
       "ref_design": "0ab6bf9d-f251-47c4-9813-5a8d5fd6fc05",
-      "job_id": "0905a496-5e7a-4b00-9c0b-6e4e4d727337",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_012325_0905a496-5e7a-4b00-9c0b-6e4e4d727337.png",
-      "method": "参照2枚方式（figure＋ターンアラウンド）"
+      "job_id": "0e8d4586-9eca-4910-bb56-4fddd97f18a9",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_015344_0e8d4586-9eca-4910-bb56-4fddd97f18a9.png",
+      "method": "参照2枚方式（figure＋ターンアラウンド）",
+      "superseded_job_id": [
+        "0905a496-5e7a-4b00-9c0b-6e4e4d727337"
+      ],
+      "note": "v2図版に合わせて再作成。"
     },
     {
       "id": "sheet_ukai_father_02_expression",
@@ -1608,9 +1648,14 @@
       "character": "UKAI_FATHER",
       "sheet": "02 EXPRESSION",
       "ref_design": "02e62fcc-edbd-4b76-9fb8-7693f798ca7e",
-      "job_id": "35374023-4572-459f-bc9c-05f371f36aa8",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_012341_35374023-4572-459f-bc9c-05f371f36aa8.png",
-      "method": "参照2枚方式（figure＋ターンアラウンド）"
+      "job_id": "c08f1b42-134b-4ea6-a454-f329a206971b",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_020003_c08f1b42-134b-4ea6-a454-f329a206971b.png",
+      "method": "参照2枚方式（figure＋ターンアラウンド）",
+      "superseded_job_id": [
+        "35374023-4572-459f-bc9c-05f371f36aa8",
+        "01660dc6-7153-4fa3-bb87-e4fc3278c891"
+      ],
+      "note": "v2は英語ラベルが混入（MEUTRALの誤字も）。v3で文字なしを確認。"
     },
     {
       "id": "sheet_ukai_father_03_pose",
@@ -1618,9 +1663,13 @@
       "character": "UKAI_FATHER",
       "sheet": "03 POSE",
       "ref_design": "02e62fcc-edbd-4b76-9fb8-7693f798ca7e",
-      "job_id": "f0493493-6a82-4406-b5ea-51508dc00086",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_012348_f0493493-6a82-4406-b5ea-51508dc00086.png",
-      "method": "参照2枚方式（figure＋ターンアラウンド）"
+      "job_id": "f08e6936-4e22-438e-aac8-7dea21f9806f",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_015407_f08e6936-4e22-438e-aac8-7dea21f9806f.png",
+      "method": "参照2枚方式（figure＋ターンアラウンド）",
+      "superseded_job_id": [
+        "f0493493-6a82-4406-b5ea-51508dc00086"
+      ],
+      "note": "v2図版に合わせて再作成。"
     },
     {
       "id": "sheet_ukai_father_04_props",
@@ -1628,9 +1677,13 @@
       "character": "UKAI_FATHER",
       "sheet": "04 PROPS & COSTUME",
       "ref_design": "02e62fcc-edbd-4b76-9fb8-7693f798ca7e",
-      "job_id": "4e4f83c6-8b09-4631-aeb7-2f0d6f8238ff",
-      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_012351_4e4f83c6-8b09-4631-aeb7-2f0d6f8238ff.png",
-      "method": "参照2枚方式（figure＋ターンアラウンド）"
+      "job_id": "a4c9e156-7ed8-4f7e-8d31-0242a2d9658a",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_015411_a4c9e156-7ed8-4f7e-8d31-0242a2d9658a.png",
+      "method": "参照2枚方式（figure＋ターンアラウンド）",
+      "superseded_job_id": [
+        "4e4f83c6-8b09-4631-aeb7-2f0d6f8238ff"
+      ],
+      "note": "v2図版に合わせて再作成。"
     },
     {
       "id": "sheet_developer_02_expression",
@@ -1661,6 +1714,39 @@
       "job_id": "9ccea21c-2fc1-4ae2-bcc1-8f237a04d0f5",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_012416_9ccea21c-2fc1-4ae2-bcc1-8f237a04d0f5.png",
       "method": "参照2枚方式（figure＋ターンアラウンド）"
+    },
+    {
+      "id": "sheet_hiiragi_53_02_expression",
+      "kind": "character_sheet",
+      "character": "HIIRAGI_GENZO_53",
+      "sheet": "02 EXPRESSION",
+      "ref_design": "6ab2f33e-f520-4e06-8919-0db0c3af83d7",
+      "job_id": "d2d771b1-908e-4656-a4dc-744a689d508f",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_014923_d2d771b1-908e-4656-a4dc-744a689d508f.png",
+      "method": "参照2枚方式（figure＋ターンアラウンド）",
+      "note": "情報不足の指摘を受けて追加。背筋は伸びたまま・電球は一個で未点灯を全シートで維持。"
+    },
+    {
+      "id": "sheet_hiiragi_53_03_pose",
+      "kind": "character_sheet",
+      "character": "HIIRAGI_GENZO_53",
+      "sheet": "03 POSE",
+      "ref_design": "6ab2f33e-f520-4e06-8919-0db0c3af83d7",
+      "job_id": "bafc75ac-8a39-47e1-bb4a-a4b2fdfa2eae",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_014927_bafc75ac-8a39-47e1-bb4a-a4b2fdfa2eae.png",
+      "method": "参照2枚方式（figure＋ターンアラウンド）",
+      "note": "情報不足の指摘を受けて追加。背筋は伸びたまま・電球は一個で未点灯を全シートで維持。"
+    },
+    {
+      "id": "sheet_hiiragi_53_04_props",
+      "kind": "character_sheet",
+      "character": "HIIRAGI_GENZO_53",
+      "sheet": "04 PROPS & COSTUME",
+      "ref_design": "6ab2f33e-f520-4e06-8919-0db0c3af83d7",
+      "job_id": "73cfd8d9-cfc1-4334-9bb7-48aeba2f9a72",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_014931_73cfd8d9-cfc1-4334-9bb7-48aeba2f9a72.png",
+      "method": "参照2枚方式（figure＋ターンアラウンド）",
+      "note": "情報不足の指摘を受けて追加。背筋は伸びたまま・電球は一個で未点灯を全シートで維持。"
     }
   ]
 }
