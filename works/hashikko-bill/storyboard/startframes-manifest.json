@@ -936,5 +936,25 @@
   "job_id": "ac2d7737-2738-4b3b-87da-6f860c00f123",
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043240_ac2d7737-2738-4b3b-87da-6f860c00f123.png",
   "note": "脚本補強で追加（I章）。目視検品合格"
+ },
+ {
+  "panel": "sb72b_full_funeral",
+  "no": "72b",
+  "prompt": "(v2) トメ=黒髪+白面／李=黒柱状頭を明示して頭部混成を修正",
+  "refs": [
+   "set_rooftop",
+   "TOME",
+   "KABURAGI",
+   "UKAI",
+   "KUMOI",
+   "LI",
+   "KUROGANE",
+   "YAMATO",
+   "HIKARI"
+  ],
+  "job_id": "2ae51453-2fee-400e-9400-67887a555f62",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_045514_2ae51453-2fee-400e-9400-67887a555f62.png",
+  "superseded_job_id": "4a7bfd25-fcd1-45f5-bed8-65669130c526",
+  "note": "C72b v2 検品合格"
  }
 ]
