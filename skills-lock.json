@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "skills": {
+    "sjinn-audio-generation": {
+      "source": "sjinn-ai/skills",
+      "sourceType": "github",
+      "skillPath": "skills/sjinn-audio-generation/SKILL.md",
+      "computedHash": "18e4b60a09cf0f394c1fe481f81053d174ed3c737f53506bda00a0fe7a7a642a"
+    },
+    "sjinn-compose": {
+      "source": "sjinn-ai/skills",
+      "sourceType": "github",
+      "skillPath": "skills/sjinn-compose/SKILL.md",
+      "computedHash": "bfe509b849faa7cc95e2e90d761c0e18e4d3fbe1e9323efb0b1e8fc628f7bfcd"
+    },
+    "sjinn-image-generation": {
+      "source": "sjinn-ai/skills",
+      "sourceType": "github",
+      "skillPath": "skills/sjinn-image-generation/SKILL.md",
+      "computedHash": "53725c72775cb73e6b14797708bcb0e9b76d41ec33f0e3a008c662b4edb0f5c4"
+    },
+    "sjinn-setup": {
+      "source": "sjinn-ai/skills",
+      "sourceType": "github",
+      "skillPath": "skills/sjinn-setup/SKILL.md",
+      "computedHash": "41621a36e72e1670e9da8cfe033ce6b7973d1865aac9a407fed19f471c395ad9"
+    },
+    "sjinn-task-status": {
+      "source": "sjinn-ai/skills",
+      "sourceType": "github",
+      "skillPath": "skills/sjinn-task-status/SKILL.md",
+      "computedHash": "2f5c3d111f4c8a5dc91064e76b6883dde1a2c1a766a7cc61021a32e311cd6716"
+    },
+    "sjinn-video-generation": {
+      "source": "sjinn-ai/skills",
+      "sourceType": "github",
+      "skillPath": "skills/sjinn-video-generation/SKILL.md",
+      "computedHash": "80f121fe3d6954230a1c516d35a92f01d5c69980d1192516d30c3b54b21e76fe"
+    }
+  }
+}
