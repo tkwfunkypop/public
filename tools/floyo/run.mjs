@@ -96,11 +96,14 @@ async function buildGraph(inputs) {
 // 取得は一覧API: GET /runs?search=<ラン名>（単一ラン取得エンドポイントは無い）
 // presigned_url_expires_in の上限は 84600 (24h)
 async function findRun(name, id = null) {
-  const u = `${API}/runs?search=${encodeURIComponent(name)}&expand=${encodeURIComponent('outputs.presigned_url')}&presigned_url_expires_in=84600&limit=10`;
+  // searchはヒットしないことがあるため、一覧を新しい順に取ってクライアント側で名前照合する
+  const u = `${API}/runs?expand=${encodeURIComponent('outputs.presigned_url')}&presigned_url_expires_in=84600&limit=50`;
   const res = await fetch(u, { headers: authHeaders });
+  if (res.status === 404) return null;
   if (!res.ok) throw new Error(`list runs failed ${res.status}: ${await res.text()}`);
   const body = await res.json();
-  const runs = body.data ?? body.runs ?? body.items ?? (Array.isArray(body) ? body : []);
+  const all = body.data ?? body.runs ?? body.items ?? (Array.isArray(body) ? body : []);
+  const runs = all.filter((r) => r.name === name);
   if (id) return runs.find((r) => r.id === id) ?? null;
   return runs.find((r) => (r.status ?? '').toLowerCase() === 'complete') ?? runs[0] ?? null;
 }
