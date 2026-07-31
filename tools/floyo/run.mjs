@@ -93,16 +93,28 @@ async function buildGraph(inputs) {
   return graph;
 }
 
-async function pollRun(id) {
+// 取得は一覧API: GET /runs?search=<ラン名>（単一ラン取得エンドポイントは無い）
+// presigned_url_expires_in の上限は 84600 (24h)
+async function findRun(name, id = null) {
+  const u = `${API}/runs?search=${encodeURIComponent(name)}&expand=outputs_presigned_url&presigned_url_expires_in=84600&limit=10`;
+  const res = await fetch(u, { headers: authHeaders });
+  if (!res.ok) throw new Error(`list runs failed ${res.status}: ${await res.text()}`);
+  const body = await res.json();
+  const runs = body.data ?? body.runs ?? body.items ?? (Array.isArray(body) ? body : []);
+  if (id) return runs.find((r) => r.id === id) ?? null;
+  return runs.find((r) => (r.status ?? '').toLowerCase() === 'complete') ?? runs[0] ?? null;
+}
+
+async function pollRun(name, id) {
   for (let i = 0; i < 360; i++) {
-    await sleep(10000);
-    const res = await fetch(`${API}/runs/${id}?expand=outputs_presigned_url&presigned_url_expires_in=604800`, { headers: authHeaders });
-    if (!res.ok) throw new Error(`poll failed ${res.status}: ${await res.text()}`);
-    const run = await res.json();
-    const status = (run.status ?? '').toLowerCase();
-    if (status === 'complete') return run;
-    if (['failed', 'canceled', 'cancelled'].includes(status)) throw new Error(JSON.stringify(run).slice(0, 500));
+    const run = await findRun(name, id);
+    if (run) {
+      const status = (run.status ?? '').toLowerCase();
+      if (status === 'complete') return run;
+      if (['failed', 'canceled', 'cancelled'].includes(status)) throw new Error(JSON.stringify(run).slice(0, 500));
+    }
     process.stdout.write('.');
+    await sleep(10000);
   }
   throw new Error('poll timeout (60min)');
 }
@@ -111,30 +123,37 @@ const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
 const outDir = join(here, 'results');
 if (!existsSync(outDir)) mkdirSync(outDir, { recursive: true });
 
+// --fetch: ラン投入をスキップし、既存ランの結果だけをラン名で取得する
+const fetchOnly = args.includes('--fetch');
+
 const results = [];
 for (const item of manifest.items ?? []) {
   console.log(`\n[${item.id}]`);
+  const runName = `${wf.run_prefix ?? wfName}_${item.id}`;
   try {
-    const graph = await buildGraph(item.inputs ?? {});
-    const payload = { name: `${wf.run_prefix ?? wfName}_${item.id}`, workflow: graph };
-    if (dryRun) {
-      const patched = Object.entries(wf.patches ?? {})
-        .map(([k, p]) => `  ${k} -> node ${p.node}.${p.field} = ${JSON.stringify(graph[p.node]?.inputs?.[p.field])?.slice(0, 120)}`);
-      console.log(`  POST ${API}/runs name=${payload.name}\n${patched.join('\n')}`);
-      continue;
+    let runId = null;
+    if (!fetchOnly) {
+      const graph = await buildGraph(item.inputs ?? {});
+      const payload = { name: runName, workflow: graph };
+      if (dryRun) {
+        const patched = Object.entries(wf.patches ?? {})
+          .map(([k, p]) => `  ${k} -> node ${p.node}.${p.field} = ${JSON.stringify(graph[p.node]?.inputs?.[p.field])?.slice(0, 120)}`);
+        console.log(`  POST ${API}/runs name=${payload.name}\n${patched.join('\n')}`);
+        continue;
+      }
+      const res = await fetch(`${API}/runs`, {
+        method: 'POST',
+        headers: { ...authHeaders, 'content-type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error(`create run failed ${res.status}: ${await res.text()}`);
+      ({ id: runId } = await res.json());
+      console.log(`  run ${runId} queued`);
     }
-    const res = await fetch(`${API}/runs`, {
-      method: 'POST',
-      headers: { ...authHeaders, 'content-type': 'application/json' },
-      body: JSON.stringify(payload),
-    });
-    if (!res.ok) throw new Error(`create run failed ${res.status}: ${await res.text()}`);
-    const { id } = await res.json();
-    console.log(`  run ${id} queued`);
-    const done = await pollRun(id);
+    const done = await pollRun(runName, runId);
     const outputs = done.outputs ?? done.output_files ?? [];
-    console.log(`\n  complete: ${outputs.length} output(s)`);
-    results.push({ id: item.id, cut: item.cut, ok: true, run_id: id, outputs });
+    console.log(`\n  ${done.id} complete: ${outputs.length} output(s)`);
+    results.push({ id: item.id, cut: item.cut, ok: true, run_id: done.id, outputs });
   } catch (e) {
     console.error(`  FAILED: ${e.message}`);
     results.push({ id: item.id, cut: item.cut, ok: false, error: String(e.message).slice(0, 500) });
