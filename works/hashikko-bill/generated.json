@@ -6742,6 +6742,18 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_114643_cf47683f-7ab2-43d3-94bf-64af0ea3b40e.wav",
       "text": "世界の地図が、そこで終わっている場所に…（narration/OPENING_ENDING.md 冒頭全文）",
       "note": "冒頭ナレーション（女性・Hana・34.5秒）。原稿はnarration/OPENING_ENDING.mdが正"
+    },
+    {
+      "id": "vo_ending_hana_v1",
+      "kind": "narration_audio",
+      "cut": "ending",
+      "speaker": "語り部",
+      "voice": "Hana(female)",
+      "model": "seed_audio",
+      "job_id": "176b6296-d720-40e6-a970-3f7e2384daba",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_114714_176b6296-d720-40e6-a970-3f7e2384daba.wav",
+      "text": "扉は、開いたままになりました…（narration/OPENING_ENDING.md 締め全文）",
+      "note": "締めナレーション（女性・Hana・27.1秒）。日英原稿とカット対応表はnarration/OPENING_ENDING.md"
     }
   ]
 }
