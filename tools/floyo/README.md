@@ -3,23 +3,29 @@
 「はしっこビルの明日づくり」の三層パイプラインのうち、Floyo担当分
 （**Qwen別アングル**と**LTX2.3 Start-End補間**が基本、他は必要時のみ）をAPIで回すためのツール。
 
-## 前提（Floyo側の仕組み）
+## 前提（Floyo API の仕組み — docs.floyo.ai/floyo-api-* 準拠）
 
-- Floyoでは**保存（フォーク）したワークフローがそのままAPIエンドポイントになる**。
-  エディタの **Copy API Snippet** でエンドポイントURL・入力フィールド名・APIキーが取れる。
+- エンドポイントは全ワークフロー共通 **`POST https://api.floyo.ai/runs`**。
+  ボディは `{ "name": "...", "workflow": { ComfyUIグラフのAPI JSON } }`。
+- グラフJSONはエディタの **メニュー → Copy Floyo API Code → 「Workflow JSON only」** で取得
+  （UI情報を除いた実行グラフ。APIキーは含まれないのでリポジトリにコミットしてよい）。
+- 入力画像は **`POST /files`**（multipart）でチーム保存領域にアップロードし、
+  返ってきた `input_path`（`#inputs/...`）をLoadImageノードに差す。run.mjsが自動でやる。
+- 結果は **`GET /runs/<id>?expand=outputs_presigned_url`** で取得。presigned URLは期限付き。
+- 認証は `Authorization: Bearer <APIキー>`。キーは **Team Settings > Floyo API** で発行
+  （**表示は1回きり**なので即保存）。
 - 課金はブラウザ実行と同じ財布：オープンソースモデルは **FloTime**、
-  Partner Nodes（Nano Banana等のクローズドAPI）は **$残高**。
-  ここで使うワークフローはすべてオープンソース系＝FloTimeのみ消費。
+  Partner Nodesは **$残高**。ここで使う2本はオープンソース系＝FloTimeのみ消費。
 
 ## セットアップ（1回だけ）
 
-1. Floyoで次の2本を**フォーク保存**する：
-   - Camera Angle Control with Qwen
-   - LTX2.3 Start-End Frame (opensauce)
-2. 各ワークフローの **Copy API Snippet** から、**APIキー以外**（エンドポイントURL・
-   HTTPメソッド・入力フィールド名・ポーリング方法）を `workflows.json` に記入する。
-   マニフェスト（`manifests/*.json`）の `inputs` キー名もSnippetの実名に合わせる。
-3. `cp tools/floyo/.env.example tools/floyo/.env` して `FLOYO_API_KEY` を記入
+1. Floyoで2本をフォーク保存する（済: `WFAIA_` プレフィックスで保存）。
+2. 各ワークフローの **Copy Floyo API Code → Workflow JSON only** を
+   `graphs/ltx-startend.json` / `graphs/qwen-angle.json` として保存する。
+3. `workflows.json` の `patches` に、入力を差すノードID
+   （LoadImage・プロンプトText・seed等）を記入する（グラフJSONを見て特定）。
+4. **Team Settings > Floyo API** でAPIキーを発行し、
+   `cp tools/floyo/.env.example tools/floyo/.env` して `FLOYO_API_KEY` に記入
    （**チャット・コミットに載せない**。`.env` はgitignore対象）。
 
 ## 実行
@@ -41,7 +47,7 @@ node --env-file=tools/floyo/.env tools/floyo/run.mjs --workflow ltx-startend --b
 - **ローカルPC推奨**（`tools/fal` と同じ運用）。作業コンテナのネットワークポリシーは
   `floyo.ai` 系ホストを弾くため、コンテナからは直接呼べない。
 - コンテナから回したい場合は、Claude Code環境設定のネットワーク許可リストに
-  `floyo.ai` / `api.floyo.ai` を追加し、環境変数 `FLOYO_API_KEY` を登録する。
+  `api.floyo.ai` / `cdn.floyo.ai` を追加し、環境変数 `FLOYO_API_KEY` を登録する。
 
 ## 運用ルール（三層分業）
 

@@ -1,44 +1,25 @@
 {
-  "qwen-angle": {
-    "label": "Camera Angle Control with Qwen",
-    "source": "https://www.floyo.ai/~/e7ykyihd/c/camera-angle-control-with-qwen-l3zx6wfadfwk",
-    "endpoint": "",
-    "method": "POST",
-    "poll_url_template": "",
-    "defaults": {},
-    "note": "フォーク保存後、Copy API Snippet のエンドポイントURLと入力フィールド名をここに記入。defaults には全カット共通の入力（解像度など）を置く"
-  },
+  "_readme": "endpoint は全ワークフロー共通で https://api.floyo.ai/runs（run.mjs に内蔵）。ここには graphs/<key>.json への入力差し込み位置（patches）だけを書く。patches のノードIDは graphs/<key>.json が届いたら特定して記入する。論理名が *_image_url のものは自動で /files にアップロードされ input_path が差し込まれる",
   "ltx-startend": {
-    "label": "LTX2.3 Start-End Frame (opensauce)",
+    "label": "WFAIA_LTX2.3_Start_End_Frame_opensauce",
     "source": "https://www.floyo.ai/~/c/ltx2-3-start-end-frame-opensauce-xr5n8bl7iy4k",
-    "endpoint": "",
-    "method": "POST",
-    "poll_url_template": "",
-    "defaults": {},
-    "note": "同上。start画像・end画像・プロンプト・秒数のフィールド名はSnippetに合わせて manifests 側の inputs キー名を調整する"
+    "run_prefix": "wfaia_ltx_se",
+    "patches": {
+      "start_image_url": { "node": "TODO", "field": "image" },
+      "end_image_url": { "node": "TODO", "field": "image" },
+      "prompt": { "node": "TODO", "field": "text" },
+      "noise_seed": { "node": "274", "field": "noise_seed" }
+    },
+    "note": "graphs/ltx-startend.json（Workflow JSON only）到着後、LoadImage×2（start/end）・プロンプトTextノード・秒数/フレーム数ノードのIDを特定して記入"
   },
-  "wan22-i2v-endframe": {
-    "label": "Wan 2.2 14B: Image to Video + End Frame（予備I2V）",
-    "endpoint": "",
-    "method": "POST",
-    "poll_url_template": "",
-    "defaults": {},
-    "note": "LTX Start-Endと同役の予備。必要時にフォークして記入"
-  },
-  "qwen-image-edit": {
-    "label": "Qwen Image Edit 2509（スタートフレーム部分修正）",
-    "endpoint": "",
-    "method": "POST",
-    "poll_url_template": "",
-    "defaults": {},
-    "note": "文書クローズアップ（架空文字カット）には使わない：グリフが崩れる"
-  },
-  "seedvr2-upscale": {
-    "label": "SeedVR2: Upscale（採用カットのみ最終アップスケール）",
-    "endpoint": "",
-    "method": "POST",
-    "poll_url_template": "",
-    "defaults": {},
-    "note": "全カットには通さない。採用決定分のみでFloTime節約"
+  "qwen-angle": {
+    "label": "WFAIA_Camera_Angle_Control_with_Qwen",
+    "source": "https://www.floyo.ai/~/e7ykyihd/c/camera-angle-control-with-qwen-l3zx6wfadfwk",
+    "run_prefix": "wfaia_qwen_angle",
+    "patches": {
+      "image_url": { "node": "TODO", "field": "image" },
+      "angle_prompt": { "node": "TODO", "field": "text" }
+    },
+    "note": "graphs/qwen-angle.json 到着後にノードIDを記入"
   }
 }
