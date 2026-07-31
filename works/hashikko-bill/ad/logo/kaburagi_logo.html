@@ -1,91 +1,82 @@
 <!doctype html>
 <meta charset="utf-8">
-<title>玩具工房鏑木 ロゴ（クロマキー）</title>
+<title>玩具工房鏑木 ロゴ v2（3DCG風タイポ・クロマキー）</title>
 <style>
   /* ?alpha を付けて開くと透過背景（スクショ用） */
   html,body{margin:0;padding:0}
   body{width:1920px;height:1080px;background:#00B140;display:flex;align-items:center;justify-content:center;overflow:hidden}
   body.alpha{background:transparent}
-  svg{display:block}
-  text{font-family:'Hiragino Mincho ProN','Yu Mincho','IPAMincho','IPAGothic',serif;font-weight:700}
-  /* 刺繍3層: st=琥珀ステッチ(破線) / bd=紙色縁取り / tx=墨 */
-  .st{fill:none;stroke:#E8A33D;stroke-width:14;stroke-dasharray:7 5.6;stroke-linejoin:round}
-  .bd{fill:none;stroke:#F4EAD6;stroke-width:8;stroke-linejoin:round}
-  .tx{fill:#241A12}
-  .sub .st{stroke-width:9;stroke-dasharray:5 4}
-  .sub .bd{stroke-width:5.5}
+  svg{display:block;transform:perspective(1500px) rotateX(8deg)}
+  text{font-family:'Hiragino Mincho ProN','Yu Mincho','IPAMincho','IPAGothic',serif;font-weight:800}
 </style>
 <body>
 <script>if(location.search.includes('alpha'))document.body.classList.add('alpha')</script>
-<svg width="1000" height="1000" viewBox="0 0 1000 1000">
+<svg width="1800" height="1000" viewBox="0 0 1800 1000">
   <defs>
-    <radialGradient id="brass" cx="38%" cy="32%">
-      <stop offset="0%" stop-color="#E9CB7E"/><stop offset="55%" stop-color="#C9A24C"/><stop offset="100%" stop-color="#8A6A2C"/>
+    <linearGradient id="faceG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF3C4"/><stop offset="24%" stop-color="#F0D27A"/>
+      <stop offset="48%" stop-color="#C9A24C"/><stop offset="62%" stop-color="#8A6A2C"/>
+      <stop offset="80%" stop-color="#E9CB7E"/><stop offset="100%" stop-color="#6B4F1D"/>
+    </linearGradient>
+    <linearGradient id="specG" x1="0" y1="0" x2="1" y2="0.25">
+      <stop offset="30%" stop-color="rgba(255,255,255,0)"/>
+      <stop offset="38%" stop-color="rgba(255,255,255,0.9)"/>
+      <stop offset="46%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <linearGradient id="ruleG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(138,106,44,0)"/><stop offset="15%" stop-color="#8A6A2C"/>
+      <stop offset="50%" stop-color="#F0D27A"/><stop offset="85%" stop-color="#8A6A2C"/>
+      <stop offset="100%" stop-color="rgba(138,106,44,0)"/>
+    </linearGradient>
+    <radialGradient id="knob" cx="35%" cy="30%">
+      <stop offset="0%" stop-color="#F6E2A0"/><stop offset="55%" stop-color="#C9A24C"/><stop offset="100%" stop-color="#6B4F1D"/>
     </radialGradient>
-    <radialGradient id="felt" cx="50%" cy="42%">
-      <stop offset="0%" stop-color="#463328"/><stop offset="100%" stop-color="#2C1F17"/>
-    </radialGradient>
-    <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"/>
-      <feDisplacementMap in="SourceGraphic" in2="n" scale="3"/></filter>
-    <filter id="soft"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#141414" flood-opacity="0.55"/></filter>
   </defs>
 
-  <!-- 外周の真鍮歯車リング（破線ストロークで歯を表現） -->
-  <g filter="url(#soft)">
-    <circle cx="500" cy="500" r="446" fill="none" stroke="#5C4419" stroke-width="52"
-            stroke-dasharray="76.5 79.2"/>
-    <circle cx="500" cy="500" r="446" fill="none" stroke="url(#brass)" stroke-width="44"
-            stroke-dasharray="72.5 83.2" stroke-dashoffset="-2"/>
-    <circle cx="500" cy="500" r="428" fill="url(#brass)" stroke="#5C4419" stroke-width="4"/>
-    <!-- リベット -->
-    <g fill="#F1DFAE" stroke="#6B4F1D" stroke-width="3">
-      <circle cx="500" cy="96" r="11"/><circle cx="500" cy="904" r="11"/>
-      <circle cx="96" cy="500" r="11"/><circle cx="904" cy="500" r="11"/>
-      <circle cx="215" cy="215" r="11"/><circle cx="785" cy="215" r="11"/>
-      <circle cx="215" cy="785" r="11"/><circle cx="785" cy="785" r="11"/>
-    </g>
-  </g>
+  <!-- 玩具工房（小・上段） -->
+  <g id="sub"></g>
+  <!-- 鏑木（大・下段） -->
+  <g id="main"></g>
 
-  <!-- フェルト台紙 -->
-  <circle cx="500" cy="500" r="392" fill="url(#felt)"/>
-  <circle cx="500" cy="500" r="392" fill="none" stroke="#141414" stroke-width="3" opacity=".6"/>
-  <!-- 手縫いステッチ(内周) -->
-  <circle cx="500" cy="500" r="368" fill="none" stroke="#E8A33D" stroke-width="7"
-          stroke-dasharray="16 13" stroke-linecap="round" filter="url(#rough)"/>
+  <!-- 台座ライン+ぜんまい竜頭 -->
+  <rect x="410" y="905" width="980" height="10" rx="5" fill="url(#ruleG)"/>
+  <rect x="410" y="915" width="980" height="7" rx="3" fill="#3A2A12" opacity=".8"/>
+  <circle cx="900" cy="910" r="24" fill="url(#knob)" stroke="#5C4419" stroke-width="4"/>
 
-  <!-- 上弧の「玩具工房」 -->
-  <path id="arcTop" d="M 170 545 A 335 335 0 0 1 830 545" fill="none"/>
-  <g class="sub" filter="url(#rough)">
-    <text font-size="86" letter-spacing="26">
-      <textPath href="#arcTop" startOffset="50%" text-anchor="middle">
-        <tspan class="st">玩具工房</tspan></textPath></text>
-    <text font-size="86" letter-spacing="26">
-      <textPath href="#arcTop" startOffset="50%" text-anchor="middle">
-        <tspan class="bd">玩具工房</tspan></textPath></text>
-    <text font-size="86" letter-spacing="26" fill="#F4EAD6">
-      <textPath href="#arcTop" startOffset="50%" text-anchor="middle">玩具工房</textPath></text>
-  </g>
-
-  <!-- 中央の「鏑木」(一字ずつ傾ける) -->
-  <g filter="url(#rough)">
-    <text class="st" x="500" y="640" font-size="300" text-anchor="middle"><tspan rotate="-2">鏑</tspan><tspan rotate="2.5" dx="8">木</tspan></text>
-    <text class="bd" x="500" y="640" font-size="300" text-anchor="middle"><tspan rotate="-2">鏑</tspan><tspan rotate="2.5" dx="8">木</tspan></text>
-    <text x="500" y="640" font-size="300" text-anchor="middle" fill="#F4EAD6"><tspan rotate="-2">鏑</tspan><tspan rotate="2.5" dx="8">木</tspan></text>
-  </g>
-
-  <!-- 下部: ぜんまいキー -->
-  <g transform="translate(500 790)" filter="url(#soft)">
-    <rect x="-14" y="-70" width="28" height="86" rx="9" fill="url(#brass)" stroke="#5C4419" stroke-width="4"/>
-    <path d="M -62 46 a 62 46 0 1 0 124 0 a 62 46 0 1 0 -124 0
-             M -30 46 a 30 22 0 1 1 60 0 a 30 22 0 1 1 -60 0" fill="url(#brass)" stroke="#5C4419" stroke-width="4" fill-rule="evenodd"/>
-    <circle cx="0" cy="-70" r="9" fill="#F1DFAE" stroke="#6B4F1D" stroke-width="3"/>
-  </g>
-
-  <!-- 左右の小歯車アクセント -->
-  <g fill="#C9A24C" stroke="#5C4419" stroke-width="3" opacity=".9">
-    <g transform="translate(190 640)"><circle r="26"/><circle r="9" fill="#2C1F17"/>
-      <g id="t1"></g></g>
-    <g transform="translate(810 640)"><circle r="26"/><circle r="9" fill="#2C1F17"/></g>
-  </g>
+  <script>
+    // 3D押し出し: 深い層から順に同じテキストを少しずつずらして重ね、最後に表面(グラデ)+ハイライト
+    function build(gid, str, x, y, size, ls, depth, rots, dys) {
+      const NS = 'http://www.w3.org/2000/svg';
+      const g = document.getElementById(gid);
+      const mk = (fill, dx, dy, stroke) => {
+        const t = document.createElementNS(NS, 'text');
+        t.setAttribute('x', x + dx); t.setAttribute('y', y + dy);
+        t.setAttribute('font-size', size);
+        t.setAttribute('text-anchor', 'middle');
+        t.setAttribute('letter-spacing', ls);
+        t.setAttribute('fill', fill);
+        if (stroke) { t.setAttribute('stroke', stroke); t.setAttribute('stroke-width', 2); }
+        [...str].forEach((ch, i) => {
+          const s = document.createElementNS(NS, 'tspan');
+          s.setAttribute('rotate', rots[i] ?? 0);
+          if (i === 0 || dys[i] !== undefined) s.setAttribute('dy', i === 0 ? (dys[0] ?? 0) : dys[i]);
+          s.textContent = ch;
+          t.appendChild(s);
+        });
+        g.appendChild(t);
+        return t;
+      };
+      for (let i = depth; i >= 1; i--) {
+        const k = i / depth;
+        const c = k > .85 ? '#241708' : k > .5 ? '#4A3512' : '#6B4F1D';
+        mk(c, i * 0.9, i * 1.7, i === depth ? '#241708' : null);
+      }
+      mk('url(#faceG)', 0, 0, '#3A2A12');
+      const spec = mk('url(#specG)', 0, 0, null);
+      spec.setAttribute('opacity', '0.9');
+    }
+    build('sub',  '玩具工房', 900, 235, 130, 52, 12, [-2.4, 2, -1.2, 1.8], [0, -8, 4, 8]);
+    build('main', '鏑木',     900, 800, 430, 14, 30, [-2.2, 2.2], [0, -14]);
+  </script>
 </svg>
 </body>
