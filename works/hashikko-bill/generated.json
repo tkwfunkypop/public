@@ -7119,6 +7119,184 @@
    "mime_type": "video/mp4",
    "model": "seedance2-720p",
    "note": "本線I2V 第10波"
+  },
+  {
+   "id": "ad_4_yoko_v1",
+   "kind": "ad_i2v",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_123831_b4878903-15db-4bff-b668-9cbe2e84d491.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance_2_0",
+   "note": "CM#4 エレベーター保守(横・ひらがな音声)"
+  },
+  {
+   "id": "ad_5_tate_v1",
+   "kind": "ad_i2v",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_123730_575b9a49-5b92-42c8-ba56-5d71f7f5c157.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance_2_0",
+   "note": "CM#5 李香水店(縦・ひらがな音声)"
+  },
+  {
+   "id": "ad_6_tate_v1",
+   "kind": "ad_i2v",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_123734_d615e73b-7081-4d56-9617-76120ba9c017.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance_2_0",
+   "note": "CM#6 食堂ななお(縦・ひらがな音声)"
+  },
+  {
+   "id": "ad_7_yoko_v1",
+   "kind": "ad_i2v",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_123739_e6147eff-8ca2-453e-94ec-772270a7b206.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance_2_0",
+   "note": "CM#7 雲井観測所(横・ひらがな音声)"
+  },
+  {
+   "id": "ad_8_yoko_v1",
+   "kind": "ad_i2v",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_124133_7f456282-7d36-4138-9b89-40c74e08c6a5.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance_2_0",
+   "note": "CM#8 ぜんまい工房(横・ひらがな音声)"
+  },
+  {
+   "id": "ad_9_yoko_v1",
+   "kind": "ad_i2v",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_123822_71cdd368-c250-406f-8c82-1a7ef3968713.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance_2_0",
+   "note": "CM#9 アオイ儀典社(横・ひらがな音声)"
+  },
+  {
+   "id": "ad_10_tate_v1",
+   "kind": "ad_i2v",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_124117_095d8d5b-08c4-4f76-9413-cebf6b8fc97a.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance_2_0",
+   "note": "CM#10 果端新聞(縦・ひらがな音声)"
+  },
+  {
+   "id": "ad_11_tate_v1",
+   "kind": "ad_i2v",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_124916_2b2904fa-98da-484f-bf7e-e5b8e0968a36.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance_2_0",
+   "note": "CM#11 鵜飼ASMR(縦・ひらがな音声)"
+  },
+  {
+   "id": "ad_12_tate_v1",
+   "kind": "ad_i2v",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_124833_84042f22-86c2-4145-8216-c519324065ad.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance_2_0",
+   "note": "CM#12 柊鍵束(縦・ひらがな音声)"
+  },
+  {
+   "id": "ad_13_tate_v1",
+   "kind": "ad_i2v",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_124845_eb4b6899-6343-4252-8a51-ad2a4f7b798d.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance_2_0",
+   "note": "CM#13 トメ朝ルーティン(縦・ひらがな音声)"
+  },
+  {
+   "id": "ad_14_tate_v1",
+   "kind": "ad_i2v",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_124858_5773a038-460f-4748-a07d-651989b9efee.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance_2_0",
+   "note": "CM#14 雲井占い(縦・ひらがな音声)"
+  },
+  {
+   "id": "vo_opening_en_v1",
+   "kind": "narration_audio",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_125438_f629a4bb-8a8d-4c49-b4ee-adfa04ae3a94.wav",
+   "mime_type": "audio/wav",
+   "model": "seed_audio",
+   "note": "冒頭ナレ英語版 Hana"
+  },
+  {
+   "id": "vo_ending_en_v1",
+   "kind": "narration_audio",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_125441_9515cae9-c950-4e73-a707-47bde3ef0048.wav",
+   "mime_type": "audio/wav",
+   "model": "seed_audio",
+   "note": "締めナレ英語版 Hana"
+  },
+  {
+   "id": "vo_seq_b_en_v1",
+   "kind": "narration_audio",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_125446_bf5261f4-5d12-4d09-8120-2f750f87dea6.wav",
+   "mime_type": "audio/wav",
+   "model": "seed_audio",
+   "note": "B章ナレ英語版"
+  },
+  {
+   "id": "vo_seq_c_en_v1",
+   "kind": "narration_audio",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_125449_184a8807-97ee-4508-97ee-ece59d65df5a.wav",
+   "mime_type": "audio/wav",
+   "model": "seed_audio",
+   "note": "C章ナレ英語版"
+  },
+  {
+   "id": "vo_seq_d_en_v1",
+   "kind": "narration_audio",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_125453_1ede52b3-68ea-4169-b42e-fa32e0a62e6b.wav",
+   "mime_type": "audio/wav",
+   "model": "seed_audio",
+   "note": "D章ナレ英語版"
+  },
+  {
+   "id": "vo_seq_e_en_v1",
+   "kind": "narration_audio",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_125522_ff612623-a6f5-43f2-b4ee-5549b19f146a.wav",
+   "mime_type": "audio/wav",
+   "model": "seed_audio",
+   "note": "E章ナレ英語版"
+  },
+  {
+   "id": "vo_seq_f_en_v1",
+   "kind": "narration_audio",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_125511_c5a4cb83-fa29-44c8-b879-7b19b31b0467.wav",
+   "mime_type": "audio/wav",
+   "model": "seed_audio",
+   "note": "F章ナレ英語版"
+  },
+  {
+   "id": "vo_seq_g_en_v1",
+   "kind": "narration_audio",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_125513_2ea27f0a-c9ac-49bb-ab48-7334d0df1cbe.wav",
+   "mime_type": "audio/wav",
+   "model": "seed_audio",
+   "note": "G章ナレ英語版"
+  },
+  {
+   "id": "vo_seq_h_en_v1",
+   "kind": "narration_audio",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_125516_e86a69e8-0d00-4a87-8939-2620bf4936ce.wav",
+   "mime_type": "audio/wav",
+   "model": "seed_audio",
+   "note": "H章ナレ英語版"
+  },
+  {
+   "id": "c00a_map_v1",
+   "kind": "floyo_start_frame",
+   "cut": "00a",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_122830_3829b19a-6557-4b82-ae86-2b4583f6f702.png",
+   "mime_type": "image/png",
+   "model": "nano_banana_2",
+   "note": "C00a古地図 候補1"
+  },
+  {
+   "id": "c00a_map_v2",
+   "kind": "floyo_start_frame",
+   "cut": "00a",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_122830_514f8f97-b1e6-41ef-bbd3-221670f8f2a8.png",
+   "mime_type": "image/png",
+   "model": "nano_banana_2",
+   "note": "C00a古地図 候補2"
   }
  ]
 }
