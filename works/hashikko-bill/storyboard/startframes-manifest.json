@@ -369,8 +369,10 @@
   "refs": [
    "TOME"
   ],
-  "job_id": "bb13320a-3d9b-467e-a96d-484f66909e6a",
-  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_231108_bb13320a-3d9b-467e-a96d-484f66909e6a.png"
+  "job_id": "8af8b14f-c54b-4509-a59a-aa131769493e",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_235510_8af8b14f-c54b-4509-a59a-aa131769493e.png",
+  "superseded_job_id": "bb13320a-3d9b-467e-a96d-484f66909e6a",
+  "note": "v5: トメ無地顔明示リロール（検品合格）"
  },
  {
   "panel": "sb40_seven_seals",
