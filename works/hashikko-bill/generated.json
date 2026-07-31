@@ -6716,6 +6716,32 @@
       "task_id": "1be0dffa-99b6-4540-b3aa-19efe2ed1215",
       "url": "https://edit.comfyonline.app/result/8e2a2907-0df2-46e6-b691-0b8350d6b68d.mp4",
       "note": "本線I2V C27: ひかりの手が白紙を撫でる。URLは一時ストレージ、setup-workspace.mjsで保存"
+    },
+    {
+      "id": "ad_cm15_yoko_v1",
+      "kind": "ad_i2v",
+      "cut": "cm15",
+      "provider": "higgsfield",
+      "model": "seedance_2_0",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 15,
+      "audio": true,
+      "job_id": "1bdd182a-9187-48c2-8e7c-3d5ca97a433d",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_113838_1bdd182a-9187-48c2-8e7c-3d5ca97a433d.mp4",
+      "note": "仮CM『ホタル電球』15秒完パケ横型: 5ショット構成・日本語ナレ入り（男声ホラー導入→女声「灯りは、人を集める。」→「ホタル電球。」）"
+    },
+    {
+      "id": "vo_opening_hana_v1",
+      "kind": "narration_audio",
+      "cut": "opening",
+      "speaker": "語り部",
+      "voice": "Hana(female)",
+      "model": "seed_audio",
+      "job_id": "cf47683f-7ab2-43d3-94bf-64af0ea3b40e",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_114643_cf47683f-7ab2-43d3-94bf-64af0ea3b40e.wav",
+      "text": "世界の地図が、そこで終わっている場所に…（narration/OPENING_ENDING.md 冒頭全文）",
+      "note": "冒頭ナレーション（女性・Hana・34.5秒）。原稿はnarration/OPENING_ENDING.mdが正"
     }
   ]
 }
