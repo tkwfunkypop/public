@@ -7575,6 +7575,51 @@
    "mime_type": "video/mp4",
    "model": "seedance2-720p",
    "note": "本線I2V 第7波(台帳漏れ補完)"
+  },
+  {
+   "id": "c51b_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "51b",
+   "url": "https://edit.comfyonline.app/result/435e3707-49a2-438f-9e8b-0d1ea5de032c.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第17波"
+  },
+  {
+   "id": "c54b_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "54b",
+   "url": "https://edit.comfyonline.app/result/ddc726fc-0f82-4a8e-be49-704f241ead5c.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第17波"
+  },
+  {
+   "id": "c56b_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "56b",
+   "url": "https://edit.comfyonline.app/result/c2225faa-9a7b-4073-aaa5-020c8bf3e605.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第17波"
+  },
+  {
+   "id": "c57b_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "57b",
+   "url": "https://edit.comfyonline.app/result/e5baee14-2389-4f75-b0db-a9bd5ada2947.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第17波"
+  },
+  {
+   "id": "c58b_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "58b",
+   "url": "https://edit.comfyonline.app/result/9b7fba6b-4829-40fe-b193-37183b6ec530.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第17波"
   }
  ]
 }
