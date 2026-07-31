@@ -96,7 +96,7 @@ async function buildGraph(inputs) {
 // 取得は一覧API: GET /runs?search=<ラン名>（単一ラン取得エンドポイントは無い）
 // presigned_url_expires_in の上限は 84600 (24h)
 async function findRun(name, id = null) {
-  const u = `${API}/runs?search=${encodeURIComponent(name)}&expand=outputs_presigned_url&presigned_url_expires_in=84600&limit=10`;
+  const u = `${API}/runs?search=${encodeURIComponent(name)}&expand=${encodeURIComponent('outputs.presigned_url')}&presigned_url_expires_in=84600&limit=10`;
   const res = await fetch(u, { headers: authHeaders });
   if (!res.ok) throw new Error(`list runs failed ${res.status}: ${await res.text()}`);
   const body = await res.json();
