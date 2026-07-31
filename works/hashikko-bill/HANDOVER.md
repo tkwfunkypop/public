@@ -109,23 +109,21 @@ BUILDING=84c99ff4 / 廊下セット=3d600592
 動画=`c{カット}_i2v_v{版}` ／ CM=`ad_{番号}_{向き}_v{版}` ／ ナレ=`vo_{内容}_v{版}`。
 生成したら必ず `generated.json` に追記（kind: i2v_prod / ad_i2v / ad_start_frame / narration_audio / floyo_angle 等）
 
-## 6. 現在の進捗（2026-07-31時点）
+## 6. 現在の進捗（2026-07-31 22時台に更新）
 
 ### 完了
 - キャラシート14体系・絵コンテ89カット・スタートフレーム全カット・テロップv3・キーアート
-- **本編I2V 完成29本**: C02〜C31のうち C02-C06,C13,C15-C30（URLは台帳の kind=i2v_prod）
-- ナレ音声17本（冒頭34.5s/締め27.1s/章替わりB〜H 7本/CM用#4〜#10）
-- CM: #1 HOTARU横15秒完パケ（音声内蔵）、Floyoアングル ad_a1×4 / ad_a3×4 / ad_a2×1 回収済み
+- **本編I2V 完成58本+**: C00a(古地図)・C02〜C60b（C52欠番。URLは台帳の kind=i2v_prod）
+- **ナレ音声 日英コンプリート**: 日本語10本+英語10本（冒頭/締め/B〜I章、Hana声。kind=narration_audio）
+- **CM全14本の映像完成**（音声内蔵。#1〜#3=初期版、#4〜#14=セリフ全文ひらがな表記版）
+  - 横: #1,#3(60秒4パート),#4,#7,#8,#9 ／ 縦: #2,#5,#6,#10,#11,#12,#13,#14
+- **CM英語字幕クロマキー動画17本**: `ad/subtitles/out/`にコミット済み（#00B140、タイミングは`subs-spec.json`のJP/EN対訳が正。再生成は`render_subs.py`）
+- Floyoアングル ad_a1×4 / ad_a3×4 / ad_a2×1 回収済み
 
-### 実行中（回収待ち）— IDは sjinn-jobs.json にもある
+### 実行中（回収待ち）— IDは sjinn-jobs.json / ad/higgsfield-jobs.json にある
 | 内容 | タスクID | 状態 |
 |---|---|---|
-| C31（つぎはぎ手紙接写） | SJinn `6e69fa7b-d7f0-4d01-8953-d8ffa9534ea5` | pending |
-| **C06 v2（煙をドライアイス風に修正）** | SJinn `313eb7ee-4d85-4309-8ee5-43422347a6b7` | pending |
-| C32 / C33 / C34 | SJinn `fc6f8b94…` / `ef467767…` / `f0c72308…`（完全IDはsjinn-jobs.json） | pending |
-| 60秒オムニバスCM 4パート | Higgsfield `df682572` `c43e6dec` `5b614cf3` `6577f5ad` | 回収待ち |
-| 縦型HOTARU CM#2 | Higgsfield `a67167be` | 回収待ち |
-| I章ナレ | Higgsfield `ff62ec3e` | 回収待ち |
+| 第14波 C57/C58/C59/C60/C60b（G章核心） | SJinn `b0c9c1f5` `4be35977` `92fd81c6` `3b9ea338` `6144e9f5` | pending |
 | CM#4〜10用Floyoアングル32枚 | ローカルで `ad-angles2.json` 実行中 | 結果JSON待ち |
 
 回収方法: SJinnは `get_task(task_id)`、Higgsfieldは `job_display`。取れたURLを台帳に追記→ローカルで setup-workspace 実行。
@@ -133,14 +131,13 @@ BUILDING=84c99ff4 / 廊下セット=3d600592
 ## 7. 残作業リスト（優先順）
 
 1. **実行中タスクの回収**（上の表）→ 台帳追記 → setup-workspace で保存
-2. **本編I2V続き**: C35〜C78 の約44カット。`tools/floyo/manifests/i2v-prod.json` のプロンプト+開始フレームをそのまま SJinn seedance2（720p/16:9/quality/10秒）に投入。**5本/波**
-3. **短尺再生成**: C02〜C18 のうち初期に短い尺で作った16本を10秒版v2で作り直し（同manifestのプロンプト使用）
-4. **キャラ紹介9カット**: `INTRO_SCENES.md` の表どおり（所作+最後にカメラ目線、10秒）
-5. **C00a 古地図カット**: 冒頭ナレ用の新規1カット（`OPENING_ENDING.md` 参照）
-6. **CM10本の動画化**: ad-angles2 の結果が来たら検品→合格フレームを MiniMax H3（**2K**・10秒・縦横は CM_LINEUP.md の向き）のスタートフレームに
-7. **Floyo Start-End 7カット**: 終了フレームを nano banana で量産→ ltx-startend で補間
-8. **Fish Audio 2声版**: ローカルで `--voice "e36ebe,c3f03b" --all`
-9. **編集**: 本編を300秒以内に（超過46秒分は余白詰め）。テロップ・ナレ・SEを重ねる
+2. **本編I2V続き**: C61〜C78 の約17カット。`tools/floyo/manifests/i2v-prod.json` のプロンプト+開始フレームをそのまま SJinn seedance2（720p/16:9/quality/10秒）に投入。**5本/波**
+3. **キャラ紹介9カット**: `intro/intro-i2v.json` に投入マニフェスト作成済み（SJinnにそのまま投入）
+4. **短尺再生成**: C02〜C18 のうち初期に短い尺で作った16本を10秒版v2で作り直し（同manifestのプロンプト使用）
+5. **CMのH3版量産（任意）**: ad-angles2 の結果が来たら検品→合格フレームを MiniMax H3（**2K**・10秒）のスタートフレームに（seedance2.0版は#1〜#14完成済みなので、H3版はバリエーション扱い）
+6. **Floyo Start-End 7カット**: 終了フレームを nano banana で量産→ ltx-startend で補間
+7. **Fish Audio 2声版**: ローカルで `--voice "e36ebe,c3f03b" --all`
+8. **編集**: 本編を300秒以内に（超過46秒分は余白詰め）。テロップ・日英ナレ・SE・CM英語字幕クロマキーを重ねる
 
 ## 8. 過去のハマりどころ（同じ穴に落ちない）
 
