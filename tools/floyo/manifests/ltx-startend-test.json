@@ -9,7 +9,9 @@
         "end_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_084214_08fc94eb-fa6d-4f39-b55b-e75df4e7f34c.png",
         "prompt": "Stop-motion puppet animation on twos, handcrafted felt puppets, miniature set, tilt-shift depth of field. The caretaker puppet slowly lifts the brass seal and presses it down onto the paper resting on the wooden delivery box on his lap; the motion is small, deliberate, stop-motion-like, ending exactly in the final pressed pose. No morphing, no redesign, nothing appears or disappears. No captions, subtitles or logos; any writing in frame stays this world's original invented script, unreadable abstract glyphs. Quiet room tone only, a soft thump when the seal lands.",
         "negative_prompt": "pc game, console game, video game, cartoon, childish, ugly, morphing, melting, extra characters, text overlay, subtitles, captions, logo, readable letters",
-        "length_frames": 121
+        "length_frames": 121,
+        "width": 1280,
+        "height": 720
       }
     }
   ]

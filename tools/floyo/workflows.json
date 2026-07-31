@@ -93,6 +93,6 @@
         "field": "noise_seed"
       }
     },
-    "note": "長さはフレーム数（fps24）: 5秒=121, 10秒=241（24n+1）。デフォルト1920x1080・音声も同時生成される（SEとして使えるが最終音は編集が正）。negative_promptは既定 'pc game, console game, video game, cartoon, childish, ugly' を上書き可"
+    "note": "長さはフレーム数（fps24）: 5秒=121, 10秒=241（24n+1）。解像度正典: width 1280 / height 720（16:9・小さめ生成、採用分のみ後段アップスケール）。音声も同時生成される（SEとして使えるが最終音は編集が正）。negative_promptは既定 'pc game, console game, video game, cartoon, childish, ugly' を上書き可"
   }
 }
