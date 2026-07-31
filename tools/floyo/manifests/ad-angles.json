@@ -1,0 +1,32 @@
+{
+  "note": "仮CM『あかり』素材用の別アングル。ad_a1（ホラー廊下）とad_a3（全扉開放）をプリセット4アングル一括で増産し、CMのカット割りリズム用素材にする",
+  "items": [
+    {
+      "id": "ad_a1_angles",
+      "cut": "ad_a1",
+      "inputs": {
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_111827_549db604-b9b4-475c-90f5-17ec91dffa94.png"
+      }
+    },
+    {
+      "id": "ad_a3_angles",
+      "cut": "ad_a3",
+      "inputs": {
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_111851_05066ed3-df9a-4625-8bbd-8188d86faccd.png"
+      }
+    },
+    {
+      "id": "ad_a2_close",
+      "cut": "ad_a2",
+      "inputs": {
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_111840_1daa2448-110d-4d0a-9fcf-0e0f51142c4e.png",
+        "h_angle": 0,
+        "v_angle": 10,
+        "zoom": 8,
+        "prompt_2": "",
+        "prompt_3": "",
+        "prompt_4": ""
+      }
+    }
+  ]
+}

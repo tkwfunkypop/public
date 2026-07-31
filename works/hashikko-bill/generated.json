@@ -6533,6 +6533,30 @@
       "task_id": "6d4dad50-00eb-406f-a2ef-14a9a0d77288",
       "url": "https://edit.comfyonline.app/result/b77b0695-dc98-4b96-b7b3-1dab3e709a16.mp4",
       "note": "本線I2V C18: トメ議長・白いホワイトボード。短尺版（10秒ルール以前）→後で10秒v2再生成予定。URLは一時ストレージ"
+    },
+    {
+      "id": "ad_a1_startframe_v1",
+      "kind": "ad_start_frame",
+      "cut": "ad_a1",
+      "job_id": "549db604-b9b4-475c-90f5-17ec91dffa94",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_111827_549db604-b9b4-475c-90f5-17ec91dffa94.png",
+      "note": "仮CM『あかり』ホラー導入: 暗い廊下・明滅電球・閉じた七扉。検品合格。企画はad/CM_CONCEPTS.md"
+    },
+    {
+      "id": "ad_a2_startframe_v1",
+      "kind": "ad_start_frame",
+      "cut": "ad_a2",
+      "job_id": "1daa2448-110d-4d0a-9fcf-0e0f51142c4e",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_111840_1daa2448-110d-4d0a-9fcf-0e0f51142c4e.png",
+      "note": "仮CM『あかり』転換: 梯子上のひかりが電球交換。検品合格。企画はad/CM_CONCEPTS.md"
+    },
+    {
+      "id": "ad_a3_startframe_v1",
+      "kind": "ad_start_frame",
+      "cut": "ad_a3",
+      "job_id": "05066ed3-df9a-4625-8bbd-8188d86faccd",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_111851_05066ed3-df9a-4625-8bbd-8188d86faccd.png",
+      "note": "仮CM『あかり』裏切り: 温光・全扉開放・住人が顔を出す。検品合格。企画はad/CM_CONCEPTS.md"
     }
   ]
 }

@@ -35,6 +35,8 @@ const FOLDERS = {
   animatic_export: '09_動画コンテ',
   guide_video: '09_動画コンテ',
   floyo: '10_Floyo出力',
+  ad_start_frame: '13_広告CM',
+  ad_i2v: '13_広告CM',
   final: '11_採用カット_本番',
 };
 
