@@ -6270,6 +6270,46 @@
       "note": "SJinn MCP経由のseedance2テスト生成（C01 霧のビル、スタートフレームv3＋コンテi2v_prompt）。1フレーム目・中間・最終を目視確認合格：スロー・プッシュイン、霧の流れ、吊り橋・街灯保持、文字/キャラ発明なし。出力URLはSJinn側の一時ストレージのため要ローカル保存",
       "task_id": "fe355b95-4818-466b-a720-2b55ea8738fb",
       "url": "https://edit.comfyonline.app/result/b4b6475b-365c-49a7-9efa-63dc54887350.mp4"
+    },
+    {
+      "id": "angle_c17_main_zoom",
+      "kind": "floyo_angle",
+      "cut": "17",
+      "provider": "floyo",
+      "workflow": "WFAIA_Camera Angle Control with Qwen",
+      "run_id": "run_ZurNK4AGuMnejKQY",
+      "file_id": "file_PezK7XjHBunHJEoo",
+      "note": "Qwenアングル一周テスト合格。メインアングル(h0/v0/zoom4): 会議卓の寄り。月夜・キャラ保持良好。presigned URLは24hで失効するためURL欄なし。再取得はfile_idで GET api.floyo.ai/files/<file_id>?expand=presigned_url、またはsetup-workspace.mjsがローカル保存済み"
+    },
+    {
+      "id": "angle_c17_overhead",
+      "kind": "floyo_angle",
+      "cut": "17",
+      "provider": "floyo",
+      "workflow": "WFAIA_Camera Angle Control with Qwen",
+      "run_id": "run_ZurNK4AGuMnejKQY",
+      "file_id": "file_k1JGG75yuFqgjF24",
+      "note": "Qwenアングル一周テスト合格。俯瞰(v60/zoom8): 卓を見下ろす。切り返し用。presigned URLは24hで失効するためURL欄なし。再取得はfile_idで GET api.floyo.ai/files/<file_id>?expand=presigned_url、またはsetup-workspace.mjsがローカル保存済み"
+    },
+    {
+      "id": "angle_c17_reverse",
+      "kind": "floyo_angle",
+      "cut": "17",
+      "provider": "floyo",
+      "workflow": "WFAIA_Camera Angle Control with Qwen",
+      "run_id": "run_ZurNK4AGuMnejKQY",
+      "file_id": "file_p5cCb9UFUZMhpSEf",
+      "note": "Qwenアングル一周テスト合格。逆サイド(h266/v-9/zoom5): ひかりの立ち姿込みの切り返し。presigned URLは24hで失効するためURL欄なし。再取得はfile_idで GET api.floyo.ai/files/<file_id>?expand=presigned_url、またはsetup-workspace.mjsがローカル保存済み"
+    },
+    {
+      "id": "angle_c17_side",
+      "kind": "floyo_angle",
+      "cut": "17",
+      "provider": "floyo",
+      "workflow": "WFAIA_Camera Angle Control with Qwen",
+      "run_id": "run_ZurNK4AGuMnejKQY",
+      "file_id": "file_SH2nMfxFnRhyddoS",
+      "note": "Qwenアングル一周テスト合格。サイド(h110/v-15/zoom3): 街灯越しの横位置。presigned URLは24hで失効するためURL欄なし。再取得はfile_idで GET api.floyo.ai/files/<file_id>?expand=presigned_url、またはsetup-workspace.mjsがローカル保存済み"
     }
   ]
 }

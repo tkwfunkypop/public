@@ -1,0 +1,27 @@
+{
+  "note": "リトライ: C64（前回0枚→実績のあるfree_prompt方式に変更）とC70b終了フレームv2（柊の筒状白頭が丸頭に変形したため頭部ガードを強化）",
+  "items": [
+    {
+      "id": "c64_lowangle_v2",
+      "cut": "64",
+      "inputs": {
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_234402_ea1168a7-9409-4fba-bb47-e107e76d6793.png",
+        "free_prompt": "Move the camera to a dramatic LOW ANGLE at the bottom of the spiral staircase looking UP along the climb, worm's-eye view. Keep every puppet, the clockwork wheelchair, the staircase, the props and the lighting exactly the same as the input image. Handmade stop-motion felt-puppet miniature look, tilt-shift depth of field. No new characters, no text.",
+        "prompt_2": "",
+        "prompt_3": "",
+        "prompt_4": ""
+      }
+    },
+    {
+      "id": "c70b_stamp_endframe_v2",
+      "cut": "70b",
+      "inputs": {
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043214_67c05a35-7a83-472c-8c6b-1460340032bc.png",
+        "free_prompt": "Edit ONLY the old caretaker puppet's right arm: lower it so the small brass hand-seal is pressed flat DOWN onto the paper lying on the wooden box on his lap — the final instant of a stamping motion. CRITICAL HEAD RULE: his head must stay EXACTLY as in the input image — a TALL WHITE CYLINDER with a FLAT TOP and a hooked nose. Do NOT round it, do NOT shrink it, do NOT reshape any head. Keep the small girl, the wheelchair, the box and its contents, the glowing chest lamp, the lighting, fog, camera position and framing pixel-identical to the input. Handmade stop-motion felt-puppet look. Any writing stays abstract unreadable invented glyphs, no real letters.",
+        "prompt_2": "",
+        "prompt_3": "",
+        "prompt_4": ""
+      }
+    }
+  ]
+}
