@@ -2,78 +2,144 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>はしっこビル — キャラ紹介テロップ（正典デザイン）</title>
+<title>はしっこビル — キャラ紹介テロップ v2（作字・正典デザイン）</title>
 <style>
-  body{background:#101014;color:#E8E2D5;font-family:"Hiragino Mincho ProN","Yu Mincho",serif;margin:0;padding:40px 24px;}
-  h1{font-size:16px;font-weight:normal;letter-spacing:.3em;color:#8a8578;text-align:center;margin:0 0 8px}
-  p.note{font-size:12px;color:#6a655a;text-align:center;margin:0 0 36px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(460px,1fr));gap:28px;max-width:1560px;margin:0 auto}
-  /* 16:9の画面下三分の一に重ねる想定のテロップ帯 */
-  .frame{aspect-ratio:16/9;background:
-      radial-gradient(ellipse at 50% 30%, #23222b 0%, #141318 70%);
-      border:1px solid #26242c;border-radius:6px;position:relative;overflow:hidden}
-  .frame::after{content:"映像";position:absolute;top:12px;right:16px;font-size:11px;color:#3c3a44;letter-spacing:.2em}
-  .telop{position:absolute;left:0;right:0;bottom:0;padding:18px 26px 20px;
-      background:linear-gradient(to top, rgba(8,8,10,.92) 55%, rgba(8,8,10,0));
-      display:flex;align-items:flex-end;gap:18px}
-  .badge{flex:none;width:52px;height:52px;border-radius:50%;display:flex;flex-direction:column;
-      align-items:center;justify-content:center;font-size:15px;font-weight:bold;color:#101014;
-      box-shadow:0 0 0 1px rgba(232,226,213,.25), 0 0 18px rgba(0,0,0,.6);
-      font-family:"Hiragino Sans","Yu Gothic",sans-serif}
-  .badge small{font-size:8px;font-weight:normal;letter-spacing:.1em}
-  .names{line-height:1.15}
-  .kana{font-size:12px;letter-spacing:.5em;color:#b9b2a1;margin-bottom:2px}
-  .name{font-size:34px;letter-spacing:.18em;text-shadow:0 2px 6px rgba(0,0,0,.8)}
-  .name .thin{font-size:20px;color:#cfc8b8}
-  .meta{margin-left:auto;text-align:right;line-height:1.5;padding-bottom:2px}
-  .job{font-size:13px;letter-spacing:.14em;color:#d8d2c2}
-  .persona{font-size:14px;letter-spacing:.06em;color:#efe9da;border-top:1px solid rgba(232,226,213,.28);
-      margin-top:5px;padding-top:5px}
-  /* 階色（正典）: 1F白/2F琥珀/3F緑/4F青緑/5F青/6F菫/7Fマゼンタ/B1真鍮 */
-  .f1{background:#EDEAE2}.f2{background:#D9A441}.f3{background:#5B8C5A}.f4{background:#4E9B8F}
-  .f5{background:#5D93BC}.f6{background:#8E7CC3}.f7{background:#C25E8E}.fb{background:#B08D57}
+  :root{
+    --paper:#EDE6D6; --ink:#1c1a20; --dim:#6a655a;
+    --f1:#EDEAE2; --f2:#D9A441; --f3:#5B8C5A; --f4:#4E9B8F;
+    --f5:#5D93BC; --f6:#8E7CC3; --f7:#C25E8E; --fb:#B08D57;
+  }
+  *{box-sizing:border-box}
+  body{background:#0c0b10;color:#E8E2D5;font-family:"Hiragino Mincho ProN","Yu Mincho",serif;margin:0;padding:44px 24px}
+  h1{font-size:15px;font-weight:normal;letter-spacing:.4em;color:#8a8578;text-align:center;margin:0 0 6px}
+  p.note{font-size:11.5px;color:#5d584e;text-align:center;margin:0 0 40px;letter-spacing:.06em}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(500px,1fr));gap:30px;max-width:1600px;margin:0 auto}
+
+  /* ===== 16:9プレビュー枠（映像の代わり） ===== */
+  .frame{aspect-ratio:16/9;border-radius:6px;position:relative;overflow:hidden;
+    background:radial-gradient(ellipse at 50% 28%, #262430 0%, #131218 68%);
+    border:1px solid #232129}
+  .frame::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+    background-image:repeating-conic-gradient(rgba(255,255,255,.014) 0% .0001%, transparent .0002% .0004%);
+    mix-blend-mode:overlay}
+  .frame::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,.55) 100%)}
+
+  /* ===== テロップ本体: フェルトの縫い付けラベル ===== */
+  .telop{position:absolute;left:26px;bottom:22px;display:flex;align-items:stretch;gap:0;z-index:2;
+    filter:drop-shadow(0 10px 22px rgba(0,0,0,.65))}
+  .patch{position:relative;background:
+      linear-gradient(160deg, rgba(255,255,255,.06), rgba(0,0,0,.14)),
+      var(--paper);
+    color:var(--ink);border-radius:3px 14px 3px 14px;padding:14px 22px 13px 18px;
+    display:flex;align-items:center;gap:16px;min-width:340px}
+  /* 縫い目（ステッチ） */
+  .patch::before{content:"";position:absolute;inset:5px;border:1.6px dashed rgba(28,26,32,.42);
+    border-radius:2px 11px 2px 11px;pointer-events:none}
+  /* 紙の質感 */
+  .patch::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:.35;
+    background-image:radial-gradient(rgba(28,26,32,.05) 1px, transparent 1.4px);background-size:5px 5px}
+
+  /* 真鍮の階数メダル */
+  .medal{flex:none;width:64px;height:64px;border-radius:50%;position:relative;align-self:center;
+    background:radial-gradient(circle at 32% 28%, #f4e3b0 0%, var(--mc,#B08D57) 42%, #6d5426 100%);
+    box-shadow:inset 0 0 0 3px rgba(60,44,14,.55), inset 0 2px 5px rgba(255,255,255,.5), 0 3px 6px rgba(0,0,0,.35);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    font-family:"Hiragino Sans","Yu Gothic",sans-serif;color:#2c2210}
+  .medal b{font-size:19px;letter-spacing:.02em;text-shadow:0 1px 0 rgba(255,255,255,.4)}
+  .medal small{font-size:8.5px;letter-spacing:.22em;margin-top:1px}
+  .medal::after{content:"";position:absolute;inset:6px;border-radius:50%;
+    border:1px solid rgba(60,44,14,.4);pointer-events:none}
+  /* 階色リボン */
+  .ribbon{position:absolute;top:-7px;right:14px;width:34px;height:14px;background:var(--fc,#888);
+    clip-path:polygon(0 0,100% 0,100% 100%,50% 62%,0 100%);
+    box-shadow:0 1px 2px rgba(0,0,0,.4)}
+
+  /* 作字風ネーム: 一文字ずつ僅かに回転・沈み込み */
+  .names{line-height:1}
+  .kana{font-size:10.5px;letter-spacing:.62em;color:#54504a;margin:0 0 5px 2px}
+  .name{font-size:40px;font-weight:600;letter-spacing:.02em;display:flex;align-items:baseline}
+  .name span{display:inline-block;transform:rotate(var(--r,0deg)) translateY(var(--y,0px));
+    text-shadow:0 1px 0 rgba(255,255,255,.55), 0 -1px 0 rgba(0,0,0,.18)}
+  .name span:nth-child(odd){--r:-1.6deg;--y:1px}
+  .name span:nth-child(even){--r:1.3deg;--y:-1.5px}
+  .name span:first-child{font-size:112%}
+  .name .thin{font-size:58%;color:#3c3830;margin-right:2px;--r:0deg;--y:0}
+  /* 名前の下の階色アンダーストローク（筆勢） */
+  .stroke{height:7px;margin:6px 2px 0;border-radius:4px/6px;
+    background:linear-gradient(90deg, var(--fc) 0%, var(--fc) 62%, transparent 100%);
+    clip-path:polygon(0 35%, 4% 0, 97% 18%, 100% 70%, 5% 100%, 0 78%);opacity:.85}
+
+  /* 右側: 所属と性格 */
+  .meta{border-left:1px solid rgba(28,26,32,.25);margin-left:4px;padding-left:16px;align-self:center;min-width:150px}
+  .job{font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-size:11px;letter-spacing:.2em;color:#4c463c;
+    display:flex;align-items:center;gap:6px}
+  .job::before{content:"";width:7px;height:7px;background:var(--fc);border-radius:2px;
+    transform:rotate(45deg);flex:none;box-shadow:0 0 0 1px rgba(28,26,32,.25)}
+  .persona{font-size:14.5px;letter-spacing:.05em;color:#26221c;margin-top:7px;line-height:1.55}
+  .persona em{font-style:normal;background:linear-gradient(transparent 68%, color-mix(in srgb, var(--fc) 42%, transparent) 68%)}
+
+  .cap{position:absolute;top:12px;right:16px;font-size:10.5px;color:#3c3a44;letter-spacing:.2em;z-index:1}
 </style>
 </head>
 <body>
-<h1>キャラクター紹介テロップ ― 正典デザイン</h1>
-<p class="note">画面下1/3に重ねる帯。ブラウザ表示をそのままスクショして編集ソフトへ（背景の暗い枠は映像のプレビュー代わり）</p>
+<h1>キャラクター紹介テロップ v2 ― 作字・正典デザイン</h1>
+<p class="note">フェルトの縫い付けラベル＋真鍮メダル＋階色の筆ストローク。名前は一字ずつ傾けた作字組み。画面下1/3に重ねる。スクショ→編集ソフトへ</p>
 <div class="grid">
 
-<div class="frame"><div class="telop"><div class="badge fb">B1<small>管理人</small></div>
-  <div class="names"><div class="kana">ひいらぎ</div><div class="name">柊</div></div>
-  <div class="meta"><div class="job">果端ビル管理人室</div><div class="persona">四十年、ビルの灯を絶やさなかった人</div></div></div></div>
+<div class="frame"><span class="cap">映像</span><div class="telop"><div class="patch" style="--fc:var(--fb);--mc:#B08D57">
+  <div class="medal"><b>B1</b><small>管理人</small><span class="ribbon" style="--fc:var(--fb)"></span></div>
+  <div class="names"><div class="kana">ひいらぎ</div><div class="name"><span>柊</span></div><div class="stroke"></div></div>
+  <div class="meta"><div class="job">果端ビル管理人室</div><div class="persona">四十年、<em>ビルの灯</em>を絶やさなかった人</div></div>
+</div></div></div>
 
-<div class="frame"><div class="telop"><div class="badge f1">1F<small>儀典</small></div>
-  <div class="names"><div class="kana">みょうじ とめ</div><div class="name">苗字トメ</div></div>
-  <div class="meta"><div class="job">アオイ儀典社</div><div class="persona">一日をきちんと始めて、きちんと終わらせる人</div></div></div></div>
+<div class="frame"><span class="cap">映像</span><div class="telop"><div class="patch" style="--fc:var(--f1);--mc:#cfc9ba">
+  <div class="medal"><b>1F</b><small>儀典</small><span class="ribbon" style="--fc:var(--f1)"></span></div>
+  <div class="names"><div class="kana">みょうじ とめ</div><div class="name"><span class="thin">苗字</span><span>ト</span><span>メ</span></div><div class="stroke"></div></div>
+  <div class="meta"><div class="job">アオイ儀典社</div><div class="persona">一日を<em>きちんと</em>始めて、きちんと終わらせる人</div></div>
+</div></div></div>
 
-<div class="frame"><div class="telop"><div class="badge f2">2F<small>玩具</small></div>
-  <div class="names"><div class="kana">かぶらぎ</div><div class="name">鏑木</div></div>
-  <div class="meta"><div class="job">ぜんまい玩具工房</div><div class="persona">壊れたものを、まだ終わらせない人</div></div></div></div>
+<div class="frame"><span class="cap">映像</span><div class="telop"><div class="patch" style="--fc:var(--f2);--mc:#D9A441">
+  <div class="medal"><b>2F</b><small>玩具</small><span class="ribbon" style="--fc:var(--f2)"></span></div>
+  <div class="names"><div class="kana">かぶらぎ</div><div class="name"><span>鏑</span><span>木</span></div><div class="stroke"></div></div>
+  <div class="meta"><div class="job">ぜんまい玩具工房</div><div class="persona">壊れたものを、<em>まだ終わらせない</em>人</div></div>
+</div></div></div>
 
-<div class="frame"><div class="telop"><div class="badge f3">3F<small>会計</small></div>
-  <div class="names"><div class="kana">うかい</div><div class="name">鵜飼</div></div>
-  <div class="meta"><div class="job">鵜飼会計事務所</div><div class="persona">数字で嘘をつかない、つけない人</div></div></div></div>
+<div class="frame"><span class="cap">映像</span><div class="telop"><div class="patch" style="--fc:var(--f3);--mc:#8aa06a">
+  <div class="medal"><b>3F</b><small>会計</small><span class="ribbon" style="--fc:var(--f3)"></span></div>
+  <div class="names"><div class="kana">うかい</div><div class="name"><span>鵜</span><span>飼</span></div><div class="stroke"></div></div>
+  <div class="meta"><div class="job">鵜飼会計事務所</div><div class="persona">数字で<em>嘘をつかない</em>、つけない人</div></div>
+</div></div></div>
 
-<div class="frame"><div class="telop"><div class="badge f4">4F<small>気象</small></div>
-  <div class="names"><div class="kana">くもい</div><div class="name">雲井</div></div>
-  <div class="meta"><div class="job">雲井気象観測所</div><div class="persona">空しか見ていない、けれど全部見ている人</div></div></div></div>
+<div class="frame"><span class="cap">映像</span><div class="telop"><div class="patch" style="--fc:var(--f4);--mc:#7fae9f">
+  <div class="medal"><b>4F</b><small>気象</small><span class="ribbon" style="--fc:var(--f4)"></span></div>
+  <div class="names"><div class="kana">くもい</div><div class="name"><span>雲</span><span>井</span></div><div class="stroke"></div></div>
+  <div class="meta"><div class="job">雲井気象観測所</div><div class="persona">空しか見ていない、<em>けれど全部見ている</em>人</div></div>
+</div></div></div>
 
-<div class="frame"><div class="telop"><div class="badge f5">5F<small>香水</small></div>
-  <div class="names"><div class="kana">りー</div><div class="name">李</div></div>
-  <div class="meta"><div class="job">李香水店</div><div class="persona">匂いで時間を巻き戻す人</div></div></div></div>
+<div class="frame"><span class="cap">映像</span><div class="telop"><div class="patch" style="--fc:var(--f5);--mc:#7fa3c2">
+  <div class="medal"><b>5F</b><small>香水</small><span class="ribbon" style="--fc:var(--f5)"></span></div>
+  <div class="names"><div class="kana">りー</div><div class="name"><span>李</span></div><div class="stroke"></div></div>
+  <div class="meta"><div class="job">李香水店</div><div class="persona">匂いで<em>時間を巻き戻す</em>人</div></div>
+</div></div></div>
 
-<div class="frame"><div class="telop"><div class="badge f6">6F<small>活版</small></div>
-  <div class="names"><div class="kana">くろがね</div><div class="name">黒金</div></div>
-  <div class="meta"><div class="job">黒金活版印刷所</div><div class="persona">言葉を並べるのは得意、話すのは苦手な人</div></div></div></div>
+<div class="frame"><span class="cap">映像</span><div class="telop"><div class="patch" style="--fc:var(--f6);--mc:#a291c9">
+  <div class="medal"><b>6F</b><small>活版</small><span class="ribbon" style="--fc:var(--f6)"></span></div>
+  <div class="names"><div class="kana">くろがね</div><div class="name"><span>黒</span><span>金</span></div><div class="stroke"></div></div>
+  <div class="meta"><div class="job">黒金活版印刷所</div><div class="persona">言葉を並べるのは得意、<em>話すのは苦手</em>な人</div></div>
+</div></div></div>
 
-<div class="frame"><div class="telop"><div class="badge f6">6F<small>記者</small></div>
-  <div class="names"><div class="kana">やまと</div><div class="name">大和</div></div>
-  <div class="meta"><div class="job">果端新聞 記者</div><div class="persona">書けない言葉を探し続ける人</div></div></div></div>
+<div class="frame"><span class="cap">映像</span><div class="telop"><div class="patch" style="--fc:var(--f6);--mc:#a291c9">
+  <div class="medal"><b>6F</b><small>記者</small><span class="ribbon" style="--fc:var(--f6)"></span></div>
+  <div class="names"><div class="kana">やまと</div><div class="name"><span>大</span><span>和</span></div><div class="stroke"></div></div>
+  <div class="meta"><div class="job">果端新聞 記者</div><div class="persona"><em>書けない言葉</em>を探し続ける人</div></div>
+</div></div></div>
 
-<div class="frame"><div class="telop"><div class="badge f7">7F<small>食堂</small></div>
-  <div class="names"><div class="kana">ななお</div><div class="name">七尾ひかり</div></div>
-  <div class="meta"><div class="job">食堂ななお</div><div class="persona">距離ゼロの飯を、頭の上で運ぶ人</div></div></div></div>
+<div class="frame"><span class="cap">映像</span><div class="telop"><div class="patch" style="--fc:var(--f7);--mc:#c78ba6">
+  <div class="medal"><b>7F</b><small>食堂</small><span class="ribbon" style="--fc:var(--f7)"></span></div>
+  <div class="names"><div class="kana">ななお</div><div class="name"><span class="thin">七尾</span><span>ひ</span><span>か</span><span>り</span></div><div class="stroke"></div></div>
+  <div class="meta"><div class="job">食堂ななお</div><div class="persona"><em>距離ゼロの飯</em>を、頭の上で運ぶ人</div></div>
+</div></div></div>
 
 </div>
 </body>
