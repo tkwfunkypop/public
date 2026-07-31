@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>はしっこビル — キャラ紹介テロップ（正典デザイン）</title>
+<style>
+  body{background:#101014;color:#E8E2D5;font-family:"Hiragino Mincho ProN","Yu Mincho",serif;margin:0;padding:40px 24px;}
+  h1{font-size:16px;font-weight:normal;letter-spacing:.3em;color:#8a8578;text-align:center;margin:0 0 8px}
+  p.note{font-size:12px;color:#6a655a;text-align:center;margin:0 0 36px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(460px,1fr));gap:28px;max-width:1560px;margin:0 auto}
+  /* 16:9の画面下三分の一に重ねる想定のテロップ帯 */
+  .frame{aspect-ratio:16/9;background:
+      radial-gradient(ellipse at 50% 30%, #23222b 0%, #141318 70%);
+      border:1px solid #26242c;border-radius:6px;position:relative;overflow:hidden}
+  .frame::after{content:"映像";position:absolute;top:12px;right:16px;font-size:11px;color:#3c3a44;letter-spacing:.2em}
+  .telop{position:absolute;left:0;right:0;bottom:0;padding:18px 26px 20px;
+      background:linear-gradient(to top, rgba(8,8,10,.92) 55%, rgba(8,8,10,0));
+      display:flex;align-items:flex-end;gap:18px}
+  .badge{flex:none;width:52px;height:52px;border-radius:50%;display:flex;flex-direction:column;
+      align-items:center;justify-content:center;font-size:15px;font-weight:bold;color:#101014;
+      box-shadow:0 0 0 1px rgba(232,226,213,.25), 0 0 18px rgba(0,0,0,.6);
+      font-family:"Hiragino Sans","Yu Gothic",sans-serif}
+  .badge small{font-size:8px;font-weight:normal;letter-spacing:.1em}
+  .names{line-height:1.15}
+  .kana{font-size:12px;letter-spacing:.5em;color:#b9b2a1;margin-bottom:2px}
+  .name{font-size:34px;letter-spacing:.18em;text-shadow:0 2px 6px rgba(0,0,0,.8)}
+  .name .thin{font-size:20px;color:#cfc8b8}
+  .meta{margin-left:auto;text-align:right;line-height:1.5;padding-bottom:2px}
+  .job{font-size:13px;letter-spacing:.14em;color:#d8d2c2}
+  .persona{font-size:14px;letter-spacing:.06em;color:#efe9da;border-top:1px solid rgba(232,226,213,.28);
+      margin-top:5px;padding-top:5px}
+  /* 階色（正典）: 1F白/2F琥珀/3F緑/4F青緑/5F青/6F菫/7Fマゼンタ/B1真鍮 */
+  .f1{background:#EDEAE2}.f2{background:#D9A441}.f3{background:#5B8C5A}.f4{background:#4E9B8F}
+  .f5{background:#5D93BC}.f6{background:#8E7CC3}.f7{background:#C25E8E}.fb{background:#B08D57}
+</style>
+</head>
+<body>
+<h1>キャラクター紹介テロップ ― 正典デザイン</h1>
+<p class="note">画面下1/3に重ねる帯。ブラウザ表示をそのままスクショして編集ソフトへ（背景の暗い枠は映像のプレビュー代わり）</p>
+<div class="grid">
+
+<div class="frame"><div class="telop"><div class="badge fb">B1<small>管理人</small></div>
+  <div class="names"><div class="kana">ひいらぎ</div><div class="name">柊</div></div>
+  <div class="meta"><div class="job">果端ビル管理人室</div><div class="persona">四十年、ビルの灯を絶やさなかった人</div></div></div></div>
+
+<div class="frame"><div class="telop"><div class="badge f1">1F<small>儀典</small></div>
+  <div class="names"><div class="kana">みょうじ とめ</div><div class="name">苗字トメ</div></div>
+  <div class="meta"><div class="job">アオイ儀典社</div><div class="persona">一日をきちんと始めて、きちんと終わらせる人</div></div></div></div>
+
+<div class="frame"><div class="telop"><div class="badge f2">2F<small>玩具</small></div>
+  <div class="names"><div class="kana">かぶらぎ</div><div class="name">鏑木</div></div>
+  <div class="meta"><div class="job">ぜんまい玩具工房</div><div class="persona">壊れたものを、まだ終わらせない人</div></div></div></div>
+
+<div class="frame"><div class="telop"><div class="badge f3">3F<small>会計</small></div>
+  <div class="names"><div class="kana">うかい</div><div class="name">鵜飼</div></div>
+  <div class="meta"><div class="job">鵜飼会計事務所</div><div class="persona">数字で嘘をつかない、つけない人</div></div></div></div>
+
+<div class="frame"><div class="telop"><div class="badge f4">4F<small>気象</small></div>
+  <div class="names"><div class="kana">くもい</div><div class="name">雲井</div></div>
+  <div class="meta"><div class="job">雲井気象観測所</div><div class="persona">空しか見ていない、けれど全部見ている人</div></div></div></div>
+
+<div class="frame"><div class="telop"><div class="badge f5">5F<small>香水</small></div>
+  <div class="names"><div class="kana">りー</div><div class="name">李</div></div>
+  <div class="meta"><div class="job">李香水店</div><div class="persona">匂いで時間を巻き戻す人</div></div></div></div>
+
+<div class="frame"><div class="telop"><div class="badge f6">6F<small>活版</small></div>
+  <div class="names"><div class="kana">くろがね</div><div class="name">黒金</div></div>
+  <div class="meta"><div class="job">黒金活版印刷所</div><div class="persona">言葉を並べるのは得意、話すのは苦手な人</div></div></div></div>
+
+<div class="frame"><div class="telop"><div class="badge f6">6F<small>記者</small></div>
+  <div class="names"><div class="kana">やまと</div><div class="name">大和</div></div>
+  <div class="meta"><div class="job">果端新聞 記者</div><div class="persona">書けない言葉を探し続ける人</div></div></div></div>
+
+<div class="frame"><div class="telop"><div class="badge f7">7F<small>食堂</small></div>
+  <div class="names"><div class="kana">ななお</div><div class="name">七尾ひかり</div></div>
+  <div class="meta"><div class="job">食堂ななお</div><div class="persona">距離ゼロの飯を、頭の上で運ぶ人</div></div></div></div>
+
+</div>
+</body>
+</html>
