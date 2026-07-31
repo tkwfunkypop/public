@@ -6481,6 +6481,58 @@
       "task_id": "4975022a-3dfb-4634-81bb-2767bc4d5281",
       "url": "https://edit.comfyonline.app/result/5a78d5ef-07ce-47d2-9724-a7a29550b457.mp4",
       "note": "本線I2V C12: ひかり弁当頭上・階段へ。URLは一時ストレージ、setup-workspace.mjsで保存"
+    },
+    {
+      "id": "c13_i2v_v1",
+      "kind": "i2v_prod",
+      "cut": "13",
+      "provider": "sjinn",
+      "model": "seedance2",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 7,
+      "task_id": "dc6bf9b4-bafd-4c77-96a0-b384a2593b4b",
+      "url": "https://edit.comfyonline.app/result/8356ca0c-a7b8-4c8c-9517-7993e0a0677b.mp4",
+      "note": "本線I2V C13: ひかり弁当配達・足が止まる。短尺版（10秒ルール以前）→後で10秒v2再生成予定。URLは一時ストレージ"
+    },
+    {
+      "id": "c15_i2v_v1",
+      "kind": "i2v_prod",
+      "cut": "15",
+      "provider": "sjinn",
+      "model": "seedance2",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 6,
+      "task_id": "b1532510-30a4-4ab5-a80c-8545a799c854",
+      "url": "https://edit.comfyonline.app/result/69f97c82-1219-4bc9-9ba8-22abbb929617.mp4",
+      "note": "本線I2V C15: ひかり階段駆け上がりノック。短尺版（10秒ルール以前）→後で10秒v2再生成予定。URLは一時ストレージ"
+    },
+    {
+      "id": "c16_i2v_v1",
+      "kind": "i2v_prod",
+      "cut": "16",
+      "provider": "sjinn",
+      "model": "seedance2",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 5,
+      "task_id": "2b42dc69-c0b2-4fd8-84fb-000f8d62ee88",
+      "url": "https://edit.comfyonline.app/result/ecd217d5-3381-4a17-8521-adfb80532f07.mp4",
+      "note": "本線I2V C16: 三つの扉から覗く顔。短尺版（10秒ルール以前）→後で10秒v2再生成予定。URLは一時ストレージ"
+    },
+    {
+      "id": "c18_i2v_v1",
+      "kind": "i2v_prod",
+      "cut": "18",
+      "provider": "sjinn",
+      "model": "seedance2",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 6,
+      "task_id": "6d4dad50-00eb-406f-a2ef-14a9a0d77288",
+      "url": "https://edit.comfyonline.app/result/b77b0695-dc98-4b96-b7b3-1dab3e709a16.mp4",
+      "note": "本線I2V C18: トメ議長・白いホワイトボード。短尺版（10秒ルール以前）→後で10秒v2再生成予定。URLは一時ストレージ"
     }
   ]
 }
