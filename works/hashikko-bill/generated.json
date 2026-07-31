@@ -6557,6 +6557,71 @@
       "job_id": "05066ed3-df9a-4625-8bbd-8188d86faccd",
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_111851_05066ed3-df9a-4625-8bbd-8188d86faccd.png",
       "note": "仮CM『あかり』裏切り: 温光・全扉開放・住人が顔を出す。検品合格。企画はad/CM_CONCEPTS.md"
+    },
+    {
+      "id": "c17_i2v_v1",
+      "kind": "i2v_prod",
+      "cut": "17",
+      "provider": "sjinn",
+      "model": "seedance2",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 6,
+      "task_id": "faffae00-8a4c-457f-a472-71f01cb0833f",
+      "url": "https://edit.comfyonline.app/result/535e01aa-c708-4bc7-8037-8ff37a859c96.mp4",
+      "note": "本線I2V C17: 屋上会議・距離のある着席。URLは一時ストレージ、setup-workspace.mjsで保存"
+    },
+    {
+      "id": "c19_i2v_v1",
+      "kind": "i2v_prod",
+      "cut": "19",
+      "provider": "sjinn",
+      "model": "seedance2",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 10,
+      "task_id": "c357e5b5-4f83-4e81-bc9f-b7e3978322a9",
+      "url": "https://edit.comfyonline.app/result/fb36f523-f4ca-45a8-8793-784c3a202099.mp4",
+      "note": "本線I2V C19: 雲井・帳簿から目を上げない。URLは一時ストレージ、setup-workspace.mjsで保存"
+    },
+    {
+      "id": "c20_i2v_v1",
+      "kind": "i2v_prod",
+      "cut": "20",
+      "provider": "sjinn",
+      "model": "seedance2",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 10,
+      "task_id": "034b5ba7-5793-40b5-9f44-ec68d732391b",
+      "url": "https://edit.comfyonline.app/result/fc541c7b-b5a1-499a-96ff-0ac342f12f54.mp4",
+      "note": "本線I2V C20: 李の小瓶・一同のけぞる。URLは一時ストレージ、setup-workspace.mjsで保存"
+    },
+    {
+      "id": "c21_i2v_v1",
+      "kind": "i2v_prod",
+      "cut": "21",
+      "provider": "sjinn",
+      "model": "seedance2",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 10,
+      "task_id": "1a766912-04eb-40eb-a729-39705ca4df3b",
+      "url": "https://edit.comfyonline.app/result/cc3286b9-a72b-4f25-87e1-30c67e2c603a.mp4",
+      "note": "本線I2V C21: 鏑木・机の下で工作。URLは一時ストレージ、setup-workspace.mjsで保存"
+    },
+    {
+      "id": "c22_i2v_v1",
+      "kind": "i2v_prod",
+      "cut": "22",
+      "provider": "sjinn",
+      "model": "seedance2",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 10,
+      "task_id": "644eb311-d9b4-4565-91d7-a00d686ec6f1",
+      "url": "https://edit.comfyonline.app/result/65f4a02a-041e-4b22-a1b8-13747abe721c.mp4",
+      "note": "本線I2V C22: 黒金が白紙を差し出す。URLは一時ストレージ、setup-workspace.mjsで保存"
     }
   ]
 }
