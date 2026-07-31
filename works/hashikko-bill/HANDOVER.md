@@ -1,23 +1,22 @@
-# 引き継ぎ書（別アカウント／新セッション用・完全版）
+# 引き継ぎ書（メインアカウント用・最終版 2026-07-31）
 
-**目的**: このドキュメント1枚で、WFAIA作品「はしっこビルの明日づくり」の制作を
-**別のClaudeアカウント・新しいセッションでも完全に再開できる**ようにする。
-専門知識がなくても、上から順に読めば進められる書き方にしてある。
+**目的**: このドキュメント1枚で、WFAIA作品「はしっこビルの明日づくり」を
+**別のClaudeアカウント・新しいセッションで完全に引き継ぐ**。
+生成フェーズは完了済みなので、引き継ぎ後の仕事は「仕上げ・検品・応募サポート」が中心。
 
 ---
 
 ## 0. 新セッションに最初に貼る指示文（コピペ用）
 
-新しいセッションを開いたら、まずこれをそのまま貼る:
-
 ```
 リポジトリ tkwfunkypop/public の works/hashikko-bill/HANDOVER.md を読んで、
-書いてあるルール・進捗・残作業に従って制作を再開してください。
-作業ブランチは claude/prompts-json-10cut-generation-cisssw、PR #16 が対応PRです。
-正典ドキュメント（STORY.md / FLOYO_MIGRATION.md / CM_LINEUP.md / INTRO_SCENES.md /
-OPENING_ENDING.md / SCENE_NARRATION.md）を先に読み、
-generated.json（台帳）と sjinn-jobs.json（生成タスクID）で現状を把握してから、
-「7. 残作業リスト」の上から順に進めてください。
+プロジェクトを引き継いでください。作業ブランチは
+claude/prompts-json-10cut-generation-cisssw、PR #16 が対応PRです。
+生成フェーズ（本編89カット・CM14本・日英ナレ20本・字幕・ロゴ）は完了済み。
+正典（STORY.md / FLOYO_MIGRATION.md / CM_LINEUP.md / edit/EDIT_PLAN.md）と
+台帳 generated.json で現状を把握し、HANDOVER.md「7. 残作業」の順で
+仕上げ（検品・リテイク・編集サポート・WFAIA応募準備）を進めてください。
+作品ルール（HANDOVER.md §5）は絶対に守ること。
 ```
 
 ---
@@ -25,123 +24,110 @@ generated.json（台帳）と sjinn-jobs.json（生成タスクID）で現状を
 ## 1. プロジェクト概要
 
 - **作品**: 「はしっこビルの明日づくり」— Tim Burton風ゴシック×フェルト製ストップモーション人形劇
-- **応募先**: WFAIA 2部門
-  - **AIアニメ部門**: 尺1〜5分・横16:9・賞金¥300,000。審査観点=キャラデザ/世界観の独創性/ビジュアル完成度/演出力/ディレクション
-  - **広告部門**: 尺15〜60秒・縦横不問・賞金¥300,000。審査観点=広告実用性/訴求力/独創性/短尺印象設計/ブランド構築力
-- **⚠️ 尺の注意**: 本編コンテは89カット・実尺合計346秒（5分46秒）で**5分を46秒超過**。
-  編集時に各カットの余白を詰めて300秒以内に収める（生成は10秒尺だが実尺は3〜5秒目安なので現実的）。
+- **応募先**: **WFAIA = WORLD Floyo.AI CREATIVE AWARDS 2026 in Tokyo**（Floyo公式アワード）
+  - 応募: https://wfaia2026.floyo.ai/ （2026/6/15受付開始・賞金総額100万円・Google Cloud後援）
+  - **AIアニメ部門**: 尺1〜5分・横16:9・賞金¥300,000 → 本編4分56秒で適合済み
+  - **広告部門**: 尺15〜60秒・縦横不問・賞金¥300,000 → CM14本すべて適合
+  - **CMは制作のどこかで必ずFloyoを使う**のが本プロジェクトの絶対則（Floyo主催のため）
 
-## 2. 場所（リポジトリとファイル地図)
+## 2. 完成データの場所
 
-- リポジトリ: `tkwfunkypop/public` ／ ブランチ: `claude/prompts-json-10cut-generation-cisssw` ／ PR: **#16（draft）**
-- ローカルPC側の作業コピー: `~/repos/public`（Macユーザー: takahashiteikoku）
+### ユーザーのMac（ローカル）
+- `~/Desktop/hashikko_honpen_v1.mp4` — **本編完成版**（4分56秒・88カット・英語ナレ10本入り）
+- `~/Desktop/WFAIA_はしっこビル/` — 全素材（12_本線I2V=89本 / 13_広告CM=14本 / 05_音声=日英ナレ20本 / 10_Floyo出力 / 00_正典ドキュメント ほか）
+- `~/repos/public` — リポジトリのローカルクローン
 
-| ファイル | 中身 |
+### リポジトリ（tkwfunkypop/public、ブランチ claude/prompts-json-10cut-generation-cisssw）
+| パス | 中身 |
 |---|---|
+| `works/hashikko-bill/generated.json` | **台帳**（全アセット733件の id/kind/URL。何かを探すときはまずここ） |
 | `works/hashikko-bill/STORY.md` | 物語・シーン構成の正典 |
-| `works/hashikko-bill/FLOYO_MIGRATION.md` | **制作パイプラインの正典**（§2.7三層体制・§2.8命名規則） |
-| `works/hashikko-bill/generated.json` | **台帳**。全アセット641件（id/kind/url）。新規生成は必ずここに追記 |
-| `works/hashikko-bill/sjinn-jobs.json` | SJinn生成タスクID（カット番号→task_id）。回収に使う |
-| `works/hashikko-bill/storyboard/i2v-prompts.json` | 全89カットのI2Vプロンプト・秒数 |
-| `tools/floyo/manifests/i2v-prod.json` | 本線I2V用マニフェスト（カット別プロンプト+開始フレームURL） |
-| `works/hashikko-bill/ad/CM_LINEUP.md` | CM10本の正典（ナレ原稿 日英・カット割り） |
-| `works/hashikko-bill/intro/INTRO_SCENES.md` + `telops.html` | キャラ紹介9カット+ネームテロップ（刺繍作字v3） |
-| `works/hashikko-bill/narration/OPENING_ENDING.md` | 本編冒頭/締めナレ（日英+カット対応表） |
-| `works/hashikko-bill/narration/SCENE_NARRATION.md` | 章替わりナレ8本（日英） |
-| `works/hashikko-bill/setup-workspace.mjs` | **ローカルPCで実行**→デスクトップ`WFAIA_はしっこビル/`に全素材を種類別保存 |
-| `tools/floyo/run.mjs` + `workflows.json` + `manifests/` | Floyo実行ランナー |
-| `tools/fish/generate.mjs` | Fish Audioナレ生成（ローカル実行） |
+| `works/hashikko-bill/FLOYO_MIGRATION.md` | 制作パイプラインの正典（三層体制・命名規則） |
+| `works/hashikko-bill/edit/assemble.mjs` + `EDIT_PLAN.md` | **本編自動アセンブラ**（ローカル実行で1本化。--jaで日本語ナレ版） |
+| `works/hashikko-bill/ad/CM_LINEUP.md` | CM14本の正典（日英ナレ原稿・ひらがな音声ルール） |
+| `works/hashikko-bill/ad/subtitles/` | CM字幕一式: `subs-spec.json`（JP/EN対訳の正）→ `out/`クロマキー動画17本・`srt/`SRT34ファイル・`CM_SUBTITLES.md`一覧・`render_subs.py`再生成スクリプト |
+| `works/hashikko-bill/ad/logo/` | 鏑木ロゴv2（3DCG風タイポ。クロマキー/透過PNG+元HTML） |
+| `works/hashikko-bill/intro/` | キャラ紹介: `INTRO_SCENES.md`・`telops.html`（刺繍作字テロップ9枚）・`intro-i2v.json` |
+| `works/hashikko-bill/narration/` | 日英ナレ原稿（`OPENING_ENDING.md`にナレ×カット対応表）・`SCENE_NARRATION.md`・`en-audio-jobs.json` |
+| `works/hashikko-bill/sjinn-jobs.json` | SJinn全タスクID（再回収用） |
+| `tools/floyo/` | Floyoランナー（run.mjs / workflows.json / manifests/） |
+| `tools/fish/generate.mjs` | Fish Audioナレ生成 |
 
-## 3. アカウント・APIキー（★新アカウントで最初にやること）
+## 3. アカウント・APIキー（新アカウントで最初にやること）
 
-キーは**絶対にチャットに貼らない**。すべて `.env` ファイルに置く（gitにはコミットしない）。
+キーは**絶対にチャットに貼らない**。すべて `.env`（gitに入れない）。
 
-| サービス | 役割 | キーの場所 |
+| サービス | 役割 | キー/接続 |
 |---|---|---|
-| SJinn (MCP) | 本編I2V生成（seedance2） | Claude側のMCP接続（SJINN_TOKEN）。新アカウントでは**SJinn MCCPを接続し直す** |
-| Higgs Field (MCP) | 画像生成（nano banana）・CM動画（seedance_2_0）・音声（seed_audio）・MiniMax H3 | Claude側のMCP接続。新アカウントで接続し直す |
-| Floyo | カメラアングル（Qwen）・LTX補間 | `tools/floyo/.env` に `FLOYO_API_KEY=`（ローカルPCの `~/repos/public` にある） |
-| Fish Audio | ナレ別候補ボイス | `tools/fish/.env` に `FISH_AUDIO_KEY=` |
+| SJinn (MCP) | 本編I2V生成（seedance2） | 新アカウントでMCP接続し直す（またはsjinn CLI+`sjinn auth login`） |
+| Higgs Field (MCP) | 画像(nano banana)・CM動画(seedance_2_0)・音声(seed_audio)・H3 | 新アカウントでMCP接続し直す |
+| Floyo | アングル/LTX補間（ローカル実行） | Macの `tools/floyo/.env` に `FLOYO_API_KEY` |
+| Fish Audio | 予備ボイス（ローカル実行） | Macの `tools/fish/.env` に `FISH_AUDIO_KEY` |
 
-**ネットワーク制約**: Claudeの作業コンテナからは floyo.ai / fish.audio / queue.fal.run /
-edit.comfyonline.app へ直接アクセスできない。→ **FloyoとFishはローカルPCのターミナルで実行**し、
-結果JSONをチャットに貼って渡す。動画の保存も `setup-workspace.mjs`（ローカル）で行う。
+**ネットワーク制約**: Claudeの作業コンテナから floyo.ai / fish.audio / edit.comfyonline.app /
+d8j0ntlcm91z4.cloudfront.net へは直接アクセス不可。**FloyoとFishと動画保存はローカルPCで実行**し、
+結果JSONをチャットに貼ってもらう運用。
 
-## 4. 制作パイプライン（三層+CM）
-
-1. **開始フレーム（静止画）**: Higgsfieldの nano banana（キャラ参照UUID付き）。終了フレームも nano banana（Qwenは頭部が変わるため禁止）
-2. **本編I2V**: SJinn `create_video_task`（model=seedance2, 720p, 16:9, quality, **duration=max(10, 実尺+2)**）。**同時5タスクまで**。6本目はエラーになるので5本ずつ「波」で投入→完了待ち→次の波
-3. **Floyo**（ローカル実行）: ①Qwenアングル=1ラン4方向 ②LTX Start-End補間（開始+終了フレームから中割り）
-4. **CM**: Higgsfield `generate_video`（seedance_2_0、日本語音声可、15秒上限、9:16対応）と MiniMax H3（**2Kのみ動作。768Pは故障中**）。
-   **絶対則: すべてのCMは制作のどこかで必ずFloyoを使う**（アングル素材をスタートフレームか差し込みカットに）
-
-### よく使うコマンド（ローカルPCで）
+## 4. よく使うコマンド（ローカルPCで）
 
 ```bash
 cd ~/repos/public && git pull
-# Floyoアングル生成（例: CM#4〜10素材）
-node --env-file=tools/floyo/.env tools/floyo/run.mjs --workflow qwen-angle --batch tools/floyo/manifests/ad-angles2.json
-# 実行済みランの結果だけ回収（再課金なし）
-node ... run.mjs --workflow qwen-angle --batch <同じmanifest> --fetch
-# 素材を全部デスクトップに保存（presigned URL失効前に！）
-node works/hashikko-bill/setup-workspace.mjs
-# Fish Audioナレ（2声で全ナレ生成）
-node --env-file=tools/fish/.env tools/fish/generate.mjs --voice "e36ebe,c3f03b" --all
+node works/hashikko-bill/setup-workspace.mjs        # 台帳の全素材をデスクトップへ保存
+node works/hashikko-bill/edit/assemble.mjs          # 本編を1本に自動アセンブル（英語ナレ）
+node works/hashikko-bill/edit/assemble.mjs --ja     # 同・日本語ナレ版
+node --env-file=tools/floyo/.env tools/floyo/run.mjs --workflow qwen-angle --batch <manifest>       # Floyoアングル
+node --env-file=tools/floyo/.env tools/floyo/run.mjs --workflow qwen-angle --batch <同> --fetch     # 再課金なし回収
+python3 works/hashikko-bill/ad/subtitles/render_subs.py   # 字幕クロマキー動画の再生成（要pillow+ffmpeg）
 ```
 
 ## 5. 作品ルール（正典・違反禁止）
 
-1. キャラシートの14キャラ以外を登場させない（モブも正典の脇役のみ）
+1. キャラシートの14キャラ以外を登場させない
 2. 同一キャラを同一シーンに2体出さない
 3. ひかりは弁当の塔を**両手で頭上に**掲げる
 4. 会話は喃語（mm/uu）のみ。口は描かない
-5. テロップ・BGM・音符を映像に焼き込まない（SEは可）。テロップは編集で重ねる
-6. 映像内の文字はすべて**架空文字**（日本語/英語/数字は不可）
-7. CMは架空ブランドのみ（実在ブランド偽装禁止）
-8. ナレ音声: 女性=Hana `c25f78a0-714e-42af-8da3-a399cef94968`、男性=Arthur `30fc8796-ceb6-4a66-b3a7-4a145ef7f346`（seed_audio。感情は（）書き接頭）
+5. テロップ・BGM・音符を映像に焼き込まない（SE可）。文字要素は編集で重ねる
+6. 映像内のプロップ文字はすべて**架空文字**（日本語/英語/数字は不可）
+7. CMは架空ブランドのみ。**CMは必ずどこかでFloyoを使う**
+8. CMナレのセリフはプロンプト内で**全文ひらがな表記**（発音精度対策）＋読点で間を制御
+9. ナレ声: 女性=Hana `c25f78a0-714e-42af-8da3-a399cef94968`、男性=Arthur `30fc8796-ceb6-4a66-b3a7-4a145ef7f346`（seed_audio、感情は（）書き接頭）
+10. 本編I2V: SJinn seedance2 / 720p / 16:9 / quality / duration=max(10,実尺+2) / **同時5タスク上限**
+11. 終了フレーム生成は nano banana（Qwenは頭部が変わるためアングル専用）
+12. 生成物は必ず台帳 `generated.json` に追記（命名: `c{カット}_i2v_v{版}` / `ad_{番号}_{向き}_v{版}` / `vo_{内容}_v{版}`）
 
 ### キャラ参照UUID（Higgsfield）
 TOME=ab614b7b / KABURAGI=c4f0ecbe / UKAI=48c63be0 / KUMOI=a05b985c / LI=3846f10c /
 KUROGANE=7de3b8e2 / YAMATO=4ffb2cf3 / HIKARI=ea03da32 / HIIRAGI=0bc9bf7a /
 BUILDING=84c99ff4 / 廊下セット=3d600592
 
-### 命名規則
-動画=`c{カット}_i2v_v{版}` ／ CM=`ad_{番号}_{向き}_v{版}` ／ ナレ=`vo_{内容}_v{版}`。
-生成したら必ず `generated.json` に追記（kind: i2v_prod / ad_i2v / ad_start_frame / narration_audio / floyo_angle 等）
+## 6. 完成状況（2026-07-31 生成フェーズ完了）
 
-## 6. 現在の進捗（2026-07-31 22時台に更新）
+- ✅ 本編I2V **89本**（C00a古地図+C02〜C78全カット+回想サブカット+キャラ紹介9本）
+- ✅ **本編1本化済み**: hashikko_honpen_v1.mp4（4分56秒・章頭に英語ナレ10本・ラスト14秒ホールド）
+- ✅ CM **14本**（#1〜#3初期版、#4〜#14ひらがな音声版。縦8・横6）
+- ✅ CM英語字幕: クロマキー動画17本+SRT日英34+対訳表
+- ✅ ナレ音声: 日本語10本+英語10本
+- ✅ テロップv3・鏑木ロゴv2・キーアート・キャラシート14体系・絵コンテ89カット
+- ✅ Floyoアングル: ad_a1×4/ad_a3×4/ad_a2×1 回収済み、**CM#4〜10用32枚 生成済み**（結果JSONはMacの`tools/floyo/results/qwen-angle-2026-07-31T12-39-59-588Z.json`。setup-workspace再実行で保存）
 
-### 完了
-- キャラシート14体系・絵コンテ89カット・スタートフレーム全カット・テロップv3・キーアート
-- **本編I2V 完成58本+**: C00a(古地図)・C02〜C60b（C52欠番。URLは台帳の kind=i2v_prod）
-- **ナレ音声 日英コンプリート**: 日本語10本+英語10本（冒頭/締め/B〜I章、Hana声。kind=narration_audio）
-- **CM全14本の映像完成**（音声内蔵。#1〜#3=初期版、#4〜#14=セリフ全文ひらがな表記版）
-  - 横: #1,#3(60秒4パート),#4,#7,#8,#9 ／ 縦: #2,#5,#6,#10,#11,#12,#13,#14
-- **CM英語字幕クロマキー動画17本**: `ad/subtitles/out/`にコミット済み（#00B140、タイミングは`subs-spec.json`のJP/EN対訳が正。再生成は`render_subs.py`）
-- Floyoアングル ad_a1×4 / ad_a3×4 / ad_a2×1 回収済み
+## 7. 残作業（優先順）
 
-### 🎉 生成フェーズ完了（2026-07-31 23時台）
-**本編I2V=89本（C00a+C02〜C78全カット+回想サブカット+キャラ紹介9本）が全部完成し台帳に記録済み。**
-SJinnの実行待ちタスクはゼロ。残る回収物は「CM#4〜10用Floyoアングル32枚」
-（ローカルで `ad-angles2.json` 実行済みのはず→結果JSONを新セッションに貼る）のみ。
+1. **Floyoアングル32枚の保存確認**: ローカルで `git pull && node works/hashikko-bill/setup-workspace.mjs`（壊れたJSONをスキップする修正済み）。presigned URL失効時は `--fetch` で再取得
+2. **検品とリテイク**: 本編89本の目視検品。NGカットはSJinn seedance2で同プロンプト再生成（ルール§5-10）
+3. **編集の仕上げ**: ラフカット(hashikko_honpen_v1)にSE/BGM・テロップ(telops.html)・タイトル(アウトロ14秒の場所)を重ねる。CMは字幕クロマキーを載せる
+4. **WFAIA応募**: https://wfaia2026.floyo.ai/ アニメ部門=本編、広告部門=CM選抜（推し: #1 HOTARU横 or #14 雲井占い縦）
+5. （任意）H3版CM: Floyoアングル32枚を検品→MiniMax H3（**2Kのみ・768Pは故障中**）で10秒生成
+6. （任意）Floyo Start-End 7カット: 終了フレームをnano bananaで作成→ltx-startendで補間
+7. （任意）Fish Audio 2声版: `node --env-file=tools/fish/.env tools/fish/generate.mjs --voice "e36ebe,c3f03b" --all`
 
-## 7. 残作業リスト（優先順）
+## 8. ハマりどころ（同じ穴に落ちない）
 
-1. **実行中タスクの回収**（上の表）→ 台帳追記 → setup-workspace で保存
-2. **本編I2V続き**: C61〜C78 の約17カット。`tools/floyo/manifests/i2v-prod.json` のプロンプト+開始フレームをそのまま SJinn seedance2（720p/16:9/quality/10秒）に投入。**5本/波**
-3. **キャラ紹介9カット**: `intro/intro-i2v.json` に投入マニフェスト作成済み（SJinnにそのまま投入）
-4. **短尺再生成**: C02〜C18 のうち初期に短い尺で作った16本を10秒版v2で作り直し（同manifestのプロンプト使用）
-5. **CMのH3版量産（任意）**: ad-angles2 の結果が来たら検品→合格フレームを MiniMax H3（**2K**・10秒）のスタートフレームに（seedance2.0版は#1〜#14完成済みなので、H3版はバリエーション扱い）
-6. **Floyo Start-End 7カット**: 終了フレームを nano banana で量産→ ltx-startend で補間
-7. **Fish Audio 2声版**: ローカルで `--voice "e36ebe,c3f03b" --all`
-8. **編集**: 本編を300秒以内に（超過46秒分は余白詰め）。テロップ・日英ナレ・SE・CM英語字幕クロマキーを重ねる
-
-## 8. 過去のハマりどころ（同じ穴に落ちない）
-
-- **H3の768Pは故障中**（10本連続failed）。H3は必ず2Kで
-- SJinnは**同時5タスクまで**。超えると task_creation_failed
-- SJinn出力URL（edit.comfyonline.app）は一時URL。**早めにローカル保存**
-- Floyoの presigned URL は約24時間で失効。`--fetch` で再取得可能（再課金なし）
-- Floyoの `expand` は `outputs.presigned_url`（ドット）。`presigned_url_expires_in` は 84600 以下
-- Qwenアングルで自由編集する時は free_prompt を `120.prompt_1` に文字列で（空文字リンクはNG）
-- Cloudflare 502 が散発 → 60〜90秒待って再送すれば通る
+- SJinnは**同時5タスクまで**。6本目はtask_creation_failed → 5本/波で運用
+- SJinn出力URL（edit.comfyonline.app）は一時URL。**早めにsetup-workspaceで保存**
+- Floyo presigned URLは約24時間で失効。`--fetch`で再取得（再課金なし）。`expand=outputs.presigned_url`（ドット）、`presigned_url_expires_in`≦84600
+- MiniMax H3の768Pは故障中（10連続failed実績）。**必ず2K**
+- Higgsfieldで「IN THE DARK」等のプリセット提案が出たら `declined_preset_id` を付けて再送
+- seed_audioは連投すると429 → 60〜90秒待って再送
+- コンテナのffmpeg-staticは**drawtext非搭載** → 字幕はPillowでPNG描画→concat方式（render_subs.py）
+- CSSの`background-clip:text`は子要素にtransformがあると壊れる → ロゴ類はSVGグラデ塗りで作字
+- 台帳への記録漏れに注意（C26漏れの前科あり）。生成→即台帳→即コミットの順を守る
