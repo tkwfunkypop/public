@@ -6416,6 +6416,71 @@
       "task_id": "cb329f72-a106-4db4-89fd-a186e6bdd26d",
       "url": "https://edit.comfyonline.app/result/27f4646a-2de2-4399-9b46-b6e2225f4fdc.mp4",
       "note": "本線I2V C6: 霧のみ・奥の明滅。URLはSJinn一時ストレージのため早めにsetup-workspace.mjsでローカル保存"
+    },
+    {
+      "id": "c7_i2v_v1",
+      "kind": "i2v_prod",
+      "cut": "7",
+      "provider": "sjinn",
+      "model": "seedance2",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 5,
+      "task_id": "c2523053-34e2-4c43-84fd-4910d6600d3b",
+      "url": "https://edit.comfyonline.app/result/846d717d-7a2a-4212-b0e9-be82efdfc81d.mp4",
+      "note": "本線I2V C7: 白封筒が机に滑り込む。URLは一時ストレージ、setup-workspace.mjsで保存"
+    },
+    {
+      "id": "c8_i2v_v1",
+      "kind": "i2v_prod",
+      "cut": "8",
+      "provider": "sjinn",
+      "model": "seedance2",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 5,
+      "task_id": "30cb1189-942f-4ff2-9da9-b0e1cf671b22",
+      "url": "https://edit.comfyonline.app/result/80760618-2ab1-42b6-9742-1131568f2c55.mp4",
+      "note": "本線I2V C8: 白紙依頼書の接写・影。URLは一時ストレージ、setup-workspace.mjsで保存"
+    },
+    {
+      "id": "c10_i2v_v1",
+      "kind": "i2v_prod",
+      "cut": "10",
+      "provider": "sjinn",
+      "model": "seedance2",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 5,
+      "task_id": "01f064de-bf8a-4fbf-a275-260067f402d8",
+      "url": "https://edit.comfyonline.app/result/2e588177-51a5-41ec-ab92-df89d707fb2b.mp4",
+      "note": "本線I2V C10: 七分割・紙を捨てる（実尺5s余白なし、要編集判断）。URLは一時ストレージ、setup-workspace.mjsで保存"
+    },
+    {
+      "id": "c11_i2v_v1",
+      "kind": "i2v_prod",
+      "cut": "11",
+      "provider": "sjinn",
+      "model": "seedance2",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 5,
+      "task_id": "8eb02561-1952-42c4-bbd3-fded188263c4",
+      "url": "https://edit.comfyonline.app/result/4dcaccc9-b86c-4181-8b95-f1e0a2af72fa.mp4",
+      "note": "本線I2V C11: 朝の机・白紙の手紙。URLは一時ストレージ、setup-workspace.mjsで保存"
+    },
+    {
+      "id": "c12_i2v_v1",
+      "kind": "i2v_prod",
+      "cut": "12",
+      "provider": "sjinn",
+      "model": "seedance2",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 6,
+      "task_id": "4975022a-3dfb-4634-81bb-2767bc4d5281",
+      "url": "https://edit.comfyonline.app/result/5a78d5ef-07ce-47d2-9724-a7a29550b457.mp4",
+      "note": "本線I2V C12: ひかり弁当頭上・階段へ。URLは一時ストレージ、setup-workspace.mjsで保存"
     }
   ]
 }
