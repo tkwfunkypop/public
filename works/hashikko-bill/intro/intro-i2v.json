@@ -1,0 +1,104 @@
+{
+ "note": "キャラ紹介9カット。SJinn seedance2(720p/16:9/quality/10秒)に投入。所作→最後にカメラ目線で静止",
+ "items": [
+  {
+   "id": "intro_tome_v1",
+   "cut": "intro_tome",
+   "inputs": {
+    "start_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_014823_ab614b7b-a178-4e78-971b-fb0c8713b121.png",
+    "prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: TOME closes her ledger book with a soft pat, straightens her back and folds her white-gloved hands, then slowly turns to face the camera and holds perfectly still, looking straight into the lens. CAMERA: Static medium shot. DURATION: about 3 seconds of motion then a long held pose. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds (mm,uu); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable. Motions are small, precise and stop-motion-like.",
+    "gen_sec": 10,
+    "gen_res": "720p",
+    "aspect": "16:9"
+   }
+  },
+  {
+   "id": "intro_kaburagi_v1",
+   "cut": "intro_kaburagi",
+   "inputs": {
+    "start_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_121938_c4f0ecbe-977f-4998-a728-3713a6666dff.png",
+    "prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: KABURAGI spins a small gear on her fingertip, catches it and tucks it away, then slowly turns to face the camera and holds perfectly still, looking straight into the lens. CAMERA: Static medium shot. DURATION: about 3 seconds of motion then a long held pose. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds (mm,uu); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable. Motions are small, precise and stop-motion-like.",
+    "gen_sec": 10,
+    "gen_res": "720p",
+    "aspect": "16:9"
+   }
+  },
+  {
+   "id": "intro_ukai_v1",
+   "cut": "intro_ukai",
+   "inputs": {
+    "start_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_124408_48c63be0-2009-4281-9bca-22e72b7d1070.png",
+    "prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: UKAI tucks his red book under one arm and sweeps the abacus beads flat with one clean stroke, then slowly turns to face the camera and holds perfectly still, looking straight into the lens. CAMERA: Static medium shot. DURATION: about 3 seconds of motion then a long held pose. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds (mm,uu); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable. Motions are small, precise and stop-motion-like.",
+    "gen_sec": 10,
+    "gen_res": "720p",
+    "aspect": "16:9"
+   }
+  },
+  {
+   "id": "intro_kumoi_v1",
+   "cut": "intro_kumoi",
+   "inputs": {
+    "start_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_014735_a05b985c-42ca-44e3-91fa-53a3685b5edc.png",
+    "prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: KUMOI, without lifting her face from her observation notebook, raises one finger and points at the sky, then slowly turns to face the camera and holds perfectly still, looking straight into the lens. CAMERA: Static medium shot. DURATION: about 3 seconds of motion then a long held pose. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds (mm,uu); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable. Motions are small, precise and stop-motion-like.",
+    "gen_sec": 10,
+    "gen_res": "720p",
+    "aspect": "16:9"
+   }
+  },
+  {
+   "id": "intro_li_v1",
+   "cut": "intro_li",
+   "inputs": {
+    "start_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_014300_3846f10c-2ccf-4f58-b272-0011759161f0.png",
+    "prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: LI opens the stopper of a tiny perfume vial and lets one breath of scent drift, then slowly turns to face the camera and holds perfectly still, looking straight into the lens. CAMERA: Static medium shot. DURATION: about 3 seconds of motion then a long held pose. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds (mm,uu); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable. Motions are small, precise and stop-motion-like.",
+    "gen_sec": 10,
+    "gen_res": "720p",
+    "aspect": "16:9"
+   }
+  },
+  {
+   "id": "intro_kurogane_v1",
+   "cut": "intro_kurogane",
+   "inputs": {
+    "start_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_124344_7de3b8e2-3359-4d3e-bca3-66b3479f3231.png",
+    "prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: KUROGANE picks up a single piece of type, holds it to the light and adjusts his goggles, then slowly turns to face the camera and holds perfectly still, looking straight into the lens. CAMERA: Static medium shot. DURATION: about 3 seconds of motion then a long held pose. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds (mm,uu); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable. Motions are small, precise and stop-motion-like.",
+    "gen_sec": 10,
+    "gen_res": "720p",
+    "aspect": "16:9"
+   }
+  },
+  {
+   "id": "intro_yamato_v1",
+   "cut": "intro_yamato",
+   "inputs": {
+    "start_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_014219_4ffb2cf3-68f6-48d9-9981-06ef73ba934a.png",
+    "prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: YAMATO slips her pen behind her ear and hugs her notebook to her chest, then slowly turns to face the camera and holds perfectly still, looking straight into the lens. CAMERA: Static medium shot. DURATION: about 3 seconds of motion then a long held pose. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds (mm,uu); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable. Motions are small, precise and stop-motion-like.",
+    "gen_sec": 10,
+    "gen_res": "720p",
+    "aspect": "16:9"
+   }
+  },
+  {
+   "id": "intro_hikari_v1",
+   "cut": "intro_hikari",
+   "inputs": {
+    "start_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_103221_ea03da32-5f13-41ad-a2c8-eed0458cbfe6.png",
+    "prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: HIKARI lifts the tower of bento boxes above her head with both hands and gives one small happy hop, then slowly turns to face the camera and holds perfectly still, looking straight into the lens. CAMERA: Static medium shot. DURATION: about 3 seconds of motion then a long held pose. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds (mm,uu); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable. Motions are small, precise and stop-motion-like.",
+    "gen_sec": 10,
+    "gen_res": "720p",
+    "aspect": "16:9"
+   }
+  },
+  {
+   "id": "intro_hiiragi_v1",
+   "cut": "intro_hiiragi",
+   "inputs": {
+    "start_image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260729_131752_0bc9bf7a-7664-4eb9-82e8-81120f72cefc.png",
+    "prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: HIIRAGI jingles his key ring once; the small lamp on his chest blinks a single warm pulse, then slowly turns to face the camera and holds perfectly still, looking straight into the lens. CAMERA: Static medium shot. DURATION: about 3 seconds of motion then a long held pose. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds (mm,uu); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable. Motions are small, precise and stop-motion-like.",
+    "gen_sec": 10,
+    "gen_res": "720p",
+    "aspect": "16:9"
+   }
+  }
+ ]
+}
