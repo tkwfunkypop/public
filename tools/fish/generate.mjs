@@ -74,9 +74,12 @@ if (flag('search') || opt('search')) {
     console.log(`${v._id ?? v.id}  |  ${v.title}  |  使用${v.task_count ?? "?"}回  |  ${(v.languages ?? []).join(',')}`);
   }
 } else if (flag('audition')) {
+  // --audition            … 使用回数上位15声すべてで試聴生成
+  // --audition "朗読"     … キーワード検索のヒット全声(最大15)で試聴生成
+  const kw = opt('audition') && !opt('audition').startsWith('--') ? opt('audition') : '';
   const line = byId.get('vo_c02');
-  const voices = (await searchVoices('')).slice(0, 5);
-  console.log(`聴き比べ: 上位${voices.length}ボイスで「${line.text}」を生成`);
+  const voices = await searchVoices(kw);
+  console.log(`聴き比べ: ${kw ? `「${kw}」検索の` : '上位'}${voices.length}ボイスで「${line.text}」を生成`);
   for (const v of voices) {
     const id = v._id ?? v.id;
     const safe = String(v.title).replace(/[^\w぀-ヿ一-鿿-]+/g, '_').slice(0, 24);
