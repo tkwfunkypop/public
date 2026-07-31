@@ -7342,6 +7342,50 @@
    "mime_type": "video/mp4",
    "model": "seedance2-720p",
    "note": "本線I2V 第11波"
+  },
+  {
+   "id": "c49_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "49",
+   "url": "https://edit.comfyonline.app/result/3302c1db-8e95-4b33-ac35-bec4d231925e.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第12波"
+  },
+  {
+   "id": "c49b_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "49b",
+   "url": "https://edit.comfyonline.app/result/48fb92e3-4711-4e89-99bd-653d546b01db.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第12波"
+  },
+  {
+   "id": "c50_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "50",
+   "url": "https://edit.comfyonline.app/result/2d2f8720-b5d1-4e47-8731-ac654fefc9a2.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第12波"
+  },
+  {
+   "id": "c51_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "51",
+   "url": "https://edit.comfyonline.app/result/1d03548c-71bb-4b1e-ba5a-03801e72ef20.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第12波"
+  },
+  {
+   "id": "vo_seq_i_en_v1",
+   "kind": "narration_audio",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_130618_bfebb002-cad1-4523-811c-0de3ef122879.wav",
+   "mime_type": "audio/wav",
+   "model": "seed_audio",
+   "note": "I章ナレ英語版 Hana 11.6s"
   }
  ]
 }
