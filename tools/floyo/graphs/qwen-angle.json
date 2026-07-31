@@ -1,0 +1,300 @@
+{
+ "41": {
+  "inputs": {
+   "image": "#community_inputs/camera-angle-control-wit-r6fTN0GS/agi_aibusi_Realistic_candid_night_photo_gorgeous_young_Japane_0f00fd26-fa04-4988-8ace-e0c0ece5dcba_3 (1).png"
+  },
+  "class_type": "LoadImage",
+  "_meta": {
+   "title": "画像を読み込む"
+  }
+ },
+ "93": {
+  "inputs": {
+   "clip_name": "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+   "type": "qwen_image",
+   "device": "default"
+  },
+  "class_type": "CLIPLoader",
+  "_meta": {
+   "title": "CLIPを読み込む"
+  }
+ },
+ "94": {
+  "inputs": {
+   "shift": 3.1,
+   "model": [
+    "111",
+    0
+   ]
+  },
+  "class_type": "ModelSamplingAuraFlow",
+  "_meta": {
+   "title": "モデルサンプリングオーラフロー"
+  }
+ },
+ "95": {
+  "inputs": {
+   "vae_name": "qwen_image_vae.safetensors"
+  },
+  "class_type": "VAELoader",
+  "_meta": {
+   "title": "VAEを読み込む"
+  }
+ },
+ "99": {
+  "inputs": {
+   "strength": 1,
+   "pre_cfg": false,
+   "model": [
+    "94",
+    0
+   ]
+  },
+  "class_type": "CFGNorm",
+  "_meta": {
+   "title": "CFG正規化"
+  }
+ },
+ "102": {
+  "inputs": {
+   "samples": [
+    "107",
+    0
+   ],
+   "vae": [
+    "95",
+    0
+   ]
+  },
+  "class_type": "VAEDecode",
+  "_meta": {
+   "title": "VAEデコード"
+  }
+ },
+ "106": {
+  "inputs": {
+   "lora_name": "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-bf16.safetensors",
+   "strength_model": 1,
+   "model": [
+    "127",
+    0
+   ]
+  },
+  "class_type": "LoraLoaderModelOnly",
+  "_meta": {
+   "title": "LoRAローダーモデルのみ"
+  }
+ },
+ "107": {
+  "inputs": {
+   "seed": 653017246953374,
+   "steps": 4,
+   "cfg": 1,
+   "sampler_name": "euler",
+   "scheduler": "simple",
+   "denoise": 1,
+   "model": [
+    "99",
+    0
+   ],
+   "positive": [
+    "110",
+    0
+   ],
+   "negative": [
+    "108",
+    0
+   ],
+   "latent_image": [
+    "110",
+    1
+   ]
+  },
+  "class_type": "KSampler",
+  "_meta": {
+   "title": "Kサンプラー"
+  }
+ },
+ "108": {
+  "inputs": {
+   "prompt": "",
+   "clip": [
+    "93",
+    0
+   ],
+   "vae": [
+    "95",
+    0
+   ],
+   "image1": [
+    "41",
+    0
+   ]
+  },
+  "class_type": "TextEncodeQwenImageEditPlus",
+  "_meta": {
+   "title": "TextEncodeQwenImageEditPlus"
+  }
+ },
+ "109": {
+  "inputs": {
+   "horizontal_angle": 0,
+   "vertical_angle": 0,
+   "zoom": 4,
+   "default_prompts": false,
+   "camera_view": false,
+   "image": [
+    "41",
+    0
+   ]
+  },
+  "class_type": "QwenMultiangleCameraNode",
+  "_meta": {
+   "title": "Qwen Multiangle Camera"
+  }
+ },
+ "110": {
+  "inputs": {
+   "prompt": [
+    "120",
+    1
+   ],
+   "vl_resize_indexs": "1,2,3",
+   "main_image_index": 1,
+   "target_size": 1536,
+   "target_vl_size": 384,
+   "upscale_method": "lanczos",
+   "crop_method": "pad",
+   "instruction": "Describe the key features of the input image (color, shape, size, texture, objects, background), then explain how the user's text instruction should alter or modify the image. Generate a new image that meets the user's requirements while maintaining consistency with the original input where appropriate.",
+   "clip": [
+    "93",
+    0
+   ],
+   "vae": [
+    "95",
+    0
+   ],
+   "image1": [
+    "41",
+    0
+   ]
+  },
+  "class_type": "TextEncodeQwenImageEditPlusPro_lrzjason",
+  "_meta": {
+   "title": "TextEncodeQwenImageEditPlusPro lrzjason"
+  }
+ },
+ "111": {
+  "inputs": {
+   "lora_name": "qwen-image-edit-2511-multiple-angles-lora.safetensors",
+   "strength_model": 1,
+   "model": [
+    "106",
+    0
+   ]
+  },
+  "class_type": "LoraLoaderModelOnly",
+  "_meta": {
+   "title": "LoRAローダーモデルのみ"
+  }
+ },
+ "117": {
+  "inputs": {
+   "horizontal_angle": 0,
+   "vertical_angle": 60,
+   "zoom": 8,
+   "default_prompts": false,
+   "camera_view": false,
+   "image": [
+    "41",
+    0
+   ]
+  },
+  "class_type": "QwenMultiangleCameraNode",
+  "_meta": {
+   "title": "Qwen Multiangle Camera"
+  }
+ },
+ "118": {
+  "inputs": {
+   "horizontal_angle": 266,
+   "vertical_angle": -9,
+   "zoom": 5,
+   "default_prompts": false,
+   "camera_view": false,
+   "image": [
+    "41",
+    0
+   ]
+  },
+  "class_type": "QwenMultiangleCameraNode",
+  "_meta": {
+   "title": "Qwen Multiangle Camera"
+  }
+ },
+ "119": {
+  "inputs": {
+   "horizontal_angle": 110,
+   "vertical_angle": -15,
+   "zoom": 3,
+   "default_prompts": false,
+   "camera_view": false,
+   "image": [
+    "41",
+    0
+   ]
+  },
+  "class_type": "QwenMultiangleCameraNode",
+  "_meta": {
+   "title": "Qwen Multiangle Camera"
+  }
+ },
+ "120": {
+  "inputs": {
+   "prompt_1": [
+    "109",
+    0
+   ],
+   "prompt_2": [
+    "117",
+    0
+   ],
+   "prompt_3": [
+    "118",
+    0
+   ],
+   "prompt_4": [
+    "119",
+    0
+   ],
+   "prompt_5": ""
+  },
+  "class_type": "easy promptList",
+  "_meta": {
+   "title": "easy promptList"
+  }
+ },
+ "127": {
+  "inputs": {
+   "unet_name": "qwen_image_edit_2511_bf16.safetensors",
+   "weight_dtype": "default"
+  },
+  "class_type": "UNETLoader",
+  "_meta": {
+   "title": "拡散モデルを読み込む"
+  }
+ },
+ "130": {
+  "inputs": {
+   "filename_prefix": "20260731_165537_CameraAC",
+   "images": [
+    "102",
+    0
+   ]
+  },
+  "class_type": "SaveImage",
+  "_meta": {
+   "title": "画像を保存"
+  }
+ }
+}

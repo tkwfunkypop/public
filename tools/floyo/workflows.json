@@ -1,25 +1,38 @@
 {
-  "_readme": "endpoint は全ワークフロー共通で https://api.floyo.ai/runs（run.mjs に内蔵）。ここには graphs/<key>.json への入力差し込み位置（patches）だけを書く。patches のノードIDは graphs/<key>.json が届いたら特定して記入する。論理名が *_image_url のものは自動で /files にアップロードされ input_path が差し込まれる",
+  "_readme": "endpoint は全ワークフロー共通で https://api.floyo.ai/runs（run.mjs に内蔵）。patches はマニフェストの inputs キー → graphs/<key>.json のノード差し込み位置。*_image_url は自動で /files にアップロードされ input_path が差し込まれる",
+  "qwen-angle": {
+    "label": "WFAIA_Camera Angle Control with Qwen",
+    "source": "https://www.floyo.ai/~/e7ykyihd/c/camera-angle-control-with-qwen-l3zx6wfadfwk",
+    "run_prefix": "wfaia_qwen",
+    "patches": {
+      "image_url": { "node": "41", "field": "image" },
+      "h_angle": { "node": "109", "field": "horizontal_angle" },
+      "v_angle": { "node": "109", "field": "vertical_angle" },
+      "zoom": { "node": "109", "field": "zoom" },
+      "free_prompt": { "node": "120", "field": "prompt_1" },
+      "prompt_2": { "node": "120", "field": "prompt_2" },
+      "prompt_3": { "node": "120", "field": "prompt_3" },
+      "prompt_4": { "node": "120", "field": "prompt_4" },
+      "seed": { "node": "107", "field": "seed" }
+    },
+    "note": "デフォルトでは109(メイン)＋117/118/119(プリセット3種)の計4アングルが1ランで出る。単一アングルにしたいときは prompt_2〜4 に \"\" を渡してリストを潰す。free_prompt を渡すとアングルではなく自由文編集（ポーズ変更等）になる（Qwen Image Edit 2511）"
+  },
   "ltx-startend": {
     "label": "WFAIA_LTX2.3_Start_End_Frame_opensauce",
     "source": "https://www.floyo.ai/~/c/ltx2-3-start-end-frame-opensauce-xr5n8bl7iy4k",
-    "run_prefix": "wfaia_ltx_se",
+    "run_prefix": "wfaia_ltxse",
     "patches": {
-      "start_image_url": { "node": "TODO", "field": "image" },
-      "end_image_url": { "node": "TODO", "field": "image" },
-      "prompt": { "node": "TODO", "field": "text" },
-      "noise_seed": { "node": "274", "field": "noise_seed" }
+      "start_image_url": { "node": "349", "field": "image" },
+      "end_image_url": { "node": "437", "field": "image" },
+      "prompt": { "node": "304", "field": "text" },
+      "negative_prompt": { "node": "315", "field": "text" },
+      "length_frames": { "node": "301", "field": "value" },
+      "fps": { "node": "300", "field": "value" },
+      "width": { "node": "314", "field": "value" },
+      "height": { "node": "299", "field": "value" },
+      "seed_a": { "node": "274", "field": "noise_seed" },
+      "seed_b": { "node": "275", "field": "noise_seed" }
     },
-    "note": "graphs/ltx-startend.json（Workflow JSON only）到着後、LoadImage×2（start/end）・プロンプトTextノード・秒数/フレーム数ノードのIDを特定して記入"
-  },
-  "qwen-angle": {
-    "label": "WFAIA_Camera_Angle_Control_with_Qwen",
-    "source": "https://www.floyo.ai/~/e7ykyihd/c/camera-angle-control-with-qwen-l3zx6wfadfwk",
-    "run_prefix": "wfaia_qwen_angle",
-    "patches": {
-      "image_url": { "node": "TODO", "field": "image" },
-      "angle_prompt": { "node": "TODO", "field": "text" }
-    },
-    "note": "graphs/qwen-angle.json 到着後にノードIDを記入"
+    "note": "長さはフレーム数（fps24）: 5秒=121, 10秒=241（24n+1）。デフォルト1920x1080・音声も同時生成される（SEとして使えるが最終音は編集が正）。negative_promptは既定 'pc game, console game, video game, cartoon, childish, ugly' を上書き可"
   }
 }

@@ -1,0 +1,1022 @@
+{
+ "274": {
+  "inputs": {
+   "noise_seed": 42
+  },
+  "class_type": "RandomNoise",
+  "_meta": {
+   "title": "ランダムノイズ"
+  }
+ },
+ "275": {
+  "inputs": {
+   "noise_seed": 900417071850731
+  },
+  "class_type": "RandomNoise",
+  "_meta": {
+   "title": "ランダムノイズ"
+  }
+ },
+ "276": {
+  "inputs": {
+   "video_latent": [
+    "381",
+    0
+   ],
+   "audio_latent": [
+    "309",
+    1
+   ]
+  },
+  "class_type": "LTXVConcatAVLatent",
+  "_meta": {
+   "title": "LTXVConcatAVLatent"
+  }
+ },
+ "279": {
+  "inputs": {
+   "sampler_name": "euler_cfg_pp"
+  },
+  "class_type": "KSamplerSelect",
+  "_meta": {
+   "title": "Kサンプラー選択"
+  }
+ },
+ "280": {
+  "inputs": {
+   "sigmas": "0.909375, 0.725, 0.421875, 0.0"
+  },
+  "class_type": "ManualSigmas",
+  "_meta": {
+   "title": "マニュアルシグマ"
+  }
+ },
+ "282": {
+  "inputs": {
+   "cfg": 1,
+   "model": [
+    "331",
+    0
+   ],
+   "positive": [
+    "284",
+    0
+   ],
+   "negative": [
+    "284",
+    1
+   ]
+  },
+  "class_type": "CFGGuider",
+  "_meta": {
+   "title": "CFGガイダー"
+  }
+ },
+ "283": {
+  "inputs": {
+   "noise": [
+    "275",
+    0
+   ],
+   "guider": [
+    "316",
+    0
+   ],
+   "sampler": [
+    "291",
+    0
+   ],
+   "sigmas": [
+    "308",
+    0
+   ],
+   "latent_image": [
+    "306",
+    0
+   ]
+  },
+  "class_type": "SamplerCustomAdvanced",
+  "_meta": {
+   "title": "カスタムサンプラー（高度）"
+  }
+ },
+ "284": {
+  "inputs": {
+   "positive": [
+    "305",
+    0
+   ],
+   "negative": [
+    "305",
+    1
+   ],
+   "latent": [
+    "309",
+    0
+   ]
+  },
+  "class_type": "LTXVCropGuides",
+  "_meta": {
+   "title": "LTXVCropGuides"
+  }
+ },
+ "287": {
+  "inputs": {
+   "samples": [
+    "284",
+    2
+   ],
+   "upscale_model": [
+    "313",
+    0
+   ],
+   "vae": [
+    "433",
+    2
+   ]
+  },
+  "class_type": "LTXVLatentUpsampler",
+  "_meta": {
+   "title": "LTXVLatentUpsampler"
+  }
+ },
+ "291": {
+  "inputs": {
+   "sampler_name": "euler_ancestral_cfg_pp"
+  },
+  "class_type": "KSamplerSelect",
+  "_meta": {
+   "title": "Kサンプラー選択"
+  }
+ },
+ "292": {
+  "inputs": {
+   "expression": "a/2",
+   "values.a": [
+    "402",
+    1
+   ]
+  },
+  "class_type": "ComfyMathExpression",
+  "_meta": {
+   "title": "数式"
+  }
+ },
+ "294": {
+  "inputs": {
+   "expression": "a/2",
+   "values.a": [
+    "405",
+    1
+   ]
+  },
+  "class_type": "ComfyMathExpression",
+  "_meta": {
+   "title": "数式"
+  }
+ },
+ "295": {
+  "inputs": {
+   "width": [
+    "292",
+    1
+   ],
+   "height": [
+    "294",
+    1
+   ],
+   "length": [
+    "301",
+    0
+   ],
+   "batch_size": 1
+  },
+  "class_type": "EmptyLTXVLatentVideo",
+  "_meta": {
+   "title": "空のLTXV潜在ビデオ"
+  }
+ },
+ "298": {
+  "inputs": {
+   "expression": "a",
+   "values.a": [
+    "300",
+    0
+   ]
+  },
+  "class_type": "ComfyMathExpression",
+  "_meta": {
+   "title": "数式"
+  }
+ },
+ "299": {
+  "inputs": {
+   "value": 1080
+  },
+  "class_type": "PrimitiveInt",
+  "_meta": {
+   "title": "Height"
+  }
+ },
+ "300": {
+  "inputs": {
+   "value": 24
+  },
+  "class_type": "PrimitiveInt",
+  "_meta": {
+   "title": "Frame Rate"
+  }
+ },
+ "301": {
+  "inputs": {
+   "value": 241
+  },
+  "class_type": "PrimitiveInt",
+  "_meta": {
+   "title": "Length"
+  }
+ },
+ "304": {
+  "inputs": {
+   "text": "Create a soft cinematic image-video style beach scene.\nA young woman in a white crochet dress stands by a bright tropical ocean, then naturally transitions into walking along the beach from behind.\nKeep the same face, hairstyle, outfit, body shape, and atmosphere consistent between both frames.\n\nGentle sea breeze moves her hair and dress.\nSoft sunlight, sparkling ocean, clean white sand, airy summer resort mood.\nNatural slow camera movement, shallow depth of field, soft highlights, subtle lens flare, realistic skin texture.\n\nElegant, calm, refreshing, high-end Japanese image video style.",
+   "clip": [
+    "434",
+    0
+   ]
+  },
+  "class_type": "CLIPTextEncode",
+  "_meta": {
+   "title": "CLIPテキストエンコード（プロンプト）"
+  }
+ },
+ "305": {
+  "inputs": {
+   "frame_rate": [
+    "298",
+    0
+   ],
+   "positive": [
+    "304",
+    0
+   ],
+   "negative": [
+    "315",
+    0
+   ]
+  },
+  "class_type": "LTXVConditioning",
+  "_meta": {
+   "title": "LTXV条件付け"
+  }
+ },
+ "306": {
+  "inputs": {
+   "video_latent": [
+    "350",
+    0
+   ],
+   "audio_latent": [
+    "307",
+    0
+   ]
+  },
+  "class_type": "LTXVConcatAVLatent",
+  "_meta": {
+   "title": "LTXVConcatAVLatent"
+  }
+ },
+ "307": {
+  "inputs": {
+   "frames_number": [
+    "301",
+    0
+   ],
+   "frame_rate": [
+    "298",
+    1
+   ],
+   "batch_size": 1,
+   "audio_vae": [
+    "435",
+    0
+   ]
+  },
+  "class_type": "LTXVEmptyLatentAudio",
+  "_meta": {
+   "title": "LTXV 空のラテントオーディオ"
+  }
+ },
+ "308": {
+  "inputs": {
+   "sigmas": "1., 0.99375, 0.9875, 0.98125, 0.975, 0.909375, 0.725, 0.421875, 0.0"
+  },
+  "class_type": "ManualSigmas",
+  "_meta": {
+   "title": "マニュアルシグマ"
+  }
+ },
+ "309": {
+  "inputs": {
+   "av_latent": [
+    "283",
+    0
+   ]
+  },
+  "class_type": "LTXVSeparateAVLatent",
+  "_meta": {
+   "title": "LTXVSeparateAVLatent"
+  }
+ },
+ "310": {
+  "inputs": {
+   "noise": [
+    "274",
+    0
+   ],
+   "guider": [
+    "282",
+    0
+   ],
+   "sampler": [
+    "291",
+    0
+   ],
+   "sigmas": [
+    "280",
+    0
+   ],
+   "latent_image": [
+    "276",
+    0
+   ]
+  },
+  "class_type": "SamplerCustomAdvanced",
+  "_meta": {
+   "title": "カスタムサンプラー（高度）"
+  }
+ },
+ "313": {
+  "inputs": {
+   "model_name": "ltx-2.3-spatial-upscaler-x2-1.1.safetensors"
+  },
+  "class_type": "LatentUpscaleModelLoader",
+  "_meta": {
+   "title": "Latent アップスケールモデルを読み込む"
+  }
+ },
+ "314": {
+  "inputs": {
+   "value": 1920
+  },
+  "class_type": "PrimitiveInt",
+  "_meta": {
+   "title": "Width"
+  }
+ },
+ "315": {
+  "inputs": {
+   "text": "pc game, console game, video game, cartoon, childish, ugly",
+   "clip": [
+    "434",
+    0
+   ]
+  },
+  "class_type": "CLIPTextEncode",
+  "_meta": {
+   "title": "CLIPテキストエンコード（プロンプト）"
+  }
+ },
+ "316": {
+  "inputs": {
+   "cfg": 1,
+   "model": [
+    "331",
+    0
+   ],
+   "positive": [
+    "305",
+    0
+   ],
+   "negative": [
+    "305",
+    1
+   ]
+  },
+  "class_type": "CFGGuider",
+  "_meta": {
+   "title": "CFGガイダー"
+  }
+ },
+ "322": {
+  "inputs": {
+   "lora_name": "ltxv-098-ic-lora-detailer-comfyui.safetensors",
+   "strength_model": 0.7500000000000001,
+   "video": 1,
+   "video_to_audio": 1,
+   "audio": 1,
+   "audio_to_video": 1,
+   "other": 1,
+   "model": [
+    "341",
+    0
+   ]
+  },
+  "class_type": "LTX2LoraLoaderAdvanced",
+  "_meta": {
+   "title": "LTX2 LoRA Loader Advanced"
+  }
+ },
+ "325": {
+  "inputs": {
+   "eta": 0.5,
+   "sampler_name": "linear/euler",
+   "seed": 427595108744566,
+   "bongmath": true,
+   "options": [
+    "327",
+    0
+   ],
+   "options 2": [
+    "355",
+    0
+   ]
+  },
+  "class_type": "ClownSampler_Beta",
+  "_meta": {
+   "title": "ClownSampler"
+  }
+ },
+ "327": {
+  "inputs": {
+   "noise_type_sde": "gaussian",
+   "noise_type_sde_substep": "gaussian",
+   "noise_mode_sde": "hard",
+   "noise_mode_sde_substep": "hard",
+   "eta": 0.5,
+   "eta_substep": 0.5,
+   "seed": 41075014842558
+  },
+  "class_type": "ClownOptions_SDE_Beta",
+  "_meta": {
+   "title": "ClownOptions SDE"
+  }
+ },
+ "328": {
+  "inputs": {
+   "noise_type_sde": "gaussian",
+   "noise_type_sde_substep": "gaussian",
+   "noise_mode_sde": "hard",
+   "noise_mode_sde_substep": "hard",
+   "eta": 0.5,
+   "eta_substep": 0.5,
+   "seed": 594988877580648
+  },
+  "class_type": "ClownOptions_SDE_Beta",
+  "_meta": {
+   "title": "ClownOptions SDE"
+  }
+ },
+ "329": {
+  "inputs": {
+   "eta": 0.1,
+   "sampler_name": "linear/euler",
+   "seed": 23711998749942,
+   "bongmath": true,
+   "options": [
+    "328",
+    0
+   ]
+  },
+  "class_type": "ClownSampler_Beta",
+  "_meta": {
+   "title": "ClownSampler"
+  }
+ },
+ "331": {
+  "inputs": {
+   "nag_scale": 11,
+   "nag_alpha": 0.25,
+   "nag_tau": 2.5,
+   "inplace": true,
+   "model": [
+    "322",
+    0
+   ],
+   "nag_cond_video": [
+    "315",
+    0
+   ],
+   "nag_cond_audio": [
+    "315",
+    0
+   ]
+  },
+  "class_type": "LTX2_NAG",
+  "_meta": {
+   "title": "LTX2 NAG"
+  }
+ },
+ "341": {
+  "inputs": {
+   "lora_name": "ltx-2.3-22b-distilled-lora-384.safetensors",
+   "strength_model": 0.5,
+   "model": [
+    "433",
+    0
+   ]
+  },
+  "class_type": "LoraLoaderModelOnly",
+  "_meta": {
+   "title": "LoRAローダーモデルのみ"
+  }
+ },
+ "346": {
+  "inputs": {
+   "width": [
+    "402",
+    1
+   ],
+   "height": [
+    "405",
+    1
+   ],
+   "upscale_method": "lanczos",
+   "keep_proportion": "crop",
+   "pad_color": "0, 0, 0",
+   "crop_position": "center",
+   "divisible_by": 2,
+   "device": "cpu",
+   "image": [
+    "349",
+    0
+   ]
+  },
+  "class_type": "ImageResizeKJv2",
+  "_meta": {
+   "title": "Resize Image v2"
+  }
+ },
+ "349": {
+  "inputs": {
+   "image": "#community_inputs/ltx2-3-start-end-frame-o-hdpWehtN/split_image_1.png"
+  },
+  "class_type": "LoadImage",
+  "_meta": {
+   "title": "Start Frame"
+  }
+ },
+ "350": {
+  "inputs": {
+   "num_images": "2",
+   "num_images.strength_1": 1,
+   "num_images.strength_2": 1,
+   "num_images.index_1": 0,
+   "num_images.index_2": [
+    "301",
+    0
+   ],
+   "vae": [
+    "433",
+    2
+   ],
+   "latent": [
+    "295",
+    0
+   ],
+   "num_images.image_1": [
+    "353",
+    0
+   ],
+   "num_images.image_2": [
+    "439",
+    0
+   ]
+  },
+  "class_type": "LTXVImgToVideoInplaceKJ",
+  "_meta": {
+   "title": "LTXVImgToVideoInplaceKJ"
+  }
+ },
+ "353": {
+  "inputs": {
+   "img_compression": 33,
+   "image": [
+    "379",
+    0
+   ]
+  },
+  "class_type": "LTXVPreprocess",
+  "_meta": {
+   "title": "LTXVPreprocess"
+  }
+ },
+ "355": {
+  "inputs": {
+   "noise_type_init": "gaussian",
+   "s_noise_init": 1,
+   "denoise_alt": 1,
+   "channelwise_cfg": false
+  },
+  "class_type": "SharkOptions_Beta",
+  "_meta": {
+   "title": "SharkOptions"
+  }
+ },
+ "359": {
+  "inputs": {
+   "noise": [
+    "274",
+    0
+   ],
+   "guider": [
+    "282",
+    0
+   ],
+   "sampler": [
+    "325",
+    0
+   ],
+   "sigmas": [
+    "280",
+    0
+   ],
+   "latent_image": [
+    "367",
+    0
+   ]
+  },
+  "class_type": "SamplerCustomAdvanced",
+  "_meta": {
+   "title": "カスタムサンプラー（高度）"
+  }
+ },
+ "360": {
+  "inputs": {
+   "model_name": "ltx-2.3-spatial-upscaler-x1.5-1.0.safetensors"
+  },
+  "class_type": "LatentUpscaleModelLoader",
+  "_meta": {
+   "title": "Latent アップスケールモデルを読み込む"
+  }
+ },
+ "361": {
+  "inputs": {
+   "av_latent": [
+    "310",
+    0
+   ]
+  },
+  "class_type": "LTXVSeparateAVLatent",
+  "_meta": {
+   "title": "LTXVSeparateAVLatent"
+  }
+ },
+ "363": {
+  "inputs": {
+   "upscale_method": "bilinear",
+   "scale_by": 1.5,
+   "samples": [
+    "361",
+    0
+   ]
+  },
+  "class_type": "LatentUpscaleBy",
+  "_meta": {
+   "title": "潜在を拡大（指定サイズ）"
+  }
+ },
+ "364": {
+  "inputs": {
+   "ratio": 0.5,
+   "samples1": [
+    "366",
+    0
+   ],
+   "samples2": [
+    "363",
+    0
+   ]
+  },
+  "class_type": "LatentInterpolate",
+  "_meta": {
+   "title": "潜在補間"
+  }
+ },
+ "366": {
+  "inputs": {
+   "samples": [
+    "361",
+    0
+   ],
+   "upscale_model": [
+    "360",
+    0
+   ],
+   "vae": [
+    "433",
+    2
+   ]
+  },
+  "class_type": "LTXVLatentUpsampler",
+  "_meta": {
+   "title": "LTXVLatentUpsampler"
+  }
+ },
+ "367": {
+  "inputs": {
+   "video_latent": [
+    "386",
+    0
+   ],
+   "audio_latent": [
+    "361",
+    1
+   ]
+  },
+  "class_type": "LTXVConcatAVLatent",
+  "_meta": {
+   "title": "LTXVConcatAVLatent"
+  }
+ },
+ "369": {
+  "inputs": {
+   "fps": [
+    "298",
+    0
+   ],
+   "bit_depth": 8,
+   "images": [
+    "436",
+    0
+   ],
+   "audio": [
+    "370",
+    0
+   ]
+  },
+  "class_type": "CreateVideo",
+  "_meta": {
+   "title": "動画を作成"
+  }
+ },
+ "370": {
+  "inputs": {
+   "samples": [
+    "371",
+    1
+   ],
+   "audio_vae": [
+    "435",
+    0
+   ]
+  },
+  "class_type": "LTXVAudioVAEDecode",
+  "_meta": {
+   "title": "LTXV オーディオVAEデコード"
+  }
+ },
+ "371": {
+  "inputs": {
+   "av_latent": [
+    "359",
+    0
+   ]
+  },
+  "class_type": "LTXVSeparateAVLatent",
+  "_meta": {
+   "title": "LTXVSeparateAVLatent"
+  }
+ },
+ "372": {
+  "inputs": {
+   "filename_prefix": "video/LTX_2.3_i2v",
+   "format": "auto",
+   "codec": "auto",
+   "video": [
+    "369",
+    0
+   ]
+  },
+  "class_type": "SaveVideo",
+  "_meta": {
+   "title": "ビデオを保存"
+  }
+ },
+ "379": {
+  "inputs": {
+   "resize_type": "scale longer dimension",
+   "resize_type.longer_size": 1536,
+   "scale_method": "lanczos",
+   "input": [
+    "346",
+    0
+   ]
+  },
+  "class_type": "ResizeImageMaskNode",
+  "_meta": {
+   "title": "画像/マスクのリサイズ"
+  }
+ },
+ "381": {
+  "inputs": {
+   "num_images": "2",
+   "num_images.strength_1": 1,
+   "num_images.strength_2": 1,
+   "num_images.index_1": 0,
+   "num_images.index_2": [
+    "301",
+    0
+   ],
+   "vae": [
+    "433",
+    2
+   ],
+   "latent": [
+    "287",
+    0
+   ],
+   "num_images.image_1": [
+    "379",
+    0
+   ],
+   "num_images.image_2": [
+    "438",
+    0
+   ]
+  },
+  "class_type": "LTXVImgToVideoInplaceKJ",
+  "_meta": {
+   "title": "LTXVImgToVideoInplaceKJ"
+  }
+ },
+ "386": {
+  "inputs": {
+   "num_images": "2",
+   "num_images.strength_1": 1,
+   "num_images.strength_2": 1,
+   "num_images.index_1": 0,
+   "num_images.index_2": [
+    "301",
+    0
+   ],
+   "vae": [
+    "433",
+    2
+   ],
+   "latent": [
+    "364",
+    0
+   ],
+   "num_images.image_1": [
+    "379",
+    0
+   ],
+   "num_images.image_2": [
+    "438",
+    0
+   ]
+  },
+  "class_type": "LTXVImgToVideoInplaceKJ",
+  "_meta": {
+   "title": "LTXVImgToVideoInplaceKJ"
+  }
+ },
+ "402": {
+  "inputs": {
+   "expression": "a*0.666667\n",
+   "values.a": [
+    "314",
+    0
+   ]
+  },
+  "class_type": "ComfyMathExpression",
+  "_meta": {
+   "title": "数式"
+  }
+ },
+ "404": {
+  "inputs": {
+   "text": "1280",
+   "anything": [
+    "402",
+    1
+   ]
+  },
+  "class_type": "easy showAnything",
+  "_meta": {
+   "title": "easy showAnything"
+  }
+ },
+ "405": {
+  "inputs": {
+   "expression": "a*0.666667",
+   "values.a": [
+    "299",
+    0
+   ]
+  },
+  "class_type": "ComfyMathExpression",
+  "_meta": {
+   "title": "数式"
+  }
+ },
+ "408": {
+  "inputs": {
+   "text": "720",
+   "anything": [
+    "405",
+    1
+   ]
+  },
+  "class_type": "easy showAnything",
+  "_meta": {
+   "title": "easy showAnything"
+  }
+ },
+ "433": {
+  "inputs": {
+   "ckpt_name": "ltx-2.3/ltx-2.3-22b-dev.safetensors"
+  },
+  "class_type": "CheckpointLoaderSimple",
+  "_meta": {
+   "title": "チェックポイントを読み込む"
+  }
+ },
+ "434": {
+  "inputs": {
+   "text_encoder": "gemma_3_12B_it_fp4_mixed.safetensors",
+   "ckpt_name": "ltx-2.3/ltx-2.3-22b-dev.safetensors",
+   "device": "default"
+  },
+  "class_type": "LTXAVTextEncoderLoader",
+  "_meta": {
+   "title": "LTXV オーディオテキストエンコーダーローダー"
+  }
+ },
+ "435": {
+  "inputs": {
+   "ckpt_name": "ltx-2.3/ltx-2.3-22b-dev.safetensors"
+  },
+  "class_type": "LTXVAudioVAELoader",
+  "_meta": {
+   "title": "LTXV オーディオVAEローダー"
+  }
+ },
+ "436": {
+  "inputs": {
+   "tile_size": 512,
+   "overlap": 64,
+   "temporal_size": 128,
+   "temporal_overlap": 8,
+   "samples": [
+    "371",
+    0
+   ],
+   "vae": [
+    "433",
+    2
+   ]
+  },
+  "class_type": "VAEDecodeTiled",
+  "_meta": {
+   "title": "VAEデコード（タイル）"
+  }
+ },
+ "437": {
+  "inputs": {
+   "image": "#community_inputs/ltx2-3-start-end-frame-o-hdpWehtN/split_image_2.png"
+  },
+  "class_type": "LoadImage",
+  "_meta": {
+   "title": "End Frame"
+  }
+ },
+ "438": {
+  "inputs": {
+   "resize_type": "scale longer dimension",
+   "resize_type.longer_size": 1536,
+   "scale_method": "lanczos",
+   "input": [
+    "437",
+    0
+   ]
+  },
+  "class_type": "ResizeImageMaskNode",
+  "_meta": {
+   "title": "画像/マスクのリサイズ"
+  }
+ },
+ "439": {
+  "inputs": {
+   "img_compression": 33,
+   "image": [
+    "438",
+    0
+   ]
+  },
+  "class_type": "LTXVPreprocess",
+  "_meta": {
+   "title": "LTXVPreprocess"
+  }
+ }
+}
