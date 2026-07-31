@@ -1,0 +1,18 @@
+1
+00:00:00,500 --> 00:00:04,000
+We can see your tomorrow...
+
+2
+00:00:04,500 --> 00:00:08,000
+This is not fortune-telling.
+This is observation.
+
+3
+00:00:08,500 --> 00:00:12,000
+Tomorrow, 2:03 p.m. — clear.
+Accuracy: 100%.
+
+4
+00:00:12,500 --> 00:00:15,000
+Kumoi Weather Observatory.
+
