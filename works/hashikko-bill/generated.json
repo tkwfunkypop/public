@@ -6334,6 +6334,23 @@
         "67c05a35-7a83-472c-8c6b-1460340032bc",
         "0bc9bf7a-7664-4eb9-82e8-81120f72cefc"
       ]
+    },
+    {
+      "id": "c70b_interp_v1",
+      "kind": "interp_test",
+      "cut": "70b",
+      "provider": "floyo",
+      "workflow": "WFAIA_LTX2.3_Start_End_Frame_opensauce",
+      "model": "ltx-2.3-22b-dev",
+      "duration_sec": 5,
+      "fps": 24,
+      "resolution": "1920x1056",
+      "audio": true,
+      "run_id": "run_VHVM3ykiabQRyKMS",
+      "file_id": "file_93QreKUJL63WWWTF",
+      "start_ref": "sf_sb70b_delivery_box",
+      "end_ref": "c70b_endframe_v3",
+      "note": "LTX Start-End補間テスト合格。開始(判を掲げる)→終了(押し切る)を5秒で補間。冒頭・中間・最終フレーム検品OK: 筒状白頭維持・破綻なし・音声トラック付き。presigned URLは24h失効のためURL欄なし。再取得は file_id → GET api.floyo.ai/files/<id>?expand=presigned_url。setup-workspace.mjsが 10_Floyo出力/c70b_stamp_interp.mp4 としてローカル保存"
     }
   ]
 }
