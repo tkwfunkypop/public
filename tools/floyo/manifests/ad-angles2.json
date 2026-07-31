@@ -1,0 +1,61 @@
+{
+  "note": "CM#4〜#10のI2V素材アングル一括生成。各ベース画像からプリセット4アングル（1ラン=4枚）。合格分をMiniMax H3のスタートフレームにしてCM動画化する",
+  "items": [
+    {
+      "id": "ad4_elevator_angles",
+      "cut": "ad_4",
+      "inputs": {
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_225801_e7f6e705-cd6e-4346-be26-29198399f3fb.png"
+      }
+    },
+    {
+      "id": "ad4_allfloors_angles",
+      "cut": "ad_4",
+      "inputs": {
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_230424_28d629b4-7f58-4cf0-ad39-e24e5fd85535.png"
+      }
+    },
+    {
+      "id": "ad5_li_vial_angles",
+      "cut": "ad_5",
+      "inputs": {
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_010623_d96ae14b-adca-459d-9127-97e75a7b9191.png"
+      }
+    },
+    {
+      "id": "ad6_hikari_bento_angles",
+      "cut": "ad_6",
+      "inputs": {
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_225822_76328579-7157-40eb-8046-44e9dca3f6f6.png"
+      }
+    },
+    {
+      "id": "ad7_kumoi_angles",
+      "cut": "ad_7",
+      "inputs": {
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_004051_8503cd4e-a18b-4bdf-93cf-b01cb5fde71e.png"
+      }
+    },
+    {
+      "id": "ad8_kaburagi_angles",
+      "cut": "ad_8",
+      "inputs": {
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_004122_415fbd95-27d2-4013-92f3-c08fb9217f05.png"
+      }
+    },
+    {
+      "id": "ad9_tome_funeral_angles",
+      "cut": "ad_9",
+      "inputs": {
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043234_4a7bfd25-fcd1-45f5-bed8-65669130c526.png"
+      }
+    },
+    {
+      "id": "ad10_kurogane_angles",
+      "cut": "ad_10",
+      "inputs": {
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_004132_5e55ab18-fd82-4dc0-b6cd-932cc2ede697.png"
+      }
+    }
+  ]
+}
