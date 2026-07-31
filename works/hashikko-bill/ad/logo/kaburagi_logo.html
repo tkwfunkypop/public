@@ -1,0 +1,91 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>玩具工房鏑木 ロゴ（クロマキー）</title>
+<style>
+  /* ?alpha を付けて開くと透過背景（スクショ用） */
+  html,body{margin:0;padding:0}
+  body{width:1920px;height:1080px;background:#00B140;display:flex;align-items:center;justify-content:center;overflow:hidden}
+  body.alpha{background:transparent}
+  svg{display:block}
+  text{font-family:'Hiragino Mincho ProN','Yu Mincho','IPAMincho','IPAGothic',serif;font-weight:700}
+  /* 刺繍3層: st=琥珀ステッチ(破線) / bd=紙色縁取り / tx=墨 */
+  .st{fill:none;stroke:#E8A33D;stroke-width:14;stroke-dasharray:7 5.6;stroke-linejoin:round}
+  .bd{fill:none;stroke:#F4EAD6;stroke-width:8;stroke-linejoin:round}
+  .tx{fill:#241A12}
+  .sub .st{stroke-width:9;stroke-dasharray:5 4}
+  .sub .bd{stroke-width:5.5}
+</style>
+<body>
+<script>if(location.search.includes('alpha'))document.body.classList.add('alpha')</script>
+<svg width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <radialGradient id="brass" cx="38%" cy="32%">
+      <stop offset="0%" stop-color="#E9CB7E"/><stop offset="55%" stop-color="#C9A24C"/><stop offset="100%" stop-color="#8A6A2C"/>
+    </radialGradient>
+    <radialGradient id="felt" cx="50%" cy="42%">
+      <stop offset="0%" stop-color="#463328"/><stop offset="100%" stop-color="#2C1F17"/>
+    </radialGradient>
+    <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3"/></filter>
+    <filter id="soft"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#141414" flood-opacity="0.55"/></filter>
+  </defs>
+
+  <!-- 外周の真鍮歯車リング（破線ストロークで歯を表現） -->
+  <g filter="url(#soft)">
+    <circle cx="500" cy="500" r="446" fill="none" stroke="#5C4419" stroke-width="52"
+            stroke-dasharray="76.5 79.2"/>
+    <circle cx="500" cy="500" r="446" fill="none" stroke="url(#brass)" stroke-width="44"
+            stroke-dasharray="72.5 83.2" stroke-dashoffset="-2"/>
+    <circle cx="500" cy="500" r="428" fill="url(#brass)" stroke="#5C4419" stroke-width="4"/>
+    <!-- リベット -->
+    <g fill="#F1DFAE" stroke="#6B4F1D" stroke-width="3">
+      <circle cx="500" cy="96" r="11"/><circle cx="500" cy="904" r="11"/>
+      <circle cx="96" cy="500" r="11"/><circle cx="904" cy="500" r="11"/>
+      <circle cx="215" cy="215" r="11"/><circle cx="785" cy="215" r="11"/>
+      <circle cx="215" cy="785" r="11"/><circle cx="785" cy="785" r="11"/>
+    </g>
+  </g>
+
+  <!-- フェルト台紙 -->
+  <circle cx="500" cy="500" r="392" fill="url(#felt)"/>
+  <circle cx="500" cy="500" r="392" fill="none" stroke="#141414" stroke-width="3" opacity=".6"/>
+  <!-- 手縫いステッチ(内周) -->
+  <circle cx="500" cy="500" r="368" fill="none" stroke="#E8A33D" stroke-width="7"
+          stroke-dasharray="16 13" stroke-linecap="round" filter="url(#rough)"/>
+
+  <!-- 上弧の「玩具工房」 -->
+  <path id="arcTop" d="M 170 545 A 335 335 0 0 1 830 545" fill="none"/>
+  <g class="sub" filter="url(#rough)">
+    <text font-size="86" letter-spacing="26">
+      <textPath href="#arcTop" startOffset="50%" text-anchor="middle">
+        <tspan class="st">玩具工房</tspan></textPath></text>
+    <text font-size="86" letter-spacing="26">
+      <textPath href="#arcTop" startOffset="50%" text-anchor="middle">
+        <tspan class="bd">玩具工房</tspan></textPath></text>
+    <text font-size="86" letter-spacing="26" fill="#F4EAD6">
+      <textPath href="#arcTop" startOffset="50%" text-anchor="middle">玩具工房</textPath></text>
+  </g>
+
+  <!-- 中央の「鏑木」(一字ずつ傾ける) -->
+  <g filter="url(#rough)">
+    <text class="st" x="500" y="640" font-size="300" text-anchor="middle"><tspan rotate="-2">鏑</tspan><tspan rotate="2.5" dx="8">木</tspan></text>
+    <text class="bd" x="500" y="640" font-size="300" text-anchor="middle"><tspan rotate="-2">鏑</tspan><tspan rotate="2.5" dx="8">木</tspan></text>
+    <text x="500" y="640" font-size="300" text-anchor="middle" fill="#F4EAD6"><tspan rotate="-2">鏑</tspan><tspan rotate="2.5" dx="8">木</tspan></text>
+  </g>
+
+  <!-- 下部: ぜんまいキー -->
+  <g transform="translate(500 790)" filter="url(#soft)">
+    <rect x="-14" y="-70" width="28" height="86" rx="9" fill="url(#brass)" stroke="#5C4419" stroke-width="4"/>
+    <path d="M -62 46 a 62 46 0 1 0 124 0 a 62 46 0 1 0 -124 0
+             M -30 46 a 30 22 0 1 1 60 0 a 30 22 0 1 1 -60 0" fill="url(#brass)" stroke="#5C4419" stroke-width="4" fill-rule="evenodd"/>
+    <circle cx="0" cy="-70" r="9" fill="#F1DFAE" stroke="#6B4F1D" stroke-width="3"/>
+  </g>
+
+  <!-- 左右の小歯車アクセント -->
+  <g fill="#C9A24C" stroke="#5C4419" stroke-width="3" opacity=".9">
+    <g transform="translate(190 640)"><circle r="26"/><circle r="9" fill="#2C1F17"/>
+      <g id="t1"></g></g>
+    <g transform="translate(810 640)"><circle r="26"/><circle r="9" fill="#2C1F17"/></g>
+  </g>
+</svg>
+</body>
