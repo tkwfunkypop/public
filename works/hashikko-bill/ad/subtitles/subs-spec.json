@@ -1,0 +1,77 @@
+{
+ "note": "CM英語字幕のクロマキー用データ。start/end=秒(ナレーションのSHOT割りと同期)。en=焼き込む英語字幕、jp=対応する日本語ナレ(参照用)。render-subs.mjsがこの仕様からグリーンバックMP4を生成する",
+ "chroma": "#00B140",
+ "items": [
+  {"id":"sub_ad_1_yoko","aspect":"16:9","dur":15,"subs":[
+   {"start":0.5,"end":3,"jp":"その灯り、切れかけていませんか。","en":"Is your light about to go out?"},
+   {"start":9,"end":12.5,"jp":"灯りは、人を集める。","en":"Light brings people together."},
+   {"start":13,"end":15,"jp":"ホタル電球。","en":"HOTARU Light Bulbs."}]},
+  {"id":"sub_ad_2_tate","aspect":"9:16","dur":15,"subs":[
+   {"start":0.5,"end":2.5,"jp":"その灯り、切れかけていませんか。","en":"Is your light about to go out?"},
+   {"start":8,"end":11.5,"jp":"灯りは、人を集める。","en":"Light brings people together."},
+   {"start":12,"end":15,"jp":"ホタル電球。","en":"HOTARU Light Bulbs."}]},
+  {"id":"sub_ad_3_part1","aspect":"16:9","dur":15,"subs":[
+   {"start":5,"end":8,"jp":"一階、儀典のアオイ。式次第、承ります。","en":"First floor: Aoi Rites.\nCeremonies, arranged."},
+   {"start":12,"end":15,"jp":"二階、ぜんまい玩具工房。直らないものはない。","en":"Second floor: Kaburagi Toy Works.\nNothing stays broken."}]},
+  {"id":"sub_ad_3_part2","aspect":"16:9","dur":15,"subs":[
+   {"start":5,"end":8,"jp":"三階、鵜飼会計事務所。数字は嘘をつかない。","en":"Third floor: Ukai Accounting.\nNumbers never lie."},
+   {"start":12,"end":15,"jp":"四階、雲井気象観測所。晴れは、予告できる。","en":"Fourth floor: Kumoi Observatory.\nClear skies, on schedule."}]},
+  {"id":"sub_ad_3_part3","aspect":"16:9","dur":15,"subs":[
+   {"start":5,"end":8,"jp":"五階、李香水店。記憶に、ひと吹き。","en":"Fifth floor: Li Perfumery.\nOne spray of memory."},
+   {"start":12,"end":15,"jp":"六階、活版と記事の黒金・大和。号外、出ます。","en":"Sixth floor: print and press.\nExtra! Extra!"}]},
+  {"id":"sub_ad_3_part4","aspect":"16:9","dur":15,"subs":[
+   {"start":4,"end":7,"jp":"七階、食堂ななお。距離ゼロの飯。","en":"Seventh floor: Nanao Diner.\nZero-distance meals."},
+   {"start":10,"end":15,"jp":"七つの会社、ひとつのビル。果端ビル、入居者募集中。","en":"Seven companies, one building.\nHatate Building — now leasing."}]},
+  {"id":"sub_ad_4_yoko","aspect":"16:9","dur":15,"subs":[
+   {"start":0.5,"end":4,"jp":"よんじゅうねんかん、にばんめと、ろくばんめには、とまりませんでした。","en":"For forty years, it never stopped\nat the second and the sixth floor."},
+   {"start":4.5,"end":7.5,"jp":"ぜんまいを、ひとまき。","en":"One turn of the spring."},
+   {"start":8.5,"end":11.5,"jp":"とまらなかった、かいに、あしたを。","en":"Tomorrow, for the floors\nit never reached."},
+   {"start":12,"end":15,"jp":"エレベーター、ほしゅ。にばんめと、ろくばんめ。","en":"Elevator care:\nThe Second and the Sixth."}]},
+  {"id":"sub_ad_5_tate","aspect":"9:16","dur":15,"subs":[
+   {"start":0.5,"end":4,"jp":"この、ひとしずくは、かおりでは、ありません。","en":"This single drop\nis not a fragrance."},
+   {"start":4.5,"end":8,"jp":"さんじゅうねん、まえの、かいだんの、におい。","en":"It is the scent of a staircase,\nthirty years ago."},
+   {"start":8.5,"end":12,"jp":"あいたい、じかんに、かえれます。","en":"You can go home\nto the hour you miss."},
+   {"start":12.5,"end":15,"jp":"り、こうすいてん。","en":"Li Perfumery."}]},
+  {"id":"sub_ad_6_tate","aspect":"9:16","dur":15,"subs":[
+   {"start":0.5,"end":3,"jp":"あつあつの、まま、とどけたい。","en":"We want it to arrive piping hot."},
+   {"start":3.5,"end":7,"jp":"だから、はしる。かいだんを。あたまの、うえで。","en":"So she runs the stairs —\nwith lunch above her head."},
+   {"start":11,"end":15,"jp":"きょり、ゼロの、めし。しょくどう、ななお。","en":"Zero-distance meals.\nNanao Diner."}]},
+  {"id":"sub_ad_7_yoko","aspect":"16:9","dur":15,"subs":[
+   {"start":0.5,"end":4,"jp":"あす、じゅうよじ、さんぷん。","en":"Tomorrow, 2:03 p.m."},
+   {"start":4.5,"end":8,"jp":"はれまは、じゅういっぷんかん、だけ。","en":"The clear sky will last\nexactly eleven minutes."},
+   {"start":8.5,"end":12,"jp":"その、じゅういっぷんを、おやくそく、します。","en":"And those eleven minutes\nare our promise."},
+   {"start":12.5,"end":15,"jp":"くもい、きしょう、かんそくじょ。","en":"Kumoi Weather Observatory."}]},
+  {"id":"sub_ad_8_yoko","aspect":"16:9","dur":15,"subs":[
+   {"start":0.5,"end":4,"jp":"こわれたら、おわり。——そうは、させない。","en":"Broken means finished?\n— Not on her watch."},
+   {"start":4.5,"end":9,"jp":"ぜんまいじかけの、あしに、なる。","en":"A clockwork chair\nbecomes his legs."},
+   {"start":13,"end":15,"jp":"がんぐこうぼう、カブラギ。なおらないものは、ありません。","en":"Kaburagi Toy Works.\nNothing stays broken."}]},
+  {"id":"sub_ad_9_yoko","aspect":"16:9","dur":15,"subs":[
+   {"start":0.5,"end":4,"jp":"おわりは、こわくない。","en":"An ending is nothing to fear."},
+   {"start":4.5,"end":9,"jp":"きちんと、おわるひは、きちんと、はじまったひと、おなじくらい、うつくしい。","en":"A day that ends properly is as beautiful\nas a day that began properly."},
+   {"start":13,"end":15,"jp":"しきの、ことなら、アオイ、ぎてんしゃ。","en":"For ceremonies: Aoi Rites."}]},
+  {"id":"sub_ad_10_tate","aspect":"9:16","dur":15,"subs":[
+   {"start":0.5,"end":4,"jp":"せかいの、はての、ニュースは、いちぎょう、あれば、たります。","en":"News from the edge of the world\nneeds only one line."},
+   {"start":8.5,"end":11.5,"jp":"ほんじつ、はれ。","en":"\"Clear skies today.\""},
+   {"start":12,"end":15,"jp":"はたて、しんぶん。ごうがい、でます。","en":"The Hatate Times.\nExtra! Extra!"}]},
+  {"id":"sub_ad_11_tate","aspect":"9:16","dur":15,"subs":[
+   {"start":0.5,"end":4,"jp":"ねむれない、よるは。かずを、かぞえましょう。","en":"Can't sleep tonight?\nLet's count numbers."},
+   {"start":4.5,"end":8,"jp":"ひとつ。ふたつ。さんぷやく。","en":"One. Two. Three hundred."},
+   {"start":8.5,"end":12,"jp":"ちょうぼは、こもりうた。","en":"A ledger is a lullaby."},
+   {"start":12.5,"end":15,"jp":"うかい、かいけいじむしょ。","en":"Ukai Accounting Office."}]},
+  {"id":"sub_ad_12_tate","aspect":"9:16","dur":15,"subs":[
+   {"start":0.5,"end":4,"jp":"アプリでは、ひらきませんでした。","en":"The app couldn't open this door."},
+   {"start":4.5,"end":9,"jp":"よんじゅうねんもの、あんしん。","en":"Forty years of reliability."},
+   {"start":9.5,"end":13,"jp":"こうしんは、ありません。でんちも、きれません。","en":"No updates.\nNo batteries to die."},
+   {"start":13.2,"end":15,"jp":"かんりにん、ひいらぎ。","en":"Hiiragi, the caretaker."}]},
+  {"id":"sub_ad_13_tate","aspect":"9:16","dur":15,"subs":[
+   {"start":0.5,"end":3,"jp":"ごぜん、ごじ。わたしの、ルーティーン。","en":"5 a.m.\nMy morning routine."},
+   {"start":3.5,"end":8,"jp":"せいとん。しきしだい。おじぎ。","en":"Tidy. Programs. A bow."},
+   {"start":8.5,"end":12,"jp":"きちんと、はじまるひは、いいひ。","en":"A day that starts properly\nis a good day."},
+   {"start":12.5,"end":15,"jp":"アオイ、ぎてんしゃの、あさ。","en":"Mornings at Aoi Rites."}]},
+  {"id":"sub_ad_14_tate","aspect":"9:16","dur":15,"subs":[
+   {"start":0.5,"end":4,"jp":"あなたの、あしたが、みえます……","en":"We can see your tomorrow..."},
+   {"start":4.5,"end":8,"jp":"うらないでは、ありません。かんそくです。","en":"This is not fortune-telling.\nThis is observation."},
+   {"start":8.5,"end":12,"jp":"あす、じゅうよじさんぷん、はれ。てきちゅうりつ、ひゃくぱーせんと。","en":"Tomorrow, 2:03 p.m. — clear.\nAccuracy: 100%."},
+   {"start":12.5,"end":15,"jp":"くもい、きしょうかんそくじょ。","en":"Kumoi Weather Observatory."}]}
+ ]
+}
