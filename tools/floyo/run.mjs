@@ -55,7 +55,7 @@ if (!apiKey && !dryRun) {
 const authHeaders = { authorization: `Bearer ${apiKey}`, accept: 'application/json' };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-// 画像URL → ダウンロード → POST /files → input_path
+// 画像URL → ダウンロード → POST https://cdn.floyo.ai/upload → input_path
 const uploadCache = new Map();
 async function uploadImage(url) {
   if (uploadCache.has(url)) return uploadCache.get(url);
@@ -65,7 +65,9 @@ async function uploadImage(url) {
   const name = basename(new URL(url).pathname) || 'input.png';
   const form = new FormData();
   form.append('file', blob, name);
-  const res = await fetch(`${API}/files`, { method: 'POST', headers: authHeaders, body: form });
+  form.append('path', '/wfaia');
+  form.append('on_conflict', 'rename');
+  const res = await fetch('https://cdn.floyo.ai/upload', { method: 'POST', headers: authHeaders, body: form });
   if (!res.ok) throw new Error(`upload failed ${res.status}: ${await res.text()}`);
   const file = await res.json();
   const inputPath = file.input_path ?? file.inputPath;
@@ -75,7 +77,7 @@ async function uploadImage(url) {
   return inputPath;
 }
 
-// patches: { 論理名: {node:"274", field:"image"} }。論理名が *_image_url なら自動アップロード
+// patches: { 論理名: {node:"274", field:"image", upload:true} }。upload:true はURLを /upload に通して input_path 化
 async function buildGraph(inputs) {
   const graph = structuredClone(graphTemplate);
   for (const [key, value] of Object.entries(inputs)) {
@@ -86,7 +88,7 @@ async function buildGraph(inputs) {
     }
     const node = graph[patch.node];
     if (!node) throw new Error(`graph にノード ${patch.node} が無い（patches "${key}"）`);
-    node.inputs[patch.field] = key.endsWith('_image_url') && !dryRun ? await uploadImage(value) : value;
+    node.inputs[patch.field] = patch.upload && !dryRun ? await uploadImage(value) : value;
   }
   return graph;
 }
