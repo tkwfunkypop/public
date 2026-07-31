@@ -86,9 +86,14 @@ if (existsSync(resultsDir)) {
   for (const f of readdirSync(resultsDir).filter((f) => f.endsWith('.json'))) {
     const r = JSON.parse(readFileSync(join(resultsDir, f), 'utf8'));
     for (const item of r.results ?? []) {
-      for (const out of item.outputs ?? []) {
+      // 命名規則: c{カット}_{内容}_v{版}（複数出力は連番を付ける）
+      const outs = item.outputs ?? [];
+      for (let i = 0; i < outs.length; i++) {
+        const out = outs[i];
         if (!out.presigned_url) continue;
-        await grab(out.presigned_url, join(ROOT, FOLDERS.floyo, `${item.id}__${out.file_name}`));
+        const ext = (out.file_name?.match(/\.(\w{2,4})$/) ?? [, 'png'])[1];
+        const suffix = outs.length > 1 ? `_${i + 1}` : '';
+        await grab(out.presigned_url, join(ROOT, FOLDERS.floyo, `${item.id}${suffix}.${ext}`));
       }
     }
   }

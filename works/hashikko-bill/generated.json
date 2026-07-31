@@ -6310,6 +6310,30 @@
       "run_id": "run_ZurNK4AGuMnejKQY",
       "file_id": "file_SH2nMfxFnRhyddoS",
       "note": "Qwenアングル一周テスト合格。サイド(h110/v-15/zoom3): 街灯越しの横位置。presigned URLは24hで失効するためURL欄なし。再取得はfile_idで GET api.floyo.ai/files/<file_id>?expand=presigned_url、またはsetup-workspace.mjsがローカル保存済み"
+    },
+    {
+      "id": "c64_angle_low_v2",
+      "kind": "floyo_angle",
+      "cut": "64",
+      "provider": "floyo",
+      "workflow": "WFAIA_Camera Angle Control with Qwen",
+      "run_id": "run_jKHuS9C5k1kmVqge",
+      "file_id": "file_pmJJiMmZauxjAAaA",
+      "note": "C64階段運びの煽り（free_prompt方式）。螺旋階段吹き抜けを見上げる構図で合格。presigned URLは24h失効のためfile_idで再取得、またはsetup-workspace.mjsでローカル保存"
+    },
+    {
+      "id": "c70b_endframe_v3",
+      "kind": "end_frame",
+      "cut": "70b",
+      "provider": "higgsfield",
+      "model": "nano_banana_2",
+      "job_id": "08fc94eb-fa6d-4f39-b55b-e75df4e7f34c",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_084214_08fc94eb-fa6d-4f39-b55b-e75df4e7f34c.png",
+      "note": "C70b判押しの終了フレーム（LTX Start-End用）。Qwen編集v1/v2は柊の筒状白頭が丸頭化して不合格→nano banana（開始フレーム＋柊図版参照）で合格。腕下げ・判押し切り・頭部正典維持を確認",
+      "refs": [
+        "67c05a35-7a83-472c-8c6b-1460340032bc",
+        "0bc9bf7a-7664-4eb9-82e8-81120f72cefc"
+      ]
     }
   ]
 }
