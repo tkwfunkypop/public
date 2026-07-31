@@ -6034,6 +6034,42 @@
    "job_id": "2ae51453-2fee-400e-9400-67887a555f62",
    "superseded_job_id": "4a7bfd25-fcd1-45f5-bed8-65669130c526",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_045514_2ae51453-2fee-400e-9400-67887a555f62.png"
+  },
+  {
+   "id": "vo_c51b",
+   "kind": "narration_audio",
+   "cut": "51b",
+   "at": 0,
+   "speaker": "N",
+   "voice": "Arthur",
+   "text": "会議の言葉は、値札に変わっていた",
+   "model": "seed_audio",
+   "job_id": "c7225cea-2a19-4272-9dcd-5276a70aec30",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_050038_c7225cea-2a19-4272-9dcd-5276a70aec30.wav"
+  },
+  {
+   "id": "vo_c72b",
+   "kind": "narration_audio",
+   "cut": "72b",
+   "at": 0,
+   "speaker": "N",
+   "voice": "Arthur",
+   "text": "参列者、九名",
+   "model": "seed_audio",
+   "job_id": "65abdd4f-e25e-4ed1-92e4-086ec2d78706",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_050040_65abdd4f-e25e-4ed1-92e4-086ec2d78706.wav"
+  },
+  {
+   "id": "vo_c77b",
+   "kind": "narration_audio",
+   "cut": "77b",
+   "at": 0,
+   "speaker": "N",
+   "voice": "Arthur",
+   "text": "果端ビルに、八社目が入居した。屋号は『明日づくり係』",
+   "model": "seed_audio",
+   "job_id": "7ee84886-e1c5-4821-aa53-b543d33a07b7",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_050050_7ee84886-e1c5-4821-aa53-b543d33a07b7.wav"
   }
  ]
 }
