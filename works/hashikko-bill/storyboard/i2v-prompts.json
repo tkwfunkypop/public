@@ -480,6 +480,16 @@
   "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Seven figures pass each other up and down the spiral stairs, busy and rhythmic; small nods as they cross; the stairwell feels alive. CAMERA: Slow rise through the stairwell. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
  },
  {
+  "no": "48b",
+  "panel": "sb48b_ukai_gear",
+  "seq": "F",
+  "seqTitle": "裏切り",
+  "sec": 4,
+  "scene": "夜の3F。鵜飼がひとり残っている。抽斗の奥から、壊れた玩具の歯車と古い写真立て。握りしめ、窓の霧を見る。",
+  "note": "動機の種。写真立ての中身は無地（編集で合成可）",
+  "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Alone in the night office, Ukai slowly tightens his fist around the broken toy gear; his shoulders sink; he turns his head toward the fogged window; the lamp flame trembles. CAMERA: Very slow push-in. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
+ },
+ {
   "no": 49,
   "panel": "sb49_betrayal",
   "seq": "F",
@@ -488,6 +498,16 @@
   "scene": "六日目。3Fの応接。鵜飼と、見慣れないスーツの男。テーブルに取り壊しの図面と契約書。判が寸前。",
   "note": "図面・契約書は無地。開発業者はシート準拠の1名のみ",
   "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: In the 3F office UKAI sits across from the DEVELOPER; blank blueprint and contract sheets lie between them; the developer slides a pen forward; UKAI's hand hovers over the paper and stops. CAMERA: Slow push-in on the hovering hand. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
+ },
+ {
+  "no": "49b",
+  "panel": "sb49b_pricetags",
+  "seq": "F",
+  "seqTitle": "裏切り",
+  "sec": 4,
+  "scene": "応接テーブルのクローズ。取り壊し図面の上に、契約金の封筒と七社ぶんの買収カードが並ぶ。その横に、鵜飼の会議メモの束。業者の手がメモを一枚ずつ繰る。",
+  "note": "メモ＝七社を切り崩す値札の視覚化。台詞（編集字幕）: 業者「よく調べてある。これなら七社、ばらばらに買える」。紙面は全て無地",
+  "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: The gloved hand leafs through the blank memo sheets one by one, laying each down beside the row of seven blank cards; the lamp glow flickers softly; nothing else moves. CAMERA: Locked-off high angle with a very slow push-in. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
  },
  {
   "no": 50,
@@ -508,6 +528,16 @@
   "scene": "鵜飼のメモが床にばらまかれる。会議で取っていた各社の内情のメモ。売り物だった。",
   "note": "メモの文字は映さない（無地）",
   "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: UKAI's memo pages scatter and slide across the floor; the pages flutter to rest; his shoes step back one step; his hand hangs at his side. CAMERA: Static low shot. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
+ },
+ {
+  "no": "51b",
+  "panel": "sb51b_pass_memo",
+  "seq": "F",
+  "seqTitle": "裏切り",
+  "sec": 4,
+  "scene": "廊下。ばらまかれたメモの一枚が手から手へ回覧される。読むたび、順に顔がこわばり、目が伏せられる。",
+  "note": "回覧の連鎖で信頼の崩壊を見せる。ナレ（編集字幕）: 「会議の言葉は、値札に変わっていた」",
+  "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Tome holds out the blank memo; Kaburagi takes it and lowers his head as he reads; Kumoi turns her face further away; shoulders stiffen one after another down the corridor. CAMERA: Slow lateral dolly along the corridor. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
  },
  {
   "no": 52,
@@ -540,6 +570,16 @@
   "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: The half-built clockwork chair stands alone on the rooftop; fog flows slowly around it; a strap flaps once in the wind; nobody comes. CAMERA: Very slow push-in. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
  },
  {
+  "no": "54b",
+  "panel": "sb54b_trembling_seal",
+  "seq": "F",
+  "seqTitle": "裏切り",
+  "sec": 4,
+  "scene": "応接。契約書に判を構える鵜飼。印面が紙の上で止まり、細かく震える。向かいで業者が待っている。",
+  "note": "まだ押していない。G章への引き。台詞（編集字幕）: 業者「押せば、このビルは明日、消えます」",
+  "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Ukai's felt hand holds the seal millimeters above the blank contract, trembling in tiny stop-motion jitters; it never touches the paper; across the table the developer waits utterly still. CAMERA: Locked-off close-up, very slow push-in. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
+ },
+ {
   "no": 55,
   "panel": "sb55_ukai_window",
   "seq": "G",
@@ -560,6 +600,16 @@
   "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Flashback in soft vignette: the mother's back working in the 7F kitchen; the father's hands assembling a toy; the boy UKAI sitting on the landing hugging his knees; each vignette breathes gently. CAMERA: Slow cross-drift between the vignettes. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
  },
  {
+  "no": "56b",
+  "panel": "sb56b_family_stairs",
+  "seq": "G",
+  "seqTitle": "三階のほんとうの話",
+  "sec": 4,
+  "scene": "回想。夕方の踊り場。7Fから母、2Fから父。少年を挟んで三人で階段を降りる。エレベーターは2と6に停まらないから、帰り道はいつも階段だった。",
+  "note": "回想。唯一の家族の時間＝階段。台詞（編集字幕）: 鵜飼「エレベーターは、父の階には停まらなかった」",
+  "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. FLASHBACK TONE: warm faded amber, soft contrast. SCENE: The three walk down the stairs hand in hand with small bobbing steps; the boy swings his parents' arms once; warm dust motes drift. CAMERA: Static wide with a gentle warm flicker. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
+ },
+ {
   "no": 57,
   "panel": "sb57_toolbox",
   "seq": "G",
@@ -570,6 +620,16 @@
   "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Flashback: the fallen toolbox at the foot of the stairs; scattered gears, one still spinning until it wobbles to a stop; a single shoe lies on its side. CAMERA: Static; the spinning gear is the only motion. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
  },
  {
+  "no": "57b",
+  "panel": "sb57b_father_back",
+  "seq": "G",
+  "seqTitle": "三階のほんとうの話",
+  "sec": 4,
+  "scene": "回想。重い工具箱を抱え、階段を降りる父の背中。踊り場の向こう、エレベーターの2のランプは消えたまま。",
+  "note": "回想。事故の理由。父の顔は映さない（後ろ姿）。台詞（編集字幕）: 鵜飼「あの日も、階段しかなかった」",
+  "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. FLASHBACK TONE: dim faded amber. SCENE: Seen only from behind, the father descends step by step hugging the heavy toolbox, shoulders swaying under the weight; he pauses once to re-grip; the elevator lamp stays dark. CAMERA: Slow follow from behind with a slight downward tilt. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
+ },
+ {
   "no": 58,
   "panel": "sb58_empty_chairs",
   "seq": "G",
@@ -578,6 +638,16 @@
   "scene": "回想。葬儀場に並ぶ空の椅子。誰も座っていない。少年が一人立っている。",
   "note": "台詞（編集字幕）: 鵜飼「七社の誰ひとり、来ませんでした。誰も、隣の階で何が起きたか知らなかったから」 ／ 少年はUKAI_CHILD準拠。台詞は編集字幕",
   "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Flashback: rows of empty chairs in the funeral hall; candle flames waver; the boy stands alone, fists tight; nothing else moves. CAMERA: Very slow pull-back. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
+ },
+ {
+  "no": "58b",
+  "panel": "sb58b_leaving",
+  "seq": "G",
+  "seqTitle": "三階のほんとうの話",
+  "sec": 4,
+  "scene": "回想。母と手を繋ぎ、吊り橋を渡ってビルを去る少年の背中。ビルの窓の灯が、ひとつずつ消えていく。",
+  "note": "回想。動機の明言。台詞（編集字幕）: 鵜飼「僕は、このビルを終わらせるために戻ったんです」",
+  "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. FLASHBACK TONE: cold blue dusk. SCENE: Mother and boy walk away across the gently swaying rope bridge, backs to us; inside the building the last warm windows go dark one by one; fog drifts past. CAMERA: Static wide. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
  },
  {
   "no": 59,
@@ -598,6 +668,16 @@
   "scene": "帳簿の極大クローズ。喪主欄に「柊源三」。参列者、一名。",
   "note": "台詞（編集字幕）: トメ「あんたのお父さんの葬式はな。ちゃんと出とるよ。管理人さんが、自分の貯金でな」 ／ 喪主欄・参列者数の文字は編集で。台詞は編集字幕",
   "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Extreme close-up of the blank ledger page; TOME's finger slides down and stops at one line, tapping it twice; lamplight trembles. CAMERA: Static macro. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
+ },
+ {
+  "no": "60b",
+  "panel": "sb60b_empty_envelope",
+  "seq": "G",
+  "seqTitle": "三階のほんとうの話",
+  "sec": 5,
+  "scene": "帳簿に挟まれた古い金一封の封筒。空。C09と同じ意匠。隣の頁は柊の貯金の出金記録。",
+  "note": "C09の空の金一封の回収。台詞（編集字幕）: トメ「あんたの依頼書の『予算 金一封』はな。三十年前に、もう使われとったんよ」。文字は編集で",
+  "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: No characters. The lamp flame breathes; dust motes drift over the open blank ledger and the flattened empty gift envelope; a faint draft lifts the corner of one page. CAMERA: Very slow push-in on the empty envelope. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
  },
  {
   "no": 61,
@@ -700,6 +780,16 @@
   "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Close-up of the freshly printed extra: the sheet is blank with abstract ink blocks; it flutters once in the amber light; ink glistens wet. CAMERA: Static macro. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
  },
  {
+  "no": "70b",
+  "panel": "sb70b_delivery_box",
+  "seq": "H",
+  "seqTitle": "四時四十四分",
+  "sec": 5,
+  "scene": "納品。木箱に号外・小瓶・式次第・書記ノートが納められ、柊の膝に置かれる。柊が検収の判をゆっくり押す。",
+  "note": "納品物の明確化。検収印は抽象図形。台詞（編集字幕）: ひかり「納品です。『明日を、一日』」",
+  "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Hiiragi presses the seal slowly down onto the blank sheet on the crate and lifts it away; his chest lamp glows a little brighter; Hikari clasps her hands and gives one small nod. CAMERA: Slow push-in from the front. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
+ },
+ {
   "no": 71,
   "panel": "sb71_hiiragi_hand",
   "seq": "H",
@@ -718,6 +808,16 @@
   "scene": "トメが立ち上がる。喪服の裾が揺れる。",
   "note": "台詞（編集字幕）: トメ「――では、最後の仕事にかかります」 ／ 「最後の仕事に…」は編集字幕",
   "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: TOME rises to her feet; the hem of her mourning gown sways once and settles; she bows deeply and slowly; the candle flame steadies. CAMERA: Static full shot. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
+ },
+ {
+  "no": "72b",
+  "panel": "sb72b_full_funeral",
+  "seq": "I",
+  "seqTitle": "八社目",
+  "sec": 5,
+  "scene": "柊の葬式。屋上。並んだ椅子は、今度は全部埋まっている。C58の完全な反転。トメが式を執り行う。",
+  "note": "C58の空の椅子の完全な反転。祭壇に柊のランプと鍵束。ナレ（編集字幕）: 「参列者、九名」",
+  "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Wind stirs coats and hair; Tome slowly raises her arms; the seated mourners bow their heads in a quiet ripple from left to right; the lantern flame on the altar flickers. CAMERA: Very slow push-in toward the altar. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
  },
  {
   "no": 73,
@@ -768,6 +868,16 @@
   "scene": "ひかりが宛先欄に自分の名前を書き込む。",
   "note": "名前の文字は編集で合成",
   "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: HIKARI uncaps the pen and writes into the blank addressee space with one determined stroke; only a faint abstract mark is left; she puts the pen down and nods. CAMERA: Static macro on the hand. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
+ },
+ {
+  "no": "77b",
+  "panel": "sb77b_new_plate",
+  "seq": "I",
+  "seqTitle": "八社目",
+  "sec": 4,
+  "scene": "地下、管理人室の扉。ひかりが新しい無地のプレートを掛ける。八社目の誕生。",
+  "note": "八社目の誕生。プレートの文字は編集で合成。ナレ（編集字幕）: 「果端ビルに、八社目が入居した。屋号は『明日づくり係』」",
+  "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Hikari, on tiptoe, hangs the blank plate on the hook; it swings once and settles level; she steps back and looks up at it; the bare bulb above brightens slightly. CAMERA: Static with a slight slow push-in. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO on-screen text, captions, subtitles, titles, logos or musical notes; every paper, sign, board or page in frame stays BLANK. Motions are small, precise and stop-motion-like."
  },
  {
   "no": 78,

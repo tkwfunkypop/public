@@ -772,5 +772,169 @@
   ],
   "job_id": "78be7288-a12f-4208-a785-d2ebd2cbea25",
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_230453_78be7288-a12f-4208-a785-d2ebd2cbea25.png"
+ },
+ {
+  "panel": "sb10_seven_bins",
+  "no": 10,
+  "prompt": "(v5) 不揃いモザイク7分割・中右=LI・左下=KUROGANE・空パネルなし。詳細はジョブ参照",
+  "refs": [
+   "TOME",
+   "KABURAGI",
+   "UKAI",
+   "KUMOI",
+   "LI",
+   "KUROGANE",
+   "YAMATO"
+  ],
+  "job_id": "b3b2d37a-bf73-4b76-a45b-35d392263c30",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_042637_b3b2d37a-bf73-4b76-a45b-35d392263c30.png",
+  "superseded_job_id": "5dcac9df-ba17-478b-a283-830c0abfc45e",
+  "note": "C10 v5 パネル再配置"
+ },
+ {
+  "panel": "sb48b_ukai_gear",
+  "no": "48b",
+  "prompt": "夜の3F。鵜飼がひとり残っている。抽斗の奥から、壊れた玩具の歯車と古い写真立て。握りしめ、窓の霧を見る。",
+  "refs": [
+   "set_office3f",
+   "UKAI"
+  ],
+  "job_id": "481e9d6f-a4bd-4e4a-86ca-2b4ffab2e307",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_042650_481e9d6f-a4bd-4e4a-86ca-2b4ffab2e307.png",
+  "note": "脚本補強で追加（F章）。目視検品合格"
+ },
+ {
+  "panel": "sb49b_pricetags",
+  "no": "49b",
+  "prompt": "応接テーブルのクローズ。取り壊し図面の上に、契約金の封筒と七社ぶんの買収カードが並ぶ。その横に、鵜飼の会議メモの束。業者の手がメモを一枚ずつ繰る。",
+  "refs": [
+   "set_office3f",
+   "DEVELOPER"
+  ],
+  "job_id": "15278782-9e8a-49b3-befa-8f71558d0750",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_044518_15278782-9e8a-49b3-befa-8f71558d0750.png",
+  "note": "脚本補強で追加（F章）。目視検品合格",
+  "superseded_job_id": "40ad0424-2607-4d0a-9e7e-c24707fa8b57"
+ },
+ {
+  "panel": "sb51b_pass_memo",
+  "no": "51b",
+  "prompt": "廊下。ばらまかれたメモの一枚が手から手へ回覧される。読むたび、順に顔がこわばり、目が伏せられる。",
+  "refs": [
+   "set_corridor",
+   "TOME",
+   "KABURAGI",
+   "KUMOI"
+  ],
+  "job_id": "05d1c42c-ca61-44ec-b7b2-0f340e634262",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_042723_05d1c42c-ca61-44ec-b7b2-0f340e634262.png",
+  "note": "脚本補強で追加（F章）。目視検品合格"
+ },
+ {
+  "panel": "sb54b_trembling_seal",
+  "no": "54b",
+  "prompt": "応接。契約書に判を構える鵜飼。印面が紙の上で止まり、細かく震える。向かいで業者が待っている。",
+  "refs": [
+   "set_office3f",
+   "UKAI",
+   "DEVELOPER"
+  ],
+  "job_id": "9ebfc8df-3aaa-497e-b725-2cd0b0bbcfe8",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043125_9ebfc8df-3aaa-497e-b725-2cd0b0bbcfe8.png",
+  "note": "脚本補強で追加（F章）。目視検品合格"
+ },
+ {
+  "panel": "sb56b_family_stairs",
+  "no": "56b",
+  "prompt": "回想。夕方の踊り場。7Fから母、2Fから父。少年を挟んで三人で階段を降りる。エレベーターは2と6に停まらないから、帰り道はいつも階段だった。",
+  "refs": [
+   "set_stairwell",
+   "UKAI_FATHER",
+   "UKAI_MOTHER",
+   "UKAI_CHILD"
+  ],
+  "job_id": "67822e1d-2f46-41e7-8dcb-0633e43a0cf4",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043129_67822e1d-2f46-41e7-8dcb-0633e43a0cf4.png",
+  "note": "脚本補強で追加（G章）。目視検品合格"
+ },
+ {
+  "panel": "sb57b_father_back",
+  "no": "57b",
+  "prompt": "回想。重い工具箱を抱え、階段を降りる父の背中。踊り場の向こう、エレベーターの2のランプは消えたまま。",
+  "refs": [
+   "set_stairwell",
+   "UKAI_FATHER"
+  ],
+  "job_id": "b5d706a4-688f-4228-b2e6-5a9a08c44103",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043147_b5d706a4-688f-4228-b2e6-5a9a08c44103.png",
+  "note": "脚本補強で追加（G章）。目視検品合格"
+ },
+ {
+  "panel": "sb58b_leaving",
+  "no": "58b",
+  "prompt": "回想。母と手を繋ぎ、吊り橋を渡ってビルを去る少年の背中。ビルの窓の灯が、ひとつずつ消えていく。",
+  "refs": [
+   "BUILDING",
+   "UKAI_MOTHER",
+   "UKAI_CHILD"
+  ],
+  "job_id": "214cbf75-4154-4c06-9ee6-55fcbafb5146",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043154_214cbf75-4154-4c06-9ee6-55fcbafb5146.png",
+  "note": "脚本補強で追加（G章）。目視検品合格"
+ },
+ {
+  "panel": "sb60b_empty_envelope",
+  "no": "60b",
+  "prompt": "帳簿に挟まれた古い金一封の封筒。空。C09と同じ意匠。隣の頁は柊の貯金の出金記録。",
+  "refs": [
+   "set_caretaker"
+  ],
+  "job_id": "3689b814-7d21-4713-ad71-691fe6a7777c",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043206_3689b814-7d21-4713-ad71-691fe6a7777c.png",
+  "note": "脚本補強で追加（G章）。目視検品合格"
+ },
+ {
+  "panel": "sb70b_delivery_box",
+  "no": "70b",
+  "prompt": "納品。木箱に号外・小瓶・式次第・書記ノートが納められ、柊の膝に置かれる。柊が検収の判をゆっくり押す。",
+  "refs": [
+   "set_rooftop",
+   "HIIRAGI",
+   "HIKARI"
+  ],
+  "job_id": "67c05a35-7a83-472c-8c6b-1460340032bc",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043214_67c05a35-7a83-472c-8c6b-1460340032bc.png",
+  "note": "脚本補強で追加（H章）。目視検品合格"
+ },
+ {
+  "panel": "sb72b_full_funeral",
+  "no": "72b",
+  "prompt": "柊の葬式。屋上。並んだ椅子は、今度は全部埋まっている。C58の完全な反転。トメが式を執り行う。",
+  "refs": [
+   "set_rooftop",
+   "TOME",
+   "KABURAGI",
+   "UKAI",
+   "KUMOI",
+   "LI",
+   "KUROGANE",
+   "YAMATO",
+   "HIKARI"
+  ],
+  "job_id": "4a7bfd25-fcd1-45f5-bed8-65669130c526",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043234_4a7bfd25-fcd1-45f5-bed8-65669130c526.png",
+  "note": "脚本補強で追加（I章）。目視検品合格"
+ },
+ {
+  "panel": "sb77b_new_plate",
+  "no": "77b",
+  "prompt": "地下、管理人室の扉。ひかりが新しい無地のプレートを掛ける。八社目の誕生。",
+  "refs": [
+   "set_caretaker",
+   "HIKARI"
+  ],
+  "job_id": "ac2d7737-2738-4b3b-87da-6f860c00f123",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043240_ac2d7737-2738-4b3b-87da-6f860c00f123.png",
+  "note": "脚本補強で追加（I章）。目視検品合格"
  }
 ]

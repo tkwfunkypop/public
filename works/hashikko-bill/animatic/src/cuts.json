@@ -2,7 +2,7 @@
  "title": "はしっこビルの明日づくり",
  "subtitle": "七階建て、七社、七日間。世界の外れで「明日」を発注された話。",
  "fps": 30,
- "totalSec": 299,
+ "totalSec": 346,
  "cuts": [
   {
    "no": 1,
@@ -699,6 +699,18 @@
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182105_d1c48d30-166d-4d77-92fa-45f0bf2cc725.png"
   },
   {
+   "no": "48b",
+   "sec": 4,
+   "seq": "F",
+   "seqTitle": "裏切り",
+   "size": "MS",
+   "action": "夜の3F。鵜飼がひとり残っている。抽斗の奥から、壊れた玩具の歯車と古い写真立て。握りしめ、窓の霧を見る。",
+   "dialogue": "",
+   "note": "動機の種。写真立ての中身は無地（編集で合成可）",
+   "panel": "sb48b_ukai_gear",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_042650_481e9d6f-a4bd-4e4a-86ca-2b4ffab2e307.png"
+  },
+  {
    "no": 49,
    "sec": 4,
    "seq": "F",
@@ -709,6 +721,18 @@
    "note": "",
    "panel": "sb49_betrayal",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182128_8df542a7-ed5a-4baa-ae8a-21077c06395d.png"
+  },
+  {
+   "no": "49b",
+   "sec": 4,
+   "seq": "F",
+   "seqTitle": "裏切り",
+   "size": "UP",
+   "action": "応接テーブルのクローズ。取り壊し図面の上に、契約金の封筒と七社ぶんの買収カードが並ぶ。その横に、鵜飼の会議メモの束。業者の手がメモを一枚ずつ繰る。",
+   "dialogue": "業者「よく調べてある。これなら七社、ばらばらに買える」",
+   "note": "メモ＝各社を切り崩す値札だとわかる絵。紙面は全て無地",
+   "panel": "sb49b_pricetags",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_044518_15278782-9e8a-49b3-befa-8f71558d0750.png"
   },
   {
    "no": 50,
@@ -733,6 +757,18 @@
    "note": "cut23の回収",
    "panel": "sb51_notes_spill",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182138_29adad0f-41b8-44dd-bd12-1a981371fe29.png"
+  },
+  {
+   "no": "51b",
+   "sec": 4,
+   "seq": "F",
+   "seqTitle": "裏切り",
+   "size": "MS",
+   "action": "廊下。ばらまかれたメモの一枚が手から手へ回覧される。読むたび、順に顔がこわばり、目が伏せられる。",
+   "dialogue": "N「会議の言葉は、値札に変わっていた」",
+   "note": "回覧の連鎖で信頼の崩壊を見せる",
+   "panel": "sb51b_pass_memo",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_042723_05d1c42c-ca61-44ec-b7b2-0f340e634262.png"
   },
   {
    "no": 52,
@@ -771,6 +807,18 @@
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182153_3fd9ffd1-cae4-438f-8f48-2dd94475940d.png"
   },
   {
+   "no": "54b",
+   "sec": 4,
+   "seq": "F",
+   "seqTitle": "裏切り",
+   "size": "UP",
+   "action": "応接。契約書に判を構える鵜飼。印面が紙の上で止まり、細かく震える。向かいで業者が待っている。",
+   "dialogue": "業者「押せば、このビルは明日、消えます」",
+   "note": "まだ押していない。G章への引き",
+   "panel": "sb54b_trembling_seal",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043125_9ebfc8df-3aaa-497e-b725-2cd0b0bbcfe8.png"
+  },
+  {
    "no": 55,
    "sec": 4,
    "seq": "G",
@@ -801,6 +849,18 @@
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182224_4194c397-bf1f-423e-a1dc-591718b733bd.png"
   },
   {
+   "no": "56b",
+   "sec": 4,
+   "seq": "G",
+   "seqTitle": "三階のほんとうの話",
+   "size": "FS",
+   "action": "回想。夕方の踊り場。7Fから母、2Fから父。少年を挟んで三人で階段を降りる。エレベーターは2と6に停まらないから、帰り道はいつも階段だった。",
+   "dialogue": "鵜飼「エレベーターは、父の階には停まらなかった」",
+   "note": "唯一の家族の時間＝階段。2/6の伏線と接続",
+   "panel": "sb56b_family_stairs",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043129_67822e1d-2f46-41e7-8dcb-0633e43a0cf4.png"
+  },
+  {
    "no": 57,
    "sec": 4,
    "seq": "G",
@@ -811,6 +871,18 @@
    "note": "死体は映さない",
    "panel": "sb57_toolbox",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182229_d7aa7e6e-12e8-43a2-a6cb-34854bb0b03a.png"
+  },
+  {
+   "no": "57b",
+   "sec": 4,
+   "seq": "G",
+   "seqTitle": "三階のほんとうの話",
+   "size": "MS",
+   "action": "回想。重い工具箱を抱え、階段を降りる父の背中。踊り場の向こう、エレベーターの2のランプは消えたまま。",
+   "dialogue": "鵜飼「あの日も、階段しかなかった」",
+   "note": "事故の理由。父の顔は映さない（後ろ姿）",
+   "panel": "sb57b_father_back",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043147_b5d706a4-688f-4228-b2e6-5a9a08c44103.png"
   },
   {
    "no": 58,
@@ -829,6 +901,18 @@
      "at": 0
     }
    ]
+  },
+  {
+   "no": "58b",
+   "sec": 4,
+   "seq": "G",
+   "seqTitle": "三階のほんとうの話",
+   "size": "FS",
+   "action": "回想。母と手を繋ぎ、吊り橋を渡ってビルを去る少年の背中。ビルの窓の灯が、ひとつずつ消えていく。",
+   "dialogue": "鵜飼「僕は、このビルを終わらせるために戻ったんです」",
+   "note": "動機の明言。F章の答え合わせ",
+   "panel": "sb58b_leaving",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043154_214cbf75-4154-4c06-9ee6-55fcbafb5146.png"
   },
   {
    "no": 59,
@@ -859,6 +943,18 @@
      "at": 0
     }
    ]
+  },
+  {
+   "no": "60b",
+   "sec": 5,
+   "seq": "G",
+   "seqTitle": "三階のほんとうの話",
+   "size": "UP",
+   "action": "帳簿に挟まれた古い金一封の封筒。空。C09と同じ意匠。隣の頁は柊の貯金の出金記録。",
+   "dialogue": "トメ「あんたの依頼書の『予算 金一封』はな。三十年前に、もう使われとったんよ」",
+   "note": "C09の空の封筒の回収。文字は編集で",
+   "panel": "sb60b_empty_envelope",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043206_3689b814-7d21-4713-ad71-691fe6a7777c.png"
   },
   {
    "no": 61,
@@ -999,6 +1095,18 @@
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182426_a4967055-a265-4cb2-a483-56164efd2ef2.png"
   },
   {
+   "no": "70b",
+   "sec": 5,
+   "seq": "H",
+   "seqTitle": "四時四十四分",
+   "size": "MS",
+   "action": "納品。木箱に号外・小瓶・式次第・書記ノートが納められ、柊の膝に置かれる。柊が検収の判をゆっくり押す。",
+   "dialogue": "ひかり「納品です。『明日を、一日』」",
+   "note": "納品物の明確化。検収印は抽象図形",
+   "panel": "sb70b_delivery_box",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043214_67c05a35-7a83-472c-8c6b-1460340032bc.png"
+  },
+  {
    "no": 71,
    "sec": 4,
    "seq": "H",
@@ -1027,6 +1135,18 @@
      "at": 0
     }
    ]
+  },
+  {
+   "no": "72b",
+   "sec": 5,
+   "seq": "I",
+   "seqTitle": "八社目",
+   "size": "FS",
+   "action": "柊の葬式。屋上。並んだ椅子は、今度は全部埋まっている。C58の完全な反転。トメが式を執り行う。",
+   "dialogue": "N「参列者、九名」",
+   "note": "空の椅子の反転＝テーマの回収。祭壇に柊のランプと鍵束",
+   "panel": "sb72b_full_funeral",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043234_4a7bfd25-fcd1-45f5-bed8-65669130c526.png"
   },
   {
    "no": 73,
@@ -1087,6 +1207,18 @@
    "note": "八社目＝彼女",
    "panel": "sb77_hikari_writes",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182515_c14f3af7-d4ec-41ca-971b-372fdbe67dd3.png"
+  },
+  {
+   "no": "77b",
+   "sec": 4,
+   "seq": "I",
+   "seqTitle": "八社目",
+   "size": "MS",
+   "action": "地下、管理人室の扉。ひかりが新しい無地のプレートを掛ける。八社目の誕生。",
+   "dialogue": "N「果端ビルに、八社目が入居した。屋号は『明日づくり係』」",
+   "note": "プレートの文字は編集で合成",
+   "panel": "sb77b_new_plate",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043240_ac2d7737-2738-4b3b-87da-6f860c00f123.png"
   },
   {
    "no": 78,
