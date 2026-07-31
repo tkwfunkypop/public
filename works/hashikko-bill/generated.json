@@ -7386,6 +7386,51 @@
    "mime_type": "audio/wav",
    "model": "seed_audio",
    "note": "I章ナレ英語版 Hana 11.6s"
+  },
+  {
+   "id": "c00a_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "00a",
+   "url": "https://edit.comfyonline.app/result/b2f21481-b153-4349-837c-2ee81fb6f34a.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "冒頭ナレ用 古地図カット"
+  },
+  {
+   "id": "c53_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "53",
+   "url": "https://edit.comfyonline.app/result/20c448d6-ca7b-471d-9466-8358d7da797f.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第13波"
+  },
+  {
+   "id": "c54_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "54",
+   "url": "https://edit.comfyonline.app/result/43fea2cc-fc2f-44ed-b572-3d05b6321a84.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第13波"
+  },
+  {
+   "id": "c55_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "55",
+   "url": "https://edit.comfyonline.app/result/7a25ce73-9b9b-4791-aedb-4457f996fd94.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第13波"
+  },
+  {
+   "id": "c56_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "56",
+   "url": "https://edit.comfyonline.app/result/20e405a5-ba23-41f6-aea6-6342cc545cb6.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第13波"
   }
  ]
 }
