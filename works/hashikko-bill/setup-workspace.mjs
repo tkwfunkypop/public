@@ -30,6 +30,8 @@ const FOLDERS = {
   key_visual: '06_キーアート_ポスター',
   design_variant: '07_デザイン検討_過去案',
   i2v_test: '08_動画テスト',
+  i2v_prod: '12_本線I2V',
+  interp_test: '12_本線I2V',
   animatic_export: '09_動画コンテ',
   guide_video: '09_動画コンテ',
   floyo: '10_Floyo出力',

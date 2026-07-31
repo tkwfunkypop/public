@@ -6351,6 +6351,71 @@
       "start_ref": "sf_sb70b_delivery_box",
       "end_ref": "c70b_endframe_v3",
       "note": "LTX Start-End補間テスト合格。開始(判を掲げる)→終了(押し切る)を5秒で補間。冒頭・中間・最終フレーム検品OK: 筒状白頭維持・破綻なし・音声トラック付き。presigned URLは24h失効のためURL欄なし。再取得は file_id → GET api.floyo.ai/files/<id>?expand=presigned_url。setup-workspace.mjsが 10_Floyo出力/c70b_stamp_interp.mp4 としてローカル保存"
+    },
+    {
+      "id": "c2_i2v_v1",
+      "kind": "i2v_prod",
+      "cut": "2",
+      "provider": "sjinn",
+      "model": "seedance2",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 5,
+      "task_id": "db4ba51b-6f5a-480a-b77f-6b02fdb1f0d4",
+      "url": "https://edit.comfyonline.app/result/2b7a3cd8-dad7-476e-ab93-432fa5c7f5a6.mp4",
+      "note": "本線I2V C2: 郵便受けの埃・横移動。URLはSJinn一時ストレージのため早めにsetup-workspace.mjsでローカル保存"
+    },
+    {
+      "id": "c3_i2v_v1",
+      "kind": "i2v_prod",
+      "cut": "3",
+      "provider": "sjinn",
+      "model": "seedance2",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 5,
+      "task_id": "b94b94db-f6fe-42cc-ac74-5eebc3d6858e",
+      "url": "https://edit.comfyonline.app/result/9006cb3c-ceeb-40e0-b00d-feb18f4359b3.mp4",
+      "note": "本線I2V C3: 螺旋階段見上げ・上昇。URLはSJinn一時ストレージのため早めにsetup-workspace.mjsでローカル保存"
+    },
+    {
+      "id": "c4_i2v_v1",
+      "kind": "i2v_prod",
+      "cut": "4",
+      "provider": "sjinn",
+      "model": "seedance2",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 5,
+      "task_id": "59c11feb-d19b-4a0f-a176-457445dd1a65",
+      "url": "https://edit.comfyonline.app/result/f5217e0c-968c-49d1-9ac6-d8c7db7136cb.mp4",
+      "note": "本線I2V C4: エレベーター表示・2と6消灯。URLはSJinn一時ストレージのため早めにsetup-workspace.mjsでローカル保存"
+    },
+    {
+      "id": "c5_i2v_v1",
+      "kind": "i2v_prod",
+      "cut": "5",
+      "provider": "sjinn",
+      "model": "seedance2",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 5,
+      "task_id": "02b445bd-ea6d-4de0-a5a1-321d153fa40f",
+      "url": "https://edit.comfyonline.app/result/930a7bd5-5682-43e5-a035-457a1a0ffd8b.mp4",
+      "note": "本線I2V C5: 七つの閉じた扉・霧。URLはSJinn一時ストレージのため早めにsetup-workspace.mjsでローカル保存"
+    },
+    {
+      "id": "c6_i2v_v1",
+      "kind": "i2v_prod",
+      "cut": "6",
+      "provider": "sjinn",
+      "model": "seedance2",
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_sec": 5,
+      "task_id": "cb329f72-a106-4db4-89fd-a186e6bdd26d",
+      "url": "https://edit.comfyonline.app/result/27f4646a-2de2-4399-9b46-b6e2225f4fdc.mp4",
+      "note": "本線I2V C6: 霧のみ・奥の明滅。URLはSJinn一時ストレージのため早めにsetup-workspace.mjsでローカル保存"
     }
   ]
 }
