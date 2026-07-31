@@ -7656,6 +7656,51 @@
    "mime_type": "video/mp4",
    "model": "seedance2-720p",
    "note": "本線I2V 最終波"
+  },
+  {
+   "id": "intro_tome_v1",
+   "kind": "i2v_prod",
+   "cut": "intro",
+   "url": "https://edit.comfyonline.app/result/d841692a-6a28-47f8-b298-2e81f6a18c8c.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "キャラ紹介 トメ"
+  },
+  {
+   "id": "intro_kaburagi_v1",
+   "kind": "i2v_prod",
+   "cut": "intro",
+   "url": "https://edit.comfyonline.app/result/f34d4555-27b7-4651-bb18-91028621494e.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "キャラ紹介 鏑木"
+  },
+  {
+   "id": "intro_ukai_v1",
+   "kind": "i2v_prod",
+   "cut": "intro",
+   "url": "https://edit.comfyonline.app/result/469eb573-5d71-4c4f-9b79-990b9f1acf6b.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "キャラ紹介 鵜飼"
+  },
+  {
+   "id": "intro_kumoi_v1",
+   "kind": "i2v_prod",
+   "cut": "intro",
+   "url": "https://edit.comfyonline.app/result/466fa438-bcfe-40f2-b4cb-3dd34ee0ae89.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "キャラ紹介 雲井"
+  },
+  {
+   "id": "intro_li_v1",
+   "kind": "i2v_prod",
+   "cut": "intro",
+   "url": "https://edit.comfyonline.app/result/7baf8160-2a6d-4411-9274-d15d30eb2d09.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "キャラ紹介 李"
   }
  ]
 }
