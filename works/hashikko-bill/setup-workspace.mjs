@@ -88,7 +88,9 @@ for (const it of latest.values()) {
 const resultsDir = join(repoRoot, 'tools', 'floyo', 'results');
 if (existsSync(resultsDir)) {
   for (const f of readdirSync(resultsDir).filter((f) => f.endsWith('.json'))) {
-    const r = JSON.parse(readFileSync(join(resultsDir, f), 'utf8'));
+    let r;
+    try { r = JSON.parse(readFileSync(join(resultsDir, f), 'utf8')); }
+    catch { console.error(`  スキップ(壊れたJSON): ${f}`); continue; }
     for (const item of r.results ?? []) {
       // 命名規則: c{カット}_{内容}_v{版}（複数出力は連番を付ける）
       const outs = item.outputs ?? [];
