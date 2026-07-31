@@ -7297,6 +7297,51 @@
    "mime_type": "image/png",
    "model": "nano_banana_2",
    "note": "C00a古地図 候補2"
+  },
+  {
+   "id": "c45_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "45",
+   "url": "https://edit.comfyonline.app/result/312f6880-87fa-4f10-85c6-917ead3d8077.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第11波"
+  },
+  {
+   "id": "c46_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "46",
+   "url": "https://edit.comfyonline.app/result/3a07ad3e-d23f-4ec2-ae06-4881c9ab37ad.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第11波"
+  },
+  {
+   "id": "c47_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "47",
+   "url": "https://edit.comfyonline.app/result/1fd734a4-07f2-46b4-8a6b-f5ddf2c35b68.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第11波"
+  },
+  {
+   "id": "c48_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "48",
+   "url": "https://edit.comfyonline.app/result/54b4cba1-636d-4c66-a2e5-d1e0dc2a7ec9.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第11波"
+  },
+  {
+   "id": "c48b_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "48b",
+   "url": "https://edit.comfyonline.app/result/9a00347a-9840-41cc-87c3-5648cbc4e616.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第11波"
   }
  ]
 }
