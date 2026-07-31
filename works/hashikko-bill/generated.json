@@ -7620,6 +7620,42 @@
    "mime_type": "video/mp4",
    "model": "seedance2-720p",
    "note": "本線I2V 第17波"
+  },
+  {
+   "id": "c72_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "72",
+   "url": "https://edit.comfyonline.app/result/62dfbe4d-b797-4aa8-bd13-1226aeb1bf3d.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 最終波"
+  },
+  {
+   "id": "c73_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "73",
+   "url": "https://edit.comfyonline.app/result/7b9ae52c-545e-43fe-9fbe-4c9cddfc8328.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 最終波"
+  },
+  {
+   "id": "c76_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "76",
+   "url": "https://edit.comfyonline.app/result/e6f05ba9-1a8e-4981-9727-4276281416e1.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 最終波"
+  },
+  {
+   "id": "c78_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "78",
+   "url": "https://edit.comfyonline.app/result/4a2edc22-7a11-4401-8941-b6fce2754d64.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 最終波"
   }
  ]
 }
