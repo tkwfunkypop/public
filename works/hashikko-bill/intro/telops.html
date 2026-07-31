@@ -28,11 +28,10 @@
   /* ===== テロップ本体: フェルトの縫い付けラベル ===== */
   .telop{position:absolute;left:26px;bottom:22px;display:flex;align-items:stretch;gap:0;z-index:2;
     filter:drop-shadow(0 10px 22px rgba(0,0,0,.65))}
-  .patch{position:relative;background:
-      linear-gradient(160deg, rgba(255,255,255,.06), rgba(0,0,0,.14)),
-      var(--paper);
+  .patch{position:relative;background-color:var(--paper);
+    background-image:linear-gradient(160deg, rgba(255,255,255,.06), rgba(0,0,0,.14));
     color:var(--ink);border-radius:3px 14px 3px 14px;padding:14px 22px 13px 18px;
-    display:flex;align-items:center;gap:16px;min-width:340px}
+    display:flex;align-items:center;gap:16px;white-space:nowrap}
   /* 縫い目（ステッチ） */
   .patch::before{content:"";position:absolute;inset:5px;border:1.6px dashed rgba(28,26,32,.42);
     border-radius:2px 11px 2px 11px;pointer-events:none}
@@ -56,9 +55,10 @@
     box-shadow:0 1px 2px rgba(0,0,0,.4)}
 
   /* 作字風ネーム: 一文字ずつ僅かに回転・沈み込み */
-  .names{line-height:1}
-  .kana{font-size:10.5px;letter-spacing:.62em;color:#54504a;margin:0 0 5px 2px}
-  .name{font-size:40px;font-weight:600;letter-spacing:.02em;display:flex;align-items:baseline}
+  .names{line-height:1;flex:none}
+  .kana{font-size:10.5px;letter-spacing:.62em;color:#54504a;margin:0 0 5px 2px;white-space:nowrap}
+  .name{font-size:40px;font-weight:600;letter-spacing:.02em;display:flex;align-items:baseline;
+    flex-wrap:nowrap;white-space:nowrap}
   .name span{display:inline-block;transform:rotate(var(--r,0deg)) translateY(var(--y,0px));
     text-shadow:0 1px 0 rgba(255,255,255,.55), 0 -1px 0 rgba(0,0,0,.18)}
   .name span:nth-child(odd){--r:-1.6deg;--y:1px}
@@ -71,7 +71,8 @@
     clip-path:polygon(0 35%, 4% 0, 97% 18%, 100% 70%, 5% 100%, 0 78%);opacity:.85}
 
   /* 右側: 所属と性格 */
-  .meta{border-left:1px solid rgba(28,26,32,.25);margin-left:4px;padding-left:16px;align-self:center;min-width:150px}
+  .meta{border-left:1px solid rgba(28,26,32,.25);margin-left:4px;padding-left:16px;align-self:center;
+    min-width:150px;max-width:250px;white-space:normal}
   .job{font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-size:11px;letter-spacing:.2em;color:#4c463c;
     display:flex;align-items:center;gap:6px}
   .job::before{content:"";width:7px;height:7px;background:var(--fc);border-radius:2px;
