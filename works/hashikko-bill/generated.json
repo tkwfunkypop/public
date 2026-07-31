@@ -6942,6 +6942,48 @@
    "mime_type": "video/mp4",
    "model": "seedance2-720p",
    "note": "本線I2V 第7波"
+  },
+  {
+   "id": "ad_3_yoko_part1_v1",
+   "kind": "ad_i2v",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_114305_df682572-0c99-4bf0-a04b-2e2173f30fe1.mp4",
+   "mime_type": "video/mp4",
+   "note": "CM#3 60秒オムニバス Part1(ホラー儀典+メカ玩具) seedance_2_0 日本語音声"
+  },
+  {
+   "id": "ad_3_yoko_part2_v1",
+   "kind": "ad_i2v",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_114330_c43e6dec-0547-409b-872d-0c11dd5bb8fe.mp4",
+   "mime_type": "video/mp4",
+   "note": "CM#3 Part2(ノワール会計+SF気象)"
+  },
+  {
+   "id": "ad_3_yoko_part3_v1",
+   "kind": "ad_i2v",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_114349_5b614cf3-0acc-4233-aff8-27b3104383b4.mp4",
+   "mime_type": "video/mp4",
+   "note": "CM#3 Part3(香水+ニュース映画)"
+  },
+  {
+   "id": "ad_3_yoko_part4_v1",
+   "kind": "ad_i2v",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_114408_6577f5ad-cd8e-46d0-83c9-5c28dfd5ae66.mp4",
+   "mime_type": "video/mp4",
+   "note": "CM#3 Part4(飯テロ+ビル種明かし)"
+  },
+  {
+   "id": "ad_2_tate_v1",
+   "kind": "ad_i2v",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_114426_a67167be-dc3b-4791-abd6-b6b38e913a54.mp4",
+   "mime_type": "video/mp4",
+   "note": "CM#2 ホタル電球 縦9:16 SNS版 日本語音声"
+  },
+  {
+   "id": "vo_seq_i_v1",
+   "kind": "narration_audio",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_120355_ff62ec3e-a542-4992-9449-6389c4903cca.wav",
+   "mime_type": "audio/wav",
+   "note": "I章ナレ(八社目誕生) Hana 10.6s"
   }
  ]
 }
