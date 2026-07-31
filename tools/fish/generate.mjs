@@ -46,7 +46,7 @@ const narrations = JSON.parse(readFileSync(ledgerPath, 'utf8'))
 const byId = new Map(narrations.map((n) => [n.id, n]));
 
 async function searchVoices(title) {
-  const u = `${API}/model?language=ja&sort_by=like_count&page_size=15${title ? `&title=${encodeURIComponent(title)}` : ''}`;
+  const u = `${API}/model?language=ja&sort_by=task_count&page_size=15${title ? `&title=${encodeURIComponent(title)}` : ''}`;
   const res = await fetch(u, { headers: auth });
   if (!res.ok) throw new Error(`search failed ${res.status}: ${await res.text()}`);
   const body = await res.json();
@@ -71,7 +71,7 @@ if (flag('search') || opt('search')) {
   const voices = await searchVoices(kw);
   if (!voices.length) console.log('該当なし。キーワードを変えて試してください。');
   for (const v of voices) {
-    console.log(`${v._id ?? v.id}  |  ${v.title}  |  ♥${v.like_count ?? '?'}  |  ${(v.languages ?? []).join(',')}`);
+    console.log(`${v._id ?? v.id}  |  ${v.title}  |  使用${v.task_count ?? "?"}回  |  ${(v.languages ?? []).join(',')}`);
   }
 } else if (flag('audition')) {
   const line = byId.get('vo_c02');
