@@ -956,5 +956,179 @@
   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_045514_2ae51453-2fee-400e-9400-67887a555f62.png",
   "superseded_job_id": "4a7bfd25-fcd1-45f5-bed8-65669130c526",
   "note": "C72b v2 検品合格"
+ },
+ {
+  "panel": "sb07_envelope",
+  "no": 7,
+  "prompt": "架空文字（invented script）入りで再生成。実在文字・数字は不可、判読不能が正",
+  "refs": [],
+  "job_id": "0101282d-2182-4722-aabf-64063876cfb3",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053459_0101282d-2182-4722-aabf-64063876cfb3.png",
+  "superseded_job_id": "534dacb6-9e3d-4781-aa84-1c21ba9e3654",
+  "note": "glyph版 検品合格"
+ },
+ {
+  "panel": "sb08_letter",
+  "no": 8,
+  "prompt": "架空文字（invented script）入りで再生成。実在文字・数字は不可、判読不能が正",
+  "refs": [],
+  "job_id": "36e8e904-71f5-4e7b-9d2a-58272133bebc",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_055013_36e8e904-71f5-4e7b-9d2a-58272133bebc.png",
+  "superseded_job_id": "99b31845-7d53-4d03-8ef0-676aa28c576a",
+  "note": "glyph版 検品合格"
+ },
+ {
+  "panel": "sb11_returned",
+  "no": 11,
+  "prompt": "架空文字（invented script）入りで再生成。実在文字・数字は不可、判読不能が正",
+  "refs": [],
+  "job_id": "8d6f2e0e-c1d7-4d70-b9fb-272c0e8a75c8",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053520_8d6f2e0e-c1d7-4d70-b9fb-272c0e8a75c8.png",
+  "superseded_job_id": "c26c3edf-2d18-4487-af3b-bccc8ab070e5",
+  "note": "glyph版 検品合格"
+ },
+ {
+  "panel": "sb14_seven_fan",
+  "no": 14,
+  "prompt": "架空文字（invented script）入りで再生成。実在文字・数字は不可、判読不能が正",
+  "refs": [
+   "HIKARI"
+  ],
+  "job_id": "f4251d99-c0a1-4ab8-a4ee-7458bc754573",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053525_f4251d99-c0a1-4ab8-a4ee-7458bc754573.png",
+  "superseded_job_id": "b9533c9b-c7c9-4c0d-8fc0-2a15d2475e29",
+  "note": "glyph版 検品合格"
+ },
+ {
+  "panel": "sb18_tome_agenda",
+  "no": 18,
+  "prompt": "架空文字（invented script）入りで再生成。実在文字・数字は不可、判読不能が正",
+  "refs": [
+   "set_rooftop",
+   "TOME"
+  ],
+  "job_id": "c267fa20-dfec-42f8-a085-d2ffa3855f80",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053541_c267fa20-dfec-42f8-a085-d2ffa3855f80.png",
+  "superseded_job_id": "73153a34-9863-42a6-8cc0-5568e341e094",
+  "note": "glyph版 検品合格"
+ },
+ {
+  "panel": "sb31_letter_closeup",
+  "no": 31,
+  "prompt": "架空文字（invented script）入りで再生成。実在文字・数字は不可、判読不能が正",
+  "refs": [],
+  "job_id": "0e5d18ab-f4bf-4046-b5d8-a80c5f0e2345",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053545_0e5d18ab-f4bf-4046-b5d8-a80c5f0e2345.png",
+  "superseded_job_id": "4e9f7d96-5614-4191-ac07-6e90e49cf188",
+  "note": "glyph版 検品合格"
+ },
+ {
+  "panel": "sb45_ledger_join",
+  "no": 45,
+  "prompt": "架空文字（invented script）入りで再生成。実在文字・数字は不可、判読不能が正",
+  "refs": [
+   "UKAI"
+  ],
+  "job_id": "a6a5fc4c-c60f-47fb-b01a-6031eb199237",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053558_a6a5fc4c-c60f-47fb-b01a-6031eb199237.png",
+  "superseded_job_id": "5a88fc3b-a4ba-410a-b080-e5926a731f66",
+  "note": "glyph版 検品合格"
+ },
+ {
+  "panel": "sb46_tome_program",
+  "no": 46,
+  "prompt": "架空文字（invented script）入りで再生成。実在文字・数字は不可、判読不能が正",
+  "refs": [
+   "set_office1f",
+   "TOME"
+  ],
+  "job_id": "4d938839-2260-49df-a4ec-c2e02b7d7f30",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053604_4d938839-2260-49df-a4ec-c2e02b7d7f30.png",
+  "superseded_job_id": "d702026e-b8ee-42bc-b8b4-b2580d86d9ad",
+  "note": "glyph版 検品合格"
+ },
+ {
+  "panel": "sb49b_pricetags",
+  "no": "49b",
+  "prompt": "架空文字（invented script）入りで再生成。実在文字・数字は不可、判読不能が正",
+  "refs": [
+   "set_office3f",
+   "DEVELOPER"
+  ],
+  "job_id": "bbef60f6-5f3c-4c65-83d1-ceaa86a4fd61",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053617_bbef60f6-5f3c-4c65-83d1-ceaa86a4fd61.png",
+  "superseded_job_id": "15278782-9e8a-49b3-befa-8f71558d0750",
+  "note": "glyph版 検品合格"
+ },
+ {
+  "panel": "sb54b_trembling_seal",
+  "no": "54b",
+  "prompt": "架空文字（invented script）入りで再生成。実在文字・数字は不可、判読不能が正",
+  "refs": [
+   "set_office3f",
+   "UKAI",
+   "DEVELOPER"
+  ],
+  "job_id": "d7fd70ea-da53-4e90-8d42-497bd57c578b",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053632_d7fd70ea-da53-4e90-8d42-497bd57c578b.png",
+  "superseded_job_id": "9ebfc8df-3aaa-497e-b725-2cd0b0bbcfe8",
+  "note": "glyph版 検品合格"
+ },
+ {
+  "panel": "sb60_ledger",
+  "no": 60,
+  "prompt": "架空文字（invented script）入りで再生成。実在文字・数字は不可、判読不能が正",
+  "refs": [],
+  "job_id": "9671bd85-7933-4fe3-bd6e-e13743aa331a",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053637_9671bd85-7933-4fe3-bd6e-e13743aa331a.png",
+  "superseded_job_id": "d2042e41-f172-4653-b964-e8fe43a6dd5b",
+  "note": "glyph版 検品合格"
+ },
+ {
+  "panel": "sb60b_empty_envelope",
+  "no": "60b",
+  "prompt": "架空文字（invented script）入りで再生成。実在文字・数字は不可、判読不能が正",
+  "refs": [
+   "set_caretaker"
+  ],
+  "job_id": "c652dd78-97d3-4512-8574-295c4e634354",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053649_c652dd78-97d3-4512-8574-295c4e634354.png",
+  "superseded_job_id": "3689b814-7d21-4713-ad71-691fe6a7777c",
+  "note": "glyph版 検品合格"
+ },
+ {
+  "panel": "sb70_extra",
+  "no": 70,
+  "prompt": "架空文字（invented script）入りで再生成。実在文字・数字は不可、判読不能が正",
+  "refs": [],
+  "job_id": "13fb2dfa-75a0-469d-b9f4-796a3438d0f6",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053654_13fb2dfa-75a0-469d-b9f4-796a3438d0f6.png",
+  "superseded_job_id": "f1dd7a39-d766-4573-9d24-74a337a9524e",
+  "note": "glyph版 検品合格"
+ },
+ {
+  "panel": "sb76_new_letter",
+  "no": 76,
+  "prompt": "架空文字（invented script）入りで再生成。実在文字・数字は不可、判読不能が正",
+  "refs": [
+   "set_caretaker"
+  ],
+  "job_id": "41bf44fc-7a4f-473b-8e4f-8777f18e8212",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053709_41bf44fc-7a4f-473b-8e4f-8777f18e8212.png",
+  "superseded_job_id": "dd420739-f0a6-4ab4-8667-9827a6928566",
+  "note": "glyph版 検品合格"
+ },
+ {
+  "panel": "sb77_hikari_writes",
+  "no": 77,
+  "prompt": "架空文字（invented script）入りで再生成。実在文字・数字は不可、判読不能が正",
+  "refs": [
+   "set_caretaker",
+   "HIKARI"
+  ],
+  "job_id": "d6013c56-24e1-4015-bacf-d5d4d757fffb",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053715_d6013c56-24e1-4015-bacf-d5d4d757fffb.png",
+  "superseded_job_id": "7c825eae-1ee7-487c-9e8f-8cfa7e04c48e",
+  "note": "glyph版 検品合格"
  }
 ]

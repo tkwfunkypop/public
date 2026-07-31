@@ -6070,6 +6070,156 @@
    "model": "seed_audio",
    "job_id": "7ee84886-e1c5-4821-aa53-b543d33a07b7",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_050050_7ee84886-e1c5-4821-aa53-b543d33a07b7.wav"
+  },
+  {
+   "id": "sf_sb07_envelope",
+   "kind": "floyo_start_frame",
+   "aspect_ratio": "16:9",
+   "approved": false,
+   "note": "架空文字版：作品世界のオリジナル判読不能グリフで文書の文字を描画（カット7）。目視検品合格",
+   "job_id": "0101282d-2182-4722-aabf-64063876cfb3",
+   "superseded_job_id": "534dacb6-9e3d-4781-aa84-1c21ba9e3654",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053459_0101282d-2182-4722-aabf-64063876cfb3.png"
+  },
+  {
+   "id": "sf_sb08_letter",
+   "kind": "floyo_start_frame",
+   "aspect_ratio": "16:9",
+   "approved": false,
+   "note": "架空文字版：作品世界のオリジナル判読不能グリフで文書の文字を描画（カット8）。目視検品合格",
+   "job_id": "36e8e904-71f5-4e7b-9d2a-58272133bebc",
+   "superseded_job_id": "99b31845-7d53-4d03-8ef0-676aa28c576a",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_055013_36e8e904-71f5-4e7b-9d2a-58272133bebc.png"
+  },
+  {
+   "id": "sf_sb11_returned",
+   "kind": "floyo_start_frame",
+   "aspect_ratio": "16:9",
+   "approved": false,
+   "note": "架空文字版：作品世界のオリジナル判読不能グリフで文書の文字を描画（カット11）。目視検品合格",
+   "job_id": "8d6f2e0e-c1d7-4d70-b9fb-272c0e8a75c8",
+   "superseded_job_id": "c26c3edf-2d18-4487-af3b-bccc8ab070e5",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053520_8d6f2e0e-c1d7-4d70-b9fb-272c0e8a75c8.png"
+  },
+  {
+   "id": "sf_sb14_seven_fan",
+   "kind": "floyo_start_frame",
+   "aspect_ratio": "16:9",
+   "approved": false,
+   "note": "架空文字版：作品世界のオリジナル判読不能グリフで文書の文字を描画（カット14）。目視検品合格",
+   "job_id": "f4251d99-c0a1-4ab8-a4ee-7458bc754573",
+   "superseded_job_id": "b9533c9b-c7c9-4c0d-8fc0-2a15d2475e29",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053525_f4251d99-c0a1-4ab8-a4ee-7458bc754573.png"
+  },
+  {
+   "id": "sf_sb18_tome_agenda",
+   "kind": "floyo_start_frame",
+   "aspect_ratio": "16:9",
+   "approved": false,
+   "note": "架空文字版：作品世界のオリジナル判読不能グリフで文書の文字を描画（カット18）。目視検品合格",
+   "job_id": "c267fa20-dfec-42f8-a085-d2ffa3855f80",
+   "superseded_job_id": "73153a34-9863-42a6-8cc0-5568e341e094",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053541_c267fa20-dfec-42f8-a085-d2ffa3855f80.png"
+  },
+  {
+   "id": "sf_sb31_letter_closeup",
+   "kind": "floyo_start_frame",
+   "aspect_ratio": "16:9",
+   "approved": false,
+   "note": "架空文字版：作品世界のオリジナル判読不能グリフで文書の文字を描画（カット31）。目視検品合格",
+   "job_id": "0e5d18ab-f4bf-4046-b5d8-a80c5f0e2345",
+   "superseded_job_id": "4e9f7d96-5614-4191-ac07-6e90e49cf188",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053545_0e5d18ab-f4bf-4046-b5d8-a80c5f0e2345.png"
+  },
+  {
+   "id": "sf_sb45_ledger_join",
+   "kind": "floyo_start_frame",
+   "aspect_ratio": "16:9",
+   "approved": false,
+   "note": "架空文字版：作品世界のオリジナル判読不能グリフで文書の文字を描画（カット45）。目視検品合格",
+   "job_id": "a6a5fc4c-c60f-47fb-b01a-6031eb199237",
+   "superseded_job_id": "5a88fc3b-a4ba-410a-b080-e5926a731f66",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053558_a6a5fc4c-c60f-47fb-b01a-6031eb199237.png"
+  },
+  {
+   "id": "sf_sb46_tome_program",
+   "kind": "floyo_start_frame",
+   "aspect_ratio": "16:9",
+   "approved": false,
+   "note": "架空文字版：作品世界のオリジナル判読不能グリフで文書の文字を描画（カット46）。目視検品合格",
+   "job_id": "4d938839-2260-49df-a4ec-c2e02b7d7f30",
+   "superseded_job_id": "d702026e-b8ee-42bc-b8b4-b2580d86d9ad",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053604_4d938839-2260-49df-a4ec-c2e02b7d7f30.png"
+  },
+  {
+   "id": "sf_sb49b_pricetags",
+   "kind": "floyo_start_frame",
+   "aspect_ratio": "16:9",
+   "approved": false,
+   "note": "架空文字版：作品世界のオリジナル判読不能グリフで文書の文字を描画（カット49b）。目視検品合格",
+   "job_id": "bbef60f6-5f3c-4c65-83d1-ceaa86a4fd61",
+   "superseded_job_id": "15278782-9e8a-49b3-befa-8f71558d0750",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053617_bbef60f6-5f3c-4c65-83d1-ceaa86a4fd61.png"
+  },
+  {
+   "id": "sf_sb54b_trembling_seal",
+   "kind": "floyo_start_frame",
+   "aspect_ratio": "16:9",
+   "approved": false,
+   "note": "架空文字版：作品世界のオリジナル判読不能グリフで文書の文字を描画（カット54b）。目視検品合格",
+   "job_id": "d7fd70ea-da53-4e90-8d42-497bd57c578b",
+   "superseded_job_id": "9ebfc8df-3aaa-497e-b725-2cd0b0bbcfe8",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053632_d7fd70ea-da53-4e90-8d42-497bd57c578b.png"
+  },
+  {
+   "id": "sf_sb60_ledger",
+   "kind": "floyo_start_frame",
+   "aspect_ratio": "16:9",
+   "approved": false,
+   "note": "架空文字版：作品世界のオリジナル判読不能グリフで文書の文字を描画（カット60）。目視検品合格",
+   "job_id": "9671bd85-7933-4fe3-bd6e-e13743aa331a",
+   "superseded_job_id": "d2042e41-f172-4653-b964-e8fe43a6dd5b",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053637_9671bd85-7933-4fe3-bd6e-e13743aa331a.png"
+  },
+  {
+   "id": "sf_sb60b_empty_envelope",
+   "kind": "floyo_start_frame",
+   "aspect_ratio": "16:9",
+   "approved": false,
+   "note": "架空文字版：作品世界のオリジナル判読不能グリフで文書の文字を描画（カット60b）。目視検品合格",
+   "job_id": "c652dd78-97d3-4512-8574-295c4e634354",
+   "superseded_job_id": "3689b814-7d21-4713-ad71-691fe6a7777c",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053649_c652dd78-97d3-4512-8574-295c4e634354.png"
+  },
+  {
+   "id": "sf_sb70_extra",
+   "kind": "floyo_start_frame",
+   "aspect_ratio": "16:9",
+   "approved": false,
+   "note": "架空文字版：作品世界のオリジナル判読不能グリフで文書の文字を描画（カット70）。目視検品合格",
+   "job_id": "13fb2dfa-75a0-469d-b9f4-796a3438d0f6",
+   "superseded_job_id": "f1dd7a39-d766-4573-9d24-74a337a9524e",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053654_13fb2dfa-75a0-469d-b9f4-796a3438d0f6.png"
+  },
+  {
+   "id": "sf_sb76_new_letter",
+   "kind": "floyo_start_frame",
+   "aspect_ratio": "16:9",
+   "approved": false,
+   "note": "架空文字版：作品世界のオリジナル判読不能グリフで文書の文字を描画（カット76）。目視検品合格",
+   "job_id": "41bf44fc-7a4f-473b-8e4f-8777f18e8212",
+   "superseded_job_id": "dd420739-f0a6-4ab4-8667-9827a6928566",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053709_41bf44fc-7a4f-473b-8e4f-8777f18e8212.png"
+  },
+  {
+   "id": "sf_sb77_hikari_writes",
+   "kind": "floyo_start_frame",
+   "aspect_ratio": "16:9",
+   "approved": false,
+   "note": "架空文字版：作品世界のオリジナル判読不能グリフで文書の文字を描画（カット77）。目視検品合格",
+   "job_id": "d6013c56-24e1-4015-bacf-d5d4d757fffb",
+   "superseded_job_id": "7c825eae-1ee7-487c-9e8f-8cfa7e04c48e",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053715_d6013c56-24e1-4015-bacf-d5d4d757fffb.png"
   }
  ]
 }
