@@ -113,19 +113,36 @@ if (flag('search') || opt('search')) {
   }
   console.log('\ntools/fish/out/ の final_*.mp3 で最終判断してください。決まったらフルidか名前を教えてください。');
 } else {
-  const voice = opt('voice');
-  if (!voice) {
-    console.error('使い方: --search / --audition ["kw"] / --finalists "id1,id2" / --voice <id> --sample|--all');
+  const voiceArg = opt('voice');
+  if (!voiceArg) {
+    console.error('使い方: --search / --audition ["kw"] / --finalists "id1,id2" / --voice <id[,id2]> --sample|--all');
     process.exit(1);
   }
+  // 短いid（audition/finalistsのファイル名の先頭桁）は検索プールからフルidに解決する
+  const specs = voiceArg.split(',').map((s) => s.trim()).filter(Boolean);
+  const pool = new Map();
+  if (specs.some((s) => s.length < 16)) {
+    for (const kw of ['', 'ナレーション', '朗読', '落ち着いた']) {
+      for (const v of await searchVoices(kw)) pool.set(v._id ?? v.id, v);
+    }
+  }
+  const voices = [];
+  for (const s of specs) {
+    const hit = [...pool.values()].find((v) => (v._id ?? v.id).startsWith(s));
+    if (hit) voices.push({ id: hit._id ?? hit.id, label: String(hit.title).replace(/[^\w぀-ヿ一-鿿-]+/g, '_').slice(0, 16), prefix: s.slice(0, 6) });
+    else if (s.length >= 16) voices.push({ id: s, label: 'voice', prefix: s.slice(0, 6) });
+    else console.error(`NG: id ${s}… が見つかりません`);
+  }
   const targets = flag('all') ? narrations : SAMPLE_IDS.map((id) => byId.get(id)).filter(Boolean);
-  console.log(`${targets.length}本を生成します (voice=${voice}, engine=${engine})`);
-  for (const n of targets) {
-    const name = `c${n.cut}_vo_fish_v1.mp3`;
-    try {
-      await tts(n.text, voice, join(outDir, name));
-    } catch (e) {
-      console.error(`  NG ${name}: ${e.message}`);
+  for (const v of voices) {
+    console.log(`\n=== ${v.label} (${v.id}) で ${targets.length}本 (engine=${engine}) ===`);
+    for (const n of targets) {
+      const name = `c${n.cut}_vo_fish_${v.label}_${v.prefix}_v1.mp3`;
+      try {
+        await tts(n.text, v.id, join(outDir, name));
+      } catch (e) {
+        console.error(`  NG ${name}: ${e.message}`);
+      }
     }
   }
   console.log('\n完了。採用が決まったら works/hashikko-bill/generated.json への登録とデスクトップ反映をやります。');
