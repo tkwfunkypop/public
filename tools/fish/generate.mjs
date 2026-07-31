@@ -90,10 +90,32 @@ if (flag('search') || opt('search')) {
     }
   }
   console.log('\ntools/fish/out/ の audition_*.mp3 を聴き比べて、気に入った id を教えてください。');
+} else if (opt('finalists')) {
+  // --finalists "ed0ee5,117196,..." … audition済みボイスのid先頭数桁を渡すと、
+  // 各声で冒頭ナレ3本(C02/C03/C05)を生成して最終判断用のサンプルを作る
+  const prefixes = opt('finalists').split(',').map((s) => s.trim()).filter(Boolean);
+  const pool = new Map();
+  for (const kw of ['', 'ナレーション', '朗読', '落ち着いた']) {
+    for (const v of await searchVoices(kw)) pool.set(v._id ?? v.id, v);
+  }
+  const lines = SAMPLE_IDS.map((id) => byId.get(id)).filter(Boolean);
+  for (const p of prefixes) {
+    const hit = [...pool.values()].find((v) => (v._id ?? v.id).startsWith(p));
+    if (!hit) { console.error(`NG: id ${p}… が見つかりません（--search で確認してください）`); continue; }
+    const id = hit._id ?? hit.id;
+    const safe = String(hit.title).replace(/[^\w぀-ヿ一-鿿-]+/g, '_').slice(0, 24);
+    console.log(`\n[${hit.title}] ${id}`);
+    for (const n of lines) {
+      try {
+        await tts(n.text, id, join(outDir, `final_${safe}_${p}_${n.id.replace('vo_', '')}.mp3`));
+      } catch (e) { console.error(`  NG ${n.id}: ${e.message}`); }
+    }
+  }
+  console.log('\ntools/fish/out/ の final_*.mp3 で最終判断してください。決まったらフルidか名前を教えてください。');
 } else {
   const voice = opt('voice');
   if (!voice) {
-    console.error('使い方: --search "キーワード" / --audition / --voice <id> --sample / --voice <id> --all');
+    console.error('使い方: --search / --audition ["kw"] / --finalists "id1,id2" / --voice <id> --sample|--all');
     process.exit(1);
   }
   const targets = flag('all') ? narrations : SAMPLE_IDS.map((id) => byId.get(id)).filter(Boolean);
