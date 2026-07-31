@@ -6220,6 +6220,42 @@
    "job_id": "d6013c56-24e1-4015-bacf-d5d4d757fffb",
    "superseded_job_id": "7c825eae-1ee7-487c-9e8f-8cfa7e04c48e",
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_053715_d6013c56-24e1-4015-bacf-d5d4d757fffb.png"
+  },
+  {
+   "id": "i2v_test_sb01",
+   "kind": "i2v_test",
+   "cut": "1",
+   "model": "minimax_h3",
+   "duration_sec": 5,
+   "resolution": "2K",
+   "aspect_ratio": "16:9",
+   "note": "MiniMax H3テスト生成（gen_sec=5）。目視確認合格。C01 霧のビル：スロー・プッシュイン。構図・霧の呼吸よし",
+   "job_id": "81a40ff8-bc87-48f8-a9af-e6afb078f068",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_063944_81a40ff8-bc87-48f8-a9af-e6afb078f068.mp4"
+  },
+  {
+   "id": "i2v_test_sb14",
+   "kind": "i2v_test",
+   "cut": "14",
+   "model": "minimax_h3",
+   "duration_sec": 5,
+   "resolution": "2K",
+   "aspect_ratio": "16:9",
+   "note": "MiniMax H3テスト生成（gen_sec=5）。目視確認合格。C14 依頼書の扇：架空文字の紙7枚を保持したまま指の動き。崩れなし",
+   "job_id": "2ebfaf26-441d-4164-86ae-8447fe609367",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_064010_2ebfaf26-441d-4164-86ae-8447fe609367.mp4"
+  },
+  {
+   "id": "i2v_test_sb72b",
+   "kind": "i2v_test",
+   "cut": "72b",
+   "model": "minimax_h3",
+   "duration_sec": 5,
+   "resolution": "2K",
+   "aspect_ratio": "16:9",
+   "note": "MiniMax H3テスト生成（gen_sec=5）。目視確認合格。C72b 柊の葬式：トメが両腕を上げる所作・8キャラ維持・提灯の火",
+   "job_id": "29f2d05e-8e54-40c2-890f-9c1274ec772e",
+   "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_064022_29f2d05e-8e54-40c2-890f-9c1274ec772e.mp4"
   }
  ]
 }
