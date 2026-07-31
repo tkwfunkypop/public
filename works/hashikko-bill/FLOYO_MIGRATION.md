@@ -105,7 +105,7 @@ Floyoへは必要な画像をドラッグ&ドロップで登録（開始フレ�
 - 1ショット＝1ラン、ラン名＝ショットID（例 `sb14_hikari_mailroom`）
 - **生成モデルは MiniMax H3（`minimax_h3`）**。対応尺 5〜15秒・16:9・2K。
   各カットの**生成秒数は `storyboard/i2v-prompts.json` の `gen_sec`** が正
-  （実尺+2秒の余白を持たせて生成（下限5・上限15）。編集で実尺に詰める）。
+  （実尺+2秒かつ最低10秒で生成（上限15）。編集で実尺に詰める）。
   `startframes.html` の各カードにも「生成◯s／実尺◯s・MiniMax H3」を表記済み。
 - 2コマ打ち化／フィルムグレイン弱〜中
 - 共通サフィックスとnegative（morphing / redesign / extra facial features / text）を**毎回**付ける

@@ -9,7 +9,7 @@
     "note": "ナレーションと風音は編集で。映像は霧とビルのみ",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Fog drifts slowly; the tilted seven-storey building's silhouette breathes in and out of the mist; the fragile footbridge sways almost imperceptibly. CAMERA: Very slow push-in toward the building. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 7,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -22,7 +22,7 @@
     "note": "台詞（編集字幕）: N「世界の地図が、そこで終わっている場所に」 ／ N台詞は編集で字幕/音声",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Dust motes float over the row of seven mailboxes; a single mote of dust settles; nothing else moves. CAMERA: Slow lateral track along the mailboxes. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -35,7 +35,7 @@
     "note": "台詞（編集字幕）: N「古い、七階建ての雑居ビルがある」 ／ N台詞は編集で",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Looking up the empty spiral stairwell; dust drifts down through lamplight; railings stay still. CAMERA: Slow upward rise with gentle parallax between the railing layers. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -48,7 +48,7 @@
     "note": "台詞（編集字幕）: N「四十年前から、二階と六階に停まらない」 ／ 表示は文字なしのランプ玉のみ。N台詞は編集で",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: On the elevator indicator, small lamps glow one after another in sequence, but the 2nd and 6th lamps stay dark; a faint electric flicker. CAMERA: Static close-up. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -61,7 +61,7 @@
     "note": "台詞（編集字幕）: N「だから誰も、隣で何が起きているか知らない」 ／ N台詞は編集で",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: The corridor of seven closed doors; fog creeps along the floor; one ceiling lamp flickers once; no doors move. CAMERA: Static wide, or a breath-slow push. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -74,7 +74,7 @@
     "note": "タイトルは編集で合成（映像にタイトルを入れない）",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Only fog, slowly swirling; a faint glow pulses deep inside the mist. CAMERA: Static. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -87,7 +87,7 @@
     "note": "宛名は編集で",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: A blank envelope slides onto the desk and comes to rest; the desk lamp trembles slightly. CAMERA: Static macro on the desktop. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -100,7 +100,7 @@
     "note": "件名・納期などの文面はすべて編集で字幕/合成",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Extreme close-up of the blank request sheet; the paper trembles faintly under lamplight; a shadow passes over it. CAMERA: Very slow push-in. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -113,7 +113,7 @@
     "note": "",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: A felt puppet hand holds the envelope upside down and shakes it twice; nothing falls out; the hand lowers slowly. CAMERA: Static macro. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -126,7 +126,7 @@
     "note": "7コマ同時に同じ動作。人物追加・重複禁止",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: All seven mosaic panels animate at once: each puppet drops one blank sheet into its wastebasket at the same angle and the same moment; the papers flutter down in unison. CAMERA: Static; the seven irregular panels each play simultaneously. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 7,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -139,7 +139,7 @@
     "note": "",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Morning light slowly brightens; the same blank letter lies on the desk again; the empty wastebasket sits beside; a dust mote falls. CAMERA: Slow push-in. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -152,7 +152,7 @@
     "note": "弁当は必ず両手で頭上保持（浮遊禁止）",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: HIKARI hoists the bento stack above her head with BOTH hands, steadies it, turns and starts down the stairs; her hair and dress sway. CAMERA: Gentle follow / static full shot. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -165,7 +165,7 @@
     "note": "",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: HIKARI sets a bento on the desk; her head turns slightly toward the blank letter at the frame edge; on the third placement her feet stop mid-step. CAMERA: Static medium. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 7,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -178,7 +178,7 @@
     "note": "台詞（編集字幕）: ひかり「……ぜんぶ、おなじ」 ／ 「…ぜんぶ、おなじ」は編集字幕。声は喃語",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Her two hands fan out seven glyph-covered sheets like cards; the papers slide with a soft rustle; her fingers tighten. CAMERA: Static macro on the hands. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -191,7 +191,7 @@
     "note": "台詞（編集字幕）: ひかり「あの、うちにも来たんですけど！」 ／ ノック音SE可。台詞は喃語＋編集字幕",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: HIKARI runs up the spiral stairs, grabs the rail, swings around the landing and knocks on doors one after another; energetic but stop-motion crisp. CAMERA: Upward follow along the stairwell. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -204,7 +204,7 @@
     "note": "台詞（編集字幕）: N「四十年ぶりの、社間コミュニケーションだった」 ／ N台詞は編集で",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Three doors open a crack in sequence; from each gap a face peers out slowly; small curious head tilts; wordless murmurs. CAMERA: Static corridor shot. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -217,7 +217,7 @@
     "note": "全員の距離感が主役。喃語のざわめき",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Eight puppets sit far apart at the long rooftop table; tiny fidgets — a hand taps, a head turns away; fog licks the table legs; wind moves hair and cloth. CAMERA: Very slow lateral dolly. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -230,7 +230,7 @@
     "note": "台詞（編集字幕）: トメ「では一、開式の辞」 ／ ホワイトボードの文字は編集で合成",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: TOME stands and chairs the meeting, gesturing with slow precise arm movements toward the BLANK whiteboard; the seated seven shift uneasily; wordless murmurs. CAMERA: Static medium. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -243,7 +243,7 @@
     "note": "台詞（編集字幕）: 雲井「本件の実現確率は、0.04%です」 ／ 確率の台詞は編集字幕",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: KUMOI never lifts her gaze from the blank logbook; one finger traces a line; her hair-curtain sways slightly as she murmurs a flat monotone sound. CAMERA: Static close-up. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -256,7 +256,7 @@
     "note": "咳のSE可",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: LI calmly opens the tiny vial; a faint vapor curls out; around the table the others recoil and cough — shoulders jerk, heads turn away — blank papers fly up. CAMERA: Static medium; papers flutter through frame. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -269,7 +269,7 @@
     "note": "歯車の転がるSE可",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Under the table KABURAGI assembles something from her toolbox; tiny gears roll across the floor; her goggle eyes glow faintly; above the table edge the meeting continues as moving shadows. CAMERA: Static low macro. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -282,7 +282,7 @@
     "note": "台詞（編集字幕）: 黒金「議事録じゃ。納品は三日後」 ／ 「納品は三日後」は編集字幕",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: KUROGANE holds out the blank letterpress sheet across the table with both hands; UKAI reaches to take it; TOME's head tilts; a beat of stillness. CAMERA: Static medium. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -295,7 +295,7 @@
     "note": "台詞（編集字幕）: 鵜飼「まあまあ、順に伺いましょう」 ／ メモの文字は映さない（無地）",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: UKAI at the center gestures smoothly left and right, calming everyone; his pen-hand moves fast over the blank notepad; around him the seven react with small nods and head shakes. CAMERA: Slow push-in to UKAI. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -308,7 +308,7 @@
     "note": "台詞（編集字幕）: ひかり「え、わたし？」 ／ 「え、わたし？」は編集字幕。弁当は頭上両手",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: HIKARI, seated at the scribe seat, still holds the bento stack above her head with both hands; she tilts her head in bewilderment; the others gesture toward her expectantly. CAMERA: Static medium-wide. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -321,7 +321,7 @@
     "note": "椅子を引くSE可",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Everyone gestures at once; blank papers, gears and vials pile onto the table; two chairs scrape back; TOME's shoulders slump; the meeting collapses. CAMERA: Slow pull-back showing the chaos. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -334,7 +334,7 @@
     "note": "台詞（編集字幕）: 鏑木「……星野さん、だったか」　トメ「鏑木さんね」 ／ 名乗りは編集字幕",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: On the stairs two figures pass; both stop for one beat and their heads turn to meet; a small nod; they continue on. CAMERA: Static. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -347,7 +347,7 @@
     "note": "7人の名前の列は編集で合成",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: HIKARI's hand smooths the blank notebook page on the table; candlelight flickers; her fingers rest on the page gently. CAMERA: Slow push-in macro. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -360,7 +360,7 @@
     "note": "電球が転がるSE可",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Basement corridor: scattered bulb boxes; one bulb rolls slowly to a stop; beyond them HIIRAGI's fallen feet remain still; a lamp buzzes. CAMERA: Static; ominous stillness. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -373,7 +373,7 @@
     "note": "医者は画面に登場させない（退出は画面外SE）",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: HIIRAGI lies in bed, chest rising faintly; HIKARI leans in at the pillow, hands clasped; the lamp dims one step; a door closes off-screen. CAMERA: Slow push-in. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -386,7 +386,7 @@
     "note": "台詞（編集字幕）: ひかり「これ、柊さんですよね」 ／ 台詞は編集字幕",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: HIKARI thrusts the blank request letter toward HIIRAGI; his head tilts a few degrees and his eyes crease — a smile with the eyes only; his hand rises a little. CAMERA: Static medium. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -399,7 +399,7 @@
     "note": "文字は写さない。継ぎ接ぎの質感のみ",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Extreme close-up of the patchwork letter: raking light slides across the collage seams and different paper textures; the sheet breathes with the draft. CAMERA: Very slow pan across the paper. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 7,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -412,7 +412,7 @@
     "note": "台詞（編集字幕）: 柊「みんなが、捨てたもんじゃ」 ／ 「みんなが捨てたもんじゃ」は編集字幕",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: The drawer slides open; decades of paper scraps shift and settle; HIIRAGI's old hand rests on them; one scrap slips off the pile. CAMERA: Slow push-in macro. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 7,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -425,7 +425,7 @@
     "note": "台詞（編集字幕）: N「依頼書は、このビルで働いた全員の手で書かれていた」 ／ 無名の手はシルエットのみ。人物は増やさない",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Paper scraps in close-up; over them, shadowy silhouettes of anonymous felt hands briefly appear writing and crumpling, then fade; only hands in silhouette, never faces or full figures. CAMERA: Static macro with soft double-exposure flashes. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -438,7 +438,7 @@
     "note": "台詞（編集字幕）: 柊「わしはな、五十年ここにおって、七社が一つのテーブルを囲むとこだけ、見とらんのよ」 ／ 長台詞は編集字幕",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: HIIRAGI gazes up at the ceiling; lamplight halos his tall ivory head; his key-ring stirs faintly; a long quiet breath. CAMERA: Very slow push-in. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 7,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -451,7 +451,7 @@
     "note": "",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: HIKARI bursts out of the caretaker room and runs up the stairs, faster than before; her trunks sway; landing after landing. CAMERA: Energetic upward follow. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -464,7 +464,7 @@
     "note": "扉のきしみSE可",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: The seven doors open one after another BY THEMSELVES; warm floor-lamp light spills out from each doorway across the corridor. CAMERA: Static corridor wide. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -477,7 +477,7 @@
     "note": "",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: In the 4F observatory, KUMOI pulls one journal from the wall of journals; dust puffs; her finger traces down a page; her hair-curtain sways. CAMERA: Static medium. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -490,7 +490,7 @@
     "note": "台詞（編集字幕）: 雲井「霧の晴れる窓は、七日目の一六時四四分から十一分間。一度だけです」 ／ 数字・日時は編集で合成。台詞は編集字幕",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Extreme close-up of the blank journal margin; KUMOI's finger taps the margin twice; the pen hovers and lowers; lamplight trembles. CAMERA: Static macro. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 7,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -503,7 +503,7 @@
     "note": "台詞（編集字幕）: トメ「うちの本領です」 ／ 「うちの本領です」は編集字幕。トメの顔は無地のまま",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Around the table everyone recoils — heads tip back, shoulders rise; only TOME straightens tall and spreads her arms wide in joy; her gown ripples. CAMERA: Static medium. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -516,7 +516,7 @@
     "note": "印影は文字ではなく抽象図形のまま",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: The felt puppet hand presses the wooden seals one by one onto the blank sheet; each press leaves an abstract plum-red mark; the hand moves to the next stamp. CAMERA: Static top-down close-up. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -529,7 +529,7 @@
     "note": "台本の文字は映さない",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: KUMOI glares at the pocket watch in one hand; the second hand ticks; her other hand writes in the air-thin strokes above a blank script sheet. CAMERA: Static medium. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -542,7 +542,7 @@
     "note": "号外の日付・文字は編集で",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: KUROGANE and YAMATO pick type from the cases in rhythm; the press lever cranks down; a sheet rolls out and stays blank; ink glistens. CAMERA: Static medium; mechanical rhythm. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -555,7 +555,7 @@
     "note": "",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: LI stands at the perfume bench; three vials line up; a droplet falls into each; faint vapor curls upward in three different shapes. CAMERA: Slow lateral track across the vials. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -568,7 +568,7 @@
     "note": "歯車SE可",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: KABURAGI assembles the clockwork chair; gears mesh tooth by tooth; the seat begins to rotate slowly; she leans back to check it. CAMERA: Static medium. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -581,7 +581,7 @@
     "note": "帳簿の数字は映さない",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: On UKAI's desk, his puppet hand slides an abacus and shuffles blank ledger sheets into a new arrangement; the pen taps twice. CAMERA: Static macro on the desktop. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -594,7 +594,7 @@
     "note": "式次第の文字は編集で。書く動作より畳む所作で見せる",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: TOME folds the ceremony program sheet with precise, ritual movements, aligns its edges and places it squarely on the desk; the candle flame steadies. CAMERA: Static medium. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -607,7 +607,7 @@
     "note": "皿の音SE可",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: HIKARI counts nine plates in the kitchen, tapping each rim once; steam drifts; on the ninth she pauses, then nods. CAMERA: Static medium. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -620,7 +620,7 @@
     "note": "足音SE可。同一キャラの重複禁止",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Seven figures pass each other up and down the spiral stairs, busy and rhythmic; small nods as they cross; the stairwell feels alive. CAMERA: Slow rise through the stairwell. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -633,7 +633,7 @@
     "note": "動機の種。写真立ての中身は無地（編集で合成可）",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Alone in the night office, Ukai slowly tightens his fist around the broken toy gear; his shoulders sink; he turns his head toward the fogged window; the lamp flame trembles. CAMERA: Very slow push-in. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -646,7 +646,7 @@
     "note": "図面・契約書は無地。開発業者はシート準拠の1名のみ",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: In the 3F office UKAI sits across from the DEVELOPER; blank blueprint and contract sheets lie between them; the developer slides a pen forward; UKAI's hand hovers over the paper and stops. CAMERA: Slow push-in on the hovering hand. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -659,7 +659,7 @@
     "note": "メモ＝七社を切り崩す値札の視覚化。台詞（編集字幕）: 業者「よく調べてある。これなら七社、ばらばらに買える」。紙面は全て無地",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: The gloved hand leafs through the blank memo sheets one by one, laying each down beside the row of seven blank cards; the lamp glow flickers softly; nothing else moves. CAMERA: Locked-off high angle with a very slow push-in. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -672,7 +672,7 @@
     "note": "",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Through the door crack, HIKARI's face leans closer; her head makes one tiny move nearer the gap; lamplight from inside flickers across her eye. CAMERA: Static macro on the gap. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -685,7 +685,7 @@
     "note": "メモの文字は映さない（無地）",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: UKAI's memo pages scatter and slide across the floor; the pages flutter to rest; his shoes step back one step; his hand hangs at his side. CAMERA: Static low shot. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -698,7 +698,7 @@
     "note": "回覧の連鎖で信頼の崩壊を見せる。ナレ（編集字幕）: 「会議の言葉は、値札に変わっていた」",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Tome holds out the blank memo; Kaburagi takes it and lowers his head as he reads; Kumoi turns her face further away; shoulders stiffen one after another down the corridor. CAMERA: Slow lateral dolly along the corridor. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -711,7 +711,7 @@
     "note": "扉SE可",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: The seven doors close one after another; the light from each doorway dies in turn until the corridor is dim; the last door shuts slowest. CAMERA: Static corridor wide (mirror of C36). DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -724,7 +724,7 @@
     "note": "0%の数字は編集で",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: KUMOI's hand rubs out marks in the blank journal and writes again with a slow, heavy stroke; her shoulders sink; the pen stops. CAMERA: Static macro. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -737,7 +737,7 @@
     "note": "風のSEのみ",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: The half-built clockwork chair stands alone on the rooftop; fog flows slowly around it; a strap flaps once in the wind; nobody comes. CAMERA: Very slow push-in. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -750,7 +750,7 @@
     "note": "まだ押していない。G章への引き。台詞（編集字幕）: 業者「押せば、このビルは明日、消えます」",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Ukai's felt hand holds the seal millimeters above the blank contract, trembling in tiny stop-motion jitters; it never touches the paper; across the table the developer waits utterly still. CAMERA: Locked-off close-up, very slow push-in. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -763,7 +763,7 @@
     "note": "台詞（編集字幕）: 鵜飼「僕は、このビルの子どもでした」 ／ 独白は編集字幕。声は喃語",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: UKAI stands alone facing the fogged window and begins to murmur; his shoulders are tense; his faint reflection breathes on the glass. CAMERA: Slow push-in from behind. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -776,7 +776,7 @@
     "note": "回想はソフトビネット。少年鵜飼はUKAI_CHILDシート準拠",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Flashback in soft vignette: the mother's back working in the 7F kitchen; the father's hands assembling a toy; the boy UKAI sitting on the landing hugging his knees; each vignette breathes gently. CAMERA: Slow cross-drift between the vignettes. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -789,7 +789,7 @@
     "note": "回想。唯一の家族の時間＝階段。台詞（編集字幕）: 鵜飼「エレベーターは、父の階には停まらなかった」",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. FLASHBACK TONE: warm faded amber, soft contrast. SCENE: The three walk down the stairs hand in hand with small bobbing steps; the boy swings his parents' arms once; warm dust motes drift. CAMERA: Static wide with a gentle warm flicker. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -802,7 +802,7 @@
     "note": "父本人は映さない（靴と工具のみ）",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Flashback: the fallen toolbox at the foot of the stairs; scattered gears, one still spinning until it wobbles to a stop; a single shoe lies on its side. CAMERA: Static; the spinning gear is the only motion. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -815,7 +815,7 @@
     "note": "回想。事故の理由。父の顔は映さない（後ろ姿）。台詞（編集字幕）: 鵜飼「あの日も、階段しかなかった」",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. FLASHBACK TONE: dim faded amber. SCENE: Seen only from behind, the father descends step by step hugging the heavy toolbox, shoulders swaying under the weight; he pauses once to re-grip; the elevator lamp stays dark. CAMERA: Slow follow from behind with a slight downward tilt. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -828,7 +828,7 @@
     "note": "台詞（編集字幕）: 鵜飼「七社の誰ひとり、来ませんでした。誰も、隣の階で何が起きたか知らなかったから」 ／ 少年はUKAI_CHILD準拠。台詞は編集字幕",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Flashback: rows of empty chairs in the funeral hall; candle flames waver; the boy stands alone, fists tight; nothing else moves. CAMERA: Very slow pull-back. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 7,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -841,7 +841,7 @@
     "note": "回想。動機の明言。台詞（編集字幕）: 鵜飼「僕は、このビルを終わらせるために戻ったんです」",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. FLASHBACK TONE: cold blue dusk. SCENE: Mother and boy walk away across the gently swaying rope bridge, backs to us; inside the building the last warm windows go dark one by one; fog drifts past. CAMERA: Static wide. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -854,7 +854,7 @@
     "note": "",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: TOME silently places the old ledger on the desk and opens it; dust puffs from the pages; UKAI's head turns toward it slowly. CAMERA: Static medium. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -867,7 +867,7 @@
     "note": "台詞（編集字幕）: トメ「あんたのお父さんの葬式はな。ちゃんと出とるよ。管理人さんが、自分の貯金でな」 ／ 喪主欄・参列者数の文字は編集で。台詞は編集字幕",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Extreme close-up of the blank ledger page; TOME's finger slides down and stops at one line, tapping it twice; lamplight trembles. CAMERA: Static macro. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 7,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -880,7 +880,7 @@
     "note": "C09の空の金一封の回収。台詞（編集字幕）: トメ「あんたの依頼書の『予算 金一封』はな。三十年前に、もう使われとったんよ」。文字は編集で",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: No characters. The lamp flame breathes; dust motes drift over the open blank ledger and the flattened empty gift envelope; a faint draft lifts the corner of one page. CAMERA: Very slow push-in on the empty envelope. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 7,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -893,7 +893,7 @@
     "note": "契約書を破るSEは画面外",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: UKAI's hand stops mid-air, then grips the ledger's edge hard; his shoulders shake once; off-screen a paper-tearing sound. CAMERA: Slow push-in on the hand. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -906,7 +906,7 @@
     "note": "誰の手か特定しない（袖のみ）",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Night: a felt hand places a recomposed blank ledger sheet on a desk; lamp clicks on; then the next desk, the next — a quiet relay of lights. CAMERA: Series of static desk shots / lateral drift. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -919,7 +919,7 @@
     "note": "ランプは文字なしの玉",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: The group stands before the elevator; the 2nd and 6th indicator lamps stay dark; heads turn to each other; they pivot to the stairs together. CAMERA: Static medium. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -932,7 +932,7 @@
     "note": "掛け声は喃語。同一キャラ重複禁止",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Seven carry the clockwork chair with HIIRAGI seated in it up the spiral stairs, passing it hand to hand; the chair sways gently; HIIRAGI's lamp glows at his chest. CAMERA: Upward follow, rising with the chair. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 7,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -945,7 +945,7 @@
     "note": "台詞（編集字幕）: 雲井「十秒前」 ／ 時刻・数字は編集で。「十秒前」は編集字幕",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Extreme close-up of KUMOI's wristwatch: the second hand ticks steadily toward the mark on the abstract dial; her sleeve trembles once. CAMERA: Static macro. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -958,7 +958,7 @@
     "note": "全員後ろ姿・カメラ目線なし。全編唯一の暖色",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: The fog tears open; amber light floods across the rooftop; the nine stand at the parapet seen from behind, hair and cloth blowing; the light slowly widens. CAMERA: Slow rise behind the group. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 7,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -971,7 +971,7 @@
     "note": "笑い声も喃語。食器SE可",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Nine around one table eating; bowls pass hand to hand; steam rises; small laughs as wordless murmurs; HIIRAGI's chair sits at the head; warm lamplight sways. CAMERA: Gentle handheld-like sway, slow arc. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 7,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -984,7 +984,7 @@
     "note": "台詞（編集字幕）: 李「……ずっと、作ってました。誰にも、渡す相手がいなかったので」 ／ 台詞は編集字幕",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: LI leans in and holds the tiny vial under HIIRAGI's nose; HIIRAGI's head lifts slightly; a faint vapor curl; the others go still and watch. CAMERA: Slow push-in. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -997,7 +997,7 @@
     "note": "台詞（編集字幕）: 鏑木「……見たいだろ、最後に。全部」 ／ 「見たいだろ…」は編集字幕",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: HIIRAGI's hands release the chair's armrests; the seat rotates slowly; his gaze sweeps across the rooftop and the others as he turns. CAMERA: Static; the chair's rotation carries the movement. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -1010,7 +1010,7 @@
     "note": "見出しの文字は編集で合成",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Close-up of the freshly printed extra: the sheet is blank with abstract ink blocks; it flutters once in the amber light; ink glistens wet. CAMERA: Static macro. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -1023,7 +1023,7 @@
     "note": "納品物の明確化。検収印は抽象図形。台詞（編集字幕）: ひかり「納品です。『明日を、一日』」",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Hiiragi presses the seal slowly down onto the blank sheet on the crate and lifts it away; his chest lamp glows a little brighter; Hikari clasps her hands and gives one small nod. CAMERA: Slow push-in from the front. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 7,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -1036,7 +1036,7 @@
     "note": "無音に近く。SEは布と灯りのみ",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Night in the caretaker room: HIIRAGI's hand on the blanket slowly opens, then stills; the lamp dims one step; long quiet. CAMERA: Very slow push-in on the hand. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -1049,7 +1049,7 @@
     "note": "台詞（編集字幕）: トメ「――では、最後の仕事にかかります」 ／ 「最後の仕事に…」は編集字幕",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: TOME rises to her feet; the hem of her mourning gown sways once and settles; she bows deeply and slowly; the candle flame steadies. CAMERA: Static full shot. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -1062,7 +1062,7 @@
     "note": "C58の空の椅子の完全な反転。祭壇に柊のランプと鍵束。ナレ（編集字幕）: 「参列者、九名」",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Wind stirs coats and hair; Tome slowly raises her arms; the seated mourners bow their heads in a quiet ripple from left to right; the lantern flame on the altar flickers. CAMERA: Very slow push-in toward the altar. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 7,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -1075,7 +1075,7 @@
     "note": "静けさ。風SEのみ",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Morning at the window: the fog outside has returned to white; the curtain breathes once; the still-life objects sit unmoved. CAMERA: Static. DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -1088,7 +1088,7 @@
     "note": "生活音SE可",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: The corridor of seven doors, now ALL standing open; warm light and faint moving shadows spill from each doorway; dust motes drift. CAMERA: Slow dolly along the corridor (mirror of C05). DURATION: about 3 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 5,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -1101,7 +1101,7 @@
     "note": "ランプは文字なし。チャイムSE可",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: On the elevator indicator, the lamps light in full sequence — this time the 2nd and 6th lamps glow too; a soft chime-like flicker. CAMERA: Static close-up. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -1114,7 +1114,7 @@
     "note": "差出人の判は抽象印影。宛先は空白",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: On the caretaker's desk lies a new blank request letter with a row of seven abstract red seals; the addressee area is empty; the lamp flickers warmly. CAMERA: Slow push-in macro. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -1127,7 +1127,7 @@
     "note": "名前の文字は編集で合成",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: HIKARI uncaps the pen and writes into the blank addressee space with one determined stroke; only a faint abstract mark is left; she puts the pen down and nods. CAMERA: Static macro on the hand. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -1140,7 +1140,7 @@
     "note": "八社目の誕生。プレートの文字は編集で合成。ナレ（編集字幕）: 「果端ビルに、八社目が入居した。屋号は『明日づくり係』」",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: Hikari, on tiptoe, hangs the blank plate on the hook; it swings once and settles level; she steps back and looks up at it; the bare bulb above brightens slightly. CAMERA: Static with a slight slow push-in. DURATION: about 4 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 6,
+    "gen_sec": 10,
     "gen_res": "768P"
   },
   {
@@ -1153,7 +1153,7 @@
     "note": "暗転は編集で。映像は上りきる手前まで",
     "i2v_prompt": "Stop-motion puppet animation, animated on twos with a subtle handmade stutter. Handcrafted felt puppets and miniature sets, visible stitches and cloth texture, tilt-shift depth of field, gentle practical-light flicker. SCENE: HIKARI, seen from behind hugging the box of light bulbs, climbs the stairs upward, landing after landing; the lamps above glow one by one as she rises. CAMERA: Slow tilt-up following her ascent. DURATION: about 5 seconds of motion. All dialogue is WORDLESS: characters only murmur soft non-verbal sounds ('mm','uu'); the acting reads through small head tilts, shoulder shifts and hand gestures. NEVER add mouths or any facial features the puppets do not have. Keep every character and the set exactly as in the start frame: no morphing, no redesign, no new characters, no duplicates, nothing appears or disappears. ABSOLUTELY NO editorial overlays: no captions, subtitles, titles, telops, logos or musical notes composited on the picture. Text on props inside the world (signs, plates, ledgers, newspapers, papers) is allowed ONLY as this world's ORIGINAL INVENTED SCRIPT — abstract handwritten-looking glyphs that are NOT Japanese, NOT Latin letters, NOT real numerals and never readable; their meaning is delivered later by editorial subtitles, so illegibility is correct. Motions are small, precise and stop-motion-like.",
     "gen_model": "minimax_h3",
-    "gen_sec": 7,
+    "gen_sec": 10,
     "gen_res": "768P"
   }
 ]
