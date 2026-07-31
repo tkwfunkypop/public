@@ -2,144 +2,148 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>はしっこビル — キャラ紹介テロップ v2（作字・正典デザイン）</title>
+<title>はしっこビル — キャラ紹介テロップ v3（刺繍作字・正典デザイン）</title>
 <style>
   :root{
-    --paper:#EDE6D6; --ink:#1c1a20; --dim:#6a655a;
-    --f1:#EDEAE2; --f2:#D9A441; --f3:#5B8C5A; --f4:#4E9B8F;
-    --f5:#5D93BC; --f6:#8E7CC3; --f7:#C25E8E; --fb:#B08D57;
+    --paper:#EDE6D6; --ink:#221f26;
+    --f1:#B9B4A6; --f2:#C8912E; --f3:#4F7E4E; --f4:#3E8A7E;
+    --f5:#4B83AE; --f6:#7E6BB5; --f7:#B34E7E; --fb:#A07E45;
   }
   *{box-sizing:border-box}
   body{background:#0c0b10;color:#E8E2D5;font-family:"Hiragino Mincho ProN","Yu Mincho",serif;margin:0;padding:44px 24px}
   h1{font-size:15px;font-weight:normal;letter-spacing:.4em;color:#8a8578;text-align:center;margin:0 0 6px}
   p.note{font-size:11.5px;color:#5d584e;text-align:center;margin:0 0 40px;letter-spacing:.06em}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(500px,1fr));gap:30px;max-width:1600px;margin:0 auto}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(520px,1fr));gap:30px;max-width:1640px;margin:0 auto}
 
-  /* ===== 16:9プレビュー枠（映像の代わり） ===== */
   .frame{aspect-ratio:16/9;border-radius:6px;position:relative;overflow:hidden;
     background:radial-gradient(ellipse at 50% 28%, #262430 0%, #131218 68%);
     border:1px solid #232129}
-  .frame::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
-    background-image:repeating-conic-gradient(rgba(255,255,255,.014) 0% .0001%, transparent .0002% .0004%);
-    mix-blend-mode:overlay}
   .frame::after{content:"";position:absolute;inset:0;pointer-events:none;
     background:radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,.55) 100%)}
+  .cap{position:absolute;top:12px;right:16px;font-size:10.5px;color:#3c3a44;letter-spacing:.2em;z-index:1}
 
-  /* ===== テロップ本体: フェルトの縫い付けラベル ===== */
-  .telop{position:absolute;left:26px;bottom:22px;display:flex;align-items:stretch;gap:0;z-index:2;
-    filter:drop-shadow(0 10px 22px rgba(0,0,0,.65))}
+  /* ===== フェルト縫い付けラベル ===== */
+  .telop{position:absolute;left:24px;bottom:20px;z-index:2;filter:drop-shadow(0 10px 22px rgba(0,0,0,.65))}
   .patch{position:relative;background-color:var(--paper);
-    background-image:linear-gradient(160deg, rgba(255,255,255,.06), rgba(0,0,0,.14));
-    color:var(--ink);border-radius:3px 14px 3px 14px;padding:14px 22px 13px 18px;
-    display:flex;align-items:center;gap:16px;white-space:nowrap}
-  /* 縫い目（ステッチ） */
-  .patch::before{content:"";position:absolute;inset:5px;border:1.6px dashed rgba(28,26,32,.42);
+    background-image:linear-gradient(160deg, rgba(255,255,255,.07), rgba(0,0,0,.13));
+    color:var(--ink);border-radius:3px 14px 3px 14px;padding:13px 20px 12px 16px;
+    display:flex;align-items:center;gap:15px}
+  .patch::before{content:"";position:absolute;inset:5px;border:1.6px dashed rgba(28,26,32,.4);
     border-radius:2px 11px 2px 11px;pointer-events:none}
-  /* 紙の質感 */
-  .patch::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:.35;
+  .patch::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:.32;
     background-image:radial-gradient(rgba(28,26,32,.05) 1px, transparent 1.4px);background-size:5px 5px}
 
-  /* 真鍮の階数メダル */
-  .medal{flex:none;width:64px;height:64px;border-radius:50%;position:relative;align-self:center;
+  .medal{flex:none;width:60px;height:60px;border-radius:50%;position:relative;
     background:radial-gradient(circle at 32% 28%, #f4e3b0 0%, var(--mc,#B08D57) 42%, #6d5426 100%);
     box-shadow:inset 0 0 0 3px rgba(60,44,14,.55), inset 0 2px 5px rgba(255,255,255,.5), 0 3px 6px rgba(0,0,0,.35);
     display:flex;flex-direction:column;align-items:center;justify-content:center;
     font-family:"Hiragino Sans","Yu Gothic",sans-serif;color:#2c2210}
-  .medal b{font-size:19px;letter-spacing:.02em;text-shadow:0 1px 0 rgba(255,255,255,.4)}
-  .medal small{font-size:8.5px;letter-spacing:.22em;margin-top:1px}
-  .medal::after{content:"";position:absolute;inset:6px;border-radius:50%;
-    border:1px solid rgba(60,44,14,.4);pointer-events:none}
-  /* 階色リボン */
-  .ribbon{position:absolute;top:-7px;right:14px;width:34px;height:14px;background:var(--fc,#888);
-    clip-path:polygon(0 0,100% 0,100% 100%,50% 62%,0 100%);
-    box-shadow:0 1px 2px rgba(0,0,0,.4)}
+  .medal b{font-size:18px;text-shadow:0 1px 0 rgba(255,255,255,.4)}
+  .medal small{font-size:8.5px;letter-spacing:.2em;margin-top:1px}
+  .medal::after{content:"";position:absolute;inset:6px;border-radius:50%;border:1px solid rgba(60,44,14,.4)}
 
-  /* 作字風ネーム: 一文字ずつ僅かに回転・沈み込み */
-  .names{line-height:1;flex:none}
-  .kana{font-size:10.5px;letter-spacing:.62em;color:#54504a;margin:0 0 5px 2px;white-space:nowrap}
-  .name{font-size:40px;font-weight:600;letter-spacing:.02em;display:flex;align-items:baseline;
-    flex-wrap:nowrap;white-space:nowrap}
-  .name span{display:inline-block;transform:rotate(var(--r,0deg)) translateY(var(--y,0px));
-    text-shadow:0 1px 0 rgba(255,255,255,.55), 0 -1px 0 rgba(0,0,0,.18)}
-  .name span:nth-child(odd){--r:-1.6deg;--y:1px}
-  .name span:nth-child(even){--r:1.3deg;--y:-1.5px}
-  .name span:first-child{font-size:112%}
-  .name .thin{font-size:58%;color:#3c3830;margin-right:2px;--r:0deg;--y:0}
-  /* 名前の下の階色アンダーストローク（筆勢） */
-  .stroke{height:7px;margin:6px 2px 0;border-radius:4px/6px;
+  /* ===== 刺繍作字（統一デザインフォント） =====
+     全キャラ共通ルール:
+     1. 骨格は明朝 / 2. 外周に階色の「破線ステッチ」輪郭
+     3. 本体は墨色 / 4. 一字ごとに±2°の手作りの揺らぎ */
+  .names{flex:none;line-height:1}
+  .kana{font-size:10px;letter-spacing:.6em;color:#54504a;margin:0 0 3px 4px;white-space:nowrap}
+  svg.nm{display:block;height:52px;overflow:visible}
+  svg.nm text{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-weight:600;font-size:40px}
+  svg.nm .st{fill:none;stroke:var(--fc);stroke-width:7;stroke-linejoin:round;stroke-linecap:round;
+    stroke-dasharray:4 3.2;opacity:.9}
+  svg.nm .bd{fill:var(--paper);stroke:var(--paper);stroke-width:3.5}
+  svg.nm .tx{fill:var(--ink)}
+  svg.nm .sm{font-size:24px}
+  .stroke{height:6px;margin:5px 4px 0;border-radius:4px/6px;
     background:linear-gradient(90deg, var(--fc) 0%, var(--fc) 62%, transparent 100%);
     clip-path:polygon(0 35%, 4% 0, 97% 18%, 100% 70%, 5% 100%, 0 78%);opacity:.85}
 
-  /* 右側: 所属と性格 */
-  .meta{border-left:1px solid rgba(28,26,32,.25);margin-left:4px;padding-left:16px;align-self:center;
-    min-width:150px;max-width:250px;white-space:normal}
+  /* ===== 右側テキスト: 改行は手動制御（自動折返し禁止） ===== */
+  .meta{border-left:1px solid rgba(28,26,32,.25);margin-left:2px;padding-left:15px;align-self:center;white-space:nowrap}
   .job{font-family:"Hiragino Sans","Yu Gothic",sans-serif;font-size:11px;letter-spacing:.2em;color:#4c463c;
     display:flex;align-items:center;gap:6px}
   .job::before{content:"";width:7px;height:7px;background:var(--fc);border-radius:2px;
     transform:rotate(45deg);flex:none;box-shadow:0 0 0 1px rgba(28,26,32,.25)}
-  .persona{font-size:14.5px;letter-spacing:.05em;color:#26221c;margin-top:7px;line-height:1.55}
-  .persona em{font-style:normal;background:linear-gradient(transparent 68%, color-mix(in srgb, var(--fc) 42%, transparent) 68%)}
-
-  .cap{position:absolute;top:12px;right:16px;font-size:10.5px;color:#3c3a44;letter-spacing:.2em;z-index:1}
+  .persona{font-size:14px;letter-spacing:.05em;color:#26221c;margin-top:6px;line-height:1.6}
+  .persona em{font-style:normal;background:linear-gradient(transparent 68%, color-mix(in srgb, var(--fc) 45%, transparent) 68%)}
 </style>
 </head>
 <body>
-<h1>キャラクター紹介テロップ v2 ― 作字・正典デザイン</h1>
-<p class="note">フェルトの縫い付けラベル＋真鍮メダル＋階色の筆ストローク。名前は一字ずつ傾けた作字組み。画面下1/3に重ねる。スクショ→編集ソフトへ</p>
+<h1>キャラクター紹介テロップ v3 ― 刺繍作字・正典デザイン</h1>
+<p class="note">統一デザインフォント「刺繍作字」= 明朝の骨格＋階色の破線ステッチ輪郭＋墨の本体＋一字±2°の揺らぎ。改行はすべて手動指定</p>
 <div class="grid">
 
 <div class="frame"><span class="cap">映像</span><div class="telop"><div class="patch" style="--fc:var(--fb);--mc:#B08D57">
-  <div class="medal"><b>B1</b><small>管理人</small><span class="ribbon" style="--fc:var(--fb)"></span></div>
-  <div class="names"><div class="kana">ひいらぎ</div><div class="name"><span>柊</span></div><div class="stroke"></div></div>
-  <div class="meta"><div class="job">果端ビル管理人室</div><div class="persona">四十年、<em>ビルの灯</em>を絶やさなかった人</div></div>
+  <div class="medal"><b>B1</b><small>管理人</small></div>
+  <div class="names"><div class="kana">ひいらぎ</div>
+    <svg class="nm" viewBox="0 0 200 52" width="200"><text x="2" y="42" rotate="-2" class="st">柊</text><text x="2" y="42" rotate="-2" class="bd">柊</text><text x="2" y="42" rotate="-2" class="tx">柊</text></svg>
+    <div class="stroke" style="width:60px"></div></div>
+  <div class="meta"><div class="job">果端ビル管理人室</div><div class="persona">四十年、<em>ビルの灯</em>を<br>絶やさなかった人</div></div>
 </div></div></div>
 
 <div class="frame"><span class="cap">映像</span><div class="telop"><div class="patch" style="--fc:var(--f1);--mc:#cfc9ba">
-  <div class="medal"><b>1F</b><small>儀典</small><span class="ribbon" style="--fc:var(--f1)"></span></div>
-  <div class="names"><div class="kana">みょうじ とめ</div><div class="name"><span class="thin">苗字</span><span>ト</span><span>メ</span></div><div class="stroke"></div></div>
-  <div class="meta"><div class="job">アオイ儀典社</div><div class="persona">一日を<em>きちんと</em>始めて、きちんと終わらせる人</div></div>
+  <div class="medal"><b>1F</b><small>儀典</small></div>
+  <div class="names"><div class="kana">みょうじ とめ</div>
+    <svg class="nm" viewBox="0 0 240 52" width="240"><text x="2" y="42" rotate="-2 2 -1 2" class="st"><tspan class="sm">苗字</tspan>トメ</text><text x="2" y="42" rotate="-2 2 -1 2" class="bd"><tspan class="sm">苗字</tspan>トメ</text><text x="2" y="42" rotate="-2 2 -1 2" class="tx"><tspan class="sm">苗字</tspan>トメ</text></svg>
+    <div class="stroke" style="width:130px"></div></div>
+  <div class="meta"><div class="job">アオイ儀典社</div><div class="persona">一日を<em>きちんと</em>始めて、<br>きちんと終わらせる人</div></div>
 </div></div></div>
 
 <div class="frame"><span class="cap">映像</span><div class="telop"><div class="patch" style="--fc:var(--f2);--mc:#D9A441">
-  <div class="medal"><b>2F</b><small>玩具</small><span class="ribbon" style="--fc:var(--f2)"></span></div>
-  <div class="names"><div class="kana">かぶらぎ</div><div class="name"><span>鏑</span><span>木</span></div><div class="stroke"></div></div>
-  <div class="meta"><div class="job">ぜんまい玩具工房</div><div class="persona">壊れたものを、<em>まだ終わらせない</em>人</div></div>
+  <div class="medal"><b>2F</b><small>玩具</small></div>
+  <div class="names"><div class="kana">かぶらぎ</div>
+    <svg class="nm" viewBox="0 0 200 52" width="200"><text x="2" y="42" rotate="-2 2" class="st">鏑木</text><text x="2" y="42" rotate="-2 2" class="bd">鏑木</text><text x="2" y="42" rotate="-2 2" class="tx">鏑木</text></svg>
+    <div class="stroke" style="width:96px"></div></div>
+  <div class="meta"><div class="job">ぜんまい玩具工房</div><div class="persona">壊れたものを、<br><em>まだ終わらせない</em>人</div></div>
 </div></div></div>
 
 <div class="frame"><span class="cap">映像</span><div class="telop"><div class="patch" style="--fc:var(--f3);--mc:#8aa06a">
-  <div class="medal"><b>3F</b><small>会計</small><span class="ribbon" style="--fc:var(--f3)"></span></div>
-  <div class="names"><div class="kana">うかい</div><div class="name"><span>鵜</span><span>飼</span></div><div class="stroke"></div></div>
-  <div class="meta"><div class="job">鵜飼会計事務所</div><div class="persona">数字で<em>嘘をつかない</em>、つけない人</div></div>
+  <div class="medal"><b>3F</b><small>会計</small></div>
+  <div class="names"><div class="kana">うかい</div>
+    <svg class="nm" viewBox="0 0 200 52" width="200"><text x="2" y="42" rotate="-2 2" class="st">鵜飼</text><text x="2" y="42" rotate="-2 2" class="bd">鵜飼</text><text x="2" y="42" rotate="-2 2" class="tx">鵜飼</text></svg>
+    <div class="stroke" style="width:96px"></div></div>
+  <div class="meta"><div class="job">鵜飼会計事務所</div><div class="persona">数字で<em>嘘をつかない</em>、<br>つけない人</div></div>
 </div></div></div>
 
 <div class="frame"><span class="cap">映像</span><div class="telop"><div class="patch" style="--fc:var(--f4);--mc:#7fae9f">
-  <div class="medal"><b>4F</b><small>気象</small><span class="ribbon" style="--fc:var(--f4)"></span></div>
-  <div class="names"><div class="kana">くもい</div><div class="name"><span>雲</span><span>井</span></div><div class="stroke"></div></div>
-  <div class="meta"><div class="job">雲井気象観測所</div><div class="persona">空しか見ていない、<em>けれど全部見ている</em>人</div></div>
+  <div class="medal"><b>4F</b><small>気象</small></div>
+  <div class="names"><div class="kana">くもい</div>
+    <svg class="nm" viewBox="0 0 200 52" width="200"><text x="2" y="42" rotate="-2 2" class="st">雲井</text><text x="2" y="42" rotate="-2 2" class="bd">雲井</text><text x="2" y="42" rotate="-2 2" class="tx">雲井</text></svg>
+    <div class="stroke" style="width:96px"></div></div>
+  <div class="meta"><div class="job">雲井気象観測所</div><div class="persona">空しか見ていない、<br><em>けれど全部見ている</em>人</div></div>
 </div></div></div>
 
 <div class="frame"><span class="cap">映像</span><div class="telop"><div class="patch" style="--fc:var(--f5);--mc:#7fa3c2">
-  <div class="medal"><b>5F</b><small>香水</small><span class="ribbon" style="--fc:var(--f5)"></span></div>
-  <div class="names"><div class="kana">りー</div><div class="name"><span>李</span></div><div class="stroke"></div></div>
+  <div class="medal"><b>5F</b><small>香水</small></div>
+  <div class="names"><div class="kana">りー</div>
+    <svg class="nm" viewBox="0 0 200 52" width="200"><text x="2" y="42" rotate="-2" class="st">李</text><text x="2" y="42" rotate="-2" class="bd">李</text><text x="2" y="42" rotate="-2" class="tx">李</text></svg>
+    <div class="stroke" style="width:60px"></div></div>
   <div class="meta"><div class="job">李香水店</div><div class="persona">匂いで<em>時間を巻き戻す</em>人</div></div>
 </div></div></div>
 
 <div class="frame"><span class="cap">映像</span><div class="telop"><div class="patch" style="--fc:var(--f6);--mc:#a291c9">
-  <div class="medal"><b>6F</b><small>活版</small><span class="ribbon" style="--fc:var(--f6)"></span></div>
-  <div class="names"><div class="kana">くろがね</div><div class="name"><span>黒</span><span>金</span></div><div class="stroke"></div></div>
-  <div class="meta"><div class="job">黒金活版印刷所</div><div class="persona">言葉を並べるのは得意、<em>話すのは苦手</em>な人</div></div>
+  <div class="medal"><b>6F</b><small>活版</small></div>
+  <div class="names"><div class="kana">くろがね</div>
+    <svg class="nm" viewBox="0 0 200 52" width="200"><text x="2" y="42" rotate="-2 2" class="st">黒金</text><text x="2" y="42" rotate="-2 2" class="bd">黒金</text><text x="2" y="42" rotate="-2 2" class="tx">黒金</text></svg>
+    <div class="stroke" style="width:96px"></div></div>
+  <div class="meta"><div class="job">黒金活版印刷所</div><div class="persona">言葉を並べるのは得意、<br><em>話すのは苦手</em>な人</div></div>
 </div></div></div>
 
 <div class="frame"><span class="cap">映像</span><div class="telop"><div class="patch" style="--fc:var(--f6);--mc:#a291c9">
-  <div class="medal"><b>6F</b><small>記者</small><span class="ribbon" style="--fc:var(--f6)"></span></div>
-  <div class="names"><div class="kana">やまと</div><div class="name"><span>大</span><span>和</span></div><div class="stroke"></div></div>
-  <div class="meta"><div class="job">果端新聞 記者</div><div class="persona"><em>書けない言葉</em>を探し続ける人</div></div>
+  <div class="medal"><b>6F</b><small>記者</small></div>
+  <div class="names"><div class="kana">やまと</div>
+    <svg class="nm" viewBox="0 0 200 52" width="200"><text x="2" y="42" rotate="-2 2" class="st">大和</text><text x="2" y="42" rotate="-2 2" class="bd">大和</text><text x="2" y="42" rotate="-2 2" class="tx">大和</text></svg>
+    <div class="stroke" style="width:96px"></div></div>
+  <div class="meta"><div class="job">果端新聞 記者</div><div class="persona"><em>書けない言葉</em>を<br>探し続ける人</div></div>
 </div></div></div>
 
 <div class="frame"><span class="cap">映像</span><div class="telop"><div class="patch" style="--fc:var(--f7);--mc:#c78ba6">
-  <div class="medal"><b>7F</b><small>食堂</small><span class="ribbon" style="--fc:var(--f7)"></span></div>
-  <div class="names"><div class="kana">ななお</div><div class="name"><span class="thin">七尾</span><span>ひ</span><span>か</span><span>り</span></div><div class="stroke"></div></div>
-  <div class="meta"><div class="job">食堂ななお</div><div class="persona"><em>距離ゼロの飯</em>を、頭の上で運ぶ人</div></div>
+  <div class="medal"><b>7F</b><small>食堂</small></div>
+  <div class="names"><div class="kana">ななお ひかり</div>
+    <svg class="nm" viewBox="0 0 250 52" width="250"><text x="2" y="42" rotate="-2 2 -1 2 -2" class="st"><tspan class="sm">七尾</tspan>ひかり</text><text x="2" y="42" rotate="-2 2 -1 2 -2" class="bd"><tspan class="sm">七尾</tspan>ひかり</text><text x="2" y="42" rotate="-2 2 -1 2 -2" class="tx"><tspan class="sm">七尾</tspan>ひかり</text></svg>
+    <div class="stroke" style="width:160px"></div></div>
+  <div class="meta"><div class="job">食堂ななお</div><div class="persona"><em>距離ゼロの飯</em>を、<br>頭の上で運ぶ人</div></div>
 </div></div></div>
 
 </div>
