@@ -57,7 +57,11 @@ Floyoへは必要な画像をドラッグ&ドロップで登録（開始フレ�
 ## 3. I2V実行（`wfaia/floyo-workflow.md` のグラフをそのまま組む）
 
 - 1ショット＝1ラン、ラン名＝ショットID（例 `sb14_hikari_mailroom`）
-- duration 5s／2コマ打ち化／フィルムグレイン弱〜中
+- **生成モデルは MiniMax H3（`minimax_h3`）**。対応尺 5〜15秒・16:9・2K。
+  各カットの**生成秒数は `storyboard/i2v-prompts.json` の `gen_sec`** が正
+  （実尺 `sec` を下限5秒で切り上げ。生成→編集で実尺に詰める）。
+  `startframes.html` の各カードにも「生成◯s／実尺◯s・MiniMax H3」を表記済み。
+- 2コマ打ち化／フィルムグレイン弱〜中
 - 共通サフィックスとnegative（morphing / redesign / extra facial features / text）を**毎回**付ける
 - **顔にパーツを足させないキャラ（最重要検品項目）：**
   大和（口なし・白目にワイン虹彩）／雲井（上寄り黒点2・口なし）／
