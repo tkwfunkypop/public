@@ -6984,6 +6984,51 @@
    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_120355_ff62ec3e-a542-4992-9449-6389c4903cca.wav",
    "mime_type": "audio/wav",
    "note": "I章ナレ(八社目誕生) Hana 10.6s"
+  },
+  {
+   "id": "c31_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "31",
+   "url": "https://edit.comfyonline.app/result/51e23e7c-0be8-4520-99e3-4300ec77e49e.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第7波"
+  },
+  {
+   "id": "c6_i2v_v2",
+   "kind": "i2v_prod",
+   "cut": "6",
+   "url": "https://edit.comfyonline.app/result/c51eb517-eaa3-49af-8e6e-03c975e96034.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "ドライアイス煙修正版(ユーザー指摘対応)"
+  },
+  {
+   "id": "c32_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "32",
+   "url": "https://edit.comfyonline.app/result/49ef7c34-f0fc-48a2-8d92-133a581811f6.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第8波"
+  },
+  {
+   "id": "c33_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "33",
+   "url": "https://edit.comfyonline.app/result/df7dae99-f9b9-4a53-bdbf-388f3726c606.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第8波"
+  },
+  {
+   "id": "c34_i2v_v1",
+   "kind": "i2v_prod",
+   "cut": "34",
+   "url": "https://edit.comfyonline.app/result/b16aabe5-df97-47b3-8c48-b36a0283adfc.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "本線I2V 第8波"
   }
  ]
 }
