@@ -120,13 +120,10 @@ BUILDING=84c99ff4 / 廊下セット=3d600592
 - **CM英語字幕クロマキー動画17本**: `ad/subtitles/out/`にコミット済み（#00B140、タイミングは`subs-spec.json`のJP/EN対訳が正。再生成は`render_subs.py`）
 - Floyoアングル ad_a1×4 / ad_a3×4 / ad_a2×1 回収済み
 
-### 実行中（回収待ち）— IDは sjinn-jobs.json / ad/higgsfield-jobs.json にある
-| 内容 | タスクID | 状態 |
-|---|---|---|
-| 第14波 C57/C58/C59/C60/C60b（G章核心） | SJinn `b0c9c1f5` `4be35977` `92fd81c6` `3b9ea338` `6144e9f5` | pending |
-| CM#4〜10用Floyoアングル32枚 | ローカルで `ad-angles2.json` 実行中 | 結果JSON待ち |
-
-回収方法: SJinnは `get_task(task_id)`、Higgsfieldは `job_display`。取れたURLを台帳に追記→ローカルで setup-workspace 実行。
+### 🎉 生成フェーズ完了（2026-07-31 23時台）
+**本編I2V=89本（C00a+C02〜C78全カット+回想サブカット+キャラ紹介9本）が全部完成し台帳に記録済み。**
+SJinnの実行待ちタスクはゼロ。残る回収物は「CM#4〜10用Floyoアングル32枚」
+（ローカルで `ad-angles2.json` 実行済みのはず→結果JSONを新セッションに貼る）のみ。
 
 ## 7. 残作業リスト（優先順）
 

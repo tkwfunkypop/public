@@ -7701,6 +7701,42 @@
    "mime_type": "video/mp4",
    "model": "seedance2-720p",
    "note": "キャラ紹介 李"
+  },
+  {
+   "id": "intro_kurogane_v1",
+   "kind": "i2v_prod",
+   "cut": "intro",
+   "url": "https://edit.comfyonline.app/result/7e45e4a2-aa37-467a-9d92-414a15c2a861.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "キャラ紹介 黒金"
+  },
+  {
+   "id": "intro_yamato_v1",
+   "kind": "i2v_prod",
+   "cut": "intro",
+   "url": "https://edit.comfyonline.app/result/f0682953-c3f9-4da5-bcb9-254749e60413.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "キャラ紹介 大和"
+  },
+  {
+   "id": "intro_hikari_v1",
+   "kind": "i2v_prod",
+   "cut": "intro",
+   "url": "https://edit.comfyonline.app/result/c01daac1-7f32-420f-8d2e-5809ed0e795c.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "キャラ紹介 ひかり"
+  },
+  {
+   "id": "intro_hiiragi_v1",
+   "kind": "i2v_prod",
+   "cut": "intro",
+   "url": "https://edit.comfyonline.app/result/8a5bdf57-652f-4f8b-ad88-de440e254c77.mp4",
+   "mime_type": "video/mp4",
+   "model": "seedance2-720p",
+   "note": "キャラ紹介 柊"
   }
  ]
 }
