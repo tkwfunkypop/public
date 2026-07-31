@@ -54,6 +54,24 @@ Floyoへは必要な画像をドラッグ&ドロップで登録（開始フレ�
   （`startframes.html` の各カードにも同じ内容を表示）。
   Floyoでは**スタートフレーム画像＋このプロンプト**をセットで送る。
 
+## 2.7 三層パイプライン（本番生成の分業・正典）
+
+| 層 | サービス | 役割 |
+|---|---|---|
+| 本線 | Higgsfield MCP（MiniMax H3） | 芝居・雰囲気のI2V。コンテの `i2v_prompt`＋`gen_sec` をそのまま送る（テスト3本合格済み） |
+| 救済 | SJinn MCP（seedance2） | H3不調カットのリロール先・スチル増産（C01テスト合格済み） |
+| 脇役 | Floyo API（`tools/floyo/`） | ①Qwenで別アングル・終了フレーム製造 ②LTX2.3 Start-Endで終わり姿勢固定カットの補間 |
+
+- Floyoの採用ワークフローは **Camera Angle Control with Qwen** と
+  **LTX2.3 Start-End Frame (opensauce)** の2本が基本。
+  予備札（Wan 2.2 I2V+End Frame／Qwen Image Edit 2509／SeedVR2／Wan2.2 Fun V2V）は必要時のみ。
+- **Start-End向きカット**（終わり姿勢が決まっている）：C70b（判押し）・C77b/C77・C52・C74・C75・C09・C61。
+  終了フレームはQwenアングル（同一構図でポーズだけ変更）で作る。
+- **禁止**：文書クローズアップ（架空文字カット）へのアングル変更・部分修正（グリフが崩れる）。
+- FloTimeは残数十本ぶんしかないため、Floyoは上記の脇役用途に限定し全量I2Vには使わない。
+- 実行手順・セットアップは `tools/floyo/README.md`。どの層の出力も合格分は
+  `generated.json` に追記（台帳の一元管理）。
+
 ## 3. I2V実行（`wfaia/floyo-workflow.md` のグラフをそのまま組む）
 
 - 1ショット＝1ラン、ラン名＝ショットID（例 `sb14_hikari_mailroom`）

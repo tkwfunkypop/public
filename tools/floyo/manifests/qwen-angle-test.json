@@ -1,0 +1,29 @@
+{
+  "note": "Qwenアングル一周テスト：C17会議（横→斜俯瞰）とC64階段運び（下からの煽り）。inputsのキー名はAPI Snippet確定後に合わせて変更する。文書クローズアップ（架空文字カット）はアングル変更に使わない",
+  "items": [
+    {
+      "id": "c17_meeting_high34",
+      "cut": "17",
+      "inputs": {
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_003959_b9ce8f5f-4e59-44e2-a0b9-c316e22f4da0.png",
+        "angle_prompt": "Rotate the camera to a high three-quarter view looking down at the rooftop meeting table from the far end, keeping every puppet, the long table, the fog and the lighting exactly the same. Same handmade stop-motion miniature look, tilt-shift depth of field."
+      }
+    },
+    {
+      "id": "c64_carry_lowangle",
+      "cut": "64",
+      "inputs": {
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_234402_ea1168a7-9409-4fba-bb47-e107e76d6793.png",
+        "angle_prompt": "Move the camera to a low angle at the bottom of the spiral staircase looking up along the climb, keeping every puppet, the clockwork chair, the staircase and the lighting exactly the same. Same handmade stop-motion miniature look, tilt-shift depth of field."
+      }
+    },
+    {
+      "id": "c70b_stamp_endframe",
+      "cut": "70b",
+      "inputs": {
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043214_67c05a35-7a83-472c-8c6b-1460340032bc.png",
+        "angle_prompt": "Keep the exact same camera position and framing. Change ONLY the pose: HIIRAGI's hand now presses the brass seal firmly DOWN onto the paper on the wooden delivery box, arm fully lowered at the end of the stamping motion. Everything else — every puppet, the box, props, lighting, fog — stays identical. Any writing remains this world's original invented script, unreadable abstract glyphs, no real letters."
+      }
+    }
+  ]
+}
