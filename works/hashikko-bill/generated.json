@@ -6754,6 +6754,167 @@
       "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_114714_176b6296-d720-40e6-a970-3f7e2384daba.wav",
       "text": "扉は、開いたままになりました…（narration/OPENING_ENDING.md 締め全文）",
       "note": "締めナレーション（女性・Hana・27.1秒）。日英原稿とカット対応表はnarration/OPENING_ENDING.md"
+    },
+    {
+      "id": "vo_seq_b_v1",
+      "kind": "narration_audio",
+      "cut": "seq_B",
+      "speaker": "語り部",
+      "voice": "Hana(female)",
+      "model": "seed_audio",
+      "job_id": "03432dec-d038-4689-b754-7ad2bda56d92",
+      "duration_sec": 12.8,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_120210_03432dec-d038-4689-b754-7ad2bda56d92.wav",
+      "note": "章替わりナレ B章「依頼の到着」。原稿(日英)はnarration/SCENE_NARRATION.md"
+    },
+    {
+      "id": "vo_seq_c_v1",
+      "kind": "narration_audio",
+      "cut": "seq_C",
+      "speaker": "語り部",
+      "voice": "Hana(female)",
+      "model": "seed_audio",
+      "job_id": "b3e42e36-89d2-4fc5-8253-dd7c2b252864",
+      "duration_sec": 9.1,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_120225_b3e42e36-89d2-4fc5-8253-dd7c2b252864.wav",
+      "note": "章替わりナレ C章「四十年ぶりの全社会議」。原稿(日英)はnarration/SCENE_NARRATION.md"
+    },
+    {
+      "id": "vo_seq_d_v1",
+      "kind": "narration_audio",
+      "cut": "seq_D",
+      "speaker": "語り部",
+      "voice": "Hana(female)",
+      "model": "seed_audio",
+      "job_id": "23cdb37e-716b-4459-9bb5-d0278130958d",
+      "duration_sec": 11.0,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_120236_23cdb37e-716b-4459-9bb5-d0278130958d.wav",
+      "note": "章替わりナレ D章「管理人が倒れた朝」。原稿(日英)はnarration/SCENE_NARRATION.md"
+    },
+    {
+      "id": "vo_seq_e_v1",
+      "kind": "narration_audio",
+      "cut": "seq_E",
+      "speaker": "語り部",
+      "voice": "Hana(female)",
+      "model": "seed_audio",
+      "job_id": "6b4db6cf-8409-4247-88c8-3f2550de7c49",
+      "duration_sec": 12.5,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_120252_6b4db6cf-8409-4247-88c8-3f2550de7c49.wav",
+      "note": "章替わりナレ E章「十一分間の約束」。原稿(日英)はnarration/SCENE_NARRATION.md"
+    },
+    {
+      "id": "vo_seq_f_v1",
+      "kind": "narration_audio",
+      "cut": "seq_F",
+      "speaker": "語り部",
+      "voice": "Hana(female)",
+      "model": "seed_audio",
+      "job_id": "9da64643-c690-4ad8-b434-9b88a838b5f8",
+      "duration_sec": 13.9,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_120309_9da64643-c690-4ad8-b434-9b88a838b5f8.wav",
+      "note": "章替わりナレ F章「裏切り」。原稿(日英)はnarration/SCENE_NARRATION.md"
+    },
+    {
+      "id": "vo_seq_g_v1",
+      "kind": "narration_audio",
+      "cut": "seq_G",
+      "speaker": "語り部",
+      "voice": "Hana(female)",
+      "model": "seed_audio",
+      "job_id": "62117655-aaf6-4896-8890-53fd6e4b5794",
+      "duration_sec": 10.5,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_120323_62117655-aaf6-4896-8890-53fd6e4b5794.wav",
+      "note": "章替わりナレ G章「三階のほんとうの話」。原稿(日英)はnarration/SCENE_NARRATION.md"
+    },
+    {
+      "id": "vo_seq_h_v1",
+      "kind": "narration_audio",
+      "cut": "seq_H",
+      "speaker": "語り部",
+      "voice": "Hana(female)",
+      "model": "seed_audio",
+      "job_id": "fcc84bab-9d3c-46bd-8454-0a94a4b03e1f",
+      "duration_sec": 15.9,
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_120339_fcc84bab-9d3c-46bd-8454-0a94a4b03e1f.wav",
+      "note": "章替わりナレ H章「納品の日」。原稿(日英)はnarration/SCENE_NARRATION.md"
+    },
+    {
+      "id": "vo_ad_4_v1",
+      "kind": "narration_audio",
+      "cut": "ad_4",
+      "speaker": "CMナレ",
+      "voice": "Arthur",
+      "model": "seed_audio",
+      "job_id": "282a7e7a-3f33-4bc7-a7c6-0d90960e861e",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_115304_282a7e7a-3f33-4bc7-a7c6-0d90960e861e.wav",
+      "note": "CM#4『二番目と六番目』ナレ。原稿(日英)はad/CM_LINEUP.md"
+    },
+    {
+      "id": "vo_ad_5_v1",
+      "kind": "narration_audio",
+      "cut": "ad_5",
+      "speaker": "CMナレ",
+      "voice": "Hana",
+      "model": "seed_audio",
+      "job_id": "abcaacfd-6f7e-4e15-905b-04b283722a36",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_115316_abcaacfd-6f7e-4e15-905b-04b283722a36.wav",
+      "note": "CM#5『李香水店』ナレ。原稿(日英)はad/CM_LINEUP.md"
+    },
+    {
+      "id": "vo_ad_6_v1",
+      "kind": "narration_audio",
+      "cut": "ad_6",
+      "speaker": "CMナレ",
+      "voice": "Hana",
+      "model": "seed_audio",
+      "job_id": "63121680-71ce-41e3-a95e-65bc904937bf",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_115330_63121680-71ce-41e3-a95e-65bc904937bf.wav",
+      "note": "CM#6『食堂ななお』ナレ。原稿(日英)はad/CM_LINEUP.md"
+    },
+    {
+      "id": "vo_ad_7_v1",
+      "kind": "narration_audio",
+      "cut": "ad_7",
+      "speaker": "CMナレ",
+      "voice": "Hana",
+      "model": "seed_audio",
+      "job_id": "c1d0f50e-b6a5-4230-a770-3d80de581df9",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_115344_c1d0f50e-b6a5-4230-a770-3d80de581df9.wav",
+      "note": "CM#7『雲井気象観測所』ナレ。原稿(日英)はad/CM_LINEUP.md"
+    },
+    {
+      "id": "vo_ad_8_v1",
+      "kind": "narration_audio",
+      "cut": "ad_8",
+      "speaker": "CMナレ",
+      "voice": "Arthur",
+      "model": "seed_audio",
+      "job_id": "9e8a5445-06c1-4dd9-a841-02c69a7eb5d6",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_115358_9e8a5445-06c1-4dd9-a841-02c69a7eb5d6.wav",
+      "note": "CM#8『玩具工房カブラギ』ナレ。原稿(日英)はad/CM_LINEUP.md"
+    },
+    {
+      "id": "vo_ad_9_v1",
+      "kind": "narration_audio",
+      "cut": "ad_9",
+      "speaker": "CMナレ",
+      "voice": "Hana",
+      "model": "seed_audio",
+      "job_id": "e7bb5c60-78b0-484e-8793-1b5b0cf03306",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_115410_e7bb5c60-78b0-484e-8793-1b5b0cf03306.wav",
+      "note": "CM#9『アオイ儀典社』ナレ。原稿(日英)はad/CM_LINEUP.md"
+    },
+    {
+      "id": "vo_ad_10_v1",
+      "kind": "narration_audio",
+      "cut": "ad_10",
+      "speaker": "CMナレ",
+      "voice": "Arthur",
+      "model": "seed_audio",
+      "job_id": "b890c67d-9572-44c7-9214-237b26b7cd02",
+      "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_115424_b890c67d-9572-44c7-9214-237b26b7cd02.wav",
+      "note": "CM#10『果端新聞』ナレ。原稿(日英)はad/CM_LINEUP.md"
     }
   ]
 }
