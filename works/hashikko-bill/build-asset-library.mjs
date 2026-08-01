@@ -43,8 +43,20 @@ const walk = (dir) => {
 };
 walk(ROOT);
 
-// id に対応するファイル群（完全一致 → `id_1` 等の連番も拾う）
-const filesFor = (id) => {
+// 台帳IDと保存ファイル名が食い違う既知の素材（Floyo系は手動保存でidと別名になっている）
+const FILE_ALIAS = {
+  angle_c17_main_zoom: 'c17_meeting_4presets_1',
+  angle_c17_overhead: 'c17_meeting_4presets_2',
+  angle_c17_reverse: 'c17_meeting_4presets_3',
+  angle_c17_side: 'c17_meeting_4presets_4',
+  c64_angle_low_v2: 'c64_lowangle_v2',
+  c70b_interp_v1: 'c70b_stamp_interp',
+  c70b_endframe_v3: 'c70b_stamp_endframe_v2',
+};
+
+// id に対応するファイル群（完全一致 → エイリアス → `id_1` 等の連番も拾う）
+const filesFor = (rawId) => {
+  const id = FILE_ALIAS[rawId] || rawId;
   const out = [];
   if (fileIndex.has(id)) out.push(...fileIndex.get(id));
   for (const [base, paths] of fileIndex) {
