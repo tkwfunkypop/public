@@ -35,6 +35,7 @@ claude/prompts-json-10cut-generation-cisssw、PR #16 が対応PRです。
 ### ユーザーのMac（ローカル）
 - `~/Desktop/hashikko_honpen_v1.mp4` — **本編完成版**（4分56秒・88カット・英語ナレ10本入り）
 - `~/Desktop/WFAIA_はしっこビル/` — 全素材（12_本線I2V=89本 / 13_広告CM=14本 / 05_音声=日英ナレ20本 / 10_Floyo出力 / 00_正典ドキュメント ほか）
+- `~/Desktop/WFAIA_はしっこビル/ASSET_LIBRARY.html` — **全資産の一覧ビューア**（キャラ/本編/CM/世界観/ナレ/Floyoのタブ・横断検索・検品バッジ付き）。素材を足したら `build-asset-library.mjs` を再実行して更新する
 - `~/repos/public` — リポジトリのローカルクローン
 
 ### リポジトリ（tkwfunkypop/public、ブランチ claude/prompts-json-10cut-generation-cisssw）
@@ -44,6 +45,8 @@ claude/prompts-json-10cut-generation-cisssw、PR #16 が対応PRです。
 | `works/hashikko-bill/STORY.md` | 物語・シーン構成の正典 |
 | `works/hashikko-bill/FLOYO_MIGRATION.md` | 制作パイプラインの正典（三層体制・命名規則） |
 | `works/hashikko-bill/edit/assemble.mjs` + `EDIT_PLAN.md` | **本編自動アセンブラ**（ローカル実行で1本化。--jaで日本語ナレ版） |
+| `works/hashikko-bill/build-asset-library.mjs` | **ASSET LIBRARY ビルダー**（台帳＋デスクトップ実ファイル＋検品結果 → 1枚のHTML。素材追加のたびに再実行） |
+| `works/hashikko-bill/qa/QA_REPORT_20260801.md` | 検品レポート（リテイク確定11件・要人間確認14件。ライブラリのバッジの正本） |
 | `works/hashikko-bill/ad/CM_LINEUP.md` | CM14本の正典（日英ナレ原稿・ひらがな音声ルール） |
 | `works/hashikko-bill/ad/subtitles/` | CM字幕一式: `subs-spec.json`（JP/EN対訳の正）→ `out/`クロマキー動画17本・`srt/`SRT34ファイル・`CM_SUBTITLES.md`一覧・`render_subs.py`再生成スクリプト |
 | `works/hashikko-bill/ad/logo/` | 鏑木ロゴv2（3DCG風タイポ。クロマキー/透過PNG+元HTML） |
@@ -73,8 +76,9 @@ d8j0ntlcm91z4.cloudfront.net へは直接アクセス不可。**FloyoとFishと�
 ```bash
 cd ~/repos/public && git pull
 node works/hashikko-bill/setup-workspace.mjs        # 台帳の全素材をデスクトップへ保存
+node works/hashikko-bill/build-asset-library.mjs    # ASSET LIBRARY（全資産の一覧HTML）を再生成
 node works/hashikko-bill/edit/assemble.mjs          # 本編を1本に自動アセンブル（英語ナレ）
-node works/hashikko-bill/edit/assemble.mjs --ja     # 同・日本語ナレ版
+node works/hashikko-bill/edit/assemble.mjs --ja     # 同・日本語ナレ版（_ja.mp4 に出力）
 node --env-file=tools/floyo/.env tools/floyo/run.mjs --workflow qwen-angle --batch <manifest>       # Floyoアングル
 node --env-file=tools/floyo/.env tools/floyo/run.mjs --workflow qwen-angle --batch <同> --fetch     # 再課金なし回収
 python3 works/hashikko-bill/ad/subtitles/render_subs.py   # 字幕クロマキー動画の再生成（要pillow+ffmpeg）
