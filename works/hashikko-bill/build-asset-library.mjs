@@ -5,7 +5,7 @@
 //
 // ~/Documents/ASSETS を走査して次を生成する:
 //   ASSETS/ASSET_LIBRARY.html          … 作品一覧（ハブ。ここを開けば全部たどれる）
-//   ASSETS/Library/<slug>.html         … 作品ごとのページ
+//   ASSETS/Works/<slug>.html           … 作品ごとのページ
 //
 // ASSETS の構造は「素材種別（第1階層）→ 作品番号_作品名（第2階層）」。
 // 作品を追加するときは下の WORKS に1行足すだけでページが増える。
@@ -23,7 +23,8 @@ import { homedir } from 'node:os';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const ASSETS = join(homedir(), 'Documents', 'ASSETS');
-const LIB = join(ASSETS, 'Library');
+// フォルダ名は 'Works'。'Library' はHTMLカタログの除外パターン(/Library/)に誤ヒットするため使わない
+const LIB = join(ASSETS, 'Works');
 // macOSの日本語フォルダ名はNFD。比較・生成は必ずNFDに揃える
 const nfd = (s) => s.normalize('NFD');
 
@@ -93,7 +94,7 @@ const WORKS = [
 const IGNORE = new Set(['.DS_Store']);
 const categories = readdirSync(ASSETS).filter((c) => {
   const p = join(ASSETS, c);
-  return !c.startsWith('.') && c !== 'Library' && existsSync(p) && statSync(p).isDirectory();
+  return !c.startsWith('.') && c !== 'Works' && existsSync(p) && statSync(p).isDirectory();
 });
 
 // 作品ごとに { category, sub[], rel(Library基準), base } を集める
@@ -429,7 +430,7 @@ const indexHtml = `<!doctype html>
 <main>
 <h2 class="sec">作品</h2>
 <div class="works">
-${built.map(([w, r]) => `<a class="work" href="Library/${esc(w.slug)}.html">
+${built.map(([w, r]) => `<a class="work" href="Works/${esc(w.slug)}.html">
 <div class="cov">${r.cover ? `<img loading="lazy" src="${enc(coverRel(r.cover))}" alt="">` : ''}</div>
 <div class="wb"><h3>${esc(w.title)}</h3><p>${esc(w.sub || '')}</p>
 <div class="cnt"><span>ファイル ${r.files.length}</span>${r.items.length ? `<span>台帳 ${r.items.length}</span>` : ''}${[...new Set(r.files.map((f) => f.category))].sort().map((c) => `<span>${esc(c)}</span>`).join('')}</div>
@@ -447,4 +448,4 @@ ${built.map(([w, r]) => `<a class="work" href="Library/${esc(w.slug)}.html">
 writeFileSync(join(ASSETS, 'ASSET_LIBRARY.html'), indexHtml, 'utf8');
 
 console.log(`完成: ${join(ASSETS, 'ASSET_LIBRARY.html')}（作品一覧）`);
-for (const [w, r] of built) console.log(`  Library/${w.slug}.html  ファイル${r.files.length} / 台帳${r.items.length}`);
+for (const [w, r] of built) console.log(`  Works/${w.slug}.html  ファイル${r.files.length} / 台帳${r.items.length}`);

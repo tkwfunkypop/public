@@ -37,7 +37,7 @@ claude/prompts-json-10cut-generation-cisssw、PR #16 が対応PRです。
 - `~/Desktop/WFAIA_はしっこビル/` — 全素材（12_本線I2V=89本 / 13_広告CM=14本 / 05_音声=日英ナレ20本 / 10_Floyo出力 / 00_正典ドキュメント ほか）
 - `~/Documents/ASSETS/` — **素材の正式な保管場所**（2026-08-01に移行）。構造は「素材種別（第1階層）→ `003_はしっこビルの明日づくり`（第2階層）→ 用途別サブフォルダ」。日本語フォルダ名はNFD正規化に統一
 - `~/Documents/ASSETS/ASSET_LIBRARY.html` — **作品一覧ハブ**。ここから各作品ページへ
-- `~/Documents/ASSETS/Library/003_hashikko-bill.html` — 本作の資産ページ（キャラ/本編/CM/世界観/ナレ/Floyo/全ファイルのタブ・横断検索・検品バッジ付き）
+- `~/Documents/ASSETS/Works/003_hashikko-bill.html` — 本作の資産ページ（キャラ/本編/CM/世界観/ナレ/Floyo/全ファイルのタブ・横断検索・検品バッジ付き）
 - `~/repos/public` — リポジトリのローカルクローン
 
 ### リポジトリ（tkwfunkypop/public、ブランチ claude/prompts-json-10cut-generation-cisssw）
