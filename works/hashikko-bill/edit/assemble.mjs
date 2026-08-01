@@ -25,8 +25,9 @@ const repo = join(here, '..');
 const ROOT = join(homedir(), 'Desktop', 'WFAIA_はしっこビル');
 const VID = join(ROOT, '12_本線I2V');
 const AUD = join(ROOT, '05_音声_ナレーション');
-const OUT = join(homedir(), 'Desktop', 'hashikko_honpen_v1.mp4');
 const JA = process.argv.includes('--ja');
+// 日英で出力名を分ける（--jaが英語版を上書きしないように）
+const OUT = join(homedir(), 'Desktop', JA ? 'hashikko_honpen_v1_ja.mp4' : 'hashikko_honpen_v1.mp4');
 const BUDGET = 280;          // カット群の合計尺（秒）。+アウトロ14秒で294秒≦5分
 const OUTRO = 14;            // 最終カットの最終フレームをホールド（締めナレの余韻+タイトル用）
 const INTRO_SEC = 2.4;       // 紹介カットの実尺

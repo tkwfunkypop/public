@@ -10,7 +10,7 @@ node works/hashikko-bill/setup-workspace.mjs        # 素材をデスクトッ�
 node works/hashikko-bill/edit/assemble.mjs          # → ~/Desktop/hashikko_honpen_v1.mp4
 ```
 
-- 日本語ナレ版は `--ja` を付ける（両方作って聴き比べ可）
+- 日本語ナレ版は `--ja` を付ける → `hashikko_honpen_v1_ja.mp4` に出力（両方作って聴き比べ可）
 - ffmpegが無ければ `brew install ffmpeg`（または `npm i ffmpeg-static`）
 
 ## 何が組み上がるか
