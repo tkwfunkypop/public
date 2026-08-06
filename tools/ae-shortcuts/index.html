@@ -979,9 +979,12 @@ function renderChips() {
 
 function keyHtml(combo) {
   // "Ctrl+Shift+D" → kbd列。 " / " 区切りはペア表記
-  return combo.split(' / ').map(part =>
-    part.split('+').map(k => `<kbd>${k}</kbd>`).join('<span class="plus">+</span>')
-  ).join('<span class="plus">／</span>');
+  // 「+」キー自体（"+" や "+（テンキー）"）は分割せずそのまま1キーとして表示する
+  return combo.split(' / ').map(part => {
+    const keys = part.split('+').filter(k => k !== '');
+    if (keys.length === 0 || part.startsWith('+')) return `<kbd>${part}</kbd>`;
+    return keys.map(k => `<kbd>${k}</kbd>`).join('<span class="plus">+</span>');
+  }).join('<span class="plus">／</span>');
 }
 
 function match(item, fields) {
