@@ -1,0 +1,12 @@
+1
+00:00:00,500 --> 00:00:03,000
+Is your light about to go out?
+
+2
+00:00:09,000 --> 00:00:12,500
+Light brings people together.
+
+3
+00:00:13,000 --> 00:00:15,000
+HOTARU Light Bulbs.
+

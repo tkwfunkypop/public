@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>はしっこビルの明日づくり — 絵コンテ（5分尺）</title>
+<style>
+  :root{
+    --paper:#EFEBE1;
+    --sheet:#F8F6F0;
+    --ink:#2A2723;
+    --rule:#B9B2A3;
+    --rule-2:#D6D0C2;
+    --pencil:#5C574E;
+    --accent:#8A3B32;
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{ max-width:1120px; margin:0 auto; padding:0 20px; }
+  .mincho{ font-family:"Hiragino Mincho ProN","Yu Mincho",YuMincho,"Noto Serif JP",serif; }
+
+  /* ── 表紙 ─────────────────────── */
+  .cover{ padding:64px 0 34px; }
+  .cover h1{ font-family:"Hiragino Mincho ProN","Yu Mincho",serif; font-weight:400;
+             font-size:clamp(26px,4.2vw,42px); margin:0 0 10px; letter-spacing:.02em; }
+  .cover .sub{ font-size:13px; color:var(--pencil); margin:0 0 26px; letter-spacing:.04em; }
+  .specs{ display:flex; flex-wrap:wrap; gap:0; border:1px solid var(--rule); background:var(--sheet); }
+  .spec{ padding:12px 20px; border-right:1px solid var(--rule); }
+  .spec:last-child{ border-right:0; }
+  .spec dt{ font-size:8.5px; letter-spacing:.16em; color:var(--pencil); margin:0 0 5px; }
+  .spec dd{ font-size:15px; margin:0; font-family:ui-monospace,Menlo,monospace; }
+  .lead{ font-size:12.5px; line-height:2; color:var(--pencil); margin:22px 0 0; max-width:70ch; }
+
+  /* ── シーケンス見出し ──────────── */
+  .seq{ margin:46px 0 0; }
+  .seq__head{ display:flex; align-items:baseline; gap:14px; flex-wrap:wrap;
+              border-bottom:2px solid var(--ink); padding-bottom:7px; margin-bottom:0; }
+  .seq__id{ font-family:ui-monospace,Menlo,monospace; font-size:26px; color:var(--accent); }
+  .seq__title{ font-family:"Hiragino Mincho ProN","Yu Mincho",serif; font-size:19px; }
+  .seq__time{ margin-left:auto; font-family:ui-monospace,Menlo,monospace;
+              font-size:12px; color:var(--pencil); }
+
+  /* ── 絵コンテ用紙 ─────────────── */
+  .cuts{ border:1px solid var(--rule); border-top:0; background:var(--sheet); }
+  .cut{ display:grid; grid-template-columns:52px minmax(0,232px) minmax(0,1fr) 54px;
+        border-top:1px solid var(--rule-2); }
+  .cut:first-child{ border-top:0; }
+  @media (max-width:760px){
+    .cut{ grid-template-columns:44px minmax(0,1fr) 46px; }
+    .cut__pic{ grid-column:1 / -1; grid-row:2; border-left:0; border-right:0; }
+    .cut__body{ grid-row:3; grid-column:1 / -1; border-left:0; }
+  }
+
+  .cut__no{ padding:10px 0; text-align:center; font-family:ui-monospace,Menlo,monospace;
+            font-size:15px; color:var(--pencil); border-right:1px solid var(--rule-2); }
+  .cut__pic{ border-right:1px solid var(--rule-2); padding:8px; display:flex; align-items:center; }
+  .cut__pic img{ width:100%; height:auto; display:block; border:1px solid var(--rule-2); }
+  .cut__pic .empty{
+    width:100%; aspect-ratio:16/9; border:1px dashed var(--rule);
+    display:flex; align-items:center; justify-content:center;
+    font-size:9px; letter-spacing:.14em; color:#B5AE9E;
+  }
+  .cut__body{ padding:11px 15px; display:grid; gap:8px; align-content:start;
+              border-right:1px solid var(--rule-2); }
+  .cut__size{ display:inline-block; font-family:ui-monospace,Menlo,monospace; font-size:9.5px;
+              letter-spacing:.1em; border:1px solid var(--rule); padding:2px 7px; color:var(--pencil);
+              justify-self:start; }
+  .cut__action{ font-size:12.5px; line-height:1.95; margin:0; }
+  .cut__dialogue{ font-size:12.5px; line-height:1.9; margin:0; padding-left:11px;
+                  border-left:2px solid var(--accent);
+                  font-family:"Hiragino Mincho ProN","Yu Mincho",serif; }
+  .cut__note{ font-size:10.5px; line-height:1.8; margin:0; color:var(--pencil); }
+  .cut__note::before{ content:"◇ "; }
+  .cut__sec{ padding:10px 0; text-align:center; font-family:ui-monospace,Menlo,monospace;
+             font-size:14px; color:var(--pencil); }
+  .cut__sec small{ display:block; font-size:8px; letter-spacing:.1em; opacity:.65; }
+
+  footer{ margin:56px 0 80px; padding-top:26px; border-top:1px solid var(--rule);
+          font-size:11.5px; line-height:2; color:var(--pencil); }
+  code{ font-family:ui-monospace,Menlo,monospace; font-size:11px;
+        background:#E4DFD3; padding:1px 5px; }
+
+  @media (prefers-reduced-motion:reduce){ *{ animation:none !important; transition:none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="cover">
+    <h1>はしっこビルの明日づくり</h1>
+    <p class="sub">絵コンテ ／ 手描き鉛筆 ／ 5分尺アニメーション版</p>
+    <div class="specs" id="specs"></div>
+    <p class="lead">
+      七章＋エピローグを300秒に圧縮した構成。<strong>反復と反転</strong>で尺を稼いでいる ――
+      同じ階段・同じ扉・同じ長机を、前半では「隔てるもの」として、後半では「繋ぐもの」として
+      同アングルで撮り直す。C17（距離のある会議）とH67（詰まった食卓）、
+      B5（閉じた七扉）とI74（開いた七扉）、A4（点かない2と6）とI75（点く2と6）が対。
+    </p>
+  </header>
+
+  <main id="board"></main>
+
+  <footer>
+    <p>
+      カット表の正本は <code>storyboard.json</code>。鉛筆パネルの実体URLは
+      <code>../generated.json</code> の <code>sb_*</code> に記録している。
+    </p>
+    <p>
+      パネル未生成のカットは破線枠で表示される（構成上の必要度が低い繋ぎカット）。
+      台詞・見出し・時計の数字などの文字は、すべて編集段階で載せる前提で生成物には入れていない。
+    </p>
+  </footer>
+</div>
+
+<script>
+var PANEL_BASE = 'https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/';
+
+// panel id → 実ファイル名（generated.json の sb_* と一致）
+var PANELS = {
+  sb01_fog_building:      'hf_20260730_181442_fd8aae78-f304-43f6-82a7-bdc5dc04fe64.png',
+  sb02_mailslots:         'hf_20260730_181445_0373c28a-482d-4963-9b41-b45410db3132.png',
+  sb03_stairwell:         'hf_20260730_181449_e0a4eca6-4d84-44cb-8903-39f351bd6a8f.png',
+  sb04_elevator_dark:     'hf_20260730_181451_23893b35-ef65-4c22-bf8f-721eca0c1846.png',
+  sb05_doors_closed:      'hf_20260730_181454_af21792c-1c4a-45fe-a236-5dbcf2c91632.png',
+  sb06_title:             'hf_20260730_181457_c4235357-4058-4790-8aaf-1b66d989effa.png',
+  sb07_envelope:          'hf_20260730_181518_cf4c1664-f127-4531-a163-64ac4de72741.png',
+  sb08_letter:            'hf_20260730_181527_98707444-09ba-4e13-a134-def8bf6727fb.png',
+  sb09_empty_envelope:    'hf_20260730_181531_8a115edf-0fe9-4522-9ac6-bd9209989183.png',
+  sb10_seven_bins:        'hf_20260730_181537_8a57d94d-96ac-4e8b-9521-8c4dd8f5b2b2.png',
+  sb11_returned:          'hf_20260730_181541_4b3c1292-2623-4594-b2f2-cd37b7762a09.png',
+  sb12_hikari_start:      'hf_20260730_181547_df88bb4d-1ac3-4795-8443-f6182cb85e86.png',
+  sb13_hikari_notice:     'hf_20260730_181612_282f1a50-d93b-4487-8e68-1879fc09a71b.png',
+  sb14_seven_fan:         'hf_20260730_181615_9899596f-e2b4-47eb-81b9-dcf63cdc80f7.png',
+  sb15_hikari_run:        'hf_20260730_181622_2a9c55a5-2cb3-4cec-b4e4-7f82a80f18ee.png',
+  sb16_doors_peek:        'hf_20260730_181626_e464916c-4b33-4f90-96c3-7fa981787782.png',
+  sb17_meeting:           'hf_20260730_181639_948d9f67-bd46-427e-a781-766d8a6d8366.png',
+  sb18_tome_agenda:       'hf_20260730_181642_151fdaa8-42fb-4264-8ec3-9a974d50e278.png',
+  sb19_kumoi_prob:        'hf_20260730_181702_58bd4575-6b48-4d03-846c-9000315fb96f.png',
+  sb20_ri_vial:           'hf_20260730_181712_bd4ad3a7-691d-48b1-852b-f720f352981d.png',
+  sb21_kaburagi_tools:    'hf_20260730_181719_30beab12-5722-4c01-90b5-059f9387f640.png',
+  sb22_kurogane_minutes:  'hf_20260730_181723_af284ad0-8e43-45c9-9d55-ab7bc0da9876.png',
+  sb23_ukai:              'hf_20260730_181731_5011b30b-01e9-45c4-be72-015d7dc77191.png',
+  sb24_hikari_scribe:     'hf_20260730_181735_be164cff-fb01-4d93-b9ca-e683954a28d5.png',
+  sb25_chaos:             'hf_20260730_181756_eaa5ca24-0df2-436e-b9e8-4fd6753d4fe9.png',
+  sb26_pass_stairs:       'hf_20260730_181804_4c4a90aa-9e56-40a3-9a30-5da2e9105c1e.png',
+  sb27_seven_names:       'hf_20260730_181811_bd8951b0-1964-4371-bdb3-4c31ac606d07.png',
+  sb28_collapse:          'hf_20260730_181816_34da3f12-5ef7-4889-a140-842f14648572.png',
+  sb29_hiiragi_bed:       'hf_20260730_181823_57833046-95bb-4353-9596-8fecfc504aeb.png',
+  sb30_hikari_demand:     'hf_20260730_181826_4181bd87-9107-4fec-b897-e7d4153d309f.png',
+  sb31_letter_closeup:    'hf_20260730_181850_9924b61e-8789-4675-98fe-e9c1c7c7e853.png',
+  sb32_drawer:            'hf_20260730_181857_c348c062-7d27-42c8-a37b-a9fc5f67793a.png',
+  sb33_scraps_hands:      'hf_20260730_181905_d99ae196-90f1-4a06-9f0f-c0fe58cfb923.png',
+  sb34_hiiragi_wish:      'hf_20260730_181908_a68608f6-3fc5-4585-871b-80aa6548cbfe.png',
+  sb35_hikari_run2:       'hf_20260730_181914_219dca79-ad7a-4f76-b5ff-137869631fdf.png',
+  sb36_doors_open:        'hf_20260730_181917_063e241f-d55c-4e2f-a470-ab52cb0382af.png',
+  sb37_kumoi:             'hf_20260730_181941_468a1915-a718-415d-816d-332580b0c37a.png',
+  sb38_logbook_window:    'hf_20260730_181945_556c334a-1581-4e0e-9874-9e06d3441681.png',
+  sb39_tome_delight:      'hf_20260730_181949_b0e6d4cf-66c2-4f24-a825-2e7252e44c49.png',
+  sb40_seven_seals:       'hf_20260730_181956_079bae0e-4ab0-48fa-b551-519b7604f6a0.png',
+  sb41_kumoi_cue:         'hf_20260730_182003_2c1db8f4-d2a1-4255-8f2a-60586dbb6a5c.png',
+  sb42_press:             'hf_20260730_182008_990dd39f-34c2-48cc-9e93-e2ed00075d9d.png',
+  sb43_ri:                'hf_20260730_182032_4d0ec773-226e-429d-bfde-e324406201d4.png',
+  sb44_chair_build:       'hf_20260730_182037_a01bf9db-a0cf-4946-b999-d6f70f9620dc.png',
+  sb45_ledger_join:       'hf_20260730_182046_d3a41659-7764-42c0-9b79-8e5fc6abc74b.png',
+  sb46_tome_program:      'hf_20260730_182054_6271fecf-e2cd-426f-9109-321fa5e58a30.png',
+  sb47_nine_plates:       'hf_20260730_182057_2eeeeb70-9fb0-49d2-bc92-4ee47828054c.png',
+  sb48_stairs_busy:       'hf_20260730_182105_d1c48d30-166d-4d77-92fa-45f0bf2cc725.png',
+  sb49_betrayal:          'hf_20260730_182128_8df542a7-ed5a-4baa-ae8a-21077c06395d.png',
+  sb50_eye_gap:           'hf_20260730_182132_ed64965f-62a3-4c11-a155-6c6ea06d5f7a.png',
+  sb51_notes_spill:       'hf_20260730_182138_29adad0f-41b8-44dd-bd12-1a981371fe29.png',
+  sb52_doors_close:       'hf_20260730_182143_7720b850-6ae8-40e7-8a27-5907c35fbc39.png',
+  sb53_erased:            'hf_20260730_182149_41f799f2-0de3-4d92-8e38-c5a569b04a6b.png',
+  sb54_chair_alone:       'hf_20260730_182153_3fd9ffd1-cae4-438f-8f48-2dd94475940d.png',
+  sb55_ukai_window:       'hf_20260730_182214_f373996b-b4e4-47ac-abdb-eb972d735022.png',
+  sb56_flashback:         'hf_20260730_182224_4194c397-bf1f-423e-a1dc-591718b733bd.png',
+  sb57_toolbox:           'hf_20260730_182229_d7aa7e6e-12e8-43a2-a6cb-34854bb0b03a.png',
+  sb58_empty_chairs:      'hf_20260730_182235_a28a4fc7-72f1-4c6d-aebd-d09fcea1f609.png',
+  sb59_tome_ledger:       'hf_20260730_182241_878410a0-65bd-432f-8239-5ad1d6767668.png',
+  sb60_ledger:            'hf_20260730_182246_12251a48-71fb-4f05-ae61-571723bb615f.png',
+  sb61_ukai_hands:        'hf_20260730_182314_3f4bb4a5-3710-4bff-b916-d4ddbf3933a1.png',
+  sb62_ledger_delivered:  'hf_20260730_182321_3c28468d-102a-4b66-aa72-c8e083fc284a.png',
+  sb63_elevator_still:    'hf_20260730_182326_2257c06e-1ff2-46c4-9763-bf27945dc019.png',
+  sb64_carry:             'hf_20260730_182334_33fb28dd-c53f-4fe5-b257-f0e362e91659.png',
+  sb65_watch:             'hf_20260730_182340_851b3c9f-80bc-4e6d-b4d8-96eebd97e463.png',
+  sb66_fog_tears:         'hf_20260730_182346_95865a42-aae9-4bb3-b4db-99b20a20e187.png',
+  sb67_table:             'hf_20260730_182407_0f86e3a7-0f00-4a85-b732-9482545f0e3e.png',
+  sb68_ri_vial_gift:      'hf_20260730_182414_2702314e-64f0-4a86-b2cc-c183b9bd9432.png',
+  sb69_chair_turn:        'hf_20260730_182421_9a71d289-ae95-4852-94d4-6ff0eebf0379.png',
+  sb70_extra:             'hf_20260730_182426_a4967055-a265-4cb2-a483-56164efd2ef2.png',
+  sb71_hiiragi_hand:      'hf_20260730_182432_1a83fc6e-4b68-476d-b927-de1a50d862fb.png',
+  sb72_tome_rises:        'hf_20260730_182435_8ac90c74-3aca-4c7e-a213-737a00b120dc.png',
+  sb73_fog_window:        'hf_20260730_182457_6cb7b834-dcc8-4df6-a1e5-07b78b24ddac.png',
+  sb74_doors_open_left:   'hf_20260730_182500_bfd79d3e-d117-4440-a48c-7b7968dbc945.png',
+  sb75_elevator:          'hf_20260730_182504_a2228943-7888-40ee-acc7-4c2fadcbaee9.png',
+  sb76_new_letter:        'hf_20260730_182510_7f428d6c-61d1-4b5c-be55-c38901adeaf9.png',
+  sb77_hikari_writes:     'hf_20260730_182515_c14f3af7-d4ec-41ca-971b-372fdbe67dd3.png',
+  sb78_hikari_climb:      'hf_20260730_182523_e0136b55-2a19-4dc5-a33f-4540eb4efca7.png'
+};
+
+var SB = null;
+
+function esc(s){ return String(s||'').replace(/[&<>"]/g, function(c){
+  return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]; }); }
+
+function pad(n){ return (n<10?'0':'')+n; }
+
+function picHTML(c){
+  var f = c.panel && PANELS[c.panel];
+  if (f) {
+    return '<img loading="lazy" alt="カット' + c.no + ' 絵コンテ" src="' + PANEL_BASE + f + '">';
+  }
+  return '<div class="empty">NO PANEL</div>';
+}
+
+function cutHTML(c){
+  var parts = '';
+  if (c.size)     parts += '<span class="cut__size">' + esc(c.size) + '</span>';
+  if (c.action)   parts += '<p class="cut__action">' + esc(c.action) + '</p>';
+  if (c.dialogue) parts += '<p class="cut__dialogue">' + esc(c.dialogue) + '</p>';
+  if (c.note)     parts += '<p class="cut__note">' + esc(c.note) + '</p>';
+  return '' +
+  '<div class="cut">' +
+    '<div class="cut__no">' + pad(c.no) + '</div>' +
+    '<div class="cut__pic">' + picHTML(c) + '</div>' +
+    '<div class="cut__body">' + parts + '</div>' +
+    '<div class="cut__sec">' + c.sec + '<small>SEC</small></div>' +
+  '</div>';
+}
+
+function seqHTML(s){
+  return '' +
+  '<section class="seq reveal">' +
+    '<div class="seq__head">' +
+      '<span class="seq__id">' + esc(s.seq) + '</span>' +
+      '<span class="seq__title mincho">' + esc(s.title) + '</span>' +
+      '<span class="seq__time">' + esc(s.range_s) + '　/　' +
+        s.cuts.reduce(function(a,c){ return a + c.sec; }, 0) + 's　/　' +
+        s.cuts.length + ' cuts</span>' +
+    '</div>' +
+    '<div class="cuts">' + s.cuts.map(cutHTML).join('') + '</div>' +
+  '</section>';
+}
+
+function render(sb){
+  var totalCuts = sb.sequences.reduce(function(a,s){ return a + s.cuts.length; }, 0);
+  var totalSec  = sb.sequences.reduce(function(a,s){
+    return a + s.cuts.reduce(function(b,c){ return b + c.sec; }, 0); }, 0);
+  var panelled  = sb.sequences.reduce(function(a,s){
+    return a + s.cuts.filter(function(c){ return c.panel && PANELS[c.panel]; }).length; }, 0);
+
+  var m = Math.floor(totalSec/60), sec = totalSec%60;
+  document.getElementById('specs').innerHTML = [
+    ['DURATION', m + ':' + pad(sec)],
+    ['CUTS', totalCuts],
+    ['AVG / CUT', (totalSec/totalCuts).toFixed(1) + 's'],
+    ['SEQUENCES', sb.sequences.length],
+    ['ASPECT', sb.format.aspect_ratio],
+    ['PANELS', panelled + ' / ' + totalCuts]
+  ].map(function(x){
+    return '<dl class="spec"><dt>' + x[0] + '</dt><dd>' + x[1] + '</dd></dl>';
+  }).join('');
+
+  document.getElementById('board').innerHTML = sb.sequences.map(seqHTML).join('');
+
+  if (window.AP) AP.onScroll('.reveal');
+}
+
+fetch('storyboard.json')
+  .then(function(r){ return r.json(); })
+  .then(function(sb){ SB = sb; render(sb); })
+  .catch(function(e){
+    document.getElementById('board').innerHTML =
+      '<p style="padding:24px;font-size:13px">storyboard.json を読み込めませんでした（' + e.message +
+      '）。ローカルで開く場合は file:// ではなく HTTP 経由か、githack で開いてください。</p>';
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@4.4.1/dist/bundles/anime.umd.min.js"></script>
+<script src="../../../lib/animations.js"></script>
+</body>
+</html>

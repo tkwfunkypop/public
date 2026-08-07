@@ -1,0 +1,14 @@
+1
+00:00:00,500 --> 00:00:04,000
+News from the edge of the world
+needs only one line.
+
+2
+00:00:08,500 --> 00:00:11,500
+"Clear skies today."
+
+3
+00:00:12,000 --> 00:00:15,000
+The Hatate Times.
+Extra! Extra!
+

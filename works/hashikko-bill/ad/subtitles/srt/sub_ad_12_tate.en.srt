@@ -1,0 +1,17 @@
+1
+00:00:00,500 --> 00:00:04,000
+The app couldn't open this door.
+
+2
+00:00:04,500 --> 00:00:09,000
+Forty years of reliability.
+
+3
+00:00:09,500 --> 00:00:13,000
+No updates.
+No batteries to die.
+
+4
+00:00:13,200 --> 00:00:15,000
+Hiiragi, the caretaker.
+

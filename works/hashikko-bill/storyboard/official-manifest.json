@@ -1,0 +1,818 @@
+[
+ {
+  "panel": "sb01_fog_building",
+  "no": 1,
+  "seq": "A",
+  "prompt": "Official animation storyboard panel, cut 1 (full shot, wide framing). Scene: 白い霧だけの画面。奥に、傾いた七階建てのビルの輪郭がぼんやり浮かぶ。地面はビルの足元で途切れ、その先は何もない。 ※モノローグなし。風の音のみ。世界の外れであることを一枚で言う The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "BUILDING"
+  ],
+  "job_id": "fd8aae78-f304-43f6-82a7-bdc5dc04fe64",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181442_fd8aae78-f304-43f6-82a7-bdc5dc04fe64.png"
+ },
+ {
+  "panel": "sb02_mailslots",
+  "no": 2,
+  "seq": "A",
+  "prompt": "Official animation storyboard panel, cut 2 (close-up). Scene: 郵便受けの列。七つ。どれも埃をかぶっている。 Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "0373c28a-482d-4963-9b41-b45410db3132",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181445_0373c28a-482d-4963-9b41-b45410db3132.png"
+ },
+ {
+  "panel": "sb03_stairwell",
+  "no": 3,
+  "seq": "A",
+  "prompt": "Official animation storyboard panel, cut 3 (full shot, wide framing). Scene: 階段の吹き抜けを見上げるアオリ。七層ぶんの手すりが螺旋に重なる。人はいない。 ※縦の構図。以後この階段が主役の空間になる Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "e0a4eca6-4d84-44cb-8903-39f351bd6a8f",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181449_e0a4eca6-4d84-44cb-8903-39f351bd6a8f.png"
+ },
+ {
+  "panel": "sb04_elevator_dark",
+  "no": 4,
+  "seq": "A",
+  "prompt": "Official animation storyboard panel, cut 4 (medium shot). Scene: エレベーターの階数表示。1→3→4→5→7。2と6のランプだけ点かない。 ※後半の伏線。表示の飛びを画で見せきる Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "23893b35-ef65-4c22-bf8f-721eca0c1846",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181451_23893b35-ef65-4c22-bf8f-721eca0c1846.png"
+ },
+ {
+  "panel": "sb05_doors_closed",
+  "no": 5,
+  "seq": "A",
+  "prompt": "Official animation storyboard panel, cut 5 (full shot, wide framing). Scene: 七つの扉が並ぶ廊下。全部閉まっている。時間をずらして出社するので誰ともすれ違わない。 Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "af21792c-1c4a-45fe-a236-5dbcf2c91632",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181454_af21792c-1c4a-45fe-a236-5dbcf2c91632.png"
+ },
+ {
+  "panel": "sb06_title",
+  "no": 6,
+  "seq": "A",
+  "prompt": "Official animation storyboard panel, cut 6 (close-up). Scene: 霧の中にタイトルが浮かぶ。Hand-letter the Japanese title 「はしっこビルの明日づくり」 in loose graphite pencil handwriting, written EXACTLY with these characters: は し っ こ ビ ル の 明 日 づ く り, floating in fog. Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No other text.",
+  "refs": [],
+  "job_id": "c4235357-4058-4790-8aaf-1b66d989effa",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181457_c4235357-4058-4790-8aaf-1b66d989effa.png"
+ },
+ {
+  "panel": "sb07_envelope",
+  "no": 7,
+  "seq": "B",
+  "prompt": "Official animation storyboard panel, cut 7 (close-up). Scene: 机の上にすべり込む一通の封筒。宛名は各社名。 Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "cf4c1664-f127-4531-a163-64ac4de72741",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181518_cf4c1664-f127-4531-a163-64ac4de72741.png"
+ },
+ {
+  "panel": "sb08_letter",
+  "no": 8,
+  "seq": "B",
+  "prompt": "Official animation storyboard panel, cut 8 (close-up). Scene: 依頼書のクローズ。件名「明日を一日、つくってください」。納期七日後。予算 金一封。発注者 このビル。 ※文字は編集で入れる。生成パネルは紙と手だけ Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "98707444-09ba-4e13-a134-def8bf6727fb",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181527_98707444-09ba-4e13-a134-def8bf6727fb.png"
+ },
+ {
+  "panel": "sb09_empty_envelope",
+  "no": 9,
+  "seq": "B",
+  "prompt": "Official animation storyboard panel, cut 9 (medium shot). Scene: 封筒を逆さに振る手。何も落ちてこない。空。 ※予算ゼロを一動作で Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "8a115edf-0fe9-4522-9ac6-bd9209989183",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181531_8a115edf-0fe9-4522-9ac6-bd9209989183.png"
+ },
+ {
+  "panel": "sb10_seven_bins",
+  "no": 10,
+  "seq": "B",
+  "prompt": "Official animation storyboard panel, cut 10 (medium shot). Scene: 七分割の同時カット。七つの机で、七人が同じ紙を同じ角度でゴミ箱に落とす。 ※画面分割。七社が同じ動作をしていることを見せる＝互いを知らないのに同じ Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "8a57d94d-96ac-4e8b-9521-8c4dd8f5b2b2",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181537_8a57d94d-96ac-4e8b-9521-8c4dd8f5b2b2.png"
+ },
+ {
+  "panel": "sb11_returned",
+  "no": 11,
+  "seq": "B",
+  "prompt": "Official animation storyboard panel, cut 11 (close-up). Scene: 翌朝。ゴミ箱は空のまま、机の上に同じ依頼書が戻っている。 Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "4b3c1292-2623-4594-b2f2-cd37b7762a09",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181541_4b3c1292-2623-4594-b2f2-cd37b7762a09.png"
+ },
+ {
+  "panel": "sb12_hikari_start",
+  "no": 12,
+  "seq": "B",
+  "prompt": "Official animation storyboard panel, cut 12 (full shot, wide framing). Scene: 7Fふくふく亭。ひかりが弁当の塔を担いで出発。階段を下りはじめる。 ※彼女だけが全階をまわる＝唯一の横断者 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "HIKARI"
+  ],
+  "job_id": "df88bb4d-1ac3-4795-8443-f6182cb85e86",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181547_df88bb4d-1ac3-4795-8443-f6182cb85e86.png"
+ },
+ {
+  "panel": "sb13_hikari_notice",
+  "no": 13,
+  "seq": "B",
+  "prompt": "Official animation storyboard panel, cut 13 (medium shot). Scene: 各階の机に弁当を置くひかり。置くたびに、同じ依頼書が視界の端に入る。三枚目で足が止まる。 ※気づきは台詞でなく足の止まりで The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "HIKARI"
+  ],
+  "job_id": "282f1a50-d93b-4487-8e68-1879fc09a71b",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181612_282f1a50-d93b-4487-8e68-1879fc09a71b.png"
+ },
+ {
+  "panel": "sb14_seven_fan",
+  "no": 14,
+  "seq": "B",
+  "prompt": "Official animation storyboard panel, cut 14 (close-up). Scene: ひかりの手が七枚の依頼書を扇状に広げる。全部同じ文面。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "HIKARI"
+  ],
+  "job_id": "9899596f-e2b4-47eb-81b9-dcf63cdc80f7",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181615_9899596f-e2b4-47eb-81b9-dcf63cdc80f7.png"
+ },
+ {
+  "panel": "sb15_hikari_run",
+  "no": 15,
+  "seq": "B",
+  "prompt": "Official animation storyboard panel, cut 15 (full shot, wide framing). Scene: ひかりが階段を駆け上がる。手すりを掴んで踊り場を折り返し、扉を次々に叩く。 ※この作品の起点。カメラは彼女を追って縦に上がる The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "HIKARI"
+  ],
+  "job_id": "2a9c55a5-2cb3-4cec-b4e4-7f82a80f18ee",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181622_2a9c55a5-2cb3-4cec-b4e4-7f82a80f18ee.png"
+ },
+ {
+  "panel": "sb16_doors_peek",
+  "no": 16,
+  "seq": "B",
+  "prompt": "Official animation storyboard panel, cut 16 (medium shot). Scene: 扉が一枚、二枚、三枚と細く開く。隙間から七つの顔が覗く。 Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "e464916c-4b33-4f90-96c3-7fa981787782",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181626_e464916c-4b33-4f90-96c3-7fa981787782.png"
+ },
+ {
+  "panel": "sb17_meeting",
+  "no": 17,
+  "seq": "C",
+  "prompt": "Official animation storyboard panel, cut 17 (full shot, wide framing). Scene: 屋上。長机に七社が着席。全員が微妙に距離をとって座っている。霧が机の脚を舐める。 ※距離＝関係性。後半の食卓カットと対になる構図 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "BUILDING"
+  ],
+  "job_id": "948d9f67-bd46-427e-a781-766d8a6d8366",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181639_948d9f67-bd46-427e-a781-766d8a6d8366.png"
+ },
+ {
+  "panel": "sb18_tome_agenda",
+  "no": 18,
+  "seq": "C",
+  "prompt": "Official animation storyboard panel, cut 18 (medium shot). Scene: トメが立って議事進行。ホワイトボードには「一、開式の辞／二、献花」と書かれていく。 ※葬式の式次第になっている The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "TOME"
+  ],
+  "job_id": "151fdaa8-42fb-4264-8ec3-9a974d50e278",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181642_151fdaa8-42fb-4264-8ec3-9a974d50e278.png"
+ },
+ {
+  "panel": "sb19_kumoi_prob",
+  "no": 19,
+  "seq": "C",
+  "prompt": "Official animation storyboard panel, cut 19 (close-up). Scene: 雲井。手元の日誌から目を上げずに。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "KUMOI"
+  ],
+  "job_id": "58bd4575-6b48-4d03-846c-9000315fb96f",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181702_58bd4575-6b48-4d03-846c-9000315fb96f.png"
+ },
+ {
+  "panel": "sb20_ri_vial",
+  "no": 20,
+  "seq": "C",
+  "prompt": "Official animation storyboard panel, cut 20 (medium shot). Scene: 李に意見が振られる。李は黙って小瓶の蓋を開ける。一同むせて咳き込み、書類が飛ぶ。 ※唯一の明確なギャグ。テンポで押す The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "LI"
+  ],
+  "job_id": "bd4ad3a7-691d-48b1-852b-f720f352981d",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181712_bd4ad3a7-691d-48b1-852b-f720f352981d.png"
+ },
+ {
+  "panel": "sb21_kaburagi_tools",
+  "no": 21,
+  "seq": "C",
+  "prompt": "Official animation storyboard panel, cut 21 (medium shot). Scene: 鏑木が工具箱を開け、机の下で勝手に何かを組み始めている。歯車が転がる。 ※後のぜんまい椅子の伏線 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "KABURAGI"
+  ],
+  "job_id": "30beab12-5722-4c01-90b5-059f9387f640",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181719_30beab12-5722-4c01-90b5-059f9387f640.png"
+ },
+ {
+  "panel": "sb22_kurogane_minutes",
+  "no": 22,
+  "seq": "C",
+  "prompt": "Official animation storyboard panel, cut 22 (close-up). Scene: 黒金が活版で組んだ議事録を差し出す。まだ前回のぶん。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "KUROGANE"
+  ],
+  "job_id": "af284ad0-8e43-45c9-9d55-ab7bc0da9876",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181723_af284ad0-8e43-45c9-9d55-ab7bc0da9876.png"
+ },
+ {
+  "panel": "sb23_ukai",
+  "no": 23,
+  "seq": "C",
+  "prompt": "Official animation storyboard panel, cut 23 (medium shot). Scene: 鵜飼が全員をにこやかにまとめる。手元のメモには各社の内情がびっしり。ペン先が速い。 ※この時点で観客に不吉さを少しだけ渡す The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "UKAI"
+  ],
+  "job_id": "5011b30b-01e9-45c4-be72-015d7dc77191",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181731_5011b30b-01e9-45c4-be72-015d7dc77191.png"
+ },
+ {
+  "panel": "sb24_hikari_scribe",
+  "no": 24,
+  "seq": "C",
+  "prompt": "Official animation storyboard panel, cut 24 (medium shot). Scene: ひかりが弁当を配りに来ただけなのに、いつのまにか書記席に座らされている。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "HIKARI"
+  ],
+  "job_id": "be164cff-fb01-4d93-b9ca-e683954a28d5",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181735_be164cff-fb01-4d93-b9ca-e683954a28d5.png"
+ },
+ {
+  "panel": "sb25_chaos",
+  "no": 25,
+  "seq": "C",
+  "prompt": "Official animation storyboard panel, cut 25 (full shot, wide framing). Scene: 全員が同時に喋りだし、机の上が紙と歯車と小瓶で埋まる。決裂。椅子が引かれる音。 Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "eaa5ca24-0df2-436e-b9e8-4fd6753d4fe9",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181756_eaa5ca24-0df2-436e-b9e8-4fd6753d4fe9.png"
+ },
+ {
+  "panel": "sb26_pass_stairs",
+  "no": 26,
+  "seq": "C",
+  "prompt": "Official animation storyboard panel, cut 26 (medium shot). Scene: 帰りの階段。すれ違う二人が、一瞬だけ目を合わせる。 ※決裂したのに名前を覚えた。この章の本当の成果 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "KABURAGI",
+   "TOME"
+  ],
+  "job_id": "4c4a90aa-9e56-40a3-9a30-5da2e9105c1e",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181804_4c4a90aa-9e56-40a3-9a30-5da2e9105c1e.png"
+ },
+ {
+  "panel": "sb27_seven_names",
+  "no": 27,
+  "seq": "C",
+  "prompt": "Official animation storyboard panel, cut 27 (close-up). Scene: ひかりの書記ノート。七人の名前が、はじめて一枚の紙に並んでいる。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "HIKARI"
+  ],
+  "job_id": "bd8951b0-1964-4371-bdb3-4c31ac606d07",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181811_bd8951b0-1964-4371-bdb3-4c31ac606d07.png"
+ },
+ {
+  "panel": "sb28_collapse",
+  "no": 28,
+  "seq": "D",
+  "prompt": "Official animation storyboard panel, cut 28 (full shot, wide framing). Scene: 地下。管理人室の前の廊下に、電球の箱が散らばっている。倒れた柊の足だけが見える。 ※倒れる瞬間は見せない The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "HIIRAGI"
+  ],
+  "job_id": "34da3f12-5ef7-4889-a140-842f14648572",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181816_34da3f12-5ef7-4889-a140-842f14648572.png"
+ },
+ {
+  "panel": "sb29_hiiragi_bed",
+  "no": 29,
+  "seq": "D",
+  "prompt": "Official animation storyboard panel, cut 29 (medium shot). Scene: 管理人室のベッド。柊が横たわる。枕元にひかり。医者が首を振って出ていく。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "HIKARI",
+   "HIIRAGI"
+  ],
+  "job_id": "57833046-95bb-4353-9596-8fecfc504aeb",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181823_57833046-95bb-4353-9596-8fecfc504aeb.png"
+ },
+ {
+  "panel": "sb30_hikari_demand",
+  "no": 30,
+  "seq": "D",
+  "prompt": "Official animation storyboard panel, cut 30 (medium shot). Scene: ひかりが依頼書を突き出す。柊は目だけで笑う。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "HIKARI",
+   "HIIRAGI"
+  ],
+  "job_id": "4181bd87-9107-4fec-b897-e7d4153d309f",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181826_4181bd87-9107-4fec-b897-e7d4153d309f.png"
+ },
+ {
+  "panel": "sb31_letter_closeup",
+  "no": 31,
+  "seq": "D",
+  "prompt": "Official animation storyboard panel, cut 31 (close-up). Scene: 依頼書の極大クローズ。一文字ずつ、紙の質も筆跡も違う。切り貼りの継ぎ目が見える。 ※ここが仕掛けの開示。寄りきる Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "9924b61e-8789-4675-98fe-e9c1c7c7e853",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181850_9924b61e-8789-4675-98fe-e9c1c7c7e853.png"
+ },
+ {
+  "panel": "sb32_drawer",
+  "no": 32,
+  "seq": "D",
+  "prompt": "Official animation storyboard panel, cut 32 (medium shot). Scene: 机の抽斗が開く。五十年分の紙片が詰まっている。書き損じ、破いた辞表、出せなかった詫び状、渡せなかったラブレターの下書き。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "HIIRAGI"
+  ],
+  "job_id": "c348c062-7d27-42c8-a37b-a9fc5f67793a",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181857_c348c062-7d27-42c8-a37b-a9fc5f67793a.png"
+ },
+ {
+  "panel": "sb33_scraps_hands",
+  "no": 33,
+  "seq": "D",
+  "prompt": "Official animation storyboard panel, cut 33 (close-up). Scene: 紙片の一枚一枚に、別の誰かの手の癖がある。フラッシュで、それを書いて捨てた無名の手が重なる。 Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "d99ae196-90f1-4a06-9f0f-c0fe58cfb923",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181905_d99ae196-90f1-4a06-9f0f-c0fe58cfb923.png"
+ },
+ {
+  "panel": "sb34_hiiragi_wish",
+  "no": 34,
+  "seq": "D",
+  "prompt": "Official animation storyboard panel, cut 34 (medium shot). Scene: 柊が天井を見る。 ※作品の願い。ここだけ間を長く取る The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "HIIRAGI"
+  ],
+  "job_id": "a68608f6-3fc5-4585-871b-80aa6548cbfe",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181908_a68608f6-3fc5-4585-871b-80aa6548cbfe.png"
+ },
+ {
+  "panel": "sb35_hikari_run2",
+  "no": 35,
+  "seq": "D",
+  "prompt": "Official animation storyboard panel, cut 35 (full shot, wide framing). Scene: ひかりが管理人室を飛び出し、階段を駆け上がる。二度目の駆け上がり。 ※cut15と同じ構図でリズムを反復させる The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "HIKARI"
+  ],
+  "job_id": "219dca79-ad7a-4f76-b5ff-137869631fdf",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181914_219dca79-ad7a-4f76-b5ff-137869631fdf.png"
+ },
+ {
+  "panel": "sb36_doors_open",
+  "no": 36,
+  "seq": "D",
+  "prompt": "Official animation storyboard panel, cut 36 (medium shot). Scene: 七つの扉が、今度は自分から開く。 ※cut16の反転 Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "063e241f-d55c-4e2f-a470-ab52cb0382af",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181917_063e241f-d55c-4e2f-a470-ab52cb0382af.png"
+ },
+ {
+  "panel": "sb37_kumoi",
+  "no": 37,
+  "seq": "E",
+  "prompt": "Official animation storyboard panel, cut 37 (medium shot). Scene: 4F観測所。百年分の日誌が床から天井まで。雲井が一冊を抜き、指で行を追う。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "KUMOI"
+  ],
+  "job_id": "468a1915-a718-415d-816d-332580b0c37a",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181941_468a1915-a718-415d-816d-332580b0c37a.png"
+ },
+ {
+  "panel": "sb38_logbook_window",
+  "no": 38,
+  "seq": "E",
+  "prompt": "Official animation storyboard panel, cut 38 (close-up). Scene: 日誌の余白に書かれる数字。七日目、一六:四四〜一六:五五。 ※文字は編集で The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "KUMOI"
+  ],
+  "job_id": "556c334a-1581-4e0e-9874-9e06d3441681",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181945_556c334a-1581-4e0e-9874-9e06d3441681.png"
+ },
+ {
+  "panel": "sb39_tome_delight",
+  "no": 39,
+  "seq": "E",
+  "prompt": "Official animation storyboard panel, cut 39 (medium shot). Scene: 一同「四が三つ」と渋る。トメだけが満面の笑み。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "TOME"
+  ],
+  "job_id": "b0e6d4cf-66c2-4f24-a825-2e7252e44c49",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181949_b0e6d4cf-66c2-4f24-a825-2e7252e44c49.png"
+ },
+ {
+  "panel": "sb40_seven_seals",
+  "no": 40,
+  "seq": "E",
+  "prompt": "Official animation storyboard panel, cut 40 (close-up). Scene: 屋上の机に、七社の判が一つずつ押されていく。 ※会議が噛み合いはじめる合図 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "BUILDING"
+  ],
+  "job_id": "079bae0e-4ab0-48fa-b551-519b7604f6a0",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_181956_079bae0e-4ab0-48fa-b551-519b7604f6a0.png"
+ },
+ {
+  "panel": "sb41_kumoi_cue",
+  "no": 41,
+  "seq": "E",
+  "prompt": "Official animation storyboard panel, cut 41 (medium shot). Scene: 【分担モンタージュ 4F】雲井が秒針を睨み、号令の台本を書く。 ※ここから41〜47は同テンポで刻む The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "KUMOI"
+  ],
+  "job_id": "2c1db8f4-d2a1-4255-8f2a-60586dbb6a5c",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182003_2c1db8f4-d2a1-4255-8f2a-60586dbb6a5c.png"
+ },
+ {
+  "panel": "sb42_press",
+  "no": 42,
+  "seq": "E",
+  "prompt": "Official animation storyboard panel, cut 42 (medium shot). Scene: 【6F】黒金と大和が活字を拾う。刷り上がるのは、まだ来ていない日付の号外。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "YAMATO",
+   "KUROGANE"
+  ],
+  "job_id": "990dd39f-34c2-48cc-9e93-e2ed00075d9d",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182008_990dd39f-34c2-48cc-9e93-e2ed00075d9d.png"
+ },
+ {
+  "panel": "sb43_ri",
+  "no": 43,
+  "seq": "E",
+  "prompt": "Official animation storyboard panel, cut 43 (medium shot). Scene: 【5F】李が調香台に向かう。小瓶が三本並ぶ。妻の味噌汁、雨上がりの校庭、五十年前の一階の線香。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "LI"
+  ],
+  "job_id": "4d0ec773-226e-429d-bfde-e324406201d4",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182032_4d0ec773-226e-429d-bfde-e324406201d4.png"
+ },
+ {
+  "panel": "sb44_chair_build",
+  "no": 44,
+  "seq": "E",
+  "prompt": "Official animation storyboard panel, cut 44 (medium shot). Scene: 【2F】鏑木がぜんまい椅子を組む。歯車が噛み、座面がゆっくり回る。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "KABURAGI"
+  ],
+  "job_id": "a01bf9db-a0cf-4946-b999-d6f70f9620dc",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182037_a01bf9db-a0cf-4946-b999-d6f70f9620dc.png"
+ },
+ {
+  "panel": "sb45_ledger_join",
+  "no": 45,
+  "seq": "E",
+  "prompt": "Official animation storyboard panel, cut 45 (close-up). Scene: 【3F】鵜飼の帳簿。予算ゼロの案件が、七社の誰も損しない形に組み替わっていく。 ※この時点では善意に見せる The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "UKAI"
+  ],
+  "job_id": "d3a41659-7764-42c0-9b79-8e5fc6abc74b",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182046_d3a41659-7764-42c0-9b79-8e5fc6abc74b.png"
+ },
+ {
+  "panel": "sb46_tome_program",
+  "no": 46,
+  "seq": "E",
+  "prompt": "Official animation storyboard panel, cut 46 (medium shot). Scene: 【1F】トメが式次第を書く。「一日をきちんと始めて、きちんと終わらせる」。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "TOME"
+  ],
+  "job_id": "6271fecf-e2cd-426f-9109-321fa5e58a30",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182054_6271fecf-e2cd-426f-9109-321fa5e58a30.png"
+ },
+ {
+  "panel": "sb47_nine_plates",
+  "no": 47,
+  "seq": "E",
+  "prompt": "Official animation storyboard panel, cut 47 (medium shot). Scene: 【7F】ひかりが厨房で九人分の皿を数える。 ※九人＝七社＋柊＋自分。数の伏線 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "HIKARI",
+   "HIIRAGI"
+  ],
+  "job_id": "2eeeeb70-9fb0-49d2-bc92-4ee47828054c",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182057_2eeeeb70-9fb0-49d2-bc92-4ee47828054c.png"
+ },
+ {
+  "panel": "sb48_stairs_busy",
+  "no": 48,
+  "seq": "E",
+  "prompt": "Official animation storyboard panel, cut 48 (full shot, wide framing). Scene: 階段を、七社の人間が上下にすれ違いながら往復する。四十年止まっていた血流が動く。 Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "d1c48d30-166d-4d77-92fa-45f0bf2cc725",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182105_d1c48d30-166d-4d77-92fa-45f0bf2cc725.png"
+ },
+ {
+  "panel": "sb49_betrayal",
+  "no": 49,
+  "seq": "F",
+  "prompt": "Official animation storyboard panel, cut 49 (medium shot). Scene: 六日目。3Fの応接。鵜飼と、見慣れないスーツの男。テーブルに取り壊しの図面と契約書。判が寸前。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "UKAI"
+  ],
+  "job_id": "8df542a7-ed5a-4baa-ae8a-21077c06395d",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182128_8df542a7-ed5a-4baa-ae8a-21077c06395d.png"
+ },
+ {
+  "panel": "sb50_eye_gap",
+  "no": 50,
+  "seq": "F",
+  "prompt": "Official animation storyboard panel, cut 50 (close-up). Scene: 扉の隙間。それを見ているひかりの目。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "HIKARI"
+  ],
+  "job_id": "ed64965f-62a3-4c11-a155-6c6ea06d5f7a",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182132_ed64965f-62a3-4c11-a155-6c6ea06d5f7a.png"
+ },
+ {
+  "panel": "sb51_notes_spill",
+  "no": 51,
+  "seq": "F",
+  "prompt": "Official animation storyboard panel, cut 51 (medium shot). Scene: 鵜飼のメモが床にばらまかれる。会議で取っていた各社の内情のメモ。売り物だった。 ※cut23の回収 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "UKAI"
+  ],
+  "job_id": "29adad0f-41b8-44dd-bd12-1a981371fe29",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182138_29adad0f-41b8-44dd-bd12-1a981371fe29.png"
+ },
+ {
+  "panel": "sb52_doors_close",
+  "no": 52,
+  "seq": "F",
+  "prompt": "Official animation storyboard panel, cut 52 (full shot, wide framing). Scene: 七つの扉が、順番に閉まっていく。cut36の完全な反転。 ※音だけで見せてもよい Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "7720b850-6ae8-40e7-8a27-5907c35fbc39",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182143_7720b850-6ae8-40e7-8a27-5907c35fbc39.png"
+ },
+ {
+  "panel": "sb53_erased",
+  "no": 53,
+  "seq": "F",
+  "prompt": "Official animation storyboard panel, cut 53 (close-up). Scene: 雲井が日誌の数字を消し、書き直す。実現確率 0%。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "KUMOI"
+  ],
+  "job_id": "41f799f2-0de3-4d92-8e38-c5a569b04a6b",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182149_41f799f2-0de3-4d92-8e38-c5a569b04a6b.png"
+ },
+ {
+  "panel": "sb54_chair_alone",
+  "no": 54,
+  "seq": "F",
+  "prompt": "Official animation storyboard panel, cut 54 (medium shot). Scene: 屋上。組みかけのぜんまい椅子だけが霧の中に残されている。誰もいない。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "BUILDING"
+  ],
+  "job_id": "3fd9ffd1-cae4-438f-8f48-2dd94475940d",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182153_3fd9ffd1-cae4-438f-8f48-2dd94475940d.png"
+ },
+ {
+  "panel": "sb55_ukai_window",
+  "no": 55,
+  "seq": "G",
+  "prompt": "Official animation storyboard panel, cut 55 (medium shot). Scene: 3F。鵜飼が一人。窓の霧に向かって喋りだす。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "UKAI"
+  ],
+  "job_id": "f373996b-b4e4-47ac-abdb-eb972d735022",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182214_f373996b-b4e4-47ac-abdb-eb972d735022.png"
+ },
+ {
+  "panel": "sb56_flashback",
+  "no": 56,
+  "seq": "G",
+  "prompt": "Official animation storyboard panel, cut 56 (full shot, wide framing). Scene: 回想。七階の厨房で働く母の背中。二階で玩具を作る父の手。少年の鵜飼が階段の踊り場に座っている。 ※鉛筆の線をさらに薄く、回想の階調を落とす The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "UKAI_CHILD",
+   "UKAI_MOTHER",
+   "UKAI_FATHER"
+  ],
+  "job_id": "4194c397-bf1f-423e-a1dc-591718b733bd",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182224_4194c397-bf1f-423e-a1dc-591718b733bd.png"
+ },
+ {
+  "panel": "sb57_toolbox",
+  "no": 57,
+  "seq": "G",
+  "prompt": "Official animation storyboard panel, cut 57 (full shot, wide framing). Scene: 回想。階段の下に落ちた工具箱。散った歯車。父の靴が片方だけ転がっている。 ※死体は映さない The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "UKAI_FATHER"
+  ],
+  "job_id": "d7aa7e6e-12e8-43a2-a6cb-34854bb0b03a",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182229_d7aa7e6e-12e8-43a2-a6cb-34854bb0b03a.png"
+ },
+ {
+  "panel": "sb58_empty_chairs",
+  "no": 58,
+  "seq": "G",
+  "prompt": "Official animation storyboard panel, cut 58 (medium shot). Scene: 回想。葬儀場に並ぶ空の椅子。誰も座っていない。少年が一人立っている。 ※この作品のテーマの裏面 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "UKAI_CHILD"
+  ],
+  "job_id": "a28a4fc7-72f1-4c6d-aebd-d09fcea1f609",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182235_a28a4fc7-72f1-4c6d-aebd-d09fcea1f609.png"
+ },
+ {
+  "panel": "sb59_tome_ledger",
+  "no": 59,
+  "seq": "G",
+  "prompt": "Official animation storyboard panel, cut 59 (medium shot). Scene: 現在。黙って聞いていたトメが、古い帳簿を机に置いて開く。三十年前の日付。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "TOME"
+  ],
+  "job_id": "878410a0-65bd-432f-8239-5ad1d6767668",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182241_878410a0-65bd-432f-8239-5ad1d6767668.png"
+ },
+ {
+  "panel": "sb60_ledger",
+  "no": 60,
+  "seq": "G",
+  "prompt": "Official animation storyboard panel, cut 60 (close-up). Scene: 帳簿の極大クローズ。喪主欄に「柊源三」。参列者、一名。 ※感情のピーク。ここが一番寄る Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "12251a48-71fb-4f05-ae61-571723bb615f",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182246_12251a48-71fb-4f05-ae61-571723bb615f.png"
+ },
+ {
+  "panel": "sb61_ukai_hands",
+  "no": 61,
+  "seq": "G",
+  "prompt": "Official animation storyboard panel, cut 61 (medium shot). Scene: 鵜飼の手が止まり、そのまま帳簿を掴む。契約書を破る音は画面外。 ※泣き顔は見せない。手だけ The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "UKAI"
+  ],
+  "job_id": "3f4bb4a5-3710-4bff-b916-d4ddbf3933a1",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182314_3f4bb4a5-3710-4bff-b916-d4ddbf3933a1.png"
+ },
+ {
+  "panel": "sb62_ledger_delivered",
+  "no": 62,
+  "seq": "G",
+  "prompt": "Official animation storyboard panel, cut 62 (medium shot). Scene: その夜。七社の机に、組み直された帳簿が一枚ずつ置かれていく。予算ゼロの案件が成立してしまう。 ※cut7の反復構図（机に紙が置かれる） Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "3c28468d-102a-4b66-aa72-c8e083fc284a",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182321_3c28468d-102a-4b66-aa72-c8e083fc284a.png"
+ },
+ {
+  "panel": "sb63_elevator_still",
+  "no": 63,
+  "seq": "H",
+  "prompt": "Official animation storyboard panel, cut 63 (medium shot). Scene: 七日目。エレベーターの2と6のランプは、やはり点かない。全員が階段を選ぶ。 ※cut4の回収 Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "2257c06e-1ff2-46c4-9763-bf27945dc019",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182326_2257c06e-1ff2-46c4-9763-bf27945dc019.png"
+ },
+ {
+  "panel": "sb64_carry",
+  "no": 64,
+  "seq": "H",
+  "prompt": "Official animation storyboard panel, cut 64 (full shot, wide framing). Scene: 七社総出でぜんまい椅子を担ぎ、螺旋階段を上げていく。柊が座っている。手から手へ受け渡される。 ※cut3の階段を、今度は人で埋める The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "HIIRAGI"
+  ],
+  "job_id": "33fb28dd-c53f-4fe5-b257-f0e362e91659",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182334_33fb28dd-c53f-4fe5-b257-f0e362e91659.png"
+ },
+ {
+  "panel": "sb65_watch",
+  "no": 65,
+  "seq": "H",
+  "prompt": "Official animation storyboard panel, cut 65 (close-up). Scene: 雲井の腕時計。一六:四三:五〇。秒針。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "KUMOI"
+  ],
+  "job_id": "851b3c9f-80bc-4e6d-b4d8-96eebd97e463",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182340_851b3c9f-80bc-4e6d-b4d8-96eebd97e463.png"
+ },
+ {
+  "panel": "sb66_fog_tears",
+  "no": 66,
+  "seq": "H",
+  "prompt": "Official animation storyboard panel, cut 66 (full shot, wide framing). Scene: 霧が裂ける。世界の外れに、はじめて空と地平が見える。琥珀色の光が屋上に流れ込む。 ※全編で唯一、色を入れてよい箇所（本編では）。コンテでは鉛筆のまま、白の抜きで表現 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "BUILDING"
+  ],
+  "job_id": "95865a42-aae9-4bb3-b4db-99b20a20e187",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182346_95865a42-aae9-4bb3-b4db-99b20a20e187.png"
+ },
+ {
+  "panel": "sb67_table",
+  "no": 67,
+  "seq": "H",
+  "prompt": "Official animation storyboard panel, cut 67 (full shot, wide framing). Scene: 一つの長机を九人が囲んで飯を食っている。cut17の距離が、ゼロになっている。 ※cut17と同アングルで対にする。この一枚が作品の答え Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "0f86e3a7-0f00-4a85-b732-9482545f0e3e",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182407_0f86e3a7-0f00-4a85-b732-9482545f0e3e.png"
+ },
+ {
+  "panel": "sb68_ri_vial_gift",
+  "no": 68,
+  "seq": "H",
+  "prompt": "Official animation storyboard panel, cut 68 (close-up). Scene: 李が柊の鼻先に小瓶を差し出す。中身は三十年前の、このビルの階段の匂い。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "LI",
+   "HIIRAGI"
+  ],
+  "job_id": "2702314e-64f0-4a86-b2cc-c183b9bd9432",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182414_2702314e-64f0-4a86-b2cc-c183b9bd9432.png"
+ },
+ {
+  "panel": "sb69_chair_turn",
+  "no": 69,
+  "seq": "H",
+  "prompt": "Official animation storyboard panel, cut 69 (medium shot). Scene: 柊が椅子の手を離す。座面がゆっくり回り、七つの扉が順に見える。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "KABURAGI",
+   "HIIRAGI"
+  ],
+  "job_id": "9a71d289-ae95-4852-94d4-6ff0eebf0379",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182421_9a71d289-ae95-4852-94d4-6ff0eebf0379.png"
+ },
+ {
+  "panel": "sb70_extra",
+  "no": 70,
+  "seq": "H",
+  "prompt": "Official animation storyboard panel, cut 70 (close-up). Scene: 号外の見出し。「本日、晴。果端ビル七社、初の合同事業を完遂」。 ※文字は編集で Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "a4967055-a265-4cb2-a483-56164efd2ef2",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182426_a4967055-a265-4cb2-a483-56164efd2ef2.png"
+ },
+ {
+  "panel": "sb71_hiiragi_hand",
+  "no": 71,
+  "seq": "H",
+  "prompt": "Official animation storyboard panel, cut 71 (medium shot). Scene: 夜。管理人室。柊の手が布団の上でひらく。静かに息を引き取る。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "HIIRAGI"
+  ],
+  "job_id": "1a83fc6e-4b68-476d-b927-de1a50d862fb",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182432_1a83fc6e-4b68-476d-b927-de1a50d862fb.png"
+ },
+ {
+  "panel": "sb72_tome_rises",
+  "no": 72,
+  "seq": "H",
+  "prompt": "Official animation storyboard panel, cut 72 (medium shot). Scene: トメが立ち上がる。喪服の裾が揺れる。 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "TOME"
+  ],
+  "job_id": "8ac90c74-3aca-4c7e-a213-737a00b120dc",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182435_8ac90c74-3aca-4c7e-a213-737a00b120dc.png"
+ },
+ {
+  "panel": "sb73_fog_window",
+  "no": 73,
+  "seq": "I",
+  "prompt": "Official animation storyboard panel, cut 73 (full shot, wide framing). Scene: 翌朝。窓の外はいつもの白い霧に戻っている。 Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "6cb7b834-dcc8-4df6-a1e5-07b78b24ddac",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182457_6cb7b834-dcc8-4df6-a1e5-07b78b24ddac.png"
+ },
+ {
+  "panel": "sb74_doors_open_left",
+  "no": 74,
+  "seq": "I",
+  "prompt": "Official animation storyboard panel, cut 74 (full shot, wide framing). Scene: 七つの扉が、全部開いたままになっている。cut5の完全な反転。 Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "bfd79d3e-d117-4440-a48c-7b7968dbc945",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182500_bfd79d3e-d117-4440-a48c-7b7968dbc945.png"
+ },
+ {
+  "panel": "sb75_elevator",
+  "no": 75,
+  "seq": "I",
+  "prompt": "Official animation storyboard panel, cut 75 (medium shot). Scene: エレベーターの階数表示。1→2→3→4→5→6→7。2と6にも、ランプが点く。 ※四十年ぶり。台詞なしで観客に効く Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "a2228943-7888-40ee-acc7-4c2fadcbaee9",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182504_a2228943-7888-40ee-acc7-4c2fadcbaee9.png"
+ },
+ {
+  "panel": "sb76_new_letter",
+  "no": 76,
+  "seq": "I",
+  "prompt": "Official animation storyboard panel, cut 76 (close-up). Scene: 管理人室の机に新しい依頼書。差出人欄に七社の判が並び、宛先は空白。 Style: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [],
+  "job_id": "7f428d6c-61d1-4b5c-be55-c38901adeaf9",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182510_7f428d6c-61d1-4b5c-be55-c38901adeaf9.png"
+ },
+ {
+  "panel": "sb77_hikari_writes",
+  "no": 77,
+  "seq": "I",
+  "prompt": "Official animation storyboard panel, cut 77 (medium shot). Scene: ひかりが宛先欄に自分の名前を書き込む。 ※八社目＝彼女 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "HIKARI"
+  ],
+  "job_id": "c14f3af7-d4ec-41ca-971b-372fdbe67dd3",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182515_c14f3af7-d4ec-41ca-971b-372fdbe67dd3.png"
+ },
+ {
+  "panel": "sb78_hikari_climb",
+  "no": 78,
+  "seq": "I",
+  "prompt": "Official animation storyboard panel, cut 78 (full shot, wide framing). Scene: 電球の箱を抱えて階段をのぼっていくひかりの後ろ姿。上へ、上へ。暗転。 ※cut3の階段を、一人で。柊の五十年を引き継ぐ画 The attached reference images show the OFFICIAL character designs (and official building design where included) — keep their exact silhouettes, hairstyles, costumes and proportions clearly recognizable, but redraw the whole panel as: Rough hand-drawn animation storyboard panel, graphite pencil on off-white paper, loose gestural construction lines, visible eraser smudges, cross-hatching for shadow, monochrome grey graphite only, no color, deliberately sketchy and unfinished, wide cinematic storyboard framing. No text, no letters, no numbers, no captions, no watermark.",
+  "refs": [
+   "HIKARI",
+   "HIIRAGI"
+  ],
+  "job_id": "e0136b55-2a19-4dc5-a33f-4540eb4efca7",
+  "url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_182523_e0136b55-2a19-4dc5-a33f-4540eb4efca7.png"
+ }
+]

@@ -1,0 +1,15 @@
+{
+  "name": "hashikko-floyo-guide",
+  "private": true,
+  "description": "はしっこビルの明日づくり — Floyo移行手順の解説動画（Remotion）",
+  "scripts": {
+    "dev": "remotion studio",
+    "render": "remotion render Guide out/floyo-guide.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.238",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.238"
+  }
+}

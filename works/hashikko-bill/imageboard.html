@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>はしっこビルの明日づくり — アートディレクション・ボード</title>
+<meta name="description" content="七階建て、七社、七日間。ゴシック・ストップモーション世界のキャラクターデザインとイメージボード。">
+<style>
+  :root{
+    color-scheme: dark;
+    /* 夜霧の設定色（純黒ではなく、青紫に寄せた墨） */
+    --ink:      #151320;
+    --ink-2:    #1C1928;
+    --ink-3:    #241F31;
+    --fog:      #8E8AA0;
+    --bone:     #E6E0CE;
+    --bone-dim: #A29C8D;
+
+    /* 七つの窓 = このボードの配色システム */
+    --f1: #D8D2BE; /* 1F 葬祭   菊白   */
+    --f2: #C9A24B; /* 2F 玩具   真鍮   */
+    --f3: #4F8F6C; /* 3F 会計   帳簿緑 */
+    --f4: #5D93BC; /* 4F 気象   硝子青 */
+    --f5: #9B7BC4; /* 5F 香料   香気紫 */
+    --f6: #C2493C; /* 6F 印刷   校正朱 */
+    --f7: #EE9A38; /* 7F 弁当   灯火橙 */
+    --fb: #F0D488; /* B1 管理人 電球黄 */
+
+    --serif: "Hiragino Mincho ProN","Yu Mincho",YuMincho,"Noto Serif JP","Times New Roman",serif;
+    --sans:  "Hiragino Sans","Yu Gothic",YuGothic,"Noto Sans JP",system-ui,sans-serif;
+    --mono:  ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+
+    --gut: clamp(1.25rem, 4vw, 3rem);
+    --maxw: 1120px;
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--ink);
+    color:var(--bone);
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+
+  /* フィルムグレイン（ストップモーションの実写感） */
+  body::after{
+    content:""; position:fixed; inset:0; z-index:200; pointer-events:none;
+    opacity:.16; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .wrap{ max-width:var(--maxw); margin-inline:auto; padding-inline:var(--gut); }
+
+  h1,h2,h3{ font-family:var(--serif); font-weight:600; text-wrap:balance; margin:0; }
+  p{ margin:0; }
+
+  .eyebrow{
+    font-family:var(--mono); font-size:.72rem; letter-spacing:.22em;
+    text-transform:uppercase; color:var(--fog);
+  }
+
+  /* ══ 表紙 ══════════════════════════════ */
+  .hero{ position:relative; min-height:96svh; display:grid; place-items:center; overflow:hidden; }
+  .hero__fog{
+    position:absolute; inset:-20%; z-index:0; pointer-events:none;
+    background:
+      radial-gradient(60% 40% at 20% 78%, rgba(190,188,205,.20), transparent 62%),
+      radial-gradient(55% 38% at 82% 86%, rgba(160,158,180,.16), transparent 60%),
+      radial-gradient(70% 45% at 50% 100%, rgba(215,213,228,.22), transparent 64%);
+    filter:blur(6px);
+  }
+  .hero__inner{ position:relative; z-index:2; display:grid; gap:2.4rem; justify-items:center; text-align:center; padding-block:6rem 4rem; }
+  .hero__art{ width:min(340px, 72vw); filter:drop-shadow(0 24px 60px rgba(0,0,0,.65)); }
+  .hero h1{
+    font-size:clamp(2.4rem,7.4vw,5rem); line-height:1.12; letter-spacing:.06em;
+  }
+  .hero h1 .sub{ display:block; font-size:.34em; letter-spacing:.34em; color:var(--fog); margin-top:1.4rem; }
+  .hero__lede{ max-width:40ch; color:var(--bone-dim); font-size:.95rem; }
+  .hero__rule{ width:1px; height:64px; background:linear-gradient(var(--fog),transparent); }
+
+  /* ══ セクション共通 ═════════════════════ */
+  section{ position:relative; }
+  .band{ padding-block:clamp(4.5rem,10vw,8rem); }
+  .band--alt{ background:var(--ink-2); }
+  .sec-head{ display:grid; gap:.9rem; margin-bottom:3rem; max-width:56ch; }
+  .sec-head h2{ font-size:clamp(1.7rem,3.6vw,2.5rem); letter-spacing:.08em; }
+  .sec-head p{ color:var(--bone-dim); font-size:.95rem; }
+
+  /* ══ 世界観 ═════════════════════════════ */
+  .pillars{ display:grid; gap:1px; background:rgba(230,224,206,.14); border:1px solid rgba(230,224,206,.14); }
+  @media (min-width:760px){ .pillars{ grid-template-columns:repeat(2,1fr); } }
+  .pillar{ background:var(--ink-2); padding:1.9rem 1.7rem; display:grid; gap:.7rem; align-content:start; }
+  .band--alt .pillar{ background:var(--ink); }
+  .pillar h3{ font-size:1.08rem; letter-spacing:.05em; }
+  .pillar p{ font-size:.9rem; color:var(--bone-dim); }
+  .pillar .tag{ font-family:var(--mono); font-size:.68rem; letter-spacing:.16em; color:var(--fog); }
+
+  /* パレット（七つの窓） */
+  .palette{ margin-top:3.5rem; }
+  .palette__bar{ display:flex; height:96px; border:1px solid rgba(230,224,206,.16); overflow:hidden; }
+  .palette__bar span{ flex:1; position:relative; }
+  .palette__list{
+    list-style:none; margin:1.1rem 0 0; padding:0;
+    display:grid; gap:.5rem 1.6rem; font-family:var(--mono); font-size:.74rem; color:var(--bone-dim);
+    grid-template-columns:repeat(auto-fill,minmax(190px,1fr));
+  }
+  .palette__list li{ display:flex; align-items:center; gap:.55rem; }
+  .palette__list i{ width:9px; height:9px; flex:none; }
+  .palette__list b{ color:var(--bone); font-weight:400; }
+
+  /* 質感タイル */
+  .mats{ display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1px; margin-top:3.5rem;
+         background:rgba(230,224,206,.14); border:1px solid rgba(230,224,206,.14); }
+  .mat{ background:var(--ink-2); padding:1.1rem; display:grid; gap:.8rem; }
+  .mat__sw{ height:78px; }
+  .mat__sw--felt{ background:#3A3546; background-image:radial-gradient(rgba(255,255,255,.09) 1px,transparent 1px); background-size:3px 3px; }
+  .mat__sw--clay{ background:linear-gradient(150deg,#6B6172,#3E3846 70%); }
+  .mat__sw--brass{ background:linear-gradient(120deg,#8B6E2E,#C9A24B 45%,#6B5322); }
+  .mat__sw--paper{ background:#CFC7B0; background-image:repeating-linear-gradient(92deg,rgba(0,0,0,.05) 0 1px,transparent 1px 6px); }
+  .mat__sw--glass{ background:linear-gradient(160deg,rgba(93,147,188,.7),rgba(93,147,188,.12)); }
+  .mat__sw--fog{ background:radial-gradient(70% 90% at 40% 70%,#B9B6C6,#3C3849); }
+  .mat h3{ font-size:.9rem; letter-spacing:.06em; }
+  .mat p{ font-size:.78rem; color:var(--bone-dim); line-height:1.7; }
+
+  /* ══ 階層レール ══════════════════════════ */
+  .rail{
+    position:fixed; left:1.6rem; top:50%; transform:translateY(-50%); z-index:60;
+    display:none; gap:.55rem; flex-direction:column; font-family:var(--mono); font-size:.68rem;
+  }
+  @media (min-width:1240px){ .rail{ display:flex; } }
+  .rail a{
+    color:rgba(142,138,160,.6); text-decoration:none; letter-spacing:.12em;
+    display:flex; align-items:center; gap:.6rem; transition:color .3s;
+  }
+  .rail a::before{ content:""; width:14px; height:1px; background:currentColor; transition:width .3s; }
+  .rail a:hover, .rail a.is-on{ color:var(--bone); }
+  .rail a.is-on::before{ width:30px; }
+  .rail a:focus-visible{ outline:1px solid var(--bone); outline-offset:4px; }
+
+  /* ══ 各階 ════════════════════════════════ */
+  .floor{
+    --c:var(--fog);
+    border-top:1px solid rgba(230,224,206,.13);
+    padding-block:clamp(3.4rem,7vw,5.6rem);
+  }
+  .floor__grid{ display:grid; gap:2.4rem; align-items:start; }
+  @media (min-width:880px){ .floor__grid{ grid-template-columns:300px 1fr; gap:3.4rem; } }
+
+  .floor__plate{ position:relative; }
+  .floor__no{
+    font-family:var(--mono); font-size:clamp(3.4rem,7vw,5rem); line-height:.9;
+    color:var(--c); opacity:.28; letter-spacing:-.02em;
+  }
+  .floor__fig{ width:100%; max-width:300px; display:block; color:var(--c); margin-top:-1.2rem; }
+
+  /* 6F だけは二人（親方と若手）。図版を並べて「継承」を画面で示す */
+  .floor__pair{ display:grid; grid-template-columns:1fr 1fr; gap:.7rem;
+                align-items:end; max-width:300px; margin-top:-1.2rem; }
+  .floor__pair figure{ margin:0; display:grid; gap:.4rem; }
+  .floor__pair .floor__fig{ max-width:100%; margin-top:0; }
+  .floor__pair figcaption{
+    font-family:var(--mono); font-size:.58rem; letter-spacing:.14em;
+    color:var(--bone-dim); text-align:center;
+  }
+
+  .floor__body{ display:grid; gap:1.5rem; }
+  .floor__co{ display:grid; gap:.35rem; }
+  .floor__co .biz{ font-family:var(--mono); font-size:.7rem; letter-spacing:.2em; color:var(--c); }
+  .floor__co h3{ font-size:clamp(1.35rem,2.6vw,1.85rem); letter-spacing:.05em; }
+  .floor__co .who{ font-size:.85rem; color:var(--bone-dim); }
+
+  .hook{
+    border-left:2px solid var(--c); padding:.2rem 0 .2rem 1.1rem;
+    font-family:var(--serif); font-size:1.05rem; line-height:1.85;
+  }
+  .hook b{ color:var(--c); font-weight:600; }
+
+  .spec{ width:100%; border-collapse:collapse; font-size:.85rem; }
+  .spec th,.spec td{ text-align:left; vertical-align:top; padding:.6rem .9rem .6rem 0; border-bottom:1px solid rgba(230,224,206,.1); }
+  .spec th{ width:6.5em; font-weight:400; font-family:var(--mono); font-size:.68rem; letter-spacing:.14em; color:var(--fog); padding-top:.75rem; }
+  .spec td{ color:var(--bone-dim); }
+
+  .chips{ display:flex; flex-wrap:wrap; gap:.5rem; list-style:none; margin:0; padding:0; }
+  .chips li{
+    display:flex; align-items:center; gap:.45rem; font-family:var(--mono); font-size:.68rem;
+    color:var(--bone-dim); border:1px solid rgba(230,224,206,.16); padding:.3rem .6rem;
+  }
+  .chips i{ width:11px; height:11px; flex:none; }
+
+  /* プロンプト折りたたみ */
+  .prompt{ border:1px solid rgba(230,224,206,.16); background:rgba(0,0,0,.22); }
+  .prompt > summary{
+    cursor:pointer; list-style:none; padding:.7rem .95rem;
+    font-family:var(--mono); font-size:.68rem; letter-spacing:.14em; color:var(--fog);
+    display:flex; justify-content:space-between; align-items:center; gap:1rem;
+  }
+  .prompt > summary::-webkit-details-marker{ display:none; }
+  .prompt > summary::after{ content:"＋"; color:var(--c); }
+  .prompt[open] > summary::after{ content:"－"; }
+  .prompt > summary:hover{ color:var(--bone); }
+  .prompt > summary:focus-visible{ outline:1px solid var(--bone); outline-offset:2px; }
+  .prompt__body{ padding:0 .95rem 1rem; }
+  .prompt pre{
+    margin:0; white-space:pre-wrap; word-break:break-word;
+    font-family:var(--mono); font-size:.72rem; line-height:1.75; color:var(--bone-dim);
+  }
+  .copy{
+    margin-top:.8rem; background:none; border:1px solid rgba(230,224,206,.24); color:var(--bone);
+    font-family:var(--mono); font-size:.66rem; letter-spacing:.14em; padding:.42rem .9rem; cursor:pointer;
+    transition:background .25s,border-color .25s;
+  }
+  .copy:hover{ background:rgba(230,224,206,.1); border-color:var(--c); }
+  .copy:focus-visible{ outline:1px solid var(--bone); outline-offset:2px; }
+
+  /* ══ クライマックス ═══════════════════════ */
+  .climax{ position:relative; padding-block:clamp(5rem,12vw,9rem); overflow:hidden; background:var(--ink-3); }
+  .climax__glow{
+    position:absolute; left:50%; top:38%; width:min(900px,120vw); aspect-ratio:1; translate:-50% -50%;
+    background:radial-gradient(circle, rgba(238,154,56,.30), rgba(240,212,136,.10) 42%, transparent 66%);
+    pointer-events:none;
+  }
+  .climax__inner{ position:relative; z-index:2; text-align:center; display:grid; gap:2rem; justify-items:center; }
+  .climax__time{
+    font-family:var(--mono); font-size:clamp(3rem,11vw,7rem); letter-spacing:.06em;
+    color:var(--f7); line-height:1; font-variant-numeric:tabular-nums;
+  }
+  .climax__art{ width:min(560px,92vw); }
+  .climax blockquote{
+    margin:0; max-width:34ch; font-family:var(--serif); font-size:clamp(1.05rem,2.4vw,1.35rem);
+    line-height:2.1; letter-spacing:.04em;
+  }
+  .climax cite{ font-style:normal; font-family:var(--mono); font-size:.7rem; letter-spacing:.18em; color:var(--fog); }
+
+  /* ══ 禁じ手 ═════════════════════════════ */
+  .dont{ list-style:none; margin:0; padding:0; display:grid; gap:.85rem; max-width:64ch; }
+  .dont li{ display:flex; gap:.9rem; font-size:.9rem; color:var(--bone-dim); }
+  .dont li::before{ content:"×"; color:var(--f6); font-family:var(--mono); flex:none; }
+
+  footer{ border-top:1px solid rgba(230,224,206,.13); padding-block:3rem 4rem; }
+  footer p{ font-family:var(--mono); font-size:.7rem; letter-spacing:.14em; color:var(--fog); }
+
+  @media (prefers-reduced-motion:reduce){
+    html{ scroll-behavior:auto; }
+    *{ animation:none !important; transition:none !important; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="rail" aria-label="階層">
+  <a href="#world">WORLD</a>
+  <a href="#f7">7F</a>
+  <a href="#f6">6F</a>
+  <a href="#f5">5F</a>
+  <a href="#f4">4F</a>
+  <a href="#f3">3F</a>
+  <a href="#f2">2F</a>
+  <a href="#f1">1F</a>
+  <a href="#fb">B1</a>
+  <a href="#climax">16:44</a>
+</nav>
+
+<!-- ═══════════ 表紙 ═══════════ -->
+<header class="hero">
+  <div class="hero__fog" id="fog" aria-hidden="true"></div>
+  <div class="hero__inner wrap">
+    <p class="eyebrow">Art Direction Board / Character Design</p>
+
+    <svg class="hero__art" viewBox="0 0 300 420" data-asset="key_building" role="img" aria-label="霧の中に立つ、七階建ての傾いだビル">
+      <defs>
+        <filter id="softglow" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <!-- 七層、少しずつ傾いて積まれた箱 -->
+      <g stroke="#E6E0CE" stroke-width="1.6" fill="#1C1928">
+        <g transform="rotate(-1.6 150 70)"><path d="M104 44 L196 40 L200 96 L100 100 Z"/></g>
+        <g transform="rotate(1.4 150 118)"><path d="M99 96 L201 92 L205 148 L95 152 Z"/></g>
+        <g transform="rotate(-1.1 150 172)"><path d="M96 148 L206 146 L209 202 L92 205 Z"/></g>
+        <g transform="rotate(1.7 150 226)"><path d="M92 202 L210 200 L213 256 L88 259 Z"/></g>
+        <g transform="rotate(-1.3 150 280)"><path d="M89 256 L214 254 L217 310 L85 313 Z"/></g>
+        <g transform="rotate(1.1 150 332)"><path d="M86 310 L218 308 L221 360 L82 363 Z"/></g>
+        <g transform="rotate(-.8 150 382)"><path d="M83 360 L222 358 L226 404 L79 407 Z"/></g>
+      </g>
+      <!-- 七つの窓 -->
+      <g filter="url(#softglow)">
+        <rect x="128" y="58" width="20" height="22" fill="#EE9A38"/>
+        <rect x="130" y="110" width="20" height="22" fill="#C2493C"/>
+        <rect x="132" y="164" width="20" height="22" fill="#9B7BC4"/>
+        <rect x="134" y="218" width="20" height="22" fill="#5D93BC"/>
+        <rect x="136" y="272" width="20" height="22" fill="#4F8F6C"/>
+        <rect x="138" y="324" width="20" height="22" fill="#C9A24B"/>
+        <rect x="140" y="374" width="20" height="22" fill="#D8D2BE"/>
+      </g>
+      <!-- 螺旋の非常階段 -->
+      <path d="M226 66 C246 96 210 118 232 150 C254 182 212 202 234 236 C256 270 214 290 236 324 C256 356 218 376 238 406"
+            fill="none" stroke="#8E8AA0" stroke-width="1.2" opacity=".8"/>
+      <!-- 曲がった街灯 -->
+      <path d="M50 412 L50 330 C50 314 66 312 68 326" fill="none" stroke="#8E8AA0" stroke-width="1.6"/>
+      <circle cx="68" cy="332" r="4.5" fill="#F0D488" filter="url(#softglow)"/>
+      <!-- 地面と、その先の無 -->
+      <path d="M0 412 L300 412" stroke="#8E8AA0" stroke-width="1.2" opacity=".55"/>
+    </svg>
+
+    <h1>はしっこビルの明日づくり<span class="sub">七階建て、七社、七日間</span></h1>
+    <p class="hero__lede">世界の外れに立つ雑居ビル。互いに口をきいたこともない七つの会社に、ある朝いっせいに同じ依頼書が届く。件名は「明日を一日、つくってください」。</p>
+    <div class="hero__rule" aria-hidden="true"></div>
+  </div>
+</header>
+
+<!-- ═══════════ 世界観 ═══════════ -->
+<section class="band" id="world">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">01 — World &amp; Look</p>
+      <h2>手で作られた、少しだけ間違っている世界</h2>
+      <p>全編ストップモーション・パペット。CGの滑らかさを一切目指さない。継ぎ目・縫い目・指紋が見えることが、この作品の「体温」そのもの。</p>
+    </div>
+
+    <div class="pillars reveal-group">
+      <article class="pillar">
+        <p class="tag">CONSTRUCTION</p>
+        <h3>縫い目を隠さない</h3>
+        <p>全キャラの関節に十字ステッチ、粘土のパーティングラインを残す。修理あとも消さない。「誰かが直した形跡」が、このビルの住人の共通点。</p>
+      </article>
+      <article class="pillar">
+        <p class="tag">ARCHITECTURE</p>
+        <h3>七階が七様式で、まっすぐ積まれていない</h3>
+        <p>ドイツ表現主義の傾いだ線。各階が別の時代・別の様式で、少しずつ角度を違えて積み上がる。「交流がない」ことが、建物の形で見える。</p>
+      </article>
+      <article class="pillar">
+        <p class="tag">LIGHT</p>
+        <h3>光源は、窓と電球しかない</h3>
+        <p>太陽が一度も出ない。画面の明るさは常に七つの窓＋管理人の胸の電球から供給される。だからラストの十一分間だけ、初めて「面で光る」。</p>
+      </article>
+      <article class="pillar">
+        <p class="tag">SILHOUETTE</p>
+        <h3>影だけで誰か分かること</h3>
+        <p>全キャラを真っ黒に塗りつぶしても identify できる形にする。ひかりの弁当タワー、雲井のドーム頭、黒金のレバー腕。輪郭が名刺。</p>
+      </article>
+    </div>
+
+    <div class="palette reveal">
+      <p class="eyebrow" style="margin-bottom:1rem">Palette — 七つの窓</p>
+      <div class="palette__bar" aria-hidden="true">
+        <span style="background:#D8D2BE"></span><span style="background:#C9A24B"></span>
+        <span style="background:#4F8F6C"></span><span style="background:#5D93BC"></span>
+        <span style="background:#9B7BC4"></span><span style="background:#C2493C"></span>
+        <span style="background:#EE9A38"></span><span style="background:#F0D488"></span>
+      </div>
+      <ul class="palette__list">
+        <li><i style="background:#D8D2BE"></i><b>菊白</b> #D8D2BE — 1F 葬祭</li>
+        <li><i style="background:#C9A24B"></i><b>真鍮</b> #C9A24B — 2F 玩具</li>
+        <li><i style="background:#4F8F6C"></i><b>帳簿緑</b> #4F8F6C — 3F 会計</li>
+        <li><i style="background:#5D93BC"></i><b>硝子青</b> #5D93BC — 4F 気象</li>
+        <li><i style="background:#9B7BC4"></i><b>香気紫</b> #9B7BC4 — 5F 香料</li>
+        <li><i style="background:#C2493C"></i><b>校正朱</b> #C2493C — 6F 印刷</li>
+        <li><i style="background:#EE9A38"></i><b>灯火橙</b> #EE9A38 — 7F 弁当</li>
+        <li><i style="background:#F0D488"></i><b>電球黄</b> #F0D488 — B1 管理人</li>
+      </ul>
+      <p style="margin-top:1.4rem;font-size:.85rem;color:var(--bone-dim);max-width:60ch">
+        地色は純黒ではなく青紫に寄せた墨 <span style="font-family:var(--mono)">#151320</span>。
+        七色は各階の「窓の色」であり、同時にその会社の人物の配色でもある。<b style="color:var(--bone);font-weight:400">画面に二色以上の窓が同時に映ったら、それは物語が進んだ合図。</b>
+      </p>
+    </div>
+
+    <div class="mats reveal-group">
+      <div class="mat"><div class="mat__sw mat__sw--felt"></div><h3>フェルト</h3><p>衣服の基本素材。毛羽立ちがライトを拾う。</p></div>
+      <div class="mat"><div class="mat__sw mat__sw--clay"></div><h3>粘土</h3><p>顔・手。指紋が残る温度感。</p></div>
+      <div class="mat"><div class="mat__sw mat__sw--brass"></div><h3>真鍮</h3><p>2F玩具・機械義手・鍵束。唯一の金属光沢。</p></div>
+      <div class="mat"><div class="mat__sw mat__sw--paper"></div><h3>反故紙</h3><p>依頼書・柊のカーディガン・黒金の髭。</p></div>
+      <div class="mat"><div class="mat__sw mat__sw--glass"></div><h3>硝子</h3><p>4Fのドーム頭・5Fの小瓶。透過は特権。</p></div>
+      <div class="mat"><div class="mat__sw mat__sw--fog"></div><h3>霧</h3><p>ドライアイス実写合成。CGで足さない。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 各階のキャラクター ═══════════ -->
+<section class="band band--alt" id="chars">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">02 — Character Design / 上から降りていく</p>
+      <h2>七階から地下まで、住人は九人</h2>
+      <p>階段を降りるように読む。各階のキャラクターは「その会社の仕事が、体になってしまった人」として設計する。</p>
+    </div>
+  </div>
+
+  <!-- ── 7F ─────────────────────── -->
+  <article class="floor reveal" id="f7" style="--c:var(--f7)">
+    <div class="wrap floor__grid">
+      <div class="floor__plate">
+        <p class="floor__no">7F</p>
+        <svg class="floor__fig" data-asset="f7_hikari" viewBox="0 0 200 300" role="img" aria-label="七尾ひかりのシルエット。背に七段の弁当タワーを背負った小柄な少女">
+          <g transform="rotate(7 148 210)" fill="currentColor" opacity=".85">
+            <rect x="128" y="228" width="42" height="13" rx="2"/><rect x="130" y="212" width="38" height="13" rx="2"/>
+            <rect x="128" y="196" width="42" height="13" rx="2"/><rect x="131" y="180" width="37" height="13" rx="2"/>
+            <rect x="128" y="164" width="42" height="13" rx="2"/><rect x="131" y="148" width="37" height="13" rx="2"/>
+            <rect x="129" y="132" width="40" height="13" rx="2"/>
+            <path d="M149 130 L149 118" stroke="currentColor" stroke-width="2"/>
+          </g>
+          <g fill="currentColor">
+            <path d="M62 148 L46 116" stroke="currentColor" stroke-width="4" fill="none"/>
+            <circle cx="44" cy="112" r="6"/>
+            <path d="M118 146 L138 112" stroke="currentColor" stroke-width="4" fill="none"/>
+            <circle cx="140" cy="108" r="6"/>
+            <circle cx="90" cy="152" r="30"/>
+            <path d="M70 190 L112 190 L124 250 L58 250 Z"/>
+            <rect x="66" y="248" width="30" height="34" rx="6"/>
+            <rect x="98" y="248" width="30" height="34" rx="6"/>
+            <path d="M112 206 L134 224" stroke="currentColor" stroke-width="8" stroke-linecap="round" fill="none"/>
+          </g>
+          <g fill="#151320"><circle cx="80" cy="150" r="7"/><circle cx="102" cy="150" r="7"/></g>
+          <g fill="#F7D9A8"><circle cx="80" cy="150" r="4"/><circle cx="102" cy="150" r="4"/></g>
+        </svg>
+      </div>
+      <div class="floor__body">
+        <div class="floor__co">
+          <p class="biz">仕出し弁当 / DELIVERY</p>
+          <h3>ふくふく亭 — 七尾ひかり</h3>
+          <p class="who">19歳・新人配達員／主人公・視点人物。このビルで唯一、全七階に毎日入れる人間。</p>
+        </div>
+        <p class="hook">灰色の世界で、<b>ただ一人だけ体温のある色</b>をしている。瞳は蝋燭の炎の色で、画面のどこにいても目で追える。背中の七段の弁当タワーは彼女の身長より高く、常に崩れそうで崩れない ――<b>七社の関係そのもの</b>。</p>
+        <table class="spec">
+          <tr><th>頭部</th><td>大きめの丸頭。琥珀色の丸い目（この世界で唯一「暖色に光る目」）。毛糸の髪をアンテナ状の二つ結びに。</td></tr>
+          <tr><th>身体</th><td>ぬいぐるみ構造。肘・膝に十字ステッチ。手足は細く、走ると布がばたつく。</td></tr>
+          <tr><th>衣装</th><td>継ぎ当てだらけの前掛け、炭色の制服。ブーツだけ二回り大きい（＝階段を走るたび音が鳴る）。</td></tr>
+          <tr><th>持ち物</th><td>七段重ねの弁当箱タワー（各段が七社の色に対応）。配達伝票の束。</td></tr>
+          <tr><th>動き</th><td>唯一「走る」キャラ。他の八人は全員ゆっくり動く。彼女だけコマ数が多い。</td></tr>
+        </table>
+        <ul class="chips"><li><i style="background:#EE9A38"></i>#EE9A38 灯火橙</li><li><i style="background:#E8E2D2"></i>#E8E2D2 前掛け</li><li><i style="background:#2B2A33"></i>#2B2A33 制服炭</li></ul>
+        <details class="prompt"><summary>生成プロンプト（EN）<span></span></summary><div class="prompt__body"><pre>Gothic stop-motion puppet character model sheet, full body front view, plain pale grey backdrop. A small 19-year-old girl rag-doll puppet, the only warm-colored character in a grey world. Big round amber candle-flame eyes, visible cross-stitching at elbow and knee joints, yarn hair in two crooked antenna-like ponytails. Patched delivery apron over a charcoal uniform, enormous oversized boots too big for her legs. On her back, a precariously tall spiraling tower of seven stacked lunch boxes, taller than she is. Handcrafted armature puppet, felt and clay texture, exaggerated proportions, oversized head. Palette: lantern orange #EE9A38, off-white, charcoal. Tim Burton-esque German Expressionist design, practical miniature lighting, film grain. No text.</pre><button class="copy" type="button">COPY</button></div></details>
+      </div>
+    </div>
+  </article>
+
+  <!-- ── 6F ─────────────────────── -->
+  <article class="floor reveal" id="f6" style="--c:var(--f6)">
+    <div class="wrap floor__grid">
+      <div class="floor__plate">
+        <p class="floor__no">6F</p>
+        <div class="floor__pair">
+        <figure>
+        <svg class="floor__fig" data-asset="f6_kurogane" viewBox="0 0 200 300" role="img" aria-label="黒金のシルエット。手押し印刷機の体とレバー腕をもつ老人">
+          <g fill="currentColor">
+            <rect x="76" y="120" width="48" height="42" rx="3"/>
+            <rect x="66" y="176" width="70" height="86" rx="4"/>
+            <rect x="70" y="260" width="22" height="24"/><rect x="110" y="260" width="22" height="24"/>
+            <path d="M136 194 L176 166" stroke="currentColor" stroke-width="7" fill="none" stroke-linecap="round"/>
+            <circle cx="180" cy="163" r="11"/>
+            <path d="M64 200 L34 232" stroke="currentColor" stroke-width="7" fill="none" stroke-linecap="round"/>
+          </g>
+          <g fill="#151320">
+            <rect x="82" y="127" width="8" height="8"/><rect x="94" y="127" width="8" height="8"/><rect x="106" y="127" width="8" height="8"/>
+            <rect x="82" y="139" width="8" height="8"/><rect x="94" y="139" width="8" height="8"/><rect x="106" y="139" width="8" height="8"/>
+            <rect x="82" y="151" width="8" height="8"/><rect x="106" y="151" width="8" height="8"/>
+            <rect x="84" y="188" width="46" height="4"/><rect x="84" y="214" width="46" height="4"/>
+          </g>
+          <g fill="#DDD5C0">
+            <rect x="80" y="160" width="6" height="30"/><rect x="90" y="160" width="6" height="38"/>
+            <rect x="100" y="160" width="6" height="26"/><rect x="110" y="160" width="6" height="36"/>
+            <rect x="119" y="160" width="6" height="24"/>
+          </g>
+          <g fill="#0E0E12"><circle cx="30" cy="240" r="6"/><circle cx="26" cy="256" r="3.5"/><circle cx="34" cy="266" r="2.4"/></g>
+        </svg>
+        <figcaption>KUROGANE</figcaption>
+        </figure>
+        <figure>
+        <svg class="floor__fig" data-asset="f6_yamato" viewBox="0 0 200 300" role="img" aria-label="大和のシルエット。片側へ流れる長い黒髪と立襟のコート、華奢な四肢">
+          <g fill="currentColor">
+            <!-- 立襟のコート（膝上まで） -->
+            <path d="M84 96 L116 96 L128 116 L126 196 L74 196 L72 116 Z"/>
+            <rect x="88" y="86" width="24" height="16" rx="2"/>
+            <!-- 華奢な腕 -->
+            <path d="M76 122 L64 178" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M124 122 L136 178" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round"/>
+          </g>
+          <g fill="#1C1A1D">
+            <!-- 片側へ流れる長い黒髪 -->
+            <path d="M100 32 C74 32 66 54 70 78 L78 96 L84 62 Z"/>
+            <path d="M100 32 C126 32 140 48 150 40 L128 74 L118 96 L116 58 Z"/>
+            <path d="M138 46 L182 30 L150 60 Z"/>
+            <path d="M142 62 L186 58 L148 76 Z"/>
+            <!-- 細い脚 -->
+            <rect x="88" y="196" width="7" height="66"/><rect x="105" y="196" width="7" height="66"/>
+            <!-- 踵のあるブーツ -->
+            <path d="M84 260 L99 260 L99 280 L82 280 Z"/><path d="M101 260 L116 260 L116 280 L99 280 Z"/>
+            <rect x="86" y="280" width="9" height="6"/><rect x="103" y="280" width="9" height="6"/>
+          </g>
+          <!-- 顔：巨大な真円の白目に小さな黒点の瞳孔のみ（CANON準拠・口も鼻もなし） -->
+          <g fill="#E8E2D2"><ellipse cx="100" cy="62" rx="19" ry="24"/></g>
+          <g fill="#F6F3EA"><circle cx="92" cy="60" r="7.5"/><circle cx="108" cy="60" r="7.5"/></g>
+          <g fill="#1C1A1D"><circle cx="92" cy="60" r="2.2"/><circle cx="108" cy="60" r="2.2"/></g>
+        </svg>
+        <figcaption>YAMATO</figcaption>
+        </figure>
+        </div>
+      </div>
+      <div class="floor__body">
+        <div class="floor__co">
+          <p class="biz">活版印刷 / LETTERPRESS</p>
+          <h3>印刷工房くろがね堂 — 黒金／大和</h3>
+          <p class="who">83歳・親方。納期という概念がない。／大和(19)・唯一の若手バイト。</p>
+        </div>
+        <p class="hook">体そのものが手押し印刷機。<b>頭部は活字ケース</b>で、髪の代わりに文字が詰まっている。髭は校正刷りの紙片。触ったものすべてにインクの黒い指紋が残る ――<b>彼が触れた場所には、必ず記録が残る</b>。</p>
+        <table class="spec">
+          <tr><th>頭部</th><td>格子状の活字ケース。喋るたび文字がひとつ抜け落ちる。</td></tr>
+          <tr><th>身体</th><td>鋳鉄フレームの胴体。右腕は圧盤レバーで、下ろすと「刷る」。</td></tr>
+          <tr><th>衣装</th><td>インクの染み込んだ革前掛け。袖は永久に黒い。</td></tr>
+          <tr><th>動き</th><td>全キャラ中もっとも遅い。一動作にコマを使い切る贅沢な芝居。</td></tr>
+          <tr><th>大和</th><td>華奢な人形。片側へ流れる長い黒髪、立襟のワインコート。巨大な白い眼に黒点の瞳孔だけで無表情。手だけが親方と同じ黒。<b style="color:var(--bone);font-weight:400">＝継承の記号</b>。</td></tr>
+        </table>
+        <ul class="chips"><li><i style="background:#C2493C"></i>#C2493C 校正朱</li><li><i style="background:#1C1C1E"></i>#1C1C1E 鉄墨</li><li><i style="background:#DDD5C0"></i>#DDD5C0 紙生成</li></ul>
+        <details class="prompt"><summary>生成プロンプト（EN）<span></span></summary><div class="prompt__body"><pre>Gothic stop-motion puppet character model sheet, full body front view, plain pale grey backdrop. An 83-year-old letterpress printer puppet whose torso IS a cast-iron hand press: a heavy rectangular frame body with a long lever arm for a right arm, ending in a round counterweight. His head is a wooden type case, a grid of small compartments holding metal letters instead of hair. His beard is made of hanging strips of proof paper. Fingers permanently stained ink-black, dripping. Heavy ink-soaked leather apron. Handcrafted armature puppet, felt and clay texture, visible seams. Palette: iron black #1C1C1E, proof red #C2493C, paper cream #DDD5C0. Tim Burton-esque German Expressionist design, practical miniature lighting, film grain. No text.</pre><button class="copy" type="button">COPY</button></div></details>
+      </div>
+    </div>
+  </article>
+
+  <!-- ── 5F ─────────────────────── -->
+  <article class="floor reveal" id="f5" style="--c:var(--f5)">
+    <div class="wrap floor__grid">
+      <div class="floor__plate">
+        <p class="floor__no">5F</p>
+        <svg class="floor__fig" data-asset="f5_ri" viewBox="0 0 200 300" role="img" aria-label="李のシルエット。長い嘴状の調香マスクと小瓶の弾帯">
+          <g fill="currentColor">
+            <path d="M70 282 L130 282 L136 186 L64 186 Z"/>
+            <circle cx="98" cy="162" r="22"/>
+            <path d="M100 166 L162 190 L98 182 Z"/>
+            <path d="M68 196 L128 236" stroke="currentColor" stroke-width="13" fill="none" opacity=".55"/>
+            <path d="M60 200 L44 268" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M44 268 L38 288 M44 268 L46 290 M44 268 L52 286" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          </g>
+          <g fill="#151320" opacity=".9">
+            <rect x="74" y="200" width="7" height="15" rx="1.5"/><rect x="85" y="207" width="7" height="15" rx="1.5"/>
+            <rect x="96" y="214" width="7" height="15" rx="1.5"/><rect x="107" y="221" width="7" height="15" rx="1.5"/>
+            <rect x="118" y="228" width="7" height="15" rx="1.5"/>
+          </g>
+          <path d="M164 190 C182 178 178 156 160 152 C142 148 138 128 154 118 C166 110 186 114 190 100"
+                fill="none" stroke="#C6B0E4" stroke-width="2.2" stroke-linecap="round" opacity=".85"/>
+          <circle cx="98" cy="156" r="4.5" fill="#C6B0E4"/>
+        </svg>
+      </div>
+      <div class="floor__body">
+        <div class="floor__co">
+          <p class="biz">調香 / PERFUMERY</p>
+          <h3>香料研究所アロマティカ — 李</h3>
+          <p class="who">35歳・調香師。無口。返事の代わりに小瓶の栓を抜く。</p>
+        </div>
+        <p class="hook"><b>口がない</b>。革の長い嘴（＝鼻器官）で顔が覆われ、言葉を発する機構を持たない。代わりに小瓶を開けると、匂いが<b>色のついた渦として画面に見える</b>。この世界で唯一「見える台詞」を持つキャラクター。</p>
+        <table class="spec">
+          <tr><th>頭部</th><td>ペストマスク状の長い嘴。ただし禍々しくなく、楽器のように優美。目は硝子玉。</td></tr>
+          <tr><th>身体</th><td>撫で肩、指だけ異様に長い。歩くと胸の小瓶が鳴る（音の記号）。</td></tr>
+          <tr><th>衣装</th><td>黒革のローブ。斜めに掛けた弾帯に約百本の極小ガラス瓶。</td></tr>
+          <tr><th>特殊表現</th><td>匂い＝パステル紫の渦アニメーション。記憶の再現時だけ渦が「人の形」になる。</td></tr>
+        </table>
+        <ul class="chips"><li><i style="background:#9B7BC4"></i>#9B7BC4 香気紫</li><li><i style="background:#2A2429"></i>#2A2429 革黒</li><li><i style="background:#C6B0E4"></i>#C6B0E4 渦（発光）</li></ul>
+        <details class="prompt"><summary>生成プロンプト（EN）<span></span></summary><div class="prompt__body"><pre>Gothic stop-motion puppet character model sheet, full body front view, plain pale grey backdrop. A 35-year-old perfumer puppet whose face is entirely covered by an elegant long leather beak mask — a plague-doctor silhouette reimagined as a refined nose-organ instrument, with round glass-bead eyes and NO mouth. Draped black leather robe. A bandolier across the chest holding about a hundred tiny glass vials that catch the light. Elongated delicate fingers. One vial uncorked, releasing a visible curling swirl of pale violet scent, drawn like practical smoke. Handcrafted armature puppet, felt and leather texture. Palette: scent violet #9B7BC4, leather black #2A2429, iridescent glass. Tim Burton-esque German Expressionist design, practical miniature lighting, film grain. No text.</pre><button class="copy" type="button">COPY</button></div></details>
+      </div>
+    </div>
+  </article>
+
+  <!-- ── 4F ─────────────────────── -->
+  <article class="floor reveal" id="f4" style="--c:var(--f4)">
+    <div class="wrap floor__grid">
+      <div class="floor__plate">
+        <p class="floor__no">4F</p>
+        <svg class="floor__fig" data-asset="f4_kumoi" viewBox="0 0 200 300" role="img" aria-label="雲井のシルエット。硝子ドームの頭の中に雲と稲妻、脚は三脚">
+          <g fill="currentColor">
+            <path d="M78 200 L122 200 L132 146 L68 146 Z"/>
+            <path d="M100 200 L66 284 M100 200 L100 288 M100 200 L134 284" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M124 156 L156 112" stroke="currentColor" stroke-width="3" fill="none"/>
+            <path d="M156 112 L146 118 L152 126 Z"/>
+            <path d="M148 100 L166 118 M166 100 L148 118" stroke="currentColor" stroke-width="2" fill="none"/>
+            <path d="M68 158 L58 200" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round"/>
+          </g>
+          <circle cx="100" cy="118" r="30" fill="rgba(93,147,188,.2)" stroke="currentColor" stroke-width="2.6"/>
+          <rect x="86" y="146" width="28" height="8" fill="currentColor"/>
+          <g fill="#CFE0EE" opacity=".9">
+            <circle cx="90" cy="114" r="10"/><circle cx="103" cy="110" r="12"/><circle cx="112" cy="117" r="8"/><rect x="88" y="114" width="26" height="10" rx="5"/>
+          </g>
+          <path d="M102 126 L94 138 L101 138 L95 150" fill="none" stroke="#F0D488" stroke-width="2.4" stroke-linecap="round"/>
+          <g fill="#151320" opacity=".65">
+            <rect x="76" y="164" width="12" height="2"/><rect x="92" y="172" width="16" height="2"/><rect x="80" y="182" width="9" height="2"/><rect x="100" y="188" width="14" height="2"/>
+          </g>
+        </svg>
+      </div>
+      <div class="floor__body">
+        <div class="floor__co">
+          <p class="biz">気象観測 / METEOROLOGY</p>
+          <h3>北緯零度気象観測所 — 雲井</h3>
+          <p class="who">29歳・所員。百年分の観測日誌を諳んじる。数字でしか喋らない。</p>
+        </div>
+        <p class="hook">頭部は密閉された硝子ドーム。その中に<b>彼女専用の小さな天気</b>がある。平静なら薄曇り、動揺すれば雨、怒れば稲妻。<b>台詞は数字でも、感情は天気で全部漏れている</b> ―― 観客だけが彼女の本心を読める設計。</p>
+        <table class="spec">
+          <tr><th>頭部</th><td>気圧計のような硝子ドーム。内部に雲・雨・雷。素顔は最終盤まで見えない。</td></tr>
+          <tr><th>身体</th><td>脚は三脚（測器の脚）。立ち止まると自動でぴたりと水平を取る。</td></tr>
+          <tr><th>衣装</th><td>観測記録の数字が刷り込まれた長外套。背から風見鶏が生えている。</td></tr>
+          <tr><th>芝居</th><td>会議中、他社が揉めるたびドーム内が荒れる。最大の笑い所であり、伏線。</td></tr>
+        </table>
+        <ul class="chips"><li><i style="background:#5D93BC"></i>#5D93BC 硝子青</li><li><i style="background:#9AA3AD"></i>#9AA3AD 霧灰</li><li><i style="background:#F0D488"></i>#F0D488 稲妻</li></ul>
+        <details class="prompt"><summary>生成プロンプト（EN）<span></span></summary><div class="prompt__body"><pre>Gothic stop-motion puppet character model sheet, full body front view, plain pale grey backdrop. A 29-year-old meteorologist puppet whose entire head is enclosed in a sealed glass barometer dome, and inside the dome floats her own tiny personal weather — a small grey storm cloud with a thin yellow lightning bolt. Her face is not visible. Long grey overcoat printed all over with faint rows of observation numbers. A weather vane with N-E-S-W crossbars sprouts from her back. Her legs are a surveyor's tripod instead of human legs. Handcrafted armature puppet, felt and brass and glass. Palette: glass blue #5D93BC, fog grey #9AA3AD, lightning yellow #F0D488. Tim Burton-esque German Expressionist design, practical miniature lighting, film grain. No text.</pre><button class="copy" type="button">COPY</button></div></details>
+      </div>
+    </div>
+  </article>
+
+  <!-- ── 3F ─────────────────────── -->
+  <article class="floor reveal" id="f3" style="--c:var(--f3)">
+    <div class="wrap floor__grid">
+      <div class="floor__plate">
+        <p class="floor__no">3F</p>
+        <svg class="floor__fig" data-asset="f3_ukai" viewBox="0 0 200 300" role="img" aria-label="鵜飼のシルエット。細身の紳士と、床に伸びる泣いた少年の形の影">
+          <g fill="#0E0E14" opacity=".75" transform="skewX(-34) translate(-64 0)">
+            <ellipse cx="96" cy="286" rx="46" ry="7"/>
+            <circle cx="72" cy="252" r="15"/>
+            <path d="M60 268 L86 268 L92 288 L54 288 Z"/>
+            <path d="M62 258 L54 246 M84 258 L94 246" stroke="#0E0E14" stroke-width="5" fill="none" stroke-linecap="round"/>
+          </g>
+          <g fill="currentColor">
+            <path d="M88 282 L88 152 L116 152 L116 282 Z"/>
+            <rect x="86" y="278" width="16" height="8"/><rect x="104" y="278" width="16" height="8"/>
+            <ellipse cx="102" cy="128" rx="14" ry="19"/>
+            <path d="M88 160 L74 240 M116 160 L130 240" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round"/>
+          </g>
+          <g stroke="#151320" stroke-width="1.2" opacity=".5">
+            <path d="M94 156 L94 276"/><path d="M102 156 L102 276"/><path d="M110 156 L110 276"/>
+          </g>
+          <rect x="87" y="123" width="30" height="9" rx="1" fill="#E9E9E4"/>
+          <path d="M74 240 L72 258 M130 240 L132 258" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="floor__body">
+        <div class="floor__co">
+          <p class="biz">会計 / ACCOUNTING</p>
+          <h3>みなも会計事務所 — 鵜飼</h3>
+          <p class="who">41歳・副所長。物腰やわらか。腹に一物。裏切り役。</p>
+        </div>
+        <p class="hook">九人でただ一人、<b>縫い目もほつれも一切ない</b>。完璧すぎることが不気味さの正体。目は平たい白の眼鏡で隠れ、瞳が見えない。そして ――<b>彼の影だけが、泣いている小さな男の子の形をしている</b>。三十年前、この階段の下で父を喪った子ども。</p>
+        <table class="spec">
+          <tr><th>頭部</th><td>細い卵形。瞳のない白い平板眼鏡。改心の場面で眼鏡に亀裂が入り、初めて目が見える。</td></tr>
+          <tr><th>身体</th><td>剃刀のように薄い長身。指先はペン先／算盤の珠。</td></tr>
+          <tr><th>衣装</th><td>黒のピンストライプ三揃い。皺が一本もない。</td></tr>
+          <tr><th>影の演出</th><td>影は常に本人と別の芝居をする。序盤は誰も気づかない。<b style="color:var(--bone);font-weight:400">観客が気づく瞬間＝第六章の鍵</b>。</td></tr>
+        </table>
+        <ul class="chips"><li><i style="background:#4F8F6C"></i>#4F8F6C 帳簿緑</li><li><i style="background:#0F0F14"></i>#0F0F14 漆黒</li><li><i style="background:#E9E9E4"></i>#E9E9E4 白眼鏡</li></ul>
+        <details class="prompt"><summary>生成プロンプト（EN）<span></span></summary><div class="prompt__body"><pre>Gothic stop-motion puppet character model sheet, full body front view, plain pale grey backdrop with a hard floor light. A 41-year-old accountant puppet, razor-thin and unnaturally tall, in an immaculate black pinstripe three-piece suit with no wrinkles and — unlike every other puppet — no visible stitching or seams anywhere. Narrow egg-shaped head, slicked hair, flat opaque white spectacles hiding his eyes entirely. Fingertips taper into fountain-pen nibs. CRITICAL: the long shadow he casts across the floor is the WRONG SHAPE — it is the silhouette of a small crying boy rubbing his eyes, not the shadow of a tall man. Handcrafted armature puppet. Palette: ledger green #4F8F6C accent, lacquer black #0F0F14, bone-white lenses. Tim Burton-esque German Expressionist design, hard practical lighting, film grain. No text.</pre><button class="copy" type="button">COPY</button></div></details>
+      </div>
+    </div>
+  </article>
+
+  <!-- ── 2F ─────────────────────── -->
+  <article class="floor reveal" id="f2" style="--c:var(--f2)">
+    <div class="wrap floor__grid">
+      <div class="floor__plate">
+        <p class="floor__no">2F</p>
+        <svg class="floor__fig" data-asset="f2_kaburagi" viewBox="0 0 200 300" role="img" aria-label="鏑木のシルエット。真鍮の機械義手と背中のぜんまい鍵">
+          <g fill="currentColor">
+            <rect x="58" y="178" width="84" height="76" rx="18"/>
+            <rect x="70" y="252" width="26" height="30" rx="4"/><rect x="106" y="252" width="26" height="30" rx="4"/>
+            <rect x="78" y="134" width="44" height="42" rx="8"/>
+          </g>
+          <g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round">
+            <path d="M60 198 L40 228"/><path d="M40 228 L48 262"/>
+            <path d="M140 198 L160 228"/><path d="M160 228 L152 262"/>
+          </g>
+          <g fill="#151320" stroke="currentColor" stroke-width="2.4">
+            <circle cx="40" cy="228" r="9"/><circle cx="160" cy="228" r="9"/>
+          </g>
+          <g fill="none" stroke="currentColor" stroke-width="3">
+            <path d="M142 196 L166 186"/><ellipse cx="176" cy="182" rx="11" ry="7"/>
+          </g>
+          <g fill="#151320"><rect x="80" y="128" width="40" height="10" rx="3"/></g>
+          <g fill="none" stroke="#151320" stroke-width="2.4"><circle cx="90" cy="133" r="6"/><circle cx="110" cy="133" r="6"/></g>
+          <g fill="#151320"><rect x="70" y="196" width="60" height="4"/><rect x="70" y="212" width="60" height="4"/></g>
+          <g fill="currentColor" opacity=".8">
+            <rect x="48" y="164" width="14" height="12" rx="2"/><path d="M50 176 L48 184 M60 176 L62 184" stroke="currentColor" stroke-width="2"/>
+            <rect x="138" y="160" width="14" height="12" rx="2"/><path d="M140 172 L138 180 M150 172 L152 180" stroke="currentColor" stroke-width="2"/>
+          </g>
+        </svg>
+      </div>
+      <div class="floor__body">
+        <div class="floor__co">
+          <p class="biz">ぜんまい玩具 / TOYS</p>
+          <h3>カガリ玩具製作所 — 鏑木</h3>
+          <p class="who">52歳・職人。会議中に黙って試作を作り始める。</p>
+        </div>
+        <p class="hook">両腕は事故のあと<b>自分で作った真鍮の機械義手</b>。肘の歯車が剥き出しで、動くたび音が鳴る。そして本人の背中にも<b>ぜんまいの鍵</b>が刺さっている ―― 彼は「自分もおもちゃの一種だ」と本気で思っている男。</p>
+        <table class="spec">
+          <tr><th>頭部</th><td>角の丸い箱型。額に押し上げた片方割れのゴーグル。</td></tr>
+          <tr><th>身体</th><td>樽型の胴、短い脚。腕だけ異様に長く精密。肩に小さなぜんまい玩具がペットのようにしがみつく。</td></tr>
+          <tr><th>衣装</th><td>工具を数十本挿した革前掛け。</td></tr>
+          <tr><th>担当</th><td>歩けなくなった柊を屋上へ運ぶ「ぜんまい椅子」。頼まれてもいない機能を必ず一つ足す。</td></tr>
+        </table>
+        <ul class="chips"><li><i style="background:#C9A24B"></i>#C9A24B 真鍮</li><li><i style="background:#4A3626"></i>#4A3626 革茶</li><li><i style="background:#8FA845"></i>#8FA845 玩具の緑</li></ul>
+        <details class="prompt"><summary>生成プロンプト（EN）<span></span></summary><div class="prompt__body"><pre>Gothic stop-motion puppet character model sheet, full body front view, plain pale grey backdrop. A barrel-chested 52-year-old toymaker puppet with stubby legs and an oversized boxy head. BOTH of his arms are self-built brass mechanical prosthetics with fully exposed gears, springs and rivets at the elbows. A large wind-up key protrudes from his own back between the shoulder blades. Cracked goggles pushed up on his forehead, one lens spiderwebbed. Heavy leather apron bristling with dozens of small tools. Two tiny clockwork wind-up toys cling to his shoulders like pets. Handcrafted armature puppet, felt and clay and machined brass. Palette: tarnished brass #C9A24B, leather brown #4A3626, toy green accent. Tim Burton-esque German Expressionist design, practical miniature lighting, film grain. No text.</pre><button class="copy" type="button">COPY</button></div></details>
+      </div>
+    </div>
+  </article>
+
+  <!-- ── 1F ─────────────────────── -->
+  <article class="floor reveal" id="f1" style="--c:var(--f1)">
+    <div class="wrap floor__grid">
+      <div class="floor__plate">
+        <p class="floor__no">1F</p>
+        <svg class="floor__fig" data-asset="f1_tome" viewBox="0 0 200 300" role="img" aria-label="星野トメのシルエット。菊の巨大な髪飾りと髑髏の煙">
+          <g fill="currentColor">
+            <path d="M52 284 L142 284 L116 196 L82 196 Z"/>
+            <circle cx="98" cy="178" r="19"/>
+          </g>
+          <g fill="currentColor">
+            <circle cx="98" cy="146" r="11"/>
+            <g>
+              <ellipse cx="98" cy="126" rx="7" ry="14"/><ellipse cx="98" cy="166" rx="7" ry="14"/>
+              <ellipse cx="78" cy="146" rx="14" ry="7"/><ellipse cx="118" cy="146" rx="14" ry="7"/>
+              <ellipse cx="84" cy="132" rx="12" ry="7" transform="rotate(-45 84 132)"/>
+              <ellipse cx="112" cy="132" rx="12" ry="7" transform="rotate(45 112 132)"/>
+              <ellipse cx="84" cy="160" rx="12" ry="7" transform="rotate(45 84 160)"/>
+              <ellipse cx="112" cy="160" rx="12" ry="7" transform="rotate(-45 112 160)"/>
+            </g>
+          </g>
+          <g fill="#151320"><circle cx="90" cy="176" r="3.2"/><circle cx="106" cy="176" r="3.2"/></g>
+          <path d="M132 208 L156 240" stroke="currentColor" stroke-width="2" fill="none"/>
+          <path d="M148 240 L166 240 L162 254 L152 254 Z" fill="currentColor"/>
+          <path d="M158 238 C170 224 152 214 164 200" fill="none" stroke="#8E8AA0" stroke-width="2" opacity=".8"/>
+          <g fill="#8E8AA0" opacity=".9">
+            <circle cx="168" cy="188" r="10"/><rect x="163" y="194" width="10" height="8" rx="2"/>
+          </g>
+          <g fill="#151320"><circle cx="164" cy="186" r="2.6"/><circle cx="172" cy="186" r="2.6"/></g>
+        </svg>
+      </div>
+      <div class="floor__body">
+        <div class="floor__co">
+          <p class="biz">葬儀 / UNDERTAKER</p>
+          <h3>有限会社ホシノ葬祭 — 星野トメ</h3>
+          <p class="who">78歳・女社長。ぶっきらぼう。「終わらせる」プロ。</p>
+        </div>
+        <p class="hook">背丈は他社の腰ほど。真っ黒な喪服に、<b>不釣り合いなほど陽気で巨大な白菊の髪飾り</b>。<b>この世界で唯一、死を怖がっていない人物</b>なので、造形も唯一「明るい」。振り回す香炉の煙は、時々小さな髑髏の形になってニヤリと笑う。</p>
+        <table class="spec">
+          <tr><th>頭部</th><td>胡桃のような皺顔。目だけ烏のように鋭く光る。声は掠れて割れる。</td></tr>
+          <tr><th>身体</th><td>ずんぐりした円錐。裾が床を引きずり、足元が見えない（＝歩いているのか浮いているのか分からない）。</td></tr>
+          <tr><th>衣装</th><td>墨黒の喪服＋白菊の巨大な冠。対比が彼女の性格そのもの。</td></tr>
+          <tr><th>芝居</th><td>議事進行を任せると、議題が全部「お別れ会の式次第」になる。第一の笑い所。</td></tr>
+        </table>
+        <ul class="chips"><li><i style="background:#D8D2BE"></i>#D8D2BE 菊白</li><li><i style="background:#14131A"></i>#14131A 墨黒</li><li><i style="background:#8C2F2A"></i>#8C2F2A 線香朱</li></ul>
+        <details class="prompt"><summary>生成プロンプト（EN）<span></span></summary><div class="prompt__body"><pre>Gothic stop-motion puppet character model sheet, full body front view, plain pale grey backdrop. A tiny round 78-year-old undertaker grandmother puppet, barely waist-high, wrapped in a heavy ink-black mourning robe that pools on the floor so her feet are never visible. Face like a wrinkled walnut with two sharp bright crow-like eyes. On her head, an absurdly large and cheerful headdress of white funeral chrysanthemums, comically oversized compared to her body. She swings a brass incense censer on a chain, and its rising smoke curls into a small grinning skull shape. Handcrafted armature puppet, felt and clay texture, exaggerated squat proportions. Palette: chrysanthemum bone white #D8D2BE, ink black #14131A, one stroke of incense vermilion. Tim Burton-esque German Expressionist design, practical miniature lighting, film grain. No text.</pre><button class="copy" type="button">COPY</button></div></details>
+      </div>
+    </div>
+  </article>
+
+  <!-- ── B1 ─────────────────────── -->
+  <article class="floor reveal" id="fb" style="--c:var(--fb)">
+    <div class="wrap floor__grid">
+      <div class="floor__plate">
+        <p class="floor__no">B1</p>
+        <svg class="floor__fig" data-asset="b1_hiiragi" viewBox="0 0 200 300" role="img" aria-label="柊源三のシルエット。疑問符の形に曲がった長身と胸の電球">
+          <defs>
+            <filter id="bulbglow" x="-200%" y="-200%" width="500%" height="500%">
+              <feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <g fill="none" stroke="currentColor" stroke-width="21" stroke-linecap="round">
+            <path d="M128 278 C130 224 128 196 124 176"/>
+            <path d="M124 176 C120 142 110 126 92 116"/>
+          </g>
+          <g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round">
+            <path d="M120 282 L108 292"/><path d="M136 282 L150 292"/>
+            <path d="M118 172 L102 226 L112 250"/>
+          </g>
+          <ellipse cx="84" cy="106" rx="21" ry="27" fill="currentColor"/>
+          <g fill="#151320"><circle cx="76" cy="102" r="5.5"/><circle cx="92" cy="100" r="5.5"/></g>
+          <g fill="#F0D488"><circle cx="76" cy="102" r="2.2"/><circle cx="92" cy="100" r="2.2"/></g>
+          <g fill="none" stroke="currentColor" stroke-width="2.4">
+            <circle cx="146" cy="206" r="15"/>
+            <path d="M146 221 L142 240 M158 216 L168 232 M134 216 L124 232 M152 220 L156 238 M140 220 L134 238 M160 206 L176 208 M132 206 L116 210"/>
+          </g>
+          <circle cx="110" cy="158" r="7" fill="#F0D488" filter="url(#bulbglow)"/>
+          <g stroke="#151320" stroke-width="1.4" opacity=".55">
+            <path d="M112 190 L128 188"/><path d="M110 208 L126 210"/><path d="M116 228 L130 226"/>
+          </g>
+        </svg>
+      </div>
+      <div class="floor__body">
+        <div class="floor__co">
+          <p class="biz">管理人 / CARETAKER</p>
+          <h3>果端ビル管理人室 — 柊源三</h3>
+          <p class="who">83歳。五十年、電球を替え、郵便を仕分け、排水管を直してきた男。依頼書の差出人。</p>
+        </div>
+        <p class="hook">背が高く、極端に痩せ、<b>疑問符の形に曲がっている</b>。腰に下げた百本の鍵は、彼が直してきた扉の数。カーディガンは、五十年ぶん拾い集めた<b>誰かの書き損じで縫われている</b>。そして胸ポケットの裸電球が、彼の命そのもの ―― 弱れば画面全体が暗くなる。</p>
+        <table class="spec">
+          <tr><th>頭部</th><td>干した瓢箪のような頭。落ち窪んだ眼窩の奥に、小さな優しい光点だけ。</td></tr>
+          <tr><th>身体</th><td>細長い手足。鍵束の重さで常に右へ傾いている。</td></tr>
+          <tr><th>衣装</th><td>反故紙を継ぎ接ぎしたカーディガン。＝依頼書と同じ素材（第三章の伏線）。</td></tr>
+          <tr><th>照明装置</th><td><b style="color:var(--bone);font-weight:400">胸の電球が全編の主光源。</b>彼が弱ると世界が翳り、逝った翌朝、霧が戻る。</td></tr>
+        </table>
+        <ul class="chips"><li><i style="background:#F0D488"></i>#F0D488 電球黄</li><li><i style="background:#BFB8A4"></i>#BFB8A4 骨白</li><li><i style="background:#6B5E4A"></i>#6B5E4A 蛾茶</li></ul>
+        <details class="prompt"><summary>生成プロンプト（EN）<span></span></summary><div class="prompt__body"><pre>Gothic stop-motion puppet character model sheet, full body front view, plain pale grey backdrop. A very tall, extremely thin 83-year-old caretaker puppet, stooped over into the shape of a question mark. Head like a dried gourd, deep hollow eye sockets with tiny warm glowing points inside, wispy white hair. He wears a moth-eaten patchwork cardigan visibly sewn together from a hundred different scraps of handwritten paper. An enormous heavy ring of about a hundred mismatched keys hangs at his belt, dragging his whole body to one side. In his breast pocket sits a small bare light bulb glowing warm — it is his life force and the only real light source in the frame. Handcrafted armature puppet, felt and clay texture, elongated spindly limbs. Palette: bulb yellow #F0D488, bone white, faded moth brown. Tim Burton-esque German Expressionist design, practical miniature lighting, film grain. No text.</pre><button class="copy" type="button">COPY</button></div></details>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ═══════════ クライマックス ═══════════ -->
+<section class="climax" id="climax">
+  <div class="climax__glow" aria-hidden="true"></div>
+  <div class="wrap climax__inner">
+    <p class="eyebrow reveal">03 — Key Art / 第七章</p>
+    <p class="climax__time reveal">16:44</p>
+    <svg class="climax__art reveal" viewBox="0 0 560 220" data-asset="key_rooftop" role="img" aria-label="霧が裂けた屋上で、九人が一つのテーブルを囲んでいる">
+      <path d="M0 168 L560 168" stroke="#8E8AA0" stroke-width="1.2" opacity=".5"/>
+      <path d="M-20 120 C90 96 150 132 240 112 C330 92 400 128 500 104 C540 94 560 100 580 96"
+            fill="none" stroke="#E6E0CE" stroke-width="1.2" opacity=".35"/>
+      <ellipse cx="280" cy="164" rx="150" ry="10" fill="#EE9A38" opacity=".18"/>
+      <rect x="180" y="138" width="200" height="6" fill="#E6E0CE" opacity=".85"/>
+      <g stroke="#E6E0CE" stroke-width="2" opacity=".7"><path d="M196 144 L192 168 M364 144 L368 168"/></g>
+      <g fill="#151320">
+        <circle cx="196" cy="120" r="12"/><rect x="188" y="130" width="16" height="10"/>
+        <circle cx="228" cy="114" r="9"/><rect x="221" y="121" width="14" height="18"/>
+        <circle cx="258" cy="110" r="13"/><path d="M246 138 L270 138 L266 122 L250 122 Z"/>
+        <circle cx="290" cy="106" r="11"/><rect x="282" y="116" width="16" height="23"/>
+        <circle cx="320" cy="112" r="10"/><path d="M310 139 L330 139 L327 121 L313 121 Z"/>
+        <circle cx="350" cy="116" r="12"/><rect x="342" y="126" width="16" height="13"/>
+        <circle cx="166" cy="126" r="8"/><rect x="160" y="133" width="12" height="7"/>
+        <circle cx="382" cy="122" r="9"/><rect x="375" y="130" width="14" height="10"/>
+        <circle cx="410" cy="128" r="7"/><rect x="405" y="134" width="11" height="6"/>
+      </g>
+      <g fill="#F0D488">
+        <circle cx="196" cy="118" r="2"/><circle cx="258" cy="108" r="2"/><circle cx="290" cy="104" r="2"/><circle cx="350" cy="114" r="2"/>
+      </g>
+      <g fill="#EE9A38" opacity=".9"><circle cx="280" cy="132" r="5"/></g>
+      <path d="M280 132 L280 60" stroke="#EE9A38" stroke-width="1" opacity=".3"/>
+    </svg>
+    <blockquote class="reveal">「わしはな、五十年ここにおって、<br>七社が一つのテーブルを囲むとこだけ、見とらんのよ」</blockquote>
+    <cite class="reveal">柊源三 — 第三章</cite>
+  </div>
+</section>
+
+<!-- ═══════════ 禁じ手 ═══════════ -->
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">04 — Do Not</p>
+      <h2>この作品でやらないこと</h2>
+      <p>世界観を壊す方向を、先に潰しておく。</p>
+    </div>
+    <ul class="dont reveal-group">
+      <li>怖がらせない。ゴシックは「不気味さ」ではなく「手作りの寂しさ」として使う。悪役の鵜飼にすら牙は生やさない。</li>
+      <li>七色を混ぜない。一画面に複数社の色が出るのは、物語上その二社が実際に協働しているときだけ。</li>
+      <li>太陽を出さない。ラストの十一分間まで、光源は窓と電球のみ。</li>
+      <li>CGで霧を足さない。実写のドライアイスに限る。滑らかさは、この世界では嘘になる。</li>
+      <li>ひかり以外を走らせない。速度差そのものが、彼女が唯一の「つなぐ人」である証明。</li>
+      <li>縫い目を消さない。修理あとは全員が持っている、このビルの唯一の共通点。</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>HASHIKKO BILL — ART DIRECTION BOARD / 果端ビル 全七階＋地下一階</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/animejs@4.4.1/dist/bundles/anime.umd.min.js"></script>
+<script src="../../lib/animations.js"></script>
+<script>
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // 動きは CLAUDE.md の方針どおり AP.* プリセット経由。
+  // anime.js が読めない環境（UXP の CSP 等）では何も隠さないので素の表示のままになる。
+  if (window.AP && !reduce) {
+    AP.staggerReveal('.hero__inner > *', { each: 140, duration: 900 });
+    AP.onScroll('.reveal');
+    AP.onScroll('.reveal-group', function (el) { AP.staggerReveal(el.children, { each: 90 }); });
+    AP.drift('#fog', { x: 30, y: -18, scale: 1.08, duration: 16000 });
+  }
+
+  // Fal で生成した図版が works/hashikko-bill/assets/ に置かれていれば、
+  // シルエットSVGを差し替える。無ければSVGのまま（＝この一枚だけで完結する）。
+  //   node --env-file=tools/fal/.env tools/fal/generate.mjs --batch works/hashikko-bill/prompts.json
+  document.querySelectorAll('svg[data-asset]').forEach(function (svg) {
+    var img = new Image();
+    img.onload = function () {
+      img.className = svg.getAttribute('class') || '';
+      img.alt = svg.getAttribute('aria-label') || '';
+      svg.replaceWith(img);
+    };
+    img.src = 'assets/' + svg.dataset.asset + '.jpg';
+  });
+
+  // 階層レール：いま見ている階を光らせる
+  var links = Array.prototype.slice.call(document.querySelectorAll('.rail a'));
+  var targets = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+  var railIO = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var i = targets.indexOf(e.target);
+      links.forEach(function (a, n) { a.classList.toggle('is-on', n === i); });
+    });
+  }, { rootMargin: '-45% 0px -45% 0px' });
+  targets.forEach(function (t) { if (t) railIO.observe(t); });
+
+  // プロンプトのコピー
+  document.querySelectorAll('.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = btn.parentElement.querySelector('pre').textContent;
+      navigator.clipboard.writeText(text).then(function () {
+        btn.textContent = 'COPIED';
+        if (window.AP && !reduce) AP.pop(btn);
+        setTimeout(function () { btn.textContent = 'COPY'; }, 1600);
+      }).catch(function () { btn.textContent = 'COPY FAILED'; });
+    });
+  });
+})();
+</script>
+</body>
+</html>

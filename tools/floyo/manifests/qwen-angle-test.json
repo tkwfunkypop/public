@@ -1,0 +1,36 @@
+{
+  "note": "Qwenアングル一周テスト。c17はプリセット4アングル一括（1ラン4枚）、c64は数値指定の単一アングル、c70bは自由文編集で『判を押し切った姿勢』の終了フレームを作る（LTX Start-End用）。文書クローズアップ（架空文字カット）には使わない",
+  "items": [
+    {
+      "id": "c17_meeting_4presets",
+      "cut": "17",
+      "inputs": {
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_003959_b9ce8f5f-4e59-44e2-a0b9-c316e22f4da0.png"
+      }
+    },
+    {
+      "id": "c64_carry_lowangle",
+      "cut": "64",
+      "inputs": {
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260730_234402_ea1168a7-9409-4fba-bb47-e107e76d6793.png",
+        "h_angle": 0,
+        "v_angle": -35,
+        "zoom": 3,
+        "prompt_2": "",
+        "prompt_3": "",
+        "prompt_4": ""
+      }
+    },
+    {
+      "id": "c70b_stamp_endframe",
+      "cut": "70b",
+      "inputs": {
+        "image_url": "https://d8j0ntlcm91z4.cloudfront.net/user_2zNszn2HPoxCjsMuer3ngh13EDo/hf_20260731_043214_67c05a35-7a83-472c-8c6b-1460340032bc.png",
+        "free_prompt": "Keep the exact same camera position, framing, characters and set. Change ONLY the pose: the caretaker puppet's hand now presses the brass seal firmly DOWN onto the paper on the wooden delivery box, arm fully lowered at the end of the stamping motion. Everything else — every puppet, the box, props, lighting, fog — stays identical. Handmade stop-motion felt-puppet look. Any writing stays abstract unreadable invented glyphs, no real letters.",
+        "prompt_2": "",
+        "prompt_3": "",
+        "prompt_4": ""
+      }
+    }
+  ]
+}

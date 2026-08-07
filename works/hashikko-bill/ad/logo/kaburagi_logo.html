@@ -1,0 +1,82 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>玩具工房鏑木 ロゴ v2（3DCG風タイポ・クロマキー）</title>
+<style>
+  /* ?alpha を付けて開くと透過背景（スクショ用） */
+  html,body{margin:0;padding:0}
+  body{width:1920px;height:1080px;background:#00B140;display:flex;align-items:center;justify-content:center;overflow:hidden}
+  body.alpha{background:transparent}
+  svg{display:block;transform:perspective(1500px) rotateX(8deg)}
+  text{font-family:'Hiragino Mincho ProN','Yu Mincho','IPAMincho','IPAGothic',serif;font-weight:800}
+</style>
+<body>
+<script>if(location.search.includes('alpha'))document.body.classList.add('alpha')</script>
+<svg width="1800" height="1000" viewBox="0 0 1800 1000">
+  <defs>
+    <linearGradient id="faceG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF3C4"/><stop offset="24%" stop-color="#F0D27A"/>
+      <stop offset="48%" stop-color="#C9A24C"/><stop offset="62%" stop-color="#8A6A2C"/>
+      <stop offset="80%" stop-color="#E9CB7E"/><stop offset="100%" stop-color="#6B4F1D"/>
+    </linearGradient>
+    <linearGradient id="specG" x1="0" y1="0" x2="1" y2="0.25">
+      <stop offset="30%" stop-color="rgba(255,255,255,0)"/>
+      <stop offset="38%" stop-color="rgba(255,255,255,0.9)"/>
+      <stop offset="46%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <linearGradient id="ruleG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(138,106,44,0)"/><stop offset="15%" stop-color="#8A6A2C"/>
+      <stop offset="50%" stop-color="#F0D27A"/><stop offset="85%" stop-color="#8A6A2C"/>
+      <stop offset="100%" stop-color="rgba(138,106,44,0)"/>
+    </linearGradient>
+    <radialGradient id="knob" cx="35%" cy="30%">
+      <stop offset="0%" stop-color="#F6E2A0"/><stop offset="55%" stop-color="#C9A24C"/><stop offset="100%" stop-color="#6B4F1D"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 玩具工房（小・上段） -->
+  <g id="sub"></g>
+  <!-- 鏑木（大・下段） -->
+  <g id="main"></g>
+
+  <!-- 台座ライン+ぜんまい竜頭 -->
+  <rect x="410" y="905" width="980" height="10" rx="5" fill="url(#ruleG)"/>
+  <rect x="410" y="915" width="980" height="7" rx="3" fill="#3A2A12" opacity=".8"/>
+  <circle cx="900" cy="910" r="24" fill="url(#knob)" stroke="#5C4419" stroke-width="4"/>
+
+  <script>
+    // 3D押し出し: 深い層から順に同じテキストを少しずつずらして重ね、最後に表面(グラデ)+ハイライト
+    function build(gid, str, x, y, size, ls, depth, rots, dys) {
+      const NS = 'http://www.w3.org/2000/svg';
+      const g = document.getElementById(gid);
+      const mk = (fill, dx, dy, stroke) => {
+        const t = document.createElementNS(NS, 'text');
+        t.setAttribute('x', x + dx); t.setAttribute('y', y + dy);
+        t.setAttribute('font-size', size);
+        t.setAttribute('text-anchor', 'middle');
+        t.setAttribute('letter-spacing', ls);
+        t.setAttribute('fill', fill);
+        if (stroke) { t.setAttribute('stroke', stroke); t.setAttribute('stroke-width', 2); }
+        [...str].forEach((ch, i) => {
+          const s = document.createElementNS(NS, 'tspan');
+          s.setAttribute('rotate', rots[i] ?? 0);
+          if (i === 0 || dys[i] !== undefined) s.setAttribute('dy', i === 0 ? (dys[0] ?? 0) : dys[i]);
+          s.textContent = ch;
+          t.appendChild(s);
+        });
+        g.appendChild(t);
+        return t;
+      };
+      for (let i = depth; i >= 1; i--) {
+        const k = i / depth;
+        const c = k > .85 ? '#241708' : k > .5 ? '#4A3512' : '#6B4F1D';
+        mk(c, i * 0.9, i * 1.7, i === depth ? '#241708' : null);
+      }
+      mk('url(#faceG)', 0, 0, '#3A2A12');
+      const spec = mk('url(#specG)', 0, 0, null);
+      spec.setAttribute('opacity', '0.9');
+    }
+    build('sub',  '玩具工房', 900, 235, 130, 52, 12, [-2.4, 2, -1.2, 1.8], [0, -8, 4, 8]);
+    build('main', '鏑木',     900, 800, 430, 14, 30, [-2.2, 2.2], [0, -14]);
+  </script>
+</svg>
+</body>

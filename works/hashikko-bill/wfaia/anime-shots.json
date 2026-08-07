@@ -1,0 +1,93 @@
+{
+  "_comment": "WFAIA AIアニメ部門『はしっこビルの明日づくり』コンセプトフィルム（約70秒・16:9）のショット表。start_frame は I2V の開始フレーム。single キャラは 2:3 スチルを 16:9 に左右アウトペイント（Floyo内 or Higgsfield outpaint）して使う。",
+  "aspect_ratio": "16:9",
+  "target_duration_s": 70,
+  "i2v_style_suffix": "Handcrafted stop-motion puppet animation, shot on twos at 12fps with subtle frame-to-frame armature jitter, fabric and felt texture preserved, practical miniature set lighting, film grain, static camera unless specified. Keep the exact puppet design from the start frame — no morphing, no redesign, no added facial features.",
+  "shots": [
+    {
+      "id": "a01_fog_open",
+      "dur_s": 6,
+      "start_frame": "GENERATED — generated.json の wfaia_fog_169 を参照",
+      "motion": "Dense fog drifts slowly. One by one, from the bottom upward, the eight colored glows breathe into existence, each flickering softly like a practical bulb warming up. Camera locked."
+    },
+    {
+      "id": "a02_hiiragi",
+      "dur_s": 6,
+      "start_frame": "b1_hiiragi v5 (0bc9bf7a)",
+      "motion": "The caretaker puppet slowly raises the cluster of glowing bulbs a few centimeters; their warm light blooms and gently sways, casting moving shadows on his robe. His head tilts down toward the light. Camera pushes in very slowly."
+    },
+    {
+      "id": "a03_tome",
+      "dur_s": 5,
+      "start_frame": "f1_tome v3 (15e08a95)",
+      "motion": "The black-robed puppet stands almost still; the small bell at her collar swings once and settles. The red tassel of her ledger sways. Hem of the robe shifts as if breathing. Camera locked."
+    },
+    {
+      "id": "a04_kaburagi",
+      "dur_s": 5,
+      "start_frame": "f2_kaburagi v1 (c4f0ecbe)",
+      "motion": "The gears on the toymaker puppet's apron begin to turn slowly, one after another; his goggle eyes rotate to focus. One mechanical claw hand opens and closes once. Camera locked."
+    },
+    {
+      "id": "a05_ukai",
+      "dur_s": 5,
+      "start_frame": "f3_ukai v3 (48c63be0)",
+      "motion": "The accountant puppet lifts the deep-red ledger slightly and taps it twice with his pen. The flame-like black hair flickers as if in a draft. His stitched smile stays fixed. Camera locked."
+    },
+    {
+      "id": "a06_kumoi",
+      "dur_s": 5,
+      "start_frame": "f4_kumoi v3 (2aa6d7d0)",
+      "motion": "The brass instruments hanging on the meteorologist puppet's cream coat swing and clink gently as she turns her head; a small gauge needle spins. Camera pushes in slowly."
+    },
+    {
+      "id": "a07_ri",
+      "dur_s": 5,
+      "start_frame": "f5_ri v3 (b1ccb0c7)",
+      "motion": "A thin wisp of pale vapor rises from the spout of the perfumer puppet's cylindrical head; the glass bottles on its chest glint as it slowly raises one dark hand. Camera locked."
+    },
+    {
+      "id": "a08_kurogane_yamato",
+      "dur_s": 6,
+      "start_frame": "f6_kurogane v3 (7de3b8e2) — 単体。大和カットは a09",
+      "motion": "The printing-press puppet pulls his long lever arm down once; the press bed slides and a sheet of paper feeds through. Paper-strip beard sways with the motion. Camera locked."
+    },
+    {
+      "id": "a09_yamato",
+      "dur_s": 5,
+      "start_frame": "f6_yamato v4 (ba78a7a0)",
+      "motion": "The slender puppet's long black hair streams slowly in a draft; she looks down at her own fingertips, then back up, utterly expressionless. Camera pushes in very slowly."
+    },
+    {
+      "id": "a10_hikari_run",
+      "dur_s": 6,
+      "start_frame": "f7_hikari v1 (fbe2b147)",
+      "motion": "The small girl puppet runs in place lifting her knees high, the tower of trunks overhead swaying precariously left and right but never falling; her twin ponytails bounce. Slight camera shake as if handheld miniature rig."
+    },
+    {
+      "id": "a11_handoff",
+      "dur_s": 6,
+      "start_frame": "GENERATED — generated.json の wfaia_handoff_916 を 16:9 に再構図（要追加生成）",
+      "motion": "The girl puppet places the small wooden lunch box into the printer puppet's ink-black fingers; both hold still for a beat; the warm orange and proof-red glows brighten together. Camera locked."
+    },
+    {
+      "id": "a12_fog_close",
+      "dur_s": 8,
+      "start_frame": "a01 と同じ wfaia_fog_169",
+      "motion": "All eight colored glows now burn steadily together; the fog thins just slightly, hinting at warmth, then the lights hold. Fade to black at the end. Camera locked.",
+      "note": "この上にタイトル『はしっこビルの明日づくり』を編集時に載せる（生成に文字は入れない）"
+    }
+  ],
+  "spares": [
+    {
+      "id": "sp1_tome_bell",
+      "start_frame": "f1_tome v3",
+      "motion": "Close framing on the collar bell: it swings three times, each swing smaller. (16:9はアウトペイントで対応)"
+    },
+    {
+      "id": "sp2_hiiragi_keys",
+      "start_frame": "b1_hiiragi v5",
+      "motion": "The heavy key ring sways at his side, keys clinking; the bulbs' glow pulses once."
+    }
+  ]
+}
