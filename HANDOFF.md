@@ -79,6 +79,10 @@
 
 ## 作業ログ（新しいものを上に）
 
+### 2026-08-10 (追記4) — Instagram開設チェックリストを追加
+- 状況: TikTokフォロワー102人到達、Instagram開設フェーズへ。
+- `research/pt-sns-trends/instagram-launch.md`: 開設初日のプロフィール設計、初動2週間プラン（TikTok勝ちネタの移植）、TikTok→インスタ導線、期待値設定。
+
 ### 2026-08-10 (追記3) — 初動30本のネタ帳を追加
 - `research/pt-sns-trends/neta-bank.md`: 4本柱×30本のネタ（フック例文付き）、初動10本の投稿順、ネタ切れ防止の仕込み。
 
