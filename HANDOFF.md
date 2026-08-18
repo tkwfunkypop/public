@@ -37,6 +37,8 @@
 | `tools/ae-shortcuts/` | AE早見帳（Web版・PWA）。`manual/` に講座生向けマニュアル、`haifu.md` に配布セットまとめ |
 | `tools/ae-shortcuts-app/` | AE早見帳のスマホアプリ版（Capacitor / Android） |
 | `tools/kling/` | Kling 動画生成のスクリプト（`.env.example` を参照。**鍵は絶対にコミットしない**） |
+| `tools/fish-audio/` | Fish Audio MCP の接続メモ（設定本体はリポジトリ直下の `.mcp.json`） |
+| `.mcp.json` | プロジェクト共通のMCPサーバ設定。cloneすれば両アカウントに同じ設定が入る |
 
 ### 進行中の作業
 
@@ -78,6 +80,11 @@
 ---
 
 ## 作業ログ（新しいものを上に）
+
+### 2026-08-18 — Fish Audio MCP をリポジトリに接続
+- `.mcp.json`（プロジェクトスコープ）に公式MCPサーバ `fish-audio`（`https://api.fish.audio/mcp` / HTTP / OAuth）を追加。cloneすれば両アカウントで設定を共有できる。APIキー不要なので鍵のコミット問題は起きない。
+- 手順とハマりどころを `tools/fish-audio/README.md` にまとめた。
+- **次にやること: ローカルのClaude Codeで `/mcp` からOAuthログインする。** リモート実行環境（web版）は `api.fish.audio` への外向き通信がポリシーで塞がれていて（CONNECT 403）、OAuthもブラウザが要るのでこのセッションでは認証まで到達できない。
 
 ### 2026-08-01 — はしっこビル引き継ぎ・PR #15マージ・全素材検品
 - メインアカウント側セッションが引き継ぎを実施。PR #15 をドラフト解除してマージ（判断根拠: ドキュメント2ファイルのみ・コンフリクトなし・運用が既に機能）。
