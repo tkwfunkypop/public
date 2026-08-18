@@ -87,6 +87,15 @@ Settings → Collaborators でそのアカウントを追加する。
 - ただし UXP は CSP が厳しく外部CDN/`eval` を弾くことがある。その場合は
   `node_modules/animejs/dist/bundles/anime.umd.min.js` を **パネル内にローカル同梱**して読み込む。
 
+## MCP サーバ
+
+- プロジェクト共通のMCP設定は**リポジトリ直下の `.mcp.json`** に置く。
+  cloneすれば両アカウントに同じ設定が入るので、MCPの追加はここでやること。
+- 初回はClaude Code側で承認ダイアログが出る（`claude mcp list` で `⏸ Pending approval` と出るのが正常）。
+  認証は端末ごとに `/mcp` または `claude mcp login <name>` で1回だけ行う。
+- 設定済み: `fish-audio`（音声合成・ボイス検索・文字起こし）。詳細は `tools/fish-audio/README.md`。
+- **APIキー方式のMCPを足すときは `.mcp.json` に鍵を直書きしない。** 環境変数参照にして `.env` に置く。
+
 ## Git
 
 - 作業ブランチ: `claude/add-animejs-dependency-iqs0v1`（指定がなければこのブランチ）。
