@@ -1,0 +1,81 @@
+# はしっこビルの明日づくり — アートディレクション・ボード
+
+物語「はしっこビルの明日づくり」（世界の外れに立つ七階建て雑居ビル／七社の協働）を、
+ゴシック・ストップモーション（ティム・バートン系）の世界観に翻案したビジュアル設計資料。
+
+## 中身
+
+`imageboard.html` 一枚に以下をまとめている。
+
+| セクション | 内容 |
+|---|---|
+| 表紙 | 果端ビルのキーアート（七層が別々の角度で積まれ、七つの窓が七色に灯る） |
+| 01 World & Look | 造形の四原則、パレット「七つの窓」、質感タイル6種 |
+| 02 Character Design | 7F→B1 の全9人。造形コンセプト・仕様表・カラーコード・生成プロンプト |
+| 03 Key Art | 第七章「16:44 の十一分間」 |
+| 04 Do Not | 世界観を壊さないための禁じ手6項目 |
+
+## 配色システム
+
+地色は純黒ではなく青紫寄りの墨 `#151320`。
+アクセントは各階の「窓の色」で、そのままその会社の人物の配色になっている。
+
+| | 会社 | 色 |
+|---|---|---|
+| 1F | ホシノ葬祭 | 菊白 `#D8D2BE` |
+| 2F | カガリ玩具製作所 | 真鍮 `#C9A24B` |
+| 3F | みなも会計事務所 | 帳簿緑 `#4F8F6C` |
+| 4F | 北緯零度気象観測所 | 硝子青 `#5D93BC` |
+| 5F | 香料研究所アロマティカ | 香気紫 `#9B7BC4` |
+| 6F | 印刷工房くろがね堂 | 校正朱 `#C2493C` |
+| 7F | 仕出しふくふく亭 | 灯火橙 `#EE9A38` |
+| B1 | 管理人室 | 電球黄 `#F0D488` |
+
+ルール：**一画面に複数社の色が同時に出るのは、その二社が実際に協働しているときだけ。**
+
+## 図版について
+
+キャラクターは現状すべて**インラインSVGのシルエット**（＝影だけで誰か分かる、という設計原則の
+そのままの実装）。これだけでボードとして完結する。
+
+実写ライクな図版に差し替えたいときは、**Fal でバッチ生成**する（CLAUDE.md の方針どおり画像生成は Fal 優先）。
+
+```bash
+# ローカルPCで実行（このコンテナは queue.fal.run を弾く）
+node --env-file=tools/fal/.env tools/fal/generate.mjs --batch works/hashikko-bill/prompts.json
+
+# 一部だけ作り直す
+node --env-file=tools/fal/.env tools/fal/generate.mjs --batch works/hashikko-bill/prompts.json --only f3_ukai
+```
+
+- 生成先は `works/hashikko-bill/assets/<id>.jpg`。
+- **`imageboard.html` は起動時に `assets/` を探し、あればSVGを自動で画像に差し替える。**
+  HTMLを編集する必要はない。無ければSVGのまま表示される。
+- プロンプトは `prompts.json` が正。世界観の共通指定はマニフェストの `style` に一元化してある
+  （各カットのプロンプトには書かない）。
+- 生成される10カット: `key_building` `key_rooftop` `f7_hikari` `f6_kurogane` `f5_ri`
+  `f4_kumoi` `f3_ukai` `f2_kaburagi` `f1_tome` `b1_hiiragi`
+
+なお HTML 内の各キャラカードにも `生成プロンプト（EN）` を畳んで入れてあるので、
+1カットだけ他ツールで試したいときはそこから COPY できる。
+
+## プレビュー
+
+CLAUDE.md の手順どおり GitHub 経由で確認する。
+
+```
+https://raw.githack.com/tkwfunkypop/public/claude/seven-companies-collaboration-qducmu/works/hashikko-bill/imageboard.html
+```
+
+## アニメーション
+
+CLAUDE.md の方針どおり `lib/animations.js` のプリセット（`AP.*`）経由のみ。
+個別に `animate()` は書いていない。
+
+- `AP.staggerReveal` — 表紙の要素、原則カード、質感タイル、禁じ手リスト
+- `AP.onScroll` — 各階セクションの出現
+- `AP.drift` — 表紙の霧
+- `AP.pop` — プロンプトの COPY ボタン
+
+anime.js が読めない環境（UXP の CSP 等）では要素を隠さないので、素の表示のまま崩れない。
+`prefers-reduced-motion` 指定時は全アニメーションを止める。

@@ -63,6 +63,23 @@ Settings → Collaborators でそのアカウントを追加する。
 
 ※ビルド環境（Vite等）がある場合は `import { animate } from 'animejs'`（v4は名前付きインポート）。
 
+## 画像生成の方針（Fal API）
+
+- **画像生成は毎回 Fal API を最優先で使う。** 他の画像生成ツール（Higgsfield / Firefly / Algrow 等）は
+  Fal が使えないときの代替として扱う。
+- 実行スクリプト: **`tools/fal/generate.mjs`**（依存ゼロ。単発とバッチの両対応）
+  ```bash
+  node --env-file=tools/fal/.env tools/fal/generate.mjs "prompt"
+  node --env-file=tools/fal/.env tools/fal/generate.mjs --batch <manifest.json>
+  ```
+- 鍵は `FAL_KEY`。`tools/fal/.env.example` をコピーして `.env` に記入する。**チャットに貼らない**。
+- カットが複数あるときは、プロンプトを**マニフェスト（JSON）にまとめてバッチ実行**する。
+  世界観の共通指定は各プロンプトに書かず、マニフェストの `style` に一元化すること。
+- **注意：この作業コンテナは `queue.fal.run` をネットワークポリシーで弾く**（CONNECT に 403）。
+  そのため生成の実行は**ローカルPC**で行う。コンテナ側では
+  「プロンプト設計・マニフェスト作成・生成後の組み込み」までを担当する。
+- 詳細は `tools/fal/README.md`。
+
 ## 新しいLPを作るとき
 
 - **`templates/lp-starter.html` を複製**して中身を書き換えるのが基本。
