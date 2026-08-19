@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "高橋帝国",
+    "slug": "takahashi-empire",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.takahashiempire.app"
+    },
+    "android": {
+      "package": "com.takahashiempire.app"
+    },
+    "plugins": [
+      "expo-secure-store"
+    ]
+  }
+}
