@@ -72,20 +72,70 @@ Settings → Collaborators でそのアカウントを追加する。
 
 ## 動作確認（プレビュー）の手順
 
-このコンテナは毎回まっさらに起動するため、ブラウザ確認は GitHub 経由で行う。
+用途に応じて3つある。**push が要るのは 3 だけ**なので、まず 1 を使う。
+
+### 1. コンテナ内でスクショを撮る（最速・push不要）
+
+このコンテナには Chromium が入っているので、その場で見た目を確認できる。
+
+```bash
+npm run shot -- lp/foo.html          # PC(1440) と SP(390) の2枚
+npm run shot -- lp/foo.html --pc     # PC幅だけ
+npm run shot -- lp/foo.html --hero   # ファーストビューだけ
+```
+
+- 出力は `.shots/`（gitignore 済み）。Claude はこの画像をそのまま確認・共有できる。
+- 撮影前に自動で最下部までスクロールするので、`AP.onScroll` の出現アニメも反映される。
+- JSエラーがあれば撮影後に一覧表示される（**アニメが動かないときの原因調査に使う**）。
+
+### 2. Artifact で共有URLを出す（クライアント確認用・push不要）
+
+Claude の Artifact に上げると、非公開URLで実物を触ってもらえる。
+**Artifact は外部CDNを全部ブロックする**ので、必ず standalone ビルドを通す。
+
+```bash
+npm run build -- lp/foo.html --artifact --fetch-remote
+# → dist/foo.artifact.html を Artifact ツールに渡す
+```
+
+### 3. githack で見る（実機ブラウザで触りたいとき）
 
 1. 変更を commit & push する。
-2. 次のURLを開く（`<branch>` `<path>` は対象に合わせる）:
-   `https://raw.githack.com/tkwfunkypop/public/<branch>/<path>`
+2. `https://raw.githack.com/tkwfunkypop/public/<branch>/<path>` を開く。
    - 確認画面が出たら赤い「Open the page」を押す。
    - 最新を確実に見るなら `raw.githack.com` を `rawcdn.githack.com` に変え、`<branch>` をコミットSHAにする。
 - `htmlpreview.github.io` は JS が動かないことがあるので使わない。
 
+## standalone ビルド（1ファイル完結HTML）
+
+`npm run build` は anime.js・`lib/animations.js`・CSS・画像・Webフォントを
+すべて HTML に埋め込んで、**1枚で動く HTML** を `dist/` に出力する。
+
+```bash
+npm run build -- lp/foo.html                    # 通常（納品・配布用）
+npm run build -- lp/foo.html --fetch-remote     # Google Fonts や外部画像も落として埋め込む
+npm run build -- lp/foo.html --artifact         # Artifact用（<html>/<head>/<body>を除去）
+npm run build -- lp/foo.html -o dist/納品.html  # 出力先指定
+```
+
+- 埋め込めなかった外部参照は**ビルド時に警告として一覧表示**される。
+  警告が残ったまま Artifact / UXP に持っていくと、その部分は表示されない。
+- 日本語Webフォントはサブセットが100個以上あるため、
+  **ページで実際に使っている文字のぶんだけ**自動で絞り込んで埋め込む。
+- クライアントへの納品でWeb公開する場合は、Google Fonts は外部参照のまま
+  （＝`--fetch-remote` なし）のほうがキャッシュが効いて軽い。
+
 ## Adobe パネル（UXP/CEP）で使うときの注意
 
 - パネルUIもHTML/CSS/JSなので `AP.*` がそのまま使える。
-- ただし UXP は CSP が厳しく外部CDN/`eval` を弾くことがある。その場合は
-  `node_modules/animejs/dist/bundles/anime.umd.min.js` を **パネル内にローカル同梱**して読み込む。
+- ただし UXP は CSP が厳しく外部CDN/`eval` を弾く。
+  **`npm run build` で standalone 化したものをパネルに入れれば解決する**
+  （anime.js が HTML 内に埋め込まれるため、CDN も別ファイルも不要）。
+
+## 環境セットアップ
+
+`.claude/hooks/session-start.sh` がセッション開始時に `npm install` を自動実行するので、
+`npm run build` / `npm run shot` はセッション開始直後から使える（手動セットアップ不要）。
 
 ## Git
 

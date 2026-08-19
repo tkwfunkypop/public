@@ -1,3 +1,9 @@
 node_modules/
 .env
 **/.env
+
+# ビルド生成物（npm run build で作り直せる）
+dist/
+
+# スクリーンショット確認用（npm run shot の出力）
+.shots/

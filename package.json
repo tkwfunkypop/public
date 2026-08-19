@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "node tools/build-standalone.mjs",
+    "shot": "node tools/shot.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,8 @@
   "license": "ISC",
   "dependencies": {
     "animejs": "^4.4.1"
+  },
+  "devDependencies": {
+    "playwright": "^1.62.0"
   }
 }
