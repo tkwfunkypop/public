@@ -49,9 +49,9 @@
 
 ## 動作確認（プレビュー）の手順
 
-このコンテナは毎回まっさらに起動するため、ブラウザ確認は GitHub 経由で行う。
+まずローカルのプレビュー手段で確認する。GitHub 経由の確認が必要な場合も、commit / push は現在の依頼で明示的に許可されているときだけ行う（既存の明示許可はその範囲で有効）。
 
-1. 変更を commit & push する。
+1. ローカルプレビューで確認できない場合は、許可済みの branch と対象を使って GitHub 経由で確認する。
 2. 次のURLを開く（`<branch>` `<path>` は対象に合わせる）:
    `https://raw.githack.com/tkwfunkypop/public/<branch>/<path>`
    - 確認画面が出たら赤い「Open the page」を押す。
